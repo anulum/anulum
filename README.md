@@ -15,35 +15,71 @@ Personal GitHub profile overview
 <p align="center">
   <a href="https://anulum.li">Website</a> ·
   <a href="https://orcid.org/0009-0009-3560-0851">ORCID</a> ·
-  <a href="https://github.com/sponsors/anulum">Support the work</a>
+  <a href="https://github.com/sponsors/anulum">Sponsors</a> ·
+  <a href="mailto:protoscience@anulum.li">protoscience@anulum.li</a>
 </p>
 
-I am an independent researcher and systems builder at the
-[Anulum Institute](https://anulum.li) in Switzerland. I develop
-evidence-governed software across agent coordination, AI reliability,
-neuromorphic computing, and control systems.
+# Miroslav Šotek
 
-My work connects long-running independent research with reproducible software:
-claims should trace to measurements, artefacts, or executable verification.
+Independent researcher and systems engineer at the
+[Anulum Institute](https://anulum.li) in Switzerland.
 
-## Research and engineering focus
+I build **evidence-governed infrastructure** for AI systems and multi-agent
+engineering: coordination with receipts, reliability guards for model output,
+and research stacks that reach from mathematics into executable hardware paths.
 
-| Area | Current direction |
+Claims are only as good as the measurements, artefacts, or verification that
+back them.
+
+## Start here
+
+| If you need… | Go to |
 |---|---|
-| Agent infrastructure | Local-first coordination, claims, receipts, audit trails, and reliable multi-agent execution |
-| Reliable AI | Evidence-bound evaluation, contradiction detection, grounded scoring, and controlled tool use |
-| Neuromorphic computing | Stochastic computing, spiking systems, hyperdimensional representations, SIMD, and FPGA paths |
-| Control and physical systems | Coupled-oscillator dynamics, neuro-symbolic control, fusion research, and quantum simulation |
+| Parallel coding agents that do not clobber each other | [Synapse Channel](https://github.com/anulum/synapse-channel) · [docs](https://anulum.github.io/synapse-channel/) |
+| LLM claim guarding / factual-consistency checks | [Director-AI](https://github.com/anulum/director-ai) · [docs](https://anulum.github.io/director-ai/) |
+| Repository audit and remediation planning | [Rigor Foundry](https://github.com/anulum/rigor-foundry) · [docs](https://anulum.github.io/rigor-foundry/) |
+| Neuromorphic / stochastic computing research | [SC-NeuroCore](https://github.com/anulum/sc-neurocore) · [docs](https://anulum.github.io/sc-neurocore/) |
+| Coupled-oscillator / quantum simulation research | [SCPN Quantum Control](https://github.com/anulum/scpn-quantum-control) |
+
+## Lab map
+
+Anulum is a lab stack, not a single product:
+
+```text
+Director-AI          reliability of model output
+Rigor Foundry        evidence-bound audit and remediation
+Synapse Channel      multi-agent coordination, claims, receipts
+SC-NeuroCore         neuromorphic / SC compute (Python · Rust · RTL)
+SCPN suite           control, plasma, phase, and quantum research paths
+```
+
+Research, validation, and product readiness are kept separate. Active
+development is not a readiness claim.
 
 ## Selected work
 
-| Project | Purpose | Current state |
+| Project | Job | Maturity |
 |---|---|---|
-| [Synapse Channel](https://github.com/anulum/synapse-channel) | Neutral coordination plane for coding-agent fleets, with claims, roles, durable mailboxes, receipts, audit, and federation | Functional core; active development |
-| [Rigor Foundry](https://github.com/anulum/rigor-foundry) | Evidence-bound repository auditing and remediation planning | Active hardening |
-| [Director-AI](https://github.com/anulum/director-ai) | NLI- and RAG-based factual-consistency guardrails for LLM systems | Functional research system; active validation |
-| [SC-NeuroCore](https://github.com/anulum/sc-neurocore) | Polyglot stochastic and neuromorphic computing framework spanning Python, Rust, and Verilog | Research platform; active development |
-| [SCPN Quantum Control](https://github.com/anulum/scpn-quantum-control) | Evidence-governed quantum simulation of coupled-oscillator synchronisation | Experimental research programme |
+| [Synapse Channel](https://github.com/anulum/synapse-channel) | Local-first control plane for coding-agent fleets: claims, roles, durable mailboxes, receipts, audit, and federation | **Usable now** — functional core, active development |
+| [Rigor Foundry](https://github.com/anulum/rigor-foundry) | Evidence-bound repository auditing and remediation planning | **Usable now** — active hardening |
+| [Director-AI](https://github.com/anulum/director-ai) | Real-time LLM guardrails: NLI + RAG fact-checking with optional claim-level streaming halt | **Research active** — functional system under validation |
+| [SC-NeuroCore](https://github.com/anulum/sc-neurocore) | Polyglot stochastic and neuromorphic framework (Python, Rust SIMD, Verilog, HDC/VSA) | **Research active** — platform under continuous development |
+| [SCPN Quantum Control](https://github.com/anulum/scpn-quantum-control) | Evidence-governed quantum simulation of coupled-oscillator synchronisation | **Experimental** — preregistered research programme |
+
+Related control and fusion research lives in the SCPN suite
+([control](https://github.com/anulum/scpn-control),
+[fusion-core](https://github.com/anulum/scpn-fusion-core),
+[phase orchestrator](https://github.com/anulum/scpn-phase-orchestrator),
+[MIF-core](https://github.com/anulum/scpn-mif-core)).
+
+### Maturity labels
+
+| Label | Meaning |
+|---|---|
+| **Usable now** | Installable, documented, CI-backed; still evolving |
+| **Research active** | Real code and ongoing science; not a stability promise |
+| **Experimental** | Exploratory; do not treat interfaces or claims as fixed |
+| **Evidence-bound** | Public claims are tied to measurements or artefacts |
 
 ## Working principles
 
@@ -58,6 +94,15 @@ claims should trace to measurements, artefacts, or executable verification.
 
 I welcome technically grounded collaboration in neuromorphic systems, reliable
 AI infrastructure, scientific computing, formal verification, and control.
+
+A useful first message includes: problem, constraints, relevant prior art, and
+what evidence would count as success. Prefer email
+([protoscience@anulum.li](mailto:protoscience@anulum.li)) or the contact path on
+[anulum.li](https://anulum.li).
+
+I do not take on ungrounded hype work, “demo-only” science theatre, or claims
+that cannot be checked.
+
 For sustained open work, [GitHub Sponsors](https://github.com/sponsors/anulum)
 helps fund compute, testing, and publication infrastructure.
 
