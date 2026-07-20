@@ -66,3 +66,7 @@ helps fund compute, testing, and publication infrastructure.
 > or scientific validation unless a project provides explicit evidence for it.
 
 <p align="center"><em>I AM THAT</em></p>
+
+<p align="center">
+  <img src="assets/anulum-logo.jpg" width="100%" alt="Anulum">
+</p>
