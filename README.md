@@ -31,6 +31,8 @@ and research stacks that reach from mathematics into executable hardware paths.
 Claims are only as good as the measurements, artefacts, or verification that
 back them.
 
+**Stack:** Python · Rust · Verilog · formal and process tooling where needed.
+
 ## Start here
 
 | If you need… | Go to |
@@ -40,6 +42,9 @@ back them.
 | Repository audit and remediation planning | [Rigor Foundry](https://github.com/anulum/rigor-foundry) · [docs](https://anulum.github.io/rigor-foundry/) |
 | Neuromorphic / stochastic computing research | [SC-NeuroCore](https://github.com/anulum/sc-neurocore) · [docs](https://anulum.github.io/sc-neurocore/) |
 | Coupled-oscillator / quantum simulation research | [SCPN Quantum Control](https://github.com/anulum/scpn-quantum-control) |
+
+Project documentation also lives under each repository’s Pages site and on
+[anulum.li](https://anulum.li).
 
 ## Lab map
 
@@ -53,8 +58,19 @@ SC-NeuroCore         neuromorphic / SC compute (Python · Rust · RTL)
 SCPN suite           control, plasma, phase, and quantum research paths
 ```
 
+### Typical stack use
+
+1. **Rigor Foundry** — find what is broken, unproven, or unsafe to claim.
+2. **Director-AI** — guard model output that will be trusted.
+3. **Synapse Channel** — run multi-agent work with claims, mailboxes, and receipts.
+4. **SC-NeuroCore / SCPN** — when the problem is neuromorphic, physical, or
+   control-grade compute.
+
 Research, validation, and product readiness are kept separate. Active
 development is not a readiness claim.
+
+The **pinned repositories** on this profile match the selected-work table below.
+Other public repos are either SCPN-family research or supporting tooling.
 
 ## Selected work
 
@@ -81,6 +97,15 @@ Related control and fusion research lives in the SCPN suite
 | **Experimental** | Exploratory; do not treat interfaces or claims as fixed |
 | **Evidence-bound** | Public claims are tied to measurements or artefacts |
 
+## Evidence, not slogans
+
+Negative and null results are published when they are real. Public claims stay
+tied to artefacts: measurements, preregistered protocols, raw packs, or
+executable verification — not slogans.
+
+Example: preregistered quantum-control protocols and hash-bound result packs in
+[scpn-quantum-control](https://github.com/anulum/scpn-quantum-control).
+
 ## Working principles
 
 - Evidence before claims.
@@ -100,11 +125,12 @@ what evidence would count as success. Prefer email
 ([protoscience@anulum.li](mailto:protoscience@anulum.li)) or the contact path on
 [anulum.li](https://anulum.li).
 
-I do not take on ungrounded hype work, “demo-only” science theatre, or claims
-that cannot be checked.
+I respond to technical proposals. I do not take on ungrounded hype work,
+“demo-only” science theatre, or claims that cannot be checked.
 
 For sustained open work, [GitHub Sponsors](https://github.com/sponsors/anulum)
-helps fund compute, testing, and publication infrastructure.
+funds CI runners, quantum and hardware experiment time, and public docs — not
+marketing.
 
 > **Transparency:** These repositories span research software, developer tools,
 > and product candidates. Active development does not imply production readiness
