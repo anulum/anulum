@@ -1,0 +1,4 @@
+# Internal operational surfaces — NEVER commit, NEVER publish, FOREVER private
+# See agentic-shared/BROADCAST_2026-07-24_docs_internal_forever_private_all_projects.md
+docs/internal/
+docs/internal/**
