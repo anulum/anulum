@@ -9,22 +9,23 @@ Prehľad osobného profilu GitHub
 -->
 
 <p align="center">
-  <img src="assets/profile-header.svg" width="1200" alt="Miroslav Šotek — dôkazy, výpočty, riadenie">
+  <img src="assets/profile-header.svg" width="1200" alt="Miroslav Šotek: dôkazy, výpočty, riadenie">
 </p>
 
 <p align="center">
-  <a href="README.md"><kbd>EN</kbd></a>
-  <a href="README.de.md"><kbd>DE</kbd></a>
-  <a href="README.sk.md"><kbd>SK</kbd></a>
-  <a href="README.zh-CN.md"><kbd>中文</kbd></a>
-  <a href="README.ja.md"><kbd>日本語</kbd></a>
+  <a href="README.md"><img alt="English" src="https://img.shields.io/badge/EN-English-d9a441?style=for-the-badge"></a>
+  <a href="README.de.md"><img alt="Deutsch" src="https://img.shields.io/badge/DE-Deutsch-4dd6c8?style=for-the-badge"></a>
+  <a href="README.sk.md"><img alt="Slovenčina" src="https://img.shields.io/badge/SK-Sloven%C4%8Dina-2f81f7?style=for-the-badge"></a>
+  <a href="README.zh-CN.md"><img alt="中文" src="https://img.shields.io/badge/ZH-%E4%B8%AD%E6%96%87-c62828?style=for-the-badge"></a>
+  <a href="README.ja.md"><img alt="日本語" src="https://img.shields.io/badge/JA-%E6%97%A5%E6%9C%AC%E8%AA%9E-8e44ad?style=for-the-badge"></a>
 </p>
 
 <p align="center">
-  <a href="https://anulum.li">Web</a> ·
-  <a href="https://orcid.org/0009-0009-3560-0851">ORCID</a> ·
-  <a href="https://github.com/sponsors/anulum">Podpora</a> ·
-  <a href="mailto:protoscience@anulum.li">protoscience@anulum.li</a>
+  <a href="https://anulum.li"><img alt="Web" src="https://img.shields.io/badge/anulum.li-Web-09111f?style=flat-square&logo=safari&logoColor=white"></a>
+  <a href="https://orcid.org/0009-0009-3560-0851"><img alt="ORCID" src="https://img.shields.io/badge/ORCID-0009--0009--3560--0851-a6ce39?style=flat-square&logo=orcid&logoColor=white"></a>
+  <a href="https://pypi.org/user/anulum/"><img alt="PyPI" src="https://img.shields.io/badge/PyPI-19_projektov-3775a9?style=flat-square&logo=pypi&logoColor=white"></a>
+  <a href="https://github.com/sponsors/anulum"><img alt="GitHub Sponsors" src="https://img.shields.io/badge/Sponsors-Podporte_otvoren%C3%BA_pr%C3%A1cu-ea4aaa?style=flat-square&logo=githubsponsors&logoColor=white"></a>
+  <a href="mailto:protoscience@anulum.li"><img alt="E-mail" src="https://img.shields.io/badge/E--mail-protoscience%40anulum.li-4dd6c8?style=flat-square"></a>
 </p>
 
 # Miroslav Šotek
@@ -32,15 +33,38 @@ Prehľad osobného profilu GitHub
 Nezávislý výskumník a systémový inžinier v
 [Anulum Institute](https://anulum.li) vo Švajčiarsku.
 
-Budujem **infraštruktúru riadenú dôkazmi** pre systémy umelej inteligencie a
-multiagentové inžinierstvo: koordináciu s potvrdeniami, ochranu spoľahlivosti
-výstupov modelov a výskumné technologické celky siahajúce od matematiky po
-vykonateľné hardvérové cesty.
+Budujem **infraštruktúru riadenú dôkazmi** pre systémy umelej inteligencie,
+multiagentové inžinierstvo, vedecké výpočty, neuromorfný hardvér, kvantové
+simulácie a riadenie. Práca prepája matematické modely s reprodukovateľným
+softvérom, natívnou akceleráciou, formálnymi modelmi a vykonateľnými
+hardvérovými cestami.
 
 Tvrdenia majú iba takú hodnotu, akú majú merania, artefakty alebo overenie,
 ktoré ich podporujú.
 
-**Technológie:** Python · Rust · Verilog · formálne a procesné nástroje podľa potreby.
+## Jazyky a platformy
+
+**Primárna implementácia:** Python, Rust, TypeScript, JavaScript a Go.
+
+**Vedecké a natívne systémy:** Julia, Mojo, C++, C, Lean 4, Jupyter a LaTeX.
+
+**Hardvér, web a prevádzka:** Verilog, SystemVerilog, WGSL/WebGPU, HTML/CSS,
+Shell, Docker a Linux.
+
+<p>
+  <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white">
+  <img alt="Rust" src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white">
+  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white">
+  <img alt="Go" src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white">
+  <img alt="Julia" src="https://img.shields.io/badge/Julia-9558B2?style=flat-square&logo=julia&logoColor=white">
+  <img alt="Mojo" src="https://img.shields.io/badge/Mojo-FF4C4C?style=flat-square&logo=modular&logoColor=white">
+  <img alt="C++" src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white">
+  <img alt="Lean" src="https://img.shields.io/badge/Lean_4-6B4FBB?style=flat-square">
+  <img alt="Verilog" src="https://img.shields.io/badge/Verilog_%7C_SystemVerilog-8A2BE2?style=flat-square">
+  <img alt="WebGPU" src="https://img.shields.io/badge/WGSL_%7C_WebGPU-005A9C?style=flat-square">
+  <img alt="Jupyter" src="https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white">
+  <img alt="Docker" src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white">
+</p>
 
 ## Kde začať
 
@@ -69,10 +93,10 @@ SCPN suite           riadenie, plazma, fáza a kvantové výskumné cesty
 
 ### Typické použitie celku
 
-1. **Rigor Foundry** — zistí, čo je pokazené, nepreukázané alebo nebezpečné tvrdiť.
-2. **Director-AI** — chráni výstup modelu, ktorému sa má dôverovať.
-3. **Synapse Channel** — riadi multiagentovú prácu s tvrdeniami, schránkami a potvrdeniami.
-4. **SC-NeuroCore / SCPN** — pre neuromorfné, fyzikálne alebo riadiace výpočty.
+1. **Rigor Foundry**: zistí, čo je pokazené, nepreukázané alebo nebezpečné tvrdiť.
+2. **Director-AI**: chráni výstup modelu, ktorému sa má dôverovať.
+3. **Synapse Channel**: riadi multiagentovú prácu s tvrdeniami, schránkami a potvrdeniami.
+4. **SC-NeuroCore / SCPN**: pre neuromorfné, fyzikálne alebo riadiace výpočty.
 
 Výskum, validácia a produktová pripravenosť zostávajú oddelené. Aktívny vývoj
 nie je tvrdením o pripravenosti.
@@ -83,104 +107,90 @@ podporným nástrojom.
 
 ## Mapa ekosystému
 
-Aktívna portfóliová mapa obsahuje **39 zaradených repozitárov** v piatich
-nezávislých skupinách: 31 verejných repozitárov, šesť súkromných alebo
-proprietárnych produktových plôch a dva pripravované reaktorové repozitáre.
+Aktívna portfóliová mapa obsahuje **39 repozitárov** v piatich nezávislých
+skupinách: 33 verejných repozitárov a šesť súkromných produktových plôch.
 [HushLine](https://github.com/anulum/HushLine) je samostatný verejný projekt
 mimo týchto výskumných a produktových portfólií.
 
-```mermaid
-flowchart TB
-    R["SCPN Reactor Systems<br/>25 zaradených repozitárov"]
-    N["SC Neuromorphic Computing Systems<br/>SC-NeuroCore"]
-    Q["SCPN Quantum Computing Systems<br/>SCPN Quantum Control"]
-    I["SCPN Systems Integration and Control<br/>4 repozitáre"]
-    A["Agentic Coordination, Assurance and Continuity<br/>8 repozitárov"]
-
-    R --> I
-    N --> I
-    Q --> I
-    I --> A
-    R -. dôkazy a audit .-> A
-    N -. dôkazy a audit .-> A
-    Q -. dôkazy a audit .-> A
-```
+<p align="center">
+  <img src="assets/ecosystem-map.svg" width="1200" alt="Portfólio Anulum s piatimi nezávislými skupinami repozitárov">
+</p>
 
 Šípky znázorňujú zmluvné, integračné, dôkazové a auditné vzťahy. Nespájajú
 vlastníctvo repozitárov a neznamenajú vedeckú validáciu, prevádzkovú pripravenosť
 ani oprávnenie na fyzické riadenie.
 
-**Stavy:** `VEREJNÝ` · `SÚKROMNÝ / PROPRIETÁRNY` · `V PRÍPRAVE`
+**Stavy:** `VEREJNÝ` · `VEREJNÝ / IBA ARCHITEKTÚRA` · `SÚKROMNÝ` · `SÚKROMNÝ / PROPRIETÁRNY`
 
 <details>
-<summary><strong>SCPN Reactor Systems — 25 zaradených repozitárov</strong></summary>
+<summary><strong>SCPN Reactor Systems: 25 zaradených repozitárov</strong></summary>
 
 Fyzika rodín zariadení, spoločné numerické jadrá, reaktorové modely a
 vlastníctvo konfigurácií. Samotná existencia repozitára nepreukazuje validovanú
 fyziku ani pripravenosť stroja.
 
-- [SCPN Beam Target Core](https://github.com/anulum/scpn-beam-target-core) — `VEREJNÝ`
-- [SCPN Dense Plasma Focus Core](https://github.com/anulum/scpn-dense-plasma-focus-core) — `VEREJNÝ`
-- [SCPN FRC Core](https://github.com/anulum/scpn-frc-core) — `VEREJNÝ`
-- [SCPN Fusion Core](https://github.com/anulum/scpn-fusion-core) — `VEREJNÝ`
-- [SCPN Fusion-Fission Hybrid Core](https://github.com/anulum/scpn-fusion-fission-hybrid-core) — `VEREJNÝ`
-- [SCPN ICF Beam Core](https://github.com/anulum/scpn-icf-beam-core) — `VEREJNÝ`
-- [SCPN ICF Impact Core](https://github.com/anulum/scpn-icf-impact-core) — `VEREJNÝ`
-- [SCPN ICF Laser Core](https://github.com/anulum/scpn-icf-laser-core) — `VEREJNÝ`
-- [SCPN IEC Core](https://github.com/anulum/scpn-iec-core) — `VEREJNÝ`
-- [SCPN Levitated Dipole Core](https://github.com/anulum/scpn-levitated-dipole-core) — `VEREJNÝ`
-- [SCPN Magnetic Cusp Core](https://github.com/anulum/scpn-magnetic-cusp-core) — `VEREJNÝ`
-- [SCPN MIF Core](https://github.com/anulum/scpn-mif-core) — `VEREJNÝ`
-- [SCPN MIF Liner Core](https://github.com/anulum/scpn-mif-liner-core) — `VEREJNÝ`
-- [SCPN MIF MagLIF Core](https://github.com/anulum/scpn-mif-maglif-core) — `VEREJNÝ`
-- [SCPN MIF Plasma Jet Core](https://github.com/anulum/scpn-mif-plasma-jet-core) — `VEREJNÝ`
-- [SCPN Mirror Core](https://github.com/anulum/scpn-mirror-core) — `VEREJNÝ`
-- [SCPN RFP Core](https://github.com/anulum/scpn-rfp-core) — `VEREJNÝ`
-- [SCPN Spheromak Core](https://github.com/anulum/scpn-spheromak-core) — `VEREJNÝ`
-- [SCPN Stellarator Core](https://github.com/anulum/scpn-stellarator-core) — `VEREJNÝ`
-- [SCPN Theta Pinch Core](https://github.com/anulum/scpn-theta-pinch-core) — `VEREJNÝ`
-- [SCPN Tokamak Core](https://github.com/anulum/scpn-tokamak-core) — `VEREJNÝ`
-- [SCPN Z-Pinch Core](https://github.com/anulum/scpn-z-pinch-core) — `VEREJNÝ`
-- [SCPN Reactor Kernels](https://github.com/anulum/scpn-reactor-kernels) — `VEREJNÝ`
-- **SCPN Lattice Fusion Core** — `V PRÍPRAVE`
-- **SCPN Muon Fusion Core** — `V PRÍPRAVE`
+- [SCPN Beam Target Core](https://github.com/anulum/scpn-beam-target-core): `VEREJNÝ`
+- [SCPN Dense Plasma Focus Core](https://github.com/anulum/scpn-dense-plasma-focus-core): `VEREJNÝ`
+- [SCPN FRC Core](https://github.com/anulum/scpn-frc-core): `VEREJNÝ`
+- [SCPN Fusion Core](https://github.com/anulum/scpn-fusion-core): `VEREJNÝ`
+- [SCPN Fusion-Fission Hybrid Core](https://github.com/anulum/scpn-fusion-fission-hybrid-core): `VEREJNÝ`
+- [SCPN ICF Beam Core](https://github.com/anulum/scpn-icf-beam-core): `VEREJNÝ`
+- [SCPN ICF Impact Core](https://github.com/anulum/scpn-icf-impact-core): `VEREJNÝ`
+- [SCPN ICF Laser Core](https://github.com/anulum/scpn-icf-laser-core): `VEREJNÝ`
+- [SCPN IEC Core](https://github.com/anulum/scpn-iec-core): `VEREJNÝ`
+- [SCPN Levitated Dipole Core](https://github.com/anulum/scpn-levitated-dipole-core): `VEREJNÝ`
+- [SCPN Magnetic Cusp Core](https://github.com/anulum/scpn-magnetic-cusp-core): `VEREJNÝ`
+- [SCPN MIF Core](https://github.com/anulum/scpn-mif-core): `VEREJNÝ`
+- [SCPN MIF Liner Core](https://github.com/anulum/scpn-mif-liner-core): `VEREJNÝ`
+- [SCPN MIF MagLIF Core](https://github.com/anulum/scpn-mif-maglif-core): `VEREJNÝ`
+- [SCPN MIF Plasma Jet Core](https://github.com/anulum/scpn-mif-plasma-jet-core): `VEREJNÝ`
+- [SCPN Mirror Core](https://github.com/anulum/scpn-mirror-core): `VEREJNÝ`
+- [SCPN RFP Core](https://github.com/anulum/scpn-rfp-core): `VEREJNÝ`
+- [SCPN Spheromak Core](https://github.com/anulum/scpn-spheromak-core): `VEREJNÝ`
+- [SCPN Stellarator Core](https://github.com/anulum/scpn-stellarator-core): `VEREJNÝ`
+- [SCPN Theta Pinch Core](https://github.com/anulum/scpn-theta-pinch-core): `VEREJNÝ`
+- [SCPN Tokamak Core](https://github.com/anulum/scpn-tokamak-core): `VEREJNÝ`
+- [SCPN Z-Pinch Core](https://github.com/anulum/scpn-z-pinch-core): `VEREJNÝ`
+- [SCPN Reactor Kernels](https://github.com/anulum/scpn-reactor-kernels): `VEREJNÝ`
+- [SCPN Lattice Fusion Core](https://github.com/anulum/scpn-lattice-fusion-core): `VEREJNÝ / IBA ARCHITEKTÚRA`
+- [SCPN Muon Fusion Core](https://github.com/anulum/scpn-muon-fusion-core): `VEREJNÝ / IBA ARCHITEKTÚRA`
 
 </details>
 
 <details>
-<summary><strong>SCPN Systems Integration and Control — 4 repozitáre</strong></summary>
+<summary><strong>SCPN Systems Integration and Control: 4 repozitáre</strong></summary>
 
 Horizontálna sémantika, prijímanie riadenia, federácia, zobrazovanie dôkazov a
 spoločné zmluvy rozhraní.
 
-- [SCPN Control](https://github.com/anulum/scpn-control) — `VEREJNÝ`
-- [SCPN Phase Orchestrator](https://github.com/anulum/scpn-phase-orchestrator) — `VEREJNÝ`
-- **SCPN Studio** — `SÚKROMNÝ / PROPRIETÁRNY`
-- **SCPN Studio Platform** — `SÚKROMNÝ / PROPRIETÁRNY`
+- [SCPN Control](https://github.com/anulum/scpn-control): `VEREJNÝ`
+- [SCPN Phase Orchestrator](https://github.com/anulum/scpn-phase-orchestrator): `VEREJNÝ`
+- **SCPN Studio**: `SÚKROMNÝ / PROPRIETÁRNY`
+- **SCPN Studio Platform**: `SÚKROMNÝ / PROPRIETÁRNY`
 
 </details>
 
 <details>
-<summary><strong>Agentic Coordination, Assurance and Continuity — 8 repozitárov</strong></summary>
+<summary><strong>Agentic Coordination, Assurance and Continuity: 8 repozitárov</strong></summary>
 
 Koordinácia, pamäť, overovanie odpovedí, dôkazy o repozitároch, správa akcií a
 komerčné systémy riadiacej roviny.
 
-- [Director-AI](https://github.com/anulum/director-ai) — `VEREJNÝ`
-- **Director Class AI** — `SÚKROMNÝ / PROPRIETÁRNY`
-- **Director AI Cloud** — `SÚKROMNÝ / PROPRIETÁRNY`
-- [Rigor Foundry](https://github.com/anulum/rigor-foundry) — `VEREJNÝ`
-- [Remanentia](https://github.com/anulum/remanentia) — `VEREJNÝ`
-- **Remanentia Portal** — `SÚKROMNÝ / PROPRIETÁRNY`
-- [Synapse Channel](https://github.com/anulum/synapse-channel) — `VEREJNÝ`
-- **Synapse Channel Fleet** — `SÚKROMNÝ / PROPRIETÁRNY`
+- [Director-AI](https://github.com/anulum/director-ai): `VEREJNÝ`
+- **Director Class AI**: `SÚKROMNÝ / PROPRIETÁRNY`
+- **Director AI Cloud**: `SÚKROMNÝ / PROPRIETÁRNY`
+- [Rigor Foundry](https://github.com/anulum/rigor-foundry): `VEREJNÝ`
+- [Remanentia](https://github.com/anulum/remanentia): `VEREJNÝ`
+- **Remanentia Portal**: `SÚKROMNÝ / PROPRIETÁRNY`
+- [Synapse Channel](https://github.com/anulum/synapse-channel): `VEREJNÝ`
+- **Synapse Channel Fleet**: `SÚKROMNÝ / PROPRIETÁRNY`
 
 </details>
 
 <details>
-<summary><strong>SC Neuromorphic Computing Systems — 1 repozitár</strong></summary>
+<summary><strong>SC Neuromorphic Computing Systems: 1 repozitár</strong></summary>
 
-- [SC-NeuroCore](https://github.com/anulum/sc-neurocore) — `VEREJNÝ`
+- [SC-NeuroCore](https://github.com/anulum/sc-neurocore): `VEREJNÝ`
 
 Stochastické výpočty, spiking systémy, hyperdimenzionálne reprezentácie,
 natívna akcelerácia, kompilátory a RTL/FPGA cesty.
@@ -188,24 +198,66 @@ natívna akcelerácia, kompilátory a RTL/FPGA cesty.
 </details>
 
 <details>
-<summary><strong>SCPN Quantum Computing Systems — 1 repozitár</strong></summary>
+<summary><strong>SCPN Quantum Computing Systems: 1 repozitár</strong></summary>
 
-- [SCPN Quantum Control](https://github.com/anulum/scpn-quantum-control) — `VEREJNÝ`
+- [SCPN Quantum Control](https://github.com/anulum/scpn-quantum-control): `VEREJNÝ`
 
 Kvantová kompilácia riadená dôkazmi, simulácia, vykonávanie na hardvéri a
 experimentálne záznamy viazané hashom.
 
 </details>
 
+<details>
+<summary><strong>Samostatný nástroj</strong> &nbsp; 1 verejný repozitár</summary>
+
+- [HushLine](https://github.com/anulum/HushLine): Deterministický príkazový
+  wrapper, ktorý filtruje, ohraničuje a voliteľne rediguje stdout a stderr.
+
+</details>
+
+## Inžinierske štandardy
+
+<p>
+  <img alt="pytest" src="https://img.shields.io/badge/Testy-pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white">
+  <img alt="Ruff" src="https://img.shields.io/badge/Lint-Ruff-D7FF64?style=flat-square&logo=ruff&logoColor=111111">
+  <img alt="mypy" src="https://img.shields.io/badge/Typy-mypy-2A6DB2?style=flat-square">
+  <img alt="Cargo" src="https://img.shields.io/badge/Native-Cargo-000000?style=flat-square&logo=rust&logoColor=white">
+  <img alt="CodeQL" src="https://img.shields.io/badge/Bezpe%C4%8Dnos%C5%A5-CodeQL-2f81f7?style=flat-square&logo=github&logoColor=white">
+  <img alt="REUSE" src="https://img.shields.io/badge/Licencie-REUSE_3.x-4dd6c8?style=flat-square">
+</p>
+
+Konkrétne praktiky sa vyberajú podľa rizika a rozsahu repozitára; nie každý
+repozitár používa každý nástroj.
+
+| Oblasť kvality | Používané praktiky |
+|---|---|
+| Správnosť | Deterministické pytest a Cargo testy, coverage gates, paritné testy, regresné fixtures a explicitné negatívne prípady |
+| Statická kvalita | Ruff, strict mypy tam, kde je deklarovaný, Cargo fmt, Clippy so zakázanými warnings a kontroly API kontraktov |
+| Reprodukovateľnosť | Hash-pinned závislosti, preregistrované protokoly, raw result packs, obsahové digesty a opakovateľné auditné záznamy |
+| Bezpečnosť | Bandit, CodeQL a scorecards tam, kde sú zapnuté, threat models, minimálna autorita a kontrola závislostí |
+| Dodávateľský reťazec | SPDX, REUSE 3.x, SBOM tam, kde je relevantný, pinned CI actions a release manifesty |
+| Polyglotné overovanie | Python/Rust parita, PyO3/Maturin, Go a Julia testy, Lean buildy, WebAssembly, RTL a formálne kontroly |
+| Dokumentácia | Strict MkDocs/Sphinx buildy, API referencie, architektonické rozhodnutia, validačné záznamy a explicitné non-claims |
+
+## Publikovanie na PyPI
+
+<p align="center">
+  <a href="https://pypi.org/user/anulum/"><img alt="Miroslav Sotek na PyPI" src="https://img.shields.io/badge/PyPI-Miroslav_Sotek_%40_anulum-3775a9?style=for-the-badge&logo=pypi&logoColor=white"></a>
+</p>
+
+Overený [PyPI profil](https://pypi.org/user/anulum/) momentálne obsahuje 19
+publikovaných projektov: Python balíky, Rust akcelerované enginy, doménové jadrá
+a nástroje príkazového riadka.
+
 ## Vybrané projekty
 
 | Projekt | Úloha | Stav |
 |---|---|---|
-| [Synapse Channel](https://github.com/anulum/synapse-channel) | Lokálna riadiaca rovina pre flotily programovacích agentov: tvrdenia, roly, trvalé schránky, potvrdenia, audit a federácia | **Použiteľný teraz** — funkčné jadro, aktívny vývoj |
-| [Rigor Foundry](https://github.com/anulum/rigor-foundry) | Audit repozitárov a plánovanie nápravy viazané na dôkazy | **Použiteľný teraz** — aktívne spevňovanie |
-| [Director-AI](https://github.com/anulum/director-ai) | Ochrana LLM v reálnom čase: NLI + RAG kontrola faktov s voliteľným zastavením prúdu na úrovni tvrdení | **Aktívny výskum** — funkčný systém vo validácii |
-| [SC-NeuroCore](https://github.com/anulum/sc-neurocore) | Polyglotný stochastický a neuromorfný rámec (Python, Rust SIMD, Verilog, HDC/VSA) | **Aktívny výskum** — platforma v nepretržitom vývoji |
-| [SCPN Quantum Control](https://github.com/anulum/scpn-quantum-control) | Kvantová simulácia synchronizácie viazaných oscilátorov riadená dôkazmi | **Experimentálny** — vopred registrovaný výskumný program |
+| [Synapse Channel](https://github.com/anulum/synapse-channel) | Lokálna riadiaca rovina pre flotily programovacích agentov: tvrdenia, roly, trvalé schránky, potvrdenia, audit a federácia | **Použiteľný teraz**: funkčné jadro, aktívny vývoj |
+| [Rigor Foundry](https://github.com/anulum/rigor-foundry) | Audit repozitárov a plánovanie nápravy viazané na dôkazy | **Použiteľný teraz**: aktívne spevňovanie |
+| [Director-AI](https://github.com/anulum/director-ai) | Ochrana LLM v reálnom čase: NLI + RAG kontrola faktov s voliteľným zastavením prúdu na úrovni tvrdení | **Aktívny výskum**: funkčný systém vo validácii |
+| [SC-NeuroCore](https://github.com/anulum/sc-neurocore) | Polyglotný stochastický a neuromorfný rámec (Python, Rust SIMD, Verilog, HDC/VSA) | **Aktívny výskum**: platforma v nepretržitom vývoji |
+| [SCPN Quantum Control](https://github.com/anulum/scpn-quantum-control) | Kvantová simulácia synchronizácie viazaných oscilátorov riadená dôkazmi | **Experimentálny**: vopred registrovaný výskumný program |
 
 Súvisiaci výskum riadenia a fúzie sa nachádza v súprave SCPN
 ([control](https://github.com/anulum/scpn-control),
@@ -226,7 +278,7 @@ Súvisiaci výskum riadenia a fúzie sa nachádza v súprave SCPN
 
 Negatívne a nulové výsledky sa zverejňujú, keď sú skutočné. Verejné tvrdenia
 zostávajú viazané na artefakty: merania, vopred registrované protokoly, balíky
-surových výsledkov alebo vykonateľné overenie — nie na slogany.
+surových výsledkov alebo vykonateľné overenie: nie na slogany.
 
 Príklad: vopred registrované protokoly kvantového riadenia a balíky výsledkov
 viazané hashom v
@@ -257,7 +309,7 @@ vedecké divadlo „iba na ukážku“ ani tvrdenia, ktoré sa nedajú overiť.
 
 [GitHub Sponsors](https://github.com/sponsors/anulum) pri dlhodobej otvorenej
 práci financuje CI infraštruktúru, čas na kvantové a hardvérové experimenty a
-verejnú dokumentáciu — nie marketing.
+verejnú dokumentáciu: nie marketing.
 
 > **Transparentnosť:** Tieto repozitáre zahŕňajú výskumný softvér, vývojárske
 > nástroje a produktových kandidátov. Aktívny vývoj neznamená pripravenosť na

@@ -9,35 +9,58 @@ GitHub 个人资料概览
 -->
 
 <p align="center">
-  <img src="assets/profile-header.svg" width="1200" alt="Miroslav Šotek — 证据、计算与控制">
+  <img src="assets/profile-header.svg" width="1200" alt="Miroslav Šotek: 证据、计算与控制">
 </p>
 
 <p align="center">
-  <a href="README.md"><kbd>EN</kbd></a>
-  <a href="README.de.md"><kbd>DE</kbd></a>
-  <a href="README.sk.md"><kbd>SK</kbd></a>
-  <a href="README.zh-CN.md"><kbd>中文</kbd></a>
-  <a href="README.ja.md"><kbd>日本語</kbd></a>
+  <a href="README.md"><img alt="English" src="https://img.shields.io/badge/EN-English-d9a441?style=for-the-badge"></a>
+  <a href="README.de.md"><img alt="Deutsch" src="https://img.shields.io/badge/DE-Deutsch-4dd6c8?style=for-the-badge"></a>
+  <a href="README.sk.md"><img alt="Slovenčina" src="https://img.shields.io/badge/SK-Sloven%C4%8Dina-2f81f7?style=for-the-badge"></a>
+  <a href="README.zh-CN.md"><img alt="中文" src="https://img.shields.io/badge/ZH-%E4%B8%AD%E6%96%87-c62828?style=for-the-badge"></a>
+  <a href="README.ja.md"><img alt="日本語" src="https://img.shields.io/badge/JA-%E6%97%A5%E6%9C%AC%E8%AA%9E-8e44ad?style=for-the-badge"></a>
 </p>
 
 <p align="center">
-  <a href="https://anulum.li">网站</a> ·
-  <a href="https://orcid.org/0009-0009-3560-0851">ORCID</a> ·
-  <a href="https://github.com/sponsors/anulum">赞助</a> ·
-  <a href="mailto:protoscience@anulum.li">protoscience@anulum.li</a>
+  <a href="https://anulum.li"><img alt="网站" src="https://img.shields.io/badge/anulum.li-%E7%BD%91%E7%AB%99-09111f?style=flat-square&logo=safari&logoColor=white"></a>
+  <a href="https://orcid.org/0009-0009-3560-0851"><img alt="ORCID" src="https://img.shields.io/badge/ORCID-0009--0009--3560--0851-a6ce39?style=flat-square&logo=orcid&logoColor=white"></a>
+  <a href="https://pypi.org/user/anulum/"><img alt="PyPI" src="https://img.shields.io/badge/PyPI-19_%E4%B8%AA%E9%A1%B9%E7%9B%AE-3775a9?style=flat-square&logo=pypi&logoColor=white"></a>
+  <a href="https://github.com/sponsors/anulum"><img alt="GitHub Sponsors" src="https://img.shields.io/badge/Sponsors-%E6%94%AF%E6%8C%81%E5%BC%80%E6%94%BE%E5%B7%A5%E4%BD%9C-ea4aaa?style=flat-square&logo=githubsponsors&logoColor=white"></a>
+  <a href="mailto:protoscience@anulum.li"><img alt="电子邮件" src="https://img.shields.io/badge/Email-protoscience%40anulum.li-4dd6c8?style=flat-square"></a>
 </p>
 
 # Miroslav Šotek
 
 瑞士 [Anulum Institute](https://anulum.li) 的独立研究人员与系统工程师。
 
-我为人工智能系统和多智能体工程构建**以证据为治理基础的基础设施**：
-带回执的协作机制、面向模型输出的可靠性防护，以及从数学延伸至可执行
-硬件路径的研究技术栈。
+我为人工智能系统、多智能体工程、科学计算、神经形态硬件、量子模拟和控制
+构建**以证据为治理基础的基础设施**。相关工作把数学模型连接到可复现软件、
+原生加速、形式化模型和可执行硬件路径。
 
 一项主张的可信度取决于支持它的测量、工件或验证。
 
-**技术栈：** Python · Rust · Verilog · 按需使用形式化与流程工具。
+## 语言与平台
+
+**主要实现：** Python、Rust、TypeScript、JavaScript 和 Go。
+
+**科学、原生与形式化工作：** Julia、Mojo、C++、C、Lean 4、Jupyter 和 LaTeX。
+
+**硬件、Web 与运维：** Verilog、SystemVerilog、WGSL/WebGPU、HTML/CSS、
+Shell、Docker 和 Linux。
+
+<p>
+  <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white">
+  <img alt="Rust" src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white">
+  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white">
+  <img alt="Go" src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white">
+  <img alt="Julia" src="https://img.shields.io/badge/Julia-9558B2?style=flat-square&logo=julia&logoColor=white">
+  <img alt="Mojo" src="https://img.shields.io/badge/Mojo-FF4C4C?style=flat-square&logo=modular&logoColor=white">
+  <img alt="C++" src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white">
+  <img alt="Lean" src="https://img.shields.io/badge/Lean_4-6B4FBB?style=flat-square">
+  <img alt="Verilog" src="https://img.shields.io/badge/Verilog_%7C_SystemVerilog-8A2BE2?style=flat-square">
+  <img alt="WebGPU" src="https://img.shields.io/badge/WGSL_%7C_WebGPU-005A9C?style=flat-square">
+  <img alt="Jupyter" src="https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white">
+  <img alt="Docker" src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white">
+</p>
 
 ## 从这里开始
 
@@ -66,10 +89,10 @@ SCPN suite           控制、等离子体、相位与量子研究路径
 
 ### 典型技术栈用法
 
-1. **Rigor Foundry** — 找出损坏、未经证明或不应安全宣称的内容。
-2. **Director-AI** — 防护将被信任的模型输出。
-3. **Synapse Channel** — 通过主张、邮箱和回执运行多智能体工作。
-4. **SC-NeuroCore / SCPN** — 用于神经形态、物理或控制级计算问题。
+1. **Rigor Foundry**: 找出损坏、未经证明或不应安全宣称的内容。
+2. **Director-AI**: 防护将被信任的模型输出。
+3. **Synapse Channel**: 通过主张、邮箱和回执运行多智能体工作。
+4. **SC-NeuroCore / SCPN**: 用于神经形态、物理或控制级计算问题。
 
 研究、验证和产品就绪度相互分离。活跃开发不代表已经就绪。
 
@@ -78,122 +101,149 @@ SCPN suite           控制、等离子体、相位与量子研究路径
 
 ## 生态系统地图
 
-当前的项目组合地图由五个独立分组中的 **39 个已映射仓库成员**组成：
-31 个公开仓库、6 个私有或专有产品界面，以及 2 个筹备中的反应堆仓库。
+当前项目组合由五个独立分组中的 **39 个仓库**组成：33 个公开仓库和
+6 个私有产品界面。
 [HushLine](https://github.com/anulum/HushLine)
 是这些研究和产品组合之外的独立公开项目。
 
-```mermaid
-flowchart TB
-    R["SCPN Reactor Systems<br/>25 个已映射仓库"]
-    N["SC Neuromorphic Computing Systems<br/>SC-NeuroCore"]
-    Q["SCPN Quantum Computing Systems<br/>SCPN Quantum Control"]
-    I["SCPN Systems Integration and Control<br/>4 个仓库"]
-    A["Agentic Coordination, Assurance and Continuity<br/>8 个仓库"]
-
-    R --> I
-    N --> I
-    Q --> I
-    I --> A
-    R -. 证据与审计 .-> A
-    N -. 证据与审计 .-> A
-    Q -. 证据与审计 .-> A
-```
+<p align="center">
+  <img src="assets/ecosystem-map.svg" width="1200" alt="由五个独立仓库分组组成的 Anulum 项目组合">
+</p>
 
 箭头表示契约、集成、证据和审计关系。它们不会合并仓库所有权，也不代表
 科学验证、运行就绪状态或执行器控制权限。
 
-**状态说明：** `公开` · `私有 / 专有` · `筹备中`
+**状态说明：** `公开` · `公开 / 仅架构` · `私有` · `私有 / 专有`
 
 <details>
-<summary><strong>SCPN Reactor Systems — 25 个已映射仓库</strong></summary>
+<summary><strong>SCPN Reactor Systems: 25 个已映射仓库</strong></summary>
 
 设备族物理、共享数值内核、反应堆模型及配置所有权。仓库的存在本身并不
 证明其物理模型已经验证，也不表示相关设备已经就绪。
 
-- [SCPN Beam Target Core](https://github.com/anulum/scpn-beam-target-core) — `公开`
-- [SCPN Dense Plasma Focus Core](https://github.com/anulum/scpn-dense-plasma-focus-core) — `公开`
-- [SCPN FRC Core](https://github.com/anulum/scpn-frc-core) — `公开`
-- [SCPN Fusion Core](https://github.com/anulum/scpn-fusion-core) — `公开`
-- [SCPN Fusion-Fission Hybrid Core](https://github.com/anulum/scpn-fusion-fission-hybrid-core) — `公开`
-- [SCPN ICF Beam Core](https://github.com/anulum/scpn-icf-beam-core) — `公开`
-- [SCPN ICF Impact Core](https://github.com/anulum/scpn-icf-impact-core) — `公开`
-- [SCPN ICF Laser Core](https://github.com/anulum/scpn-icf-laser-core) — `公开`
-- [SCPN IEC Core](https://github.com/anulum/scpn-iec-core) — `公开`
-- [SCPN Levitated Dipole Core](https://github.com/anulum/scpn-levitated-dipole-core) — `公开`
-- [SCPN Magnetic Cusp Core](https://github.com/anulum/scpn-magnetic-cusp-core) — `公开`
-- [SCPN MIF Core](https://github.com/anulum/scpn-mif-core) — `公开`
-- [SCPN MIF Liner Core](https://github.com/anulum/scpn-mif-liner-core) — `公开`
-- [SCPN MIF MagLIF Core](https://github.com/anulum/scpn-mif-maglif-core) — `公开`
-- [SCPN MIF Plasma Jet Core](https://github.com/anulum/scpn-mif-plasma-jet-core) — `公开`
-- [SCPN Mirror Core](https://github.com/anulum/scpn-mirror-core) — `公开`
-- [SCPN RFP Core](https://github.com/anulum/scpn-rfp-core) — `公开`
-- [SCPN Spheromak Core](https://github.com/anulum/scpn-spheromak-core) — `公开`
-- [SCPN Stellarator Core](https://github.com/anulum/scpn-stellarator-core) — `公开`
-- [SCPN Theta Pinch Core](https://github.com/anulum/scpn-theta-pinch-core) — `公开`
-- [SCPN Tokamak Core](https://github.com/anulum/scpn-tokamak-core) — `公开`
-- [SCPN Z-Pinch Core](https://github.com/anulum/scpn-z-pinch-core) — `公开`
-- [SCPN Reactor Kernels](https://github.com/anulum/scpn-reactor-kernels) — `公开`
-- **SCPN Lattice Fusion Core** — `筹备中`
-- **SCPN Muon Fusion Core** — `筹备中`
+- [SCPN Beam Target Core](https://github.com/anulum/scpn-beam-target-core): `公开`
+- [SCPN Dense Plasma Focus Core](https://github.com/anulum/scpn-dense-plasma-focus-core): `公开`
+- [SCPN FRC Core](https://github.com/anulum/scpn-frc-core): `公开`
+- [SCPN Fusion Core](https://github.com/anulum/scpn-fusion-core): `公开`
+- [SCPN Fusion-Fission Hybrid Core](https://github.com/anulum/scpn-fusion-fission-hybrid-core): `公开`
+- [SCPN ICF Beam Core](https://github.com/anulum/scpn-icf-beam-core): `公开`
+- [SCPN ICF Impact Core](https://github.com/anulum/scpn-icf-impact-core): `公开`
+- [SCPN ICF Laser Core](https://github.com/anulum/scpn-icf-laser-core): `公开`
+- [SCPN IEC Core](https://github.com/anulum/scpn-iec-core): `公开`
+- [SCPN Levitated Dipole Core](https://github.com/anulum/scpn-levitated-dipole-core): `公开`
+- [SCPN Magnetic Cusp Core](https://github.com/anulum/scpn-magnetic-cusp-core): `公开`
+- [SCPN MIF Core](https://github.com/anulum/scpn-mif-core): `公开`
+- [SCPN MIF Liner Core](https://github.com/anulum/scpn-mif-liner-core): `公开`
+- [SCPN MIF MagLIF Core](https://github.com/anulum/scpn-mif-maglif-core): `公开`
+- [SCPN MIF Plasma Jet Core](https://github.com/anulum/scpn-mif-plasma-jet-core): `公开`
+- [SCPN Mirror Core](https://github.com/anulum/scpn-mirror-core): `公开`
+- [SCPN RFP Core](https://github.com/anulum/scpn-rfp-core): `公开`
+- [SCPN Spheromak Core](https://github.com/anulum/scpn-spheromak-core): `公开`
+- [SCPN Stellarator Core](https://github.com/anulum/scpn-stellarator-core): `公开`
+- [SCPN Theta Pinch Core](https://github.com/anulum/scpn-theta-pinch-core): `公开`
+- [SCPN Tokamak Core](https://github.com/anulum/scpn-tokamak-core): `公开`
+- [SCPN Z-Pinch Core](https://github.com/anulum/scpn-z-pinch-core): `公开`
+- [SCPN Reactor Kernels](https://github.com/anulum/scpn-reactor-kernels): `公开`
+- [SCPN Lattice Fusion Core](https://github.com/anulum/scpn-lattice-fusion-core): `公开 / 仅架构`
+- [SCPN Muon Fusion Core](https://github.com/anulum/scpn-muon-fusion-core): `公开 / 仅架构`
 
 </details>
 
 <details>
-<summary><strong>SCPN Systems Integration and Control — 4 个仓库</strong></summary>
+<summary><strong>SCPN Systems Integration and Control: 4 个仓库</strong></summary>
 
 跨领域语义、控制准入、联邦协作、证据呈现以及共享接口契约。
 
-- [SCPN Control](https://github.com/anulum/scpn-control) — `公开`
-- [SCPN Phase Orchestrator](https://github.com/anulum/scpn-phase-orchestrator) — `公开`
-- **SCPN Studio** — `私有 / 专有`
-- **SCPN Studio Platform** — `私有 / 专有`
+- [SCPN Control](https://github.com/anulum/scpn-control): `公开`
+- [SCPN Phase Orchestrator](https://github.com/anulum/scpn-phase-orchestrator): `公开`
+- **SCPN Studio**: `私有 / 专有`
+- **SCPN Studio Platform**: `私有 / 专有`
 
 </details>
 
 <details>
-<summary><strong>Agentic Coordination, Assurance and Continuity — 8 个仓库</strong></summary>
+<summary><strong>Agentic Coordination, Assurance and Continuity: 8 个仓库</strong></summary>
 
 智能体协调、记忆、响应保障、仓库证据、动作治理以及商业控制平面系统。
 
-- [Director-AI](https://github.com/anulum/director-ai) — `公开`
-- **Director Class AI** — `私有 / 专有`
-- **Director AI Cloud** — `私有 / 专有`
-- [Rigor Foundry](https://github.com/anulum/rigor-foundry) — `公开`
-- [Remanentia](https://github.com/anulum/remanentia) — `公开`
-- **Remanentia Portal** — `私有 / 专有`
-- [Synapse Channel](https://github.com/anulum/synapse-channel) — `公开`
-- **Synapse Channel Fleet** — `私有 / 专有`
+- [Director-AI](https://github.com/anulum/director-ai): `公开`
+- **Director Class AI**: `私有 / 专有`
+- **Director AI Cloud**: `私有 / 专有`
+- [Rigor Foundry](https://github.com/anulum/rigor-foundry): `公开`
+- [Remanentia](https://github.com/anulum/remanentia): `公开`
+- **Remanentia Portal**: `私有 / 专有`
+- [Synapse Channel](https://github.com/anulum/synapse-channel): `公开`
+- **Synapse Channel Fleet**: `私有 / 专有`
 
 </details>
 
 <details>
-<summary><strong>SC Neuromorphic Computing Systems — 1 个仓库</strong></summary>
+<summary><strong>SC Neuromorphic Computing Systems: 1 个仓库</strong></summary>
 
-- [SC-NeuroCore](https://github.com/anulum/sc-neurocore) — `公开`
+- [SC-NeuroCore](https://github.com/anulum/sc-neurocore): `公开`
 
 随机计算、脉冲系统、超维表示、原生加速、编译器以及 RTL/FPGA 路径。
 
 </details>
 
 <details>
-<summary><strong>SCPN Quantum Computing Systems — 1 个仓库</strong></summary>
+<summary><strong>SCPN Quantum Computing Systems: 1 个仓库</strong></summary>
 
-- [SCPN Quantum Control](https://github.com/anulum/scpn-quantum-control) — `公开`
+- [SCPN Quantum Control](https://github.com/anulum/scpn-quantum-control): `公开`
 
 以证据为约束的量子编译、模拟、硬件执行以及哈希绑定的实验记录。
 
 </details>
 
+<details>
+<summary><strong>独立工具</strong> &nbsp; 1 个公开仓库</summary>
+
+- [HushLine](https://github.com/anulum/HushLine)：用于过滤、限制并可选
+  脱敏 stdout 和 stderr 的确定性命令包装器。
+
+</details>
+
+## 工程标准
+
+<p>
+  <img alt="pytest" src="https://img.shields.io/badge/Tests-pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white">
+  <img alt="Ruff" src="https://img.shields.io/badge/Lint-Ruff-D7FF64?style=flat-square&logo=ruff&logoColor=111111">
+  <img alt="mypy" src="https://img.shields.io/badge/Types-mypy-2A6DB2?style=flat-square">
+  <img alt="Cargo" src="https://img.shields.io/badge/Native-Cargo-000000?style=flat-square&logo=rust&logoColor=white">
+  <img alt="CodeQL" src="https://img.shields.io/badge/Security-CodeQL-2f81f7?style=flat-square&logo=github&logoColor=white">
+  <img alt="REUSE" src="https://img.shields.io/badge/Licensing-REUSE_3.x-4dd6c8?style=flat-square">
+</p>
+
+具体实践依据每个仓库的风险和范围选择，并非每个仓库都运行所有工具。
+
+| 质量维度 | 项目组合中使用的实践 |
+|---|---|
+| 正确性 | 确定性 pytest 与 Cargo 测试、覆盖率门槛、等价性测试、回归夹具和显式负面用例 |
+| 静态质量 | Ruff、声明处的严格 mypy、Cargo fmt、禁止警告的 Clippy 以及 API 契约检查 |
+| 可复现性 | 哈希固定依赖、预注册协议、原始结果包、内容摘要和可重放审计记录 |
+| 安全 | 按需启用 Bandit、CodeQL 和 Scorecards，并使用威胁模型、最小权限与依赖审查 |
+| 供应链 | SPDX、REUSE 3.x、适用时的 SBOM、固定版本 CI Actions 和发布清单 |
+| 多语言验证 | Python/Rust 等价性、PyO3/Maturin、Go 与 Julia 测试、Lean 构建、WebAssembly、RTL 和形式化检查 |
+| 文档 | 严格 MkDocs/Sphinx 构建、API 参考、架构决策、验证记录和明确的非主张 |
+
+## PyPI 发布
+
+<p align="center">
+  <a href="https://pypi.org/user/anulum/"><img alt="Miroslav Sotek 的 PyPI 主页" src="https://img.shields.io/badge/PyPI-Miroslav_Sotek_%40_anulum-3775a9?style=for-the-badge&logo=pypi&logoColor=white"></a>
+</p>
+
+经验证的 [PyPI 主页](https://pypi.org/user/anulum/) 当前包含 19 个已发布
+项目，包括 Python 包、Rust 加速引擎、领域内核和命令行工具。
+
 ## 代表性项目
 
 | 项目 | 功能 | 成熟度 |
 |---|---|---|
-| [Synapse Channel](https://github.com/anulum/synapse-channel) | 面向编程智能体集群的本地优先控制平面：主张、角色、持久邮箱、回执、审计和联邦协作 | **现在可用** — 功能核心可用，持续开发中 |
-| [Rigor Foundry](https://github.com/anulum/rigor-foundry) | 基于证据的仓库审计和修复规划 | **现在可用** — 持续强化中 |
-| [Director-AI](https://github.com/anulum/director-ai) | 实时 LLM 防护：NLI 与 RAG 事实检查，以及可选的主张级流式停止 | **活跃研究** — 正在验证的功能系统 |
-| [SC-NeuroCore](https://github.com/anulum/sc-neurocore) | 多语言随机与神经形态框架（Python、Rust SIMD、Verilog、HDC/VSA） | **活跃研究** — 持续开发的平台 |
-| [SCPN Quantum Control](https://github.com/anulum/scpn-quantum-control) | 基于证据的耦合振荡器同步量子模拟 | **实验性** — 预注册研究计划 |
+| [Synapse Channel](https://github.com/anulum/synapse-channel) | 面向编程智能体集群的本地优先控制平面：主张、角色、持久邮箱、回执、审计和联邦协作 | **现在可用**: 功能核心可用，持续开发中 |
+| [Rigor Foundry](https://github.com/anulum/rigor-foundry) | 基于证据的仓库审计和修复规划 | **现在可用**: 持续强化中 |
+| [Director-AI](https://github.com/anulum/director-ai) | 实时 LLM 防护：NLI 与 RAG 事实检查，以及可选的主张级流式停止 | **活跃研究**: 正在验证的功能系统 |
+| [SC-NeuroCore](https://github.com/anulum/sc-neurocore) | 多语言随机与神经形态框架（Python、Rust SIMD、Verilog、HDC/VSA） | **活跃研究**: 持续开发的平台 |
+| [SCPN Quantum Control](https://github.com/anulum/scpn-quantum-control) | 基于证据的耦合振荡器同步量子模拟 | **实验性**: 预注册研究计划 |
 
 相关控制与聚变研究位于 SCPN 系列中：
 [control](https://github.com/anulum/scpn-control)、

@@ -9,22 +9,23 @@ GitHub 個人プロフィール概要
 -->
 
 <p align="center">
-  <img src="assets/profile-header.svg" width="1200" alt="Miroslav Šotek — エビデンス、計算、制御">
+  <img src="assets/profile-header.svg" width="1200" alt="Miroslav Šotek: エビデンス、計算、制御">
 </p>
 
 <p align="center">
-  <a href="README.md"><kbd>EN</kbd></a>
-  <a href="README.de.md"><kbd>DE</kbd></a>
-  <a href="README.sk.md"><kbd>SK</kbd></a>
-  <a href="README.zh-CN.md"><kbd>中文</kbd></a>
-  <a href="README.ja.md"><kbd>日本語</kbd></a>
+  <a href="README.md"><img alt="English" src="https://img.shields.io/badge/EN-English-d9a441?style=for-the-badge"></a>
+  <a href="README.de.md"><img alt="Deutsch" src="https://img.shields.io/badge/DE-Deutsch-4dd6c8?style=for-the-badge"></a>
+  <a href="README.sk.md"><img alt="Slovenčina" src="https://img.shields.io/badge/SK-Sloven%C4%8Dina-2f81f7?style=for-the-badge"></a>
+  <a href="README.zh-CN.md"><img alt="中文" src="https://img.shields.io/badge/ZH-%E4%B8%AD%E6%96%87-c62828?style=for-the-badge"></a>
+  <a href="README.ja.md"><img alt="日本語" src="https://img.shields.io/badge/JA-%E6%97%A5%E6%9C%AC%E8%AA%9E-8e44ad?style=for-the-badge"></a>
 </p>
 
 <p align="center">
-  <a href="https://anulum.li">ウェブサイト</a> ·
-  <a href="https://orcid.org/0009-0009-3560-0851">ORCID</a> ·
-  <a href="https://github.com/sponsors/anulum">スポンサー</a> ·
-  <a href="mailto:protoscience@anulum.li">protoscience@anulum.li</a>
+  <a href="https://anulum.li"><img alt="ウェブサイト" src="https://img.shields.io/badge/anulum.li-Website-09111f?style=flat-square&logo=safari&logoColor=white"></a>
+  <a href="https://orcid.org/0009-0009-3560-0851"><img alt="ORCID" src="https://img.shields.io/badge/ORCID-0009--0009--3560--0851-a6ce39?style=flat-square&logo=orcid&logoColor=white"></a>
+  <a href="https://pypi.org/user/anulum/"><img alt="PyPI" src="https://img.shields.io/badge/PyPI-19_%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88-3775a9?style=flat-square&logo=pypi&logoColor=white"></a>
+  <a href="https://github.com/sponsors/anulum"><img alt="GitHub Sponsors" src="https://img.shields.io/badge/Sponsors-%E5%85%AC%E9%96%8B%E4%BD%9C%E6%A5%AD%E3%82%92%E6%94%AF%E6%8F%B4-ea4aaa?style=flat-square&logo=githubsponsors&logoColor=white"></a>
+  <a href="mailto:protoscience@anulum.li"><img alt="メール" src="https://img.shields.io/badge/Email-protoscience%40anulum.li-4dd6c8?style=flat-square"></a>
 </p>
 
 # Miroslav Šotek
@@ -32,14 +33,37 @@ GitHub 個人プロフィール概要
 スイスの [Anulum Institute](https://anulum.li) で活動する独立研究者、
 システムエンジニアです。
 
-AI システムとマルチエージェント・エンジニアリングのための、
-**エビデンスに基づくインフラストラクチャ**を構築しています。受領記録を
-伴う協調、モデル出力の信頼性保護、数学から実行可能なハードウェア経路
-までを結ぶ研究スタックを対象とします。
+AI システム、マルチエージェント・エンジニアリング、科学技術計算、
+ニューロモーフィックハードウェア、量子シミュレーション、制御のための
+**エビデンスに基づくインフラストラクチャ**を構築しています。数理モデルを
+再現可能なソフトウェア、ネイティブ高速化、形式モデル、実行可能な
+ハードウェア経路へ接続します。
 
 主張の信頼性は、それを支える測定、成果物、検証によって決まります。
 
-**技術スタック：** Python · Rust · Verilog · 必要に応じた形式手法とプロセスツール。
+## 言語とプラットフォーム
+
+**主要実装：** Python、Rust、TypeScript、JavaScript、Go。
+
+**科学・ネイティブ・形式手法：** Julia、Mojo、C++、C、Lean 4、Jupyter、LaTeX。
+
+**ハードウェア、Web、運用：** Verilog、SystemVerilog、WGSL/WebGPU、
+HTML/CSS、Shell、Docker、Linux。
+
+<p>
+  <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white">
+  <img alt="Rust" src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white">
+  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white">
+  <img alt="Go" src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white">
+  <img alt="Julia" src="https://img.shields.io/badge/Julia-9558B2?style=flat-square&logo=julia&logoColor=white">
+  <img alt="Mojo" src="https://img.shields.io/badge/Mojo-FF4C4C?style=flat-square&logo=modular&logoColor=white">
+  <img alt="C++" src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white">
+  <img alt="Lean" src="https://img.shields.io/badge/Lean_4-6B4FBB?style=flat-square">
+  <img alt="Verilog" src="https://img.shields.io/badge/Verilog_%7C_SystemVerilog-8A2BE2?style=flat-square">
+  <img alt="WebGPU" src="https://img.shields.io/badge/WGSL_%7C_WebGPU-005A9C?style=flat-square">
+  <img alt="Jupyter" src="https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white">
+  <img alt="Docker" src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white">
+</p>
 
 ## はじめに
 
@@ -68,10 +92,10 @@ SCPN suite           制御、プラズマ、位相、量子の研究経路
 
 ### 代表的なスタック利用手順
 
-1. **Rigor Foundry** — 壊れているもの、未証明なもの、安全に主張できないものを特定します。
-2. **Director-AI** — 信頼されるモデル出力を保護します。
-3. **Synapse Channel** — 主張、メールボックス、受領記録を用いてマルチエージェント作業を運用します。
-4. **SC-NeuroCore / SCPN** — ニューロモーフィック、物理、制御級の計算問題を扱います。
+1. **Rigor Foundry**: 壊れているもの、未証明なもの、安全に主張できないものを特定します。
+2. **Director-AI**: 信頼されるモデル出力を保護します。
+3. **Synapse Channel**: 主張、メールボックス、受領記録を用いてマルチエージェント作業を運用します。
+4. **SC-NeuroCore / SCPN**: ニューロモーフィック、物理、制御級の計算問題を扱います。
 
 研究、検証、製品準備状態は分離されています。活発な開発は準備完了を
 意味しません。
@@ -81,105 +105,91 @@ SCPN suite           制御、プラズマ、位相、量子の研究経路
 
 ## エコシステムマップ
 
-現在のポートフォリオマップには、5 つの独立したグループに属する
-**39 のマッピング済みリポジトリメンバー**があります。内訳は、公開
-リポジトリ 31、非公開またはプロプライエタリ製品領域 6、準備中の炉
-リポジトリ 2 です。
+現在のポートフォリオは、5 つの独立したグループに属する **39 の
+リポジトリ**で構成されます。内訳は公開リポジトリ 33、非公開製品領域
+6 です。
 [HushLine](https://github.com/anulum/HushLine) は、これらの研究・製品
 ポートフォリオ外にある独立した公開プロジェクトです。
 
-```mermaid
-flowchart TB
-    R["SCPN Reactor Systems<br/>25 リポジトリ"]
-    N["SC Neuromorphic Computing Systems<br/>SC-NeuroCore"]
-    Q["SCPN Quantum Computing Systems<br/>SCPN Quantum Control"]
-    I["SCPN Systems Integration and Control<br/>4 リポジトリ"]
-    A["Agentic Coordination, Assurance and Continuity<br/>8 リポジトリ"]
-
-    R --> I
-    N --> I
-    Q --> I
-    I --> A
-    R -. エビデンスと監査 .-> A
-    N -. エビデンスと監査 .-> A
-    Q -. エビデンスと監査 .-> A
-```
+<p align="center">
+  <img src="assets/ecosystem-map.svg" width="1200" alt="5 つの独立したリポジトリグループから成る Anulum ポートフォリオ">
+</p>
 
 矢印は、契約、統合、エビデンス、監査の関係を表します。リポジトリの
 所有権を統合するものではなく、科学的検証、運用準備完了、アクチュエータ
 制御権限を意味するものでもありません。
 
-**ステータス：** `公開` · `非公開 / プロプライエタリ` · `準備中`
+**ステータス：** `公開` · `公開 / アーキテクチャのみ` · `非公開` · `非公開 / プロプライエタリ`
 
 <details>
-<summary><strong>SCPN Reactor Systems — 25 リポジトリ</strong></summary>
+<summary><strong>SCPN Reactor Systems: 25 リポジトリ</strong></summary>
 
 装置ファミリーの物理、共有数値カーネル、炉モデル、構成の所有権を扱います。
 リポジトリが存在するだけでは、物理モデルの検証や装置の実用準備完了を
 示しません。
 
-- [SCPN Beam Target Core](https://github.com/anulum/scpn-beam-target-core) — `公開`
-- [SCPN Dense Plasma Focus Core](https://github.com/anulum/scpn-dense-plasma-focus-core) — `公開`
-- [SCPN FRC Core](https://github.com/anulum/scpn-frc-core) — `公開`
-- [SCPN Fusion Core](https://github.com/anulum/scpn-fusion-core) — `公開`
-- [SCPN Fusion-Fission Hybrid Core](https://github.com/anulum/scpn-fusion-fission-hybrid-core) — `公開`
-- [SCPN ICF Beam Core](https://github.com/anulum/scpn-icf-beam-core) — `公開`
-- [SCPN ICF Impact Core](https://github.com/anulum/scpn-icf-impact-core) — `公開`
-- [SCPN ICF Laser Core](https://github.com/anulum/scpn-icf-laser-core) — `公開`
-- [SCPN IEC Core](https://github.com/anulum/scpn-iec-core) — `公開`
-- [SCPN Levitated Dipole Core](https://github.com/anulum/scpn-levitated-dipole-core) — `公開`
-- [SCPN Magnetic Cusp Core](https://github.com/anulum/scpn-magnetic-cusp-core) — `公開`
-- [SCPN MIF Core](https://github.com/anulum/scpn-mif-core) — `公開`
-- [SCPN MIF Liner Core](https://github.com/anulum/scpn-mif-liner-core) — `公開`
-- [SCPN MIF MagLIF Core](https://github.com/anulum/scpn-mif-maglif-core) — `公開`
-- [SCPN MIF Plasma Jet Core](https://github.com/anulum/scpn-mif-plasma-jet-core) — `公開`
-- [SCPN Mirror Core](https://github.com/anulum/scpn-mirror-core) — `公開`
-- [SCPN RFP Core](https://github.com/anulum/scpn-rfp-core) — `公開`
-- [SCPN Spheromak Core](https://github.com/anulum/scpn-spheromak-core) — `公開`
-- [SCPN Stellarator Core](https://github.com/anulum/scpn-stellarator-core) — `公開`
-- [SCPN Theta Pinch Core](https://github.com/anulum/scpn-theta-pinch-core) — `公開`
-- [SCPN Tokamak Core](https://github.com/anulum/scpn-tokamak-core) — `公開`
-- [SCPN Z-Pinch Core](https://github.com/anulum/scpn-z-pinch-core) — `公開`
-- [SCPN Reactor Kernels](https://github.com/anulum/scpn-reactor-kernels) — `公開`
-- **SCPN Lattice Fusion Core** — `準備中`
-- **SCPN Muon Fusion Core** — `準備中`
+- [SCPN Beam Target Core](https://github.com/anulum/scpn-beam-target-core): `公開`
+- [SCPN Dense Plasma Focus Core](https://github.com/anulum/scpn-dense-plasma-focus-core): `公開`
+- [SCPN FRC Core](https://github.com/anulum/scpn-frc-core): `公開`
+- [SCPN Fusion Core](https://github.com/anulum/scpn-fusion-core): `公開`
+- [SCPN Fusion-Fission Hybrid Core](https://github.com/anulum/scpn-fusion-fission-hybrid-core): `公開`
+- [SCPN ICF Beam Core](https://github.com/anulum/scpn-icf-beam-core): `公開`
+- [SCPN ICF Impact Core](https://github.com/anulum/scpn-icf-impact-core): `公開`
+- [SCPN ICF Laser Core](https://github.com/anulum/scpn-icf-laser-core): `公開`
+- [SCPN IEC Core](https://github.com/anulum/scpn-iec-core): `公開`
+- [SCPN Levitated Dipole Core](https://github.com/anulum/scpn-levitated-dipole-core): `公開`
+- [SCPN Magnetic Cusp Core](https://github.com/anulum/scpn-magnetic-cusp-core): `公開`
+- [SCPN MIF Core](https://github.com/anulum/scpn-mif-core): `公開`
+- [SCPN MIF Liner Core](https://github.com/anulum/scpn-mif-liner-core): `公開`
+- [SCPN MIF MagLIF Core](https://github.com/anulum/scpn-mif-maglif-core): `公開`
+- [SCPN MIF Plasma Jet Core](https://github.com/anulum/scpn-mif-plasma-jet-core): `公開`
+- [SCPN Mirror Core](https://github.com/anulum/scpn-mirror-core): `公開`
+- [SCPN RFP Core](https://github.com/anulum/scpn-rfp-core): `公開`
+- [SCPN Spheromak Core](https://github.com/anulum/scpn-spheromak-core): `公開`
+- [SCPN Stellarator Core](https://github.com/anulum/scpn-stellarator-core): `公開`
+- [SCPN Theta Pinch Core](https://github.com/anulum/scpn-theta-pinch-core): `公開`
+- [SCPN Tokamak Core](https://github.com/anulum/scpn-tokamak-core): `公開`
+- [SCPN Z-Pinch Core](https://github.com/anulum/scpn-z-pinch-core): `公開`
+- [SCPN Reactor Kernels](https://github.com/anulum/scpn-reactor-kernels): `公開`
+- [SCPN Lattice Fusion Core](https://github.com/anulum/scpn-lattice-fusion-core): `公開 / アーキテクチャのみ`
+- [SCPN Muon Fusion Core](https://github.com/anulum/scpn-muon-fusion-core): `公開 / アーキテクチャのみ`
 
 </details>
 
 <details>
-<summary><strong>SCPN Systems Integration and Control — 4 リポジトリ</strong></summary>
+<summary><strong>SCPN Systems Integration and Control: 4 リポジトリ</strong></summary>
 
 分野横断のセマンティクス、制御受け入れ、フェデレーション、エビデンス表示、
 共有インターフェース契約を扱います。
 
-- [SCPN Control](https://github.com/anulum/scpn-control) — `公開`
-- [SCPN Phase Orchestrator](https://github.com/anulum/scpn-phase-orchestrator) — `公開`
-- **SCPN Studio** — `非公開 / プロプライエタリ`
-- **SCPN Studio Platform** — `非公開 / プロプライエタリ`
+- [SCPN Control](https://github.com/anulum/scpn-control): `公開`
+- [SCPN Phase Orchestrator](https://github.com/anulum/scpn-phase-orchestrator): `公開`
+- **SCPN Studio**: `非公開 / プロプライエタリ`
+- **SCPN Studio Platform**: `非公開 / プロプライエタリ`
 
 </details>
 
 <details>
-<summary><strong>Agentic Coordination, Assurance and Continuity — 8 リポジトリ</strong></summary>
+<summary><strong>Agentic Coordination, Assurance and Continuity: 8 リポジトリ</strong></summary>
 
 エージェント協調、メモリ、応答保証、リポジトリエビデンス、アクション
 ガバナンス、商用コントロールプレーンを扱います。
 
-- [Director-AI](https://github.com/anulum/director-ai) — `公開`
-- **Director Class AI** — `非公開 / プロプライエタリ`
-- **Director AI Cloud** — `非公開 / プロプライエタリ`
-- [Rigor Foundry](https://github.com/anulum/rigor-foundry) — `公開`
-- [Remanentia](https://github.com/anulum/remanentia) — `公開`
-- **Remanentia Portal** — `非公開 / プロプライエタリ`
-- [Synapse Channel](https://github.com/anulum/synapse-channel) — `公開`
-- **Synapse Channel Fleet** — `非公開 / プロプライエタリ`
+- [Director-AI](https://github.com/anulum/director-ai): `公開`
+- **Director Class AI**: `非公開 / プロプライエタリ`
+- **Director AI Cloud**: `非公開 / プロプライエタリ`
+- [Rigor Foundry](https://github.com/anulum/rigor-foundry): `公開`
+- [Remanentia](https://github.com/anulum/remanentia): `公開`
+- **Remanentia Portal**: `非公開 / プロプライエタリ`
+- [Synapse Channel](https://github.com/anulum/synapse-channel): `公開`
+- **Synapse Channel Fleet**: `非公開 / プロプライエタリ`
 
 </details>
 
 <details>
-<summary><strong>SC Neuromorphic Computing Systems — 1 リポジトリ</strong></summary>
+<summary><strong>SC Neuromorphic Computing Systems: 1 リポジトリ</strong></summary>
 
-- [SC-NeuroCore](https://github.com/anulum/sc-neurocore) — `公開`
+- [SC-NeuroCore](https://github.com/anulum/sc-neurocore): `公開`
 
 確率的コンピューティング、スパイキングシステム、超次元表現、ネイティブ
 高速化、コンパイラ、RTL/FPGA 経路を扱います。
@@ -187,24 +197,66 @@ flowchart TB
 </details>
 
 <details>
-<summary><strong>SCPN Quantum Computing Systems — 1 リポジトリ</strong></summary>
+<summary><strong>SCPN Quantum Computing Systems: 1 リポジトリ</strong></summary>
 
-- [SCPN Quantum Control](https://github.com/anulum/scpn-quantum-control) — `公開`
+- [SCPN Quantum Control](https://github.com/anulum/scpn-quantum-control): `公開`
 
 エビデンスに基づく量子コンパイル、シミュレーション、ハードウェア実行、
 ハッシュで結合された実験記録を扱います。
 
 </details>
 
+<details>
+<summary><strong>独立ツール</strong> &nbsp; 公開リポジトリ 1</summary>
+
+- [HushLine](https://github.com/anulum/HushLine)：stdout と stderr を
+  フィルタリング、制限し、必要に応じて秘匿化する決定論的コマンドラッパー。
+
+</details>
+
+## エンジニアリング標準
+
+<p>
+  <img alt="pytest" src="https://img.shields.io/badge/Tests-pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white">
+  <img alt="Ruff" src="https://img.shields.io/badge/Lint-Ruff-D7FF64?style=flat-square&logo=ruff&logoColor=111111">
+  <img alt="mypy" src="https://img.shields.io/badge/Types-mypy-2A6DB2?style=flat-square">
+  <img alt="Cargo" src="https://img.shields.io/badge/Native-Cargo-000000?style=flat-square&logo=rust&logoColor=white">
+  <img alt="CodeQL" src="https://img.shields.io/badge/Security-CodeQL-2f81f7?style=flat-square&logo=github&logoColor=white">
+  <img alt="REUSE" src="https://img.shields.io/badge/Licensing-REUSE_3.x-4dd6c8?style=flat-square">
+</p>
+
+具体的な実践は各リポジトリのリスクと範囲に応じて選択され、すべての
+リポジトリがすべてのツールを実行するわけではありません。
+
+| 品質領域 | ポートフォリオで使用する実践 |
+|---|---|
+| 正確性 | 決定論的 pytest/Cargo テスト、カバレッジゲート、同等性テスト、回帰フィクスチャ、明示的な負例 |
+| 静的品質 | Ruff、宣言された範囲での strict mypy、Cargo fmt、警告を拒否する Clippy、API 契約チェック |
+| 再現性 | ハッシュ固定依存関係、事前登録プロトコル、生の結果パック、コンテンツダイジェスト、再生可能な監査記録 |
+| セキュリティ | 必要に応じた Bandit、CodeQL、Scorecards、脅威モデル、最小権限、依存関係レビュー |
+| サプライチェーン | SPDX、REUSE 3.x、適用時の SBOM、固定 CI Actions、リリースマニフェスト |
+| 多言語検証 | Python/Rust 同等性、PyO3/Maturin、Go/Julia テスト、Lean ビルド、WebAssembly、RTL、形式チェック |
+| ドキュメント | strict MkDocs/Sphinx、API リファレンス、設計判断、検証記録、明示的な非主張 |
+
+## PyPI 公開
+
+<p align="center">
+  <a href="https://pypi.org/user/anulum/"><img alt="Miroslav Sotek の PyPI プロフィール" src="https://img.shields.io/badge/PyPI-Miroslav_Sotek_%40_anulum-3775a9?style=for-the-badge&logo=pypi&logoColor=white"></a>
+</p>
+
+検証済みの [PyPI プロフィール](https://pypi.org/user/anulum/) には現在、
+Python パッケージ、Rust 高速化エンジン、ドメインカーネル、CLI ツールを
+含む 19 プロジェクトが公開されています。
+
 ## 主なプロジェクト
 
 | プロジェクト | 役割 | 成熟度 |
 |---|---|---|
-| [Synapse Channel](https://github.com/anulum/synapse-channel) | コーディングエージェント群向けのローカルファースト・コントロールプレーン：主張、役割、永続メールボックス、受領記録、監査、フェデレーション | **現在利用可能** — 機能するコア、活発に開発中 |
-| [Rigor Foundry](https://github.com/anulum/rigor-foundry) | エビデンスに結び付いたリポジトリ監査と修復計画 | **現在利用可能** — 強化作業を継続中 |
-| [Director-AI](https://github.com/anulum/director-ai) | NLI と RAG の事実確認、任意の主張単位ストリーミング停止を備えるリアルタイム LLM ガードレール | **研究進行中** — 検証中の機能的システム |
-| [SC-NeuroCore](https://github.com/anulum/sc-neurocore) | 多言語の確率的・ニューロモーフィックフレームワーク（Python、Rust SIMD、Verilog、HDC/VSA） | **研究進行中** — 継続的に開発中のプラットフォーム |
-| [SCPN Quantum Control](https://github.com/anulum/scpn-quantum-control) | エビデンスに基づく結合振動子同期の量子シミュレーション | **実験的** — 事前登録された研究プログラム |
+| [Synapse Channel](https://github.com/anulum/synapse-channel) | コーディングエージェント群向けのローカルファースト・コントロールプレーン：主張、役割、永続メールボックス、受領記録、監査、フェデレーション | **現在利用可能**: 機能するコア、活発に開発中 |
+| [Rigor Foundry](https://github.com/anulum/rigor-foundry) | エビデンスに結び付いたリポジトリ監査と修復計画 | **現在利用可能**: 強化作業を継続中 |
+| [Director-AI](https://github.com/anulum/director-ai) | NLI と RAG の事実確認、任意の主張単位ストリーミング停止を備えるリアルタイム LLM ガードレール | **研究進行中**: 検証中の機能的システム |
+| [SC-NeuroCore](https://github.com/anulum/sc-neurocore) | 多言語の確率的・ニューロモーフィックフレームワーク（Python、Rust SIMD、Verilog、HDC/VSA） | **研究進行中**: 継続的に開発中のプラットフォーム |
+| [SCPN Quantum Control](https://github.com/anulum/scpn-quantum-control) | エビデンスに基づく結合振動子同期の量子シミュレーション | **実験的**: 事前登録された研究プログラム |
 
 関連する制御・核融合研究は SCPN スイートにあります：
 [control](https://github.com/anulum/scpn-control)、

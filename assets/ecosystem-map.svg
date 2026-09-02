@@ -1,0 +1,97 @@
+<!--
+SPDX-License-Identifier: AGPL-3.0-or-later
+Commercial licence available
+© Concepts 1996–2026 Miroslav Šotek. All rights reserved.
+© Code 2020–2026 Miroslav Šotek. All rights reserved.
+ORCID: 0009-0009-3560-0851
+Contact: www.anulum.li | protoscience@anulum.li
+Anulum portfolio ecosystem map
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title description">
+  <title id="title">Anulum portfolio ecosystem</title>
+  <desc id="description">Five independent repository portfolios connected by integration, evidence, and audit relationships.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#09111f"/>
+      <stop offset="0.55" stop-color="#111d32"/>
+      <stop offset="1" stop-color="#071821"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#d9a441"/>
+      <stop offset="1" stop-color="#f1d28a"/>
+    </linearGradient>
+    <linearGradient id="teal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#279d98"/>
+      <stop offset="1" stop-color="#4dd6c8"/>
+    </linearGradient>
+    <marker id="arrowGold" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#d9a441"/>
+    </marker>
+    <marker id="arrowTeal" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#4dd6c8"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="700" rx="28" fill="url(#background)"/>
+  <g fill="none" stroke="#62748f" stroke-opacity="0.14" stroke-width="1">
+    <path d="M0 88H1200M0 294H1200M0 486H1200M0 650H1200"/>
+    <path d="M200 0V700M400 0V700M600 0V700M800 0V700M1000 0V700"/>
+  </g>
+
+  <text x="60" y="52" fill="#f4f7fb" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="28" font-weight="650" letter-spacing="3">PORTFOLIO ECOSYSTEM</text>
+  <text x="1140" y="50" text-anchor="end" fill="#8da0ba" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="15" letter-spacing="1.4">39 REPOSITORIES · 5 INDEPENDENT GROUPS</text>
+
+  <g fill="none" stroke-linecap="round" stroke-width="2.5">
+    <path d="M230 254 C250 300 360 316 440 350" stroke="#d9a441" marker-end="url(#arrowGold)"/>
+    <path d="M600 254 L600 330" stroke="#d9a441" marker-end="url(#arrowGold)"/>
+    <path d="M970 254 C950 300 840 316 760 350" stroke="#d9a441" marker-end="url(#arrowGold)"/>
+    <path d="M600 446 L600 514" stroke="#4dd6c8" marker-end="url(#arrowTeal)"/>
+    <path d="M190 254 C150 430 270 555 360 580" stroke="#4dd6c8" stroke-dasharray="7 9" marker-end="url(#arrowTeal)"/>
+    <path d="M1010 254 C1050 430 930 555 840 580" stroke="#4dd6c8" stroke-dasharray="7 9" marker-end="url(#arrowTeal)"/>
+  </g>
+
+  <g>
+    <g>
+      <rect x="60" y="105" width="340" height="150" rx="18" fill="#111f34" stroke="#d9a441" stroke-width="2"/>
+      <rect x="60" y="105" width="8" height="150" rx="4" fill="url(#gold)"/>
+      <text x="92" y="148" fill="#f4f7fb" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="21" font-weight="650">SCPN REACTOR SYSTEMS</text>
+      <text x="92" y="184" fill="#f1d28a" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="34" font-weight="700">25</text>
+      <text x="145" y="183" fill="#9fb0c7" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="16">public repositories</text>
+      <text x="92" y="222" fill="#7f92ad" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="14">physics · devices · kernels · geometry</text>
+    </g>
+
+    <g>
+      <rect x="430" y="105" width="340" height="150" rx="18" fill="#111f34" stroke="#7992b5" stroke-width="2"/>
+      <rect x="430" y="105" width="8" height="150" rx="4" fill="#7992b5"/>
+      <text x="462" y="148" fill="#f4f7fb" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="19" font-weight="650">SC NEUROMORPHIC SYSTEMS</text>
+      <text x="462" y="184" fill="#b8c5d8" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="34" font-weight="700">1</text>
+      <text x="492" y="183" fill="#9fb0c7" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="16">public repository</text>
+      <text x="462" y="222" fill="#7f92ad" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="14">stochastic · spiking · HDC · RTL</text>
+    </g>
+
+    <g>
+      <rect x="800" y="105" width="340" height="150" rx="18" fill="#111f34" stroke="#7992b5" stroke-width="2"/>
+      <rect x="800" y="105" width="8" height="150" rx="4" fill="#7992b5"/>
+      <text x="832" y="148" fill="#f4f7fb" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="19" font-weight="650">SCPN QUANTUM SYSTEMS</text>
+      <text x="832" y="184" fill="#b8c5d8" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="34" font-weight="700">1</text>
+      <text x="862" y="183" fill="#9fb0c7" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="16">public repository</text>
+      <text x="832" y="222" fill="#7f92ad" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="14">simulation · hardware · evidence</text>
+    </g>
+
+    <g>
+      <rect x="315" y="330" width="570" height="116" rx="18" fill="#102735" stroke="#d9a441" stroke-width="2"/>
+      <rect x="315" y="330" width="8" height="116" rx="4" fill="url(#gold)"/>
+      <text x="350" y="374" fill="#f4f7fb" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="21" font-weight="650">SCPN SYSTEMS INTEGRATION &amp; CONTROL</text>
+      <text x="350" y="414" fill="#f1d28a" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="17">4 repositories · semantics · control · studio · evidence</text>
+    </g>
+
+    <g>
+      <rect x="240" y="514" width="720" height="120" rx="18" fill="#0d2930" stroke="#4dd6c8" stroke-width="2"/>
+      <rect x="240" y="514" width="8" height="120" rx="4" fill="url(#teal)"/>
+      <text x="278" y="558" fill="#f4f7fb" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="21" font-weight="650">AGENTIC COORDINATION, ASSURANCE &amp; CONTINUITY</text>
+      <text x="278" y="600" fill="#70e0d5" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="17">8 repositories · coordination · audit · memory · action governance</text>
+    </g>
+  </g>
+
+  <text x="600" y="675" text-anchor="middle" fill="#7f92ad" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="14" letter-spacing="1.5">CONTRACT FLOW · EVIDENCE FLOW · INDEPENDENT OWNERSHIP</text>
+</svg>
