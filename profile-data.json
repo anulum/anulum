@@ -1,0 +1,132 @@
+{
+  "schema_version": "1.0.0",
+  "profile": {
+    "name": "Miroslav Šotek",
+    "github": "https://github.com/anulum",
+    "website": "https://anulum.li",
+    "orcid": "https://orcid.org/0009-0009-3560-0851",
+    "pypi": "https://pypi.org/user/anulum/"
+  },
+  "stats": {
+    "portfolio_repositories": 39,
+    "public_portfolio_repositories": 33,
+    "private_portfolio_repositories": 6,
+    "standalone_public_repositories": 1,
+    "pypi_projects": 19
+  },
+  "translations": [
+    "README.md",
+    "README.de.md",
+    "README.sk.md",
+    "README.zh-CN.md",
+    "README.ja.md"
+  ],
+  "portfolios": [
+    {
+      "id": "reactor",
+      "name": "SCPN Reactor Systems",
+      "repositories": [
+        {"name": "SCPN Reactor Kernels", "url": "https://github.com/anulum/scpn-reactor-kernels", "access": "public"},
+        {"name": "SCPN Fusion Core", "url": "https://github.com/anulum/scpn-fusion-core", "access": "public"},
+        {"name": "SCPN MIF Core", "url": "https://github.com/anulum/scpn-mif-core", "access": "public"},
+        {"name": "SCPN Beam Target Core", "url": "https://github.com/anulum/scpn-beam-target-core", "access": "public"},
+        {"name": "SCPN Dense Plasma Focus Core", "url": "https://github.com/anulum/scpn-dense-plasma-focus-core", "access": "public"},
+        {"name": "SCPN FRC Core", "url": "https://github.com/anulum/scpn-frc-core", "access": "public"},
+        {"name": "SCPN Fusion-Fission Hybrid Core", "url": "https://github.com/anulum/scpn-fusion-fission-hybrid-core", "access": "public"},
+        {"name": "SCPN ICF Beam Core", "url": "https://github.com/anulum/scpn-icf-beam-core", "access": "public"},
+        {"name": "SCPN ICF Impact Core", "url": "https://github.com/anulum/scpn-icf-impact-core", "access": "public"},
+        {"name": "SCPN ICF Laser Core", "url": "https://github.com/anulum/scpn-icf-laser-core", "access": "public"},
+        {"name": "SCPN IEC Core", "url": "https://github.com/anulum/scpn-iec-core", "access": "public"},
+        {"name": "SCPN Lattice Fusion Core", "url": "https://github.com/anulum/scpn-lattice-fusion-core", "access": "public", "maturity": "architecture-only"},
+        {"name": "SCPN Levitated Dipole Core", "url": "https://github.com/anulum/scpn-levitated-dipole-core", "access": "public"},
+        {"name": "SCPN Magnetic Cusp Core", "url": "https://github.com/anulum/scpn-magnetic-cusp-core", "access": "public"},
+        {"name": "SCPN MIF Liner Core", "url": "https://github.com/anulum/scpn-mif-liner-core", "access": "public"},
+        {"name": "SCPN MIF MagLIF Core", "url": "https://github.com/anulum/scpn-mif-maglif-core", "access": "public"},
+        {"name": "SCPN MIF Plasma Jet Core", "url": "https://github.com/anulum/scpn-mif-plasma-jet-core", "access": "public"},
+        {"name": "SCPN Mirror Core", "url": "https://github.com/anulum/scpn-mirror-core", "access": "public"},
+        {"name": "SCPN Muon Fusion Core", "url": "https://github.com/anulum/scpn-muon-fusion-core", "access": "public", "maturity": "architecture-only"},
+        {"name": "SCPN RFP Core", "url": "https://github.com/anulum/scpn-rfp-core", "access": "public"},
+        {"name": "SCPN Spheromak Core", "url": "https://github.com/anulum/scpn-spheromak-core", "access": "public"},
+        {"name": "SCPN Stellarator Core", "url": "https://github.com/anulum/scpn-stellarator-core", "access": "public"},
+        {"name": "SCPN Theta Pinch Core", "url": "https://github.com/anulum/scpn-theta-pinch-core", "access": "public"},
+        {"name": "SCPN Tokamak Core", "url": "https://github.com/anulum/scpn-tokamak-core", "access": "public"},
+        {"name": "SCPN Z-Pinch Core", "url": "https://github.com/anulum/scpn-z-pinch-core", "access": "public"}
+      ]
+    },
+    {
+      "id": "integration-control",
+      "name": "SCPN Systems Integration and Control",
+      "repositories": [
+        {"name": "SCPN Control", "url": "https://github.com/anulum/scpn-control", "access": "public"},
+        {"name": "SCPN Phase Orchestrator", "url": "https://github.com/anulum/scpn-phase-orchestrator", "access": "public"},
+        {"name": "SCPN Studio", "url": null, "access": "private"},
+        {"name": "SCPN Studio Platform", "url": null, "access": "private"}
+      ]
+    },
+    {
+      "id": "agentic",
+      "name": "Agentic Coordination, Assurance and Continuity",
+      "repositories": [
+        {"name": "Director-AI", "url": "https://github.com/anulum/director-ai", "access": "public"},
+        {"name": "Director Class AI", "url": null, "access": "private"},
+        {"name": "Director AI Cloud", "url": null, "access": "private"},
+        {"name": "Rigor Foundry", "url": "https://github.com/anulum/rigor-foundry", "access": "public"},
+        {"name": "Remanentia", "url": "https://github.com/anulum/remanentia", "access": "public"},
+        {"name": "Remanentia Portal", "url": null, "access": "private"},
+        {"name": "Synapse Channel", "url": "https://github.com/anulum/synapse-channel", "access": "public"},
+        {"name": "Synapse Channel Fleet", "url": null, "access": "private"}
+      ]
+    },
+    {
+      "id": "neuromorphic",
+      "name": "SC Neuromorphic Computing Systems",
+      "repositories": [
+        {"name": "SC-NeuroCore", "url": "https://github.com/anulum/sc-neurocore", "access": "public"}
+      ]
+    },
+    {
+      "id": "quantum",
+      "name": "SCPN Quantum Computing Systems",
+      "repositories": [
+        {"name": "SCPN Quantum Control", "url": "https://github.com/anulum/scpn-quantum-control", "access": "public"}
+      ]
+    }
+  ],
+  "standalone_repositories": [
+    {"name": "HushLine", "url": "https://github.com/anulum/HushLine", "access": "public"}
+  ],
+  "pypi_projects": [
+    "synapse-channel",
+    "scpn-phase-orchestrator",
+    "spo-kernel",
+    "director-ai",
+    "director-ai-lite",
+    "scpn-quantum-control",
+    "scpn-fusion-rs",
+    "scpn-fusion",
+    "rigor-foundry",
+    "scpn-control",
+    "oscillatools",
+    "scpn-quantum-engine",
+    "scpn-studio-platform",
+    "sc-neurocore-engine",
+    "sc-neurocore",
+    "scpn-mif-core",
+    "remanentia",
+    "backfire-kernel",
+    "hushline"
+  ],
+  "evidence_links": [
+    "https://github.com/anulum/synapse-channel/blob/main/VALIDATION.md",
+    "https://github.com/anulum/director-ai/blob/main/VALIDATION.md",
+    "https://github.com/anulum/sc-neurocore/blob/main/VALIDATION.md",
+    "https://github.com/anulum/scpn-fusion-core/blob/main/VALIDATION.md",
+    "https://github.com/anulum/scpn-quantum-control/blob/main/docs/layout_relaxation_preregistration.md",
+    "https://github.com/anulum/scpn-quantum-control/blob/main/docs/hardware_result_packs.md"
+  ],
+  "forbidden_public_names": [
+    "SCPN-CONTROL-INFINITY",
+    "SCPN Control Infinity",
+    "scpn-control-infinity"
+  ]
+}

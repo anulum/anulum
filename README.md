@@ -28,6 +28,15 @@ Personal GitHub profile overview
   <a href="mailto:protoscience@anulum.li"><img alt="Email" src="https://img.shields.io/badge/Email-protoscience%40anulum.li-4dd6c8?style=flat-square"></a>
 </p>
 
+<p align="center">
+  <a href="#verified-work">Verified work</a> ·
+  <a href="#current-focus">Current focus</a> ·
+  <a href="#portfolio-ecosystem">Ecosystem</a> ·
+  <a href="#engineering-practice">Standards</a> ·
+  <a href="#research-output">Research output</a> ·
+  <a href="#collaboration">Collaboration</a>
+</p>
+
 # Miroslav Šotek
 
 Independent researcher and systems engineer at the
@@ -102,6 +111,35 @@ scientific notebooks, and multi-language API documentation.
 | Explore neuromorphic and stochastic computing | [SC-NeuroCore](https://github.com/anulum/sc-neurocore) and its [documentation](https://anulum.github.io/sc-neurocore/) |
 | Work with plasma models and control-grade runtimes | [SCPN Fusion Core](https://github.com/anulum/scpn-fusion-core) and [SCPN Control](https://github.com/anulum/scpn-control) |
 | Reproduce coupled-oscillator quantum experiments | [SCPN Quantum Control](https://github.com/anulum/scpn-quantum-control) |
+
+## Verified work
+
+These links lead to inspectable artefacts, not summary claims.
+
+<table>
+  <tr>
+    <td width="50%"><strong>Multi-agent coordination</strong><br><sub>Claims, durable messaging, federation, and threat-bounded execution.</sub><br><a href="https://github.com/anulum/synapse-channel/blob/main/VALIDATION.md">Validation</a> · <a href="https://github.com/anulum/synapse-channel/blob/main/docs/coordination-spec.md">Coordination specification</a> · <a href="https://github.com/anulum/synapse-channel/blob/main/docs/sandbox-threat-model.md">Threat model</a></td>
+    <td width="50%"><strong>LLM response assurance</strong><br><sub>NLI/RAG grounding, claim review, native acceleration, and declared capability boundaries.</sub><br><a href="https://github.com/anulum/director-ai/blob/main/VALIDATION.md">Validation</a> · <a href="https://github.com/anulum/director-ai/blob/main/benchmarks/PUBLIC_BENCHMARKS.md">Public benchmarks</a> · <a href="https://github.com/anulum/director-ai/blob/main/docs/_generated/capability_matrix.md">Capability matrix</a></td>
+  </tr>
+  <tr>
+    <td width="50%"><strong>Neuromorphic compute to RTL</strong><br><sub>Python models, Rust SIMD paths, compiler surfaces, and hardware evidence.</sub><br><a href="https://github.com/anulum/sc-neurocore/blob/main/VALIDATION.md">Validation</a> · <a href="https://github.com/anulum/sc-neurocore/blob/main/docs/hardware/SYNTHESIS_RESULTS.md">Synthesis results</a> · <a href="https://github.com/anulum/sc-neurocore/blob/main/docs/safety/TRACEABILITY_MATRIX.md">Traceability matrix</a></td>
+    <td width="50%"><strong>Plasma modelling and validation</strong><br><sub>Solver evidence, real-data paths, uncertainty boundaries, and reproducible artefacts.</sub><br><a href="https://github.com/anulum/scpn-fusion-core/blob/main/VALIDATION.md">Validation</a> · <a href="https://github.com/anulum/scpn-fusion-core/blob/main/docs/VALIDATION_REAL_DIIID_145419.md">DIII-D validation record</a> · <a href="https://doi.org/10.5281/zenodo.18820864">Software DOI</a></td>
+  </tr>
+  <tr>
+    <td width="50%"><strong>Quantum experiment governance</strong><br><sub>Preregistration, hardware result packs, raw counts, and explicit non-advantage boundaries.</sub><br><a href="https://github.com/anulum/scpn-quantum-control/blob/main/docs/layout_relaxation_preregistration.md">Preregistration</a> · <a href="https://github.com/anulum/scpn-quantum-control/blob/main/docs/hardware_result_packs.md">Result-pack contract</a> · <a href="https://doi.org/10.5281/zenodo.18821929">Software DOI</a></td>
+    <td width="50%"><strong>Research honesty in phase systems</strong><br><sub>Matched-false-alarm evaluation, negative results, and bounded transfer claims.</sub><br><a href="https://github.com/anulum/scpn-phase-orchestrator/blob/main/papers/submissions/README.md">Submission index</a> · <a href="https://doi.org/10.5281/zenodo.22113062">Negative-result preprint</a> · <a href="https://doi.org/10.5281/zenodo.22113116">Grid regime-map preprint</a></td>
+  </tr>
+</table>
+
+## Current focus
+
+<table>
+  <tr>
+    <td width="33%"><strong>Reactor portfolio</strong><br><sub>Consolidating shared kernels and governed device truth across 25 public reactor repositories.</sub></td>
+    <td width="33%"><strong>Agentic assurance</strong><br><sub>Joining coordination, memory, response assurance, action review, and repository evidence without collapsing ownership boundaries.</sub></td>
+    <td width="33%"><strong>Research to hardware</strong><br><sub>Carrying scientific models through native acceleration, formal checks, RTL, hardware runs, and inspectable result packs.</sub></td>
+  </tr>
+</table>
 
 ## How the stack is used
 
@@ -297,6 +335,17 @@ engines, domain kernels, and command-line tools.
 
 </details>
 
+## Research output
+
+| Surface | Verified route |
+|---|---|
+| Research identity | [ORCID 0009-0009-3560-0851](https://orcid.org/0009-0009-3560-0851) |
+| Software publication | [19 projects on PyPI](https://pypi.org/user/anulum/) |
+| Quantum-control software | [Zenodo DOI 10.5281/zenodo.18821929](https://doi.org/10.5281/zenodo.18821929) |
+| Fusion software | [Zenodo DOI 10.5281/zenodo.18820864](https://doi.org/10.5281/zenodo.18820864) |
+| Phase-system preprints | [Matched false-alarm study](https://doi.org/10.5281/zenodo.22113062) and [grid regime-map study](https://doi.org/10.5281/zenodo.22113116) |
+| HushLine software | [Zenodo DOI 10.5281/zenodo.20775432](https://doi.org/10.5281/zenodo.20775432) |
+
 ## Selected work
 
 | Project | Role | Maturity |
@@ -337,6 +386,13 @@ advantage claim.
 - Negative results and failure records remain part of the research output.
 
 ## Collaboration
+
+| Mode | Scope |
+|---|---|
+| Research collaboration | Reproducible studies in AI assurance, neuromorphic systems, quantum simulation, plasma physics, and control |
+| Technical collaboration | Architecture review, validation design, formal or hardware paths, and evidence-bound software engineering |
+| Commercial licensing | Dual-licensed and managed product surfaces through the [Anulum licensing route](https://www.anulum.li/licensing) |
+| Open-work sponsorship | CI, compute, hardware and quantum experiment time, and public documentation through [GitHub Sponsors](https://github.com/sponsors/anulum) |
 
 I welcome technically grounded collaboration in reliable AI infrastructure,
 multi-agent systems, neuromorphic computing, scientific software, formal

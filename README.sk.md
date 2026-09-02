@@ -28,6 +28,12 @@ Prehľad osobného profilu GitHub
   <a href="mailto:protoscience@anulum.li"><img alt="E-mail" src="https://img.shields.io/badge/E--mail-protoscience%40anulum.li-4dd6c8?style=flat-square"></a>
 </p>
 
+<p align="center">
+  <a href="#verified-work">Overená práca</a> · <a href="#current-focus">Aktuálne zameranie</a> ·
+  <a href="#portfolio-ecosystem">Ekosystém</a> · <a href="#engineering-practice">Štandardy</a> ·
+  <a href="#research-output">Výstupy</a> · <a href="#collaboration">Spolupráca</a>
+</p>
+
 # Miroslav Šotek
 
 Nezávislý výskumník a systémový inžinier v
@@ -79,6 +85,23 @@ Shell, Docker a Linux.
 Dokumentácia projektov sa nachádza aj na Pages stránkach jednotlivých
 repozitárov a na [anulum.li](https://anulum.li).
 
+<a id="verified-work"></a>
+## Overená práca
+
+| Oblasť | Kontrolovateľné dôkazy |
+|---|---|
+| Multiagentová koordinácia | [Validácia](https://github.com/anulum/synapse-channel/blob/main/VALIDATION.md), [špecifikácia](https://github.com/anulum/synapse-channel/blob/main/docs/coordination-spec.md), [threat model](https://github.com/anulum/synapse-channel/blob/main/docs/sandbox-threat-model.md) |
+| Overovanie odpovedí LLM | [Validácia](https://github.com/anulum/director-ai/blob/main/VALIDATION.md), [verejné benchmarky](https://github.com/anulum/director-ai/blob/main/benchmarks/PUBLIC_BENCHMARKS.md), [capability matrix](https://github.com/anulum/director-ai/blob/main/docs/_generated/capability_matrix.md) |
+| Neuromorfné výpočty až po RTL | [Validácia](https://github.com/anulum/sc-neurocore/blob/main/VALIDATION.md), [výsledky syntézy](https://github.com/anulum/sc-neurocore/blob/main/docs/hardware/SYNTHESIS_RESULTS.md), [traceability matrix](https://github.com/anulum/sc-neurocore/blob/main/docs/safety/TRACEABILITY_MATRIX.md) |
+| Plazma a quantum | [Validácia fúzie](https://github.com/anulum/scpn-fusion-core/blob/main/VALIDATION.md), [preregistrácia](https://github.com/anulum/scpn-quantum-control/blob/main/docs/layout_relaxation_preregistration.md), [hardware result packs](https://github.com/anulum/scpn-quantum-control/blob/main/docs/hardware_result_packs.md) |
+
+<a id="current-focus"></a>
+## Aktuálne zameranie
+
+- Spoločné jadrá a riadená pravda zariadení v 25 verejných Reactor repozitároch.
+- Koordinácia, pamäť, overovanie odpovedí, kontrola akcií a repo dôkazy s jasnými hranicami vlastníctva.
+- Vedecké modely prevedené cez natívnu akceleráciu, formálne kontroly, RTL a kontrolovateľné result packs.
+
 ## Mapa laboratória
 
 Anulum je technologický celok laboratória, nie jeden produkt:
@@ -105,6 +128,7 @@ nie je tvrdením o pripravenosti.
 nižšie. Ostatné verejné repozitáre patria k výskumu rodiny SCPN alebo k
 podporným nástrojom.
 
+<a id="portfolio-ecosystem"></a>
 ## Mapa ekosystému
 
 Aktívna portfóliová mapa obsahuje **39 repozitárov** v piatich nezávislých
@@ -215,6 +239,7 @@ experimentálne záznamy viazané hashom.
 
 </details>
 
+<a id="engineering-practice"></a>
 ## Inžinierske štandardy
 
 <p>
@@ -248,6 +273,18 @@ repozitár používa každý nástroj.
 Overený [PyPI profil](https://pypi.org/user/anulum/) momentálne obsahuje 19
 publikovaných projektov: Python balíky, Rust akcelerované enginy, doménové jadrá
 a nástroje príkazového riadka.
+
+<a id="research-output"></a>
+## Výskumné výstupy
+
+| Plocha | Overená cesta |
+|---|---|
+| Výskumná identita | [ORCID 0009-0009-3560-0851](https://orcid.org/0009-0009-3560-0851) |
+| Softvér | [19 projektov na PyPI](https://pypi.org/user/anulum/) |
+| Quantum Control | [DOI 10.5281/zenodo.18821929](https://doi.org/10.5281/zenodo.18821929) |
+| Fusion Core | [DOI 10.5281/zenodo.18820864](https://doi.org/10.5281/zenodo.18820864) |
+| Preprinty fázových systémov | [Matched false-alarm](https://doi.org/10.5281/zenodo.22113062), [grid regime map](https://doi.org/10.5281/zenodo.22113116) |
+| HushLine | [DOI 10.5281/zenodo.20775432](https://doi.org/10.5281/zenodo.20775432) |
 
 ## Vybrané projekty
 
@@ -293,7 +330,15 @@ viazané hashom v
   hardvéru.
 - Čestné záznamy zlyhaní: negatívne výsledky sú súčasťou výstupu výskumu.
 
+<a id="collaboration"></a>
 ## Spolupráca
+
+| Forma | Rozsah |
+|---|---|
+| Výskumná spolupráca | Reprodukovateľné štúdie v AI assurance, neuromorfných systémoch, kvantovej simulácii, fyzike plazmy a riadení |
+| Technická spolupráca | Architektonické posúdenie, návrh validácie, formálne a hardvérové cesty a evidence-bound softvérové inžinierstvo |
+| Komerčné licencovanie | Dual-licensed a managed systémy cez [Anulum licensing](https://www.anulum.li/licensing) |
+| Podpora otvorenej práce | CI, výpočty, hardvérové a kvantové experimenty a dokumentácia cez [GitHub Sponsors](https://github.com/sponsors/anulum) |
 
 Vítam technicky podloženú spoluprácu v neuromorfných systémoch, spoľahlivej
 infraštruktúre umelej inteligencie, vedeckých výpočtoch, formálnom overovaní a

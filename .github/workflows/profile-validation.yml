@@ -1,0 +1,36 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+name: Profile validation
+
+on:
+  push:
+    paths:
+      - "README*.md"
+      - "profile-data.json"
+      - "tools/validate_profile.py"
+      - "assets/**"
+      - ".github/workflows/profile-validation.yml"
+  pull_request:
+    paths:
+      - "README*.md"
+      - "profile-data.json"
+      - "tools/validate_profile.py"
+      - "assets/**"
+      - ".github/workflows/profile-validation.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: profile-validation-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Validate profile inventory and translations
+        run: python3 tools/validate_profile.py

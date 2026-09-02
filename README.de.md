@@ -28,6 +28,12 @@ Persönliche GitHub-Profilübersicht
   <a href="mailto:protoscience@anulum.li"><img alt="E-Mail" src="https://img.shields.io/badge/E--Mail-protoscience%40anulum.li-4dd6c8?style=flat-square"></a>
 </p>
 
+<p align="center">
+  <a href="#verified-work">Verifizierte Arbeit</a> · <a href="#current-focus">Aktueller Fokus</a> ·
+  <a href="#portfolio-ecosystem">Ökosystem</a> · <a href="#engineering-practice">Standards</a> ·
+  <a href="#research-output">Forschung</a> · <a href="#collaboration">Zusammenarbeit</a>
+</p>
+
 # Miroslav Šotek
 
 Unabhängiger Forscher und Systemingenieur am
@@ -79,6 +85,23 @@ Shell, Docker und Linux.
 Projektdokumentation befindet sich auch auf den Pages-Seiten der einzelnen
 Repositories und auf [anulum.li](https://anulum.li).
 
+<a id="verified-work"></a>
+## Verifizierte Arbeit
+
+| Bereich | Prüfbare Evidenz |
+|---|---|
+| Multi-Agenten-Koordination | [Validierung](https://github.com/anulum/synapse-channel/blob/main/VALIDATION.md), [Spezifikation](https://github.com/anulum/synapse-channel/blob/main/docs/coordination-spec.md), [Bedrohungsmodell](https://github.com/anulum/synapse-channel/blob/main/docs/sandbox-threat-model.md) |
+| LLM-Antwortsicherung | [Validierung](https://github.com/anulum/director-ai/blob/main/VALIDATION.md), [öffentliche Benchmarks](https://github.com/anulum/director-ai/blob/main/benchmarks/PUBLIC_BENCHMARKS.md), [Fähigkeitsmatrix](https://github.com/anulum/director-ai/blob/main/docs/_generated/capability_matrix.md) |
+| Neuromorphes Rechnen bis RTL | [Validierung](https://github.com/anulum/sc-neurocore/blob/main/VALIDATION.md), [Syntheseergebnisse](https://github.com/anulum/sc-neurocore/blob/main/docs/hardware/SYNTHESIS_RESULTS.md), [Rückverfolgbarkeit](https://github.com/anulum/sc-neurocore/blob/main/docs/safety/TRACEABILITY_MATRIX.md) |
+| Plasma und Quanten | [Fusionsvalidierung](https://github.com/anulum/scpn-fusion-core/blob/main/VALIDATION.md), [Präregistrierung](https://github.com/anulum/scpn-quantum-control/blob/main/docs/layout_relaxation_preregistration.md), [Hardware-Ergebnispakete](https://github.com/anulum/scpn-quantum-control/blob/main/docs/hardware_result_packs.md) |
+
+<a id="current-focus"></a>
+## Aktueller Fokus
+
+- Gemeinsame Kerne und kontrollierte Gerätedaten in 25 öffentlichen Reactor-Repositories.
+- Koordination, Gedächtnis, Antwortsicherung, Aktionsprüfung und Repository-Evidenz mit klaren Eigentumsgrenzen.
+- Wissenschaftliche Modelle bis zu nativer Beschleunigung, formalen Prüfungen, RTL und prüfbaren Ergebnispaketen.
+
 ## Laborkarte
 
 Anulum ist ein Laborstack, kein einzelnes Produkt:
@@ -105,6 +128,7 @@ Die **angehefteten Repositories** dieses Profils entsprechen der nachstehenden
 Auswahltabelle. Andere öffentliche Repositories gehören zur SCPN-Forschung oder
 zu unterstützenden Werkzeugen.
 
+<a id="portfolio-ecosystem"></a>
 ## Ökosystemkarte
 
 Die aktive Portfoliokarte umfasst **39 Repositories** in fünf unabhängigen
@@ -217,6 +241,7 @@ hashgebundene Versuchsaufzeichnungen.
 
 </details>
 
+<a id="engineering-practice"></a>
 ## Engineering-Standards
 
 <p>
@@ -250,6 +275,18 @@ Repositorys; nicht jedes Repository führt jedes Werkzeug aus.
 Das verifizierte [PyPI-Profil](https://pypi.org/user/anulum/) enthält derzeit
 19 veröffentlichte Projekte: Python-Pakete, Rust-beschleunigte Engines,
 Domänen-Kernels und Kommandozeilenwerkzeuge.
+
+<a id="research-output"></a>
+## Forschungsergebnisse
+
+| Oberfläche | Verifizierter Weg |
+|---|---|
+| Forschungsidentität | [ORCID 0009-0009-3560-0851](https://orcid.org/0009-0009-3560-0851) |
+| Software | [19 PyPI-Projekte](https://pypi.org/user/anulum/) |
+| Quantum Control | [DOI 10.5281/zenodo.18821929](https://doi.org/10.5281/zenodo.18821929) |
+| Fusion Core | [DOI 10.5281/zenodo.18820864](https://doi.org/10.5281/zenodo.18820864) |
+| Phasensystem-Preprints | [Matched-False-Alarm](https://doi.org/10.5281/zenodo.22113062), [Grid-Regime-Map](https://doi.org/10.5281/zenodo.22113116) |
+| HushLine | [DOI 10.5281/zenodo.20775432](https://doi.org/10.5281/zenodo.20775432) |
 
 ## Ausgewählte Arbeiten
 
@@ -296,7 +333,15 @@ Ergebnispakete in
 - Ehrliche Fehleraufzeichnungen: Negative Ergebnisse gehören zum
   Forschungsergebnis.
 
+<a id="collaboration"></a>
 ## Zusammenarbeit
+
+| Modus | Umfang |
+|---|---|
+| Forschungskooperation | Reproduzierbare Studien in KI-Sicherung, Neuromorphik, Quantensimulation, Plasmaphysik und Regelung |
+| Technische Kooperation | Architekturprüfung, Validierungsdesign, Formal- und Hardwarepfade sowie evidenzbasierte Softwareentwicklung |
+| Kommerzielle Lizenzierung | Dual lizenzierte und verwaltete Systeme über [Anulum Licensing](https://www.anulum.li/licensing) |
+| Förderung offener Arbeit | CI, Rechenzeit, Hardware- und Quantenexperimente sowie Dokumentation über [GitHub Sponsors](https://github.com/sponsors/anulum) |
 
 Ich begrüsse technisch fundierte Zusammenarbeit in neuromorphen Systemen,
 zuverlässiger KI-Infrastruktur, wissenschaftlichem Rechnen, formaler

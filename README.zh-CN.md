@@ -28,6 +28,12 @@ GitHub 个人资料概览
   <a href="mailto:protoscience@anulum.li"><img alt="电子邮件" src="https://img.shields.io/badge/Email-protoscience%40anulum.li-4dd6c8?style=flat-square"></a>
 </p>
 
+<p align="center">
+  <a href="#verified-work">已验证工作</a> · <a href="#current-focus">当前重点</a> ·
+  <a href="#portfolio-ecosystem">生态系统</a> · <a href="#engineering-practice">工程标准</a> ·
+  <a href="#research-output">研究产出</a> · <a href="#collaboration">合作</a>
+</p>
+
 # Miroslav Šotek
 
 瑞士 [Anulum Institute](https://anulum.li) 的独立研究人员与系统工程师。
@@ -75,6 +81,23 @@ Shell、Docker 和 Linux。
 项目文档也发布在各仓库的 Pages 站点以及
 [anulum.li](https://anulum.li)。
 
+<a id="verified-work"></a>
+## 已验证工作
+
+| 领域 | 可检查证据 |
+|---|---|
+| 多智能体协调 | [验证](https://github.com/anulum/synapse-channel/blob/main/VALIDATION.md)、[协调规范](https://github.com/anulum/synapse-channel/blob/main/docs/coordination-spec.md)、[威胁模型](https://github.com/anulum/synapse-channel/blob/main/docs/sandbox-threat-model.md) |
+| LLM 响应保障 | [验证](https://github.com/anulum/director-ai/blob/main/VALIDATION.md)、[公开基准](https://github.com/anulum/director-ai/blob/main/benchmarks/PUBLIC_BENCHMARKS.md)、[能力矩阵](https://github.com/anulum/director-ai/blob/main/docs/_generated/capability_matrix.md) |
+| 神经形态计算到 RTL | [验证](https://github.com/anulum/sc-neurocore/blob/main/VALIDATION.md)、[综合结果](https://github.com/anulum/sc-neurocore/blob/main/docs/hardware/SYNTHESIS_RESULTS.md)、[可追溯矩阵](https://github.com/anulum/sc-neurocore/blob/main/docs/safety/TRACEABILITY_MATRIX.md) |
+| 等离子体与量子 | [聚变验证](https://github.com/anulum/scpn-fusion-core/blob/main/VALIDATION.md)、[预注册](https://github.com/anulum/scpn-quantum-control/blob/main/docs/layout_relaxation_preregistration.md)、[硬件结果包](https://github.com/anulum/scpn-quantum-control/blob/main/docs/hardware_result_packs.md) |
+
+<a id="current-focus"></a>
+## 当前重点
+
+- 在 25 个公开 Reactor 仓库中整合共享内核和受治理的设备事实。
+- 在清晰所有权边界下连接协调、记忆、响应保障、动作审查和仓库证据。
+- 将科学模型推进到原生加速、形式化检查、RTL 和可检查结果包。
+
 ## 实验室地图
 
 Anulum 是一套实验室技术栈，而非单一产品：
@@ -99,6 +122,7 @@ SCPN suite           控制、等离子体、相位与量子研究路径
 本资料页的**置顶仓库**与下方代表性项目表一致。其他公开仓库属于 SCPN
 系列研究或支持工具。
 
+<a id="portfolio-ecosystem"></a>
 ## 生态系统地图
 
 当前项目组合由五个独立分组中的 **39 个仓库**组成：33 个公开仓库和
@@ -203,6 +227,7 @@ SCPN suite           控制、等离子体、相位与量子研究路径
 
 </details>
 
+<a id="engineering-practice"></a>
 ## 工程标准
 
 <p>
@@ -234,6 +259,18 @@ SCPN suite           控制、等离子体、相位与量子研究路径
 
 经验证的 [PyPI 主页](https://pypi.org/user/anulum/) 当前包含 19 个已发布
 项目，包括 Python 包、Rust 加速引擎、领域内核和命令行工具。
+
+<a id="research-output"></a>
+## 研究产出
+
+| 界面 | 已验证路径 |
+|---|---|
+| 研究身份 | [ORCID 0009-0009-3560-0851](https://orcid.org/0009-0009-3560-0851) |
+| 软件发布 | [PyPI 上的 19 个项目](https://pypi.org/user/anulum/) |
+| Quantum Control | [DOI 10.5281/zenodo.18821929](https://doi.org/10.5281/zenodo.18821929) |
+| Fusion Core | [DOI 10.5281/zenodo.18820864](https://doi.org/10.5281/zenodo.18820864) |
+| 相位系统预印本 | [Matched false-alarm](https://doi.org/10.5281/zenodo.22113062)、[grid regime map](https://doi.org/10.5281/zenodo.22113116) |
+| HushLine | [DOI 10.5281/zenodo.20775432](https://doi.org/10.5281/zenodo.20775432) |
 
 ## 代表性项目
 
@@ -276,7 +313,15 @@ SCPN suite           控制、等离子体、相位与量子研究路径
 - 在性能或硬件集成确有需要时采用跨语言实现。
 - 如实记录失败：负面结果也是研究产出的一部分。
 
+<a id="collaboration"></a>
 ## 合作
+
+| 方式 | 范围 |
+|---|---|
+| 研究合作 | AI 保障、神经形态系统、量子模拟、等离子体物理和控制领域的可复现研究 |
+| 技术合作 | 架构审查、验证设计、形式化或硬件路径以及证据约束的软件工程 |
+| 商业许可 | 通过 [Anulum licensing](https://www.anulum.li/licensing) 提供双许可证和托管产品界面 |
+| 开放工作赞助 | 通过 [GitHub Sponsors](https://github.com/sponsors/anulum) 支持 CI、计算、硬件与量子实验和公开文档 |
 
 欢迎在神经形态系统、可靠人工智能基础设施、科学计算、形式化验证和控制
 领域开展有技术依据的合作。

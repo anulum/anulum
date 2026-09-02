@@ -28,6 +28,12 @@ GitHub 個人プロフィール概要
   <a href="mailto:protoscience@anulum.li"><img alt="メール" src="https://img.shields.io/badge/Email-protoscience%40anulum.li-4dd6c8?style=flat-square"></a>
 </p>
 
+<p align="center">
+  <a href="#verified-work">検証済み成果</a> · <a href="#current-focus">現在の重点</a> ·
+  <a href="#portfolio-ecosystem">エコシステム</a> · <a href="#engineering-practice">標準</a> ·
+  <a href="#research-output">研究成果</a> · <a href="#collaboration">協力</a>
+</p>
+
 # Miroslav Šotek
 
 スイスの [Anulum Institute](https://anulum.li) で活動する独立研究者、
@@ -78,6 +84,23 @@ HTML/CSS、Shell、Docker、Linux。
 各プロジェクトのドキュメントは、それぞれの Pages サイトと
 [anulum.li](https://anulum.li) にも掲載されています。
 
+<a id="verified-work"></a>
+## 検証済みの成果
+
+| 分野 | 確認可能なエビデンス |
+|---|---|
+| マルチエージェント協調 | [検証](https://github.com/anulum/synapse-channel/blob/main/VALIDATION.md)、[協調仕様](https://github.com/anulum/synapse-channel/blob/main/docs/coordination-spec.md)、[脅威モデル](https://github.com/anulum/synapse-channel/blob/main/docs/sandbox-threat-model.md) |
+| LLM 応答保証 | [検証](https://github.com/anulum/director-ai/blob/main/VALIDATION.md)、[公開ベンチマーク](https://github.com/anulum/director-ai/blob/main/benchmarks/PUBLIC_BENCHMARKS.md)、[機能マトリクス](https://github.com/anulum/director-ai/blob/main/docs/_generated/capability_matrix.md) |
+| ニューロモーフィックから RTL | [検証](https://github.com/anulum/sc-neurocore/blob/main/VALIDATION.md)、[合成結果](https://github.com/anulum/sc-neurocore/blob/main/docs/hardware/SYNTHESIS_RESULTS.md)、[トレーサビリティ](https://github.com/anulum/sc-neurocore/blob/main/docs/safety/TRACEABILITY_MATRIX.md) |
+| プラズマと量子 | [核融合検証](https://github.com/anulum/scpn-fusion-core/blob/main/VALIDATION.md)、[事前登録](https://github.com/anulum/scpn-quantum-control/blob/main/docs/layout_relaxation_preregistration.md)、[ハードウェア結果パック](https://github.com/anulum/scpn-quantum-control/blob/main/docs/hardware_result_packs.md) |
+
+<a id="current-focus"></a>
+## 現在の重点
+
+- 25 の公開 Reactor リポジトリにおける共有カーネルと管理された装置情報。
+- 所有権境界を保った協調、メモリ、応答保証、アクション審査、リポジトリエビデンス。
+- 科学モデルからネイティブ高速化、形式検査、RTL、確認可能な結果パックまでの経路。
+
 ## ラボマップ
 
 Anulum は単一製品ではなく、ラボ全体の技術スタックです。
@@ -103,6 +126,7 @@ SCPN suite           制御、プラズマ、位相、量子の研究経路
 このプロフィールの**ピン留めリポジトリ**は、下の主要プロジェクト表と
 一致します。その他の公開リポジトリは SCPN 系研究または支援ツールです。
 
+<a id="portfolio-ecosystem"></a>
 ## エコシステムマップ
 
 現在のポートフォリオは、5 つの独立したグループに属する **39 の
@@ -214,6 +238,7 @@ SCPN suite           制御、プラズマ、位相、量子の研究経路
 
 </details>
 
+<a id="engineering-practice"></a>
 ## エンジニアリング標準
 
 <p>
@@ -247,6 +272,18 @@ SCPN suite           制御、プラズマ、位相、量子の研究経路
 検証済みの [PyPI プロフィール](https://pypi.org/user/anulum/) には現在、
 Python パッケージ、Rust 高速化エンジン、ドメインカーネル、CLI ツールを
 含む 19 プロジェクトが公開されています。
+
+<a id="research-output"></a>
+## 研究成果
+
+| 領域 | 検証済み経路 |
+|---|---|
+| 研究者識別子 | [ORCID 0009-0009-3560-0851](https://orcid.org/0009-0009-3560-0851) |
+| ソフトウェア公開 | [PyPI の 19 プロジェクト](https://pypi.org/user/anulum/) |
+| Quantum Control | [DOI 10.5281/zenodo.18821929](https://doi.org/10.5281/zenodo.18821929) |
+| Fusion Core | [DOI 10.5281/zenodo.18820864](https://doi.org/10.5281/zenodo.18820864) |
+| 位相系プレプリント | [Matched false-alarm](https://doi.org/10.5281/zenodo.22113062)、[grid regime map](https://doi.org/10.5281/zenodo.22113116) |
+| HushLine | [DOI 10.5281/zenodo.20775432](https://doi.org/10.5281/zenodo.20775432) |
 
 ## 主なプロジェクト
 
@@ -290,7 +327,15 @@ Python パッケージ、Rust 高速化エンジン、ドメインカーネル�
 - 性能またはハードウェア統合に有用な場合は言語横断実装を行う。
 - 失敗を正直に記録する。否定的結果も研究成果の一部である。
 
+<a id="collaboration"></a>
 ## 共同研究・協力
+
+| 形態 | 対象 |
+|---|---|
+| 研究協力 | AI 保証、ニューロモーフィック、量子シミュレーション、プラズマ物理、制御の再現可能な研究 |
+| 技術協力 | アーキテクチャ審査、検証設計、形式手法・ハードウェア経路、エビデンス準拠ソフトウェア開発 |
+| 商用ライセンス | [Anulum licensing](https://www.anulum.li/licensing) を通じたデュアルライセンスと管理製品 |
+| 公開作業の支援 | [GitHub Sponsors](https://github.com/sponsors/anulum) による CI、計算、ハードウェア・量子実験、公開文書の支援 |
 
 ニューロモーフィックシステム、信頼できる AI インフラストラクチャ、
 科学技術計算、形式検証、制御に関する技術的根拠のある協力を歓迎します。
