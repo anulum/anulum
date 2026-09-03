@@ -23,6 +23,7 @@ GitHub 個人プロフィール概要
 <p align="center">
   <a href="https://anulum.li"><img alt="ウェブサイト" src="https://img.shields.io/badge/anulum.li-Website-09111f?style=flat-square&logo=safari&logoColor=white"></a>
   <a href="https://orcid.org/0009-0009-3560-0851"><img alt="ORCID" src="https://img.shields.io/badge/ORCID-0009--0009--3560--0851-a6ce39?style=flat-square&logo=orcid&logoColor=white"></a>
+  <a href="cv/Miroslav-Sotek-CV.pdf"><img alt="CV PDF" src="https://img.shields.io/badge/CV-1_%E3%83%9A%E3%83%BC%E3%82%B8_PDF-d9a441?style=flat-square&logo=adobeacrobatreader&logoColor=white"></a>
   <a href="https://pypi.org/user/anulum/"><img alt="PyPI" src="https://img.shields.io/badge/PyPI-19_%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88-3775a9?style=flat-square&logo=pypi&logoColor=white"></a>
   <a href="https://github.com/sponsors/anulum"><img alt="GitHub Sponsors" src="https://img.shields.io/badge/Sponsors-%E5%85%AC%E9%96%8B%E4%BD%9C%E6%A5%AD%E3%82%92%E6%94%AF%E6%8F%B4-ea4aaa?style=flat-square&logo=githubsponsors&logoColor=white"></a>
   <a href="mailto:protoscience@anulum.li"><img alt="メール" src="https://img.shields.io/badge/Email-protoscience%40anulum.li-4dd6c8?style=flat-square"></a>
@@ -89,17 +90,29 @@ HTML/CSS、Shell、Docker、Linux。
 
 | 分野 | 確認可能なエビデンス |
 |---|---|
-| マルチエージェント協調 | [検証](https://github.com/anulum/synapse-channel/blob/main/VALIDATION.md)、[協調仕様](https://github.com/anulum/synapse-channel/blob/main/docs/coordination-spec.md)、[脅威モデル](https://github.com/anulum/synapse-channel/blob/main/docs/sandbox-threat-model.md) |
-| LLM 応答保証 | [検証](https://github.com/anulum/director-ai/blob/main/VALIDATION.md)、[公開ベンチマーク](https://github.com/anulum/director-ai/blob/main/benchmarks/PUBLIC_BENCHMARKS.md)、[機能マトリクス](https://github.com/anulum/director-ai/blob/main/docs/_generated/capability_matrix.md) |
-| ニューロモーフィックから RTL | [検証](https://github.com/anulum/sc-neurocore/blob/main/VALIDATION.md)、[合成結果](https://github.com/anulum/sc-neurocore/blob/main/docs/hardware/SYNTHESIS_RESULTS.md)、[トレーサビリティ](https://github.com/anulum/sc-neurocore/blob/main/docs/safety/TRACEABILITY_MATRIX.md) |
-| プラズマと量子 | [核融合検証](https://github.com/anulum/scpn-fusion-core/blob/main/VALIDATION.md)、[事前登録](https://github.com/anulum/scpn-quantum-control/blob/main/docs/layout_relaxation_preregistration.md)、[ハードウェア結果パック](https://github.com/anulum/scpn-quantum-control/blob/main/docs/hardware_result_packs.md) |
+| マルチエージェント協調 | [検証](https://github.com/anulum/synapse-channel/blob/dd65c898a9693b47fad051e3baa92cef07da2e63/VALIDATION.md)、[協調仕様](https://github.com/anulum/synapse-channel/blob/dd65c898a9693b47fad051e3baa92cef07da2e63/docs/coordination-spec.md)、[脅威モデル](https://github.com/anulum/synapse-channel/blob/dd65c898a9693b47fad051e3baa92cef07da2e63/docs/sandbox-threat-model.md) |
+| LLM 応答保証 | [検証](https://github.com/anulum/director-ai/blob/fc155051367bb48180f2f5dc92f4120c2549cddd/VALIDATION.md)、[公開ベンチマーク](https://github.com/anulum/director-ai/blob/fc155051367bb48180f2f5dc92f4120c2549cddd/benchmarks/PUBLIC_BENCHMARKS.md)、[機能マトリクス](https://github.com/anulum/director-ai/blob/fc155051367bb48180f2f5dc92f4120c2549cddd/docs/_generated/capability_matrix.md) |
+| ニューロモーフィックから RTL | [検証](https://github.com/anulum/sc-neurocore/blob/4bbc27b808eef0677848c1e484f40bd41e8ce83d/VALIDATION.md)、[合成結果](https://github.com/anulum/sc-neurocore/blob/4bbc27b808eef0677848c1e484f40bd41e8ce83d/docs/hardware/SYNTHESIS_RESULTS.md)、[トレーサビリティ](https://github.com/anulum/sc-neurocore/blob/4bbc27b808eef0677848c1e484f40bd41e8ce83d/docs/safety/TRACEABILITY_MATRIX.md) |
+| プラズマと量子 | [核融合検証](https://github.com/anulum/scpn-fusion-core/blob/3c841fc13109c8efb49bb079d145f70683a4408d/VALIDATION.md)、[事前登録](https://github.com/anulum/scpn-quantum-control/blob/2bc0f935b75ae7b85a4835caf754b2bfd8770c98/docs/layout_relaxation_preregistration.md)、[ハードウェア結果パック](https://github.com/anulum/scpn-quantum-control/blob/2bc0f935b75ae7b85a4835caf754b2bfd8770c98/docs/hardware_result_packs.md) |
 
 <a id="current-focus"></a>
 ## 現在の重点
 
+<sub>ポートフォリオ状態は 2026-09-03 に検証済みです。</sub>
+
 - 25 の公開 Reactor リポジトリにおける共有カーネルと管理された装置情報。
 - 所有権境界を保った協調、メモリ、応答保証、アクション審査、リポジトリエビデンス。
 - 科学モデルからネイティブ高速化、形式検査、RTL、確認可能な結果パックまでの経路。
+
+## タイムライン
+
+| 期間 | 公開情報で確認できるマイルストーン |
+|---|---|
+| 1996 年以降 | 自己公開された概念開発の期間 |
+| 1998 | 公開 ORCID に自己申告された ANULUM CH&LI 創設者役割の開始 |
+| 2018 | 公開 GitHub アカウント開設 |
+| 2025 | SCPN プレビューと技術報告を Zenodo に公開 |
+| 2026 | AI 保証、ニューロモーフィック、プラズマ、量子システムへ公開ソフトウェア・研究ポートフォリオを拡大 |
 
 ## ラボマップ
 
@@ -278,6 +291,8 @@ Python パッケージ、Rust 高速化エンジン、ドメインカーネル�
 
 | 領域 | 検証済み経路 |
 |---|---|
+| 完全な研究索引 | [出版物、プレプリント、ソフトウェアアーカイブ](PUBLICATIONS.md) |
+| 履歴書 | [1 ページ PDF](cv/Miroslav-Sotek-CV.pdf)、[Markdown ソース](cv/Miroslav-Sotek-CV.md)、[JSON Resume](cv/resume.json) |
 | 研究者識別子 | [ORCID 0009-0009-3560-0851](https://orcid.org/0009-0009-3560-0851) |
 | ソフトウェア公開 | [PyPI の 19 プロジェクト](https://pypi.org/user/anulum/) |
 | Quantum Control | [DOI 10.5281/zenodo.18821929](https://doi.org/10.5281/zenodo.18821929) |
@@ -330,6 +345,16 @@ Python パッケージ、Rust 高速化エンジン、ドメインカーネル�
 <a id="collaboration"></a>
 ## 共同研究・協力
 
+### ライセンスモデル
+
+| モデル | 代表的な境界 |
+|---|---|
+| Apache-2.0 | Director-AI、Rigor Foundry などの寛容な公開コア |
+| AGPL-3.0-or-later | ソース共有義務を伴う公開ネットワーク・研究システム |
+| Open core | 公開コアと別途ライセンスされる高度・管理製品領域 |
+| BUSL-1.1 | 将来のライセンス変更が宣言された一部の非公開システム |
+| 商用ライセンス | 公開ライセンスを利用できない場合の代替条件 |
+
 | 形態 | 対象 |
 |---|---|
 | 研究協力 | AI 保証、ニューロモーフィック、量子シミュレーション、プラズマ物理、制御の再現可能な研究 |
@@ -339,6 +364,9 @@ Python パッケージ、Rust 高速化エンジン、ドメインカーネル�
 
 ニューロモーフィックシステム、信頼できる AI インフラストラクチャ、
 科学技術計算、形式検証、制御に関する技術的根拠のある協力を歓迎します。
+
+協力案件は選択的に受けています。公開 GitHub プロフィールは現在 hireable
+ですが、即時対応可能であることを保証するものではありません。
 
 最初の連絡には、課題、制約、関連する先行研究、成功を示すエビデンスを
 含めてください。[protoscience@anulum.li](mailto:protoscience@anulum.li)

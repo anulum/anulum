@@ -23,6 +23,7 @@ Prehľad osobného profilu GitHub
 <p align="center">
   <a href="https://anulum.li"><img alt="Web" src="https://img.shields.io/badge/anulum.li-Web-09111f?style=flat-square&logo=safari&logoColor=white"></a>
   <a href="https://orcid.org/0009-0009-3560-0851"><img alt="ORCID" src="https://img.shields.io/badge/ORCID-0009--0009--3560--0851-a6ce39?style=flat-square&logo=orcid&logoColor=white"></a>
+  <a href="cv/Miroslav-Sotek-CV.pdf"><img alt="CV PDF" src="https://img.shields.io/badge/CV-Jednostranov%C3%A9_PDF-d9a441?style=flat-square&logo=adobeacrobatreader&logoColor=white"></a>
   <a href="https://pypi.org/user/anulum/"><img alt="PyPI" src="https://img.shields.io/badge/PyPI-19_projektov-3775a9?style=flat-square&logo=pypi&logoColor=white"></a>
   <a href="https://github.com/sponsors/anulum"><img alt="GitHub Sponsors" src="https://img.shields.io/badge/Sponsors-Podporte_otvoren%C3%BA_pr%C3%A1cu-ea4aaa?style=flat-square&logo=githubsponsors&logoColor=white"></a>
   <a href="mailto:protoscience@anulum.li"><img alt="E-mail" src="https://img.shields.io/badge/E--mail-protoscience%40anulum.li-4dd6c8?style=flat-square"></a>
@@ -90,17 +91,29 @@ repozitárov a na [anulum.li](https://anulum.li).
 
 | Oblasť | Kontrolovateľné dôkazy |
 |---|---|
-| Multiagentová koordinácia | [Validácia](https://github.com/anulum/synapse-channel/blob/main/VALIDATION.md), [špecifikácia](https://github.com/anulum/synapse-channel/blob/main/docs/coordination-spec.md), [threat model](https://github.com/anulum/synapse-channel/blob/main/docs/sandbox-threat-model.md) |
-| Overovanie odpovedí LLM | [Validácia](https://github.com/anulum/director-ai/blob/main/VALIDATION.md), [verejné benchmarky](https://github.com/anulum/director-ai/blob/main/benchmarks/PUBLIC_BENCHMARKS.md), [capability matrix](https://github.com/anulum/director-ai/blob/main/docs/_generated/capability_matrix.md) |
-| Neuromorfné výpočty až po RTL | [Validácia](https://github.com/anulum/sc-neurocore/blob/main/VALIDATION.md), [výsledky syntézy](https://github.com/anulum/sc-neurocore/blob/main/docs/hardware/SYNTHESIS_RESULTS.md), [traceability matrix](https://github.com/anulum/sc-neurocore/blob/main/docs/safety/TRACEABILITY_MATRIX.md) |
-| Plazma a quantum | [Validácia fúzie](https://github.com/anulum/scpn-fusion-core/blob/main/VALIDATION.md), [preregistrácia](https://github.com/anulum/scpn-quantum-control/blob/main/docs/layout_relaxation_preregistration.md), [hardware result packs](https://github.com/anulum/scpn-quantum-control/blob/main/docs/hardware_result_packs.md) |
+| Multiagentová koordinácia | [Validácia](https://github.com/anulum/synapse-channel/blob/dd65c898a9693b47fad051e3baa92cef07da2e63/VALIDATION.md), [špecifikácia](https://github.com/anulum/synapse-channel/blob/dd65c898a9693b47fad051e3baa92cef07da2e63/docs/coordination-spec.md), [threat model](https://github.com/anulum/synapse-channel/blob/dd65c898a9693b47fad051e3baa92cef07da2e63/docs/sandbox-threat-model.md) |
+| Overovanie odpovedí LLM | [Validácia](https://github.com/anulum/director-ai/blob/fc155051367bb48180f2f5dc92f4120c2549cddd/VALIDATION.md), [verejné benchmarky](https://github.com/anulum/director-ai/blob/fc155051367bb48180f2f5dc92f4120c2549cddd/benchmarks/PUBLIC_BENCHMARKS.md), [capability matrix](https://github.com/anulum/director-ai/blob/fc155051367bb48180f2f5dc92f4120c2549cddd/docs/_generated/capability_matrix.md) |
+| Neuromorfné výpočty až po RTL | [Validácia](https://github.com/anulum/sc-neurocore/blob/4bbc27b808eef0677848c1e484f40bd41e8ce83d/VALIDATION.md), [výsledky syntézy](https://github.com/anulum/sc-neurocore/blob/4bbc27b808eef0677848c1e484f40bd41e8ce83d/docs/hardware/SYNTHESIS_RESULTS.md), [traceability matrix](https://github.com/anulum/sc-neurocore/blob/4bbc27b808eef0677848c1e484f40bd41e8ce83d/docs/safety/TRACEABILITY_MATRIX.md) |
+| Plazma a quantum | [Validácia fúzie](https://github.com/anulum/scpn-fusion-core/blob/3c841fc13109c8efb49bb079d145f70683a4408d/VALIDATION.md), [preregistrácia](https://github.com/anulum/scpn-quantum-control/blob/2bc0f935b75ae7b85a4835caf754b2bfd8770c98/docs/layout_relaxation_preregistration.md), [hardware result packs](https://github.com/anulum/scpn-quantum-control/blob/2bc0f935b75ae7b85a4835caf754b2bfd8770c98/docs/hardware_result_packs.md) |
 
 <a id="current-focus"></a>
 ## Aktuálne zameranie
 
+<sub>Stav portfólia overený 2026-09-03.</sub>
+
 - Spoločné jadrá a riadená pravda zariadení v 25 verejných Reactor repozitároch.
 - Koordinácia, pamäť, overovanie odpovedí, kontrola akcií a repo dôkazy s jasnými hranicami vlastníctva.
 - Vedecké modely prevedené cez natívnu akceleráciu, formálne kontroly, RTL a kontrolovateľné result packs.
+
+## Časová os
+
+| Obdobie | Verejne podložený míľnik |
+|---|---|
+| od 1996 | Vlastný publikovaný horizont vývoja konceptov |
+| 1998 | Začiatok vlastnoručne uvedenej founder role ANULUM CH&LI vo verejnom ORCID zázname |
+| 2018 | Založenie verejného GitHub účtu |
+| 2025 | Verejné SCPN preview dokumenty a technické správy uložené na Zenodo |
+| 2026 | Rozšírenie verejného softvérového a výskumného portfólia v AI assurance, neuromorfných, plazmových a kvantových systémoch |
 
 ## Mapa laboratória
 
@@ -279,6 +292,8 @@ a nástroje príkazového riadka.
 
 | Plocha | Overená cesta |
 |---|---|
+| Kompletný výskumný index | [Publikácie, preprinty a softvérové archívy](PUBLICATIONS.md) |
+| Životopis | [Jednostranové PDF](cv/Miroslav-Sotek-CV.pdf), [zdroj](cv/Miroslav-Sotek-CV.md), [JSON Resume](cv/resume.json) |
 | Výskumná identita | [ORCID 0009-0009-3560-0851](https://orcid.org/0009-0009-3560-0851) |
 | Softvér | [19 projektov na PyPI](https://pypi.org/user/anulum/) |
 | Quantum Control | [DOI 10.5281/zenodo.18821929](https://doi.org/10.5281/zenodo.18821929) |
@@ -333,6 +348,16 @@ viazané hashom v
 <a id="collaboration"></a>
 ## Spolupráca
 
+### Licenčné modely
+
+| Model | Typická hranica |
+|---|---|
+| Apache-2.0 | Permisívne verejné jadrá, napríklad Director-AI a Rigor Foundry |
+| AGPL-3.0-or-later | Verejné sieťové a výskumné systémy s povinnosťami zdieľania zdroja |
+| Open core | Verejné jadro so samostatne licencovanými advanced alebo managed plochami |
+| BUSL-1.1 | Vybrané súkromné systémy s deklarovanou budúcou zmenou licencie |
+| Komerčná licencia | Alternatívne podmienky, ak nemožno použiť verejnú licenciu |
+
 | Forma | Rozsah |
 |---|---|
 | Výskumná spolupráca | Reprodukovateľné štúdie v AI assurance, neuromorfných systémoch, kvantovej simulácii, fyzike plazmy a riadení |
@@ -343,6 +368,9 @@ viazané hashom v
 Vítam technicky podloženú spoluprácu v neuromorfných systémoch, spoľahlivej
 infraštruktúre umelej inteligencie, vedeckých výpočtoch, formálnom overovaní a
 riadení.
+
+Spolupráce prijímam selektívne. Verejný GitHub profil je aktuálne označený ako
+hireable; nejde o záruku okamžitej kapacity.
 
 Užitočná prvá správa obsahuje problém, obmedzenia, relevantné predchádzajúce
 práce a dôkazy, ktoré by predstavovali úspech. Kontaktujte ma cez

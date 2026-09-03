@@ -23,6 +23,7 @@ GitHub 个人资料概览
 <p align="center">
   <a href="https://anulum.li"><img alt="网站" src="https://img.shields.io/badge/anulum.li-%E7%BD%91%E7%AB%99-09111f?style=flat-square&logo=safari&logoColor=white"></a>
   <a href="https://orcid.org/0009-0009-3560-0851"><img alt="ORCID" src="https://img.shields.io/badge/ORCID-0009--0009--3560--0851-a6ce39?style=flat-square&logo=orcid&logoColor=white"></a>
+  <a href="cv/Miroslav-Sotek-CV.pdf"><img alt="CV PDF" src="https://img.shields.io/badge/CV-%E5%8D%95%E9%A1%B5_PDF-d9a441?style=flat-square&logo=adobeacrobatreader&logoColor=white"></a>
   <a href="https://pypi.org/user/anulum/"><img alt="PyPI" src="https://img.shields.io/badge/PyPI-19_%E4%B8%AA%E9%A1%B9%E7%9B%AE-3775a9?style=flat-square&logo=pypi&logoColor=white"></a>
   <a href="https://github.com/sponsors/anulum"><img alt="GitHub Sponsors" src="https://img.shields.io/badge/Sponsors-%E6%94%AF%E6%8C%81%E5%BC%80%E6%94%BE%E5%B7%A5%E4%BD%9C-ea4aaa?style=flat-square&logo=githubsponsors&logoColor=white"></a>
   <a href="mailto:protoscience@anulum.li"><img alt="电子邮件" src="https://img.shields.io/badge/Email-protoscience%40anulum.li-4dd6c8?style=flat-square"></a>
@@ -86,17 +87,29 @@ Shell、Docker 和 Linux。
 
 | 领域 | 可检查证据 |
 |---|---|
-| 多智能体协调 | [验证](https://github.com/anulum/synapse-channel/blob/main/VALIDATION.md)、[协调规范](https://github.com/anulum/synapse-channel/blob/main/docs/coordination-spec.md)、[威胁模型](https://github.com/anulum/synapse-channel/blob/main/docs/sandbox-threat-model.md) |
-| LLM 响应保障 | [验证](https://github.com/anulum/director-ai/blob/main/VALIDATION.md)、[公开基准](https://github.com/anulum/director-ai/blob/main/benchmarks/PUBLIC_BENCHMARKS.md)、[能力矩阵](https://github.com/anulum/director-ai/blob/main/docs/_generated/capability_matrix.md) |
-| 神经形态计算到 RTL | [验证](https://github.com/anulum/sc-neurocore/blob/main/VALIDATION.md)、[综合结果](https://github.com/anulum/sc-neurocore/blob/main/docs/hardware/SYNTHESIS_RESULTS.md)、[可追溯矩阵](https://github.com/anulum/sc-neurocore/blob/main/docs/safety/TRACEABILITY_MATRIX.md) |
-| 等离子体与量子 | [聚变验证](https://github.com/anulum/scpn-fusion-core/blob/main/VALIDATION.md)、[预注册](https://github.com/anulum/scpn-quantum-control/blob/main/docs/layout_relaxation_preregistration.md)、[硬件结果包](https://github.com/anulum/scpn-quantum-control/blob/main/docs/hardware_result_packs.md) |
+| 多智能体协调 | [验证](https://github.com/anulum/synapse-channel/blob/dd65c898a9693b47fad051e3baa92cef07da2e63/VALIDATION.md)、[协调规范](https://github.com/anulum/synapse-channel/blob/dd65c898a9693b47fad051e3baa92cef07da2e63/docs/coordination-spec.md)、[威胁模型](https://github.com/anulum/synapse-channel/blob/dd65c898a9693b47fad051e3baa92cef07da2e63/docs/sandbox-threat-model.md) |
+| LLM 响应保障 | [验证](https://github.com/anulum/director-ai/blob/fc155051367bb48180f2f5dc92f4120c2549cddd/VALIDATION.md)、[公开基准](https://github.com/anulum/director-ai/blob/fc155051367bb48180f2f5dc92f4120c2549cddd/benchmarks/PUBLIC_BENCHMARKS.md)、[能力矩阵](https://github.com/anulum/director-ai/blob/fc155051367bb48180f2f5dc92f4120c2549cddd/docs/_generated/capability_matrix.md) |
+| 神经形态计算到 RTL | [验证](https://github.com/anulum/sc-neurocore/blob/4bbc27b808eef0677848c1e484f40bd41e8ce83d/VALIDATION.md)、[综合结果](https://github.com/anulum/sc-neurocore/blob/4bbc27b808eef0677848c1e484f40bd41e8ce83d/docs/hardware/SYNTHESIS_RESULTS.md)、[可追溯矩阵](https://github.com/anulum/sc-neurocore/blob/4bbc27b808eef0677848c1e484f40bd41e8ce83d/docs/safety/TRACEABILITY_MATRIX.md) |
+| 等离子体与量子 | [聚变验证](https://github.com/anulum/scpn-fusion-core/blob/3c841fc13109c8efb49bb079d145f70683a4408d/VALIDATION.md)、[预注册](https://github.com/anulum/scpn-quantum-control/blob/2bc0f935b75ae7b85a4835caf754b2bfd8770c98/docs/layout_relaxation_preregistration.md)、[硬件结果包](https://github.com/anulum/scpn-quantum-control/blob/2bc0f935b75ae7b85a4835caf754b2bfd8770c98/docs/hardware_result_packs.md) |
 
 <a id="current-focus"></a>
 ## 当前重点
 
+<sub>项目组合状态于 2026-09-03 验证。</sub>
+
 - 在 25 个公开 Reactor 仓库中整合共享内核和受治理的设备事实。
 - 在清晰所有权边界下连接协调、记忆、响应保障、动作审查和仓库证据。
 - 将科学模型推进到原生加速、形式化检查、RTL 和可检查结果包。
+
+## 时间线
+
+| 时期 | 有公开依据的里程碑 |
+|---|---|
+| 1996 年起 | 自行发布的概念开发时间范围 |
+| 1998 | 公开 ORCID 记录中自行填写的 ANULUM CH&LI 创始人角色开始 |
+| 2018 | 建立公开 GitHub 账户 |
+| 2025 | 在 Zenodo 发布 SCPN 预览材料与技术报告 |
+| 2026 | 公开软件与研究组合扩展至 AI 保障、神经形态、等离子体和量子系统 |
 
 ## 实验室地图
 
@@ -265,6 +278,8 @@ SCPN suite           控制、等离子体、相位与量子研究路径
 
 | 界面 | 已验证路径 |
 |---|---|
+| 完整研究索引 | [出版物、预印本和软件存档](PUBLICATIONS.md) |
+| 简历 | [单页 PDF](cv/Miroslav-Sotek-CV.pdf)、[Markdown 源文件](cv/Miroslav-Sotek-CV.md)、[JSON Resume](cv/resume.json) |
 | 研究身份 | [ORCID 0009-0009-3560-0851](https://orcid.org/0009-0009-3560-0851) |
 | 软件发布 | [PyPI 上的 19 个项目](https://pypi.org/user/anulum/) |
 | Quantum Control | [DOI 10.5281/zenodo.18821929](https://doi.org/10.5281/zenodo.18821929) |
@@ -316,6 +331,16 @@ SCPN suite           控制、等离子体、相位与量子研究路径
 <a id="collaboration"></a>
 ## 合作
 
+### 许可模型
+
+| 模型 | 典型边界 |
+|---|---|
+| Apache-2.0 | Director-AI 和 Rigor Foundry 等宽松许可的公开核心 |
+| AGPL-3.0-or-later | 带源码共享义务的公开网络与研究系统 |
+| Open core | 公开核心与单独许可的高级或托管产品界面 |
+| BUSL-1.1 | 声明未来许可证变更的部分私有系统 |
+| 商业许可 | 无法采用公开许可证时提供的替代条款 |
+
 | 方式 | 范围 |
 |---|---|
 | 研究合作 | AI 保障、神经形态系统、量子模拟、等离子体物理和控制领域的可复现研究 |
@@ -325,6 +350,9 @@ SCPN suite           控制、等离子体、相位与量子研究路径
 
 欢迎在神经形态系统、可靠人工智能基础设施、科学计算、形式化验证和控制
 领域开展有技术依据的合作。
+
+合作会选择性接受。公开 GitHub 资料当前标记为 hireable，但这并不保证
+立即可用的工作容量。
 
 有效的首次联系应包括问题、约束、相关前期工作，以及何种证据可以视为
 成功。请通过 [protoscience@anulum.li](mailto:protoscience@anulum.li) 或

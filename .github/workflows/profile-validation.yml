@@ -3,19 +3,7 @@ name: Profile validation
 
 on:
   push:
-    paths:
-      - "README*.md"
-      - "profile-data.json"
-      - "tools/validate_profile.py"
-      - "assets/**"
-      - ".github/workflows/profile-validation.yml"
   pull_request:
-    paths:
-      - "README*.md"
-      - "profile-data.json"
-      - "tools/validate_profile.py"
-      - "assets/**"
-      - ".github/workflows/profile-validation.yml"
   workflow_dispatch:
 
 permissions:
@@ -34,3 +22,5 @@ jobs:
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - name: Validate profile inventory and translations
         run: python3 tools/validate_profile.py
+      - name: Run validator tests
+        run: python3 -m unittest discover -s tests -p "test_*.py" -v

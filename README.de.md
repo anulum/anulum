@@ -23,6 +23,7 @@ Persönliche GitHub-Profilübersicht
 <p align="center">
   <a href="https://anulum.li"><img alt="Website" src="https://img.shields.io/badge/anulum.li-Website-09111f?style=flat-square&logo=safari&logoColor=white"></a>
   <a href="https://orcid.org/0009-0009-3560-0851"><img alt="ORCID" src="https://img.shields.io/badge/ORCID-0009--0009--3560--0851-a6ce39?style=flat-square&logo=orcid&logoColor=white"></a>
+  <a href="cv/Miroslav-Sotek-CV.pdf"><img alt="CV PDF" src="https://img.shields.io/badge/CV-Einseitiges_PDF-d9a441?style=flat-square&logo=adobeacrobatreader&logoColor=white"></a>
   <a href="https://pypi.org/user/anulum/"><img alt="PyPI" src="https://img.shields.io/badge/PyPI-19_Projekte-3775a9?style=flat-square&logo=pypi&logoColor=white"></a>
   <a href="https://github.com/sponsors/anulum"><img alt="GitHub Sponsors" src="https://img.shields.io/badge/Sponsors-Offene_Arbeit_unterst%C3%BCtzen-ea4aaa?style=flat-square&logo=githubsponsors&logoColor=white"></a>
   <a href="mailto:protoscience@anulum.li"><img alt="E-Mail" src="https://img.shields.io/badge/E--Mail-protoscience%40anulum.li-4dd6c8?style=flat-square"></a>
@@ -90,17 +91,29 @@ Repositories und auf [anulum.li](https://anulum.li).
 
 | Bereich | Prüfbare Evidenz |
 |---|---|
-| Multi-Agenten-Koordination | [Validierung](https://github.com/anulum/synapse-channel/blob/main/VALIDATION.md), [Spezifikation](https://github.com/anulum/synapse-channel/blob/main/docs/coordination-spec.md), [Bedrohungsmodell](https://github.com/anulum/synapse-channel/blob/main/docs/sandbox-threat-model.md) |
-| LLM-Antwortsicherung | [Validierung](https://github.com/anulum/director-ai/blob/main/VALIDATION.md), [öffentliche Benchmarks](https://github.com/anulum/director-ai/blob/main/benchmarks/PUBLIC_BENCHMARKS.md), [Fähigkeitsmatrix](https://github.com/anulum/director-ai/blob/main/docs/_generated/capability_matrix.md) |
-| Neuromorphes Rechnen bis RTL | [Validierung](https://github.com/anulum/sc-neurocore/blob/main/VALIDATION.md), [Syntheseergebnisse](https://github.com/anulum/sc-neurocore/blob/main/docs/hardware/SYNTHESIS_RESULTS.md), [Rückverfolgbarkeit](https://github.com/anulum/sc-neurocore/blob/main/docs/safety/TRACEABILITY_MATRIX.md) |
-| Plasma und Quanten | [Fusionsvalidierung](https://github.com/anulum/scpn-fusion-core/blob/main/VALIDATION.md), [Präregistrierung](https://github.com/anulum/scpn-quantum-control/blob/main/docs/layout_relaxation_preregistration.md), [Hardware-Ergebnispakete](https://github.com/anulum/scpn-quantum-control/blob/main/docs/hardware_result_packs.md) |
+| Multi-Agenten-Koordination | [Validierung](https://github.com/anulum/synapse-channel/blob/dd65c898a9693b47fad051e3baa92cef07da2e63/VALIDATION.md), [Spezifikation](https://github.com/anulum/synapse-channel/blob/dd65c898a9693b47fad051e3baa92cef07da2e63/docs/coordination-spec.md), [Bedrohungsmodell](https://github.com/anulum/synapse-channel/blob/dd65c898a9693b47fad051e3baa92cef07da2e63/docs/sandbox-threat-model.md) |
+| LLM-Antwortsicherung | [Validierung](https://github.com/anulum/director-ai/blob/fc155051367bb48180f2f5dc92f4120c2549cddd/VALIDATION.md), [öffentliche Benchmarks](https://github.com/anulum/director-ai/blob/fc155051367bb48180f2f5dc92f4120c2549cddd/benchmarks/PUBLIC_BENCHMARKS.md), [Fähigkeitsmatrix](https://github.com/anulum/director-ai/blob/fc155051367bb48180f2f5dc92f4120c2549cddd/docs/_generated/capability_matrix.md) |
+| Neuromorphes Rechnen bis RTL | [Validierung](https://github.com/anulum/sc-neurocore/blob/4bbc27b808eef0677848c1e484f40bd41e8ce83d/VALIDATION.md), [Syntheseergebnisse](https://github.com/anulum/sc-neurocore/blob/4bbc27b808eef0677848c1e484f40bd41e8ce83d/docs/hardware/SYNTHESIS_RESULTS.md), [Rückverfolgbarkeit](https://github.com/anulum/sc-neurocore/blob/4bbc27b808eef0677848c1e484f40bd41e8ce83d/docs/safety/TRACEABILITY_MATRIX.md) |
+| Plasma und Quanten | [Fusionsvalidierung](https://github.com/anulum/scpn-fusion-core/blob/3c841fc13109c8efb49bb079d145f70683a4408d/VALIDATION.md), [Präregistrierung](https://github.com/anulum/scpn-quantum-control/blob/2bc0f935b75ae7b85a4835caf754b2bfd8770c98/docs/layout_relaxation_preregistration.md), [Hardware-Ergebnispakete](https://github.com/anulum/scpn-quantum-control/blob/2bc0f935b75ae7b85a4835caf754b2bfd8770c98/docs/hardware_result_packs.md) |
 
 <a id="current-focus"></a>
 ## Aktueller Fokus
 
+<sub>Portfoliostand verifiziert am 2026-09-03.</sub>
+
 - Gemeinsame Kerne und kontrollierte Gerätedaten in 25 öffentlichen Reactor-Repositories.
 - Koordination, Gedächtnis, Antwortsicherung, Aktionsprüfung und Repository-Evidenz mit klaren Eigentumsgrenzen.
 - Wissenschaftliche Modelle bis zu nativer Beschleunigung, formalen Prüfungen, RTL und prüfbaren Ergebnispaketen.
+
+## Zeitleiste
+
+| Zeitraum | Öffentlich belegter Meilenstein |
+|---|---|
+| ab 1996 | Selbst veröffentlichter Horizont der Konzeptentwicklung |
+| 1998 | Beginn der selbst eingetragenen Gründerrolle bei ANULUM CH&LI im öffentlichen ORCID-Datensatz |
+| 2018 | Öffentliches GitHub-Konto eingerichtet |
+| 2025 | Öffentliche SCPN-Vorschauen und technische Berichte auf Zenodo hinterlegt |
+| 2026 | Ausbau des öffentlichen Software- und Forschungsportfolios in KI-Sicherung, Neuromorphik, Plasma- und Quantensystemen |
 
 ## Laborkarte
 
@@ -281,6 +294,8 @@ Domänen-Kernels und Kommandozeilenwerkzeuge.
 
 | Oberfläche | Verifizierter Weg |
 |---|---|
+| Vollständiger Forschungsindex | [Publikationen, Preprints und Softwarearchive](PUBLICATIONS.md) |
+| Lebenslauf | [Einseitiges PDF](cv/Miroslav-Sotek-CV.pdf), [Quelle](cv/Miroslav-Sotek-CV.md), [JSON Resume](cv/resume.json) |
 | Forschungsidentität | [ORCID 0009-0009-3560-0851](https://orcid.org/0009-0009-3560-0851) |
 | Software | [19 PyPI-Projekte](https://pypi.org/user/anulum/) |
 | Quantum Control | [DOI 10.5281/zenodo.18821929](https://doi.org/10.5281/zenodo.18821929) |
@@ -336,6 +351,16 @@ Ergebnispakete in
 <a id="collaboration"></a>
 ## Zusammenarbeit
 
+### Lizenzmodelle
+
+| Modell | Typische Grenze |
+|---|---|
+| Apache-2.0 | Freizügige öffentliche Kerne wie Director-AI und Rigor Foundry |
+| AGPL-3.0-or-later | Öffentliche Netzwerk- und Forschungssysteme mit Quellcodepflichten |
+| Open Core | Öffentlicher Kern mit separat lizenzierten erweiterten oder verwalteten Bereichen |
+| BUSL-1.1 | Ausgewählte private Systeme mit angekündigter späterer Lizenzänderung |
+| Kommerzielle Lizenz | Alternative Bedingungen, wenn die öffentliche Lizenz nicht eingesetzt werden kann |
+
 | Modus | Umfang |
 |---|---|
 | Forschungskooperation | Reproduzierbare Studien in KI-Sicherung, Neuromorphik, Quantensimulation, Plasmaphysik und Regelung |
@@ -346,6 +371,9 @@ Ergebnispakete in
 Ich begrüsse technisch fundierte Zusammenarbeit in neuromorphen Systemen,
 zuverlässiger KI-Infrastruktur, wissenschaftlichem Rechnen, formaler
 Verifikation und Regelung.
+
+Aufträge werden selektiv angenommen. Das öffentliche GitHub-Profil ist derzeit
+als hireable markiert; dies garantiert keine sofortige Kapazität.
 
 Eine hilfreiche erste Nachricht enthält Problem, Randbedingungen, relevante
 Vorarbeiten und die Evidenz, die als Erfolg gelten würde. Kontakt über

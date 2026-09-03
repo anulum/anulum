@@ -1,0 +1,53 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/schema.json",
+  "basics": {
+    "name": "Miroslav Šotek",
+    "label": "Independent researcher, founder and systems engineer",
+    "email": "protoscience@anulum.li",
+    "url": "https://anulum.li",
+    "summary": "Founder-led engineering across evidence-governed AI, multi-agent infrastructure, scientific computing, neuromorphic systems, quantum simulation, plasma physics and control.",
+    "location": {
+      "region": "Switzerland",
+      "countryCode": "CH"
+    },
+    "profiles": [
+      {"network": "GitHub", "username": "anulum", "url": "https://github.com/anulum"},
+      {"network": "ORCID", "username": "0009-0009-3560-0851", "url": "https://orcid.org/0009-0009-3560-0851"},
+      {"network": "PyPI", "username": "anulum", "url": "https://pypi.org/user/anulum/"}
+    ]
+  },
+  "work": [
+    {
+      "name": "ANULUM CH&LI",
+      "position": "Founder and engineering lead",
+      "url": "https://www.anulum.ch/en/about/",
+      "startDate": "1998-08-07",
+      "summary": "Founder role is self-entered in the public ORCID record. Current public work covers private AI infrastructure, research software, validation systems and managed technical delivery."
+    }
+  ],
+  "skills": [
+    {"name": "AI and agent systems", "keywords": ["LLM assurance", "multi-agent coordination", "auditable memory", "action governance", "RAG"]},
+    {"name": "Scientific computing", "keywords": ["plasma physics", "coupled oscillators", "quantum simulation", "numerical validation", "reproducibility"]},
+    {"name": "Systems and hardware", "keywords": ["Rust", "Python", "Verilog", "SystemVerilog", "FPGA", "WebGPU", "SIMD", "PyO3"]},
+    {"name": "Software assurance", "keywords": ["formal methods", "evidence provenance", "CI", "security", "SBOM", "REUSE"]}
+  ],
+  "projects": [
+    {"name": "Synapse Channel", "description": "Local-first coordination bus for coding-agent fleets.", "url": "https://github.com/anulum/synapse-channel"},
+    {"name": "Director-AI", "description": "Response-level LLM factual-consistency and contradiction guardrail.", "url": "https://github.com/anulum/director-ai"},
+    {"name": "Rigor Foundry", "description": "Evidence-bound repository audit and remediation planning.", "url": "https://github.com/anulum/rigor-foundry"},
+    {"name": "SC-NeuroCore", "description": "Stochastic and neuromorphic computing from Python and Rust to RTL.", "url": "https://github.com/anulum/sc-neurocore"},
+    {"name": "SCPN Fusion Core", "description": "Evidence-bounded plasma physics, solvers and control research.", "url": "https://github.com/anulum/scpn-fusion-core"},
+    {"name": "SCPN Quantum Control", "description": "Reproducible coupled-oscillator quantum-control experiments.", "url": "https://github.com/anulum/scpn-quantum-control"}
+  ],
+  "publications": [
+    {"name": "SCPN Framework v1.0 technical specification", "publisher": "Zenodo", "releaseDate": "2026-02-06", "url": "https://doi.org/10.5281/zenodo.18507639"},
+    {"name": "Sieving: Denoising-Robust Fine-Tuning for NLI", "publisher": "Zenodo", "releaseDate": "2026-03-12", "url": "https://doi.org/10.5281/zenodo.18985467"},
+    {"name": "Generic early-warning signals under a matched false-alarm protocol", "publisher": "Zenodo preprint", "releaseDate": "2026-08-26", "url": "https://doi.org/10.5281/zenodo.22113062"},
+    {"name": "Grid modal-growth detection and eigenvalue regime map", "publisher": "Zenodo preprint", "releaseDate": "2026-08-26", "url": "https://doi.org/10.5281/zenodo.22113116"}
+  ],
+  "meta": {
+    "canonical": "https://github.com/anulum/anulum/blob/main/cv/resume.json",
+    "lastModified": "2026-09-03",
+    "evidenceBoundary": "Public records are self-published or registry records unless explicitly stated otherwise. Peer review, acceptance, academic degrees and independent validation are not implied."
+  }
+}

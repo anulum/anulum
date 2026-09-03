@@ -1,5 +1,6 @@
 {
   "schema_version": "1.0.0",
+  "verified_at": "2026-09-03",
   "profile": {
     "name": "Miroslav Šotek",
     "github": "https://github.com/anulum",
@@ -117,13 +118,34 @@
     "hushline"
   ],
   "evidence_links": [
-    "https://github.com/anulum/synapse-channel/blob/main/VALIDATION.md",
-    "https://github.com/anulum/director-ai/blob/main/VALIDATION.md",
-    "https://github.com/anulum/sc-neurocore/blob/main/VALIDATION.md",
-    "https://github.com/anulum/scpn-fusion-core/blob/main/VALIDATION.md",
-    "https://github.com/anulum/scpn-quantum-control/blob/main/docs/layout_relaxation_preregistration.md",
-    "https://github.com/anulum/scpn-quantum-control/blob/main/docs/hardware_result_packs.md"
+    "https://github.com/anulum/synapse-channel/blob/dd65c898a9693b47fad051e3baa92cef07da2e63/VALIDATION.md",
+    "https://github.com/anulum/synapse-channel/blob/dd65c898a9693b47fad051e3baa92cef07da2e63/docs/coordination-spec.md",
+    "https://github.com/anulum/synapse-channel/blob/dd65c898a9693b47fad051e3baa92cef07da2e63/docs/sandbox-threat-model.md",
+    "https://github.com/anulum/director-ai/blob/fc155051367bb48180f2f5dc92f4120c2549cddd/VALIDATION.md",
+    "https://github.com/anulum/director-ai/blob/fc155051367bb48180f2f5dc92f4120c2549cddd/benchmarks/PUBLIC_BENCHMARKS.md",
+    "https://github.com/anulum/director-ai/blob/fc155051367bb48180f2f5dc92f4120c2549cddd/docs/_generated/capability_matrix.md",
+    "https://github.com/anulum/sc-neurocore/blob/4bbc27b808eef0677848c1e484f40bd41e8ce83d/VALIDATION.md",
+    "https://github.com/anulum/sc-neurocore/blob/4bbc27b808eef0677848c1e484f40bd41e8ce83d/docs/hardware/SYNTHESIS_RESULTS.md",
+    "https://github.com/anulum/sc-neurocore/blob/4bbc27b808eef0677848c1e484f40bd41e8ce83d/docs/safety/TRACEABILITY_MATRIX.md",
+    "https://github.com/anulum/scpn-fusion-core/blob/3c841fc13109c8efb49bb079d145f70683a4408d/VALIDATION.md",
+    "https://github.com/anulum/scpn-fusion-core/blob/3c841fc13109c8efb49bb079d145f70683a4408d/docs/VALIDATION_REAL_DIIID_145419.md",
+    "https://github.com/anulum/scpn-quantum-control/blob/2bc0f935b75ae7b85a4835caf754b2bfd8770c98/docs/layout_relaxation_preregistration.md",
+    "https://github.com/anulum/scpn-quantum-control/blob/2bc0f935b75ae7b85a4835caf754b2bfd8770c98/docs/hardware_result_packs.md",
+    "https://github.com/anulum/scpn-phase-orchestrator/blob/1e9eea39fa6681dde2cfbdf074c08ff03a528b58/papers/submissions/README.md"
   ],
+  "dois": [
+    "10.5281/zenodo.18821929",
+    "10.5281/zenodo.18820864",
+    "10.5281/zenodo.22113062",
+    "10.5281/zenodo.22113116",
+    "10.5281/zenodo.20775432"
+  ],
+  "cv": {
+    "pdf": "cv/Miroslav-Sotek-CV.pdf",
+    "source": "cv/Miroslav-Sotek-CV.md",
+    "json_resume": "cv/resume.json",
+    "publications": "PUBLICATIONS.md"
+  },
   "forbidden_public_names": [
     "SCPN-CONTROL-INFINITY",
     "SCPN Control Infinity",

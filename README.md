@@ -23,6 +23,7 @@ Personal GitHub profile overview
 <p align="center">
   <a href="https://anulum.li"><img alt="Website" src="https://img.shields.io/badge/anulum.li-Website-09111f?style=flat-square&logo=safari&logoColor=white"></a>
   <a href="https://orcid.org/0009-0009-3560-0851"><img alt="ORCID" src="https://img.shields.io/badge/ORCID-0009--0009--3560--0851-a6ce39?style=flat-square&logo=orcid&logoColor=white"></a>
+  <a href="cv/Miroslav-Sotek-CV.pdf"><img alt="CV PDF" src="https://img.shields.io/badge/CV-One_page_PDF-d9a441?style=flat-square&logo=adobeacrobatreader&logoColor=white"></a>
   <a href="https://pypi.org/user/anulum/"><img alt="PyPI" src="https://img.shields.io/badge/PyPI-19_published_projects-3775a9?style=flat-square&logo=pypi&logoColor=white"></a>
   <a href="https://github.com/sponsors/anulum"><img alt="GitHub Sponsors" src="https://img.shields.io/badge/Sponsors-Support_open_work-ea4aaa?style=flat-square&logo=githubsponsors&logoColor=white"></a>
   <a href="mailto:protoscience@anulum.li"><img alt="Email" src="https://img.shields.io/badge/Email-protoscience%40anulum.li-4dd6c8?style=flat-square"></a>
@@ -71,6 +72,9 @@ support them.
   <img alt="Go" src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white">
 </p>
 
+<details>
+<summary><strong>Extended scientific, formal, hardware, and operations stack</strong></summary>
+
 **Scientific, native, and formal work**
 
 <p>
@@ -100,6 +104,8 @@ The portfolio also contains maintained protobuf/gRPC contracts, Python-Rust
 bridges built with PyO3 and Maturin, WebAssembly targets, native SIMD paths,
 scientific notebooks, and multi-language API documentation.
 
+</details>
+
 ## Start here
 
 | Goal | Entry point |
@@ -118,20 +124,22 @@ These links lead to inspectable artefacts, not summary claims.
 
 <table>
   <tr>
-    <td width="50%"><strong>Multi-agent coordination</strong><br><sub>Claims, durable messaging, federation, and threat-bounded execution.</sub><br><a href="https://github.com/anulum/synapse-channel/blob/main/VALIDATION.md">Validation</a> · <a href="https://github.com/anulum/synapse-channel/blob/main/docs/coordination-spec.md">Coordination specification</a> · <a href="https://github.com/anulum/synapse-channel/blob/main/docs/sandbox-threat-model.md">Threat model</a></td>
-    <td width="50%"><strong>LLM response assurance</strong><br><sub>NLI/RAG grounding, claim review, native acceleration, and declared capability boundaries.</sub><br><a href="https://github.com/anulum/director-ai/blob/main/VALIDATION.md">Validation</a> · <a href="https://github.com/anulum/director-ai/blob/main/benchmarks/PUBLIC_BENCHMARKS.md">Public benchmarks</a> · <a href="https://github.com/anulum/director-ai/blob/main/docs/_generated/capability_matrix.md">Capability matrix</a></td>
+    <td width="50%"><strong>Multi-agent coordination</strong><br><sub>Claims, durable messaging, federation, and threat-bounded execution.</sub><br><a href="https://github.com/anulum/synapse-channel/blob/dd65c898a9693b47fad051e3baa92cef07da2e63/VALIDATION.md">Validation</a> · <a href="https://github.com/anulum/synapse-channel/blob/dd65c898a9693b47fad051e3baa92cef07da2e63/docs/coordination-spec.md">Coordination specification</a> · <a href="https://github.com/anulum/synapse-channel/blob/dd65c898a9693b47fad051e3baa92cef07da2e63/docs/sandbox-threat-model.md">Threat model</a></td>
+    <td width="50%"><strong>LLM response assurance</strong><br><sub>NLI/RAG grounding, claim review, native acceleration, and declared capability boundaries.</sub><br><a href="https://github.com/anulum/director-ai/blob/fc155051367bb48180f2f5dc92f4120c2549cddd/VALIDATION.md">Validation</a> · <a href="https://github.com/anulum/director-ai/blob/fc155051367bb48180f2f5dc92f4120c2549cddd/benchmarks/PUBLIC_BENCHMARKS.md">Public benchmarks</a> · <a href="https://github.com/anulum/director-ai/blob/fc155051367bb48180f2f5dc92f4120c2549cddd/docs/_generated/capability_matrix.md">Capability matrix</a></td>
   </tr>
   <tr>
-    <td width="50%"><strong>Neuromorphic compute to RTL</strong><br><sub>Python models, Rust SIMD paths, compiler surfaces, and hardware evidence.</sub><br><a href="https://github.com/anulum/sc-neurocore/blob/main/VALIDATION.md">Validation</a> · <a href="https://github.com/anulum/sc-neurocore/blob/main/docs/hardware/SYNTHESIS_RESULTS.md">Synthesis results</a> · <a href="https://github.com/anulum/sc-neurocore/blob/main/docs/safety/TRACEABILITY_MATRIX.md">Traceability matrix</a></td>
-    <td width="50%"><strong>Plasma modelling and validation</strong><br><sub>Solver evidence, real-data paths, uncertainty boundaries, and reproducible artefacts.</sub><br><a href="https://github.com/anulum/scpn-fusion-core/blob/main/VALIDATION.md">Validation</a> · <a href="https://github.com/anulum/scpn-fusion-core/blob/main/docs/VALIDATION_REAL_DIIID_145419.md">DIII-D validation record</a> · <a href="https://doi.org/10.5281/zenodo.18820864">Software DOI</a></td>
+    <td width="50%"><strong>Neuromorphic compute to RTL</strong><br><sub>Python models, Rust SIMD paths, compiler surfaces, and hardware evidence.</sub><br><a href="https://github.com/anulum/sc-neurocore/blob/4bbc27b808eef0677848c1e484f40bd41e8ce83d/VALIDATION.md">Validation</a> · <a href="https://github.com/anulum/sc-neurocore/blob/4bbc27b808eef0677848c1e484f40bd41e8ce83d/docs/hardware/SYNTHESIS_RESULTS.md">Synthesis results</a> · <a href="https://github.com/anulum/sc-neurocore/blob/4bbc27b808eef0677848c1e484f40bd41e8ce83d/docs/safety/TRACEABILITY_MATRIX.md">Traceability matrix</a></td>
+    <td width="50%"><strong>Plasma modelling and validation</strong><br><sub>Solver evidence, real-data paths, uncertainty boundaries, and reproducible artefacts.</sub><br><a href="https://github.com/anulum/scpn-fusion-core/blob/3c841fc13109c8efb49bb079d145f70683a4408d/VALIDATION.md">Validation</a> · <a href="https://github.com/anulum/scpn-fusion-core/blob/3c841fc13109c8efb49bb079d145f70683a4408d/docs/VALIDATION_REAL_DIIID_145419.md">DIII-D validation record</a> · <a href="https://doi.org/10.5281/zenodo.18820864">Software DOI</a></td>
   </tr>
   <tr>
-    <td width="50%"><strong>Quantum experiment governance</strong><br><sub>Preregistration, hardware result packs, raw counts, and explicit non-advantage boundaries.</sub><br><a href="https://github.com/anulum/scpn-quantum-control/blob/main/docs/layout_relaxation_preregistration.md">Preregistration</a> · <a href="https://github.com/anulum/scpn-quantum-control/blob/main/docs/hardware_result_packs.md">Result-pack contract</a> · <a href="https://doi.org/10.5281/zenodo.18821929">Software DOI</a></td>
-    <td width="50%"><strong>Research honesty in phase systems</strong><br><sub>Matched-false-alarm evaluation, negative results, and bounded transfer claims.</sub><br><a href="https://github.com/anulum/scpn-phase-orchestrator/blob/main/papers/submissions/README.md">Submission index</a> · <a href="https://doi.org/10.5281/zenodo.22113062">Negative-result preprint</a> · <a href="https://doi.org/10.5281/zenodo.22113116">Grid regime-map preprint</a></td>
+    <td width="50%"><strong>Quantum experiment governance</strong><br><sub>Preregistration, hardware result packs, raw counts, and explicit non-advantage boundaries.</sub><br><a href="https://github.com/anulum/scpn-quantum-control/blob/2bc0f935b75ae7b85a4835caf754b2bfd8770c98/docs/layout_relaxation_preregistration.md">Preregistration</a> · <a href="https://github.com/anulum/scpn-quantum-control/blob/2bc0f935b75ae7b85a4835caf754b2bfd8770c98/docs/hardware_result_packs.md">Result-pack contract</a> · <a href="https://doi.org/10.5281/zenodo.18821929">Software DOI</a></td>
+    <td width="50%"><strong>Research honesty in phase systems</strong><br><sub>Matched-false-alarm evaluation, negative results, and bounded transfer claims.</sub><br><a href="https://github.com/anulum/scpn-phase-orchestrator/blob/1e9eea39fa6681dde2cfbdf074c08ff03a528b58/papers/submissions/README.md">Submission index</a> · <a href="https://doi.org/10.5281/zenodo.22113062">Negative-result preprint</a> · <a href="https://doi.org/10.5281/zenodo.22113116">Grid regime-map preprint</a></td>
   </tr>
 </table>
 
 ## Current focus
+
+<sub>Portfolio state verified 2026-09-03.</sub>
 
 <table>
   <tr>
@@ -140,6 +148,19 @@ These links lead to inspectable artefacts, not summary claims.
     <td width="33%"><strong>Research to hardware</strong><br><sub>Carrying scientific models through native acceleration, formal checks, RTL, hardware runs, and inspectable result packs.</sub></td>
   </tr>
 </table>
+
+## Timeline
+
+| Period | Publicly supported milestone |
+|---|---|
+| 1996 onward | Self-published concept-development horizon across the broader research programme |
+| 1998 | Founder role at ANULUM CH&LI begins in the self-entered public ORCID record |
+| 2018 | Public GitHub account established |
+| 2025 | Public SCPN previews, framework indexes, and technical reports deposited on Zenodo |
+| 2026 | Public software and research portfolio expands across AI assurance, agent infrastructure, neuromorphic computing, plasma control, and quantum simulation |
+
+Timeline entries distinguish registry facts from self-published chronology. They
+do not imply academic affiliation, external validation, funding, or awards.
 
 ## How the stack is used
 
@@ -173,6 +194,7 @@ private product surfaces. [HushLine](https://github.com/anulum/HushLine) is a
 standalone public utility outside the five portfolios. Connections represent
 contract, integration, evidence, and audit flow. They do not merge ownership or
 imply scientific validation, operational readiness, or actuation authority.
+Counts verified 2026-09-03.
 
 **Access key:** `PUBLIC` · `PUBLIC / ARCHITECTURE-ONLY` · `PRIVATE` ·
 `PRIVATE / PROPRIETARY`
@@ -183,6 +205,9 @@ imply scientific validation, operational readiness, or actuation authority.
 Device-family physics, shared numerical kernels, reactor models, geometry, and
 configuration ownership. Repository presence does not by itself establish
 validated physics or machine readiness.
+
+**Thematic index:** shared foundations (3) · magnetic confinement (10) ·
+inertial confinement (3) · MIF and pulsed systems (4) · alternative concepts (5)
 
 | Repository | Scope | Access |
 |---|---|---|
@@ -339,6 +364,8 @@ engines, domain kernels, and command-line tools.
 
 | Surface | Verified route |
 |---|---|
+| Complete research index | [Publications, preprints, software archives, and evidence boundaries](PUBLICATIONS.md) |
+| Curriculum vitae | [One-page PDF](cv/Miroslav-Sotek-CV.pdf) · [Markdown source](cv/Miroslav-Sotek-CV.md) · [JSON Resume](cv/resume.json) |
 | Research identity | [ORCID 0009-0009-3560-0851](https://orcid.org/0009-0009-3560-0851) |
 | Software publication | [19 projects on PyPI](https://pypi.org/user/anulum/) |
 | Quantum-control software | [Zenodo DOI 10.5281/zenodo.18821929](https://doi.org/10.5281/zenodo.18821929) |
@@ -355,6 +382,19 @@ engines, domain kernels, and command-line tools.
 | [Director-AI](https://github.com/anulum/director-ai) | Real-time LLM guardrails with NLI/RAG fact-checking and optional claim-level streaming halt | **Research active:** functional system under validation |
 | [SC-NeuroCore](https://github.com/anulum/sc-neurocore) | Stochastic and neuromorphic framework spanning Python, Rust SIMD, Verilog, and HDC/VSA | **Research active:** platform under continuous development |
 | [SCPN Quantum Control](https://github.com/anulum/scpn-quantum-control) | Evidence-governed quantum simulation of coupled-oscillator synchronisation | **Experimental:** preregistered research programme |
+
+### Live release signals
+
+Dynamic badges report registry and workflow state. They are operational signals,
+not scientific-quality scores.
+
+| Project | Release | Main CI |
+|---|---|---|
+| Synapse Channel | [![PyPI](https://img.shields.io/pypi/v/synapse-channel?style=flat-square)](https://pypi.org/project/synapse-channel/) | [![CI](https://github.com/anulum/synapse-channel/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/anulum/synapse-channel/actions/workflows/ci.yml) |
+| Rigor Foundry | [![PyPI](https://img.shields.io/pypi/v/rigor-foundry?style=flat-square)](https://pypi.org/project/rigor-foundry/) | [![CI](https://github.com/anulum/rigor-foundry/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/anulum/rigor-foundry/actions/workflows/ci.yml) |
+| Director-AI | [![PyPI](https://img.shields.io/pypi/v/director-ai?style=flat-square)](https://pypi.org/project/director-ai/) | [![CI](https://github.com/anulum/director-ai/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/anulum/director-ai/actions/workflows/ci.yml) |
+| SC-NeuroCore | [![PyPI](https://img.shields.io/pypi/v/sc-neurocore?style=flat-square)](https://pypi.org/project/sc-neurocore/) | [![CI](https://github.com/anulum/sc-neurocore/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/anulum/sc-neurocore/actions/workflows/ci.yml) |
+| SCPN Quantum Control | [![PyPI](https://img.shields.io/pypi/v/scpn-quantum-control?style=flat-square)](https://pypi.org/project/scpn-quantum-control/) | [![CI](https://github.com/anulum/scpn-quantum-control/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/anulum/scpn-quantum-control/actions/workflows/ci.yml) |
 
 ### Maturity labels
 
@@ -387,6 +427,16 @@ advantage claim.
 
 ## Collaboration
 
+### Licensing model
+
+| Model | Typical boundary |
+|---|---|
+| Apache-2.0 | Permissive public cores such as Director-AI and Rigor Foundry |
+| AGPL-3.0-or-later | Public network-facing and research systems with source-sharing obligations |
+| Open core | Public core with separately licensed advanced or managed product surfaces |
+| BUSL-1.1 | Selected private commercial systems with a declared future change licence |
+| Commercial licence | Alternative terms for organisations that cannot use the public licence |
+
 | Mode | Scope |
 |---|---|
 | Research collaboration | Reproducible studies in AI assurance, neuromorphic systems, quantum simulation, plasma physics, and control |
@@ -397,6 +447,9 @@ advantage claim.
 I welcome technically grounded collaboration in reliable AI infrastructure,
 multi-agent systems, neuromorphic computing, scientific software, formal
 verification, quantum simulation, plasma physics, and control.
+
+Engagements are taken selectively. The public GitHub profile currently marks
+the account as hireable; this is not a guarantee of immediate capacity.
 
 A useful first message includes the problem, constraints, relevant prior art,
 and what evidence would count as success. Contact me through

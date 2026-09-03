@@ -85,6 +85,26 @@ def main() -> int:
     for url in data["evidence_links"]:
         if url not in english:
             errors.append(f"README.md: missing evidence URL {url}")
+        if "/blob/main/" in url:
+            errors.append(f"evidence URL is mutable: {url}")
+
+    if data["verified_at"] not in english:
+        errors.append("README.md: missing manifest verification date")
+
+    for doi in data["dois"]:
+        if f"https://doi.org/{doi}" not in english:
+            errors.append(f"README.md: missing DOI {doi}")
+
+    for relative in data["cv"].values():
+        if not (ROOT / relative).is_file():
+            errors.append(f"missing CV or publication surface: {relative}")
+
+    resume_path = ROOT / data["cv"]["json_resume"]
+    if resume_path.is_file():
+        json.loads(resume_path.read_text(encoding="utf-8"))
+    pdf_path = ROOT / data["cv"]["pdf"]
+    if pdf_path.is_file() and not pdf_path.read_bytes().startswith(b"%PDF-"):
+        errors.append(f"invalid PDF header: {data['cv']['pdf']}")
 
     for asset in ("assets/profile-header.svg", "assets/ecosystem-map.svg", "assets/anulum-logo.jpg"):
         if not (ROOT / asset).is_file():
