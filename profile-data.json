@@ -180,6 +180,18 @@
   "footer_logo": "assets/anulum-logo-footer.jpg",
   "footer_logo_max_bytes": 61440,
   "badge_spec": "tools/badges.json",
+  "reactor_families": [
+    {"slug": "closed-magnetic", "name": "Closed magnetic confinement", "url": "https://anulum.li/reactor-systems/closed-magnetic/", "repositories": ["SCPN Tokamak Core", "SCPN Stellarator Core", "SCPN RFP Core", "SCPN Spheromak Core", "SCPN FRC Core"]},
+    {"slug": "open-magnetic", "name": "Open and non-toroidal magnetic confinement", "url": "https://anulum.li/reactor-systems/open-magnetic/", "repositories": ["SCPN Mirror Core", "SCPN Magnetic Cusp Core", "SCPN Levitated Dipole Core"]},
+    {"slug": "pinches", "name": "Self-magnetic and pulsed pinches", "url": "https://anulum.li/reactor-systems/pinches/", "repositories": ["SCPN Z-Pinch Core", "SCPN Theta Pinch Core", "SCPN Dense Plasma Focus Core"]},
+    {"slug": "inertial", "name": "Inertial confinement", "url": "https://anulum.li/reactor-systems/inertial/", "repositories": ["SCPN ICF Laser Core", "SCPN ICF Beam Core", "SCPN ICF Impact Core"]},
+    {"slug": "magneto-inertial", "name": "Magneto-inertial and magnetised-target systems", "url": "https://anulum.li/reactor-systems/magneto-inertial/", "repositories": ["SCPN MIF Core", "SCPN MIF MagLIF Core", "SCPN MIF Plasma Jet Core", "SCPN MIF Liner Core"]},
+    {"slug": "electrostatic-hybrid", "name": "Electrostatic, beam-target and hybrid systems", "url": "https://anulum.li/reactor-systems/electrostatic-hybrid/", "repositories": ["SCPN IEC Core", "SCPN Beam Target Core", "SCPN Fusion-Fission Hybrid Core"]}
+  ],
+  "reactor_shared": ["SCPN Reactor Kernels", "SCPN Fusion Core"],
+  "reactor_reserved": ["SCPN Lattice Fusion Core", "SCPN Muon Fusion Core"],
+  "reactor_hub": "https://anulum.li/reactor-systems/",
+  "reactor_compare": "https://anulum.li/reactor-systems/compare.html",
   "record_projects": {
     "20382000": "SCPN Quantum Control",
     "20382075": "SCPN Quantum Control",

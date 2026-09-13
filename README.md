@@ -34,26 +34,21 @@ Personal GitHub profile overview
 </p>
 
 <p align="center">
-  <a href="#verified-work">Verified work</a> ·
+  <a href="#projects">Projects</a> ·
   <a href="#current-focus">Current focus</a> ·
   <a href="#portfolio-ecosystem">Ecosystem</a> ·
-  <a href="#engineering-practice">Standards</a> ·
   <a href="#research-output">Research output</a> ·
+  <a href="#engineering-practice">Standards</a> ·
   <a href="#collaboration">Collaboration</a>
 </p>
 
-# Miroslav Šotek
-
 Independent researcher and systems engineer at the
-[Anulum Institute](https://anulum.li) in Switzerland.
-
-I build **evidence-governed infrastructure** for AI systems, multi-agent
-engineering, scientific computing, neuromorphic hardware, quantum simulation,
-and control. The work connects mathematical models to reproducible software,
-native acceleration, formal models, and executable hardware paths.
-
-Claims are only as good as the measurements, artefacts, or verification that
-support them.
+[Anulum Institute](https://anulum.li) in Switzerland. I build
+**evidence-governed infrastructure** for AI systems, multi-agent engineering,
+scientific computing, neuromorphic hardware, quantum simulation, and control:
+mathematical models carried through reproducible software, native
+acceleration, formal models, and executable hardware paths. Claims are only as
+good as the measurements, artefacts, or verification that support them.
 
 <table>
   <tr>
@@ -64,82 +59,46 @@ support them.
   </tr>
 </table>
 
-## Languages and platforms
-
-**Primary implementation**
-
-<p>
-  <img alt="Python" src="assets/badges/python.svg">
-  <img alt="Rust" src="assets/badges/rust.svg">
-  <img alt="TypeScript" src="assets/badges/typescript.svg">
-  <img alt="JavaScript" src="assets/badges/javascript.svg">
-  <img alt="Go" src="assets/badges/go.svg">
-</p>
-
-<details>
-<summary><strong>Extended scientific, formal, hardware, and operations stack</strong></summary>
-
-**Scientific, native, and formal work**
-
-<p>
-  <img alt="Julia" src="assets/badges/julia.svg">
-  <img alt="Mojo" src="assets/badges/mojo.svg">
-  <img alt="C++" src="assets/badges/cpp.svg">
-  <img alt="C" src="assets/badges/c.svg">
-  <img alt="Lean" src="assets/badges/lean.svg">
-  <img alt="Jupyter" src="assets/badges/jupyter.svg">
-  <img alt="LaTeX" src="assets/badges/latex.svg">
-</p>
-
-**Hardware, web, and operations**
-
-<p>
-  <img alt="Verilog" src="assets/badges/verilog.en.svg">
-  <img alt="SystemVerilog" src="assets/badges/systemverilog.svg">
-  <img alt="WGSL" src="assets/badges/wgsl.svg">
-  <img alt="HTML5" src="assets/badges/html5.svg">
-  <img alt="CSS3" src="assets/badges/css3.svg">
-  <img alt="Shell" src="assets/badges/shell.svg">
-  <img alt="Docker" src="assets/badges/docker.svg">
-  <img alt="Linux" src="assets/badges/linux.svg">
-</p>
-
-The portfolio also contains maintained protobuf/gRPC contracts, Python-Rust
-bridges built with PyO3 and Maturin, WebAssembly targets, native SIMD paths,
-scientific notebooks, and multi-language API documentation.
-
-</details>
-
 ## Start here
 
-| Goal | Entry point |
-|---|---|
-| Coordinate parallel coding agents without worktree collisions | [Synapse Channel](https://github.com/anulum/synapse-channel) and its [documentation](https://anulum.github.io/synapse-channel/) |
-| Guard LLM claims and factual consistency | [Director-AI](https://github.com/anulum/director-ai) and its [documentation](https://anulum.github.io/director-ai/) |
-| Audit repositories and prepare evidence-bound remediation | [Rigor Foundry](https://github.com/anulum/rigor-foundry) and its [documentation](https://anulum.github.io/rigor-foundry/) |
-| Build auditable memory for agents and knowledge systems | [Remanentia](https://github.com/anulum/remanentia) |
-| Explore neuromorphic and stochastic computing | [SC-NeuroCore](https://github.com/anulum/sc-neurocore) and its [documentation](https://anulum.github.io/sc-neurocore/) |
-| Work with plasma models and control-grade runtimes | [SCPN Fusion Core](https://github.com/anulum/scpn-fusion-core) and [SCPN Control](https://github.com/anulum/scpn-control) |
-| Reproduce coupled-oscillator quantum experiments | [SCPN Quantum Control](https://github.com/anulum/scpn-quantum-control) |
+**[Projects](#projects)** for the software and its evidence ·
+**[Papers](https://anulum.li/papers/)** for every publication and software
+archive with BibTeX · **[Contact](mailto:protoscience@anulum.li)** for a
+technical proposal. Cold readers: [anulum.li/start/](https://anulum.li/start/)
+picks an entry point by profile.
 
-## Verified work
+## Projects
 
-These links lead to inspectable artefacts, not summary claims.
+Each card links to inspectable artefacts, not summary claims. Evidence links
+are pinned to the commit they were verified at. Release and CI badges report
+registry and workflow state; they are operational signals, not scientific-quality
+scores.
 
 <table>
   <tr>
-    <td width="50%"><strong>Multi-agent coordination</strong><br><sub>Claims, durable messaging, federation, and threat-bounded execution.</sub><br><a href="https://github.com/anulum/synapse-channel/blob/dd65c898a9693b47fad051e3baa92cef07da2e63/VALIDATION.md">Validation</a> · <a href="https://github.com/anulum/synapse-channel/blob/dd65c898a9693b47fad051e3baa92cef07da2e63/docs/coordination-spec.md">Coordination specification</a> · <a href="https://github.com/anulum/synapse-channel/blob/dd65c898a9693b47fad051e3baa92cef07da2e63/docs/sandbox-threat-model.md">Threat model</a></td>
-    <td width="50%"><strong>LLM response assurance</strong><br><sub>NLI/RAG grounding, claim review, native acceleration, and declared capability boundaries.</sub><br><a href="https://github.com/anulum/director-ai/blob/fc155051367bb48180f2f5dc92f4120c2549cddd/VALIDATION.md">Validation</a> · <a href="https://github.com/anulum/director-ai/blob/fc155051367bb48180f2f5dc92f4120c2549cddd/benchmarks/PUBLIC_BENCHMARKS.md">Public benchmarks</a> · <a href="https://github.com/anulum/director-ai/blob/fc155051367bb48180f2f5dc92f4120c2549cddd/docs/_generated/capability_matrix.md">Capability matrix</a></td>
+    <td width="50%" valign="top"><strong><a href="https://github.com/anulum/synapse-channel">Synapse Channel</a></strong> · <sub><strong>Usable now</strong></sub><br><sub>Control plane for coding-agent fleets: claims, roles, durable mailboxes, receipts, audit, and federation.</sub><br><sub><a href="https://anulum.github.io/synapse-channel/">Documentation</a> · <a href="https://github.com/anulum/synapse-channel/blob/dd65c898a9693b47fad051e3baa92cef07da2e63/VALIDATION.md">Validation</a> · <a href="https://github.com/anulum/synapse-channel/blob/dd65c898a9693b47fad051e3baa92cef07da2e63/docs/coordination-spec.md">Coordination specification</a> · <a href="https://github.com/anulum/synapse-channel/blob/dd65c898a9693b47fad051e3baa92cef07da2e63/docs/sandbox-threat-model.md">Threat model</a></sub><br><a href="https://pypi.org/project/synapse-channel/"><img alt="PyPI" src="https://img.shields.io/pypi/v/synapse-channel?style=flat-square"></a> <a href="https://github.com/anulum/synapse-channel/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/anulum/synapse-channel/actions/workflows/ci.yml/badge.svg?branch=main"></a></td>
+    <td width="50%" valign="top"><strong><a href="https://github.com/anulum/director-ai">Director-AI</a></strong> · <sub><strong>Research active</strong></sub><br><sub>Real-time LLM guardrail: NLI/RAG grounding, claim review, native acceleration, optional claim-level streaming halt, declared capability boundaries.</sub><br><sub><a href="https://anulum.github.io/director-ai/">Documentation</a> · <a href="https://github.com/anulum/director-ai/blob/fc155051367bb48180f2f5dc92f4120c2549cddd/VALIDATION.md">Validation</a> · <a href="https://github.com/anulum/director-ai/blob/fc155051367bb48180f2f5dc92f4120c2549cddd/benchmarks/PUBLIC_BENCHMARKS.md">Public benchmarks</a> · <a href="https://github.com/anulum/director-ai/blob/fc155051367bb48180f2f5dc92f4120c2549cddd/docs/_generated/capability_matrix.md">Capability matrix</a></sub><br><a href="https://pypi.org/project/director-ai/"><img alt="PyPI" src="https://img.shields.io/pypi/v/director-ai?style=flat-square"></a> <a href="https://github.com/anulum/director-ai/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/anulum/director-ai/actions/workflows/ci.yml/badge.svg?branch=main"></a></td>
   </tr>
   <tr>
-    <td width="50%"><strong>Neuromorphic compute to RTL</strong><br><sub>Python models, Rust SIMD paths, compiler surfaces, and hardware evidence.</sub><br><a href="https://github.com/anulum/sc-neurocore/blob/4bbc27b808eef0677848c1e484f40bd41e8ce83d/VALIDATION.md">Validation</a> · <a href="https://github.com/anulum/sc-neurocore/blob/4bbc27b808eef0677848c1e484f40bd41e8ce83d/docs/hardware/SYNTHESIS_RESULTS.md">Synthesis results</a> · <a href="https://github.com/anulum/sc-neurocore/blob/4bbc27b808eef0677848c1e484f40bd41e8ce83d/docs/safety/TRACEABILITY_MATRIX.md">Traceability matrix</a></td>
-    <td width="50%"><strong>Plasma modelling and validation</strong><br><sub>Solver evidence, real-data paths, uncertainty boundaries, and reproducible artefacts.</sub><br><a href="https://github.com/anulum/scpn-fusion-core/blob/3c841fc13109c8efb49bb079d145f70683a4408d/VALIDATION.md">Validation</a> · <a href="https://github.com/anulum/scpn-fusion-core/blob/3c841fc13109c8efb49bb079d145f70683a4408d/docs/VALIDATION_REAL_DIIID_145419.md">DIII-D validation record</a> · <a href="https://doi.org/10.5281/zenodo.18820864">Software DOI</a></td>
+    <td width="50%" valign="top"><strong><a href="https://github.com/anulum/rigor-foundry">Rigor Foundry</a></strong> · <sub><strong>Usable now</strong></sub><br><sub>Evidence-bound repository inventory, audit candidates, review binding, and remediation planning.</sub><br><sub><a href="https://anulum.github.io/rigor-foundry/">Documentation</a></sub><br><a href="https://pypi.org/project/rigor-foundry/"><img alt="PyPI" src="https://img.shields.io/pypi/v/rigor-foundry?style=flat-square"></a> <a href="https://github.com/anulum/rigor-foundry/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/anulum/rigor-foundry/actions/workflows/ci.yml/badge.svg?branch=main"></a></td>
+    <td width="50%" valign="top"><strong><a href="https://github.com/anulum/remanentia">Remanentia</a></strong> · <sub><strong>Usable now</strong></sub><br><sub>Auditable memory for AI agents and knowledge systems: hybrid retrieval, graphs, consolidation, CLI, MCP, and API surfaces.</sub><br><sub><a href="https://github.com/anulum/remanentia#readme">Documentation</a></sub><br><a href="https://pypi.org/project/remanentia/"><img alt="PyPI" src="https://img.shields.io/pypi/v/remanentia?style=flat-square"></a> <a href="https://github.com/anulum/remanentia/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/anulum/remanentia/actions/workflows/ci.yml/badge.svg?branch=main"></a></td>
   </tr>
   <tr>
-    <td width="50%"><strong>Quantum experiment governance</strong><br><sub>Preregistration, hardware result packs, raw counts, and explicit non-advantage boundaries.</sub><br><a href="https://github.com/anulum/scpn-quantum-control/blob/2bc0f935b75ae7b85a4835caf754b2bfd8770c98/docs/layout_relaxation_preregistration.md">Preregistration</a> · <a href="https://github.com/anulum/scpn-quantum-control/blob/2bc0f935b75ae7b85a4835caf754b2bfd8770c98/docs/hardware_result_packs.md">Result-pack contract</a> · <a href="https://doi.org/10.5281/zenodo.18821929">Software DOI</a></td>
-    <td width="50%"><strong>Research honesty in phase systems</strong><br><sub>Matched-false-alarm evaluation, negative results, and bounded transfer claims.</sub><br><a href="https://github.com/anulum/scpn-phase-orchestrator/blob/1e9eea39fa6681dde2cfbdf074c08ff03a528b58/papers/submissions/README.md">Submission index</a> · <a href="https://doi.org/10.5281/zenodo.22113062">Negative-result preprint</a> · <a href="https://doi.org/10.5281/zenodo.22113116">Grid regime-map preprint</a></td>
+    <td width="50%" valign="top"><strong><a href="https://github.com/anulum/sc-neurocore">SC-NeuroCore</a></strong> · <sub><strong>Research active</strong></sub><br><sub>Stochastic and neuromorphic framework: Python models, Rust SIMD paths, Verilog RTL, HDC/VSA, compiler surfaces, and hardware evidence.</sub><br><sub><a href="https://anulum.github.io/sc-neurocore/">Documentation</a> · <a href="https://github.com/anulum/sc-neurocore/blob/4bbc27b808eef0677848c1e484f40bd41e8ce83d/VALIDATION.md">Validation</a> · <a href="https://github.com/anulum/sc-neurocore/blob/4bbc27b808eef0677848c1e484f40bd41e8ce83d/docs/hardware/SYNTHESIS_RESULTS.md">Synthesis results</a> · <a href="https://github.com/anulum/sc-neurocore/blob/4bbc27b808eef0677848c1e484f40bd41e8ce83d/docs/safety/TRACEABILITY_MATRIX.md">Traceability matrix</a></sub><br><a href="https://pypi.org/project/sc-neurocore/"><img alt="PyPI" src="https://img.shields.io/pypi/v/sc-neurocore?style=flat-square"></a> <a href="https://github.com/anulum/sc-neurocore/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/anulum/sc-neurocore/actions/workflows/ci.yml/badge.svg?branch=main"></a></td>
+    <td width="50%" valign="top"><strong><a href="https://github.com/anulum/scpn-fusion-core">SCPN Fusion Core</a> · <a href="https://github.com/anulum/scpn-control">SCPN Control</a></strong> · <sub><strong>Research active</strong></sub><br><sub>Tokamak physics, solvers, and validation campaigns with real-data paths (Fusion Core); control-grade runtime with fail-closed admission and replay evidence (Control).</sub><br><sub><a href="https://github.com/anulum/scpn-fusion-core/blob/3c841fc13109c8efb49bb079d145f70683a4408d/VALIDATION.md">Validation</a> · <a href="https://github.com/anulum/scpn-fusion-core/blob/3c841fc13109c8efb49bb079d145f70683a4408d/docs/VALIDATION_REAL_DIIID_145419.md">DIII-D validation record</a> · <a href="https://doi.org/10.5281/zenodo.18820864">Software DOI</a></sub><br><a href="https://pypi.org/project/scpn-fusion/"><img alt="PyPI" src="https://img.shields.io/pypi/v/scpn-fusion?style=flat-square"></a> <a href="https://pypi.org/project/scpn-control/"><img alt="PyPI" src="https://img.shields.io/pypi/v/scpn-control?style=flat-square"></a> <a href="https://github.com/anulum/scpn-fusion-core/actions/workflows/ci-python-tests.yml"><img alt="CI" src="https://github.com/anulum/scpn-fusion-core/actions/workflows/ci-python-tests.yml/badge.svg?branch=main"></a></td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top"><strong><a href="https://github.com/anulum/scpn-quantum-control">SCPN Quantum Control</a></strong> · <sub><strong>Experimental</strong></sub><br><sub>Evidence-governed quantum simulation of coupled-oscillator synchronisation: preregistration, hardware result packs, raw counts, and explicit non-advantage boundaries.</sub><br><sub><a href="https://github.com/anulum/scpn-quantum-control/blob/2bc0f935b75ae7b85a4835caf754b2bfd8770c98/docs/layout_relaxation_preregistration.md">Preregistration</a> · <a href="https://github.com/anulum/scpn-quantum-control/blob/2bc0f935b75ae7b85a4835caf754b2bfd8770c98/docs/hardware_result_packs.md">Result-pack contract</a> · <a href="https://doi.org/10.5281/zenodo.18821929">Software DOI</a></sub><br><a href="https://pypi.org/project/scpn-quantum-control/"><img alt="PyPI" src="https://img.shields.io/pypi/v/scpn-quantum-control?style=flat-square"></a> <a href="https://github.com/anulum/scpn-quantum-control/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/anulum/scpn-quantum-control/actions/workflows/ci.yml/badge.svg?branch=main"></a></td>
+    <td width="50%" valign="top"><strong><a href="https://github.com/anulum/scpn-phase-orchestrator">SCPN Phase Orchestrator</a></strong> · <sub><strong>Research active</strong></sub><br><sub>Evidence-first synchronisation analysis and review-only control proposals for coupled rhythmic systems; matched-false-alarm evaluation, negative results, and bounded transfer claims.</sub><br><sub><a href="https://github.com/anulum/scpn-phase-orchestrator/blob/1e9eea39fa6681dde2cfbdf074c08ff03a528b58/papers/submissions/README.md">Submission index</a> · <a href="https://doi.org/10.5281/zenodo.22113062">Negative-result preprint</a> · <a href="https://doi.org/10.5281/zenodo.22113116">Grid regime-map preprint</a></sub><br><a href="https://pypi.org/project/scpn-phase-orchestrator/"><img alt="PyPI" src="https://img.shields.io/pypi/v/scpn-phase-orchestrator?style=flat-square"></a> <a href="https://github.com/anulum/scpn-phase-orchestrator/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/anulum/scpn-phase-orchestrator/actions/workflows/ci.yml/badge.svg?branch=main"></a></td>
   </tr>
 </table>
+
+| Label | Meaning |
+|---|---|
+| **Usable now** | Installable, documented, and CI-backed; still evolving |
+| **Research active** | Real code and ongoing science; not a stability promise |
+| **Experimental** | Exploratory; interfaces and claims are not fixed |
+| **Evidence-bound** | Public claims are tied to measurements or artefacts |
 
 ## Current focus
 
@@ -231,7 +190,9 @@ private product surfaces. [HushLine](https://github.com/anulum/HushLine) is a
 standalone public utility outside the five portfolios. Connections represent
 contract, integration, evidence, and audit flow. They do not merge ownership or
 imply scientific validation, operational readiness, or actuation authority.
-Counts verified <!-- verified-at -->2026-09-13<!-- /verified-at -->.
+Counts verified <!-- verified-at -->2026-09-13<!-- /verified-at -->. The
+account lists more public repositories than the map: the 34 mapped public
+projects plus this profile repository and a few forks kept for reference.
 
 **Access key:** `PUBLIC` · `PUBLIC / ARCHITECTURE-ONLY` · `PRIVATE` ·
 `PRIVATE / PROPRIETARY`
@@ -241,38 +202,76 @@ Counts verified <!-- verified-at -->2026-09-13<!-- /verified-at -->.
 
 Device-family physics, shared numerical kernels, reactor models, geometry, and
 configuration ownership. Repository presence does not by itself establish
-validated physics or machine readiness.
+validated physics or machine readiness. Each device family has an interactive
+portal on anulum.li with physics, an explorer, a glossary, and sources; the
+[reactor systems hub](https://anulum.li/reactor-systems/) lists every core with
+its evidence maturity and the [comparison page](https://anulum.li/reactor-systems/compare.html)
+sets their level-0 anchors side by side.
 
-**Thematic index:** shared foundations (3) · magnetic confinement (10) ·
-inertial confinement (3) · MIF and pulsed systems (4) · alternative concepts (5)
+**Shared foundations**
 
 | Repository | Scope | Access |
 |---|---|---|
 | [SCPN Reactor Kernels](https://github.com/anulum/scpn-reactor-kernels) | Shared deterministic physics, geometry, and numerical kernels for the reactor portfolio | `PUBLIC` |
 | [SCPN Fusion Core](https://github.com/anulum/scpn-fusion-core) | Tokamak physics, solvers, validation campaigns, transport, and control research | `PUBLIC` |
-| [SCPN MIF Core](https://github.com/anulum/scpn-mif-core) | Pulsed FRC/MIF kinematics, deterministic trigger logic, FPGA RTL, and formal timing evidence | `PUBLIC` |
-| [SCPN Beam Target Core](https://github.com/anulum/scpn-beam-target-core) | Fixed-target and colliding-beam fusion device truth | `PUBLIC` |
-| [SCPN Dense Plasma Focus Core](https://github.com/anulum/scpn-dense-plasma-focus-core) | Coaxial dense-plasma-focus devices, diagnostics, and level-0 physics | `PUBLIC` |
-| [SCPN FRC Core](https://github.com/anulum/scpn-frc-core) | Field-reversed-configuration fusion systems | `PUBLIC` |
-| [SCPN Fusion-Fission Hybrid Core](https://github.com/anulum/scpn-fusion-fission-hybrid-core) | Fusion neutron sources coupled to explicitly subcritical fission blankets | `PUBLIC` |
-| [SCPN ICF Beam Core](https://github.com/anulum/scpn-icf-beam-core) | Ion- and pulsed-electron-beam inertial confinement fusion | `PUBLIC` |
-| [SCPN ICF Impact Core](https://github.com/anulum/scpn-icf-impact-core) | Projectile- and impact-driven inertial confinement fusion | `PUBLIC` |
-| [SCPN ICF Laser Core](https://github.com/anulum/scpn-icf-laser-core) | Direct-drive, indirect-drive, and staged laser inertial confinement fusion | `PUBLIC` |
-| [SCPN IEC Core](https://github.com/anulum/scpn-iec-core) | Gridded and Polywell-style inertial electrostatic confinement | `PUBLIC` |
-| [SCPN Lattice Fusion Core](https://github.com/anulum/scpn-lattice-fusion-core) | Governed boundary for externally driven lattice-confinement fusion research | `PUBLIC / ARCHITECTURE-ONLY` |
-| [SCPN Levitated Dipole Core](https://github.com/anulum/scpn-levitated-dipole-core) | Levitated-dipole confinement systems | `PUBLIC` |
-| [SCPN Magnetic Cusp Core](https://github.com/anulum/scpn-magnetic-cusp-core) | Purely magnetic cusp-confinement systems | `PUBLIC` |
-| [SCPN MIF Liner Core](https://github.com/anulum/scpn-mif-liner-core) | Mechanical- and liquid-liner magnetised-target fusion | `PUBLIC` |
-| [SCPN MIF MagLIF Core](https://github.com/anulum/scpn-mif-maglif-core) | Premagnetised, laser-preheated, pulsed-power-driven MagLIF systems | `PUBLIC` |
-| [SCPN MIF Plasma Jet Core](https://github.com/anulum/scpn-mif-plasma-jet-core) | Converging plasma-jet-liner magneto-inertial fusion systems | `PUBLIC` |
-| [SCPN Mirror Core](https://github.com/anulum/scpn-mirror-core) | Simple, tandem, and gas-dynamic magnetic mirrors | `PUBLIC` |
-| [SCPN Muon Fusion Core](https://github.com/anulum/scpn-muon-fusion-core) | Governed boundary for muon-catalysed fusion research | `PUBLIC / ARCHITECTURE-ONLY` |
+
+**[Closed magnetic confinement](https://anulum.li/reactor-systems/closed-magnetic/)** · toroidal devices that hold the plasma on closed magnetic surfaces
+
+| Repository | Scope | Access |
+|---|---|---|
+| [SCPN Tokamak Core](https://github.com/anulum/scpn-tokamak-core) | Configuration and diagnostic-plan truth for conventional and spherical tokamaks | `PUBLIC` |
+| [SCPN Stellarator Core](https://github.com/anulum/scpn-stellarator-core) | Stellarator, heliotron, and torsatron systems | `PUBLIC` |
 | [SCPN RFP Core](https://github.com/anulum/scpn-rfp-core) | Reversed-field-pinch fusion systems | `PUBLIC` |
 | [SCPN Spheromak Core](https://github.com/anulum/scpn-spheromak-core) | Self-organised spheromak compact toroids | `PUBLIC` |
-| [SCPN Stellarator Core](https://github.com/anulum/scpn-stellarator-core) | Stellarator, heliotron, and torsatron systems | `PUBLIC` |
-| [SCPN Theta Pinch Core](https://github.com/anulum/scpn-theta-pinch-core) | Theta-pinch devices, diagnostic contracts, and cited level-0 physics | `PUBLIC` |
-| [SCPN Tokamak Core](https://github.com/anulum/scpn-tokamak-core) | Configuration and diagnostic-plan truth for conventional and spherical tokamaks | `PUBLIC` |
+| [SCPN FRC Core](https://github.com/anulum/scpn-frc-core) | Field-reversed-configuration fusion systems | `PUBLIC` |
+
+**[Open and non-toroidal magnetic confinement](https://anulum.li/reactor-systems/open-magnetic/)** · mirror, magnetic-cusp and levitated-dipole configurations with open field lines
+
+| Repository | Scope | Access |
+|---|---|---|
+| [SCPN Mirror Core](https://github.com/anulum/scpn-mirror-core) | Simple, tandem, and gas-dynamic magnetic mirrors | `PUBLIC` |
+| [SCPN Magnetic Cusp Core](https://github.com/anulum/scpn-magnetic-cusp-core) | Purely magnetic cusp-confinement systems | `PUBLIC` |
+| [SCPN Levitated Dipole Core](https://github.com/anulum/scpn-levitated-dipole-core) | Levitated-dipole confinement systems | `PUBLIC` |
+
+**[Self-magnetic and pulsed pinches](https://anulum.li/reactor-systems/pinches/)** · devices where the driving current itself confines the plasma
+
+| Repository | Scope | Access |
+|---|---|---|
 | [SCPN Z-Pinch Core](https://github.com/anulum/scpn-z-pinch-core) | Classical and sheared-flow Z-pinches, level-0 physics, and deterministic geometry | `PUBLIC` |
+| [SCPN Theta Pinch Core](https://github.com/anulum/scpn-theta-pinch-core) | Theta-pinch devices, diagnostic contracts, and cited level-0 physics | `PUBLIC` |
+| [SCPN Dense Plasma Focus Core](https://github.com/anulum/scpn-dense-plasma-focus-core) | Coaxial dense-plasma-focus devices, diagnostics, and level-0 physics | `PUBLIC` |
+
+**[Inertial confinement](https://anulum.li/reactor-systems/inertial/)** · laser-, beam- and impact-driven compression of fusion targets
+
+| Repository | Scope | Access |
+|---|---|---|
+| [SCPN ICF Laser Core](https://github.com/anulum/scpn-icf-laser-core) | Direct-drive, indirect-drive, and staged laser inertial confinement fusion | `PUBLIC` |
+| [SCPN ICF Beam Core](https://github.com/anulum/scpn-icf-beam-core) | Ion- and pulsed-electron-beam inertial confinement fusion | `PUBLIC` |
+| [SCPN ICF Impact Core](https://github.com/anulum/scpn-icf-impact-core) | Projectile- and impact-driven inertial confinement fusion | `PUBLIC` |
+
+**[Magneto-inertial and magnetised-target systems](https://anulum.li/reactor-systems/magneto-inertial/)** · compression of magnetised targets by liners, plasma jets or FRC collisions
+
+| Repository | Scope | Access |
+|---|---|---|
+| [SCPN MIF Core](https://github.com/anulum/scpn-mif-core) | Pulsed FRC/MIF kinematics, deterministic trigger logic, FPGA RTL, and formal timing evidence | `PUBLIC` |
+| [SCPN MIF MagLIF Core](https://github.com/anulum/scpn-mif-maglif-core) | Premagnetised, laser-preheated, pulsed-power-driven MagLIF systems | `PUBLIC` |
+| [SCPN MIF Plasma Jet Core](https://github.com/anulum/scpn-mif-plasma-jet-core) | Converging plasma-jet-liner magneto-inertial fusion systems | `PUBLIC` |
+| [SCPN MIF Liner Core](https://github.com/anulum/scpn-mif-liner-core) | Mechanical- and liquid-liner magnetised-target fusion | `PUBLIC` |
+
+**[Electrostatic, beam-target and hybrid systems](https://anulum.li/reactor-systems/electrostatic-hybrid/)** · inertial-electrostatic wells, colliding beams and fusion–fission hybrids
+
+| Repository | Scope | Access |
+|---|---|---|
+| [SCPN IEC Core](https://github.com/anulum/scpn-iec-core) | Gridded and Polywell-style inertial electrostatic confinement | `PUBLIC` |
+| [SCPN Beam Target Core](https://github.com/anulum/scpn-beam-target-core) | Fixed-target and colliding-beam fusion device truth | `PUBLIC` |
+| [SCPN Fusion-Fission Hybrid Core](https://github.com/anulum/scpn-fusion-fission-hybrid-core) | Fusion neutron sources coupled to explicitly subcritical fission blankets | `PUBLIC` |
+
+**Reserved research boundaries** · architecture-only repositories with no device physics yet
+
+| Repository | Scope | Access |
+|---|---|---|
+| [SCPN Lattice Fusion Core](https://github.com/anulum/scpn-lattice-fusion-core) | Governed boundary for externally driven lattice-confinement fusion research | `PUBLIC / ARCHITECTURE-ONLY` |
+| [SCPN Muon Fusion Core](https://github.com/anulum/scpn-muon-fusion-core) | Governed boundary for muon-catalysed fusion research | `PUBLIC / ARCHITECTURE-ONLY` |
 
 </details>
 
@@ -331,31 +330,20 @@ inertial confinement (3) · MIF and pulsed systems (4) · alternative concepts (
 
 </details>
 
-## Engineering practice
+## Research output
 
-<p>
-  <img alt="pytest" src="assets/badges/pytest.en.svg">
-  <img alt="Ruff" src="assets/badges/ruff.en.svg">
-  <img alt="mypy" src="assets/badges/mypy.en.svg">
-  <img alt="Cargo" src="assets/badges/cargo.en.svg">
-  <img alt="CodeQL" src="assets/badges/codeql.en.svg">
-  <img alt="REUSE" src="assets/badges/reuse.en.svg">
-  <img alt="GitHub Actions" src="assets/badges/github-actions.svg">
-</p>
-
-Practices are applied according to each repository's risk and scope. Not every
-repository runs every tool.
-
-| Quality dimension | Practices used across the portfolio |
+| Surface | Verified route |
 |---|---|
-| Correctness | Deterministic pytest and Cargo suites, branch-aware coverage gates, parity tests, regression fixtures, and explicit negative cases |
-| Static quality | Ruff formatting and linting, strict mypy where declared, Cargo fmt, Clippy with warnings denied, and API-contract checks |
-| Reproducibility | Hash-pinned dependency locks, preregistered protocols, raw result packs, content digests, benchmark metadata, and replayable audit records |
-| Security | Bandit, CodeQL and scorecards where enabled, threat models, least-authority execution, secret boundaries, and dependency review |
-| Supply chain | SPDX headers, REUSE 3.x checks, SBOM generation where applicable, pinned CI actions, signed or digest-bound evidence, and release manifests |
-| Polyglot verification | Python/Rust parity, PyO3 and Maturin bridges, Go and Julia tests, Lean builds, WebAssembly targets, and RTL/formal checks where relevant |
-| Documentation | Warning-fatal or strict MkDocs/Sphinx builds, generated API references, architecture decisions, validation records, and explicit non-claims |
-| Delivery | Repository-local preflight gates, CI workflows, PyPI packages, wheels and source distributions, containers, and benchmark harnesses |
+| Complete research index | [Publications, preprints, software archives, and evidence boundaries](PUBLICATIONS.md) |
+| Publications hub | [anulum.li/papers/](https://anulum.li/papers/): every Zenodo record with BibTeX |
+| Releases and publications stream | [anulum.li/news/](https://anulum.li/news/) · [RSS](https://anulum.li/news/feed.xml) |
+| Curriculum vitae | [One-page PDF](cv/Miroslav-Sotek-CV.pdf) · [Markdown source](cv/Miroslav-Sotek-CV.md) · [JSON Resume](cv/resume.json) |
+| Research identity | [ORCID 0009-0009-3560-0851](https://orcid.org/0009-0009-3560-0851) |
+| Software publication | [19 projects on PyPI](https://pypi.org/user/anulum/) |
+| Quantum-control software | [Zenodo DOI 10.5281/zenodo.18821929](https://doi.org/10.5281/zenodo.18821929) |
+| Fusion software | [Zenodo DOI 10.5281/zenodo.18820864](https://doi.org/10.5281/zenodo.18820864) |
+| Phase-system preprints | [Matched false-alarm study](https://doi.org/10.5281/zenodo.22113062) and [grid regime-map study](https://doi.org/10.5281/zenodo.22113116) |
+| HushLine software | [Zenodo DOI 10.5281/zenodo.20775432](https://doi.org/10.5281/zenodo.20775432) |
 
 ## PyPI publication
 
@@ -397,52 +385,77 @@ engines, domain kernels, and command-line tools.
 
 </details>
 
-## Research output
+## Languages and platforms
 
-| Surface | Verified route |
+**Primary implementation**
+
+<p>
+  <img alt="Python" src="assets/badges/python.svg">
+  <img alt="Rust" src="assets/badges/rust.svg">
+  <img alt="TypeScript" src="assets/badges/typescript.svg">
+  <img alt="JavaScript" src="assets/badges/javascript.svg">
+  <img alt="Go" src="assets/badges/go.svg">
+</p>
+
+<details>
+<summary><strong>Extended scientific, formal, hardware, and operations stack</strong></summary>
+
+**Scientific, native, and formal work**
+
+<p>
+  <img alt="Julia" src="assets/badges/julia.svg">
+  <img alt="Mojo" src="assets/badges/mojo.svg">
+  <img alt="C++" src="assets/badges/cpp.svg">
+  <img alt="C" src="assets/badges/c.svg">
+  <img alt="Lean" src="assets/badges/lean.svg">
+  <img alt="Jupyter" src="assets/badges/jupyter.svg">
+  <img alt="LaTeX" src="assets/badges/latex.svg">
+</p>
+
+**Hardware, web, and operations**
+
+<p>
+  <img alt="Verilog" src="assets/badges/verilog.en.svg">
+  <img alt="SystemVerilog" src="assets/badges/systemverilog.svg">
+  <img alt="WGSL" src="assets/badges/wgsl.svg">
+  <img alt="HTML5" src="assets/badges/html5.svg">
+  <img alt="CSS3" src="assets/badges/css3.svg">
+  <img alt="Shell" src="assets/badges/shell.svg">
+  <img alt="Docker" src="assets/badges/docker.svg">
+  <img alt="Linux" src="assets/badges/linux.svg">
+</p>
+
+The portfolio also contains maintained protobuf/gRPC contracts, Python-Rust
+bridges built with PyO3 and Maturin, WebAssembly targets, native SIMD paths,
+scientific notebooks, and multi-language API documentation.
+
+</details>
+
+## Engineering practice
+
+<p>
+  <img alt="pytest" src="assets/badges/pytest.en.svg">
+  <img alt="Ruff" src="assets/badges/ruff.en.svg">
+  <img alt="mypy" src="assets/badges/mypy.en.svg">
+  <img alt="Cargo" src="assets/badges/cargo.en.svg">
+  <img alt="CodeQL" src="assets/badges/codeql.en.svg">
+  <img alt="REUSE" src="assets/badges/reuse.en.svg">
+  <img alt="GitHub Actions" src="assets/badges/github-actions.svg">
+</p>
+
+Practices are applied according to each repository's risk and scope. Not every
+repository runs every tool.
+
+| Quality dimension | Practices used across the portfolio |
 |---|---|
-| Complete research index | [Publications, preprints, software archives, and evidence boundaries](PUBLICATIONS.md) |
-| Publications hub | [anulum.li/papers/](https://anulum.li/papers/): every Zenodo record with BibTeX |
-| Releases and publications stream | [anulum.li/news/](https://anulum.li/news/) · [RSS](https://anulum.li/news/feed.xml) |
-| Curriculum vitae | [One-page PDF](cv/Miroslav-Sotek-CV.pdf) · [Markdown source](cv/Miroslav-Sotek-CV.md) · [JSON Resume](cv/resume.json) |
-| Research identity | [ORCID 0009-0009-3560-0851](https://orcid.org/0009-0009-3560-0851) |
-| Software publication | [19 projects on PyPI](https://pypi.org/user/anulum/) |
-| Quantum-control software | [Zenodo DOI 10.5281/zenodo.18821929](https://doi.org/10.5281/zenodo.18821929) |
-| Fusion software | [Zenodo DOI 10.5281/zenodo.18820864](https://doi.org/10.5281/zenodo.18820864) |
-| Phase-system preprints | [Matched false-alarm study](https://doi.org/10.5281/zenodo.22113062) and [grid regime-map study](https://doi.org/10.5281/zenodo.22113116) |
-| HushLine software | [Zenodo DOI 10.5281/zenodo.20775432](https://doi.org/10.5281/zenodo.20775432) |
-
-## Selected work
-
-| Project | Role | Maturity |
-|---|---|---|
-| [Synapse Channel](https://github.com/anulum/synapse-channel) | Control plane for coding-agent fleets with claims, roles, durable mailboxes, receipts, audit, and federation | **Usable now:** functional core, active development |
-| [Rigor Foundry](https://github.com/anulum/rigor-foundry) | Evidence-bound repository auditing and remediation planning | **Usable now:** active hardening |
-| [Director-AI](https://github.com/anulum/director-ai) | Real-time LLM guardrails with NLI/RAG fact-checking and optional claim-level streaming halt | **Research active:** functional system under validation |
-| [SC-NeuroCore](https://github.com/anulum/sc-neurocore) | Stochastic and neuromorphic framework spanning Python, Rust SIMD, Verilog, and HDC/VSA | **Research active:** platform under continuous development |
-| [SCPN Quantum Control](https://github.com/anulum/scpn-quantum-control) | Evidence-governed quantum simulation of coupled-oscillator synchronisation | **Experimental:** preregistered research programme |
-
-### Live release signals
-
-Dynamic badges report registry and workflow state. They are operational signals,
-not scientific-quality scores.
-
-| Project | Release | Main CI |
-|---|---|---|
-| Synapse Channel | [![PyPI](https://img.shields.io/pypi/v/synapse-channel?style=flat-square)](https://pypi.org/project/synapse-channel/) | [![CI](https://github.com/anulum/synapse-channel/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/anulum/synapse-channel/actions/workflows/ci.yml) |
-| Rigor Foundry | [![PyPI](https://img.shields.io/pypi/v/rigor-foundry?style=flat-square)](https://pypi.org/project/rigor-foundry/) | [![CI](https://github.com/anulum/rigor-foundry/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/anulum/rigor-foundry/actions/workflows/ci.yml) |
-| Director-AI | [![PyPI](https://img.shields.io/pypi/v/director-ai?style=flat-square)](https://pypi.org/project/director-ai/) | [![CI](https://github.com/anulum/director-ai/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/anulum/director-ai/actions/workflows/ci.yml) |
-| SC-NeuroCore | [![PyPI](https://img.shields.io/pypi/v/sc-neurocore?style=flat-square)](https://pypi.org/project/sc-neurocore/) | [![CI](https://github.com/anulum/sc-neurocore/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/anulum/sc-neurocore/actions/workflows/ci.yml) |
-| SCPN Quantum Control | [![PyPI](https://img.shields.io/pypi/v/scpn-quantum-control?style=flat-square)](https://pypi.org/project/scpn-quantum-control/) | [![CI](https://github.com/anulum/scpn-quantum-control/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/anulum/scpn-quantum-control/actions/workflows/ci.yml) |
-
-### Maturity labels
-
-| Label | Meaning |
-|---|---|
-| **Usable now** | Installable, documented, and CI-backed; still evolving |
-| **Research active** | Real code and ongoing science; not a stability promise |
-| **Experimental** | Exploratory; interfaces and claims are not fixed |
-| **Evidence-bound** | Public claims are tied to measurements or artefacts |
+| Correctness | Deterministic pytest and Cargo suites, branch-aware coverage gates, parity tests, regression fixtures, and explicit negative cases |
+| Static quality | Ruff formatting and linting, strict mypy where declared, Cargo fmt, Clippy with warnings denied, and API-contract checks |
+| Reproducibility | Hash-pinned dependency locks, preregistered protocols, raw result packs, content digests, benchmark metadata, and replayable audit records |
+| Security | Bandit, CodeQL and scorecards where enabled, threat models, least-authority execution, secret boundaries, and dependency review |
+| Supply chain | SPDX headers, REUSE 3.x checks, SBOM generation where applicable, pinned CI actions, signed or digest-bound evidence, and release manifests |
+| Polyglot verification | Python/Rust parity, PyO3 and Maturin bridges, Go and Julia tests, Lean builds, WebAssembly targets, and RTL/formal checks where relevant |
+| Documentation | Warning-fatal or strict MkDocs/Sphinx builds, generated API references, architecture decisions, validation records, and explicit non-claims |
+| Delivery | Repository-local preflight gates, CI workflows, PyPI packages, wheels and source distributions, containers, and benchmark harnesses |
 
 ## Evidence, not slogans
 

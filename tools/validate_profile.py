@@ -129,6 +129,25 @@ def check_static_surfaces(data: dict[str, Any], readmes: dict[str, str]) -> list
     return errors
 
 
+def check_reactor_families(data: dict[str, Any], english: str) -> list[str]:
+    """Every reactor repository sits in exactly one family, shared or reserved list; portal links are present."""
+    errors: list[str] = []
+    reactor = next(p for p in data["portfolios"] if p["id"] == "reactor")
+    names = [repo["name"] for repo in reactor["repositories"]]
+    placed = [name for family in data["reactor_families"] for name in family["repositories"]]
+    placed += list(data["reactor_shared"]) + list(data["reactor_reserved"])
+    for name in names:
+        if placed.count(name) != 1:
+            errors.append(f"reactor repository placed {placed.count(name)} times in the family map: {name}")
+    for name in placed:
+        if name not in names:
+            errors.append(f"family map names a repository outside the reactor portfolio: {name}")
+    for url in [family["url"] for family in data["reactor_families"]] + [data["reactor_hub"], data["reactor_compare"]]:
+        if url not in english:
+            errors.append(f"README.md: missing reactor portal link {url}")
+    return errors
+
+
 def main() -> int:
     """Run every offline profile check and return the process exit code."""
     data = json.loads(MANIFEST.read_text(encoding="utf-8"))
@@ -227,6 +246,7 @@ def main() -> int:
     errors.extend(check_rendered_assets(data, readmes))
     errors.extend(check_live_surfaces(data, readmes))
     errors.extend(check_static_surfaces(data, readmes))
+    errors.extend(check_reactor_families(data, readmes.get("README.md", "")))
 
     if errors:
         for error in errors:
