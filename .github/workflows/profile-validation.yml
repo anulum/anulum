@@ -26,6 +26,8 @@ jobs:
         run: python3 tools/validate_profile.py
       - name: Rendered assets match the manifest
         run: python3 tools/render_profile_assets.py --check
+      - name: Badges match the spec and the manifest
+        run: python3 tools/render_badges.py --check
       - name: Live README blocks and PUBLICATIONS.md match the feed cache
         run: |
           python3 tools/profile_feeds.py --check

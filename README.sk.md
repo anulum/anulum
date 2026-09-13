@@ -17,20 +17,20 @@ Prehľad osobného profilu GitHub
 </p>
 
 <p align="center">
-  <a href="README.md"><img alt="English" src="https://img.shields.io/badge/EN-English-d9a441?style=for-the-badge"></a>
-  <a href="README.de.md"><img alt="Deutsch" src="https://img.shields.io/badge/DE-Deutsch-4dd6c8?style=for-the-badge"></a>
-  <a href="README.sk.md"><img alt="Slovenčina" src="https://img.shields.io/badge/SK-Sloven%C4%8Dina-2f81f7?style=for-the-badge"></a>
-  <a href="README.zh-CN.md"><img alt="中文" src="https://img.shields.io/badge/ZH-%E4%B8%AD%E6%96%87-c62828?style=for-the-badge"></a>
-  <a href="README.ja.md"><img alt="日本語" src="https://img.shields.io/badge/JA-%E6%97%A5%E6%9C%AC%E8%AA%9E-8e44ad?style=for-the-badge"></a>
+  <a href="README.md"><img alt="English" src="assets/badges/lang-en.svg"></a>
+  <a href="README.de.md"><img alt="Deutsch" src="assets/badges/lang-de.svg"></a>
+  <a href="README.sk.md"><img alt="Slovenčina" src="assets/badges/lang-sk.svg"></a>
+  <a href="README.zh-CN.md"><img alt="中文" src="assets/badges/lang-zh.svg"></a>
+  <a href="README.ja.md"><img alt="日本語" src="assets/badges/lang-ja.svg"></a>
 </p>
 
 <p align="center">
-  <a href="https://anulum.li"><img alt="Web" src="https://img.shields.io/badge/anulum.li-Web-09111f?style=flat-square&logo=safari&logoColor=white"></a>
-  <a href="https://orcid.org/0009-0009-3560-0851"><img alt="ORCID" src="https://img.shields.io/badge/ORCID-0009--0009--3560--0851-a6ce39?style=flat-square&logo=orcid&logoColor=white"></a>
-  <a href="cv/Miroslav-Sotek-CV.pdf"><img alt="CV PDF" src="https://img.shields.io/badge/CV-Jednostranov%C3%A9_PDF-d9a441?style=flat-square&logo=adobeacrobatreader&logoColor=white"></a>
-  <a href="https://pypi.org/user/anulum/"><img alt="PyPI" src="https://img.shields.io/badge/PyPI-19_projektov-3775a9?style=flat-square&logo=pypi&logoColor=white"></a>
-  <a href="https://github.com/sponsors/anulum"><img alt="GitHub Sponsors" src="https://img.shields.io/badge/Sponsors-Podporte_otvoren%C3%BA_pr%C3%A1cu-ea4aaa?style=flat-square&logo=githubsponsors&logoColor=white"></a>
-  <a href="mailto:protoscience@anulum.li"><img alt="E-mail" src="https://img.shields.io/badge/E--mail-protoscience%40anulum.li-4dd6c8?style=flat-square"></a>
+  <a href="https://anulum.li"><img alt="Web" src="assets/badges/website.sk.svg"></a>
+  <a href="https://orcid.org/0009-0009-3560-0851"><img alt="ORCID" src="assets/badges/orcid.svg"></a>
+  <a href="cv/Miroslav-Sotek-CV.pdf"><img alt="CV PDF" src="assets/badges/cv-pdf.sk.svg"></a>
+  <a href="https://pypi.org/user/anulum/"><img alt="PyPI" src="assets/badges/pypi-count.sk.svg"></a>
+  <a href="https://github.com/sponsors/anulum"><img alt="GitHub Sponsors" src="assets/badges/sponsors.sk.svg"></a>
+  <a href="mailto:protoscience@anulum.li"><img alt="E-mail" src="assets/badges/email.sk.svg"></a>
 </p>
 
 <p align="center">
@@ -63,18 +63,18 @@ ktoré ich podporujú.
 Shell, Docker a Linux.
 
 <p>
-  <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white">
-  <img alt="Rust" src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white">
-  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white">
-  <img alt="Go" src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white">
-  <img alt="Julia" src="https://img.shields.io/badge/Julia-9558B2?style=flat-square&logo=julia&logoColor=white">
-  <img alt="Mojo" src="https://img.shields.io/badge/Mojo-FF4C4C?style=flat-square&logo=modular&logoColor=white">
-  <img alt="C++" src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white">
-  <img alt="Lean" src="https://img.shields.io/badge/Lean_4-6B4FBB?style=flat-square">
-  <img alt="Verilog" src="https://img.shields.io/badge/Verilog_%7C_SystemVerilog-8A2BE2?style=flat-square">
-  <img alt="WebGPU" src="https://img.shields.io/badge/WGSL_%7C_WebGPU-005A9C?style=flat-square">
-  <img alt="Jupyter" src="https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white">
-  <img alt="Docker" src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white">
+  <img alt="Python" src="assets/badges/python.svg">
+  <img alt="Rust" src="assets/badges/rust.svg">
+  <img alt="TypeScript" src="assets/badges/typescript.svg">
+  <img alt="Go" src="assets/badges/go.svg">
+  <img alt="Julia" src="assets/badges/julia.svg">
+  <img alt="Mojo" src="assets/badges/mojo.svg">
+  <img alt="C++" src="assets/badges/cpp.svg">
+  <img alt="Lean" src="assets/badges/lean.svg">
+  <img alt="Verilog" src="assets/badges/verilog.sk.svg">
+  <img alt="WebGPU" src="assets/badges/webgpu.svg">
+  <img alt="Jupyter" src="assets/badges/jupyter.svg">
+  <img alt="Docker" src="assets/badges/docker.svg">
 </p>
 
 ## Kde začať
@@ -156,6 +156,11 @@ SCPN suite           riadenie, plazma, fáza a kvantové výskumné cesty
 ```
 
 ### Typické použitie celku
+
+```mermaid
+flowchart LR
+    A["01 · Kontrola<br/>Rigor Foundry"] --> B["02 · Ochrana<br/>Director-AI"] --> C["03 · Koordinácia<br/>Synapse Channel"] --> D["04 · Výpočet<br/>SC-NeuroCore · SCPN"]
+```
 
 1. **Rigor Foundry**: zistí, čo je pokazené, nepreukázané alebo nebezpečné tvrdiť.
 2. **Director-AI**: chráni výstup modelu, ktorému sa má dôverovať.
@@ -288,12 +293,12 @@ experimentálne záznamy viazané hashom.
 ## Inžinierske štandardy
 
 <p>
-  <img alt="pytest" src="https://img.shields.io/badge/Testy-pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white">
-  <img alt="Ruff" src="https://img.shields.io/badge/Lint-Ruff-D7FF64?style=flat-square&logo=ruff&logoColor=111111">
-  <img alt="mypy" src="https://img.shields.io/badge/Typy-mypy-2A6DB2?style=flat-square">
-  <img alt="Cargo" src="https://img.shields.io/badge/Native-Cargo-000000?style=flat-square&logo=rust&logoColor=white">
-  <img alt="CodeQL" src="https://img.shields.io/badge/Bezpe%C4%8Dnos%C5%A5-CodeQL-2f81f7?style=flat-square&logo=github&logoColor=white">
-  <img alt="REUSE" src="https://img.shields.io/badge/Licencie-REUSE_3.x-4dd6c8?style=flat-square">
+  <img alt="pytest" src="assets/badges/pytest.sk.svg">
+  <img alt="Ruff" src="assets/badges/ruff.sk.svg">
+  <img alt="mypy" src="assets/badges/mypy.sk.svg">
+  <img alt="Cargo" src="assets/badges/cargo.sk.svg">
+  <img alt="CodeQL" src="assets/badges/codeql.sk.svg">
+  <img alt="REUSE" src="assets/badges/reuse.sk.svg">
 </p>
 
 Konkrétne praktiky sa vyberajú podľa rizika a rozsahu repozitára; nie každý
@@ -312,7 +317,7 @@ repozitár používa každý nástroj.
 ## Publikovanie na PyPI
 
 <p align="center">
-  <a href="https://pypi.org/user/anulum/"><img alt="Miroslav Sotek na PyPI" src="https://img.shields.io/badge/PyPI-Miroslav_Sotek_%40_anulum-3775a9?style=for-the-badge&logo=pypi&logoColor=white"></a>
+  <a href="https://pypi.org/user/anulum/"><img alt="Miroslav Sotek na PyPI" src="assets/badges/pypi-profile.svg"></a>
 </p>
 
 Overený [PyPI profil](https://pypi.org/user/anulum/) momentálne obsahuje 19
@@ -425,5 +430,5 @@ verejnú dokumentáciu: nie marketing.
 <p align="center"><em>I AM THAT</em></p>
 
 <p align="center">
-  <img src="assets/anulum-logo.jpg" width="100%" alt="Anulum">
+  <img src="assets/anulum-logo-footer.jpg" width="100%" alt="Anulum">
 </p>

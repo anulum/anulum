@@ -15,6 +15,8 @@
     "public_portfolio_repositories": 33,
     "private_portfolio_repositories": 6,
     "standalone_public_repositories": 1,
+    "portfolios": 5,
+    "public_projects": 34,
     "pypi_projects": 19
   },
   "translations": [
@@ -175,6 +177,9 @@
     "cache": "tools/feeds.json"
   },
   "citation_file": "CITATION.cff",
+  "footer_logo": "assets/anulum-logo-footer.jpg",
+  "footer_logo_max_bytes": 61440,
+  "badge_spec": "tools/badges.json",
   "record_projects": {
     "20382000": "SCPN Quantum Control",
     "20382075": "SCPN Quantum Control",

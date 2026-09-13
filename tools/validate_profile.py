@@ -108,6 +108,27 @@ def check_live_surfaces(data: dict[str, Any], readmes: dict[str, str]) -> list[s
     return errors
 
 
+def check_static_surfaces(data: dict[str, Any], readmes: dict[str, str]) -> list[str]:
+    """Verify local badges, the Mermaid diagram and the footer logo in every README."""
+    errors: list[str] = []
+    footer = ROOT / data["footer_logo"]
+    if not footer.is_file():
+        errors.append(f"missing footer logo: {data['footer_logo']}")
+    elif footer.stat().st_size > data["footer_logo_max_bytes"]:
+        errors.append(f"{data['footer_logo']}: {footer.stat().st_size} bytes exceeds {data['footer_logo_max_bytes']}")
+    for relative, text in readmes.items():
+        if "img.shields.io/badge/" in text:
+            errors.append(f"{relative}: static shields.io badge left; render it with tools/render_badges.py")
+        for badge in re.findall(r'src="(assets/badges/[^"]+)"', text):
+            if not (ROOT / badge).is_file():
+                errors.append(f"{relative}: missing badge file {badge}")
+        if text.count("```mermaid") != 1 or "Rigor Foundry" not in text.split("```mermaid", 1)[-1].split("```", 1)[0]:
+            errors.append(f"{relative}: expected exactly one Mermaid stack diagram naming Rigor Foundry")
+        if text.count(f'src="{data["footer_logo"]}"') != 1:
+            errors.append(f"{relative}: footer logo must be referenced exactly once")
+    return errors
+
+
 def main() -> int:
     """Run every offline profile check and return the process exit code."""
     data = json.loads(MANIFEST.read_text(encoding="utf-8"))
@@ -133,6 +154,8 @@ def main() -> int:
         "public_portfolio_repositories": len(public),
         "private_portfolio_repositories": len(private),
         "standalone_public_repositories": len(data["standalone_repositories"]),
+        "portfolios": len(portfolios),
+        "public_projects": len(public) + len(data["standalone_repositories"]),
         "pypi_projects": len(data["pypi_projects"]),
     }
     for key, observed in checks.items():
@@ -203,6 +226,7 @@ def main() -> int:
         errors.append("missing profile asset: assets/anulum-logo.jpg")
     errors.extend(check_rendered_assets(data, readmes))
     errors.extend(check_live_surfaces(data, readmes))
+    errors.extend(check_static_surfaces(data, readmes))
 
     if errors:
         for error in errors:

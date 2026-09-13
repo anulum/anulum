@@ -1,0 +1,708 @@
+[
+ {
+  "slug": "lang-en",
+  "style": "for-the-badge",
+  "colour": "d9a441",
+  "label": "EN",
+  "message": "English"
+ },
+ {
+  "slug": "lang-de",
+  "style": "for-the-badge",
+  "colour": "4dd6c8",
+  "label": "DE",
+  "message": "Deutsch"
+ },
+ {
+  "slug": "lang-sk",
+  "style": "for-the-badge",
+  "colour": "2f81f7",
+  "label": "SK",
+  "message": "Slovenčina"
+ },
+ {
+  "slug": "lang-zh",
+  "style": "for-the-badge",
+  "colour": "c62828",
+  "label": "ZH",
+  "message": "中文",
+  "script": "zh"
+ },
+ {
+  "slug": "lang-ja",
+  "style": "for-the-badge",
+  "colour": "8e44ad",
+  "label": "JA",
+  "message": "日本語",
+  "script": "ja"
+ },
+ {
+  "slug": "website",
+  "lang": "en",
+  "style": "flat-square",
+  "colour": "09111f",
+  "label": "anulum.li",
+  "message": "Website"
+ },
+ {
+  "slug": "website",
+  "lang": "de",
+  "style": "flat-square",
+  "colour": "09111f",
+  "label": "anulum.li",
+  "message": "Website"
+ },
+ {
+  "slug": "website",
+  "lang": "sk",
+  "style": "flat-square",
+  "colour": "09111f",
+  "label": "anulum.li",
+  "message": "Web"
+ },
+ {
+  "slug": "website",
+  "lang": "zh",
+  "style": "flat-square",
+  "colour": "09111f",
+  "label": "anulum.li",
+  "message": "网站"
+ },
+ {
+  "slug": "website",
+  "lang": "ja",
+  "style": "flat-square",
+  "colour": "09111f",
+  "label": "anulum.li",
+  "message": "Website"
+ },
+ {
+  "slug": "orcid",
+  "style": "flat-square",
+  "colour": "a6ce39",
+  "label": "ORCID",
+  "message": "0009-0009-3560-0851"
+ },
+ {
+  "slug": "cv-pdf",
+  "lang": "en",
+  "style": "flat-square",
+  "colour": "d9a441",
+  "label": "CV",
+  "message": "One page PDF"
+ },
+ {
+  "slug": "cv-pdf",
+  "lang": "de",
+  "style": "flat-square",
+  "colour": "d9a441",
+  "label": "CV",
+  "message": "Einseitiges PDF"
+ },
+ {
+  "slug": "cv-pdf",
+  "lang": "sk",
+  "style": "flat-square",
+  "colour": "d9a441",
+  "label": "CV",
+  "message": "Jednostranové PDF"
+ },
+ {
+  "slug": "cv-pdf",
+  "lang": "zh",
+  "style": "flat-square",
+  "colour": "d9a441",
+  "label": "CV",
+  "message": "单页 PDF"
+ },
+ {
+  "slug": "cv-pdf",
+  "lang": "ja",
+  "style": "flat-square",
+  "colour": "d9a441",
+  "label": "CV",
+  "message": "1 ページ PDF"
+ },
+ {
+  "slug": "pypi-count",
+  "lang": "en",
+  "style": "flat-square",
+  "colour": "3775a9",
+  "label": "PyPI",
+  "message": "{stats.pypi_projects} published projects"
+ },
+ {
+  "slug": "pypi-count",
+  "lang": "de",
+  "style": "flat-square",
+  "colour": "3775a9",
+  "label": "PyPI",
+  "message": "{stats.pypi_projects} Projekte"
+ },
+ {
+  "slug": "pypi-count",
+  "lang": "sk",
+  "style": "flat-square",
+  "colour": "3775a9",
+  "label": "PyPI",
+  "message": "{stats.pypi_projects} projektov"
+ },
+ {
+  "slug": "pypi-count",
+  "lang": "zh",
+  "style": "flat-square",
+  "colour": "3775a9",
+  "label": "PyPI",
+  "message": "{stats.pypi_projects} 个项目"
+ },
+ {
+  "slug": "pypi-count",
+  "lang": "ja",
+  "style": "flat-square",
+  "colour": "3775a9",
+  "label": "PyPI",
+  "message": "{stats.pypi_projects} プロジェクト"
+ },
+ {
+  "slug": "sponsors",
+  "lang": "en",
+  "style": "flat-square",
+  "colour": "ea4aaa",
+  "label": "Sponsors",
+  "message": "Support open work"
+ },
+ {
+  "slug": "sponsors",
+  "lang": "de",
+  "style": "flat-square",
+  "colour": "ea4aaa",
+  "label": "Sponsors",
+  "message": "Offene Arbeit unterstützen"
+ },
+ {
+  "slug": "sponsors",
+  "lang": "sk",
+  "style": "flat-square",
+  "colour": "ea4aaa",
+  "label": "Sponsors",
+  "message": "Podporte otvorenú prácu"
+ },
+ {
+  "slug": "sponsors",
+  "lang": "zh",
+  "style": "flat-square",
+  "colour": "ea4aaa",
+  "label": "Sponsors",
+  "message": "支持开放工作"
+ },
+ {
+  "slug": "sponsors",
+  "lang": "ja",
+  "style": "flat-square",
+  "colour": "ea4aaa",
+  "label": "Sponsors",
+  "message": "公開作業を支援"
+ },
+ {
+  "slug": "email",
+  "lang": "en",
+  "style": "flat-square",
+  "colour": "4dd6c8",
+  "label": "Email",
+  "message": "protoscience@anulum.li"
+ },
+ {
+  "slug": "email",
+  "lang": "de",
+  "style": "flat-square",
+  "colour": "4dd6c8",
+  "label": "E-Mail",
+  "message": "protoscience@anulum.li"
+ },
+ {
+  "slug": "email",
+  "lang": "sk",
+  "style": "flat-square",
+  "colour": "4dd6c8",
+  "label": "E-mail",
+  "message": "protoscience@anulum.li"
+ },
+ {
+  "slug": "email",
+  "lang": "zh",
+  "style": "flat-square",
+  "colour": "4dd6c8",
+  "label": "Email",
+  "message": "protoscience@anulum.li"
+ },
+ {
+  "slug": "email",
+  "lang": "ja",
+  "style": "flat-square",
+  "colour": "4dd6c8",
+  "label": "Email",
+  "message": "protoscience@anulum.li"
+ },
+ {
+  "slug": "python",
+  "style": "flat-square",
+  "colour": "3776AB",
+  "label": "",
+  "message": "Python"
+ },
+ {
+  "slug": "rust",
+  "style": "flat-square",
+  "colour": "000000",
+  "label": "",
+  "message": "Rust"
+ },
+ {
+  "slug": "typescript",
+  "style": "flat-square",
+  "colour": "3178C6",
+  "label": "",
+  "message": "TypeScript"
+ },
+ {
+  "slug": "javascript",
+  "style": "flat-square",
+  "colour": "F7DF1E",
+  "label": "",
+  "message": "JavaScript"
+ },
+ {
+  "slug": "go",
+  "style": "flat-square",
+  "colour": "00ADD8",
+  "label": "",
+  "message": "Go"
+ },
+ {
+  "slug": "julia",
+  "style": "flat-square",
+  "colour": "9558B2",
+  "label": "",
+  "message": "Julia"
+ },
+ {
+  "slug": "mojo",
+  "style": "flat-square",
+  "colour": "FF4C4C",
+  "label": "",
+  "message": "Mojo"
+ },
+ {
+  "slug": "cpp",
+  "style": "flat-square",
+  "colour": "00599C",
+  "label": "",
+  "message": "C++"
+ },
+ {
+  "slug": "c",
+  "style": "flat-square",
+  "colour": "A8B9CC",
+  "label": "",
+  "message": "C"
+ },
+ {
+  "slug": "lean",
+  "style": "flat-square",
+  "colour": "6B4FBB",
+  "label": "",
+  "message": "Lean 4"
+ },
+ {
+  "slug": "jupyter",
+  "style": "flat-square",
+  "colour": "F37626",
+  "label": "",
+  "message": "Jupyter"
+ },
+ {
+  "slug": "latex",
+  "style": "flat-square",
+  "colour": "008080",
+  "label": "",
+  "message": "LaTeX"
+ },
+ {
+  "slug": "verilog",
+  "lang": "en",
+  "style": "flat-square",
+  "colour": "8A2BE2",
+  "label": "",
+  "message": "Verilog"
+ },
+ {
+  "slug": "verilog",
+  "lang": "de",
+  "style": "flat-square",
+  "colour": "8A2BE2",
+  "label": "",
+  "message": "Verilog | SystemVerilog"
+ },
+ {
+  "slug": "verilog",
+  "lang": "sk",
+  "style": "flat-square",
+  "colour": "8A2BE2",
+  "label": "",
+  "message": "Verilog | SystemVerilog"
+ },
+ {
+  "slug": "verilog",
+  "lang": "zh",
+  "style": "flat-square",
+  "colour": "8A2BE2",
+  "label": "",
+  "message": "Verilog | SystemVerilog"
+ },
+ {
+  "slug": "verilog",
+  "lang": "ja",
+  "style": "flat-square",
+  "colour": "8A2BE2",
+  "label": "",
+  "message": "Verilog | SystemVerilog"
+ },
+ {
+  "slug": "systemverilog",
+  "style": "flat-square",
+  "colour": "6A1B9A",
+  "label": "",
+  "message": "SystemVerilog"
+ },
+ {
+  "slug": "wgsl",
+  "style": "flat-square",
+  "colour": "005A9C",
+  "label": "",
+  "message": "WGSL WebGPU"
+ },
+ {
+  "slug": "html5",
+  "style": "flat-square",
+  "colour": "E34F26",
+  "label": "",
+  "message": "HTML5"
+ },
+ {
+  "slug": "css3",
+  "style": "flat-square",
+  "colour": "1572B6",
+  "label": "",
+  "message": "CSS3"
+ },
+ {
+  "slug": "shell",
+  "style": "flat-square",
+  "colour": "4EAA25",
+  "label": "",
+  "message": "Shell"
+ },
+ {
+  "slug": "docker",
+  "style": "flat-square",
+  "colour": "2496ED",
+  "label": "",
+  "message": "Docker"
+ },
+ {
+  "slug": "linux",
+  "style": "flat-square",
+  "colour": "FCC624",
+  "label": "",
+  "message": "Linux"
+ },
+ {
+  "slug": "mapped-repositories",
+  "style": "for-the-badge",
+  "colour": "d9a441",
+  "label": "{stats.portfolio_repositories}",
+  "message": "Mapped repositories"
+ },
+ {
+  "slug": "portfolios",
+  "style": "for-the-badge",
+  "colour": "4dd6c8",
+  "label": "{stats.portfolios}",
+  "message": "Independent portfolios"
+ },
+ {
+  "slug": "public-projects",
+  "style": "for-the-badge",
+  "colour": "2f81f7",
+  "label": "{stats.public_projects}",
+  "message": "Public projects"
+ },
+ {
+  "slug": "private-systems",
+  "style": "for-the-badge",
+  "colour": "8e44ad",
+  "label": "{stats.private_portfolio_repositories}",
+  "message": "Private systems"
+ },
+ {
+  "slug": "pytest",
+  "lang": "en",
+  "style": "flat-square",
+  "colour": "0A9EDC",
+  "label": "tests",
+  "message": "pytest"
+ },
+ {
+  "slug": "pytest",
+  "lang": "de",
+  "style": "flat-square",
+  "colour": "0A9EDC",
+  "label": "Tests",
+  "message": "pytest"
+ },
+ {
+  "slug": "pytest",
+  "lang": "sk",
+  "style": "flat-square",
+  "colour": "0A9EDC",
+  "label": "Testy",
+  "message": "pytest"
+ },
+ {
+  "slug": "pytest",
+  "lang": "zh",
+  "style": "flat-square",
+  "colour": "0A9EDC",
+  "label": "Tests",
+  "message": "pytest"
+ },
+ {
+  "slug": "pytest",
+  "lang": "ja",
+  "style": "flat-square",
+  "colour": "0A9EDC",
+  "label": "Tests",
+  "message": "pytest"
+ },
+ {
+  "slug": "ruff",
+  "lang": "en",
+  "style": "flat-square",
+  "colour": "D7FF64",
+  "label": "lint",
+  "message": "Ruff"
+ },
+ {
+  "slug": "ruff",
+  "lang": "de",
+  "style": "flat-square",
+  "colour": "D7FF64",
+  "label": "Lint",
+  "message": "Ruff"
+ },
+ {
+  "slug": "ruff",
+  "lang": "sk",
+  "style": "flat-square",
+  "colour": "D7FF64",
+  "label": "Lint",
+  "message": "Ruff"
+ },
+ {
+  "slug": "ruff",
+  "lang": "zh",
+  "style": "flat-square",
+  "colour": "D7FF64",
+  "label": "Lint",
+  "message": "Ruff"
+ },
+ {
+  "slug": "ruff",
+  "lang": "ja",
+  "style": "flat-square",
+  "colour": "D7FF64",
+  "label": "Lint",
+  "message": "Ruff"
+ },
+ {
+  "slug": "mypy",
+  "lang": "en",
+  "style": "flat-square",
+  "colour": "2A6DB2",
+  "label": "types",
+  "message": "mypy"
+ },
+ {
+  "slug": "mypy",
+  "lang": "de",
+  "style": "flat-square",
+  "colour": "2A6DB2",
+  "label": "Typen",
+  "message": "mypy"
+ },
+ {
+  "slug": "mypy",
+  "lang": "sk",
+  "style": "flat-square",
+  "colour": "2A6DB2",
+  "label": "Typy",
+  "message": "mypy"
+ },
+ {
+  "slug": "mypy",
+  "lang": "zh",
+  "style": "flat-square",
+  "colour": "2A6DB2",
+  "label": "Types",
+  "message": "mypy"
+ },
+ {
+  "slug": "mypy",
+  "lang": "ja",
+  "style": "flat-square",
+  "colour": "2A6DB2",
+  "label": "Types",
+  "message": "mypy"
+ },
+ {
+  "slug": "cargo",
+  "lang": "en",
+  "style": "flat-square",
+  "colour": "000000",
+  "label": "native",
+  "message": "Cargo"
+ },
+ {
+  "slug": "cargo",
+  "lang": "de",
+  "style": "flat-square",
+  "colour": "000000",
+  "label": "Nativ",
+  "message": "Cargo"
+ },
+ {
+  "slug": "cargo",
+  "lang": "sk",
+  "style": "flat-square",
+  "colour": "000000",
+  "label": "Native",
+  "message": "Cargo"
+ },
+ {
+  "slug": "cargo",
+  "lang": "zh",
+  "style": "flat-square",
+  "colour": "000000",
+  "label": "Native",
+  "message": "Cargo"
+ },
+ {
+  "slug": "cargo",
+  "lang": "ja",
+  "style": "flat-square",
+  "colour": "000000",
+  "label": "Native",
+  "message": "Cargo"
+ },
+ {
+  "slug": "codeql",
+  "lang": "en",
+  "style": "flat-square",
+  "colour": "2f81f7",
+  "label": "security",
+  "message": "CodeQL"
+ },
+ {
+  "slug": "codeql",
+  "lang": "de",
+  "style": "flat-square",
+  "colour": "2f81f7",
+  "label": "Sicherheit",
+  "message": "CodeQL"
+ },
+ {
+  "slug": "codeql",
+  "lang": "sk",
+  "style": "flat-square",
+  "colour": "2f81f7",
+  "label": "Bezpečnosť",
+  "message": "CodeQL"
+ },
+ {
+  "slug": "codeql",
+  "lang": "zh",
+  "style": "flat-square",
+  "colour": "2f81f7",
+  "label": "Security",
+  "message": "CodeQL"
+ },
+ {
+  "slug": "codeql",
+  "lang": "ja",
+  "style": "flat-square",
+  "colour": "2f81f7",
+  "label": "Security",
+  "message": "CodeQL"
+ },
+ {
+  "slug": "reuse",
+  "lang": "en",
+  "style": "flat-square",
+  "colour": "4dd6c8",
+  "label": "licensing",
+  "message": "REUSE 3.x"
+ },
+ {
+  "slug": "reuse",
+  "lang": "de",
+  "style": "flat-square",
+  "colour": "4dd6c8",
+  "label": "Lizenzen",
+  "message": "REUSE 3.x"
+ },
+ {
+  "slug": "reuse",
+  "lang": "sk",
+  "style": "flat-square",
+  "colour": "4dd6c8",
+  "label": "Licencie",
+  "message": "REUSE 3.x"
+ },
+ {
+  "slug": "reuse",
+  "lang": "zh",
+  "style": "flat-square",
+  "colour": "4dd6c8",
+  "label": "Licensing",
+  "message": "REUSE 3.x"
+ },
+ {
+  "slug": "reuse",
+  "lang": "ja",
+  "style": "flat-square",
+  "colour": "4dd6c8",
+  "label": "Licensing",
+  "message": "REUSE 3.x"
+ },
+ {
+  "slug": "github-actions",
+  "style": "flat-square",
+  "colour": "2088FF",
+  "label": "CI",
+  "message": "GitHub Actions"
+ },
+ {
+  "slug": "pypi-profile",
+  "style": "for-the-badge",
+  "colour": "3775a9",
+  "label": "PyPI",
+  "message": "Miroslav Sotek @ anulum"
+ },
+ {
+  "slug": "webgpu",
+  "style": "flat-square",
+  "colour": "005A9C",
+  "label": "",
+  "message": "WGSL | WebGPU"
+ }
+]

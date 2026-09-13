@@ -182,7 +182,7 @@ class Typesetter:
         key = (path, weight)
         if key not in self._instances:
             font = TTFont(str(path))
-            static = instancer.instantiateVariableFont(font, {"wght": weight})
+            static = instancer.instantiateVariableFont(font, {"wght": weight}) if "fvar" in font else font
             self._instances[key] = (static.getGlyphSet(), static.getBestCmap(), static["head"].unitsPerEm)
         return self._instances[key]
 

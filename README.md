@@ -17,20 +17,20 @@ Personal GitHub profile overview
 </p>
 
 <p align="center">
-  <a href="README.md"><img alt="English" src="https://img.shields.io/badge/EN-English-d9a441?style=for-the-badge"></a>
-  <a href="README.de.md"><img alt="Deutsch" src="https://img.shields.io/badge/DE-Deutsch-4dd6c8?style=for-the-badge"></a>
-  <a href="README.sk.md"><img alt="Slovenčina" src="https://img.shields.io/badge/SK-Sloven%C4%8Dina-2f81f7?style=for-the-badge"></a>
-  <a href="README.zh-CN.md"><img alt="中文" src="https://img.shields.io/badge/ZH-%E4%B8%AD%E6%96%87-c62828?style=for-the-badge"></a>
-  <a href="README.ja.md"><img alt="日本語" src="https://img.shields.io/badge/JA-%E6%97%A5%E6%9C%AC%E8%AA%9E-8e44ad?style=for-the-badge"></a>
+  <a href="README.md"><img alt="English" src="assets/badges/lang-en.svg"></a>
+  <a href="README.de.md"><img alt="Deutsch" src="assets/badges/lang-de.svg"></a>
+  <a href="README.sk.md"><img alt="Slovenčina" src="assets/badges/lang-sk.svg"></a>
+  <a href="README.zh-CN.md"><img alt="中文" src="assets/badges/lang-zh.svg"></a>
+  <a href="README.ja.md"><img alt="日本語" src="assets/badges/lang-ja.svg"></a>
 </p>
 
 <p align="center">
-  <a href="https://anulum.li"><img alt="Website" src="https://img.shields.io/badge/anulum.li-Website-09111f?style=flat-square&logo=safari&logoColor=white"></a>
-  <a href="https://orcid.org/0009-0009-3560-0851"><img alt="ORCID" src="https://img.shields.io/badge/ORCID-0009--0009--3560--0851-a6ce39?style=flat-square&logo=orcid&logoColor=white"></a>
-  <a href="cv/Miroslav-Sotek-CV.pdf"><img alt="CV PDF" src="https://img.shields.io/badge/CV-One_page_PDF-d9a441?style=flat-square&logo=adobeacrobatreader&logoColor=white"></a>
-  <a href="https://pypi.org/user/anulum/"><img alt="PyPI" src="https://img.shields.io/badge/PyPI-19_published_projects-3775a9?style=flat-square&logo=pypi&logoColor=white"></a>
-  <a href="https://github.com/sponsors/anulum"><img alt="GitHub Sponsors" src="https://img.shields.io/badge/Sponsors-Support_open_work-ea4aaa?style=flat-square&logo=githubsponsors&logoColor=white"></a>
-  <a href="mailto:protoscience@anulum.li"><img alt="Email" src="https://img.shields.io/badge/Email-protoscience%40anulum.li-4dd6c8?style=flat-square"></a>
+  <a href="https://anulum.li"><img alt="Website" src="assets/badges/website.en.svg"></a>
+  <a href="https://orcid.org/0009-0009-3560-0851"><img alt="ORCID" src="assets/badges/orcid.svg"></a>
+  <a href="cv/Miroslav-Sotek-CV.pdf"><img alt="CV PDF" src="assets/badges/cv-pdf.en.svg"></a>
+  <a href="https://pypi.org/user/anulum/"><img alt="PyPI" src="assets/badges/pypi-count.en.svg"></a>
+  <a href="https://github.com/sponsors/anulum"><img alt="GitHub Sponsors" src="assets/badges/sponsors.en.svg"></a>
+  <a href="mailto:protoscience@anulum.li"><img alt="Email" src="assets/badges/email.en.svg"></a>
 </p>
 
 <p align="center">
@@ -69,11 +69,11 @@ support them.
 **Primary implementation**
 
 <p>
-  <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white">
-  <img alt="Rust" src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white">
-  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white">
-  <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=111111">
-  <img alt="Go" src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white">
+  <img alt="Python" src="assets/badges/python.svg">
+  <img alt="Rust" src="assets/badges/rust.svg">
+  <img alt="TypeScript" src="assets/badges/typescript.svg">
+  <img alt="JavaScript" src="assets/badges/javascript.svg">
+  <img alt="Go" src="assets/badges/go.svg">
 </p>
 
 <details>
@@ -82,26 +82,26 @@ support them.
 **Scientific, native, and formal work**
 
 <p>
-  <img alt="Julia" src="https://img.shields.io/badge/Julia-9558B2?style=flat-square&logo=julia&logoColor=white">
-  <img alt="Mojo" src="https://img.shields.io/badge/Mojo-FF4C4C?style=flat-square&logo=modular&logoColor=white">
-  <img alt="C++" src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white">
-  <img alt="C" src="https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=111111">
-  <img alt="Lean" src="https://img.shields.io/badge/Lean_4-6B4FBB?style=flat-square">
-  <img alt="Jupyter" src="https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white">
-  <img alt="LaTeX" src="https://img.shields.io/badge/LaTeX-008080?style=flat-square&logo=latex&logoColor=white">
+  <img alt="Julia" src="assets/badges/julia.svg">
+  <img alt="Mojo" src="assets/badges/mojo.svg">
+  <img alt="C++" src="assets/badges/cpp.svg">
+  <img alt="C" src="assets/badges/c.svg">
+  <img alt="Lean" src="assets/badges/lean.svg">
+  <img alt="Jupyter" src="assets/badges/jupyter.svg">
+  <img alt="LaTeX" src="assets/badges/latex.svg">
 </p>
 
 **Hardware, web, and operations**
 
 <p>
-  <img alt="Verilog" src="https://img.shields.io/badge/Verilog-8A2BE2?style=flat-square">
-  <img alt="SystemVerilog" src="https://img.shields.io/badge/SystemVerilog-6A1B9A?style=flat-square">
-  <img alt="WGSL" src="https://img.shields.io/badge/WGSL_WebGPU-005A9C?style=flat-square&logo=webgpu&logoColor=white">
-  <img alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white">
-  <img alt="CSS3" src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white">
-  <img alt="Shell" src="https://img.shields.io/badge/Shell-4EAA25?style=flat-square&logo=gnubash&logoColor=white">
-  <img alt="Docker" src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white">
-  <img alt="Linux" src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=111111">
+  <img alt="Verilog" src="assets/badges/verilog.en.svg">
+  <img alt="SystemVerilog" src="assets/badges/systemverilog.svg">
+  <img alt="WGSL" src="assets/badges/wgsl.svg">
+  <img alt="HTML5" src="assets/badges/html5.svg">
+  <img alt="CSS3" src="assets/badges/css3.svg">
+  <img alt="Shell" src="assets/badges/shell.svg">
+  <img alt="Docker" src="assets/badges/docker.svg">
+  <img alt="Linux" src="assets/badges/linux.svg">
 </p>
 
 The portfolio also contains maintained protobuf/gRPC contracts, Python-Rust
@@ -192,6 +192,11 @@ do not imply academic affiliation, external validation, funding, or awards.
 
 ## How the stack is used
 
+```mermaid
+flowchart LR
+    A["01 · Inspect<br/>Rigor Foundry"] --> B["02 · Guard<br/>Director-AI"] --> C["03 · Coordinate<br/>Synapse Channel"] --> D["04 · Compute<br/>SC-NeuroCore · SCPN"]
+```
+
 <table>
   <tr>
     <td width="25%"><strong>01 · Inspect</strong><br><sub>Rigor Foundry identifies broken, unproven, or unsafe-to-claim surfaces.</sub></td>
@@ -207,10 +212,10 @@ is not a readiness claim.
 ## Portfolio ecosystem
 
 <p align="center">
-  <img alt="39 mapped repositories" src="https://img.shields.io/badge/39-Mapped_repositories-d9a441?style=for-the-badge">
-  <img alt="5 portfolios" src="https://img.shields.io/badge/5-Independent_portfolios-4dd6c8?style=for-the-badge">
-  <img alt="34 public projects" src="https://img.shields.io/badge/34-Public_projects-2f81f7?style=for-the-badge">
-  <img alt="6 private systems" src="https://img.shields.io/badge/6-Private_systems-8e44ad?style=for-the-badge">
+  <img alt="39 mapped repositories" src="assets/badges/mapped-repositories.svg">
+  <img alt="5 portfolios" src="assets/badges/portfolios.svg">
+  <img alt="34 public projects" src="assets/badges/public-projects.svg">
+  <img alt="6 private systems" src="assets/badges/private-systems.svg">
 </p>
 
 <p align="center">
@@ -329,13 +334,13 @@ inertial confinement (3) · MIF and pulsed systems (4) · alternative concepts (
 ## Engineering practice
 
 <p>
-  <img alt="pytest" src="https://img.shields.io/badge/tests-pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white">
-  <img alt="Ruff" src="https://img.shields.io/badge/lint-Ruff-D7FF64?style=flat-square&logo=ruff&logoColor=111111">
-  <img alt="mypy" src="https://img.shields.io/badge/types-mypy-2A6DB2?style=flat-square">
-  <img alt="Cargo" src="https://img.shields.io/badge/native-Cargo-000000?style=flat-square&logo=rust&logoColor=white">
-  <img alt="CodeQL" src="https://img.shields.io/badge/security-CodeQL-2f81f7?style=flat-square&logo=github&logoColor=white">
-  <img alt="REUSE" src="https://img.shields.io/badge/licensing-REUSE_3.x-4dd6c8?style=flat-square">
-  <img alt="GitHub Actions" src="https://img.shields.io/badge/CI-GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white">
+  <img alt="pytest" src="assets/badges/pytest.en.svg">
+  <img alt="Ruff" src="assets/badges/ruff.en.svg">
+  <img alt="mypy" src="assets/badges/mypy.en.svg">
+  <img alt="Cargo" src="assets/badges/cargo.en.svg">
+  <img alt="CodeQL" src="assets/badges/codeql.en.svg">
+  <img alt="REUSE" src="assets/badges/reuse.en.svg">
+  <img alt="GitHub Actions" src="assets/badges/github-actions.svg">
 </p>
 
 Practices are applied according to each repository's risk and scope. Not every
@@ -355,7 +360,7 @@ repository runs every tool.
 ## PyPI publication
 
 <p align="center">
-  <a href="https://pypi.org/user/anulum/"><img alt="Miroslav Sotek on PyPI" src="https://img.shields.io/badge/PyPI-Miroslav_Sotek_%40_anulum-3775a9?style=for-the-badge&logo=pypi&logoColor=white"></a>
+  <a href="https://pypi.org/user/anulum/"><img alt="Miroslav Sotek on PyPI" src="assets/badges/pypi-profile.svg"></a>
 </p>
 
 The verified [PyPI profile](https://pypi.org/user/anulum/) currently contains
@@ -505,5 +510,5 @@ documentation rather than marketing.
 <p align="center"><em>I AM THAT</em></p>
 
 <p align="center">
-  <img src="assets/anulum-logo.jpg" width="100%" alt="Anulum">
+  <img src="assets/anulum-logo-footer.jpg" width="100%" alt="Anulum">
 </p>
