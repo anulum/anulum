@@ -704,5 +704,69 @@
   "colour": "005A9C",
   "label": "",
   "message": "WGSL | WebGPU"
+ },
+ {
+  "slug": "mapped-repositories",
+  "lang": "sk",
+  "style": "for-the-badge",
+  "colour": "d9a441",
+  "label": "{stats.portfolio_repositories}",
+  "message": "Zmapované repozitáre"
+ },
+ {
+  "slug": "portfolios",
+  "lang": "sk",
+  "style": "for-the-badge",
+  "colour": "4dd6c8",
+  "label": "{stats.portfolios}",
+  "message": "Nezávislé portfóliá"
+ },
+ {
+  "slug": "public-projects",
+  "lang": "sk",
+  "style": "for-the-badge",
+  "colour": "2f81f7",
+  "label": "{stats.public_projects}",
+  "message": "Verejné projekty"
+ },
+ {
+  "slug": "private-systems",
+  "lang": "sk",
+  "style": "for-the-badge",
+  "colour": "8e44ad",
+  "label": "{stats.private_portfolio_repositories}",
+  "message": "Súkromné systémy"
+ },
+ {
+  "slug": "mapped-repositories",
+  "lang": "de",
+  "style": "for-the-badge",
+  "colour": "d9a441",
+  "label": "{stats.portfolio_repositories}",
+  "message": "Kartierte Repositories"
+ },
+ {
+  "slug": "portfolios",
+  "lang": "de",
+  "style": "for-the-badge",
+  "colour": "4dd6c8",
+  "label": "{stats.portfolios}",
+  "message": "Unabhängige Portfolios"
+ },
+ {
+  "slug": "public-projects",
+  "lang": "de",
+  "style": "for-the-badge",
+  "colour": "2f81f7",
+  "label": "{stats.public_projects}",
+  "message": "Öffentliche Projekte"
+ },
+ {
+  "slug": "private-systems",
+  "lang": "de",
+  "style": "for-the-badge",
+  "colour": "8e44ad",
+  "label": "{stats.private_portfolio_repositories}",
+  "message": "Private Systeme"
  }
 ]

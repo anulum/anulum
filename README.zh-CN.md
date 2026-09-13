@@ -39,6 +39,8 @@ GitHub 个人资料概览
   <a href="#research-output">研究产出</a> · <a href="#collaboration">合作</a>
 </p>
 
+> **说明：** 本页面的文字内容是 2026-09-03 的快照，此后不再更新；最新内容请见 [English](README.md)（或 [Slovenčina](README.sk.md)、[Deutsch](README.de.md)）。下方的最新发布与最新出版物仍会自动更新。
+
 # Miroslav Šotek
 
 瑞士 [Anulum Institute](https://anulum.li) 的独立研究人员与系统工程师。
