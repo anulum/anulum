@@ -143,7 +143,7 @@ These links lead to inspectable artefacts, not summary claims.
 
 ## Current focus
 
-<sub>Portfolio state verified 2026-09-03.</sub>
+<sub>Portfolio state verified <!-- verified-at -->2026-09-03<!-- /verified-at -->.</sub>
 
 <table>
   <tr>
@@ -152,6 +152,30 @@ These links lead to inspectable artefacts, not summary claims.
     <td width="33%"><strong>Research to hardware</strong><br><sub>Carrying scientific models through native acceleration, formal checks, RTL, hardware runs, and inspectable result packs.</sub></td>
   </tr>
 </table>
+
+<!-- profile-feeds:releases:start -->
+### Latest releases
+
+| Date | Project | Release | Change |
+|---|---|---|---|
+| 2026-09-05 | SYNAPSE CHANNEL | [v0.99.26](https://github.com/anulum/synapse-channel/releases/tag/v0.99.26) | Dashboard feeds return unconfigured-store responses without starting report worker processes; configured-store reconstruction retains process isolation. |
+| 2026-09-05 | SYNAPSE CHANNEL | [v0.99.25](https://github.com/anulum/synapse-channel/releases/tag/v0.99.25) | Add a repeatable JavaScript SDK integration check against an isolated, authenticated Python hub, covering delivery, claim conflicts, release, snapshots, and reconnect. |
+| 2026-09-05 | SCPN-Phase-Orchestrator | [v1.4.3](https://github.com/anulum/scpn-phase-orchestrator/releases/tag/v1.4.3) | Generate identical capability inventory ordering from Git checkouts and exported source trees. |
+| 2026-09-04 | SYNAPSE CHANNEL | [v0.99.24](https://github.com/anulum/synapse-channel/releases/tag/v0.99.24) | Keep managed Codex pane bridges waiter-reachable while an already-running provider is blocked by an update chooser, report the pending wake and pane compatibility state explicitly, and coalesce later routing hints until the same live pane becomes safe to… |
+| 2026-09-04 | SCPN-Phase-Orchestrator | [v1.4.2](https://github.com/anulum/scpn-phase-orchestrator/releases/tag/v1.4.2) | A fourth sealed L3 request now binds only pulsed_electron_beam_icf to the exact SCPN-ICF-BEAM-CORE review. |
+
+<sub>Rendered from [anulum.li/news](https://anulum.li/news/) (the projects' CHANGELOG files) and [Zenodo](https://zenodo.org/search?q=creators.orcid%3A%220009-0009-3560-0851%22) on 2026-09-13.</sub>
+<!-- profile-feeds:releases:end -->
+
+<!-- profile-feeds:publication:start -->
+### Latest publication
+
+| Date | Type | Output | DOI |
+|---|---|---|---|
+| 2026-08-26 | Preprint | A domain-specific modal-growth detector clears a matched false-alarm bar on power-grid instability, and an eigenvalue regime map shows when its form transfers | [10.5281/zenodo.22113116](https://doi.org/10.5281/zenodo.22113116) |
+
+<sub>Rendered from [anulum.li/news](https://anulum.li/news/) (the projects' CHANGELOG files) and [Zenodo](https://zenodo.org/search?q=creators.orcid%3A%220009-0009-3560-0851%22) on 2026-09-13.</sub>
+<!-- profile-feeds:publication:end -->
 
 ## Timeline
 
@@ -202,7 +226,7 @@ private product surfaces. [HushLine](https://github.com/anulum/HushLine) is a
 standalone public utility outside the five portfolios. Connections represent
 contract, integration, evidence, and audit flow. They do not merge ownership or
 imply scientific validation, operational readiness, or actuation authority.
-Counts verified 2026-09-03.
+Counts verified <!-- verified-at -->2026-09-03<!-- /verified-at -->.
 
 **Access key:** `PUBLIC` · `PUBLIC / ARCHITECTURE-ONLY` · `PRIVATE` ·
 `PRIVATE / PROPRIETARY`
@@ -373,6 +397,8 @@ engines, domain kernels, and command-line tools.
 | Surface | Verified route |
 |---|---|
 | Complete research index | [Publications, preprints, software archives, and evidence boundaries](PUBLICATIONS.md) |
+| Publications hub | [anulum.li/papers/](https://anulum.li/papers/): every Zenodo record with BibTeX |
+| Releases and publications stream | [anulum.li/news/](https://anulum.li/news/) · [RSS](https://anulum.li/news/feed.xml) |
 | Curriculum vitae | [One-page PDF](cv/Miroslav-Sotek-CV.pdf) · [Markdown source](cv/Miroslav-Sotek-CV.md) · [JSON Resume](cv/resume.json) |
 | Research identity | [ORCID 0009-0009-3560-0851](https://orcid.org/0009-0009-3560-0851) |
 | Software publication | [19 projects on PyPI](https://pypi.org/user/anulum/) |

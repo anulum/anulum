@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "1.2.0",
   "verified_at": "2026-09-03",
   "profile": {
     "name": "Miroslav Šotek",
@@ -168,5 +168,51 @@
     "assets/profile-header-light.svg",
     "assets/ecosystem-map-dark.svg",
     "assets/ecosystem-map-light.svg"
-  ]
+  ],
+  "feeds": {
+    "news_feed": "https://anulum.li/news/feed.xml",
+    "releases_shown": 5,
+    "cache": "tools/feeds.json"
+  },
+  "citation_file": "CITATION.cff",
+  "record_projects": {
+    "20382000": "SCPN Quantum Control",
+    "20382075": "SCPN Quantum Control",
+    "20382099": "SCPN Quantum Control",
+    "20382125": "SCPN Quantum Control",
+    "20382138": "SCPN Quantum Control",
+    "20382203": "SCPN Quantum Control",
+    "20382333": "SCPN Quantum Control",
+    "18821930": "SCPN Quantum Control",
+    "22113062": "SCPN Phase Orchestrator",
+    "22113116": "SCPN Phase Orchestrator",
+    "22355102": "SCPN Phase Orchestrator",
+    "18144662": "SC-NeuroCore",
+    "18594898": "SC-NeuroCore",
+    "21198962": "SC-NeuroCore",
+    "18731981": "SCPN Fusion Core",
+    "22056375": "SCPN Fusion Core",
+    "21146933": "SCPN MIF Core",
+    "18821816": "SCPN Control",
+    "21691551": "Director-AI",
+    "18822167": "Director Class AI",
+    "22383579": "Synapse Channel",
+    "20776102": "HushLine",
+    "18507639": "The Anulum Framework",
+    "17419678": "The Anulum Framework",
+    "18088340": "The Anulum Framework",
+    "17309834": "The Anulum Framework",
+    "17508894": "The Anulum Framework",
+    "18985467": "Sieving",
+    "17609127": "Precise Coordinate System Research"
+  },
+  "publication_notes": {
+    "22113062": "Under review (self-reported by the project); acceptance not claimed",
+    "22113116": "Under review (self-reported by the project); acceptance not claimed",
+    "18144662": "Zenodo record typed as a conference paper; conference acceptance not claimed",
+    "17309834": "Preview edition",
+    "18088340": "Preview edition",
+    "17508894": "Preview edition",
+    "17419678": "Public index edition"
+  }
 }

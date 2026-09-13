@@ -1,0 +1,19 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# Local canonical refresh of github.com/anulum/anulum (README live blocks,
+# PUBLICATIONS.md, verified_at). Commits locally, never pushes.
+# Install (user unit):
+#   ln -sf "$PWD/tools/systemd/anulum-profile-refresh.service" ~/.config/systemd/user/
+#   ln -sf "$PWD/tools/systemd/anulum-profile-refresh.timer"   ~/.config/systemd/user/
+#   systemctl --user daemon-reload && systemctl --user enable --now anulum-profile-refresh.timer
+[Unit]
+Description=Local refresh of the anulum GitHub profile (feeds, publications, verified date)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/media/anulum/GOTM/aaa_God_of_the_Math_Collection/03_CODE/ANULUM
+ExecStart=/usr/bin/bash /media/anulum/GOTM/aaa_God_of_the_Math_Collection/03_CODE/ANULUM/tools/refresh_profile.sh
+Environment=PYTHONUNBUFFERED=1
+TimeoutStartSec=15min
+Nice=10

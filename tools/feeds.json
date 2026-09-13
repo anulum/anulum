@@ -1,0 +1,322 @@
+{
+  "fetched_at": "2026-09-13",
+  "releases": [
+    {
+      "project": "SYNAPSE CHANNEL",
+      "version": "v0.99.26",
+      "headline": "Dashboard feeds return unconfigured-store responses without starting report worker processes; configured-store reconstruction retains process isolation.",
+      "link": "https://github.com/anulum/synapse-channel/releases/tag/v0.99.26",
+      "date": "2026-09-05"
+    },
+    {
+      "project": "SYNAPSE CHANNEL",
+      "version": "v0.99.25",
+      "headline": "Add a repeatable JavaScript SDK integration check against an isolated, authenticated Python hub, covering delivery, claim conflicts, release, snapshots, and reconnect.",
+      "link": "https://github.com/anulum/synapse-channel/releases/tag/v0.99.25",
+      "date": "2026-09-05"
+    },
+    {
+      "project": "SCPN-Phase-Orchestrator",
+      "version": "v1.4.3",
+      "headline": "Generate identical capability inventory ordering from Git checkouts and exported source trees.",
+      "link": "https://github.com/anulum/scpn-phase-orchestrator/releases/tag/v1.4.3",
+      "date": "2026-09-05"
+    },
+    {
+      "project": "SYNAPSE CHANNEL",
+      "version": "v0.99.24",
+      "headline": "Keep managed Codex pane bridges waiter-reachable while an already-running provider is blocked by an update chooser, report the pending wake and pane compatibility state explicitly, and coalesce later routing hints until the same live pane becomes safe to…",
+      "link": "https://github.com/anulum/synapse-channel/releases/tag/v0.99.24",
+      "date": "2026-09-04"
+    },
+    {
+      "project": "SCPN-Phase-Orchestrator",
+      "version": "v1.4.2",
+      "headline": "A fourth sealed L3 request now binds only pulsed_electron_beam_icf to the exact SCPN-ICF-BEAM-CORE review.",
+      "link": "https://github.com/anulum/scpn-phase-orchestrator/releases/tag/v1.4.2",
+      "date": "2026-09-04"
+    }
+  ],
+  "zenodo": [
+    {
+      "id": 22383579,
+      "doi": "10.5281/zenodo.22383579",
+      "conceptdoi": "10.5281/zenodo.20801559",
+      "title": "SYNAPSE CHANNEL: Local-first multi-agent coordination bus",
+      "date": "2026-09-05",
+      "type": "software/",
+      "version": "0.99.26",
+      "license": "agpl-3.0-or-later"
+    },
+    {
+      "id": 22355102,
+      "doi": "10.5281/zenodo.22355102",
+      "conceptdoi": "10.5281/zenodo.18820849",
+      "title": "SCPN Phase Orchestrator: Domain-Agnostic Coherence Control Compiler",
+      "date": "2026-09-05",
+      "type": "software/",
+      "version": "v1.4.3",
+      "license": "agpl-3.0-or-later"
+    },
+    {
+      "id": 22113116,
+      "doi": "10.5281/zenodo.22113116",
+      "conceptdoi": "10.5281/zenodo.22113115",
+      "title": "A domain-specific modal-growth detector clears a matched false-alarm bar on power-grid instability, and an eigenvalue regime map shows when its form transfers",
+      "date": "2026-08-26",
+      "type": "publication/preprint",
+      "version": "",
+      "license": "cc-by-4.0"
+    },
+    {
+      "id": 22113062,
+      "doi": "10.5281/zenodo.22113062",
+      "conceptdoi": "10.5281/zenodo.22113061",
+      "title": "Generic early-warning signals are at chance under a matched false-alarm protocol across brain, heart, grid, climate and molecular data",
+      "date": "2026-08-26",
+      "type": "publication/preprint",
+      "version": "",
+      "license": "cc-by-4.0"
+    },
+    {
+      "id": 21691551,
+      "doi": "10.5281/zenodo.21691551",
+      "conceptdoi": "10.5281/zenodo.18822155",
+      "title": "Director-AI: Coherence Engine — AI Output Verification & Safety Oversight",
+      "date": "2026-07-29",
+      "type": "software/",
+      "version": "3.21.0",
+      "license": "apache2.0"
+    },
+    {
+      "id": 21198962,
+      "doi": "10.5281/zenodo.21198962",
+      "conceptdoi": "10.5281/zenodo.18881374",
+      "title": "SC-NeuroCore: Universal Stochastic Computing Framework for Neuromorphic Hardware",
+      "date": "2026-07-05",
+      "type": "software/",
+      "version": "3.13.3",
+      "license": "agpl-3.0-or-later"
+    },
+    {
+      "id": 21146933,
+      "doi": "10.5281/zenodo.21146933",
+      "conceptdoi": "10.5281/zenodo.20768029",
+      "title": "SCPN-MIF-CORE: Deterministic Phase Synchronisation and Sub-50 ns FPGA Trigger Synthesis for High-Beta Pulsed Plasmas",
+      "date": "2026-07-03",
+      "type": "software/",
+      "version": "0.1.1",
+      "license": "agpl-3.0-or-later"
+    },
+    {
+      "id": 20776102,
+      "doi": "10.5281/zenodo.20776102",
+      "conceptdoi": "10.5281/zenodo.20775432",
+      "title": "Hushline",
+      "date": "2026-06-20",
+      "type": "software/",
+      "version": "v0.1.7",
+      "license": "agpl-3.0-or-later"
+    },
+    {
+      "id": 20382333,
+      "doi": "10.5281/zenodo.20382333",
+      "conceptdoi": "10.5281/zenodo.20382332",
+      "title": "scpn-quantum-control: reproducible Kuramoto--XY quantum-control workflows with Rust acceleration and hardware artefact packaging",
+      "date": "2026-05-25",
+      "type": "publication/preprint",
+      "version": "",
+      "license": "cc-by-4.0"
+    },
+    {
+      "id": 20382203,
+      "doi": "10.5281/zenodo.20382203",
+      "conceptdoi": "10.5281/zenodo.20382202",
+      "title": "Quantum simulation of coupled-oscillator synchronisation on a 156-qubit superconducting processor",
+      "date": "2026-05-25",
+      "type": "publication/preprint",
+      "version": "",
+      "license": "cc-by-4.0"
+    },
+    {
+      "id": 20382138,
+      "doi": "10.5281/zenodo.20382138",
+      "conceptdoi": "10.5281/zenodo.20382137",
+      "title": "A Rust-accelerated, topology-informed workflow for Kuramoto--XY quantum simulation and NISQ benchmarking",
+      "date": "2026-05-25",
+      "type": "publication/preprint",
+      "version": "",
+      "license": "cc-by-4.0"
+    },
+    {
+      "id": 20382125,
+      "doi": "10.5281/zenodo.20382125",
+      "conceptdoi": "10.5281/zenodo.20382124",
+      "title": "Fisher-information-inspired collective feedback in Kuramoto--XY Hamiltonians: exact small-system structure and a hardware falsification",
+      "date": "2026-05-25",
+      "type": "publication/preprint",
+      "version": "",
+      "license": "cc-by-4.0"
+    },
+    {
+      "id": 20382099,
+      "doi": "10.5281/zenodo.20382099",
+      "conceptdoi": "10.5281/zenodo.20382098",
+      "title": "Monitored feedback versus open-loop control for Kuramoto--XY synchronisation on IBM dynamic circuits",
+      "date": "2026-05-25",
+      "type": "publication/preprint",
+      "version": "",
+      "license": "cc-by-4.0"
+    },
+    {
+      "id": 20382075,
+      "doi": "10.5281/zenodo.20382075",
+      "conceptdoi": "10.5281/zenodo.20382074",
+      "title": "Reduced-Pauli entanglement checks for DLA-sector leakage mechanisms on IBM Heron hardware",
+      "date": "2026-05-25",
+      "type": "publication/preprint",
+      "version": "",
+      "license": "cc-by-4.0"
+    },
+    {
+      "id": 20382000,
+      "doi": "10.5281/zenodo.20382000",
+      "conceptdoi": "10.5281/zenodo.20381999",
+      "title": "Backend-sensitive hardware observation of parity-sector and excitation-number correlated decoherence asymmetry in the XY Hamiltonian",
+      "date": "2026-05-25",
+      "type": "publication/preprint",
+      "version": "",
+      "license": "cc-by-4.0"
+    },
+    {
+      "id": 18821930,
+      "doi": "10.5281/zenodo.18821930",
+      "conceptdoi": "10.5281/zenodo.18821929",
+      "title": "scpn-quantum-control: Quantum-Native SCPN Phase Dynamics and Control",
+      "date": "2026-03-29",
+      "type": "software/",
+      "version": "0.9.6",
+      "license": "agpl-3.0-or-later"
+    },
+    {
+      "id": 18985467,
+      "doi": "10.5281/zenodo.18985467",
+      "conceptdoi": "10.5281/zenodo.18985466",
+      "title": "Sieving: Denoising-Robust Fine-Tuning for Semantic Structural Representation in Natural Language Inference",
+      "date": "2026-03-12",
+      "type": "publication/technicalnote",
+      "version": "",
+      "license": "agpl-3.0-or-later"
+    },
+    {
+      "id": 22056375,
+      "doi": "10.5281/zenodo.22056375",
+      "conceptdoi": "10.5281/zenodo.18820864",
+      "title": "SCPN Fusion Core: Tokamak Plasma Physics Simulation and Neuro-Symbolic Control Suite",
+      "date": "2026-03-01",
+      "type": "software/",
+      "version": "3.9.3",
+      "license": "agpl-3.0-or-later"
+    },
+    {
+      "id": 18822167,
+      "doi": "10.5281/zenodo.18822167",
+      "conceptdoi": "10.5281/zenodo.18822166",
+      "title": "Director-Class AI: Coherence Engine v1.4.1",
+      "date": "2026-03-01",
+      "type": "software/",
+      "version": "1.4.1",
+      "license": "apgl-v3"
+    },
+    {
+      "id": 18821816,
+      "doi": "10.5281/zenodo.18821816",
+      "conceptdoi": "10.5281/zenodo.18804939",
+      "title": "SCPN Control: Neuro-Symbolic Stochastic Petri Net Controller for Plasma Control",
+      "date": "2026-03-01",
+      "type": "software/",
+      "version": "0.4.0",
+      "license": "mit-license"
+    },
+    {
+      "id": 18731981,
+      "doi": "10.5281/zenodo.18731981",
+      "conceptdoi": "10.5281/zenodo.18731980",
+      "title": "SCPN Fusion Core v3.9.0 — Neuromorphic SNN Tokamak Plasma Control Benchmark Suite",
+      "date": "2026-02-22",
+      "type": "software/",
+      "version": "3.9.0",
+      "license": "agpl-3.0-or-later"
+    },
+    {
+      "id": 18594898,
+      "doi": "10.5281/zenodo.18594898",
+      "conceptdoi": "10.5281/zenodo.18594897",
+      "title": "SC-NeuroCore v3.6: Bridging the Gap with a 512x Real-Time Stochastic Neuromorphic Compiler",
+      "date": "2026-02-10",
+      "type": "publication/technicalnote",
+      "version": "v3.6",
+      "license": "agpl-3.0-or-later"
+    },
+    {
+      "id": 18507639,
+      "doi": "10.5281/zenodo.18507639",
+      "conceptdoi": "10.5281/zenodo.18507638",
+      "title": "SCPN Framework v1.0 — Technical Specification and Reference Architecture for Multi-Scale Phase-Synchrony and Informational Transduction",
+      "date": "2026-02-06",
+      "type": "publication/technicalnote",
+      "version": "",
+      "license": "cc-by-4.0"
+    },
+    {
+      "id": 18144662,
+      "doi": "10.5281/zenodo.18144662",
+      "conceptdoi": "10.5281/zenodo.18144661",
+      "title": "SC-NeuroCore: A Universal Stochastic Substrate for Next-Generation Distributed Intelligence",
+      "date": "2026-01-19",
+      "type": "publication/conferencepaper",
+      "version": "",
+      "license": "cc-by-nd-4.0"
+    },
+    {
+      "id": 18088340,
+      "doi": "10.5281/zenodo.18088340",
+      "conceptdoi": "10.5281/zenodo.18088339",
+      "title": "SCPN — Paper 1: Layer 1 (Quantum Biological) — Preview Edition",
+      "date": "2025-12-29",
+      "type": "publication/preprint",
+      "version": "2025-12-29.P1",
+      "license": "cc-by-4.0"
+    },
+    {
+      "id": 17609127,
+      "doi": "10.5281/zenodo.17609127",
+      "conceptdoi": "10.5281/zenodo.17609126",
+      "title": "Precise Coordinate System Research — A Geodetic and Digital Workflow Guide for Swiss Construction Projects",
+      "date": "2025-11-14",
+      "type": "publication/report",
+      "version": "v1.0",
+      "license": "cc-by-4.0"
+    },
+    {
+      "id": 17508894,
+      "doi": "10.5281/zenodo.17508894",
+      "conceptdoi": "10.5281/zenodo.17508893",
+      "title": "SCPN — Paper 3: Layer 3 — Genomic–Epigenomic–Morphogenetic (Preview edition, Rev. 11.31)",
+      "date": "2025-11-02",
+      "type": "publication/",
+      "version": "Rev. 11.31 — Preview edition",
+      "license": "cc-by-nc-nd-4.0"
+    },
+    {
+      "id": 17419678,
+      "doi": "10.5281/zenodo.17419678",
+      "conceptdoi": "10.5281/zenodo.17419677",
+      "title": "The SCPN Master Publications — Scope & Table of Contents (Public Index Edition)",
+      "date": "2025-10-22",
+      "type": "publication/",
+      "version": "Public Index Edition",
+      "license": "cc-by-4.0"
+    }
+  ]
+}

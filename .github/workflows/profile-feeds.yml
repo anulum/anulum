@@ -1,0 +1,53 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# Manual trigger only. The canonical refresh runs locally (tools/refresh_profile.sh via
+# the anulum-profile-refresh timer) so that every commit exists in the local history
+# before it reaches this mirror. Enable the schedule below only after deciding that
+# this repository may accept commits created on GitHub.
+name: Profile feeds refresh
+
+on:
+  workflow_dispatch:
+  # schedule:
+  #   - cron: "41 6 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-feeds
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Refresh the release feed and the Zenodo inventory
+        run: python3 tools/profile_feeds.py --refresh
+      - name: Render the publication index
+        run: python3 tools/render_publications.py
+      - name: Validate profile inventory and translations
+        run: python3 tools/validate_profile.py
+      - name: Run tests
+        run: python3 -m unittest discover -s tests -p "test_*.py"
+      - name: Commit when something changed
+        run: |
+          if git diff --quiet; then
+            echo "profile feeds: nothing changed"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add tools/feeds.json PUBLICATIONS.md README.md README.de.md README.sk.md README.zh-CN.md README.ja.md
+          git commit -F - <<'MSG'
+          docs(profile): refresh release feed and Zenodo inventory
+
+          Automated refresh of the live README blocks and PUBLICATIONS.md from
+          anulum.li/news/feed.xml and the Zenodo records of the owner's ORCID.
+
+          Authored by Anulum Fortis & Arcane Sapience (protoscience@anulum.li)
+          Automation: profile-feeds workflow
+          MSG
+          git push origin HEAD:main

@@ -103,11 +103,35 @@ Repositories und auf [anulum.li](https://anulum.li).
 <a id="current-focus"></a>
 ## Aktueller Fokus
 
-<sub>Portfoliostand verifiziert am 2026-09-03.</sub>
+<sub>Portfoliostand verifiziert am <!-- verified-at -->2026-09-03<!-- /verified-at -->.</sub>
 
 - Gemeinsame Kerne und kontrollierte Gerätedaten in 25 öffentlichen Reactor-Repositories.
 - Koordination, Gedächtnis, Antwortsicherung, Aktionsprüfung und Repository-Evidenz mit klaren Eigentumsgrenzen.
 - Wissenschaftliche Modelle bis zu nativer Beschleunigung, formalen Prüfungen, RTL und prüfbaren Ergebnispaketen.
+
+<!-- profile-feeds:releases:start -->
+### Neueste Releases
+
+| Datum | Projekt | Release | Änderung |
+|---|---|---|---|
+| 2026-09-05 | SYNAPSE CHANNEL | [v0.99.26](https://github.com/anulum/synapse-channel/releases/tag/v0.99.26) | Dashboard feeds return unconfigured-store responses without starting report worker processes; configured-store reconstruction retains process isolation. |
+| 2026-09-05 | SYNAPSE CHANNEL | [v0.99.25](https://github.com/anulum/synapse-channel/releases/tag/v0.99.25) | Add a repeatable JavaScript SDK integration check against an isolated, authenticated Python hub, covering delivery, claim conflicts, release, snapshots, and reconnect. |
+| 2026-09-05 | SCPN-Phase-Orchestrator | [v1.4.3](https://github.com/anulum/scpn-phase-orchestrator/releases/tag/v1.4.3) | Generate identical capability inventory ordering from Git checkouts and exported source trees. |
+| 2026-09-04 | SYNAPSE CHANNEL | [v0.99.24](https://github.com/anulum/synapse-channel/releases/tag/v0.99.24) | Keep managed Codex pane bridges waiter-reachable while an already-running provider is blocked by an update chooser, report the pending wake and pane compatibility state explicitly, and coalesce later routing hints until the same live pane becomes safe to… |
+| 2026-09-04 | SCPN-Phase-Orchestrator | [v1.4.2](https://github.com/anulum/scpn-phase-orchestrator/releases/tag/v1.4.2) | A fourth sealed L3 request now binds only pulsed_electron_beam_icf to the exact SCPN-ICF-BEAM-CORE review. |
+
+<sub>Gerendert aus [anulum.li/news](https://anulum.li/news/) (den CHANGELOG-Dateien der Projekte) und [Zenodo](https://zenodo.org/search?q=creators.orcid%3A%220009-0009-3560-0851%22) am 2026-09-13.</sub>
+<!-- profile-feeds:releases:end -->
+
+<!-- profile-feeds:publication:start -->
+### Neueste Publikation
+
+| Datum | Typ | Ergebnis | DOI |
+|---|---|---|---|
+| 2026-08-26 | Preprint | A domain-specific modal-growth detector clears a matched false-alarm bar on power-grid instability, and an eigenvalue regime map shows when its form transfers | [10.5281/zenodo.22113116](https://doi.org/10.5281/zenodo.22113116) |
+
+<sub>Gerendert aus [anulum.li/news](https://anulum.li/news/) (den CHANGELOG-Dateien der Projekte) und [Zenodo](https://zenodo.org/search?q=creators.orcid%3A%220009-0009-3560-0851%22) am 2026-09-13.</sub>
+<!-- profile-feeds:publication:end -->
 
 ## Zeitleiste
 
@@ -303,6 +327,8 @@ Domänen-Kernels und Kommandozeilenwerkzeuge.
 | Oberfläche | Verifizierter Weg |
 |---|---|
 | Vollständiger Forschungsindex | [Publikationen, Preprints und Softwarearchive](PUBLICATIONS.md) |
+| Publikations-Hub | [anulum.li/papers/](https://anulum.li/papers/): jeder Zenodo-Eintrag mit BibTeX |
+| Releases und Publikationen | [anulum.li/news/](https://anulum.li/news/) · [RSS](https://anulum.li/news/feed.xml) |
 | Lebenslauf | [Einseitiges PDF](cv/Miroslav-Sotek-CV.pdf), [Quelle](cv/Miroslav-Sotek-CV.md), [JSON Resume](cv/resume.json) |
 | Forschungsidentität | [ORCID 0009-0009-3560-0851](https://orcid.org/0009-0009-3560-0851) |
 | Software | [19 PyPI-Projekte](https://pypi.org/user/anulum/) |

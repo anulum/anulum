@@ -5,8 +5,15 @@
 from __future__ import annotations
 
 import json
+import re
+import sys
 from pathlib import Path
 from typing import Any
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+import profile_feeds  # noqa: E402
+import render_publications  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / "profile-data.json"
@@ -62,6 +69,42 @@ def check_rendered_assets(data: dict[str, Any], readmes: dict[str, str]) -> list
         for legacy in LEGACY_ASSETS:
             if legacy in text:
                 errors.append(f"{relative}: still references legacy asset {legacy}")
+    return errors
+
+
+def check_live_surfaces(data: dict[str, Any], readmes: dict[str, str]) -> list[str]:
+    """Verify the feed cache, the README live blocks, PUBLICATIONS.md and CITATION.cff."""
+    errors: list[str] = []
+    cache_path = ROOT / data["feeds"]["cache"]
+    if not cache_path.is_file():
+        return [f"missing feed cache: {data['feeds']['cache']}"]
+    cache = json.loads(cache_path.read_text(encoding="utf-8"))
+    if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", cache.get("fetched_at", "")):
+        errors.append("feed cache: fetched_at is not an ISO date")
+    verified = f"<!-- verified-at -->{data['verified_at']}<!-- /verified-at -->"
+    for relative, text in readmes.items():
+        for name in profile_feeds.BLOCKS:
+            for edge in ("start", "end"):
+                if text.count(profile_feeds.marker(name, edge)) != 1:
+                    errors.append(f"{relative}: expected exactly one {name} {edge} marker")
+        if verified not in text:
+            errors.append(f"{relative}: verified-at marker does not carry {data['verified_at']}")
+    try:
+        for path, rendered in profile_feeds.render_readmes(data, cache).items():
+            if path.read_text(encoding="utf-8") != rendered:
+                errors.append(f"{path.name}: live blocks differ from the cache (run tools/profile_feeds.py)")
+        if (ROOT / "PUBLICATIONS.md").read_text(encoding="utf-8") != render_publications.render(data, cache):
+            errors.append("PUBLICATIONS.md differs from the cache (run tools/render_publications.py)")
+    except ValueError as exc:
+        errors.append(str(exc))
+    citation = ROOT / data["citation_file"]
+    if not citation.is_file():
+        errors.append(f"missing citation file: {data['citation_file']}")
+    else:
+        text = citation.read_text(encoding="utf-8")
+        for needle in ("cff-version:", data["profile"]["orcid"], "repository-code: https://github.com/anulum/anulum"):
+            if needle not in text:
+                errors.append(f"{data['citation_file']}: missing {needle}")
     return errors
 
 
@@ -159,6 +202,7 @@ def main() -> int:
     if not (ROOT / "assets" / "anulum-logo.jpg").is_file():
         errors.append("missing profile asset: assets/anulum-logo.jpg")
     errors.extend(check_rendered_assets(data, readmes))
+    errors.extend(check_live_surfaces(data, readmes))
 
     if errors:
         for error in errors:

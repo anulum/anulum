@@ -1,0 +1,24 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+cff-version: 1.2.0
+message: >-
+  This repository is the public index of Miroslav Šotek's research and software
+  portfolio. Cite the specific project, release or Zenodo record you use (see
+  PUBLICATIONS.md); cite this index only when referring to the portfolio as a whole.
+type: dataset
+title: "Miroslav Šotek: public research and software portfolio index"
+authors:
+  - family-names: Šotek
+    given-names: Miroslav
+    orcid: https://orcid.org/0009-0009-3560-0851
+    affiliation: ANULUM CH & LI
+    email: protoscience@anulum.li
+repository-code: https://github.com/anulum/anulum
+url: https://anulum.li
+license: AGPL-3.0-or-later
+keywords:
+  - research portfolio
+  - evidence-governed software
+  - multi-agent systems
+  - neuromorphic computing
+  - plasma physics
+  - quantum simulation

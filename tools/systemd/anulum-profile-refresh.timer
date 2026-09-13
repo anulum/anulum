@@ -1,0 +1,13 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+[Unit]
+Description=Daily local refresh of the anulum GitHub profile
+
+[Timer]
+OnCalendar=*-*-* 06:41:00
+Persistent=true
+RandomizedDelaySec=10m
+AccuracySec=1m
+Unit=anulum-profile-refresh.service
+
+[Install]
+WantedBy=timers.target
