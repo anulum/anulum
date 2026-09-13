@@ -103,7 +103,7 @@ Repositories und auf [anulum.li](https://anulum.li).
 <a id="current-focus"></a>
 ## Aktueller Fokus
 
-<sub>Portfoliostand verifiziert am <!-- verified-at -->2026-09-03<!-- /verified-at -->.</sub>
+<sub>Portfoliostand verifiziert am <!-- verified-at -->2026-09-13<!-- /verified-at -->.</sub>
 
 - Gemeinsame Kerne und kontrollierte Gerätedaten in 25 öffentlichen Reactor-Repositories.
 - Koordination, Gedächtnis, Antwortsicherung, Aktionsprüfung und Repository-Evidenz mit klaren Eigentumsgrenzen.

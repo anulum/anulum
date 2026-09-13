@@ -103,7 +103,7 @@ repozitárov a na [anulum.li](https://anulum.li).
 <a id="current-focus"></a>
 ## Aktuálne zameranie
 
-<sub>Stav portfólia overený <!-- verified-at -->2026-09-03<!-- /verified-at -->.</sub>
+<sub>Stav portfólia overený <!-- verified-at -->2026-09-13<!-- /verified-at -->.</sub>
 
 - Spoločné jadrá a riadená pravda zariadení v 25 verejných Reactor repozitároch.
 - Koordinácia, pamäť, overovanie odpovedí, kontrola akcií a repo dôkazy s jasnými hranicami vlastníctva.

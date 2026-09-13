@@ -143,7 +143,7 @@ These links lead to inspectable artefacts, not summary claims.
 
 ## Current focus
 
-<sub>Portfolio state verified <!-- verified-at -->2026-09-03<!-- /verified-at -->.</sub>
+<sub>Portfolio state verified <!-- verified-at -->2026-09-13<!-- /verified-at -->.</sub>
 
 <table>
   <tr>
@@ -226,7 +226,7 @@ private product surfaces. [HushLine](https://github.com/anulum/HushLine) is a
 standalone public utility outside the five portfolios. Connections represent
 contract, integration, evidence, and audit flow. They do not merge ownership or
 imply scientific validation, operational readiness, or actuation authority.
-Counts verified <!-- verified-at -->2026-09-03<!-- /verified-at -->.
+Counts verified <!-- verified-at -->2026-09-13<!-- /verified-at -->.
 
 **Access key:** `PUBLIC` · `PUBLIC / ARCHITECTURE-ONLY` · `PRIVATE` ·
 `PRIVATE / PROPRIETARY`

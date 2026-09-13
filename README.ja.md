@@ -102,7 +102,7 @@ HTML/CSS、Shell、Docker、Linux。
 <a id="current-focus"></a>
 ## 現在の重点
 
-<sub>ポートフォリオ状態は <!-- verified-at -->2026-09-03<!-- /verified-at --> に検証済みです。</sub>
+<sub>ポートフォリオ状態は <!-- verified-at -->2026-09-13<!-- /verified-at --> に検証済みです。</sub>
 
 - 25 の公開 Reactor リポジトリにおける共有カーネルと管理された装置情報。
 - 所有権境界を保った協調、メモリ、応答保証、アクション審査、リポジトリエビデンス。

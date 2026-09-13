@@ -133,7 +133,6 @@ class Counts:
     public: int
     private: int
     standalone: int
-    verified_at: str
     per_portfolio: dict[str, tuple[int, int]]
 
     def desc(self) -> str:
@@ -141,8 +140,7 @@ class Counts:
         groups = " ".join(f"{key}={public}/{private}" for key, (public, private) in self.per_portfolio.items())
         return (
             f"counts: portfolios={self.portfolios} repositories={self.repositories} "
-            f"public={self.public} private={self.private} standalone={self.standalone} "
-            f"verified={self.verified_at}; {groups}"
+            f"public={self.public} private={self.private} standalone={self.standalone}; {groups}"
         )
 
 
@@ -160,7 +158,6 @@ def load_counts(data: dict[str, Any]) -> Counts:
         public=sum(p for p, _ in per.values()),
         private=sum(q for _, q in per.values()),
         standalone=len(data["standalone_repositories"]),
-        verified_at=data["verified_at"],
         per_portfolio=per,
     )
 

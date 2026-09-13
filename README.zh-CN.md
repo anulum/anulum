@@ -99,7 +99,7 @@ Shell、Docker 和 Linux。
 <a id="current-focus"></a>
 ## 当前重点
 
-<sub>项目组合状态于 <!-- verified-at -->2026-09-03<!-- /verified-at --> 验证。</sub>
+<sub>项目组合状态于 <!-- verified-at -->2026-09-13<!-- /verified-at --> 验证。</sub>
 
 - 在 25 个公开 Reactor 仓库中整合共享内核和受治理的设备事实。
 - 在清晰所有权边界下连接协调、记忆、响应保障、动作审查和仓库证据。

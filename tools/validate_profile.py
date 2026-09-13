@@ -40,7 +40,7 @@ def expected_counts_line(data: dict[str, Any]) -> str:
     return (
         f"counts: portfolios={len(per)} repositories={sum(p + q for _, p, q in per)} "
         f"public={sum(p for _, p, _ in per)} private={sum(q for _, _, q in per)} "
-        f"standalone={len(data['standalone_repositories'])} verified={data['verified_at']}; {groups}"
+        f"standalone={len(data['standalone_repositories'])}; {groups}"
     )
 
 
