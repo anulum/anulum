@@ -65,7 +65,9 @@ oder Prüfungen, die sie belegen.
 **[Publikationen](https://anulum.li/papers/)** für jede Veröffentlichung und
 jedes Softwarearchiv mit BibTeX · **[Kontakt](mailto:protoscience@anulum.li)**
 für einen technischen Vorschlag. Für neue Leser wählt
-[anulum.li/start/](https://anulum.li/start/) einen Einstieg nach Profil.
+[anulum.li/start/](https://anulum.li/start/) einen Einstieg nach Profil. Jedes
+registrierte Projekt, filterbar nach Gruppe, Reaktorfamilie und Evidenz, mit
+klickbarer Karte: [anulum.li/portfolio/](https://anulum.li/portfolio/).
 
 ## Projekte
 
@@ -193,6 +195,11 @@ Verbindungen stellen Vertrags-, Integrations-, Evidenz- und Auditbeziehungen
 dar. Sie führen keine Verantwortlichkeiten zusammen und implizieren weder
 wissenschaftliche Validierung noch Betriebsbereitschaft oder
 Aktuierungsbefugnis. Zahlen verifiziert am <!-- verified-at -->2026-09-13<!-- /verified-at -->.
+Die interaktive Fassung dieser Karte, in der jedes registrierte Projekt eine
+Zeile ist und sich nach Gruppe, Reaktorfamilie, Sichtbarkeit, Lebenszyklus und
+Evidenz filtern lässt, steht unter
+[anulum.li/portfolio/](https://anulum.li/portfolio/); jedes Portfolio unten
+verweist auf seine eigene Ansicht.
 Das Konto führt mehr öffentliche Repositories als die Karte: die 34 kartierten
 öffentlichen Projekte plus dieses Profil-Repository und einige zur Referenz
 behaltene Forks.
@@ -202,6 +209,8 @@ behaltene Forks.
 
 <details>
 <summary><strong>01 · SCPN Reactor Systems</strong> &nbsp; 25 öffentliche Repositories</summary>
+
+Live-Ansicht dieses Portfolios auf anulum.li, filterbar und mit Karte: [anulum.li/portfolio/#g=SCPN-REACTOR-SYSTEMS](https://anulum.li/portfolio/#g=SCPN-REACTOR-SYSTEMS)
 
 Gerätefamilienphysik, gemeinsame numerische Kerne, Reaktormodelle, Geometrie
 und Konfigurationsverantwortung. Das Vorhandensein eines Repositorys ist für
@@ -282,6 +291,8 @@ Level-0-Anker nebeneinander.
 <details>
 <summary><strong>02 · SCPN Systems Integration and Control</strong> &nbsp; 4 Repositories</summary>
 
+Live-Ansicht dieses Portfolios auf anulum.li, filterbar und mit Karte: [anulum.li/portfolio/#g=SCPN-SYSTEMS-INTEGRATION-AND-CONTROL](https://anulum.li/portfolio/#g=SCPN-SYSTEMS-INTEGRATION-AND-CONTROL)
+
 | Repository | Umfang | Status |
 |---|---|---|
 | [SCPN Control](https://github.com/anulum/scpn-control) | Neuro-symbolische Regler, Laufzeitzulassung, Replay, Audit und Grenzen für Softwareaktionen | `ÖFFENTLICH` |
@@ -293,6 +304,8 @@ Level-0-Anker nebeneinander.
 
 <details>
 <summary><strong>03 · Agentic Coordination, Assurance and Continuity</strong> &nbsp; 8 Repositories</summary>
+
+Live-Ansicht dieses Portfolios auf anulum.li, filterbar und mit Karte: [anulum.li/portfolio/#g=AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS](https://anulum.li/portfolio/#g=AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS)
 
 | Repository | Umfang | Status |
 |---|---|---|
@@ -310,6 +323,8 @@ Level-0-Anker nebeneinander.
 <details>
 <summary><strong>04 · SC Neuromorphic Computing Systems</strong> &nbsp; 1 öffentliches Repository</summary>
 
+Live-Ansicht dieses Portfolios auf anulum.li, filterbar und mit Karte: [anulum.li/portfolio/#g=SC-NEUROMORPHIC-COMPUTING-SYSTEMS](https://anulum.li/portfolio/#g=SC-NEUROMORPHIC-COMPUTING-SYSTEMS)
+
 | Repository | Umfang | Status |
 |---|---|---|
 | [SC-NeuroCore](https://github.com/anulum/sc-neurocore) | Stochastische und spikende neuronale Systeme mit Python-APIs, Rust-Beschleunigung, HDC/VSA und RTL-Generierung | `ÖFFENTLICH` |
@@ -318,6 +333,8 @@ Level-0-Anker nebeneinander.
 
 <details>
 <summary><strong>05 · SCPN Quantum Computing Systems</strong> &nbsp; 1 öffentliches Repository</summary>
+
+Live-Ansicht dieses Portfolios auf anulum.li, filterbar und mit Karte: [anulum.li/portfolio/#g=SCPN-QUANTUM-COMPUTING-SYSTEMS](https://anulum.li/portfolio/#g=SCPN-QUANTUM-COMPUTING-SYSTEMS)
 
 | Repository | Umfang | Status |
 |---|---|---|

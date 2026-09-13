@@ -65,7 +65,9 @@ alebo overenie, ktoré ich podporujú.
 **[Publikácie](https://anulum.li/papers/)** pre každú publikáciu a softvérový
 archív s BibTeX · **[Kontakt](mailto:protoscience@anulum.li)** pre technický
 návrh. Pre nových čitateľov: [anulum.li/start/](https://anulum.li/start/)
-vyberie vstupný bod podľa profilu.
+vyberie vstupný bod podľa profilu. Každý registrovaný projekt s filtrami podľa
+skupiny, reaktorovej rodiny a dôkazov a s klikateľnou mapou:
+[anulum.li/portfolio/](https://anulum.li/portfolio/).
 
 ## Projekty
 
@@ -191,6 +193,10 @@ je samostatný verejný nástroj mimo piatich portfólií. Spojnice znázorňuj�
 zmluvné, integračné, dôkazové a auditné vzťahy. Nespájajú vlastníctvo a
 neznamenajú vedeckú validáciu, prevádzkovú pripravenosť ani oprávnenie na
 fyzické riadenie. Počty overené <!-- verified-at -->2026-09-13<!-- /verified-at -->.
+Interaktívna verzia tejto mapy, v ktorej je každý registrovaný projekt riadkom
+s filtrami podľa skupiny, reaktorovej rodiny, viditeľnosti, životného cyklu a
+dôkazov, je na [anulum.li/portfolio/](https://anulum.li/portfolio/); každé
+portfólio nižšie odkazuje na svoj vlastný pohľad.
 Účet uvádza viac verejných repozitárov než mapa: 34 zmapovaných verejných
 projektov plus tento profilový repozitár a niekoľko forkov ponechaných na
 referenciu.
@@ -200,6 +206,8 @@ referenciu.
 
 <details>
 <summary><strong>01 · SCPN Reactor Systems</strong> &nbsp; 25 verejných repozitárov</summary>
+
+Živý pohľad na toto portfólio na anulum.li, s filtrami a mapou: [anulum.li/portfolio/#g=SCPN-REACTOR-SYSTEMS](https://anulum.li/portfolio/#g=SCPN-REACTOR-SYSTEMS)
 
 Fyzika rodín zariadení, spoločné numerické jadrá, reaktorové modely, geometria
 a vlastníctvo konfigurácií. Samotná existencia repozitára nepreukazuje
@@ -279,6 +287,8 @@ kladie ich kotvy úrovne 0 vedľa seba.
 <details>
 <summary><strong>02 · SCPN Systems Integration and Control</strong> &nbsp; 4 repozitáre</summary>
 
+Živý pohľad na toto portfólio na anulum.li, s filtrami a mapou: [anulum.li/portfolio/#g=SCPN-SYSTEMS-INTEGRATION-AND-CONTROL](https://anulum.li/portfolio/#g=SCPN-SYSTEMS-INTEGRATION-AND-CONTROL)
+
 | Repozitár | Rozsah | Stav |
 |---|---|---|
 | [SCPN Control](https://github.com/anulum/scpn-control) | Neuro-symbolické regulátory, prijímanie za behu, prehrávanie, audit a hranice softvérových akcií | `VEREJNÝ` |
@@ -290,6 +300,8 @@ kladie ich kotvy úrovne 0 vedľa seba.
 
 <details>
 <summary><strong>03 · Agentic Coordination, Assurance and Continuity</strong> &nbsp; 8 repozitárov</summary>
+
+Živý pohľad na toto portfólio na anulum.li, s filtrami a mapou: [anulum.li/portfolio/#g=AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS](https://anulum.li/portfolio/#g=AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS)
 
 | Repozitár | Rozsah | Stav |
 |---|---|---|
@@ -307,6 +319,8 @@ kladie ich kotvy úrovne 0 vedľa seba.
 <details>
 <summary><strong>04 · SC Neuromorphic Computing Systems</strong> &nbsp; 1 verejný repozitár</summary>
 
+Živý pohľad na toto portfólio na anulum.li, s filtrami a mapou: [anulum.li/portfolio/#g=SC-NEUROMORPHIC-COMPUTING-SYSTEMS](https://anulum.li/portfolio/#g=SC-NEUROMORPHIC-COMPUTING-SYSTEMS)
+
 | Repozitár | Rozsah | Stav |
 |---|---|---|
 | [SC-NeuroCore](https://github.com/anulum/sc-neurocore) | Stochastické a spiking neurónové systémy s Python API, akceleráciou v Ruste, HDC/VSA a generovaním RTL | `VEREJNÝ` |
@@ -315,6 +329,8 @@ kladie ich kotvy úrovne 0 vedľa seba.
 
 <details>
 <summary><strong>05 · SCPN Quantum Computing Systems</strong> &nbsp; 1 verejný repozitár</summary>
+
+Živý pohľad na toto portfólio na anulum.li, s filtrami a mapou: [anulum.li/portfolio/#g=SCPN-QUANTUM-COMPUTING-SYSTEMS](https://anulum.li/portfolio/#g=SCPN-QUANTUM-COMPUTING-SYSTEMS)
 
 | Repozitár | Rozsah | Stav |
 |---|---|---|
