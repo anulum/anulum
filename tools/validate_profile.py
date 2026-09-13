@@ -6,13 +6,67 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
-
+from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / "profile-data.json"
+LEGACY_ASSETS = ("assets/profile-header.svg", "assets/ecosystem-map.svg")
+
+
+def expected_counts_line(data: dict[str, Any]) -> str:
+    """Recompute the ``counts:`` line every rendered SVG must carry in its ``<desc>``.
+
+    Computed independently of ``render_profile_assets.py`` so the gate checks the
+    pictures against the manifest, not against the renderer's own arithmetic.
+    """
+    per: list[tuple[str, int, int]] = []
+    for portfolio in data["portfolios"]:
+        repos = portfolio["repositories"]
+        per.append(
+            (
+                portfolio["id"],
+                sum(1 for repo in repos if repo["access"] == "public"),
+                sum(1 for repo in repos if repo["access"] == "private"),
+            )
+        )
+    groups = " ".join(f"{key}={public}/{private}" for key, public, private in per)
+    return (
+        f"counts: portfolios={len(per)} repositories={sum(p + q for _, p, q in per)} "
+        f"public={sum(p for _, p, _ in per)} private={sum(q for _, _, q in per)} "
+        f"standalone={len(data['standalone_repositories'])} verified={data['verified_at']}; {groups}"
+    )
+
+
+def check_rendered_assets(data: dict[str, Any], readmes: dict[str, str]) -> list[str]:
+    """Verify the generated SVGs exist, carry the manifest counts, and are what every README embeds."""
+    errors: list[str] = []
+    expected = expected_counts_line(data)
+    assets = data["rendered_assets"]
+    for relative in assets:
+        path = ROOT / relative
+        if not path.is_file():
+            errors.append(f"missing rendered asset: {relative}")
+            continue
+        text = path.read_text(encoding="utf-8")
+        if expected not in text:
+            errors.append(f"{relative}: <desc> counts differ from the manifest (re-run tools/render_profile_assets.py)")
+        if "<text" in text:
+            errors.append(f"{relative}: contains <text> elements; glyphs must be outlined")
+    for relative in LEGACY_ASSETS:
+        if (ROOT / relative).exists():
+            errors.append(f"legacy hand-drawn asset still present: {relative}")
+    for relative, text in readmes.items():
+        for asset in assets:
+            if f'srcset="{asset}"' not in text:
+                errors.append(f"{relative}: <picture> block does not reference {asset}")
+        for legacy in LEGACY_ASSETS:
+            if legacy in text:
+                errors.append(f"{relative}: still references legacy asset {legacy}")
+    return errors
 
 
 def main() -> int:
+    """Run every offline profile check and return the process exit code."""
     data = json.loads(MANIFEST.read_text(encoding="utf-8"))
     errors: list[str] = []
 
@@ -26,11 +80,7 @@ def main() -> int:
         readmes[relative] = path.read_text(encoding="utf-8")
 
     portfolios = data["portfolios"]
-    repositories = [
-        repository
-        for portfolio in portfolios
-        for repository in portfolio["repositories"]
-    ]
+    repositories = [repository for portfolio in portfolios for repository in portfolio["repositories"]]
     public = [repo for repo in repositories if repo["access"] == "public"]
     private = [repo for repo in repositories if repo["access"] == "private"]
     stats = data["stats"]
@@ -106,9 +156,9 @@ def main() -> int:
     if pdf_path.is_file() and not pdf_path.read_bytes().startswith(b"%PDF-"):
         errors.append(f"invalid PDF header: {data['cv']['pdf']}")
 
-    for asset in ("assets/profile-header.svg", "assets/ecosystem-map.svg", "assets/anulum-logo.jpg"):
-        if not (ROOT / asset).is_file():
-            errors.append(f"missing profile asset: {asset}")
+    if not (ROOT / "assets" / "anulum-logo.jpg").is_file():
+        errors.append("missing profile asset: assets/anulum-logo.jpg")
+    errors.extend(check_rendered_assets(data, readmes))
 
     if errors:
         for error in errors:

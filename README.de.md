@@ -9,7 +9,11 @@ Persönliche GitHub-Profilübersicht
 -->
 
 <p align="center">
-  <img src="assets/profile-header.svg" width="1200" alt="Miroslav Šotek: Evidenz, Berechnung, Regelung">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/profile-header-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/profile-header-light.svg">
+    <img src="assets/profile-header-dark.svg" width="1200" alt="Miroslav Šotek: Evidenz, Berechnung, Regelung">
+  </picture>
 </p>
 
 <p align="center">
@@ -150,7 +154,11 @@ Gruppen: 33 öffentliche Repositories und sechs private Produktbereiche.
 öffentliches Projekt ausserhalb dieser Forschungs- und Produktportfolios.
 
 <p align="center">
-  <img src="assets/ecosystem-map.svg" width="1200" alt="Anulum-Portfolio mit fünf unabhängigen Repository-Gruppen">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/ecosystem-map-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/ecosystem-map-light.svg">
+    <img src="assets/ecosystem-map-dark.svg" width="1200" alt="Anulum-Portfolio mit fünf unabhängigen Repository-Gruppen">
+  </picture>
 </p>
 
 Die Pfeile stellen Vertrags-, Integrations-, Evidenz- und Auditbeziehungen dar.

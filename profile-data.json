@@ -1,12 +1,14 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "verified_at": "2026-09-03",
   "profile": {
     "name": "Miroslav Šotek",
     "github": "https://github.com/anulum",
     "website": "https://anulum.li",
     "orcid": "https://orcid.org/0009-0009-3560-0851",
-    "pypi": "https://pypi.org/user/anulum/"
+    "pypi": "https://pypi.org/user/anulum/",
+    "tagline": "EVIDENCE · COMPUTATION · CONTROL",
+    "subtitle": "Independent research and systems engineering"
   },
   "stats": {
     "portfolio_repositories": 39,
@@ -26,6 +28,8 @@
     {
       "id": "reactor",
       "name": "SCPN Reactor Systems",
+      "short_name": "SCPN REACTOR SYSTEMS",
+      "tagline": "physics · devices · kernels · geometry",
       "repositories": [
         {"name": "SCPN Reactor Kernels", "url": "https://github.com/anulum/scpn-reactor-kernels", "access": "public"},
         {"name": "SCPN Fusion Core", "url": "https://github.com/anulum/scpn-fusion-core", "access": "public"},
@@ -57,6 +61,8 @@
     {
       "id": "integration-control",
       "name": "SCPN Systems Integration and Control",
+      "short_name": "SCPN SYSTEMS INTEGRATION & CONTROL",
+      "tagline": "semantics · control · studio · evidence",
       "repositories": [
         {"name": "SCPN Control", "url": "https://github.com/anulum/scpn-control", "access": "public"},
         {"name": "SCPN Phase Orchestrator", "url": "https://github.com/anulum/scpn-phase-orchestrator", "access": "public"},
@@ -67,6 +73,8 @@
     {
       "id": "agentic",
       "name": "Agentic Coordination, Assurance and Continuity",
+      "short_name": "AGENTIC COORDINATION, ASSURANCE & CONTINUITY",
+      "tagline": "coordination · audit · memory · action governance",
       "repositories": [
         {"name": "Director-AI", "url": "https://github.com/anulum/director-ai", "access": "public"},
         {"name": "Director Class AI", "url": null, "access": "private"},
@@ -81,6 +89,8 @@
     {
       "id": "neuromorphic",
       "name": "SC Neuromorphic Computing Systems",
+      "short_name": "SC NEUROMORPHIC SYSTEMS",
+      "tagline": "stochastic · spiking · HDC · RTL",
       "repositories": [
         {"name": "SC-NeuroCore", "url": "https://github.com/anulum/sc-neurocore", "access": "public"}
       ]
@@ -88,6 +98,8 @@
     {
       "id": "quantum",
       "name": "SCPN Quantum Computing Systems",
+      "short_name": "SCPN QUANTUM SYSTEMS",
+      "tagline": "simulation · hardware · evidence",
       "repositories": [
         {"name": "SCPN Quantum Control", "url": "https://github.com/anulum/scpn-quantum-control", "access": "public"}
       ]
@@ -150,5 +162,11 @@
     "SCPN-CONTROL-INFINITY",
     "SCPN Control Infinity",
     "scpn-control-infinity"
+  ],
+  "rendered_assets": [
+    "assets/profile-header-dark.svg",
+    "assets/profile-header-light.svg",
+    "assets/ecosystem-map-dark.svg",
+    "assets/ecosystem-map-light.svg"
   ]
 }

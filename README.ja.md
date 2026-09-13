@@ -9,7 +9,11 @@ GitHub 個人プロフィール概要
 -->
 
 <p align="center">
-  <img src="assets/profile-header.svg" width="1200" alt="Miroslav Šotek: エビデンス、計算、制御">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/profile-header-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/profile-header-light.svg">
+    <img src="assets/profile-header-dark.svg" width="1200" alt="Miroslav Šotek: エビデンス、計算、制御">
+  </picture>
 </p>
 
 <p align="center">
@@ -149,7 +153,11 @@ SCPN suite           制御、プラズマ、位相、量子の研究経路
 ポートフォリオ外にある独立した公開プロジェクトです。
 
 <p align="center">
-  <img src="assets/ecosystem-map.svg" width="1200" alt="5 つの独立したリポジトリグループから成る Anulum ポートフォリオ">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/ecosystem-map-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/ecosystem-map-light.svg">
+    <img src="assets/ecosystem-map-dark.svg" width="1200" alt="5 つの独立したリポジトリグループから成る Anulum ポートフォリオ">
+  </picture>
 </p>
 
 矢印は、契約、統合、エビデンス、監査の関係を表します。リポジトリの

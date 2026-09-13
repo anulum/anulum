@@ -8,14 +8,13 @@ import concurrent.futures
 import json
 import os
 import re
-import socket
 import time
 import urllib.error
 import urllib.parse
 import urllib.request
 from dataclasses import dataclass
 from pathlib import Path
-
+from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 RETRYABLE = {408, 425, 429, 500, 502, 503, 504}
@@ -26,6 +25,8 @@ MAX_BODY = 1_048_576
 
 @dataclass(frozen=True)
 class Target:
+    """One public endpoint whose live answer must match an expectation."""
+
     key: str
     kind: str
     url: str
@@ -33,10 +34,12 @@ class Target:
 
 
 def pep503(name: str) -> str:
+    """Normalise a distribution name as PEP 503 does."""
     return re.sub(r"[-_.]+", "-", name).lower()
 
 
-def request_json(url: str) -> dict:
+def request_json(url: str) -> dict[str, Any]:
+    """GET ``url`` (GitHub token added when present) and parse at most 1 MiB of JSON."""
     headers = {"Accept": "application/json", "User-Agent": "anulum-profile-validator/1"}
     token = os.environ.get("GITHUB_TOKEN")
     if token and urllib.parse.urlparse(url).hostname == "api.github.com":
@@ -47,10 +50,12 @@ def request_json(url: str) -> dict:
         body = response.read(MAX_BODY + 1)
         if len(body) > MAX_BODY:
             raise ValueError("response exceeds 1 MiB")
-        return json.loads(body)
+        payload: dict[str, Any] = json.loads(body)
+        return payload
 
 
 def check(target: Target) -> tuple[str, str, str]:
+    """Return ``(key, PASS|FAIL|UNAVAILABLE, detail)`` after up to three attempts."""
     for attempt in range(ATTEMPTS):
         try:
             payload = request_json(target.url)
@@ -83,7 +88,7 @@ def check(target: Target) -> tuple[str, str, str]:
             if exc.code not in RETRYABLE:
                 return target.key, "FAIL", f"HTTP {exc.code}"
             reason = f"HTTP {exc.code}"
-        except (urllib.error.URLError, TimeoutError, socket.timeout) as exc:
+        except (urllib.error.URLError, TimeoutError) as exc:
             reason = type(exc).__name__
         except (json.JSONDecodeError, ValueError) as exc:
             return target.key, "FAIL", str(exc)
@@ -93,9 +98,8 @@ def check(target: Target) -> tuple[str, str, str]:
 
 
 def evidence_target(url: str) -> Target:
-    match = re.fullmatch(
-        r"https://github\.com/([^/]+)/([^/]+)/blob/([0-9a-f]{40})/(.+)", url
-    )
+    """Map a commit-pinned GitHub blob URL to the contents API target that proves it exists."""
+    match = re.fullmatch(r"https://github\.com/([^/]+)/([^/]+)/blob/([0-9a-f]{40})/(.+)", url)
     if not match:
         raise ValueError(f"evidence link is not commit-pinned: {url}")
     owner, repository, ref, path = match.groups()
@@ -104,21 +108,18 @@ def evidence_target(url: str) -> Target:
     return Target(f"evidence:{repository}:{path}", "github-file", api)
 
 
-def build_targets(data: dict) -> list[Target]:
+def build_targets(data: dict[str, Any]) -> list[Target]:
+    """Collect every repository, package, evidence link and DOI the manifest and READMEs cite."""
     targets: list[Target] = []
     for portfolio in data["portfolios"]:
         for repository in portfolio["repositories"]:
             if repository["access"] != "public":
                 continue
             slug = repository["url"].removeprefix("https://github.com/")
-            targets.append(
-                Target(f"github:{slug}", "github-repository", f"https://api.github.com/repos/{slug}", slug)
-            )
+            targets.append(Target(f"github:{slug}", "github-repository", f"https://api.github.com/repos/{slug}", slug))
     for repository in data["standalone_repositories"]:
         slug = repository["url"].removeprefix("https://github.com/")
-        targets.append(
-            Target(f"github:{slug}", "github-repository", f"https://api.github.com/repos/{slug}", slug)
-        )
+        targets.append(Target(f"github:{slug}", "github-repository", f"https://api.github.com/repos/{slug}", slug))
     for project in data["pypi_projects"]:
         targets.append(Target(f"pypi:{project}", "pypi", f"https://pypi.org/pypi/{project}/json", project))
     targets.extend(evidence_target(url) for url in data["evidence_links"])
@@ -128,14 +129,12 @@ def build_targets(data: dict) -> list[Target]:
         for doi in re.findall(r"https://doi\.org/(10\.\d{4,9}/[A-Za-z0-9._/-]+)", text):
             if doi not in dois:
                 dois.append(doi)
-    targets.extend(
-        Target(f"doi:{doi}", "doi", f"https://hdl.handle.net/api/handles/{doi}", doi)
-        for doi in dois
-    )
+    targets.extend(Target(f"doi:{doi}", "doi", f"https://hdl.handle.net/api/handles/{doi}", doi) for doi in dois)
     return targets
 
 
 def main() -> int:
+    """Check every target concurrently and return 1 when any is not PASS."""
     data = json.loads((ROOT / "profile-data.json").read_text(encoding="utf-8"))
     targets = build_targets(data)
     with concurrent.futures.ThreadPoolExecutor(max_workers=8) as executor:

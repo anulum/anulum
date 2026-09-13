@@ -9,7 +9,11 @@ Personal GitHub profile overview
 -->
 
 <p align="center">
-  <img src="assets/profile-header.svg" width="1200" alt="Miroslav Šotek: evidence, computation, control">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/profile-header-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/profile-header-light.svg">
+    <img src="assets/profile-header-dark.svg" width="1200" alt="Miroslav Šotek: evidence, computation, control">
+  </picture>
 </p>
 
 <p align="center">
@@ -186,7 +190,11 @@ is not a readiness claim.
 </p>
 
 <p align="center">
-  <img src="assets/ecosystem-map.svg" width="1200" alt="Anulum portfolio ecosystem with five independent repository groups">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/ecosystem-map-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/ecosystem-map-light.svg">
+    <img src="assets/ecosystem-map-dark.svg" width="1200" alt="Anulum portfolio ecosystem with five independent repository groups">
+  </picture>
 </p>
 
 The map contains 39 portfolio repositories: 33 public repositories and six

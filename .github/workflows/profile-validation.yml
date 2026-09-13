@@ -20,7 +20,11 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Install renderer dependencies (hash-pinned)
+        run: python3 -m pip install --require-hashes -r tools/requirements-render.txt
       - name: Validate profile inventory and translations
         run: python3 tools/validate_profile.py
-      - name: Run validator tests
+      - name: Rendered assets match the manifest
+        run: python3 tools/render_profile_assets.py --check
+      - name: Run validator and renderer tests
         run: python3 -m unittest discover -s tests -p "test_*.py" -v

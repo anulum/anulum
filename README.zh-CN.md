@@ -9,7 +9,11 @@ GitHub 个人资料概览
 -->
 
 <p align="center">
-  <img src="assets/profile-header.svg" width="1200" alt="Miroslav Šotek: 证据、计算与控制">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/profile-header-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/profile-header-light.svg">
+    <img src="assets/profile-header-dark.svg" width="1200" alt="Miroslav Šotek: 证据、计算与控制">
+  </picture>
 </p>
 
 <p align="center">
@@ -144,7 +148,11 @@ SCPN suite           控制、等离子体、相位与量子研究路径
 是这些研究和产品组合之外的独立公开项目。
 
 <p align="center">
-  <img src="assets/ecosystem-map.svg" width="1200" alt="由五个独立仓库分组组成的 Anulum 项目组合">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/ecosystem-map-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/ecosystem-map-light.svg">
+    <img src="assets/ecosystem-map-dark.svg" width="1200" alt="由五个独立仓库分组组成的 Anulum 项目组合">
+  </picture>
 </p>
 
 箭头表示契约、集成、证据和审计关系。它们不会合并仓库所有权，也不代表

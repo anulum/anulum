@@ -1,0 +1,25 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# Tooling configuration only; this repository publishes no package.
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "D", "UP", "B"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "numpy"
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["D"]
+
+[tool.mypy]
+strict = true
+python_version = "3.12"
+files = ["tools", "tests"]
+
+[[tool.mypy.overrides]]
+# fontTools ships no py.typed marker; the renderer keeps its objects as Any.
+module = "fontTools.*"
+ignore_missing_imports = true

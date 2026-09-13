@@ -9,7 +9,11 @@ Prehľad osobného profilu GitHub
 -->
 
 <p align="center">
-  <img src="assets/profile-header.svg" width="1200" alt="Miroslav Šotek: dôkazy, výpočty, riadenie">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/profile-header-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/profile-header-light.svg">
+    <img src="assets/profile-header-dark.svg" width="1200" alt="Miroslav Šotek: dôkazy, výpočty, riadenie">
+  </picture>
 </p>
 
 <p align="center">
@@ -150,7 +154,11 @@ skupinách: 33 verejných repozitárov a šesť súkromných produktových plôc
 mimo týchto výskumných a produktových portfólií.
 
 <p align="center">
-  <img src="assets/ecosystem-map.svg" width="1200" alt="Portfólio Anulum s piatimi nezávislými skupinami repozitárov">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/ecosystem-map-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/ecosystem-map-light.svg">
+    <img src="assets/ecosystem-map-dark.svg" width="1200" alt="Portfólio Anulum s piatimi nezávislými skupinami repozitárov">
+  </picture>
 </p>
 
 Šípky znázorňujú zmluvné, integračné, dôkazové a auditné vzťahy. Nespájajú

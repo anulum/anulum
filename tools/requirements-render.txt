@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# Dependencies of tools/render_profile_assets.py only (the validators are stdlib).
+# Hashes: sdist, universal wheel and the cp312 manylinux x86_64 wheel that
+# ubuntu-latest resolves; verified against the PyPI JSON API on 2026-09-13.
+fonttools==4.62.1 \
+    --hash=sha256:e54c75fd6041f1122476776880f7c3c3295ffa31962dc6ebe2543c00dca58b5d \
+    --hash=sha256:7487782e2113861f4ddcc07c3436450659e3caa5e470b27dc2177cade2d8e7fd \
+    --hash=sha256:149f7d84afca659d1a97e39a4778794a2f83bf344c5ee5134e09995086cc2392
+brotli==1.1.0 \
+    --hash=sha256:81de08ac11bcb85841e440c13611c00b67d3bf82698314928d0b676362546724 \
+    --hash=sha256:d0c5516f0aed654134a2fc936325cc2e642f8a0e096d075209672eb321cff408
