@@ -104,7 +104,7 @@ sie sind Betriebssignale, keine Bewertung wissenschaftlicher Qualität.
 
 ## Aktueller Fokus
 
-<sub>Portfoliostand verifiziert am <!-- verified-at -->2026-09-13<!-- /verified-at -->.</sub>
+<sub>Portfoliostand verifiziert am <!-- verified-at -->2026-09-14<!-- /verified-at -->.</sub>
 
 <table>
   <tr>
@@ -125,7 +125,7 @@ sie sind Betriebssignale, keine Bewertung wissenschaftlicher Qualität.
 | 2026-09-04 | SYNAPSE CHANNEL | [v0.99.24](https://github.com/anulum/synapse-channel/releases/tag/v0.99.24) | Keep managed Codex pane bridges waiter-reachable while an already-running provider is blocked by an update chooser, report the pending wake and pane compatibility state explicitly, and coalesce later routing hints until the same live pane becomes safe to… |
 | 2026-09-04 | SCPN-Phase-Orchestrator | [v1.4.2](https://github.com/anulum/scpn-phase-orchestrator/releases/tag/v1.4.2) | A fourth sealed L3 request now binds only pulsed_electron_beam_icf to the exact SCPN-ICF-BEAM-CORE review. |
 
-<sub>Gerendert aus [anulum.li/news](https://anulum.li/news/) (den CHANGELOG-Dateien der Projekte) und [Zenodo](https://zenodo.org/search?q=creators.orcid%3A%220009-0009-3560-0851%22) am 2026-09-13.</sub>
+<sub>Gerendert aus [anulum.li/news](https://anulum.li/news/) (den CHANGELOG-Dateien der Projekte) und [Zenodo](https://zenodo.org/search?q=creators.orcid%3A%220009-0009-3560-0851%22) am 2026-09-14.</sub>
 <!-- profile-feeds:releases:end -->
 
 <!-- profile-feeds:publication:start -->
@@ -135,7 +135,7 @@ sie sind Betriebssignale, keine Bewertung wissenschaftlicher Qualität.
 |---|---|---|---|
 | 2026-08-26 | Preprint | A domain-specific modal-growth detector clears a matched false-alarm bar on power-grid instability, and an eigenvalue regime map shows when its form transfers | [10.5281/zenodo.22113116](https://doi.org/10.5281/zenodo.22113116) |
 
-<sub>Gerendert aus [anulum.li/news](https://anulum.li/news/) (den CHANGELOG-Dateien der Projekte) und [Zenodo](https://zenodo.org/search?q=creators.orcid%3A%220009-0009-3560-0851%22) am 2026-09-13.</sub>
+<sub>Gerendert aus [anulum.li/news](https://anulum.li/news/) (den CHANGELOG-Dateien der Projekte) und [Zenodo](https://zenodo.org/search?q=creators.orcid%3A%220009-0009-3560-0851%22) am 2026-09-14.</sub>
 <!-- profile-feeds:publication:end -->
 
 ## Zeitleiste
@@ -194,7 +194,7 @@ ist ein eigenständiges öffentliches Werkzeug ausserhalb der fünf Portfolios.
 Verbindungen stellen Vertrags-, Integrations-, Evidenz- und Auditbeziehungen
 dar. Sie führen keine Verantwortlichkeiten zusammen und implizieren weder
 wissenschaftliche Validierung noch Betriebsbereitschaft oder
-Aktuierungsbefugnis. Zahlen verifiziert am <!-- verified-at -->2026-09-13<!-- /verified-at -->.
+Aktuierungsbefugnis. Zahlen verifiziert am <!-- verified-at -->2026-09-14<!-- /verified-at -->.
 Die interaktive Fassung dieser Karte, in der jedes registrierte Projekt eine
 Zeile ist und sich nach Gruppe, Reaktorfamilie, Sichtbarkeit, Lebenszyklus und
 Evidenz filtern lässt, steht unter
