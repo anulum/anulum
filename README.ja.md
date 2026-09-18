@@ -104,7 +104,7 @@ HTML/CSS、Shell、Docker、Linux。
 <a id="current-focus"></a>
 ## 現在の重点
 
-<sub>ポートフォリオ状態は <!-- verified-at -->2026-09-17<!-- /verified-at --> に検証済みです。</sub>
+<sub>ポートフォリオ状態は <!-- verified-at -->2026-09-18<!-- /verified-at --> に検証済みです。</sub>
 
 - 25 の公開 Reactor リポジトリにおける共有カーネルと管理された装置情報。
 - 所有権境界を保った協調、メモリ、応答保証、アクション審査、リポジトリエビデンス。
@@ -121,7 +121,7 @@ HTML/CSS、Shell、Docker、Linux。
 | 2026-09-04 | SYNAPSE CHANNEL | [v0.99.24](https://github.com/anulum/synapse-channel/releases/tag/v0.99.24) | Keep managed Codex pane bridges waiter-reachable while an already-running provider is blocked by an update chooser, report the pending wake and pane compatibility state explicitly, and coalesce later routing hints until the same live pane becomes safe to… |
 | 2026-09-04 | SCPN-Phase-Orchestrator | [v1.4.2](https://github.com/anulum/scpn-phase-orchestrator/releases/tag/v1.4.2) | A fourth sealed L3 request now binds only pulsed_electron_beam_icf to the exact SCPN-ICF-BEAM-CORE review. |
 
-<sub>[anulum.li/news](https://anulum.li/news/)（各プロジェクトの CHANGELOG）と [Zenodo](https://zenodo.org/search?q=creators.orcid%3A%220009-0009-3560-0851%22) から 2026-09-17 に生成。</sub>
+<sub>[anulum.li/news](https://anulum.li/news/)（各プロジェクトの CHANGELOG）と [Zenodo](https://zenodo.org/search?q=creators.orcid%3A%220009-0009-3560-0851%22) から 2026-09-18 に生成。</sub>
 <!-- profile-feeds:releases:end -->
 
 <!-- profile-feeds:publication:start -->
@@ -131,7 +131,7 @@ HTML/CSS、Shell、Docker、Linux。
 |---|---|---|---|
 | 2026-08-26 | Preprint | A domain-specific modal-growth detector clears a matched false-alarm bar on power-grid instability, and an eigenvalue regime map shows when its form transfers | [10.5281/zenodo.22113116](https://doi.org/10.5281/zenodo.22113116) |
 
-<sub>[anulum.li/news](https://anulum.li/news/)（各プロジェクトの CHANGELOG）と [Zenodo](https://zenodo.org/search?q=creators.orcid%3A%220009-0009-3560-0851%22) から 2026-09-17 に生成。</sub>
+<sub>[anulum.li/news](https://anulum.li/news/)（各プロジェクトの CHANGELOG）と [Zenodo](https://zenodo.org/search?q=creators.orcid%3A%220009-0009-3560-0851%22) から 2026-09-18 に生成。</sub>
 <!-- profile-feeds:publication:end -->
 
 ## タイムライン
