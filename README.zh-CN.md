@@ -101,7 +101,7 @@ Shell、Docker 和 Linux。
 <a id="current-focus"></a>
 ## 当前重点
 
-<sub>项目组合状态于 <!-- verified-at -->2026-09-19<!-- /verified-at --> 验证。</sub>
+<sub>项目组合状态于 <!-- verified-at -->2026-09-20<!-- /verified-at --> 验证。</sub>
 
 - 在 25 个公开 Reactor 仓库中整合共享内核和受治理的设备事实。
 - 在清晰所有权边界下连接协调、记忆、响应保障、动作审查和仓库证据。
@@ -118,7 +118,7 @@ Shell、Docker 和 Linux。
 | 2026-09-04 | SYNAPSE CHANNEL | [v0.99.24](https://github.com/anulum/synapse-channel/releases/tag/v0.99.24) | Keep managed Codex pane bridges waiter-reachable while an already-running provider is blocked by an update chooser, report the pending wake and pane compatibility state explicitly, and coalesce later routing hints until the same live pane becomes safe to… |
 | 2026-09-04 | SCPN-Phase-Orchestrator | [v1.4.2](https://github.com/anulum/scpn-phase-orchestrator/releases/tag/v1.4.2) | A fourth sealed L3 request now binds only pulsed_electron_beam_icf to the exact SCPN-ICF-BEAM-CORE review. |
 
-<sub>根据 [anulum.li/news](https://anulum.li/news/)（各项目的 CHANGELOG 文件）和 [Zenodo](https://zenodo.org/search?q=creators.orcid%3A%220009-0009-3560-0851%22) 于 2026-09-19 生成。</sub>
+<sub>根据 [anulum.li/news](https://anulum.li/news/)（各项目的 CHANGELOG 文件）和 [Zenodo](https://zenodo.org/search?q=creators.orcid%3A%220009-0009-3560-0851%22) 于 2026-09-20 生成。</sub>
 <!-- profile-feeds:releases:end -->
 
 <!-- profile-feeds:publication:start -->
@@ -128,7 +128,7 @@ Shell、Docker 和 Linux。
 |---|---|---|---|
 | 2026-08-26 | Preprint | A domain-specific modal-growth detector clears a matched false-alarm bar on power-grid instability, and an eigenvalue regime map shows when its form transfers | [10.5281/zenodo.22113116](https://doi.org/10.5281/zenodo.22113116) |
 
-<sub>根据 [anulum.li/news](https://anulum.li/news/)（各项目的 CHANGELOG 文件）和 [Zenodo](https://zenodo.org/search?q=creators.orcid%3A%220009-0009-3560-0851%22) 于 2026-09-19 生成。</sub>
+<sub>根据 [anulum.li/news](https://anulum.li/news/)（各项目的 CHANGELOG 文件）和 [Zenodo](https://zenodo.org/search?q=creators.orcid%3A%220009-0009-3560-0851%22) 于 2026-09-20 生成。</sub>
 <!-- profile-feeds:publication:end -->
 
 ## 时间线
