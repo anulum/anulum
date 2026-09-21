@@ -104,7 +104,7 @@ vedeckej kvality.
 
 ## Aktuálne zameranie
 
-<sub>Stav portfólia overený <!-- verified-at -->2026-09-20<!-- /verified-at -->.</sub>
+<sub>Stav portfólia overený <!-- verified-at -->2026-09-21<!-- /verified-at -->.</sub>
 
 <table>
   <tr>
@@ -125,7 +125,7 @@ vedeckej kvality.
 | 2026-09-04 | SYNAPSE CHANNEL | [v0.99.24](https://github.com/anulum/synapse-channel/releases/tag/v0.99.24) | Keep managed Codex pane bridges waiter-reachable while an already-running provider is blocked by an update chooser, report the pending wake and pane compatibility state explicitly, and coalesce later routing hints until the same live pane becomes safe to… |
 | 2026-09-04 | SCPN-Phase-Orchestrator | [v1.4.2](https://github.com/anulum/scpn-phase-orchestrator/releases/tag/v1.4.2) | A fourth sealed L3 request now binds only pulsed_electron_beam_icf to the exact SCPN-ICF-BEAM-CORE review. |
 
-<sub>Vykreslené z [anulum.li/news](https://anulum.li/news/) (súbory CHANGELOG projektov) a [Zenodo](https://zenodo.org/search?q=creators.orcid%3A%220009-0009-3560-0851%22) dňa 2026-09-20.</sub>
+<sub>Vykreslené z [anulum.li/news](https://anulum.li/news/) (súbory CHANGELOG projektov) a [Zenodo](https://zenodo.org/search?q=creators.orcid%3A%220009-0009-3560-0851%22) dňa 2026-09-21.</sub>
 <!-- profile-feeds:releases:end -->
 
 <!-- profile-feeds:publication:start -->
@@ -135,7 +135,7 @@ vedeckej kvality.
 |---|---|---|---|
 | 2026-08-26 | Preprint | A domain-specific modal-growth detector clears a matched false-alarm bar on power-grid instability, and an eigenvalue regime map shows when its form transfers | [10.5281/zenodo.22113116](https://doi.org/10.5281/zenodo.22113116) |
 
-<sub>Vykreslené z [anulum.li/news](https://anulum.li/news/) (súbory CHANGELOG projektov) a [Zenodo](https://zenodo.org/search?q=creators.orcid%3A%220009-0009-3560-0851%22) dňa 2026-09-20.</sub>
+<sub>Vykreslené z [anulum.li/news](https://anulum.li/news/) (súbory CHANGELOG projektov) a [Zenodo](https://zenodo.org/search?q=creators.orcid%3A%220009-0009-3560-0851%22) dňa 2026-09-21.</sub>
 <!-- profile-feeds:publication:end -->
 
 ## Časová os
@@ -192,7 +192,7 @@ súkromných produktových plôch. [HushLine](https://github.com/anulum/HushLine
 je samostatný verejný nástroj mimo piatich portfólií. Spojnice znázorňujú
 zmluvné, integračné, dôkazové a auditné vzťahy. Nespájajú vlastníctvo a
 neznamenajú vedeckú validáciu, prevádzkovú pripravenosť ani oprávnenie na
-fyzické riadenie. Počty overené <!-- verified-at -->2026-09-20<!-- /verified-at -->.
+fyzické riadenie. Počty overené <!-- verified-at -->2026-09-21<!-- /verified-at -->.
 Interaktívna verzia tejto mapy, v ktorej je každý registrovaný projekt riadkom
 s filtrami podľa skupiny, reaktorovej rodiny, viditeľnosti, životného cyklu a
 dôkazov, je na [anulum.li/portfolio/](https://anulum.li/portfolio/); každé
