@@ -45,9 +45,9 @@ GitHub 个人资料概览
 
 瑞士 [Anulum Institute](https://anulum.li) 的独立研究人员与系统工程师。
 
-我为人工智能系统、多智能体工程、科学计算、神经形态硬件、量子模拟和控制
-构建**以证据为治理基础的基础设施**。相关工作把数学模型连接到可复现软件、
-原生加速、形式化模型和可执行硬件路径。
+整个项目由**一个引擎**驱动：一套自主编码与验证系统，负责开发、测试和评审本页
+的项目，并把其中的主张与证据绑定。这个引擎应用于**四个领域**：反应堆系统、
+系统集成与控制、神经形态计算以及量子计算。
 
 一项主张的可信度取决于支持它的测量、工件或验证。
 
@@ -292,17 +292,28 @@ flowchart LR
 ## 赞助目标
 
 开放研究通过 [GitHub Sponsors](https://github.com/sponsors/anulum) 获得资助。
-让实验室不间断运行的最低金额约为 **每月 25,000 美元**：计算资源、GPU、QPU 与 FPGA 机时、硬件、CI 和工具。这是实验室成本，而不是薪水。超过这一最低额，工作可以扩展。研究由我们自己的自主编码与验证系统开发和检验，它是整个项目的旗舰，因此额外的计算资源会直接转化为更快、经过验证的成果。赞助支付实验室费用，不购买结果；无论结果如何都会公开。
+让实验室不间断运行的最低金额约为 **每月 25,000 美元**：计算资源、GPU、QPU 与 FPGA 机时、硬件、CI 和工具。这是实验室成本，而不是薪水。超过这一最低额，工作可以扩展，因为引擎会把额外的计算资源直接转化为更多经过开发和验证的工作。赞助支付实验室费用，不购买结果；无论结果如何都会公开。
 
-每个研究组都有一个具体目标。如需支持某个研究组，请在赞助时注明；资金将用于该组，并在季度报告中说明。实验室所需的硬件逐项列在 [LAB_EQUIPMENT.md](LAB_EQUIPMENT.md)（英文）中，也欢迎实物捐赠设备。
+如需定向支持，请在赞助时注明引擎或某一个领域；资金将用于该处，并在季度报告中说明。实验室所需的硬件逐项列在 [LAB_EQUIPMENT.md](LAB_EQUIPMENT.md)（英文）中，也欢迎实物捐赠设备。
 
-| 研究组 | 目标 | 赞助用途 |
+### 引擎
+
+**03 · Agentic Coordination, Assurance and Continuity.** 开发并检验本页所有项目的自主编码与验证系统，作为开放基础设施推进到 1.0。它由 [SYNAPSE CHANNEL](https://github.com/anulum/synapse-channel)（带回执的智能体协调）、[Rigor Foundry](https://github.com/anulum/rigor-foundry)（基于证据的评审）、[Director-AI](https://github.com/anulum/director-ai)（声明的事实依据）和 [Remanentia](https://github.com/anulum/remanentia)（可审计的记忆）组成。赞助用于智能体集群的模型与 GPU 机时、评估基准和 CI。
+
+### 四个领域
+
+| 领域 | 目标 | 赞助用途 |
 |---|---|---|
 | **01 · Reactor Systems** | 反应堆概念的公开目录，以及 **Reactor Studio**：每个概念都可在 3D/CAD 中设计、仿真，并在建造之前进行虚拟测试。21 个聚变装置族现已公开（连同共享内核共 25 个反应堆仓库），另有 29 个裂变、化学和混合装置族已完成计划，仓库将随后创建。经过验证的参数化几何及开放格式网格导出现已可用；接下来是完整的 B-rep CAD、每个装置族的 0 级物理以及设计的情景测试。 | 仿真计算、CAD 工具、文档 |
 | **02 · Systems Integration and Control** | **SCPN Studio Hub**，联结所有研究组的工作室：工作室目录、跨领域证据审计、每项声明都在其真实边界内呈现，并对任何可能触及硬件的操作进行失效关闭（fail-closed）把关。该组还维护 [scpn-control](https://github.com/anulum/scpn-control) 和 [scpn-phase-orchestrator](https://github.com/anulum/scpn-phase-orchestrator)。 | CI、硬件在环回放、文档 |
-| **03 · Agentic Coordination, Assurance and Continuity** | 旗舰：开发并检验本页所有项目的 **自主编码与验证系统**，作为开放基础设施推进到 1.0。它由 [SYNAPSE CHANNEL](https://github.com/anulum/synapse-channel)（带回执的智能体协调）、[Rigor Foundry](https://github.com/anulum/rigor-foundry)（基于证据的评审）、[Director-AI](https://github.com/anulum/director-ai)（声明的事实依据）和 [Remanentia](https://github.com/anulum/remanentia)（可审计的记忆）组成。 | 智能体集群的模型与 GPU 机时、评估基准、CI |
 | **04 · SC Neuromorphic Computing** | **SNN Studio 1.0**：覆盖脉冲神经网络完整生命周期的浏览器 IDE：设计神经元模型、构建网络、用替代梯度训练、编译为 SystemVerilog 并综合到 FPGA，每次运行都可导出证据记录。基于 [sc-neurocore](https://github.com/anulum/sc-neurocore)，目前为开发预览版。 | FPGA 开发板与综合机时、测量平台、CI |
-| **05 · SCPN Quantum Computing** | **Quantum Studio**：基于 [scpn-quantum-control](https://github.com/anulum/scpn-quantum-control) 的工作台：呈现现有内容及其关联的地图，在模拟器和真实量子硬件上设计并运行的电路，每个结果都附有原始计数、哈希和预注册协议，包括负面结果。 | QPU 机时、GPU 仿真、文档 |
+| **05 · SCPN Quantum Computing** | **Quantum Studio**：基于 [scpn-quantum-control](https://github.com/anulum/scpn-quantum-control) 的工作台：呈现现有内容及其关联的地图，在模拟器和真实量子硬件上设计并运行的电路，每个结果都附有原始计数、哈希以及书面协议和判定规则，包括负面结果。IQM 为这项研究向我们提供了扩展的 IQM Resonance 访问权限。 | QPU 机时、GPU 仿真、文档 |
+
+### 面向机构
+
+- **研究协议。** 机构可以不通过赞助，而是依据书面研究协议资助一项界定明确的工作，并直接开具发票。范围和交付成果事先约定；研究发现按上述同一规则公开。
+- **商业许可。** 采用 AGPL-3.0-or-later 的项目可按商业条款授权用于专有或闭源用途，例如 [SYNAPSE CHANNEL](https://anulum.li/synapse/pricing.html), [SC-NeuroCore](https://anulum.li/sc-neurocore/pricing.html), [SCPN Control](https://anulum.li/scpn-control/pricing.html), [SCPN Fusion Core](https://anulum.li/scpn-fusion-core/pricing.html), [SCPN Phase Orchestrator](https://anulum.li/scpn-phase-orchestrator/pricing.html), [SCPN Quantum Control](https://anulum.li/scpn-quantum-control/pricing.html)。Director-AI 和 Rigor Foundry 等 Apache-2.0 项目无需许可；[Director-AI Pro](https://anulum.li/director-ai/pricing.html) 是商业自托管版本，任何项目均可签约获得支持与集成服务。适用的许可以各仓库的 LICENSE 文件为准。
+- **联系：** [protoscience@anulum.li](mailto:protoscience@anulum.li)，请在主题中注明“研究协议”或“商业许可”以及项目名称。
 
 ## 工程标准
 
@@ -410,7 +421,7 @@ flowchart LR
 |---|---|
 | 研究合作 | AI 保障、神经形态系统、量子模拟、等离子体物理和控制领域的可复现研究 |
 | 技术合作 | 架构审查、验证设计、形式化或硬件路径以及证据约束的软件工程 |
-| 商业许可 | 通过 [Anulum licensing](https://www.anulum.li/licensing) 提供双许可证和托管产品界面 |
+| 商业许可 | 通过 [Anulum licensing](#面向机构) 提供双许可证和托管产品界面 |
 | 开放工作赞助 | 通过 [GitHub Sponsors](https://github.com/sponsors/anulum) 支持 CI、计算、硬件与量子实验和公开文档 |
 
 欢迎在神经形态系统、可靠人工智能基础设施、科学计算、形式化验证和控制

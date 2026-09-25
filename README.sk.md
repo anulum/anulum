@@ -43,19 +43,20 @@ Prehľad osobného profilu GitHub
 </p>
 
 Nezávislý výskumník a systémový inžinier v [Anulum Institute](https://anulum.li)
-vo Švajčiarsku. Budujem **infraštruktúru riadenú dôkazmi** pre systémy umelej
-inteligencie, multiagentové inžinierstvo, vedecké výpočty, neuromorfný hardvér,
-kvantové simulácie a riadenie: matematické modely prevedené cez
-reprodukovateľný softvér, natívnu akceleráciu, formálne modely a vykonateľné
-hardvérové cesty. Tvrdenia majú iba takú hodnotu, akú majú merania, artefakty
-alebo overenie, ktoré ich podporujú.
+vo Švajčiarsku. Program poháňa **jeden motor**: autonómny kódovací a overovací
+systém, ktorý vyvíja, testuje a reviduje projekty na tejto stránke a viaže ich
+tvrdenia na dôkazy. Motor pracuje v **štyroch doménach**: reaktorové systémy,
+systémová integrácia a riadenie, neuromorfné výpočty a kvantové výpočty.
+Tvrdenia majú iba takú hodnotu, akú majú merania, artefakty alebo overenie,
+ktoré ich podporujú.
 
 <table>
   <tr>
-    <td width="25%"><strong>Spoľahlivosť AI</strong><br><sub>Ukotvenie v dôkazoch, detekcia rozporov, kontrola akcií, auditné záznamy</sub></td>
-    <td width="25%"><strong>Agentová infraštruktúra</strong><br><sub>Koordinácia, tvrdenia, trvalé správy, pamäť, riadenie flotily</sub></td>
-    <td width="25%"><strong>Vedecké systémy</strong><br><sub>Fyzika plazmy, oscilátory, kvantové úlohy, numerická validácia</sub></td>
-    <td width="25%"><strong>Od výpočtu k hardvéru</strong><br><sub>Akcelerácia v Ruste, FPGA RTL, WebGPU, formálne overovanie</sub></td>
+    <td width="20%"><strong>Motor</strong><br><sub>Koordinácia agentov s potvrdeniami, review viazané na dôkazy, ukotvenie tvrdení, auditovateľná pamäť</sub></td>
+    <td width="20%"><strong>Reaktorové systémy</strong><br><sub>Katalóg reaktorových konceptov, 3D/CAD, fyzika úrovne 0, Reactor Studio</sub></td>
+    <td width="20%"><strong>Integrácia a riadenie</strong><br><sub>Studio Hub, riadiaci runtime, analýza synchronizácie, fail-closed brána k hardvéru</sub></td>
+    <td width="20%"><strong>Neuromorfné výpočty</strong><br><sub>SNN Studio, Rust SIMD, Verilog RTL, syntéza na FPGA</sub></td>
+    <td width="20%"><strong>Kvantové výpočty</strong><br><sub>Obvody na simulátoroch aj skutočnom hardvéri, výsledkové balíky so surovými dátami</sub></td>
   </tr>
 </table>
 
@@ -361,25 +362,48 @@ Poradie dodania: vlna A (chemická kinetika, katalóg, PWR), potom vlny B a C. R
 Otvorená práca je financovaná cez [GitHub Sponsors](https://github.com/sponsors/anulum).
 Približne **25 000 USD mesačne** je minimum, pri ktorom lab beží bez prerušenia:
 výpočty, čas na GPU, QPU a FPGA, hardvér, CI a nástroje. Sú to náklady labu,
-nie plat. Nad toto minimum sa práca dá škálovať. Výskum vyvíja a overuje náš
-vlastný autonómny kódovací a overovací systém, vlajková loď celého programu,
-takže ďalší výpočtový výkon sa priamo mení na rýchlejšie a overené výsledky.
-Sponzorstvo platí lab, nekupuje výsledky. Zistenia zverejňujeme, nech vyjdú
-akokoľvek.
+nie plat. Nad toto minimum sa práca dá škálovať, pretože motor mení ďalší
+výpočtový výkon priamo na ďalšiu vyvinutú a overenú prácu. Sponzorstvo platí
+lab, nekupuje výsledky. Zistenia zverejňujeme, nech vyjdú akokoľvek.
 
-Každá výskumná skupina má jeden konkrétny cieľ. Ak chcete podporiť konkrétnu
-skupinu, uveďte ju pri sponzorovaní; peniaze sa minú tam a vykážeme ich
-v štvrťročnej správe. Hardvér, ktorý lab potrebuje, je rozpísaný položku po
-položke v [LAB_EQUIPMENT.md](LAB_EQUIPMENT.md) (anglicky); vybavenie možno
-darovať aj vecne.
+Ak chcete podporu nasmerovať, uveďte pri sponzorovaní motor alebo jednu doménu;
+peniaze sa minú tam a vykážeme ich v štvrťročnej správe. Hardvér, ktorý lab
+potrebuje, je rozpísaný položku po položke v [LAB_EQUIPMENT.md](LAB_EQUIPMENT.md)
+(anglicky); vybavenie možno darovať aj vecne.
 
-| Skupina | Cieľ | Sponzorstvo platí |
+### Motor
+
+**03 · Agentic Coordination, Assurance and Continuity.** Autonómny kódovací
+a overovací systém, ktorý vyvíja a overuje každý projekt na tejto stránke,
+dotiahnutý do verzie 1.0 ako otvorená infraštruktúra. Tvoria ho [SYNAPSE CHANNEL](https://github.com/anulum/synapse-channel)
+(koordinácia agentov s potvrdeniami), [Rigor Foundry](https://github.com/anulum/rigor-foundry) (review viazané
+na dôkazy), [Director-AI](https://github.com/anulum/director-ai) (ukotvenie tvrdení) a [Remanentia](https://github.com/anulum/remanentia)
+(auditovateľná pamäť). Sponzorstvo platí čas modelov a GPU pre flotilu agentov,
+evaluačné benchmarky a CI.
+
+### Štyri domény
+
+| Doména | Cieľ | Sponzorstvo platí |
 |---|---|---|
 | **01 · Reactor Systems** | Verejný katalóg reaktorových konceptov a **Reactor Studio**, v ktorom sa každý koncept navrhne v 3D/CAD, nasimuluje a virtuálne otestuje skôr, než sa čokoľvek postaví. 21 fúznych rodín zariadení je verejných už dnes (25 reaktorových repozitárov vrátane zdieľaných kernelov); ďalších 29 štiepnych, chemických a hybridných rodín je naplánovaných, plány sú napísané a repozitáre budú nasledovať. Validovaná parametrická geometria s exportom meshov do otvorených formátov existuje dnes; nasleduje plné B-rep CAD, fyzika úrovne 0 pre každú rodinu a scenárové testy návrhu. | výpočty pre simulácie, CAD nástroje, dokumentácia |
 | **02 · Systems Integration and Control** | **SCPN Studio Hub**, ktorý spája štúdiá všetkých skupín: katalóg štúdií, audit dôkazov naprieč doménami, každé tvrdenie zobrazené na svojej skutočnej hranici a fail-closed brána pre všetko, čo by sa mohlo dotknúť hardvéru. Skupina spravuje aj [scpn-control](https://github.com/anulum/scpn-control) a [scpn-phase-orchestrator](https://github.com/anulum/scpn-phase-orchestrator). | CI, hardware-in-the-loop replay, dokumentácia |
-| **03 · Agentic Coordination, Assurance and Continuity** | Vlajková loď: **autonómny kódovací a overovací systém**, ktorý vyvíja a overuje každý projekt na tejto stránke, dotiahnutý do verzie 1.0 ako otvorená infraštruktúra. Tvoria ho [SYNAPSE CHANNEL](https://github.com/anulum/synapse-channel) (koordinácia agentov s potvrdeniami), [Rigor Foundry](https://github.com/anulum/rigor-foundry) (review viazané na dôkazy), [Director-AI](https://github.com/anulum/director-ai) (ukotvenie tvrdení) a [Remanentia](https://github.com/anulum/remanentia) (auditovateľná pamäť). | čas modelov a GPU pre flotilu agentov, evaluačné benchmarky, CI |
 | **04 · SC Neuromorphic Computing** | **SNN Studio 1.0**, prehliadačové IDE pre celý životný cyklus spikových sietí: návrh modelov neurónov, stavba sietí, tréning so surogátnymi gradientmi, kompilácia do SystemVerilogu a syntéza na FPGA, s exportovateľným dôkazovým záznamom každého behu. Postavené na [sc-neurocore](https://github.com/anulum/sc-neurocore); dnes vo fáze development preview. | FPGA dosky a čas na syntézu, meracie pracovisko, CI |
-| **05 · SCPN Quantum Computing** | **Quantum Studio**, pracovné prostredie nad [scpn-quantum-control](https://github.com/anulum/scpn-quantum-control): mapa toho, čo existuje a ako to súvisí, obvody navrhnuté a spustené na simulátoroch aj na skutočnom kvantovom hardvéri, a každý výsledok zabalený so surovými dátami, hashmi a vopred registrovaným protokolom, vrátane negatívnych výsledkov. | čas na QPU, GPU simulácie, dokumentácia |
+| **05 · SCPN Quantum Computing** | **Quantum Studio**, pracovné prostredie nad [scpn-quantum-control](https://github.com/anulum/scpn-quantum-control): mapa toho, čo existuje a ako to súvisí, obvody navrhnuté a spustené na simulátoroch aj na skutočnom kvantovom hardvéri, a každý výsledok zabalený so surovými dátami, hashmi, písomným protokolom a rozhodovacím pravidlom, vrátane negatívnych výsledkov. IQM nám pre tento výskum udelilo rozšírený prístup k IQM Resonance. | čas na QPU, GPU simulácie, dokumentácia |
+
+### Pre organizácie
+
+- **Výskumná dohoda.** Organizácia môže namiesto sponzorstva financovať
+  vymedzenú prácu na základe písomnej výskumnej dohody s priamou fakturáciou.
+  Rozsah a výstupy sa dohodnú vopred; zistenia sa zverejňujú podľa rovnakého
+  pravidla ako vyššie.
+- **Komerčná licencia.** Projekty pod AGPL-3.0-or-later možno licencovať za
+  komerčných podmienok pre proprietárne alebo uzavreté použitie, napríklad [SYNAPSE CHANNEL](https://anulum.li/synapse/pricing.html), [SC-NeuroCore](https://anulum.li/sc-neurocore/pricing.html), [SCPN Control](https://anulum.li/scpn-control/pricing.html), [SCPN Fusion Core](https://anulum.li/scpn-fusion-core/pricing.html), [SCPN Phase Orchestrator](https://anulum.li/scpn-phase-orchestrator/pricing.html), [SCPN Quantum Control](https://anulum.li/scpn-quantum-control/pricing.html).
+  Projekty pod Apache-2.0, ako Director-AI a Rigor Foundry, licenciu
+  nepotrebujú; [Director-AI Pro](https://anulum.li/director-ai/pricing.html) je komerčná self-hosted edícia
+  a podporu a integráciu možno zazmluvniť pre ktorýkoľvek projekt. Ktorá
+  licencia platí, určuje súbor LICENSE v každom repozitári.
+- **Kontakt:** [protoscience@anulum.li](mailto:protoscience@anulum.li), v predmete „výskumná dohoda“ alebo
+  „komerčná licencia“ a názov projektu.
 
 ## Výskumné výstupy
 
@@ -543,7 +567,7 @@ tvrdenie o pripravenosti alebo výhode.
 |---|---|
 | Výskumná spolupráca | Reprodukovateľné štúdie v spoľahlivosti AI, neuromorfných systémoch, kvantovej simulácii, fyzike plazmy a riadení |
 | Technická spolupráca | Architektonické posúdenie, návrh validácie, formálne alebo hardvérové cesty a softvérové inžinierstvo viazané na dôkazy |
-| Komerčné licencovanie | Dvojito licencované a spravované produktové plochy cez [licenčnú cestu Anulum](https://www.anulum.li/licensing) |
+| Komerčné licencovanie | Dvojito licencované a spravované produktové plochy cez [licenčnú cestu Anulum](#pre-organizácie) |
 | Podpora otvorenej práce | CI, výpočty, hardvérové a kvantové experimenty a verejná dokumentácia cez [GitHub Sponsors](https://github.com/sponsors/anulum) |
 
 Vítam technicky podloženú spoluprácu v spoľahlivej infraštruktúre AI,

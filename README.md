@@ -43,19 +43,21 @@ Personal GitHub profile overview
 </p>
 
 Independent researcher and systems engineer at the
-[Anulum Institute](https://anulum.li) in Switzerland. I build
-**evidence-governed infrastructure** for AI systems, multi-agent engineering,
-scientific computing, neuromorphic hardware, quantum simulation, and control:
-mathematical models carried through reproducible software, native
-acceleration, formal models, and executable hardware paths. Claims are only as
-good as the measurements, artefacts, or verification that support them.
+[Anulum Institute](https://anulum.li) in Switzerland. The programme runs on
+**one engine**: an autonomous coding and verification system that builds,
+tests and reviews the projects on this page and binds their claims to
+evidence. The engine is put to work in **four domains**: reactor systems,
+systems integration and control, neuromorphic computing, and quantum
+computing. Claims are only as good as the measurements, artefacts, or
+verification that support them.
 
 <table>
   <tr>
-    <td width="25%"><strong>AI assurance</strong><br><sub>Grounding, contradiction detection, action review, audit evidence</sub></td>
-    <td width="25%"><strong>Agent infrastructure</strong><br><sub>Coordination, claims, durable messaging, memory, fleet control</sub></td>
-    <td width="25%"><strong>Scientific systems</strong><br><sub>Plasma physics, oscillators, quantum workloads, numerical validation</sub></td>
-    <td width="25%"><strong>Compute to hardware</strong><br><sub>Rust acceleration, FPGA RTL, WebGPU, formal verification</sub></td>
+    <td width="20%"><strong>The engine</strong><br><sub>Agent coordination with receipts, evidence-bound review, claim grounding, auditable memory</sub></td>
+    <td width="20%"><strong>Reactor systems</strong><br><sub>Reactor concept catalogue, 3D/CAD, level-0 physics, Reactor Studio</sub></td>
+    <td width="20%"><strong>Integration and control</strong><br><sub>Studio Hub, control runtime, synchronisation analysis, fail-closed hardware gating</sub></td>
+    <td width="20%"><strong>Neuromorphic computing</strong><br><sub>SNN Studio, Rust SIMD, Verilog RTL, FPGA synthesis</sub></td>
+    <td width="20%"><strong>Quantum computing</strong><br><sub>Circuits on simulators and real hardware, result packs with raw counts</sub></td>
   </tr>
 </table>
 
@@ -387,24 +389,49 @@ Live view of this portfolio on anulum.li, filterable and with the map: [anulum.l
 Open work here is funded through [GitHub Sponsors](https://github.com/sponsors/anulum).
 About **USD 25,000 a month** is the minimum that keeps the lab running without
 interruption: compute, GPU, QPU and FPGA time, hardware, CI and tooling. This is
-lab cost, not a salary. Above that minimum the work scales. The research is
-built and checked by our own autonomous coding and verification system, the
-flagship of the programme, so additional compute turns directly into faster,
-verified results. Sponsorship pays for the lab; it does not buy results, and
-findings are published whichever way they fall.
+lab cost, not a salary. Above that minimum the work scales, because the engine
+turns additional compute directly into more built and verified work.
+Sponsorship pays for the lab; it does not buy results, and findings are
+published whichever way they fall.
 
-Each research group has one concrete goal. To direct your support to one group,
-name it when you sponsor; the money is spent there and reported in the
-quarterly note. The hardware the lab needs is listed item by item in
-[LAB_EQUIPMENT.md](LAB_EQUIPMENT.md), and equipment can also be given in kind.
+To direct your support, name the engine or one domain when you sponsor; the
+money is spent there and reported in the quarterly note. The hardware the lab
+needs is listed item by item in [LAB_EQUIPMENT.md](LAB_EQUIPMENT.md), and
+equipment can also be given in kind.
 
-| Group | Goal | Sponsorship pays for |
+### The engine
+
+**03 · Agentic Coordination, Assurance and Continuity.** The autonomous coding
+and verification system that builds and checks every project on this page,
+taken to 1.0 as open infrastructure. It combines [SYNAPSE CHANNEL](https://github.com/anulum/synapse-channel)
+(agent coordination with receipts), [Rigor Foundry](https://github.com/anulum/rigor-foundry) (evidence-bound
+review), [Director-AI](https://github.com/anulum/director-ai) (grounding of claims) and
+[Remanentia](https://github.com/anulum/remanentia) (auditable memory). Sponsorship pays for model and GPU
+time for the agent fleet, evaluation benchmarks and CI.
+
+### Four domains
+
+| Domain | Goal | Sponsorship pays for |
 |---|---|---|
 | **01 · Reactor Systems** | A public catalogue of reactor concepts and a **Reactor Studio** in which each concept is designed in 3D/CAD, simulated and tested virtually before anything is built. 21 fusion device families are public today, in 25 reactor repositories together with the shared kernels; 29 fission, chemical and hybrid families are planned, with plans written and repositories to follow. Validated parametric geometry with open-format mesh export exists today; full B-rep CAD, level-0 physics for every family and scenario tests of a design come next. | simulation compute, CAD tooling, documentation |
 | **02 · Systems Integration and Control** | The **SCPN Studio Hub**, which federates the studios of all groups: a studio catalogue, evidence audited across domains, every claim shown at its true boundary, and fail-closed gating of anything that could touch hardware. The group also maintains [scpn-control](https://github.com/anulum/scpn-control) and [scpn-phase-orchestrator](https://github.com/anulum/scpn-phase-orchestrator). | CI, hardware-in-the-loop replay, documentation |
-| **03 · Agentic Coordination, Assurance and Continuity** | The flagship: the **autonomous coding and verification system** that builds and checks every project on this page, taken to 1.0 as open infrastructure. It combines [SYNAPSE CHANNEL](https://github.com/anulum/synapse-channel) (agent coordination with receipts), [Rigor Foundry](https://github.com/anulum/rigor-foundry) (evidence-bound review), [Director-AI](https://github.com/anulum/director-ai) (grounding of claims) and [Remanentia](https://github.com/anulum/remanentia) (auditable memory). | model and GPU time for the agent fleet, evaluation benchmarks, CI |
 | **04 · SC Neuromorphic Computing** | **SNN Studio 1.0**, the browser IDE for the whole spiking-network lifecycle: design neuron models, build networks, train with surrogate gradients, compile to SystemVerilog and synthesise to FPGA, with an exportable evidence record for every run. Built on [sc-neurocore](https://github.com/anulum/sc-neurocore); a development preview today. | FPGA boards and synthesis time, measurement bench, CI |
-| **05 · SCPN Quantum Computing** | **Quantum Studio**, a workbench on [scpn-quantum-control](https://github.com/anulum/scpn-quantum-control): a map of what exists and how it connects, circuits designed and run on simulators and real quantum hardware, and every result packaged with raw counts, hashes and a pre-registered protocol, negative results included. | QPU time, GPU simulation, documentation |
+| **05 · SCPN Quantum Computing** | **Quantum Studio**, a workbench on [scpn-quantum-control](https://github.com/anulum/scpn-quantum-control): a map of what exists and how it connects, circuits designed and run on simulators and real quantum hardware, and every result packaged with raw counts, hashes and a written protocol and decision rule, negative results included. IQM granted us extended IQM Resonance access for this research. | QPU time, GPU simulation, documentation |
+
+### For organisations
+
+- **Research agreement.** An organisation can fund a defined piece of work
+  under a written research agreement, invoiced directly, instead of a
+  sponsorship. Scope and deliverables are agreed first; findings are
+  published under the same rule as above.
+- **Commercial licence.** Projects under AGPL-3.0-or-later can be licensed
+  on commercial terms for proprietary or closed use, for example [SYNAPSE CHANNEL](https://anulum.li/synapse/pricing.html), [SC-NeuroCore](https://anulum.li/sc-neurocore/pricing.html), [SCPN Control](https://anulum.li/scpn-control/pricing.html), [SCPN Fusion Core](https://anulum.li/scpn-fusion-core/pricing.html), [SCPN Phase Orchestrator](https://anulum.li/scpn-phase-orchestrator/pricing.html), [SCPN Quantum Control](https://anulum.li/scpn-quantum-control/pricing.html).
+  Apache-2.0 projects such as Director-AI and Rigor Foundry need no licence;
+  [Director-AI Pro](https://anulum.li/director-ai/pricing.html) is a commercial self-hosted edition, and support
+  and integration can be contracted for any project. The LICENSE file of each
+  repository states which licence applies.
+- **Contact:** [protoscience@anulum.li](mailto:protoscience@anulum.li), with "research agreement" or "commercial licence"
+  and the project name in the subject.
 
 ## Research output
 
@@ -569,7 +596,7 @@ advantage claim.
 |---|---|
 | Research collaboration | Reproducible studies in AI assurance, neuromorphic systems, quantum simulation, plasma physics, and control |
 | Technical collaboration | Architecture review, validation design, formal or hardware paths, and evidence-bound software engineering |
-| Commercial licensing | Dual-licensed and managed product surfaces through the [Anulum licensing route](https://www.anulum.li/licensing) |
+| Commercial licensing | Dual-licensed and managed product surfaces through the [Anulum licensing route](#for-organisations) |
 | Open-work sponsorship | CI, compute, hardware and quantum experiment time, and public documentation through [GitHub Sponsors](https://github.com/sponsors/anulum) |
 
 I welcome technically grounded collaboration in reliable AI infrastructure,

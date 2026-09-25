@@ -43,19 +43,20 @@ Persönliche GitHub-Profilübersicht
 </p>
 
 Unabhängiger Forscher und Systemingenieur am [Anulum Institute](https://anulum.li)
-in der Schweiz. Ich entwickle **evidenzbasierte Infrastruktur** für KI-Systeme,
-Multi-Agenten-Engineering, wissenschaftliches Rechnen, neuromorphe Hardware,
-Quantensimulation und Regelung: mathematische Modelle, die über reproduzierbare
-Software, native Beschleunigung, formale Modelle und ausführbare Hardwarepfade
-getragen werden. Aussagen sind nur so verlässlich wie die Messungen, Artefakte
-oder Prüfungen, die sie belegen.
+in der Schweiz. Das Programm läuft auf **einem Motor**: einem autonomen
+Programmier- und Verifikationssystem, das die Projekte auf dieser Seite
+entwickelt, testet und prüft und ihre Aussagen an Evidenz bindet. Der Motor
+arbeitet in **vier Domänen**: Reaktorsysteme, Systemintegration und Regelung,
+neuromorphes Rechnen und Quantencomputing. Aussagen sind nur so verlässlich
+wie die Messungen, Artefakte oder Prüfungen, die sie belegen.
 
 <table>
   <tr>
-    <td width="25%"><strong>KI-Sicherung</strong><br><sub>Verankerung in Evidenz, Widerspruchserkennung, Aktionsprüfung, Auditnachweise</sub></td>
-    <td width="25%"><strong>Agenteninfrastruktur</strong><br><sub>Koordination, Claims, dauerhafte Nachrichten, Gedächtnis, Flottensteuerung</sub></td>
-    <td width="25%"><strong>Wissenschaftliche Systeme</strong><br><sub>Plasmaphysik, Oszillatoren, Quantenaufgaben, numerische Validierung</sub></td>
-    <td width="25%"><strong>Von der Berechnung zur Hardware</strong><br><sub>Rust-Beschleunigung, FPGA-RTL, WebGPU, formale Verifikation</sub></td>
+    <td width="20%"><strong>Der Motor</strong><br><sub>Agentenkoordination mit Quittungen, evidenzgebundene Reviews, Verankerung von Aussagen, auditierbares Gedächtnis</sub></td>
+    <td width="20%"><strong>Reaktorsysteme</strong><br><sub>Katalog von Reaktorkonzepten, 3D/CAD, Level-0-Physik, Reactor Studio</sub></td>
+    <td width="20%"><strong>Integration und Regelung</strong><br><sub>Studio Hub, Regelungs-Runtime, Synchronisationsanalyse, Fail-closed-Freigabe für Hardware</sub></td>
+    <td width="20%"><strong>Neuromorphes Rechnen</strong><br><sub>SNN Studio, Rust-SIMD, Verilog-RTL, FPGA-Synthese</sub></td>
+    <td width="20%"><strong>Quantencomputing</strong><br><sub>Schaltungen auf Simulatoren und echter Hardware, Ergebnispakete mit Rohdaten</sub></td>
   </tr>
 </table>
 
@@ -366,25 +367,51 @@ Die offene Arbeit wird über [GitHub Sponsors](https://github.com/sponsors/anulu
 Rund **USD 25'000 pro Monat** sind das Minimum, mit dem das Labor ohne
 Unterbrechung läuft: Rechenleistung, GPU-, QPU- und FPGA-Zeit, Hardware, CI und
 Werkzeuge. Das sind Laborkosten, kein Gehalt. Über diesem Minimum skaliert die
-Arbeit. Die Forschung wird von unserem eigenen autonomen Programmier- und
-Verifikationssystem entwickelt und geprüft, dem Flaggschiff des Programms; mehr
-Rechenleistung wird damit direkt zu schnelleren, geprüften Ergebnissen.
-Sponsoring bezahlt das Labor, es kauft keine Ergebnisse. Befunde werden
-veröffentlicht, wie immer sie ausfallen.
+Arbeit, weil der Motor zusätzliche Rechenleistung direkt in mehr entwickelte
+und geprüfte Arbeit umsetzt. Sponsoring bezahlt das Labor, es kauft keine
+Ergebnisse. Befunde werden veröffentlicht, wie immer sie ausfallen.
 
-Jede Forschungsgruppe hat ein konkretes Ziel. Wer eine bestimmte Gruppe
-unterstützen will, nennt sie beim Sponsoring; das Geld wird dort eingesetzt und
-im Quartalsbericht ausgewiesen. Die Hardware, die das Labor braucht, steht
-Position für Position in [LAB_EQUIPMENT.md](LAB_EQUIPMENT.md) (Englisch);
-Geräte können auch als Sachspende gegeben werden.
+Wer die Unterstützung lenken will, nennt beim Sponsoring den Motor oder eine
+Domäne; das Geld wird dort eingesetzt und im Quartalsbericht ausgewiesen. Die
+Hardware, die das Labor braucht, steht Position für Position in
+[LAB_EQUIPMENT.md](LAB_EQUIPMENT.md) (Englisch); Geräte können auch als
+Sachspende gegeben werden.
 
-| Gruppe | Ziel | Sponsoring bezahlt |
+### Der Motor
+
+**03 · Agentic Coordination, Assurance and Continuity.** Das autonome
+Programmier- und Verifikationssystem, das jedes Projekt auf dieser Seite
+entwickelt und prüft, als offene Infrastruktur bis zur Version 1.0. Es verbindet
+[SYNAPSE CHANNEL](https://github.com/anulum/synapse-channel) (Agentenkoordination mit Quittungen),
+[Rigor Foundry](https://github.com/anulum/rigor-foundry) (evidenzgebundene Reviews), [Director-AI](https://github.com/anulum/director-ai)
+(Verankerung von Aussagen) und [Remanentia](https://github.com/anulum/remanentia) (auditierbares Gedächtnis).
+Sponsoring bezahlt Modell- und GPU-Zeit für die Agentenflotte,
+Evaluations-Benchmarks und CI.
+
+### Vier Domänen
+
+| Domäne | Ziel | Sponsoring bezahlt |
 |---|---|---|
 | **01 · Reactor Systems** | Ein öffentlicher Katalog von Reaktorkonzepten und ein **Reactor Studio**, in dem jedes Konzept in 3D/CAD entworfen, simuliert und virtuell getestet wird, bevor etwas gebaut wird. 21 Fusions-Gerätefamilien sind heute öffentlich (25 Reaktor-Repositories einschliesslich der gemeinsamen Kernel); 29 weitere Spaltungs-, Chemie- und Hybridfamilien sind geplant, die Pläne sind geschrieben, die Repositories folgen. Validierte parametrische Geometrie mit Mesh-Export in offene Formate gibt es heute; als Nächstes folgen vollständiges B-rep-CAD, Level-0-Physik für jede Familie und Szenariotests eines Entwurfs. | Rechenzeit für Simulationen, CAD-Werkzeuge, Dokumentation |
 | **02 · Systems Integration and Control** | Der **SCPN Studio Hub**, der die Studios aller Gruppen verbindet: ein Studio-Katalog, domänenübergreifend geprüfte Evidenz, jede Aussage an ihrer tatsächlichen Grenze dargestellt und ein Fail-closed-Gate für alles, was Hardware berühren könnte. Die Gruppe pflegt auch [scpn-control](https://github.com/anulum/scpn-control) und [scpn-phase-orchestrator](https://github.com/anulum/scpn-phase-orchestrator). | CI, Hardware-in-the-Loop-Replay, Dokumentation |
-| **03 · Agentic Coordination, Assurance and Continuity** | Das Flaggschiff: das **autonome Programmier- und Verifikationssystem**, das jedes Projekt dieser Seite entwickelt und prüft, als offene Infrastruktur bis Version 1.0. Es besteht aus [SYNAPSE CHANNEL](https://github.com/anulum/synapse-channel) (Agentenkoordination mit Quittungen), [Rigor Foundry](https://github.com/anulum/rigor-foundry) (evidenzgebundenes Review), [Director-AI](https://github.com/anulum/director-ai) (Verankerung von Aussagen) und [Remanentia](https://github.com/anulum/remanentia) (prüfbares Gedächtnis). | Modell- und GPU-Zeit für die Agentenflotte, Evaluations-Benchmarks, CI |
 | **04 · SC Neuromorphic Computing** | **SNN Studio 1.0**, die Browser-IDE für den ganzen Lebenszyklus spikender Netze: Neuronenmodelle entwerfen, Netze bauen, mit Surrogatgradienten trainieren, nach SystemVerilog kompilieren und auf FPGA synthetisieren, mit einem exportierbaren Evidenzdatensatz für jeden Lauf. Aufgebaut auf [sc-neurocore](https://github.com/anulum/sc-neurocore); heute eine Entwicklungsvorschau. | FPGA-Boards und Synthesezeit, Messplatz, CI |
-| **05 · SCPN Quantum Computing** | **Quantum Studio**, eine Arbeitsumgebung auf [scpn-quantum-control](https://github.com/anulum/scpn-quantum-control): eine Karte dessen, was existiert und wie es zusammenhängt, Schaltungen, die auf Simulatoren und echter Quantenhardware entworfen und ausgeführt werden, und jedes Ergebnis mit Rohdaten, Hashes und vorregistriertem Protokoll, negative Ergebnisse eingeschlossen. | QPU-Zeit, GPU-Simulation, Dokumentation |
+| **05 · SCPN Quantum Computing** | **Quantum Studio**, eine Arbeitsumgebung auf [scpn-quantum-control](https://github.com/anulum/scpn-quantum-control): eine Karte dessen, was existiert und wie es zusammenhängt, Schaltungen, die auf Simulatoren und echter Quantenhardware entworfen und ausgeführt werden, und jedes Ergebnis mit Rohdaten, Hashes, schriftlichem Protokoll und Entscheidungsregel, negative Ergebnisse eingeschlossen. IQM hat uns für diese Forschung erweiterten Zugang zu IQM Resonance gewährt. | QPU-Zeit, GPU-Simulation, Dokumentation |
+
+### Für Organisationen
+
+- **Forschungsvereinbarung.** Eine Organisation kann statt eines Sponsorings
+  eine abgegrenzte Arbeit über eine schriftliche Forschungsvereinbarung mit
+  direkter Rechnungsstellung finanzieren. Umfang und Ergebnisse werden vorab
+  vereinbart; Befunde werden nach derselben Regel wie oben veröffentlicht.
+- **Kommerzielle Lizenz.** Projekte unter AGPL-3.0-or-later können für
+  proprietäre oder geschlossene Nutzung zu kommerziellen Bedingungen lizenziert
+  werden, zum Beispiel [SYNAPSE CHANNEL](https://anulum.li/synapse/pricing.html), [SC-NeuroCore](https://anulum.li/sc-neurocore/pricing.html), [SCPN Control](https://anulum.li/scpn-control/pricing.html), [SCPN Fusion Core](https://anulum.li/scpn-fusion-core/pricing.html), [SCPN Phase Orchestrator](https://anulum.li/scpn-phase-orchestrator/pricing.html), [SCPN Quantum Control](https://anulum.li/scpn-quantum-control/pricing.html). Apache-2.0-Projekte wie Director-AI und
+  Rigor Foundry brauchen keine Lizenz; [Director-AI Pro](https://anulum.li/director-ai/pricing.html) ist eine
+  kommerzielle selbst gehostete Edition, und Support und Integration lassen
+  sich für jedes Projekt vertraglich vereinbaren. Welche Lizenz gilt, steht in
+  der LICENSE-Datei des jeweiligen Repositorys.
+- **Kontakt:** [protoscience@anulum.li](mailto:protoscience@anulum.li), mit „Forschungsvereinbarung“ oder
+  „kommerzielle Lizenz“ und dem Projektnamen im Betreff.
 
 ## Forschungsergebnisse
 
@@ -549,7 +576,7 @@ oder Vorteilsbehauptung umzudeuten.
 |---|---|
 | Forschungskooperation | Reproduzierbare Studien in KI-Sicherung, neuromorphen Systemen, Quantensimulation, Plasmaphysik und Regelung |
 | Technische Kooperation | Architekturprüfung, Validierungsdesign, Formal- oder Hardwarepfade und evidenzgebundene Softwareentwicklung |
-| Kommerzielle Lizenzierung | Dual lizenzierte und verwaltete Produktbereiche über den [Lizenzweg von Anulum](https://www.anulum.li/licensing) |
+| Kommerzielle Lizenzierung | Dual lizenzierte und verwaltete Produktbereiche über den [Lizenzweg von Anulum](#für-organisationen) |
 | Förderung offener Arbeit | CI, Rechenzeit, Hardware- und Quantenexperimente sowie öffentliche Dokumentation über [GitHub Sponsors](https://github.com/sponsors/anulum) |
 
 Ich begrüsse technisch fundierte Zusammenarbeit in zuverlässiger

@@ -46,11 +46,11 @@ GitHub 個人プロフィール概要
 スイスの [Anulum Institute](https://anulum.li) で活動する独立研究者、
 システムエンジニアです。
 
-AI システム、マルチエージェント・エンジニアリング、科学技術計算、
-ニューロモーフィックハードウェア、量子シミュレーション、制御のための
-**エビデンスに基づくインフラストラクチャ**を構築しています。数理モデルを
-再現可能なソフトウェア、ネイティブ高速化、形式モデル、実行可能な
-ハードウェア経路へ接続します。
+このプログラムは**一つのエンジン**で動いています。本ページのプロジェクトを
+開発・テスト・レビューし、その主張をエビデンスに結びつける自律型コーディング・
+検証システムです。エンジンは**四つの領域**で使われています。原子炉システム、
+システム統合と制御、ニューロモーフィック・コンピューティング、
+量子コンピューティングです。
 
 主張の信頼性は、それを支える測定、成果物、検証によって決まります。
 
@@ -303,17 +303,28 @@ flowchart LR
 ## スポンサーシップの目標
 
 オープンな研究は [GitHub Sponsors](https://github.com/sponsors/anulum) を通じて支えられています。
-ラボを途切れなく運営するための最低額は **月額およそ 25,000 米ドル** です。内訳は計算資源、GPU・QPU・FPGA の利用時間、ハードウェア、CI、ツールであり、給与ではなくラボの運営費です。この最低額を超えれば、研究は拡張できます。研究は私たち自身の自律型コーディング・検証システム（本プログラムの旗艦）によって開発・検証されているため、計算資源の追加はそのまま、より速く検証された成果につながります。スポンサーシップはラボの費用であり、結果を買うものではありません。結果はどちらに転んでも公開します。
+ラボを途切れなく運営するための最低額は **月額およそ 25,000 米ドル** です。内訳は計算資源、GPU・QPU・FPGA の利用時間、ハードウェア、CI、ツールであり、給与ではなくラボの運営費です。この最低額を超えれば研究は拡張できます。エンジンが追加の計算資源をそのまま、より多くの開発・検証済みの成果に変えるからです。スポンサーシップはラボの費用であり、結果を買うものではありません。結果はどちらに転んでも公開します。
 
-各研究グループには具体的な目標が一つあります。特定のグループを支援したい場合は、スポンサー時にそのグループ名をお知らせください。資金はそのグループで使われ、四半期報告で報告します。ラボに必要なハードウェアは [LAB_EQUIPMENT.md](LAB_EQUIPMENT.md)（英語）に品目ごとに記載しており、機器の現物提供も歓迎します。
+支援先を指定したい場合は、スポンサー時にエンジンまたは一つの領域をお知らせください。資金はそこで使われ、四半期報告で報告します。ラボに必要なハードウェアは [LAB_EQUIPMENT.md](LAB_EQUIPMENT.md)（英語）に品目ごとに記載しており、機器の現物提供も歓迎します。
 
-| グループ | 目標 | スポンサーシップの用途 |
+### エンジン
+
+**03 · Agentic Coordination, Assurance and Continuity.** このページのすべてのプロジェクトを開発・検証する自律型コーディング・検証システムを、オープンなインフラとして 1.0 へ。[SYNAPSE CHANNEL](https://github.com/anulum/synapse-channel)（受領記録付きのエージェント協調）、[Rigor Foundry](https://github.com/anulum/rigor-foundry)（エビデンスに基づくレビュー）、[Director-AI](https://github.com/anulum/director-ai)（主張の根拠づけ）、[Remanentia](https://github.com/anulum/remanentia)（監査可能なメモリ）で構成されます。スポンサーシップはエージェント群のモデル・GPU 時間、評価ベンチマーク、CI に充てられます。
+
+### 四つの領域
+
+| 領域 | 目標 | スポンサーシップの用途 |
 |---|---|---|
 | **01 · Reactor Systems** | 原子炉コンセプトの公開カタログと、各コンセプトを 3D/CAD で設計し、シミュレーションし、建設前に仮想試験できる **Reactor Studio**。21 の核融合デバイスファミリーは現在公開済み（共有カーネルを含め 25 の原子炉リポジトリ）で、さらに 29 の核分裂・化学・ハイブリッドのファミリーが計画済みです（計画は作成済み、リポジトリはこれから）。検証済みのパラメトリック形状とオープン形式のメッシュ出力は現在利用可能で、次は完全な B-rep CAD、全ファミリーのレベル 0 物理、設計のシナリオ試験です。 | シミュレーション計算、CAD ツール、ドキュメント |
 | **02 · Systems Integration and Control** | 全グループのスタジオを連携する **SCPN Studio Hub**：スタジオカタログ、ドメイン横断のエビデンス監査、すべての主張を実際の境界で表示し、ハードウェアに触れうる操作をフェイルクローズでゲートします。[scpn-control](https://github.com/anulum/scpn-control) と [scpn-phase-orchestrator](https://github.com/anulum/scpn-phase-orchestrator) も保守しています。 | CI、ハードウェア・イン・ザ・ループ再生、ドキュメント |
-| **03 · Agentic Coordination, Assurance and Continuity** | 旗艦：このページのすべてのプロジェクトを開発・検証する **自律型コーディング・検証システム** を、オープンなインフラとして 1.0 へ。[SYNAPSE CHANNEL](https://github.com/anulum/synapse-channel)（受領記録付きのエージェント協調）、[Rigor Foundry](https://github.com/anulum/rigor-foundry)（エビデンスに基づくレビュー）、[Director-AI](https://github.com/anulum/director-ai)（主張の根拠づけ）、[Remanentia](https://github.com/anulum/remanentia)（監査可能なメモリ）で構成されます。 | エージェント群のモデル・GPU 時間、評価ベンチマーク、CI |
 | **04 · SC Neuromorphic Computing** | **SNN Studio 1.0**：スパイキングネットワークのライフサイクル全体を扱うブラウザ IDE。ニューロンモデルの設計、ネットワーク構築、代理勾配による学習、SystemVerilog へのコンパイル、FPGA への合成までを行い、各実行のエビデンス記録を出力できます。[sc-neurocore](https://github.com/anulum/sc-neurocore) 上に構築され、現在は開発プレビューです。 | FPGA ボードと合成時間、測定ベンチ、CI |
-| **05 · SCPN Quantum Computing** | **Quantum Studio**：[scpn-quantum-control](https://github.com/anulum/scpn-quantum-control) 上のワークベンチ。何が存在しどうつながるかのマップ、シミュレーターと実機の量子ハードウェアで設計・実行する回路、そして生データ、ハッシュ、事前登録プロトコルを伴うすべての結果（否定的な結果を含む）。 | QPU 時間、GPU シミュレーション、ドキュメント |
+| **05 · SCPN Quantum Computing** | **Quantum Studio**：[scpn-quantum-control](https://github.com/anulum/scpn-quantum-control) 上のワークベンチ。何が存在しどうつながるかのマップ、シミュレーターと実機の量子ハードウェアで設計・実行する回路、そして生データ、ハッシュ、書面のプロトコルと判定ルールを伴うすべての結果（否定的な結果を含む）。IQM はこの研究のために IQM Resonance の拡張アクセスを提供してくれました。 | QPU 時間、GPU シミュレーション、ドキュメント |
+
+### 組織の方へ
+
+- **研究契約。** 組織はスポンサーシップの代わりに、書面の研究契約に基づき直接請求で、範囲を定めた作業に資金を提供できます。範囲と成果物は事前に合意し、結果は上記と同じルールで公開します。
+- **商用ライセンス。** AGPL-3.0-or-later のプロジェクトは、独自またはクローズドな用途向けに商用条件でライセンスできます。例：[SYNAPSE CHANNEL](https://anulum.li/synapse/pricing.html), [SC-NeuroCore](https://anulum.li/sc-neurocore/pricing.html), [SCPN Control](https://anulum.li/scpn-control/pricing.html), [SCPN Fusion Core](https://anulum.li/scpn-fusion-core/pricing.html), [SCPN Phase Orchestrator](https://anulum.li/scpn-phase-orchestrator/pricing.html), [SCPN Quantum Control](https://anulum.li/scpn-quantum-control/pricing.html)。Director-AI や Rigor Foundry などの Apache-2.0 プロジェクトにはライセンスは不要です。[Director-AI Pro](https://anulum.li/director-ai/pricing.html) は商用のセルフホスト版で、どのプロジェクトでもサポートと統合を契約できます。適用されるライセンスは各リポジトリの LICENSE ファイルに記載されています。
+- **連絡先：** [protoscience@anulum.li](mailto:protoscience@anulum.li)。件名に「研究契約」または「商用ライセンス」とプロジェクト名をご記入ください。
 
 ## エンジニアリング標準
 
@@ -424,7 +435,7 @@ Python パッケージ、Rust 高速化エンジン、ドメインカーネル�
 |---|---|
 | 研究協力 | AI 保証、ニューロモーフィック、量子シミュレーション、プラズマ物理、制御の再現可能な研究 |
 | 技術協力 | アーキテクチャ審査、検証設計、形式手法・ハードウェア経路、エビデンス準拠ソフトウェア開発 |
-| 商用ライセンス | [Anulum licensing](https://www.anulum.li/licensing) を通じたデュアルライセンスと管理製品 |
+| 商用ライセンス | [Anulum licensing](#組織の方へ) を通じたデュアルライセンスと管理製品 |
 | 公開作業の支援 | [GitHub Sponsors](https://github.com/sponsors/anulum) による CI、計算、ハードウェア・量子実験、公開文書の支援 |
 
 ニューロモーフィックシステム、信頼できる AI インフラストラクチャ、
