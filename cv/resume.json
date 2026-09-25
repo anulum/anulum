@@ -5,7 +5,7 @@
     "label": "Independent researcher, founder and systems engineer",
     "email": "protoscience@anulum.li",
     "url": "https://anulum.li",
-    "summary": "Founder-led engineering across evidence-governed AI, multi-agent infrastructure, scientific computing, neuromorphic systems, quantum simulation, plasma physics and control.",
+    "summary": "Founder-led research lab running on one engine, an autonomous coding and verification system that builds, tests and reviews every project, applied in four domains: reactor systems, systems integration and control, neuromorphic computing, and quantum computing.",
     "location": {
       "region": "Switzerland",
       "countryCode": "CH"
@@ -35,9 +35,10 @@
     {"name": "Synapse Channel", "description": "Local-first coordination bus for coding-agent fleets.", "url": "https://github.com/anulum/synapse-channel"},
     {"name": "Director-AI", "description": "Response-level LLM factual-consistency and contradiction guardrail.", "url": "https://github.com/anulum/director-ai"},
     {"name": "Rigor Foundry", "description": "Evidence-bound repository audit and remediation planning.", "url": "https://github.com/anulum/rigor-foundry"},
+    {"name": "Remanentia", "description": "Auditable memory for AI agents with hybrid retrieval and consolidation.", "url": "https://github.com/anulum/remanentia"},
     {"name": "SC-NeuroCore", "description": "Stochastic and neuromorphic computing from Python and Rust to RTL.", "url": "https://github.com/anulum/sc-neurocore"},
     {"name": "SCPN Fusion Core", "description": "Evidence-bounded plasma physics, solvers and control research.", "url": "https://github.com/anulum/scpn-fusion-core"},
-    {"name": "SCPN Quantum Control", "description": "Reproducible coupled-oscillator quantum-control experiments.", "url": "https://github.com/anulum/scpn-quantum-control"}
+    {"name": "SCPN Quantum Control", "description": "Coupled-oscillator experiments on real quantum hardware with protocols committed before the run and hash-bound result packs.", "url": "https://github.com/anulum/scpn-quantum-control"}
   ],
   "publications": [
     {"name": "SCPN Framework v1.0 technical specification", "publisher": "Zenodo", "releaseDate": "2026-02-06", "url": "https://doi.org/10.5281/zenodo.18507639"},
@@ -47,7 +48,7 @@
   ],
   "meta": {
     "canonical": "https://github.com/anulum/anulum/blob/main/cv/resume.json",
-    "lastModified": "2026-09-03",
+    "lastModified": "2026-09-25",
     "evidenceBoundary": "Public records are self-published or registry records unless explicitly stated otherwise. Peer review, acceptance, academic degrees and independent validation are not implied."
   }
 }
