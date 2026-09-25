@@ -96,7 +96,7 @@ Shell、Docker 和 Linux。
 | 多智能体协调 | [验证](https://github.com/anulum/synapse-channel/blob/dd65c898a9693b47fad051e3baa92cef07da2e63/VALIDATION.md)、[协调规范](https://github.com/anulum/synapse-channel/blob/dd65c898a9693b47fad051e3baa92cef07da2e63/docs/coordination-spec.md)、[威胁模型](https://github.com/anulum/synapse-channel/blob/dd65c898a9693b47fad051e3baa92cef07da2e63/docs/sandbox-threat-model.md) |
 | LLM 响应保障 | [验证](https://github.com/anulum/director-ai/blob/fc155051367bb48180f2f5dc92f4120c2549cddd/VALIDATION.md)、[公开基准](https://github.com/anulum/director-ai/blob/fc155051367bb48180f2f5dc92f4120c2549cddd/benchmarks/PUBLIC_BENCHMARKS.md)、[能力矩阵](https://github.com/anulum/director-ai/blob/fc155051367bb48180f2f5dc92f4120c2549cddd/docs/_generated/capability_matrix.md) |
 | 神经形态计算到 RTL | [验证](https://github.com/anulum/sc-neurocore/blob/4bbc27b808eef0677848c1e484f40bd41e8ce83d/VALIDATION.md)、[综合结果](https://github.com/anulum/sc-neurocore/blob/4bbc27b808eef0677848c1e484f40bd41e8ce83d/docs/hardware/SYNTHESIS_RESULTS.md)、[可追溯矩阵](https://github.com/anulum/sc-neurocore/blob/4bbc27b808eef0677848c1e484f40bd41e8ce83d/docs/safety/TRACEABILITY_MATRIX.md) |
-| 等离子体与量子 | [聚变验证](https://github.com/anulum/scpn-fusion-core/blob/3c841fc13109c8efb49bb079d145f70683a4408d/VALIDATION.md)、[预注册](https://github.com/anulum/scpn-quantum-control/blob/2bc0f935b75ae7b85a4835caf754b2bfd8770c98/docs/layout_relaxation_preregistration.md)、[硬件结果包](https://github.com/anulum/scpn-quantum-control/blob/2bc0f935b75ae7b85a4835caf754b2bfd8770c98/docs/hardware_result_packs.md) |
+| 等离子体与量子 | [聚变验证](https://github.com/anulum/scpn-fusion-core/blob/3c841fc13109c8efb49bb079d145f70683a4408d/VALIDATION.md)、[布局松弛协议](https://github.com/anulum/scpn-quantum-control/blob/2bc0f935b75ae7b85a4835caf754b2bfd8770c98/docs/layout_relaxation_preregistration.md)、[硬件结果包](https://github.com/anulum/scpn-quantum-control/blob/2bc0f935b75ae7b85a4835caf754b2bfd8770c98/docs/hardware_result_packs.md) |
 
 <a id="current-focus"></a>
 ## 当前重点
@@ -332,7 +332,7 @@ flowchart LR
 |---|---|
 | 正确性 | 确定性 pytest 与 Cargo 测试、覆盖率门槛、等价性测试、回归夹具和显式负面用例 |
 | 静态质量 | Ruff、声明处的严格 mypy、Cargo fmt、禁止警告的 Clippy 以及 API 契约检查 |
-| 可复现性 | 哈希固定依赖、预注册协议、原始结果包、内容摘要和可重放审计记录 |
+| 可复现性 | 哈希固定依赖、运行前提交的协议、原始结果包、内容摘要和可重放审计记录 |
 | 安全 | 按需启用 Bandit、CodeQL 和 Scorecards，并使用威胁模型、最小权限与依赖审查 |
 | 供应链 | SPDX、REUSE 3.x、适用时的 SBOM、固定版本 CI Actions 和发布清单 |
 | 多语言验证 | Python/Rust 等价性、PyO3/Maturin、Go 与 Julia 测试、Lean 构建、WebAssembly、RTL 和形式化检查 |
@@ -371,7 +371,7 @@ flowchart LR
 | [Rigor Foundry](https://github.com/anulum/rigor-foundry) | 基于证据的仓库审计和修复规划 | **现在可用**: 持续强化中 |
 | [Director-AI](https://github.com/anulum/director-ai) | 实时 LLM 防护：NLI 与 RAG 事实检查，以及可选的主张级流式停止 | **活跃研究**: 正在验证的功能系统 |
 | [SC-NeuroCore](https://github.com/anulum/sc-neurocore) | 多语言随机与神经形态框架（Python、Rust SIMD、Verilog、HDC/VSA） | **活跃研究**: 持续开发的平台 |
-| [SCPN Quantum Control](https://github.com/anulum/scpn-quantum-control) | 基于证据的耦合振荡器同步量子模拟 | **实验性**: 预注册研究计划 |
+| [SCPN Quantum Control](https://github.com/anulum/scpn-quantum-control) | 基于证据的耦合振荡器同步量子模拟 | **实验性**: 运行前提交协议的研究计划 |
 
 相关控制与聚变研究位于 SCPN 系列中：
 [control](https://github.com/anulum/scpn-control)、
@@ -390,11 +390,11 @@ flowchart LR
 
 ## 证据，而非口号
 
-真实的负面结果和零结果会被公开。公开主张始终绑定到测量、预注册协议、
+真实的负面结果和零结果会被公开。公开主张始终绑定到测量、运行前提交的协议、
 原始结果包或可执行验证等工件，而不是口号。
 
 示例：[scpn-quantum-control](https://github.com/anulum/scpn-quantum-control)
-中的预注册量子控制协议与哈希绑定结果包。
+中运行前提交的量子控制协议与哈希绑定结果包。
 
 ## 工作原则
 

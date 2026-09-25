@@ -99,7 +99,7 @@ HTML/CSS、Shell、Docker、Linux。
 | マルチエージェント協調 | [検証](https://github.com/anulum/synapse-channel/blob/dd65c898a9693b47fad051e3baa92cef07da2e63/VALIDATION.md)、[協調仕様](https://github.com/anulum/synapse-channel/blob/dd65c898a9693b47fad051e3baa92cef07da2e63/docs/coordination-spec.md)、[脅威モデル](https://github.com/anulum/synapse-channel/blob/dd65c898a9693b47fad051e3baa92cef07da2e63/docs/sandbox-threat-model.md) |
 | LLM 応答保証 | [検証](https://github.com/anulum/director-ai/blob/fc155051367bb48180f2f5dc92f4120c2549cddd/VALIDATION.md)、[公開ベンチマーク](https://github.com/anulum/director-ai/blob/fc155051367bb48180f2f5dc92f4120c2549cddd/benchmarks/PUBLIC_BENCHMARKS.md)、[機能マトリクス](https://github.com/anulum/director-ai/blob/fc155051367bb48180f2f5dc92f4120c2549cddd/docs/_generated/capability_matrix.md) |
 | ニューロモーフィックから RTL | [検証](https://github.com/anulum/sc-neurocore/blob/4bbc27b808eef0677848c1e484f40bd41e8ce83d/VALIDATION.md)、[合成結果](https://github.com/anulum/sc-neurocore/blob/4bbc27b808eef0677848c1e484f40bd41e8ce83d/docs/hardware/SYNTHESIS_RESULTS.md)、[トレーサビリティ](https://github.com/anulum/sc-neurocore/blob/4bbc27b808eef0677848c1e484f40bd41e8ce83d/docs/safety/TRACEABILITY_MATRIX.md) |
-| プラズマと量子 | [核融合検証](https://github.com/anulum/scpn-fusion-core/blob/3c841fc13109c8efb49bb079d145f70683a4408d/VALIDATION.md)、[事前登録](https://github.com/anulum/scpn-quantum-control/blob/2bc0f935b75ae7b85a4835caf754b2bfd8770c98/docs/layout_relaxation_preregistration.md)、[ハードウェア結果パック](https://github.com/anulum/scpn-quantum-control/blob/2bc0f935b75ae7b85a4835caf754b2bfd8770c98/docs/hardware_result_packs.md) |
+| プラズマと量子 | [核融合検証](https://github.com/anulum/scpn-fusion-core/blob/3c841fc13109c8efb49bb079d145f70683a4408d/VALIDATION.md)、[レイアウト緩和プロトコル](https://github.com/anulum/scpn-quantum-control/blob/2bc0f935b75ae7b85a4835caf754b2bfd8770c98/docs/layout_relaxation_preregistration.md)、[ハードウェア結果パック](https://github.com/anulum/scpn-quantum-control/blob/2bc0f935b75ae7b85a4835caf754b2bfd8770c98/docs/hardware_result_packs.md) |
 
 <a id="current-focus"></a>
 ## 現在の重点
@@ -344,7 +344,7 @@ flowchart LR
 |---|---|
 | 正確性 | 決定論的 pytest/Cargo テスト、カバレッジゲート、同等性テスト、回帰フィクスチャ、明示的な負例 |
 | 静的品質 | Ruff、宣言された範囲での strict mypy、Cargo fmt、警告を拒否する Clippy、API 契約チェック |
-| 再現性 | ハッシュ固定依存関係、事前登録プロトコル、生の結果パック、コンテンツダイジェスト、再生可能な監査記録 |
+| 再現性 | ハッシュ固定依存関係、実行前にコミットされたプロトコル、生の結果パック、コンテンツダイジェスト、再生可能な監査記録 |
 | セキュリティ | 必要に応じた Bandit、CodeQL、Scorecards、脅威モデル、最小権限、依存関係レビュー |
 | サプライチェーン | SPDX、REUSE 3.x、適用時の SBOM、固定 CI Actions、リリースマニフェスト |
 | 多言語検証 | Python/Rust 同等性、PyO3/Maturin、Go/Julia テスト、Lean ビルド、WebAssembly、RTL、形式チェック |
@@ -384,7 +384,7 @@ Python パッケージ、Rust 高速化エンジン、ドメインカーネル�
 | [Rigor Foundry](https://github.com/anulum/rigor-foundry) | エビデンスに結び付いたリポジトリ監査と修復計画 | **現在利用可能**: 強化作業を継続中 |
 | [Director-AI](https://github.com/anulum/director-ai) | NLI と RAG の事実確認、任意の主張単位ストリーミング停止を備えるリアルタイム LLM ガードレール | **研究進行中**: 検証中の機能的システム |
 | [SC-NeuroCore](https://github.com/anulum/sc-neurocore) | 多言語の確率的・ニューロモーフィックフレームワーク（Python、Rust SIMD、Verilog、HDC/VSA） | **研究進行中**: 継続的に開発中のプラットフォーム |
-| [SCPN Quantum Control](https://github.com/anulum/scpn-quantum-control) | エビデンスに基づく結合振動子同期の量子シミュレーション | **実験的**: 事前登録された研究プログラム |
+| [SCPN Quantum Control](https://github.com/anulum/scpn-quantum-control) | エビデンスに基づく結合振動子同期の量子シミュレーション | **実験的**: 実行前にプロトコルをコミットする研究プログラム |
 
 関連する制御・核融合研究は SCPN スイートにあります：
 [control](https://github.com/anulum/scpn-control)、
@@ -404,11 +404,11 @@ Python パッケージ、Rust 高速化エンジン、ドメインカーネル�
 ## スローガンではなくエビデンス
 
 否定的結果や帰無結果も、実在する場合は公開します。公開主張はスローガン
-ではなく、測定、事前登録プロトコル、生の結果パック、実行可能な検証などの
+ではなく、測定、実行前にコミットされたプロトコル、生の結果パック、実行可能な検証などの
 成果物に結び付けます。
 
 例：[scpn-quantum-control](https://github.com/anulum/scpn-quantum-control)
-にある事前登録済み量子制御プロトコルとハッシュ結合結果パック。
+にある実行前にコミットされた量子制御プロトコルとハッシュ結合結果パック。
 
 ## 作業原則
 
