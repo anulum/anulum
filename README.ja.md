@@ -230,6 +230,15 @@ flowchart LR
 - [SCPN Lattice Fusion Core](https://github.com/anulum/scpn-lattice-fusion-core): `公開 / アーキテクチャのみ`
 - [SCPN Muon Fusion Core](https://github.com/anulum/scpn-muon-fusion-core): `公開 / アーキテクチャのみ`
 
+**計画中のファミリー：核分裂・化学・ハイブリッド**（さらに 29 ファミリー、各ファミリーに専用リポジトリ、2026-09-13 承認。計画は作成済みで、リポジトリはまだ作成されていません）
+
+- **核分裂 (15)：** PWR、BWR、PHWR、HTGR、SFR、LFR、MSR、GFR、SCWR、チャネル型炉、研究炉、ヒートパイプ型マイクロ炉、ADS、増殖燃焼炉、原子力熱推進（NTP）。
+- **化学 (8)：** 化学反応速度論、触媒充填層、メタン水蒸気改質、水素製造プロセス、電気化学・生化学・光触媒・膜反応器。
+- **ハイブリッド (5)：** 原子力水素、ハイブリッドエネルギーシステム、化学プロセス連成、原子力海水淡水化、核融合プロセス熱。
+- **カタログ：** SCPN Reactor Catalogue（全ファミリーとそのエビデンス状態を生成するカタログ）。
+
+順序：ウェーブ A（化学反応速度論、カタログ、PWR）、続いてウェーブ B と C。リポジトリはグループの統治契約の批准後にのみ作成されるため、これらのファミリーにはまだコードがありません。アクセス：`計画中`
+
 </details>
 
 <details>
@@ -300,7 +309,7 @@ flowchart LR
 
 | グループ | 目標 | スポンサーシップの用途 |
 |---|---|---|
-| **01 · Reactor Systems** | 原子炉コンセプトの公開カタログと、各コンセプトを 3D/CAD で設計し、シミュレーションし、建設前に仮想試験できる **Reactor Studio**。25 の核融合ファミリーは現在公開済みで、核分裂・化学・ハイブリッドのファミリーは開発中です。検証済みのパラメトリック形状とオープン形式のメッシュ出力は現在利用可能で、次は完全な B-rep CAD、全ファミリーのレベル 0 物理、設計のシナリオ試験です。 | シミュレーション計算、CAD ツール、ドキュメント |
+| **01 · Reactor Systems** | 原子炉コンセプトの公開カタログと、各コンセプトを 3D/CAD で設計し、シミュレーションし、建設前に仮想試験できる **Reactor Studio**。25 の核融合ファミリーは現在公開済みで、さらに 29 の核分裂・化学・ハイブリッドのファミリーが計画済みです（計画は作成済み、リポジトリはこれから）。検証済みのパラメトリック形状とオープン形式のメッシュ出力は現在利用可能で、次は完全な B-rep CAD、全ファミリーのレベル 0 物理、設計のシナリオ試験です。 | シミュレーション計算、CAD ツール、ドキュメント |
 | **02 · Systems Integration and Control** | 全グループのスタジオを連携する **SCPN Studio Hub**：スタジオカタログ、ドメイン横断のエビデンス監査、すべての主張を実際の境界で表示し、ハードウェアに触れうる操作をフェイルクローズでゲートします。[scpn-control](https://github.com/anulum/scpn-control) と [scpn-phase-orchestrator](https://github.com/anulum/scpn-phase-orchestrator) も保守しています。 | CI、ハードウェア・イン・ザ・ループ再生、ドキュメント |
 | **03 · Agentic Coordination, Assurance and Continuity** | 旗艦：このページのすべてのプロジェクトを開発・検証する **自律型コーディング・検証システム** を、オープンなインフラとして 1.0 へ。[SYNAPSE CHANNEL](https://github.com/anulum/synapse-channel)（受領記録付きのエージェント協調）、[Rigor Foundry](https://github.com/anulum/rigor-foundry)（エビデンスに基づくレビュー）、[Director-AI](https://github.com/anulum/director-ai)（主張の根拠づけ）、[Remanentia](https://github.com/anulum/remanentia)（監査可能なメモリ）で構成されます。 | エージェント群のモデル・GPU 時間、評価ベンチマーク、CI |
 | **04 · SC Neuromorphic Computing** | **SNN Studio 1.0**：スパイキングネットワークのライフサイクル全体を扱うブラウザ IDE。ニューロンモデルの設計、ネットワーク構築、代理勾配による学習、SystemVerilog へのコンパイル、FPGA への合成までを行い、各実行のエビデンス記録を出力できます。[sc-neurocore](https://github.com/anulum/sc-neurocore) 上に構築され、現在は開発プレビューです。 | FPGA ボードと合成時間、測定ベンチ、CI |

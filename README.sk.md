@@ -282,6 +282,15 @@ kladie ich kotvy úrovne 0 vedľa seba.
 | [SCPN Lattice Fusion Core](https://github.com/anulum/scpn-lattice-fusion-core) | Riadená hranica pre výskum externe budenej mriežkovej fúzie | `VEREJNÝ / IBA ARCHITEKTÚRA` |
 | [SCPN Muon Fusion Core](https://github.com/anulum/scpn-muon-fusion-core) | Riadená hranica pre výskum miónmi katalyzovanej fúzie | `VEREJNÝ / IBA ARCHITEKTÚRA` |
 
+**Plánované rodiny: jadrové štiepne, chemické a hybridné** · ďalších 29 rodín, každá s vlastným repozitárom (schválené 13. 9. 2026); plány sú napísané, repozitáre ešte nevznikli
+
+- **Štiepne (15):** PWR, BWR, PHWR, HTGR, SFR, LFR, MSR, GFR, SCWR, kanálové reaktory, výskumné reaktory, mikroreaktory s tepelnými trubicami, ADS, breed-and-burn, jadrový tepelný pohon (NTP).
+- **Chemické (8):** chemická kinetika, katalytické lôžka, parný reforming metánu, výroba vodíka, elektrochemické, biochemické, fotokatalytické a membránové reaktory.
+- **Hybridné (5):** jadrový vodík, hybridné energetické systémy, spojené chemické procesy, jadrové odsoľovanie, procesné teplo z fúzie.
+- **Katalóg:** SCPN Reactor Catalogue, generovaný katalóg všetkých rodín s ich stavom dôkazov.
+
+Poradie dodania: vlna A (chemická kinetika, katalóg, PWR), potom vlny B a C. Repozitáre vzniknú až po ratifikácii riadiacej zmluvy skupiny, preto zatiaľ žiadna z týchto rodín nemá kód. Prístup: `PLÁNOVANÉ`.
+
 </details>
 
 <details>
@@ -366,7 +375,7 @@ darovať aj vecne.
 
 | Skupina | Cieľ | Sponzorstvo platí |
 |---|---|---|
-| **01 · Reactor Systems** | Verejný katalóg reaktorových konceptov a **Reactor Studio**, v ktorom sa každý koncept navrhne v 3D/CAD, nasimuluje a virtuálne otestuje skôr, než sa čokoľvek postaví. 25 fúznych rodín je verejných už dnes; štiepne, chemické a hybridné rodiny sú vo vývoji. Validovaná parametrická geometria s exportom meshov do otvorených formátov existuje dnes; nasleduje plné B-rep CAD, fyzika úrovne 0 pre každú rodinu a scenárové testy návrhu. | výpočty pre simulácie, CAD nástroje, dokumentácia |
+| **01 · Reactor Systems** | Verejný katalóg reaktorových konceptov a **Reactor Studio**, v ktorom sa každý koncept navrhne v 3D/CAD, nasimuluje a virtuálne otestuje skôr, než sa čokoľvek postaví. 25 fúznych rodín je verejných už dnes; ďalších 29 štiepnych, chemických a hybridných rodín je naplánovaných, plány sú napísané a repozitáre budú nasledovať. Validovaná parametrická geometria s exportom meshov do otvorených formátov existuje dnes; nasleduje plné B-rep CAD, fyzika úrovne 0 pre každú rodinu a scenárové testy návrhu. | výpočty pre simulácie, CAD nástroje, dokumentácia |
 | **02 · Systems Integration and Control** | **SCPN Studio Hub**, ktorý spája štúdiá všetkých skupín: katalóg štúdií, audit dôkazov naprieč doménami, každé tvrdenie zobrazené na svojej skutočnej hranici a fail-closed brána pre všetko, čo by sa mohlo dotknúť hardvéru. Skupina spravuje aj [scpn-control](https://github.com/anulum/scpn-control) a [scpn-phase-orchestrator](https://github.com/anulum/scpn-phase-orchestrator). | CI, hardware-in-the-loop replay, dokumentácia |
 | **03 · Agentic Coordination, Assurance and Continuity** | Vlajková loď: **autonómny kódovací a overovací systém**, ktorý vyvíja a overuje každý projekt na tejto stránke, dotiahnutý do verzie 1.0 ako otvorená infraštruktúra. Tvoria ho [SYNAPSE CHANNEL](https://github.com/anulum/synapse-channel) (koordinácia agentov s potvrdeniami), [Rigor Foundry](https://github.com/anulum/rigor-foundry) (review viazané na dôkazy), [Director-AI](https://github.com/anulum/director-ai) (ukotvenie tvrdení) a [Remanentia](https://github.com/anulum/remanentia) (auditovateľná pamäť). | čas modelov a GPU pre flotilu agentov, evaluačné benchmarky, CI |
 | **04 · SC Neuromorphic Computing** | **SNN Studio 1.0**, prehliadačové IDE pre celý životný cyklus spikových sietí: návrh modelov neurónov, stavba sietí, tréning so surogátnymi gradientmi, kompilácia do SystemVerilogu a syntéza na FPGA, s exportovateľným dôkazovým záznamom každého behu. Postavené na [sc-neurocore](https://github.com/anulum/sc-neurocore); dnes vo fáze development preview. | FPGA dosky a čas na syntézu, meracie pracovisko, CI |

@@ -286,6 +286,15 @@ Level-0-Anker nebeneinander.
 | [SCPN Lattice Fusion Core](https://github.com/anulum/scpn-lattice-fusion-core) | Kontrollierte Grenze für die Forschung an extern getriebener Gitterfusion | `ÖFFENTLICH / NUR ARCHITEKTUR` |
 | [SCPN Muon Fusion Core](https://github.com/anulum/scpn-muon-fusion-core) | Kontrollierte Grenze für die Forschung an myonkatalysierter Fusion | `ÖFFENTLICH / NUR ARCHITEKTUR` |
 
+**Geplante Familien: Kernspaltung, Chemie und Hybride** · 29 weitere Familien, je ein eigenes Repository (genehmigt am 13.09.2026); Pläne geschrieben, Repositories noch nicht angelegt
+
+- **Kernspaltung (15):** PWR, BWR, PHWR, HTGR, SFR, LFR, MSR, GFR, SCWR, Kanalreaktoren, Forschungsreaktoren, Heatpipe-Mikroreaktoren, ADS, Breed-and-Burn, nuklearer thermischer Antrieb (NTP).
+- **Chemie (8):** chemische Kinetik, katalytische Festbetten, Dampfreformierung von Methan, Wasserstoffprozesse, elektrochemische, biochemische, photokatalytische und Membranreaktoren.
+- **Hybride (5):** nuklearer Wasserstoff, hybride Energiesysteme, gekoppelte Chemieprozesse, nukleare Meerwasserentsalzung, Prozesswärme aus Fusion.
+- **Katalog:** SCPN Reactor Catalogue, ein generierter Katalog aller Familien mit ihrem Evidenzstand.
+
+Reihenfolge: Welle A (chemische Kinetik, Katalog, PWR), danach die Wellen B und C. Repositories werden erst nach der Ratifizierung des Gruppenvertrags angelegt; keine dieser Familien hat daher bisher Code. Zugang: `GEPLANT`.
+
 </details>
 
 <details>
@@ -371,7 +380,7 @@ Geräte können auch als Sachspende gegeben werden.
 
 | Gruppe | Ziel | Sponsoring bezahlt |
 |---|---|---|
-| **01 · Reactor Systems** | Ein öffentlicher Katalog von Reaktorkonzepten und ein **Reactor Studio**, in dem jedes Konzept in 3D/CAD entworfen, simuliert und virtuell getestet wird, bevor etwas gebaut wird. Die 25 Fusionsfamilien sind heute öffentlich; Spaltungs-, Chemie- und Hybridfamilien sind in Entwicklung. Validierte parametrische Geometrie mit Mesh-Export in offene Formate gibt es heute; als Nächstes folgen vollständiges B-rep-CAD, Level-0-Physik für jede Familie und Szenariotests eines Entwurfs. | Rechenzeit für Simulationen, CAD-Werkzeuge, Dokumentation |
+| **01 · Reactor Systems** | Ein öffentlicher Katalog von Reaktorkonzepten und ein **Reactor Studio**, in dem jedes Konzept in 3D/CAD entworfen, simuliert und virtuell getestet wird, bevor etwas gebaut wird. Die 25 Fusionsfamilien sind heute öffentlich; 29 weitere Spaltungs-, Chemie- und Hybridfamilien sind geplant, die Pläne sind geschrieben, die Repositories folgen. Validierte parametrische Geometrie mit Mesh-Export in offene Formate gibt es heute; als Nächstes folgen vollständiges B-rep-CAD, Level-0-Physik für jede Familie und Szenariotests eines Entwurfs. | Rechenzeit für Simulationen, CAD-Werkzeuge, Dokumentation |
 | **02 · Systems Integration and Control** | Der **SCPN Studio Hub**, der die Studios aller Gruppen verbindet: ein Studio-Katalog, domänenübergreifend geprüfte Evidenz, jede Aussage an ihrer tatsächlichen Grenze dargestellt und ein Fail-closed-Gate für alles, was Hardware berühren könnte. Die Gruppe pflegt auch [scpn-control](https://github.com/anulum/scpn-control) und [scpn-phase-orchestrator](https://github.com/anulum/scpn-phase-orchestrator). | CI, Hardware-in-the-Loop-Replay, Dokumentation |
 | **03 · Agentic Coordination, Assurance and Continuity** | Das Flaggschiff: das **autonome Programmier- und Verifikationssystem**, das jedes Projekt dieser Seite entwickelt und prüft, als offene Infrastruktur bis Version 1.0. Es besteht aus [SYNAPSE CHANNEL](https://github.com/anulum/synapse-channel) (Agentenkoordination mit Quittungen), [Rigor Foundry](https://github.com/anulum/rigor-foundry) (evidenzgebundenes Review), [Director-AI](https://github.com/anulum/director-ai) (Verankerung von Aussagen) und [Remanentia](https://github.com/anulum/remanentia) (prüfbares Gedächtnis). | Modell- und GPU-Zeit für die Agentenflotte, Evaluations-Benchmarks, CI |
 | **04 · SC Neuromorphic Computing** | **SNN Studio 1.0**, die Browser-IDE für den ganzen Lebenszyklus spikender Netze: Neuronenmodelle entwerfen, Netze bauen, mit Surrogatgradienten trainieren, nach SystemVerilog kompilieren und auf FPGA synthetisieren, mit einem exportierbaren Evidenzdatensatz für jeden Lauf. Aufgebaut auf [sc-neurocore](https://github.com/anulum/sc-neurocore); heute eine Entwicklungsvorschau. | FPGA-Boards und Synthesezeit, Messplatz, CI |

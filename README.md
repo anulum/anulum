@@ -201,7 +201,7 @@ account lists more public repositories than the map: the 34 mapped public
 projects plus this profile repository and a few forks kept for reference.
 
 **Access key:** `PUBLIC` · `PUBLIC / ARCHITECTURE-ONLY` · `PRIVATE` ·
-`PRIVATE / PROPRIETARY`
+`PRIVATE / PROPRIETARY` · `PLANNED` (plan written, no repository yet)
 
 <details>
 <summary><strong>01 · SCPN Reactor Systems</strong> &nbsp; 25 public repositories</summary>
@@ -280,6 +280,42 @@ sets their level-0 anchors side by side.
 |---|---|---|
 | [SCPN Lattice Fusion Core](https://github.com/anulum/scpn-lattice-fusion-core) | Governed boundary for externally driven lattice-confinement fusion research | `PUBLIC / ARCHITECTURE-ONLY` |
 | [SCPN Muon Fusion Core](https://github.com/anulum/scpn-muon-fusion-core) | Governed boundary for muon-catalysed fusion research | `PUBLIC / ARCHITECTURE-ONLY` |
+
+**Planned families: nuclear fission, chemical and hybrid** · 29 further families, one repository each (approved 2026-09-13); plans written, repositories not yet created
+
+The catalogue is being extended beyond fusion. Each family below has a written plan and a place in delivery waves A to C. Repositories are created only after the group's governing contract is ratified, so none of these exists as code yet.
+
+| Family | Scope | Wave | Access |
+|---|---|---|---|
+| SCPN Reactor Catalogue | Generated catalogue of every family with its evidence state | A | `PLANNED` |
+| SCPN Chemical Kinetics Core | Gas-phase kinetics in ideal stirred-tank and plug-flow reactors | A | `PLANNED` |
+| SCPN PWR Core | Pressurised light-water reactors | A | `PLANNED` |
+| SCPN HTGR Core | Graphite-moderated, helium-cooled TRISO reactors with process-heat interface | B | `PLANNED` |
+| SCPN SFR Core | Sodium-cooled fast reactors | B | `PLANNED` |
+| SCPN MSR Core | Molten-salt liquid-fuel reactors, thermal and fast | B | `PLANNED` |
+| SCPN Heat-Pipe Core | Solid-core heat-pipe microreactors | B | `PLANNED` |
+| SCPN Hydrogen Process Core | Thermochemical and electrolytic hydrogen production cycles | B | `PLANNED` |
+| SCPN Methane Reformer Core | Steam methane reforming reactors | B–C | `PLANNED` |
+| SCPN Nuclear Hydrogen Core | Fission reactor coupled to hydrogen production | B | `PLANNED` |
+| SCPN BWR Core | Boiling-water reactors with void feedback | C | `PLANNED` |
+| SCPN PHWR Core | Pressurised heavy-water pressure-tube reactors | C | `PLANNED` |
+| SCPN LFR Core | Lead and lead-bismuth cooled fast reactors | C | `PLANNED` |
+| SCPN GFR Core | Gas-cooled fast reactors | C | `PLANNED` |
+| SCPN SCWR Core | Supercritical-water-cooled reactors | C | `PLANNED` |
+| SCPN Channel Core | Graphite-moderated channel-type reactors | C | `PLANNED` |
+| SCPN Research Reactor Core | Research reactors, including pulsed operation | C | `PLANNED` |
+| SCPN ADS Core | Subcritical reactors driven by an accelerator neutron source | C | `PLANNED` |
+| SCPN Breed-and-Burn Core | Breed-and-burn and travelling-wave fast reactors | C | `PLANNED` |
+| SCPN NTP Core | Nuclear thermal propulsion reactors | C | `PLANNED` |
+| SCPN Catalytic Bed Core | Packed catalytic beds: effectiveness factors, pressure drop | C | `PLANNED` |
+| SCPN Electrochemical Core | Electrolyser and fuel-cell reactors | C | `PLANNED` |
+| SCPN Biochemical Core | Enzymatic and fermentation reactors | C | `PLANNED` |
+| SCPN Photocatalytic Core | Light-driven photocatalytic reactors | C | `PLANNED` |
+| SCPN Membrane Core | Reactors coupling reaction with membrane separation | C | `PLANNED` |
+| SCPN Hybrid Energy Core | Nuclear, renewable and storage energy systems | C | `PLANNED` |
+| SCPN Chemical Process Hybrid Core | Coupled chemical plants, such as reforming with carbon capture | C | `PLANNED` |
+| SCPN Nuclear Desalination Core | Fission reactor coupled to seawater desalination | C | `PLANNED` |
+| SCPN Fusion Process Heat Core | Fusion driver supplying heat to chemical processes | C | `PLANNED` |
 
 </details>
 
@@ -364,7 +400,7 @@ quarterly note. The hardware the lab needs is listed item by item in
 
 | Group | Goal | Sponsorship pays for |
 |---|---|---|
-| **01 · Reactor Systems** | A public catalogue of reactor concepts and a **Reactor Studio** in which each concept is designed in 3D/CAD, simulated and tested virtually before anything is built. The 25 fusion families are public today, and fission, chemical and hybrid families are in development. Validated parametric geometry with open-format mesh export exists today; full B-rep CAD, level-0 physics for every family and scenario tests of a design come next. | simulation compute, CAD tooling, documentation |
+| **01 · Reactor Systems** | A public catalogue of reactor concepts and a **Reactor Studio** in which each concept is designed in 3D/CAD, simulated and tested virtually before anything is built. The 25 fusion families are public today; 29 fission, chemical and hybrid families are planned, with plans written and repositories to follow. Validated parametric geometry with open-format mesh export exists today; full B-rep CAD, level-0 physics for every family and scenario tests of a design come next. | simulation compute, CAD tooling, documentation |
 | **02 · Systems Integration and Control** | The **SCPN Studio Hub**, which federates the studios of all groups: a studio catalogue, evidence audited across domains, every claim shown at its true boundary, and fail-closed gating of anything that could touch hardware. The group also maintains [scpn-control](https://github.com/anulum/scpn-control) and [scpn-phase-orchestrator](https://github.com/anulum/scpn-phase-orchestrator). | CI, hardware-in-the-loop replay, documentation |
 | **03 · Agentic Coordination, Assurance and Continuity** | The flagship: the **autonomous coding and verification system** that builds and checks every project on this page, taken to 1.0 as open infrastructure. It combines [SYNAPSE CHANNEL](https://github.com/anulum/synapse-channel) (agent coordination with receipts), [Rigor Foundry](https://github.com/anulum/rigor-foundry) (evidence-bound review), [Director-AI](https://github.com/anulum/director-ai) (grounding of claims) and [Remanentia](https://github.com/anulum/remanentia) (auditable memory). | model and GPU time for the agent fleet, evaluation benchmarks, CI |
 | **04 · SC Neuromorphic Computing** | **SNN Studio 1.0**, the browser IDE for the whole spiking-network lifecycle: design neuron models, build networks, train with surrogate gradients, compile to SystemVerilog and synthesise to FPGA, with an exportable evidence record for every run. Built on [sc-neurocore](https://github.com/anulum/sc-neurocore); a development preview today. | FPGA boards and synthesis time, measurement bench, CI |
