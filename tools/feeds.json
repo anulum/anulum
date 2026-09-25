@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-23",
+  "fetched_at": "2026-09-25",
   "releases": [
     {
       "project": "SYNAPSE CHANNEL",
@@ -39,13 +39,13 @@
   ],
   "zenodo": [
     {
-      "id": 22383579,
-      "doi": "10.5281/zenodo.22383579",
+      "id": 22924555,
+      "doi": "10.5281/zenodo.22924555",
       "conceptdoi": "10.5281/zenodo.20801559",
       "title": "SYNAPSE CHANNEL: Local-first multi-agent coordination bus",
-      "date": "2026-09-05",
+      "date": "2026-09-23",
       "type": "software/",
-      "version": "0.99.26",
+      "version": "0.99.27",
       "license": "agpl-3.0-or-later"
     },
     {

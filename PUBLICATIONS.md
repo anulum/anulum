@@ -7,7 +7,7 @@
 [Publications hub on anulum.li](https://anulum.li/papers/) ·
 [Releases and publications feed](https://anulum.li/news/)
 
-Zenodo inventory read on 2026-09-23: 28 records whose creator carries the ORCID
+Zenodo inventory read on 2026-09-25: 28 records whose creator carries the ORCID
 above, 17 of publication type and 11 software archives. "Published"
 on this page means publicly deposited with a resolvable record. It does not imply
 journal acceptance or peer review. Titles are the records' own.
@@ -41,7 +41,7 @@ GitHub releases; the version in this table is the one the cited record represent
 
 | Date | Software | Archived version | DOI |
 |---|---|---:|---|
-| 2026-09-05 | Synapse Channel | 0.99.26 | [10.5281/zenodo.22383579](https://doi.org/10.5281/zenodo.22383579) |
+| 2026-09-23 | Synapse Channel | 0.99.27 | [10.5281/zenodo.22924555](https://doi.org/10.5281/zenodo.22924555) |
 | 2026-09-05 | SCPN Phase Orchestrator | v1.4.3 | [10.5281/zenodo.22355102](https://doi.org/10.5281/zenodo.22355102) |
 | 2026-07-29 | Director-AI | 3.21.0 | [10.5281/zenodo.21691551](https://doi.org/10.5281/zenodo.21691551) |
 | 2026-07-05 | SC-NeuroCore | 3.13.3 | [10.5281/zenodo.21198962](https://doi.org/10.5281/zenodo.21198962) |
