@@ -351,6 +351,32 @@ Live-Ansicht dieses Portfolios auf anulum.li, filterbar und mit Karte: [anulum.l
 
 </details>
 
+## Sponsoring-Ziele
+
+Die offene Arbeit wird über [GitHub Sponsors](https://github.com/sponsors/anulum) finanziert.
+Rund **USD 25'000 pro Monat** sind das Minimum, mit dem das Labor ohne
+Unterbrechung läuft: Rechenleistung, GPU-, QPU- und FPGA-Zeit, Hardware, CI und
+Werkzeuge. Das sind Laborkosten, kein Gehalt. Über diesem Minimum skaliert die
+Arbeit. Die Forschung wird von unserem eigenen autonomen Programmier- und
+Verifikationssystem entwickelt und geprüft, dem Flaggschiff des Programms; mehr
+Rechenleistung wird damit direkt zu schnelleren, geprüften Ergebnissen.
+Sponsoring bezahlt das Labor, es kauft keine Ergebnisse. Befunde werden
+veröffentlicht, wie immer sie ausfallen.
+
+Jede Forschungsgruppe hat ein konkretes Ziel. Wer eine bestimmte Gruppe
+unterstützen will, nennt sie beim Sponsoring; das Geld wird dort eingesetzt und
+im Quartalsbericht ausgewiesen. Die Hardware, die das Labor braucht, steht
+Position für Position in [LAB_EQUIPMENT.md](LAB_EQUIPMENT.md) (Englisch);
+Geräte können auch als Sachspende gegeben werden.
+
+| Gruppe | Ziel | Sponsoring bezahlt |
+|---|---|---|
+| **01 · Reactor Systems** | Ein öffentlicher Katalog von Reaktorkonzepten und ein **Reactor Studio**, in dem jedes Konzept in 3D/CAD entworfen, simuliert und virtuell getestet wird, bevor etwas gebaut wird. Die 25 Fusionsfamilien sind heute öffentlich; Spaltungs-, Chemie- und Hybridfamilien sind in Entwicklung. Validierte parametrische Geometrie mit Mesh-Export in offene Formate gibt es heute; als Nächstes folgen vollständiges B-rep-CAD, Level-0-Physik für jede Familie und Szenariotests eines Entwurfs. | Rechenzeit für Simulationen, CAD-Werkzeuge, Dokumentation |
+| **02 · Systems Integration and Control** | Der **SCPN Studio Hub**, der die Studios aller Gruppen verbindet: ein Studio-Katalog, domänenübergreifend geprüfte Evidenz, jede Aussage an ihrer tatsächlichen Grenze dargestellt und ein Fail-closed-Gate für alles, was Hardware berühren könnte. Die Gruppe pflegt auch [scpn-control](https://github.com/anulum/scpn-control) und [scpn-phase-orchestrator](https://github.com/anulum/scpn-phase-orchestrator). | CI, Hardware-in-the-Loop-Replay, Dokumentation |
+| **03 · Agentic Coordination, Assurance and Continuity** | Das Flaggschiff: das **autonome Programmier- und Verifikationssystem**, das jedes Projekt dieser Seite entwickelt und prüft, als offene Infrastruktur bis Version 1.0. Es besteht aus [SYNAPSE CHANNEL](https://github.com/anulum/synapse-channel) (Agentenkoordination mit Quittungen), [Rigor Foundry](https://github.com/anulum/rigor-foundry) (evidenzgebundenes Review), [Director-AI](https://github.com/anulum/director-ai) (Verankerung von Aussagen) und [Remanentia](https://github.com/anulum/remanentia) (prüfbares Gedächtnis). | Modell- und GPU-Zeit für die Agentenflotte, Evaluations-Benchmarks, CI |
+| **04 · SC Neuromorphic Computing** | **SNN Studio 1.0**, die Browser-IDE für den ganzen Lebenszyklus spikender Netze: Neuronenmodelle entwerfen, Netze bauen, mit Surrogatgradienten trainieren, nach SystemVerilog kompilieren und auf FPGA synthetisieren, mit einem exportierbaren Evidenzdatensatz für jeden Lauf. Aufgebaut auf [sc-neurocore](https://github.com/anulum/sc-neurocore); heute eine Entwicklungsvorschau. | FPGA-Boards und Synthesezeit, Messplatz, CI |
+| **05 · SCPN Quantum Computing** | **Quantum Studio**, eine Arbeitsumgebung auf [scpn-quantum-control](https://github.com/anulum/scpn-quantum-control): eine Karte dessen, was existiert und wie es zusammenhängt, Schaltungen, die auf Simulatoren und echter Quantenhardware entworfen und ausgeführt werden, und jedes Ergebnis mit Rohdaten, Hashes und vorregistriertem Protokoll, negative Ergebnisse eingeschlossen. | QPU-Zeit, GPU-Simulation, Dokumentation |
+
 ## Forschungsergebnisse
 
 | Oberfläche | Verifizierter Weg |

@@ -291,6 +291,21 @@ flowchart LR
 </details>
 
 <a id="engineering-practice"></a>
+## スポンサーシップの目標
+
+オープンな研究は [GitHub Sponsors](https://github.com/sponsors/anulum) を通じて支えられています。
+ラボを途切れなく運営するための最低額は **月額およそ 25,000 米ドル** です。内訳は計算資源、GPU・QPU・FPGA の利用時間、ハードウェア、CI、ツールであり、給与ではなくラボの運営費です。この最低額を超えれば、研究は拡張できます。研究は私たち自身の自律型コーディング・検証システム（本プログラムの旗艦）によって開発・検証されているため、計算資源の追加はそのまま、より速く検証された成果につながります。スポンサーシップはラボの費用であり、結果を買うものではありません。結果はどちらに転んでも公開します。
+
+各研究グループには具体的な目標が一つあります。特定のグループを支援したい場合は、スポンサー時にそのグループ名をお知らせください。資金はそのグループで使われ、四半期報告で報告します。ラボに必要なハードウェアは [LAB_EQUIPMENT.md](LAB_EQUIPMENT.md)（英語）に品目ごとに記載しており、機器の現物提供も歓迎します。
+
+| グループ | 目標 | スポンサーシップの用途 |
+|---|---|---|
+| **01 · Reactor Systems** | 原子炉コンセプトの公開カタログと、各コンセプトを 3D/CAD で設計し、シミュレーションし、建設前に仮想試験できる **Reactor Studio**。25 の核融合ファミリーは現在公開済みで、核分裂・化学・ハイブリッドのファミリーは開発中です。検証済みのパラメトリック形状とオープン形式のメッシュ出力は現在利用可能で、次は完全な B-rep CAD、全ファミリーのレベル 0 物理、設計のシナリオ試験です。 | シミュレーション計算、CAD ツール、ドキュメント |
+| **02 · Systems Integration and Control** | 全グループのスタジオを連携する **SCPN Studio Hub**：スタジオカタログ、ドメイン横断のエビデンス監査、すべての主張を実際の境界で表示し、ハードウェアに触れうる操作をフェイルクローズでゲートします。[scpn-control](https://github.com/anulum/scpn-control) と [scpn-phase-orchestrator](https://github.com/anulum/scpn-phase-orchestrator) も保守しています。 | CI、ハードウェア・イン・ザ・ループ再生、ドキュメント |
+| **03 · Agentic Coordination, Assurance and Continuity** | 旗艦：このページのすべてのプロジェクトを開発・検証する **自律型コーディング・検証システム** を、オープンなインフラとして 1.0 へ。[SYNAPSE CHANNEL](https://github.com/anulum/synapse-channel)（受領記録付きのエージェント協調）、[Rigor Foundry](https://github.com/anulum/rigor-foundry)（エビデンスに基づくレビュー）、[Director-AI](https://github.com/anulum/director-ai)（主張の根拠づけ）、[Remanentia](https://github.com/anulum/remanentia)（監査可能なメモリ）で構成されます。 | エージェント群のモデル・GPU 時間、評価ベンチマーク、CI |
+| **04 · SC Neuromorphic Computing** | **SNN Studio 1.0**：スパイキングネットワークのライフサイクル全体を扱うブラウザ IDE。ニューロンモデルの設計、ネットワーク構築、代理勾配による学習、SystemVerilog へのコンパイル、FPGA への合成までを行い、各実行のエビデンス記録を出力できます。[sc-neurocore](https://github.com/anulum/sc-neurocore) 上に構築され、現在は開発プレビューです。 | FPGA ボードと合成時間、測定ベンチ、CI |
+| **05 · SCPN Quantum Computing** | **Quantum Studio**：[scpn-quantum-control](https://github.com/anulum/scpn-quantum-control) 上のワークベンチ。何が存在しどうつながるかのマップ、シミュレーターと実機の量子ハードウェアで設計・実行する回路、そして生データ、ハッシュ、事前登録プロトコルを伴うすべての結果（否定的な結果を含む）。 | QPU 時間、GPU シミュレーション、ドキュメント |
+
 ## エンジニアリング標準
 
 <p>

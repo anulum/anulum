@@ -347,6 +347,31 @@ kladie ich kotvy úrovne 0 vedľa seba.
 
 </details>
 
+## Ciele sponzorstva
+
+Otvorená práca je financovaná cez [GitHub Sponsors](https://github.com/sponsors/anulum).
+Približne **25 000 USD mesačne** je minimum, pri ktorom lab beží bez prerušenia:
+výpočty, čas na GPU, QPU a FPGA, hardvér, CI a nástroje. Sú to náklady labu,
+nie plat. Nad toto minimum sa práca dá škálovať. Výskum vyvíja a overuje náš
+vlastný autonómny kódovací a overovací systém, vlajková loď celého programu,
+takže ďalší výpočtový výkon sa priamo mení na rýchlejšie a overené výsledky.
+Sponzorstvo platí lab, nekupuje výsledky. Zistenia zverejňujeme, nech vyjdú
+akokoľvek.
+
+Každá výskumná skupina má jeden konkrétny cieľ. Ak chcete podporiť konkrétnu
+skupinu, uveďte ju pri sponzorovaní; peniaze sa minú tam a vykážeme ich
+v štvrťročnej správe. Hardvér, ktorý lab potrebuje, je rozpísaný položku po
+položke v [LAB_EQUIPMENT.md](LAB_EQUIPMENT.md) (anglicky); vybavenie možno
+darovať aj vecne.
+
+| Skupina | Cieľ | Sponzorstvo platí |
+|---|---|---|
+| **01 · Reactor Systems** | Verejný katalóg reaktorových konceptov a **Reactor Studio**, v ktorom sa každý koncept navrhne v 3D/CAD, nasimuluje a virtuálne otestuje skôr, než sa čokoľvek postaví. 25 fúznych rodín je verejných už dnes; štiepne, chemické a hybridné rodiny sú vo vývoji. Validovaná parametrická geometria s exportom meshov do otvorených formátov existuje dnes; nasleduje plné B-rep CAD, fyzika úrovne 0 pre každú rodinu a scenárové testy návrhu. | výpočty pre simulácie, CAD nástroje, dokumentácia |
+| **02 · Systems Integration and Control** | **SCPN Studio Hub**, ktorý spája štúdiá všetkých skupín: katalóg štúdií, audit dôkazov naprieč doménami, každé tvrdenie zobrazené na svojej skutočnej hranici a fail-closed brána pre všetko, čo by sa mohlo dotknúť hardvéru. Skupina spravuje aj [scpn-control](https://github.com/anulum/scpn-control) a [scpn-phase-orchestrator](https://github.com/anulum/scpn-phase-orchestrator). | CI, hardware-in-the-loop replay, dokumentácia |
+| **03 · Agentic Coordination, Assurance and Continuity** | Vlajková loď: **autonómny kódovací a overovací systém**, ktorý vyvíja a overuje každý projekt na tejto stránke, dotiahnutý do verzie 1.0 ako otvorená infraštruktúra. Tvoria ho [SYNAPSE CHANNEL](https://github.com/anulum/synapse-channel) (koordinácia agentov s potvrdeniami), [Rigor Foundry](https://github.com/anulum/rigor-foundry) (review viazané na dôkazy), [Director-AI](https://github.com/anulum/director-ai) (ukotvenie tvrdení) a [Remanentia](https://github.com/anulum/remanentia) (auditovateľná pamäť). | čas modelov a GPU pre flotilu agentov, evaluačné benchmarky, CI |
+| **04 · SC Neuromorphic Computing** | **SNN Studio 1.0**, prehliadačové IDE pre celý životný cyklus spikových sietí: návrh modelov neurónov, stavba sietí, tréning so surogátnymi gradientmi, kompilácia do SystemVerilogu a syntéza na FPGA, s exportovateľným dôkazovým záznamom každého behu. Postavené na [sc-neurocore](https://github.com/anulum/sc-neurocore); dnes vo fáze development preview. | FPGA dosky a čas na syntézu, meracie pracovisko, CI |
+| **05 · SCPN Quantum Computing** | **Quantum Studio**, pracovné prostredie nad [scpn-quantum-control](https://github.com/anulum/scpn-quantum-control): mapa toho, čo existuje a ako to súvisí, obvody navrhnuté a spustené na simulátoroch aj na skutočnom kvantovom hardvéri, a každý výsledok zabalený so surovými dátami, hashmi a vopred registrovaným protokolom, vrátane negatívnych výsledkov. | čas na QPU, GPU simulácie, dokumentácia |
+
 ## Výskumné výstupy
 
 | Plocha | Overená cesta |
