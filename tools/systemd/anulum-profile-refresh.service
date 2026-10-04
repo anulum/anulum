@@ -12,8 +12,8 @@ Wants=network-online.target
 
 [Service]
 Type=oneshot
-WorkingDirectory=/media/anulum/GOTM/aaa_God_of_the_Math_Collection/03_CODE/ANULUM
-ExecStart=/usr/bin/bash /media/anulum/GOTM/aaa_God_of_the_Math_Collection/03_CODE/ANULUM/tools/refresh_profile.sh
+WorkingDirectory=/media/anulum/GOTM/aaa_God_of_the_Math_Collection/03_CODE/ANULUM-COMPANY-OPERATIONS/repositories/ANULUM
+ExecStart=/usr/bin/bash /media/anulum/GOTM/aaa_God_of_the_Math_Collection/03_CODE/ANULUM-COMPANY-OPERATIONS/repositories/ANULUM/tools/refresh_profile.sh
 Environment=PYTHONUNBUFFERED=1
 TimeoutStartSec=15min
 Nice=10
