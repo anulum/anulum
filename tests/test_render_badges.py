@@ -1,4 +1,10 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
+# Commercial license available
+# © Concepts 1996–2026 Miroslav Šotek. All rights reserved.
+# © Code 2020–2026 Miroslav Šotek. All rights reserved.
+# ORCID: 0009-0009-3560-0851
+# Contact: www.anulum.li | protoscience@anulum.li
+# ANULUM registry-driven badge checks
 
 import json
 import re
@@ -46,8 +52,10 @@ class RenderBadgesTests(unittest.TestCase):
                 self.rendered[badges.output_path(entry)],
                 name,
             )
+        repositories = sum(len(group["repositories"]) for group in self.data["portfolios"])
         self.assertIn(
-            "<title>39: MAPPED REPOSITORIES</title>", self.rendered[badges.OUT_DIR / "mapped-repositories.svg"]
+            f"<title>{repositories}: MAPPED REPOSITORIES</title>",
+            self.rendered[badges.OUT_DIR / "mapped-repositories.svg"],
         )
 
     def test_manifest_change_changes_the_badge(self) -> None:

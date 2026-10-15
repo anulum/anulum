@@ -42,13 +42,7 @@ Prehľad osobného profilu GitHub
   <a href="#spolupráca">Spolupráca</a>
 </p>
 
-Nezávislý výskumník a systémový inžinier v [Anulum Institute](https://anulum.li)
-vo Švajčiarsku. Program poháňa **jeden motor**: autonómny kódovací a overovací
-systém, ktorý vyvíja, testuje a reviduje projekty na tejto stránke a viaže ich
-tvrdenia na dôkazy. Motor pracuje v **štyroch doménach**: reaktorové systémy,
-systémová integrácia a riadenie, neuromorfné výpočty a kvantové výpočty.
-Tvrdenia majú iba takú hodnotu, akú majú merania, artefakty alebo overenie,
-ktoré ich podporujú.
+Nezávislý výskumník a systémový inžinier pôsobiaci vo Švajčiarsku. Pod menom Anulum vyvíjam vedecký softvér a riadenú výskumnú organizáciu. Päť aktívnych skupín pokrýva reaktorové systémy, integráciu a riadenie, koordináciu a kontrolu agentov, neuromorfné a kvantové výpočty. Šiesta skupina Scientific Discovery and Experimentation sa formuje. Vydaný softvér, architektonické práce, vývoj world models a zamýšľané hardvérové výstupy majú samostatné hranice dôkazov. Výskumný inštitút a spoločnosť ponúkame na spoločné založenie s partnermi.
 
 <table>
   <tr>
@@ -109,7 +103,7 @@ vedeckej kvality.
 
 <table>
   <tr>
-    <td width="33%"><strong>Reaktorové portfólio</strong><br><sub>Konsolidácia spoločných jadier a riadenej pravdy zariadení v 25 verejných reaktorových repozitároch.</sub></td>
+    <td width="33%"><strong>Reaktorové portfólio</strong><br><sub>Konsolidácia spoločných jadier a riadenej pravdy zariadení v 26 verejných reaktorových repozitároch.</sub></td>
     <td width="33%"><strong>Spoľahlivosť agentov</strong><br><sub>Spojenie koordinácie, pamäte, overovania odpovedí, kontroly akcií a dôkazov o repozitároch bez zotretia hraníc vlastníctva.</sub></td>
     <td width="33%"><strong>Od výskumu k hardvéru</strong><br><sub>Vedecké modely prevedené cez natívnu akceleráciu, formálne kontroly, RTL, hardvérové behy a kontrolovateľné balíky výsledkov.</sub></td>
   </tr>
@@ -156,206 +150,259 @@ Neznamenajú akademickú afiliáciu, externú validáciu, financovanie ani ocene
 
 ```mermaid
 flowchart LR
-    A["01 · Kontrola<br/>Rigor Foundry"] --> B["02 · Ochrana<br/>Director-AI"] --> C["03 · Koordinácia<br/>Synapse Channel"] --> D["04 · Výpočet<br/>SC-NeuroCore · SCPN"]
+    Q["SCPN Quantum Control"] -. "optional SNN adapter" .-> N["SC-NeuroCore"]
+    Q -. "optional studio" .-> S["Studio Platform package"]
+    N -. "optional federation" .-> S
+    D["Director-AI"] -. "optional honesty extra" .-> S
+    C["SCPN Control"] -. "optional fusion extra" .-> F["SCPN Fusion Core"]
+    R["Rigor Foundry · repository analysis"]
 ```
 
-<table>
-  <tr>
-    <td width="25%"><strong>01 · Kontrola</strong><br><sub>Rigor Foundry zistí, čo je pokazené, nepreukázané alebo nebezpečné tvrdiť.</sub></td>
-    <td width="25%"><strong>02 · Ochrana</strong><br><sub>Director-AI posúdi výstup modelu skôr, než sa mu dôveruje.</sub></td>
-    <td width="25%"><strong>03 · Koordinácia</strong><br><sub>Synapse Channel spravuje tvrdenia, schránky, plány a potvrdenia.</sub></td>
-    <td width="25%"><strong>04 · Výpočet</strong><br><sub>SC-NeuroCore a SCPN vykonávajú vedeckú, fyzikálnu a hardvérovú prácu.</sub></td>
-  </tr>
-</table>
-
-Výskum, validácia a produktová pripravenosť zostávajú oddelené. Aktívny vývoj
-nie je tvrdením o pripravenosti.
+Šípky označujú deklarované voliteľné softvérové rozhrania z architektonických záznamov skupín, nie otestovaný uzavretý vedecký cyklus. Rigor Foundry analyzuje repozitáre; nezavádzame mu vymyslenú runtime závislosť. Každá doména si ponecháva modely a oprávnenie k hardvéru. Studio Platform je publikovaný balík so súkromným repozitárom. Benchmark modálneho tlmenia siete Phase Orchestrator bol stiahnutý 12. októbra 2026; tento profil nedeklaruje výsledok na reálnej sieti ani kvantovú výhodu.
 
 ## Mapa ekosystému
 
-<p align="center">
-  <img alt="39 zmapovaných repozitárov" src="assets/badges/mapped-repositories.sk.svg">
-  <img alt="5 portfólií" src="assets/badges/portfolios.sk.svg">
-  <img alt="34 verejných projektov" src="assets/badges/public-projects.sk.svg">
-  <img alt="6 súkromných systémov" src="assets/badges/private-systems.sk.svg">
-</p>
+<!-- profile-catalogue:inventory:start -->
+**Dátovaný inventár: 2026-10-15**
+
+97 repozitárov portfólia: 37 verejných, 6 súkromných a 54 lokálne inicializovaných, nezverejnených. Ďalších 42 položiek katalógu opisuje balíky, moduly, pracoviská alebo architektonické ciele. Na všetkých sa pracuje.
+
+Deklarácie skupín sú z 12.–13. októbra; prítomnosť repozitárov a verejnosť boli overené 15. októbra 2026. Licencie sú deklarácie zdrojov, nie právny audit. Vydanie balíka a kvalifikácia hardvéru sú samostatné veci.
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/ecosystem-map-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="assets/ecosystem-map-light.svg">
-    <img src="assets/ecosystem-map-dark.svg" width="1200" alt="Portfólio Anulum s piatimi nezávislými skupinami repozitárov">
-  </picture>
+  <img alt="Portfolio repositories" src="assets/badges/mapped-repositories.svg">
+  <img alt="Research groups" src="assets/badges/portfolios.svg">
+  <img alt="Public repositories" src="assets/badges/public-projects.svg">
+  <img alt="Private repositories" src="assets/badges/private-systems.svg">
 </p>
 
-Mapa obsahuje 39 portfóliových repozitárov: 33 verejných repozitárov a šesť
-súkromných produktových plôch. [HushLine](https://github.com/anulum/HushLine)
-je samostatný verejný nástroj mimo piatich portfólií. Spojnice znázorňujú
-zmluvné, integračné, dôkazové a auditné vzťahy. Nespájajú vlastníctvo a
-neznamenajú vedeckú validáciu, prevádzkovú pripravenosť ani oprávnenie na
-fyzické riadenie. Počty overené <!-- verified-at -->2026-10-15<!-- /verified-at -->.
-Interaktívna verzia tejto mapy, v ktorej je každý registrovaný projekt riadkom
-s filtrami podľa skupiny, reaktorovej rodiny, viditeľnosti, životného cyklu a
-dôkazov, je na [anulum.li/portfolio/](https://anulum.li/portfolio/); každé
-portfólio nižšie odkazuje na svoj vlastný pohľad.
-Účet uvádza viac verejných repozitárov než mapa: 34 zmapovaných verejných
-projektov plus tento profilový repozitár a niekoľko forkov ponechaných na
-referenciu.
+<p align="center"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/ecosystem-map-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/ecosystem-map-light.svg">
+  <img src="assets/ecosystem-map-dark.svg" width="1200" alt="Anulum: six research groups">
+</picture></p>
 
-**Stavy:** `VEREJNÝ` · `VEREJNÝ / IBA ARCHITEKTÚRA` · `SÚKROMNÝ` ·
-`SÚKROMNÝ / PROPRIETÁRNY`
+Detailný atlas je integrovaný v tomto repozitári. Jeho 196 položiek zahŕňa aj programy, potreby spoločnosti, partnerské úlohy a možnosti financovania; nejde o 196 repozitárov. Interaktívne zobrazenie otvoríte podľa návodu k náhľadu atlasu. Existujúce webové portfólio sa spravuje samostatne.
+
+[Zdroj detailného atlasu a lokálny náhľad](docs/atlas/README.md) · [anulum.li/portfolio/](https://anulum.li/portfolio/)
+
+Technické opisy nižšie citujú anglické zdrojové záznamy. Pomenovaný cieľ nie je samostatne vydaná schopnosť. Spoločné položky počítame raz v hlavnej skupine.
 
 <details>
-<summary><strong>01 · SCPN Reactor Systems</strong> &nbsp; 25 verejných repozitárov</summary>
+<summary><strong>01 · SCPN Reactor Systems</strong> · 55 repozitárov · 55 položiek katalógu</summary>
 
-Živý pohľad na toto portfólio na anulum.li, s filtrami a mapou: [anulum.li/portfolio/#g=SCPN-REACTOR-SYSTEMS](https://anulum.li/portfolio/#g=SCPN-REACTOR-SYSTEMS)
+55 vlastnených repozitárov vrátane ATLAS-REACTORUM: 26 verejných a 29 lokálne inicializovaných, nezverejnených. Modely fúzie, štiepenia, chemických a hybridných systémov, spoločné jadrá, geometria a dôkazy o reaktoroch. World models, 3D simulácie a návrhy zariadení sú vyvíjané výstupy programu; návrh nie je overený reaktor.
 
-Fyzika rodín zariadení, spoločné numerické jadrá, reaktorové modely, geometria
-a vlastníctvo konfigurácií. Samotná existencia repozitára nepreukazuje
-validovanú fyziku ani pripravenosť stroja. Každá rodina zariadení má na
-anulum.li interaktívny portál s fyzikou, explorerom, slovníkom a zdrojmi;
-[hub reaktorových systémov](https://anulum.li/reactor-systems/) uvádza každé
-jadro s jeho dôkazovou zrelosťou a [porovnávacia stránka](https://anulum.li/reactor-systems/compare.html)
-kladie ich kotvy úrovne 0 vedľa seba.
+[Architektonické mapy skupín](https://github.com/anulum/atlas-reactorum/blob/main/docs/ecosystem.md)
 
-**Spoločné základy**
+| Projekt / komponent | Úloha a fáza vývoja | Repozitár / dostupnosť | Deklarovaná licencia | Dátum zdroja |
+|---|---|---|---|---|
+| [ATLAS-REACTORUM](https://github.com/anulum/atlas-reactorum)<br><sub>Source and rights library with historical reactor taxonomy and interactive citation views.</sub> | Prebieha · tool · Implementation and integration | Verejný | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-ADS-CORE<br><sub>Subcritical blanket plus typed external source/beam-target interface.</sub> | Prebieha · component · Architecture and qualification | Lokálny, nezverejnený | AGPL-3.0-or-later | 2026-10-12 |
+| [SCPN Beam Target Core](https://github.com/anulum/scpn-beam-target-core)<br><sub>Beam/target design and source-scoped reaction/stopping/yield.</sub> | Prebieha · component · Computational prototypes and continued development | Verejný | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-BIOCHEM-CORE<br><sub>Source-specific enzyme/fermentation kinetics and reactor transport.</sub> | Prebieha · component · Architecture and qualification | Lokálny, nezverejnený | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-BREED-BURN-CORE<br><sub>Source-bounded breed-and-burn fuel-management concept.</sub> | Prebieha · component · Architecture and qualification | Lokálny, nezverejnený | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-BWR-CORE<br><sub>Boiling-channel thermal-spectrum family and void-feedback boundary.</sub> | Prebieha · component · Architecture and qualification | Lokálny, nezverejnený | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-CATALYTIC-BED-CORE<br><sub>Fixed-bed catalyst/transport/pressure-drop coupling.</sub> | Prebieha · component · Architecture and qualification | Lokálny, nezverejnený | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-CHANNEL-CORE<br><sub>Graphite-moderated channel reactor only; exclusive from PHWR pressure tubes.</sub> | Prebieha · component · Architecture and qualification | Lokálny, nezverejnený | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-CHEM-KINETICS-CORE<br><sub>Ideal gas batch/CSTR/PFR named kinetics and thermo models.</sub> | Prebieha · component · Architecture and qualification | Lokálny, nezverejnený | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-CHEM-PROCESS-HYBRID-CORE<br><sub>Chemical process/recycle/separation and carbon-capture composition.</sub> | Prebieha · component · Architecture and qualification | Lokálny, nezverejnený | AGPL-3.0-or-later | 2026-10-12 |
+| [SCPN Dense Plasma Focus Core](https://github.com/anulum/scpn-dense-plasma-focus-core)<br><sub>Focus device/bank/axial/radial/pinch and source-scoped neutron estimates.</sub> | Prebieha · component · Computational prototypes and continued development | Verejný | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-ELECTROCHEM-CORE<br><sub>Electrode/cell transport and charge/reaction interface.</sub> | Prebieha · component · Architecture and qualification | Lokálny, nezverejnený | AGPL-3.0-or-later | 2026-10-12 |
+| [SCPN FRC Core](https://github.com/anulum/scpn-frc-core)<br><sub>Field-reversed configuration, radial pressure-balance and kinetic-scale model.</sub> | Prebieha · component · Computational prototypes and continued development | Verejný | AGPL-3.0-or-later | 2026-10-12 |
+| [SCPN Fusion Core](https://github.com/anulum/scpn-fusion-core)<br><sub>Canonical plasma solver mathematics, transport/equilibrium and existing research pipeline.</sub> | Prebieha · package · Released software · ongoing development | Verejný | AGPL-3.0-or-later | 2026-10-12 |
+| [SCPN Fusion-Fission Hybrid Core](https://github.com/anulum/scpn-fusion-fission-hybrid-core)<br><sub>Existing source-owned fusion/fission blanket device and proposed typed member couplings.</sub> | Prebieha · component · Computational prototypes and continued development | Verejný | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-FUSION-PROCESS-HEAT-CORE<br><sub>Fusion-source to chemical-process heat/material composition.</sub> | Prebieha · component · Architecture and qualification | Lokálny, nezverejnený | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-GFR-CORE<br><sub>Gas-cooled fast-spectrum family with high-temperature heat-removal boundary.</sub> | Prebieha · component · Architecture and qualification | Lokálny, nezverejnený | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-HEAT-PIPE-CORE<br><sub>Solid-core heat-pipe microreactor and source-defined transport limits.</sub> | Prebieha · component · Architecture and qualification | Lokálny, nezverejnený | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-HTGR-CORE<br><sub>Graphite/TRISO helium-cooled design and distinct process-heat interface.</sub> | Prebieha · component · Architecture and qualification | Lokálny, nezverejnený | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-HYBRID-ENERGY-CORE<br><sub>Fission/renewable/storage electrical and thermal composition.</sub> | Prebieha · component · Architecture and qualification | Lokálny, nezverejnený | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-HYDROGEN-PROCESS-CORE<br><sub>HTSE and named thermochemical hydrogen process routes.</sub> | Prebieha · component · Architecture and qualification | Lokálny, nezverejnený | AGPL-3.0-or-later | 2026-10-12 |
+| [SCPN ICF Beam Core](https://github.com/anulum/scpn-icf-beam-core)<br><sub>Particle-beam illumination/capsule design with explicit coupling.</sub> | Prebieha · component · Computational prototypes and continued development | Verejný | AGPL-3.0-or-later | 2026-10-12 |
+| [SCPN ICF Impact Core](https://github.com/anulum/scpn-icf-impact-core)<br><sub>Impact/projectile/fuel/compression design and source-limited energy relations.</sub> | Prebieha · component · Computational prototypes and continued development | Verejný | AGPL-3.0-or-later | 2026-10-12 |
+| [SCPN ICF Laser Core](https://github.com/anulum/scpn-icf-laser-core)<br><sub>Laser-driven capsule/implosion design and source-scoped ignition/gain criteria.</sub> | Prebieha · component · Computational prototypes and continued development | Verejný | AGPL-3.0-or-later | 2026-10-12 |
+| [SCPN IEC Core](https://github.com/anulum/scpn-iec-core)<br><sub>Gridded electrostatic device and distinct nonthermal loss/recirculation models.</sub> | Prebieha · component · Computational prototypes and continued development | Verejný | AGPL-3.0-or-later | 2026-10-12 |
+| [SCPN Lattice Fusion Core](https://github.com/anulum/scpn-lattice-fusion-core)<br><sub>Source-bounded lattice-confinement fusion research and modelling.</sub> | Prebieha · component · Architecture and qualification | Verejný | AGPL-3.0-or-later | 2026-10-12 |
+| [SCPN Levitated Dipole Core](https://github.com/anulum/scpn-levitated-dipole-core)<br><sub>Dipole coil/levitation/charging and anisotropic plasma model.</sub> | Prebieha · component · Computational prototypes and continued development | Verejný | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-LFR-CORE<br><sub>Lead/LBE fast-spectrum family with materials/corrosion boundary.</sub> | Prebieha · component · Architecture and qualification | Lokálny, nezverejnený | AGPL-3.0-or-later | 2026-10-12 |
+| [SCPN Magnetic Cusp Core](https://github.com/anulum/scpn-magnetic-cusp-core)<br><sub>Cusp coil/configuration ownership and source-specific field/particle-loss model proposal.</sub> | Prebieha · component · Computational prototypes and continued development | Verejný | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-MEMBRANE-CORE<br><sub>Reaction-separation with explicit membrane transport.</sub> | Prebieha · component · Architecture and qualification | Lokálny, nezverejnený | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-METHANE-REFORMER-CORE<br><sub>Steam-methane reforming kinetics and process train.</sub> | Prebieha · component · Architecture and qualification | Lokálny, nezverejnený | AGPL-3.0-or-later | 2026-10-12 |
+| [SCPN MIF Core](https://github.com/anulum/scpn-mif-core)<br><sub>Existing magneto-inertial dynamics/runtime with maintained multi-language/RTL chain.</sub> | Prebieha · package · Released software · ongoing development | Verejný | AGPL-3.0-or-later | 2026-10-12 |
+| [SCPN MIF Liner Core](https://github.com/anulum/scpn-mif-liner-core)<br><sub>Mechanical/magnetic liner compression and target-energy coupling.</sub> | Prebieha · component · Computational prototypes and continued development | Verejný | AGPL-3.0-or-later | 2026-10-12 |
+| [SCPN MIF MagLIF Core](https://github.com/anulum/scpn-mif-maglif-core)<br><sub>Magnetised liner drive/preheat/compression family.</sub> | Prebieha · component · Computational prototypes and continued development | Verejný | AGPL-3.0-or-later | 2026-10-12 |
+| [SCPN MIF Plasma Jet Core](https://github.com/anulum/scpn-mif-plasma-jet-core)<br><sub>Discrete plasma-jet array and spherical liner convergence.</sub> | Prebieha · component · Computational prototypes and continued development | Verejný | AGPL-3.0-or-later | 2026-10-12 |
+| [SCPN Mirror Core](https://github.com/anulum/scpn-mirror-core)<br><sub>Mirror/tandem confinement and source-specific flux-tube geometry.</sub> | Prebieha · component · Computational prototypes and continued development | Verejný | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-MSR-CORE<br><sub>Liquid-fuel molten-salt family with chemistry, circulation and depletion.</sub> | Prebieha · component · Architecture and qualification | Lokálny, nezverejnený | AGPL-3.0-or-later | 2026-10-12 |
+| [SCPN Muon Fusion Core](https://github.com/anulum/scpn-muon-fusion-core)<br><sub>Muon-catalysed reaction models and complete energy accounting.</sub> | Prebieha · component · Architecture and qualification | Verejný | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-NTP-CORE<br><sub>Reactor-side thermal propulsion and typed heat/flow interface.</sub> | Prebieha · component · Architecture and qualification | Lokálny, nezverejnený | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-NUCLEAR-DESALINATION-CORE<br><sub>Fission-to-desalination thermal/material composition.</sub> | Prebieha · component · Architecture and qualification | Lokálny, nezverejnený | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-NUCLEAR-HYDROGEN-CORE<br><sub>Typed fission-to-hydrogen thermal/electrical/material composition.</sub> | Prebieha · component · Architecture and qualification | Lokálny, nezverejnený | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-PHOTOCATALYTIC-CORE<br><sub>Photon-flux-driven reaction and optical/source coupling.</sub> | Prebieha · component · Architecture and qualification | Lokálny, nezverejnený | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-PHWR-CORE<br><sub>Heavy-water pressure-tube family with on-power fuel management.</sub> | Prebieha · component · Architecture and qualification | Lokálny, nezverejnený | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-PWR-CORE<br><sub>Light-water moderated/cooled vessel and primary-circuit design.</sub> | Prebieha · component · Architecture and qualification | Lokálny, nezverejnený | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-REACTOR-CATALOGUE<br><sub>Evidence-labelled source-authority catalogue, candidate revision/history and vocabulary.</sub> | Prebieha · component · Architecture and qualification | Lokálny, nezverejnený | AGPL-3.0-or-later | 2026-10-12 |
+| [SCPN Reactor Kernels](https://github.com/anulum/scpn-reactor-kernels)<br><sub>Shared equations, numerical primitives and geometry/CAD/export substrate.</sub> | Prebieha · package · Implementation and integration | Verejný | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-RESEARCH-REACTOR-CORE<br><sub>Research/isotope-production core including separately supported pulse operation.</sub> | Prebieha · component · Architecture and qualification | Lokálny, nezverejnený | AGPL-3.0-or-later | 2026-10-12 |
+| [SCPN RFP Core](https://github.com/anulum/scpn-rfp-core)<br><sub>Reversed-field pinch relaxation/profile and toroidal device design.</sub> | Prebieha · component · Computational prototypes and continued development | Verejný | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-SCWR-CORE<br><sub>Supercritical-water family with explicit thermophysical transition support.</sub> | Prebieha · component · Architecture and qualification | Lokálny, nezverejnený | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-SFR-CORE<br><sub>Sodium-cooled fast-spectrum family and fuel/material/heat-removal boundary.</sub> | Prebieha · component · Architecture and qualification | Lokálny, nezverejnený | AGPL-3.0-or-later | 2026-10-12 |
+| [SCPN Spheromak Core](https://github.com/anulum/scpn-spheromak-core)<br><sub>Relaxed compact-torus configuration, flux conserver and formation criteria.</sub> | Prebieha · component · Computational prototypes and continued development | Verejný | AGPL-3.0-or-later | 2026-10-12 |
+| [SCPN Stellarator Core](https://github.com/anulum/scpn-stellarator-core)<br><sub>Three-dimensional magnetic-confinement configuration and coil/design ownership.</sub> | Prebieha · component · Computational prototypes and continued development | Verejný | AGPL-3.0-or-later | 2026-10-12 |
+| [SCPN Theta Pinch Core](https://github.com/anulum/scpn-theta-pinch-core)<br><sub>Axial-field compression and pinch configuration with sharp-boundary model.</sub> | Prebieha · component · Computational prototypes and continued development | Verejný | AGPL-3.0-or-later | 2026-10-12 |
+| [SCPN Tokamak Core](https://github.com/anulum/scpn-tokamak-core)<br><sub>Own tokamak physical modelling and reactor-design geometry, with explicitly qualified canonical plasma-solver dependencies.</sub> | Prebieha · component · Computational prototypes and continued development | Verejný | AGPL-3.0-or-later | 2026-10-12 |
+| [SCPN Z-Pinch Core](https://github.com/anulum/scpn-z-pinch-core)<br><sub>Current-driven pinch, sheared-flow model and pulsed device design.</sub> | Prebieha · component · Computational prototypes and continued development | Verejný | AGPL-3.0-or-later | 2026-10-12 |
 
-| Repozitár | Rozsah | Stav |
-|---|---|---|
-| [SCPN Reactor Kernels](https://github.com/anulum/scpn-reactor-kernels) | Spoločné deterministické fyzikálne, geometrické a numerické jadrá reaktorového portfólia | `VEREJNÝ` |
-| [SCPN Fusion Core](https://github.com/anulum/scpn-fusion-core) | Fyzika tokamaku, riešiče, validačné kampane, transport a výskum riadenia | `VEREJNÝ` |
-
-**[Uzavreté magnetické udržanie](https://anulum.li/reactor-systems/closed-magnetic/)** · toroidálne zariadenia, ktoré držia plazmu na uzavretých magnetických plochách
-
-| Repozitár | Rozsah | Stav |
-|---|---|---|
-| [SCPN Tokamak Core](https://github.com/anulum/scpn-tokamak-core) | Pravda konfigurácie a diagnostického plánu pre konvenčné a sférické tokamaky | `VEREJNÝ` |
-| [SCPN Stellarator Core](https://github.com/anulum/scpn-stellarator-core) | Stellarátory, heliotrony a torsatrony | `VEREJNÝ` |
-| [SCPN RFP Core](https://github.com/anulum/scpn-rfp-core) | Fúzne systémy s obráteným poľom (reversed-field pinch) | `VEREJNÝ` |
-| [SCPN Spheromak Core](https://github.com/anulum/scpn-spheromak-core) | Samoorganizované kompaktné toroidy typu spheromak | `VEREJNÝ` |
-| [SCPN FRC Core](https://github.com/anulum/scpn-frc-core) | Fúzne systémy s konfiguráciou obráteného poľa (FRC) | `VEREJNÝ` |
-
-**[Otvorené a netoroidálne magnetické udržanie](https://anulum.li/reactor-systems/open-magnetic/)** · zrkadlové, kuspové a levitované dipólové konfigurácie s otvorenými siločiarami
-
-| Repozitár | Rozsah | Stav |
-|---|---|---|
-| [SCPN Mirror Core](https://github.com/anulum/scpn-mirror-core) | Jednoduché, tandemové a plynodynamické magnetické zrkadlá | `VEREJNÝ` |
-| [SCPN Magnetic Cusp Core](https://github.com/anulum/scpn-magnetic-cusp-core) | Čisto magnetické kuspové udržanie | `VEREJNÝ` |
-| [SCPN Levitated Dipole Core](https://github.com/anulum/scpn-levitated-dipole-core) | Udržanie levitovaným dipólom | `VEREJNÝ` |
-
-**[Samomagnetické a pulzné pinče](https://anulum.li/reactor-systems/pinches/)** · zariadenia, v ktorých plazmu udržiava samotný hnací prúd
-
-| Repozitár | Rozsah | Stav |
-|---|---|---|
-| [SCPN Z-Pinch Core](https://github.com/anulum/scpn-z-pinch-core) | Klasické z-pinče a z-pinče so strihovým tokom, fyzika úrovne 0 a deterministická geometria | `VEREJNÝ` |
-| [SCPN Theta Pinch Core](https://github.com/anulum/scpn-theta-pinch-core) | Theta-pinče, diagnostické kontrakty a citovaná fyzika úrovne 0 | `VEREJNÝ` |
-| [SCPN Dense Plasma Focus Core](https://github.com/anulum/scpn-dense-plasma-focus-core) | Koaxiálne zariadenia dense plasma focus, diagnostika a fyzika úrovne 0 | `VEREJNÝ` |
-
-**[Inerciálne udržanie](https://anulum.li/reactor-systems/inertial/)** · stláčanie fúznych terčov laserom, zväzkom alebo nárazom
-
-| Repozitár | Rozsah | Stav |
-|---|---|---|
-| [SCPN ICF Laser Core](https://github.com/anulum/scpn-icf-laser-core) | Laserová inerciálna fúzia s priamym, nepriamym a stupňovitým pohonom | `VEREJNÝ` |
-| [SCPN ICF Beam Core](https://github.com/anulum/scpn-icf-beam-core) | Inerciálna fúzia hnaná iónovými a pulznými elektrónovými zväzkami | `VEREJNÝ` |
-| [SCPN ICF Impact Core](https://github.com/anulum/scpn-icf-impact-core) | Inerciálna fúzia hnaná projektilom a nárazom | `VEREJNÝ` |
-
-**[Magneto-inerciálne systémy a systémy s magnetizovaným terčom](https://anulum.li/reactor-systems/magneto-inertial/)** · stláčanie magnetizovaných terčov linermi, plazmovými prúdmi alebo zrážkami FRC
-
-| Repozitár | Rozsah | Stav |
-|---|---|---|
-| [SCPN MIF Core](https://github.com/anulum/scpn-mif-core) | Pulzná kinematika FRC/MIF, deterministická spúšťacia logika, FPGA RTL a formálne časové dôkazy | `VEREJNÝ` |
-| [SCPN MIF MagLIF Core](https://github.com/anulum/scpn-mif-maglif-core) | Predmagnetizované, laserom predhriate systémy MagLIF hnané pulzným výkonom | `VEREJNÝ` |
-| [SCPN MIF Plasma Jet Core](https://github.com/anulum/scpn-mif-plasma-jet-core) | Magneto-inerciálne systémy so zbiehavým linerom z plazmových prúdov | `VEREJNÝ` |
-| [SCPN MIF Liner Core](https://github.com/anulum/scpn-mif-liner-core) | Fúzia s magnetizovaným terčom a mechanickým alebo kvapalným linerom | `VEREJNÝ` |
-
-**[Elektrostatické, terčové a hybridné systémy](https://anulum.li/reactor-systems/electrostatic-hybrid/)** · inerciálno-elektrostatické jamy, zrážajúce sa zväzky a fúzno-štiepne hybridy
-
-| Repozitár | Rozsah | Stav |
-|---|---|---|
-| [SCPN IEC Core](https://github.com/anulum/scpn-iec-core) | Mriežkové a polywellové inerciálne elektrostatické udržanie | `VEREJNÝ` |
-| [SCPN Beam Target Core](https://github.com/anulum/scpn-beam-target-core) | Pravda zariadení s pevným terčom a zrážajúcimi sa zväzkami | `VEREJNÝ` |
-| [SCPN Fusion-Fission Hybrid Core](https://github.com/anulum/scpn-fusion-fission-hybrid-core) | Fúzne zdroje neutrónov spojené s výslovne podkritickými štiepnymi plášťami | `VEREJNÝ` |
-
-**Rezervované výskumné hranice** · repozitáre iba s architektúrou, zatiaľ bez fyziky zariadenia
-
-| Repozitár | Rozsah | Stav |
-|---|---|---|
-| [SCPN Lattice Fusion Core](https://github.com/anulum/scpn-lattice-fusion-core) | Riadená hranica pre výskum externe budenej mriežkovej fúzie | `VEREJNÝ / IBA ARCHITEKTÚRA` |
-| [SCPN Muon Fusion Core](https://github.com/anulum/scpn-muon-fusion-core) | Riadená hranica pre výskum miónmi katalyzovanej fúzie | `VEREJNÝ / IBA ARCHITEKTÚRA` |
-
-**Plánované rodiny: jadrové štiepne, chemické a hybridné** · ďalších 29 rodín, každá s vlastným repozitárom (schválené 13. 9. 2026); plány sú napísané, repozitáre ešte nevznikli
-
-- **Štiepne (15):** PWR, BWR, PHWR, HTGR, SFR, LFR, MSR, GFR, SCWR, kanálové reaktory, výskumné reaktory, mikroreaktory s tepelnými trubicami, ADS, breed-and-burn, jadrový tepelný pohon (NTP).
-- **Chemické (8):** chemická kinetika, katalytické lôžka, parný reforming metánu, výroba vodíka, elektrochemické, biochemické, fotokatalytické a membránové reaktory.
-- **Hybridné (5):** jadrový vodík, hybridné energetické systémy, spojené chemické procesy, jadrové odsoľovanie, procesné teplo z fúzie.
-- **Katalóg:** SCPN Reactor Catalogue, generovaný katalóg všetkých rodín s ich stavom dôkazov.
-
-Poradie dodania: vlna A (chemická kinetika, katalóg, PWR), potom vlny B a C. Repozitáre vzniknú až po ratifikácii riadiacej zmluvy skupiny, preto zatiaľ žiadna z týchto rodín nemá kód. Prístup: `PLÁNOVANÉ`.
+**Portály reaktorových rodín**: [reactor-systems](https://anulum.li/reactor-systems/) · [compare.html](https://anulum.li/reactor-systems/compare.html) · [closed-magnetic](https://anulum.li/reactor-systems/closed-magnetic/) · [open-magnetic](https://anulum.li/reactor-systems/open-magnetic/) · [pinches](https://anulum.li/reactor-systems/pinches/) · [inertial](https://anulum.li/reactor-systems/inertial/) · [magneto-inertial](https://anulum.li/reactor-systems/magneto-inertial/) · [electrostatic-hybrid](https://anulum.li/reactor-systems/electrostatic-hybrid/)
 
 </details>
 
 <details>
-<summary><strong>02 · SCPN Systems Integration and Control</strong> &nbsp; 4 repozitáre</summary>
+<summary><strong>02 · SCPN Systems Integration and Control</strong> · 4 repozitárov · 4 položiek katalógu</summary>
 
-Živý pohľad na toto portfólio na anulum.li, s filtrami a mapou: [anulum.li/portfolio/#g=SCPN-SYSTEMS-INTEGRATION-AND-CONTROL](https://anulum.li/portfolio/#g=SCPN-SYSTEMS-INTEGRATION-AND-CONTROL)
+Štyri rovnocenné produkty. Control a Phase Orchestrator sú verejné; Studio Hub aj repozitár Studio Platform sú súkromné. Verejný balík scpn-studio-platform je dostupný samostatne. Deklarované rozhrania Studio nedokazujú otestovanú federáciu.
 
-| Repozitár | Rozsah | Stav |
-|---|---|---|
-| [SCPN Control](https://github.com/anulum/scpn-control) | Neuro-symbolické regulátory, prijímanie za behu, prehrávanie, audit a hranice softvérových akcií | `VEREJNÝ` |
-| [SCPN Phase Orchestrator](https://github.com/anulum/scpn-phase-orchestrator) | Analýza viazaných rytmov, zapečatené dôkazy o synchronizácii a návrhy riadenia len na posúdenie | `VEREJNÝ` |
-| **SCPN Studio** | Federačný hub pre vedecké štúdiá, hranice tvrdení, viditeľnosť portfólia a riadené vykonávanie | `SÚKROMNÝ` |
-| **SCPN Studio Platform** | Doménovo neutrálne SDK pre balíky dôkazov, manifesty schopností, úlohy, identitu a validáciu portfólia | `SÚKROMNÝ / OPEN-CORE` |
-
-</details>
-
-<details>
-<summary><strong>03 · Agentic Coordination, Assurance and Continuity</strong> &nbsp; 8 repozitárov</summary>
-
-Živý pohľad na toto portfólio na anulum.li, s filtrami a mapou: [anulum.li/portfolio/#g=AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS](https://anulum.li/portfolio/#g=AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS)
-
-| Repozitár | Rozsah | Stav |
-|---|---|---|
-| [Director-AI](https://github.com/anulum/director-ai) | Ochrana pred halucináciami LLM s NLI/RAG ukotvením, zapečatenými dôkazmi a voliteľnou kontrolou rozporov v prúde | `VEREJNÝ / OPEN-CORE` |
-| **Director Class AI** | Posúdenie pred odoslaním a dôkazové kontroly pre akcie autonómnych agentov s vysokým dopadom | `SÚKROMNÝ / BUSL-1.1` |
-| **Director AI Cloud** | Spravované viacnájomné účty, API kľúče, meranie, kvóty a riadenie hostovanej služby | `SÚKROMNÝ / BUSL-1.1` |
-| [Rigor Foundry](https://github.com/anulum/rigor-foundry) | Inventár viazaný na dôkazy, kandidáti na audit, väzba na recenzie a plánovanie nápravy | `VEREJNÝ` |
-| [Remanentia](https://github.com/anulum/remanentia) | Auditovateľná pamäť AI s hybridným vyhľadávaním, grafmi, konsolidáciou, CLI, MCP a API | `VEREJNÝ` |
-| **Remanentia Portal** | Identita zákazníka, oprávnenia a komerčná riadiaca rovina bez vykonávania zákazníckych úloh | `SÚKROMNÝ` |
-| [Synapse Channel](https://github.com/anulum/synapse-channel) | Lokálna koordinácia agentov s plánmi, tvrdeniami, trvalými správami, auditom a protokolovými adaptérmi | `VEREJNÝ` |
-| **Synapse Channel Fleet** | Licencovaná federácia viacerých strojov, správa dôvery, offline prijímanie licencií a operácie medzi hubmi | `SÚKROMNÝ / PROPRIETÁRNY` |
+| Projekt / komponent | Úloha a fáza vývoja | Repozitár / dostupnosť | Deklarovaná licencia | Dátum zdroja |
+|---|---|---|---|---|
+| [SCPN Phase Orchestrator](https://github.com/anulum/scpn-phase-orchestrator)<br><sub>Synchronisation analysis and evaluation of early-warning detectors on coupled phase-oscillator dynamics, with a Rust kernel.</sub> | Prebieha · package · Released software · ongoing development | Verejný | AGPL-3.0-or-later | 2026-10-13 |
+| [SCPN Control](https://github.com/anulum/scpn-control)<br><sub>Compiler from stochastic Petri nets to controllers with runtime contracts, and plasma-control research paths.</sub> | Prebieha · package · Released software · ongoing development | Verejný | AGPL-3.0-or-later | 2026-10-13 |
+| SCPN Studio Platform<br><sub>Domain-neutral SDK for studios: evidence bundles, capability manifests, bounded jobs and tenant-aware identity.</sub> | Prebieha · package · Released software · ongoing development | Súkromný | AGPL-3.0-or-later | 2026-10-13 |
+| SCPN Studio<br><sub>The hub that federates studios over the platform contract: registry, cross-studio evidence audit, rendering and federation gating.</sub> | Prebieha · service · Implementation and integration | Súkromný | AGPL-3.0-or-later | 2026-10-13 |
 
 </details>
 
 <details>
-<summary><strong>04 · SC Neuromorphic Computing Systems</strong> &nbsp; 1 verejný repozitár</summary>
+<summary><strong>03 · Agentic Coordination, Assurance and Continuity</strong> · 10 repozitárov · 10 položiek katalógu</summary>
 
-Živý pohľad na toto portfólio na anulum.li, s filtrami a mapou: [anulum.li/portfolio/#g=SC-NEUROMORPHIC-COMPUTING-SYSTEMS](https://anulum.li/portfolio/#g=SC-NEUROMORPHIC-COMPUTING-SYSTEMS)
+Desať repozitárov pre koordináciu, kontrolu, pamäť a riadené akcie. HushLine patrí medzi nástroje skupiny; zahrnutý je aj SYNAPSE-POLICY-CHECK-ACTION. Každý produkt má vlastnú licenciu a hranice schopností.
 
-| Repozitár | Rozsah | Stav |
-|---|---|---|
-| [SC-NeuroCore](https://github.com/anulum/sc-neurocore) | Stochastické a spiking neurónové systémy s Python API, akceleráciou v Ruste, HDC/VSA a generovaním RTL | `VEREJNÝ` |
+[Architektonické mapy skupín](https://github.com/anulum/synapse-channel/blob/main/docs/ecosystem.md)
+
+| Projekt / komponent | Úloha a fáza vývoja | Repozitár / dostupnosť | Deklarovaná licencia | Dátum zdroja |
+|---|---|---|---|---|
+| [Synapse Channel](https://github.com/anulum/synapse-channel)<br><sub>Local-first coordination bus for AI agents: presence, file-scope work claims, messages, task status, receipts and an audit journal on one hub.</sub> | Prebieha · package · Released software · ongoing development | Verejný | AGPL-3.0-or-later | 2026-10-11 |
+| Synapse Channel Fleet<br><sub>Multi-machine operation of the bus: durable follower daemon, per-peer trust and configuration, claim forwarding and diagnostics.</sub> | Prebieha · package · Implementation and integration | Súkromný | LicenseRef-SYNAPSE-Enterprise | 2026-10-11 |
+| [SYNAPSE-POLICY-CHECK-ACTION](https://github.com/anulum/synapse-policy-check-action)<br><sub>GitHub Action that checks a SYNAPSE CHANNEL release receipt against a policy file in CI.</sub> | Prebieha · tool · Implementation and integration | Verejný | AGPL-3.0-or-later | 2026-10-11 |
+| [Director-AI](https://github.com/anulum/director-ai)<br><sub>Response-level guardrail for LLM output: NLI and retrieval grounding, sealed evidence packets and an optional streaming contradiction halt.</sub> | Prebieha · package · Released software · ongoing development | Verejný | Apache-2.0 AND BUSL-1.1 | 2026-10-11 |
+| Director Class AI<br><sub>Action control between an autonomous agent and its effectors: action-policy checks, human approvals, gateway enforcement and tamper-evident action evidence.</sub> | Prebieha · package · Implementation and integration | Súkromný | BUSL-1.1 | 2026-10-11 |
+| Director AI Cloud<br><sub>Control plane for a hosted Director-AI API: accounts, API-key lifecycle, usage metering, plan quotas and operator exports.</sub> | Prebieha · service · Implementation and integration | Súkromný | BUSL-1.1 | 2026-10-11 |
+| [Rigor Foundry](https://github.com/anulum/rigor-foundry)<br><sub>Evidence-bound repository auditing: inventories Git-tracked content, emits reproducible audit candidates, binds review decisions to exact evidence and prepares remediation inputs.</sub> | Prebieha · package · Released software · ongoing development | Verejný | Apache-2.0 | 2026-10-11 |
+| [Remanentia](https://github.com/anulum/remanentia)<br><sub>Local-first, auditable memory for AI agents and knowledge-intensive software: project-file indexing, hybrid retrieval, consolidation and an entity graph, through a CLI, an MCP server and an HTTP API.</sub> | Prebieha · package · Released software · ongoing development | Verejný | AGPL-3.0-or-later | 2026-10-11 |
+| Remanentia Portal<br><sub>Account and billing or licence-request portal for the product family. It runs no customer workload.</sub> | Prebieha · service · Implementation and integration | Súkromný | AGPL-3.0-or-later | 2026-10-11 |
+| [HushLine](https://github.com/anulum/HushLine)<br><sub>Local command-output filter: runs a command, then limits, shapes and redacts its output before it reaches a caller. Four independent cores: Go, Rust, Python and Node.</sub> | Prebieha · tool · Released software · ongoing development | Verejný | AGPL-3.0-or-later | 2026-10-11 |
 
 </details>
 
 <details>
-<summary><strong>05 · SCPN Quantum Computing Systems</strong> &nbsp; 1 verejný repozitár</summary>
+<summary><strong>04 · SC Neuromorphic Computing Systems</strong> · 4 repozitárov · 42 položiek katalógu</summary>
 
-Živý pohľad na toto portfólio na anulum.li, s filtrami a mapou: [anulum.li/portfolio/#g=SCPN-QUANTUM-COMPUTING-SYSTEMS](https://anulum.li/portfolio/#g=SCPN-QUANTUM-COMPUTING-SYSTEMS)
+Základný inventár má 40 pomenovaných položiek vrátane trvalého pracoviska SC-NeuroCore a podporných nástrojov; dva ďalšie modulové/podmienené ciele tvoria spolu 42 položiek katalógu. LOOP-TIMING-WITNESS má verejný hostiteľský balík; kvalifikácia fyzickej dosky čaká. EVIDENCE-MANIFEST-TOOLKIT je nezverejnený. Moduly a odložené ciele sú označené samostatne.
 
-| Repozitár | Rozsah | Stav |
-|---|---|---|
-| [SCPN Quantum Control](https://github.com/anulum/scpn-quantum-control) | Kvantové experimenty s viazanými oscilátormi, simulátory, optimalizácia, hardvérové behy a balíky výsledkov viazané hashom | `VEREJNÝ` |
+[Architektonické mapy skupín](https://github.com/anulum/sc-neurocore/blob/main/docs/ecosystem.md)
+
+| Projekt / komponent | Úloha a fáza vývoja | Repozitár / dostupnosť | Deklarovaná licencia | Dátum zdroja |
+|---|---|---|---|---|
+| [SC-NeuroCore](https://github.com/anulum/sc-neurocore)<br><sub>Permanent public development, composition and integration workbench for stochastic and spiking neural modelling, encoding, learning, simulation, selected hardware compilation and evidence inspection.</sub> | Prebieha · workbench · Released software · ongoing development | Verejný | AGPL-3.0-or-later | 2026-10-13 |
+| [Loop Timing Witness](https://github.com/anulum/loop-timing-witness)<br><sub>Fabric-clock instrument for complete control-loop and selected accelerator timing, with simulation/host analysis separated from eventual board timing, fault response and rail-energy evidence.</sub> | Prebieha · tool · Architecture and qualification | Verejný | AGPL-3.0-or-later | 2026-10-13 |
+| EVIDENCE-MANIFEST-TOOLKIT<br><sub>Canonicalises, references, seals and verifies evidence with explicit schemas, bounded sources and independently selected policy.</sub> | Prebieha · shared · Architecture and qualification | Lokálny, nezverejnený | AGPL-3.0-or-later | 2026-10-13 |
+| RANDOMNESS-WITNESS<br><sub>Assesses number-source suitability for a declared stochastic-computing use; it does not certify randomness for every purpose.</sub> | Prebieha · shared · Design and preparation | Cieľ / modul / balík | undecided | 2026-10-13 |
+| EXPERIMENT-LEDGER<br><sub>Records experiment lineage across tools without owning their raw evidence or running their computations.</sub> | Prebieha · shared · Design and preparation | Cieľ / modul / balík | undecided | 2026-10-13 |
+| SC-NC-CORE<br><sub>Neuron/synapse primitives, network graph, simulation loop, fixed-point semantics, constants and exceptions.</sub> | Prebieha · component · Workbench transition | Cieľ / modul / balík | Undecided for independent release | 2026-10-13 |
+| SC-NC-CATALOGUE<br><sub>Neuron models, model zoo and topology/connectome generators.</sub> | Prebieha · component · Workbench transition | Cieľ / modul / balík | Undecided for independent release | 2026-10-13 |
+| SC-NC-ENGINE<br><sub>Accelerated execution and its maintained language/native interfaces.</sub> | Prebieha · component · Workbench transition | Cieľ / modul / balík | Undecided for independent release | 2026-10-13 |
+| SC-NC-BRIDGES<br><sub>Interchange and cross-domain adapters including NIR, quantum, HDC/VSA and neuro-symbolic routes.</sub> | Prebieha · component · Workbench transition | Cieľ / modul / balík | Undecided for independent release | 2026-10-13 |
+| SC-NC-LEARN<br><sub>Training and adaptation, including surrogate gradients, plasticity, online learning, quantisation-aware training and distillation.</sub> | Prebieha · component · Workbench transition | Cieľ / modul / balík | Undecided for independent release | 2026-10-13 |
+| SC-NC-DATA<br><sub>Datasets, signal/event encoding, augmentation, codecs, sources and recording adapters.</sub> | Prebieha · component · Workbench transition | Cieľ / modul / balík | Undecided for independent release | 2026-10-13 |
+| SC-NC-ANALYSIS<br><sub>Spike-train analysis, visualisation and explainability.</sub> | Prebieha · component · Workbench transition | Cieľ / modul / balík | Undecided for independent release | 2026-10-13 |
+| SC-NC-COMPILER<br><sub>Equation/IR lowering and hardware collateral for supported numerical models.</sub> | Prebieha · component · Workbench transition | Cieľ / modul / balík | Undecided for independent release | 2026-10-13 |
+| SC-NC-HARDWARE<br><sub>Target profiles, mapping, deployment, drivers and power/thermal integration.</sub> | Prebieha · component · Workbench transition | Cieľ / modul / balík | Undecided for independent release | 2026-10-13 |
+| SC-NC-VERIFY<br><sub>Formal, fault, resilience and safety-readiness verification within explicit proof scopes.</sub> | Prebieha · component · Workbench transition | Cieľ / modul / balík | Undecided for independent release | 2026-10-13 |
+| SC-NC-STUDIO<br><sub>Visual composition, inspection and evidence presentation workflows.</sub> | Prebieha · component · Workbench transition | Cieľ / modul / balík | Undecided for independent release | 2026-10-13 |
+| SC-NC-RESEARCH<br><sub>Retained experimental paths, including evolutionary, biological and world-model directions.</sub> | Prebieha · component · Workbench transition | Cieľ / modul / balík | Undecided for independent release | 2026-10-13 |
+| SC-NC-BENCH<br><sub>Catalogue/workload suites and immutable source-bound benchmark records.</sub> | Prebieha · component · Workbench transition | Cieľ / modul / balík | Undecided for independent release | 2026-10-13 |
+| MODEL-PROVENANCE-PACK<br><sub>Binds a model's data, training, conversion, quantisation, encoding and supporting evidence into a verifiable provenance pack.</sub> | Prebieha · tool · Design and implementation | Cieľ / modul / balík | Undecided for independent release | 2026-10-13 |
+| SPIKE-LOG<br><sub>Records, indexes, verifies, slices and replays event streams without losing their provenance or timebase identity.</sub> | Prebieha · tool · Design and implementation | Lokálny, nezverejnený | Undecided for independent release | 2026-10-13 |
+| SPIKE-FORMAT-BRIDGE<br><sub>Converts event recordings between declared formats and reports every permitted loss rather than hiding timestamp, polarity or side-stream changes.</sub> | Prebieha · tool · Design and implementation | Cieľ / modul / balík | Undecided for independent release | 2026-10-13 |
+| SPIKE-CODEC-BENCH<br><sub>Measures compression of existing spike trains, comparing payload ratio, distortion, encode/decode latency and memory.</sub> | Prebieha · tool · Design and implementation | Cieľ / modul / balík | Undecided for independent release | 2026-10-13 |
+| SPIKE-ENCODER-CHARACTERISER<br><sub>Measures the information, spike-rate and latency trade-offs of sensor-to-spike encoders.</sub> | Prebieha · tool · Design and implementation | Cieľ / modul / balík | Undecided for independent release | 2026-10-13 |
+| SPIKE-QUALITY-GATE<br><sub>Checks event data against a named quality policy for timestamp, noise, sensor-health, rate, gap and spatial defects.</sub> | Prebieha · tool · Design and implementation | Cieľ / modul / balík | Undecided for independent release | 2026-10-13 |
+| SPIKE-GROUNDTRUTH<br><sub>Generates reproducible event-vision, audio, sensor and control stimuli with ground truth defined by the generator.</sub> | Prebieha · tool · Design and implementation | Cieľ / modul / balík | Undecided for independent release | 2026-10-13 |
+| SNN-DIVERGENCE-HARNESS<br><sub>Compares the same network and input across implementations under bit-exact, tolerance or statistical oracles.</sub> | Prebieha · tool · Design and implementation | Cieľ / modul / balík | Undecided for independent release | 2026-10-13 |
+| SC-STREAM-PROVER<br><sub>Compares realised stochastic-computing arithmetic error with a declared bound for a specific circuit, source and stream-length regime.</sub> | Prebieha · tool · Design and implementation | Cieľ / modul / balík | Undecided for independent release | 2026-10-13 |
+| MUTATION-SNN<br><sub>Measures test adequacy by generating declared semantic mutants and recording what the suite detects.</sub> | Prebieha · tool · Design and implementation | Cieľ / modul / balík | Undecided for independent release | 2026-10-13 |
+| NIR-CONFORMANCE<br><sub>Tests importer/exporter behaviour against the known semantics of a pinned Neuromorphic Intermediate Representation version.</sub> | Prebieha · tool · Design and implementation | Cieľ / modul / balík | Undecided for independent release | 2026-10-13 |
+| NEURO-EVIDENCE-BENCH<br><sub>Executes declared neuromorphic benchmark plans and traces each scoped result back to its raw evidence.</sub> | Prebieha · tool · Design and implementation | Cieľ / modul / balík | Undecided for independent release | 2026-10-13 |
+| SPIKE-CALIBRATOR<br><sub>Measures classifier confidence against correctness under declared signal definitions, shifts and placements.</sub> | Prebieha · tool · Design and implementation | Cieľ / modul / balík | Undecided for independent release | 2026-10-13 |
+| BITSTREAM-EVIDENCE-CI<br><sub>Captures pinned FPGA build inputs, reports and bitstream identity in a reproducibility-aware chained build ledger.</sub> | Prebieha · tool · Design and implementation | Cieľ / modul / balík | Undecided for independent release | 2026-10-13 |
+| PLASTICITY-WITNESS<br><sub>Compares observed learning-rule updates with an independently defined fixed-point or statistical oracle under stated spike/load/fault protocols.</sub> | Prebieha · tool · Design and implementation | Cieľ / modul / balík | Undecided for independent release | 2026-10-13 |
+| AER-LINK-WITNESS<br><sub>Measures event-link behaviour under load, including loss, reordering, fairness, starvation and forward progress.</sub> | Prebieha · tool · Design and implementation | Cieľ / modul / balík | Undecided for independent release | 2026-10-13 |
+| RELIABILITY-WITNESS<br><sub>Characterises reliability within a declared physical or explicitly simulated exposure, retaining conditions, gaps and rare-event uncertainty.</sub> | Prebieha · tool · Design and implementation | Cieľ / modul / balík | Undecided for independent release | 2026-10-13 |
+| SIM-REAL-WITNESS<br><sub>Quantifies simulation-to-fabric differences for the same model, input and observable population.</sub> | Prebieha · tool · Design and implementation | Cieľ / modul / balík | Undecided for independent release | 2026-10-13 |
+| DEPLOY-PACK<br><sub>Composes validated deployment evidence with bitstream/driver identity into a verifiable install/update package.</sub> | Prebieha · tool · Design and implementation | Cieľ / modul / balík | Undecided for independent release | 2026-10-13 |
+| FIELD-OPS-WITNESS<br><sub>Aggregates compact field health and drift evidence against deployment-time envelopes without actuating devices.</sub> | Prebieha · tool · Design and implementation | Cieľ / modul / balík | Undecided for independent release | 2026-10-13 |
+| FLIGHT-RECORDER<br><sub>Retains a bounded per-device event/state history for gap-honest incident reconstruction.</sub> | Prebieha · tool · Design and implementation | Cieľ / modul / balík | Undecided for independent release | 2026-10-13 |
+| NEURO-SAFETY-CASE<br><sub>Composes scoped evidence and open gaps into an assessor-facing assurance argument; it certifies nothing itself.</sub> | Prebieha · tool · Design and implementation | Cieľ / modul / balík | Undecided for independent release | 2026-10-13 |
+| SC-COMPUTE-ADAPTERS<br><sub>Owns the SC-NeuroCore-side wrappers and numerical/register/handshake contracts needed to put selected generated peripherals into the independent LOOP-TIMING-WITNESS DUT/capture path.</sub> | Prebieha · workbench module · Architecture and interface work | Cieľ / modul / balík | Independent distribution terms being defined | 2026-10-13 |
+| SC-NC-BIO<br><sub>Conditional destination for separately owned biological/biohybrid work if its independent release lifecycle is accepted; current experimental bioware remains in the developmental parent.</sub> | Prebieha · conditional architecture destination · Architecture and interface work | Cieľ / modul / balík | Independent distribution terms being defined | 2026-10-13 |
 
 </details>
 
 <details>
-<summary><strong>Samostatný nástroj</strong> &nbsp; 1 verejný repozitár</summary>
+<summary><strong>05 · SCPN Quantum Computing Systems</strong> · 24 repozitárov · 28 položiek katalógu</summary>
 
-| Repozitár | Rozsah | Stav |
-|---|---|---|
-| [HushLine](https://github.com/anulum/HushLine) | Deterministický príkazový wrapper, ktorý filtruje, ohraničuje a voliteľne rediguje stdout a stderr | `VEREJNÝ` |
+Trvalé pracovisko SCPN-QUANTUM-CONTROL; oscillatools a SCPN-QUANTUM-ENGINE sú samostatné distribúcie, nie ďalšie pracoviská. Vyvíja sa šestnásť komponentových a osem nástrojových cieľov; QUANTUM_LAB je pracovný priestor. Licencie a vydania samostatných balíkov sa odlišujú od rodičovského projektu.
+
+[Architektonické mapy skupín](https://github.com/anulum/scpn-quantum-control/blob/main/docs/ecosystem.md)
+
+| Projekt / komponent | Úloha a fáza vývoja | Repozitár / dostupnosť | Deklarovaná licencia | Dátum zdroja |
+|---|---|---|---|---|
+| [SCPN Quantum Control](https://github.com/anulum/scpn-quantum-control)<br><sub>Integrated modelling, simulation, compilation, gradients, control, provider workflows, analysis and Quantum Studio.</sub> | Prebieha · workbench · Released software · ongoing development | Verejný | AGPL-3.0-or-later | 2026-10-13 |
+| oscillatools<br><sub>Classical coupled-phase-oscillator dynamics, observables, sensitivities and control-oriented numerical tools.</sub> | Prebieha · package · Released software · ongoing development | Cieľ / modul / balík | AGPL-3.0-or-later | 2026-10-13 |
+| scpn-quantum-engine<br><sub>Optional Rust/PyO3 numerical acceleration and native computation used by supported workbench paths.</sub> | Prebieha · package · Released software · ongoing development | Cieľ / modul / balík | AGPL-3.0-or-later | 2026-10-13 |
+| QPU-RESULT-PACK<br><sub>Preserve raw results and their provenance, derivations and reviewable presentation.</sub> | Prebieha · tool · Implementation and integration | Lokálny, nezverejnený | not stated | 2026-10-13 |
+| TRANSPILE-WITNESS<br><sub>Retain scoped observations about compilation semantics, layout, global phase and replay.</sub> | Prebieha · tool · Implementation and integration | Cieľ / modul / balík | AGPL-3.0-or-later by file headers; no licence field in packaging | 2026-10-13 |
+| MITIGATION-WITNESS<br><sub>Evaluate mitigation on declared measurement panels with retained inputs and uncertainty.</sub> | Prebieha · tool · Implementation and integration | Lokálny, nezverejnený | AGPL-3.0-or-later | 2026-10-13 |
+| SCPN-QC-CONTRACTS<br><sub>Versioned parameter, result, semantic and evidence interface contracts shared by components.</sub> | Prebieha · component · Workbench transition | Lokálny, nezverejnený | Undecided for independent release | 2026-10-13 |
+| SCPN-QC-CORE<br><sub>Configuration, logging, resource budgets and generic Kuramoto-XY problem foundations, separated from paper-specific research assumptions.</sub> | Prebieha · component · Workbench transition | Lokálny, nezverejnený | Undecided for independent release | 2026-10-13 |
+| SCPN-QC-AD<br><sub>Whole-program automatic differentiation, derivative transforms, batching, optimisation and explicit supported-path contracts.</sub> | Prebieha · component · Workbench transition | Lokálny, nezverejnený | Undecided for independent release | 2026-10-13 |
+| SCPN-QC-SIM<br><sub>Classical and quantum oscillator dynamics, XY/Kuramoto solvers, open-system simulation, tensor-network paths and co-simulation.</sub> | Prebieha · component · Workbench transition | Lokálny, nezverejnený | Undecided for independent release | 2026-10-13 |
+| SCPN-QC-COMPILER<br><sub>Model and circuit frontends, intermediate representations, interchange and code generation.</sub> | Prebieha · component · Workbench transition | Lokálny, nezverejnený | Undecided for independent release | 2026-10-13 |
+| SCPN-QC-QNODE<br><sub>Quantum tapes, gradient execution and framework bridges for supported Qiskit, PennyLane, JAX, PyTorch and TensorFlow paths.</sub> | Prebieha · component · Workbench transition | Lokálny, nezverejnený | Undecided for independent release | 2026-10-13 |
+| SCPN-QC-HAL<br><sub>Provider-neutral workloads, capabilities, job/result contracts and optional provider adapters.</sub> | Prebieha · component · Workbench transition | Lokálny, nezverejnený | Undecided for independent release | 2026-10-13 |
+| SCPN-QC-MITIGATION<br><sub>Error-mitigation implementations and their method taxonomy.</sub> | Prebieha · component · Workbench transition | Lokálny, nezverejnený | Undecided for independent release | 2026-10-13 |
+| SCPN-QC-QEC<br><sub>Quantum error-correction analysis and fault-tolerant resource-reporting surfaces.</sub> | Prebieha · component · Workbench transition | Lokálny, nezverejnený | Undecided for independent release | 2026-10-13 |
+| SCPN-QC-CONTROL<br><sub>Feedback and co-design, chimera and topology-aware control, and DLA-constrained control paths.</sub> | Prebieha · component · Workbench transition | Lokálny, nezverejnený | Undecided for independent release | 2026-10-13 |
+| SCPN-QC-ANALYSIS<br><sub>Observables, synchronisation witnesses, result analysis and the open-data DLA-parity pathway.</sub> | Prebieha · component · Workbench transition | Lokálny, nezverejnený | Undecided for independent release | 2026-10-13 |
+| SCPN-QC-LEARN<br><sub>Forecasting, quantum neural models, surrogate models, kernels and variational learning paths.</sub> | Prebieha · component · Workbench transition | Lokálny, nezverejnený | Undecided for independent release | 2026-10-13 |
+| SCPN-QC-APPS<br><sub>Domain application adapters, quantum randomness, cryptography and sensing workflows, with explicit claim boundaries.</sub> | Prebieha · component · Workbench transition | Lokálny, nezverejnený | Undecided for independent release | 2026-10-13 |
+| SCPN-QC-BENCH<br><sub>Workload-specific benchmark suites, comparison harnesses, campaign reproduction and retained run evidence.</sub> | Prebieha · component · Workbench transition | Lokálny, nezverejnený | Undecided for independent release | 2026-10-13 |
+| SCPN-QC-STUDIO<br><sub>Quantum Studio's visual workflows, inspectors and evidence presentation through the shared Studio platform contract.</sub> | Prebieha · component · Workbench transition | Lokálny, nezverejnený | Undecided for independent release | 2026-10-13 |
+| SCPN-QC-RESEARCH<br><sub>Experimental SCPN theory, paper-specific assumptions and research adapters whose contracts are not stable.</sub> | Prebieha · component · Workbench transition | Lokálny, nezverejnený | Undecided for independent release | 2026-10-13 |
+| NOISE-MODEL-WITNESS<br><sub>Compare model predictions and replay observations for the same circuit and shot identities, with uncertainty, shot floors, calibration epochs and declared tolerances.</sub> | Prebieha · tool · Design and implementation | Lokálny, nezverejnený | Undecided for independent release | 2026-10-13 |
+| VENDOR-CLAIM-RECOMPUTER<br><sub>Recompute released-data quantum-volume, error-per-layer-gate and logical-error claims against fixed definitions, original inputs and declared computation budgets.</sub> | Prebieha · tool · Design and implementation | Lokálny, nezverejnený | Undecided for independent release | 2026-10-13 |
+| DECODER-WITNESS<br><sub>Compare real decoder engines on released shot data with lossless adapters, declared noise conditions and uncertainty-aware reports.</sub> | Prebieha · tool · Design and implementation | Lokálny, nezverejnený | Undecided for independent release | 2026-10-13 |
+| GRADIENT-WITNESS<br><sub>Check software derivatives against declared analytic, parameter-shift and finite-difference references, including complex, finite-shot and cross-framework cases.</sub> | Prebieha · tool · Design and implementation | Lokálny, nezverejnený | Undecided for independent release | 2026-10-13 |
+| CONFORMANCE-WITNESS<br><sub>Check versioned OpenQASM 3, adapter behaviour, provenance fields and repository-evidence criteria against their normative clauses and actual entry points.</sub> | Prebieha · tool · Design and implementation | Lokálny, nezverejnený | Undecided for independent release | 2026-10-13 |
+| QUANTUM_LAB<br><sub>Reserved research workspace name; implementation role is not assigned in the group map.</sub> | Prebieha · workspace · Workspace definition | Cieľ / modul / balík | Not stated | 2026-10-13 |
+
+↔ EVIDENCE-MANIFEST-TOOLKIT · RANDOMNESS-WITNESS · EXPERIMENT-LEDGER
 
 </details>
+
+<details>
+<summary><strong>06 · Scientific Discovery and Experimentation</strong> · 0 repozitárov · 0 položiek katalógu</summary>
+
+Registrovaná 12. októbra 2026; vo formovaní; nula registrovaných projektov a repozitárov. Vlastní postup hypotéza → experiment → kontrola → záznam → návrh aktualizácie modelu a spoločný formát benchmarku a správy. Doménové modely, hardvér a oprávnenie na vykonávanie zostávajú príslušným skupinám. Uzavretý vedecký cyklus sa nedeklaruje.
+
+
+</details>
+
+**Ďalší verejný výskumný záznam**
+
+Fusion Equilibrium Challenge je verejný reprodukčný balík vytvorený 14. októbra 2026, po inventári skupín. Uvádzame ho samostatne, aby zostali zachované dátované počty skupín. Výsledky a obmedzenia sú v jeho vlastnom zázname.
+
+- [Fusion Equilibrium Challenge](https://github.com/anulum/fusion-equilibrium-challenge) · Prebieha · AGPL-3.0-or-later · 2026-10-15
+<!-- profile-catalogue:inventory:end -->
 
 ## Ciele sponzorstva
 
@@ -385,10 +432,10 @@ evaluačné benchmarky a CI.
 
 | Doména | Cieľ | Sponzorstvo platí |
 |---|---|---|
-| **01 · Reactor Systems** | Verejný katalóg reaktorových konceptov a **Reactor Studio**, v ktorom sa každý koncept navrhne v 3D/CAD, nasimuluje a virtuálne otestuje skôr, než sa čokoľvek postaví. 21 fúznych rodín zariadení je verejných už dnes (25 reaktorových repozitárov vrátane zdieľaných kernelov); ďalších 29 štiepnych, chemických a hybridných rodín je naplánovaných, plány sú napísané a repozitáre budú nasledovať. Validovaná parametrická geometria s exportom meshov do otvorených formátov existuje dnes; nasleduje plné B-rep CAD, fyzika úrovne 0 pre každú rodinu a scenárové testy návrhu. | výpočty pre simulácie, CAD nástroje, dokumentácia |
+| **01 · Reactor Systems** | 55 vlastnených repozitárov vrátane ATLAS-REACTORUM: 26 verejných a 29 lokálne inicializovaných, nezverejnených. Modely fúzie, štiepenia, chemických a hybridných systémov, spoločné jadrá, geometria a dôkazy o reaktoroch. World models, 3D simulácie a návrhy zariadení sú vyvíjané výstupy programu; návrh nie je overený reaktor. | výpočty pre simulácie, CAD nástroje, dokumentácia |
 | **02 · Systems Integration and Control** | **SCPN Studio Hub**, ktorý spája štúdiá všetkých skupín: katalóg štúdií, audit dôkazov naprieč doménami, každé tvrdenie zobrazené na svojej skutočnej hranici a fail-closed brána pre všetko, čo by sa mohlo dotknúť hardvéru. Skupina spravuje aj [scpn-control](https://github.com/anulum/scpn-control) a [scpn-phase-orchestrator](https://github.com/anulum/scpn-phase-orchestrator). | CI, hardware-in-the-loop replay, dokumentácia |
 | **04 · SC Neuromorphic Computing** | **SNN Studio 1.0**, prehliadačové IDE pre celý životný cyklus spikových sietí: návrh modelov neurónov, stavba sietí, tréning so surogátnymi gradientmi, kompilácia do SystemVerilogu a syntéza na FPGA, s exportovateľným dôkazovým záznamom každého behu. Postavené na [sc-neurocore](https://github.com/anulum/sc-neurocore); dnes vo fáze development preview. | FPGA dosky a čas na syntézu, meracie pracovisko, CI |
-| **05 · SCPN Quantum Computing** | **Quantum Studio**, pracovné prostredie nad [scpn-quantum-control](https://github.com/anulum/scpn-quantum-control): mapa toho, čo existuje a ako to súvisí, obvody navrhnuté a spustené na simulátoroch aj na skutočnom kvantovom hardvéri, a každý výsledok zabalený so surovými dátami, hashmi, písomným protokolom a rozhodovacím pravidlom, vrátane negatívnych výsledkov. IQM nám pre tento výskum udelilo rozšírený prístup k IQM Resonance. | čas na QPU, GPU simulácie, dokumentácia |
+| **05 · SCPN Quantum Computing** | **Quantum Studio**, pracovné prostredie nad [scpn-quantum-control](https://github.com/anulum/scpn-quantum-control): mapa toho, čo existuje a ako to súvisí, obvody navrhnuté a spustené na simulátoroch aj na skutočnom kvantovom hardvéri, a každý výsledok zabalený so surovými dátami, hashmi, písomným protokolom a rozhodovacím pravidlom, vrátane negatívnych výsledkov. | čas na QPU, GPU simulácie, dokumentácia |
 
 ### Pre organizácie
 
@@ -414,7 +461,7 @@ evaluačné benchmarky a CI.
 | Vydania a publikácie | [anulum.li/news/](https://anulum.li/news/) · [RSS](https://anulum.li/news/feed.xml) |
 | Životopis | [Jednostranové PDF](cv/Miroslav-Sotek-CV.pdf) · [zdroj v Markdowne](cv/Miroslav-Sotek-CV.md) · [JSON Resume](cv/resume.json) |
 | Výskumná identita | [ORCID 0009-0009-3560-0851](https://orcid.org/0009-0009-3560-0851) |
-| Softvér | [19 projektov na PyPI](https://pypi.org/user/anulum/) |
+| Softvér | [20 uvedených distribúcií na PyPI](https://pypi.org/user/anulum/) |
 | Quantum Control | [DOI 10.5281/zenodo.18821929](https://doi.org/10.5281/zenodo.18821929) |
 | Fusion Core | [DOI 10.5281/zenodo.18820864](https://doi.org/10.5281/zenodo.18820864) |
 | Preprinty fázových systémov | [Štúdia s vyrovnanou mierou falošných poplachov](https://doi.org/10.5281/zenodo.22113062) a [štúdia mapy režimov siete](https://doi.org/10.5281/zenodo.22113116) |
@@ -422,43 +469,39 @@ evaluačné benchmarky a CI.
 
 ## Publikovanie na PyPI
 
-<p align="center">
-  <a href="https://pypi.org/user/anulum/"><img alt="Miroslav Sotek na PyPI" src="assets/badges/pypi-profile.svg"></a>
-</p>
+[PyPI](https://pypi.org/user/anulum/)
 
-Overený [PyPI profil](https://pypi.org/user/anulum/) momentálne obsahuje 19
-publikovaných projektov: Python balíky, enginy akcelerované v Ruste, doménové
-jadrá a nástroje príkazového riadka.
+<!-- profile-catalogue:packages:start -->
+20 pomenovaných distribúcií bolo jednotlivo overených cez PyPI JSON API dňa 2026-10-15. Ide o overený zoznam, nie o úplný súpis celého účtu. Verzie sú metadáta balíkov, nie vedecká validácia ani zodpovedajúce historické DOI vydania.
 
 <details>
-<summary><strong>Index publikovaných balíkov</strong> &nbsp; 19 projektov</summary>
+<summary><strong>Publikované distribúcie</strong> · 20</summary>
 
-**Agentové systémy a spoľahlivosť:**
-[synapse-channel](https://pypi.org/project/synapse-channel/),
-[director-ai](https://pypi.org/project/director-ai/),
-[director-ai-lite](https://pypi.org/project/director-ai-lite/),
-[rigor-foundry](https://pypi.org/project/rigor-foundry/),
-[remanentia](https://pypi.org/project/remanentia/),
-[backfire-kernel](https://pypi.org/project/backfire-kernel/) a
-[hushline](https://pypi.org/project/hushline/).
-
-**Systémy SCPN:**
-[scpn-phase-orchestrator](https://pypi.org/project/scpn-phase-orchestrator/),
-[spo-kernel](https://pypi.org/project/spo-kernel/),
-[scpn-control](https://pypi.org/project/scpn-control/),
-[scpn-fusion](https://pypi.org/project/scpn-fusion/),
-[scpn-fusion-rs](https://pypi.org/project/scpn-fusion-rs/),
-[scpn-mif-core](https://pypi.org/project/scpn-mif-core/),
-[scpn-quantum-control](https://pypi.org/project/scpn-quantum-control/),
-[scpn-quantum-engine](https://pypi.org/project/scpn-quantum-engine/),
-[oscillatools](https://pypi.org/project/oscillatools/) a
-[scpn-studio-platform](https://pypi.org/project/scpn-studio-platform/).
-
-**Neuromorfné systémy:**
-[sc-neurocore](https://pypi.org/project/sc-neurocore/) a
-[sc-neurocore-engine](https://pypi.org/project/sc-neurocore-engine/).
+| PyPI | Verzia |
+|---|---|
+| [synapse-channel](https://pypi.org/project/synapse-channel/) | 0.99.38 |
+| [scpn-phase-orchestrator](https://pypi.org/project/scpn-phase-orchestrator/) | 1.4.3 |
+| [spo-kernel](https://pypi.org/project/spo-kernel/) | 0.5.10 |
+| [director-ai](https://pypi.org/project/director-ai/) | 3.21.0 |
+| [director-ai-lite](https://pypi.org/project/director-ai-lite/) | 3.21.0 |
+| [scpn-quantum-control](https://pypi.org/project/scpn-quantum-control/) | 1.2.0 |
+| [scpn-fusion-rs](https://pypi.org/project/scpn-fusion-rs/) | 4.0.0 |
+| [scpn-fusion](https://pypi.org/project/scpn-fusion/) | 4.0.0 |
+| [rigor-foundry](https://pypi.org/project/rigor-foundry/) | 1.0.0 |
+| [scpn-control](https://pypi.org/project/scpn-control/) | 0.23.0 |
+| [oscillatools](https://pypi.org/project/oscillatools/) | 0.1.0 |
+| [scpn-quantum-engine](https://pypi.org/project/scpn-quantum-engine/) | 0.2.0 |
+| [scpn-studio-platform](https://pypi.org/project/scpn-studio-platform/) | 0.11.2 |
+| [sc-neurocore-engine](https://pypi.org/project/sc-neurocore-engine/) | 3.16.0 |
+| [sc-neurocore](https://pypi.org/project/sc-neurocore/) | 3.16.0 |
+| [scpn-mif-core](https://pypi.org/project/scpn-mif-core/) | 0.1.1 |
+| [remanentia](https://pypi.org/project/remanentia/) | 0.5.0 |
+| [backfire-kernel](https://pypi.org/project/backfire-kernel/) | 0.1.3 |
+| [hushline](https://pypi.org/project/hushline/) | 0.1.5 |
+| [loop-timing-witness](https://pypi.org/project/loop-timing-witness/) | 0.1.0 |
 
 </details>
+<!-- profile-catalogue:packages:end -->
 
 ## Jazyky a platformy
 
@@ -552,6 +595,12 @@ tvrdenie o pripravenosti alebo výhode.
 - Negatívne výsledky a záznamy zlyhaní zostávajú súčasťou výstupu výskumu.
 
 ## Spolupráca
+
+<!-- profile-catalogue:partner:start -->
+### Zakladajúci a výskumní partneri
+
+Hľadáme pre-seed financovanie a partnerov na spoločné založenie výskumného inštitútu, spoločnosti a neziskovej výskumnej spoločnosti. Program dnes patrí jednej fyzickej osobe; tieto subjekty a pracoviská sú návrhmi, nie už založenými inštitúciami. Počiatočná geografická predstava zahŕňa Švajčiarsko alebo Lichtenštajnsko, Česko alebo Slovensko a tretie pracovisko na Blízkom východe, ktorého miesto zostáva otvorené. Prinášame softvér, výskumný program a riadenú organizáciu agentov. Partneri môžu priniesť kapitál, nezávislú replikáciu, merané doménové dáta, návrh a výrobu čipov, laboratóriá, prístroje či pracoviská hardware-in-the-loop. Prvá spolupráca má určiť jeden problém, jeden výstup a dôkazy úspechu. Nedeklarujeme záväzok partnera ani udelené financovanie.
+<!-- profile-catalogue:partner:end -->
 
 ### Licenčné modely
 

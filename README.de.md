@@ -42,13 +42,7 @@ Persönliche GitHub-Profilübersicht
   <a href="#zusammenarbeit">Zusammenarbeit</a>
 </p>
 
-Unabhängiger Forscher und Systemingenieur am [Anulum Institute](https://anulum.li)
-in der Schweiz. Das Programm läuft auf **einem Motor**: einem autonomen
-Programmier- und Verifikationssystem, das die Projekte auf dieser Seite
-entwickelt, testet und prüft und ihre Aussagen an Evidenz bindet. Der Motor
-arbeitet in **vier Domänen**: Reaktorsysteme, Systemintegration und Regelung,
-neuromorphes Rechnen und Quantencomputing. Aussagen sind nur so verlässlich
-wie die Messungen, Artefakte oder Prüfungen, die sie belegen.
+Unabhängiger Forscher und Systemingenieur mit Sitz in der Schweiz. Unter dem Namen Anulum entwickle ich wissenschaftliche Software und eine geregelte Forschungsorganisation. Fünf aktive Gruppen arbeiten an Reaktorsystemen, Integration und Regelung, Agentenkoordination und Absicherung, neuromorphem Rechnen und Quantencomputing. Eine sechste Gruppe, Scientific Discovery and Experimentation, befindet sich im Aufbau. Veröffentlichte Software, Architekturarbeit, World Models und angestrebte Hardwareergebnisse haben getrennte Evidenzgrenzen. Forschungsinstitut und Unternehmen werden zur gemeinsamen Gründung mit Partnern angeboten.
 
 <table>
   <tr>
@@ -109,7 +103,7 @@ sie sind Betriebssignale, keine Bewertung wissenschaftlicher Qualität.
 
 <table>
   <tr>
-    <td width="33%"><strong>Reaktorportfolio</strong><br><sub>Konsolidierung gemeinsamer Kerne und kontrollierter Gerätedaten in 25 öffentlichen Reaktor-Repositories.</sub></td>
+    <td width="33%"><strong>Reaktorportfolio</strong><br><sub>Konsolidierung gemeinsamer Kerne und kontrollierter Gerätedaten in 26 öffentlichen Reaktor-Repositories.</sub></td>
     <td width="33%"><strong>Agentensicherung</strong><br><sub>Verbindung von Koordination, Gedächtnis, Antwortsicherung, Aktionsprüfung und Repository-Evidenz ohne Auflösung der Eigentumsgrenzen.</sub></td>
     <td width="33%"><strong>Von der Forschung zur Hardware</strong><br><sub>Wissenschaftliche Modelle bis zu nativer Beschleunigung, formalen Prüfungen, RTL, Hardwareläufen und prüfbaren Ergebnispaketen.</sub></td>
   </tr>
@@ -157,209 +151,259 @@ noch externe Validierung, Förderung oder Auszeichnungen.
 
 ```mermaid
 flowchart LR
-    A["01 · Prüfen<br/>Rigor Foundry"] --> B["02 · Absichern<br/>Director-AI"] --> C["03 · Koordinieren<br/>Synapse Channel"] --> D["04 · Rechnen<br/>SC-NeuroCore · SCPN"]
+    Q["SCPN Quantum Control"] -. "optional SNN adapter" .-> N["SC-NeuroCore"]
+    Q -. "optional studio" .-> S["Studio Platform package"]
+    N -. "optional federation" .-> S
+    D["Director-AI"] -. "optional honesty extra" .-> S
+    C["SCPN Control"] -. "optional fusion extra" .-> F["SCPN Fusion Core"]
+    R["Rigor Foundry · repository analysis"]
 ```
 
-<table>
-  <tr>
-    <td width="25%"><strong>01 · Prüfen</strong><br><sub>Rigor Foundry findet, was defekt, unbelegt oder unsicher zu behaupten ist.</sub></td>
-    <td width="25%"><strong>02 · Absichern</strong><br><sub>Director-AI bewertet Modellausgaben, bevor ihnen vertraut wird.</sub></td>
-    <td width="25%"><strong>03 · Koordinieren</strong><br><sub>Synapse Channel verwaltet Claims, Mailboxen, Pläne und Quittungen.</sub></td>
-    <td width="25%"><strong>04 · Rechnen</strong><br><sub>SC-NeuroCore und SCPN führen wissenschaftliche, physikalische und hardwarenahe Arbeit aus.</sub></td>
-  </tr>
-</table>
-
-Forschung, Validierung und Produktreife bleiben getrennt. Aktive Entwicklung
-ist keine Aussage über Einsatzreife.
+Die Pfeile zeigen deklarierte optionale Softwareschnittstellen aus den Architekturunterlagen, keinen getesteten wissenschaftlichen Gesamtzyklus. Rigor Foundry analysiert Repositories und erhält hier keine erfundene Runtime-Abhängigkeit. Jede Domäne behält Modelle und Hardwarebefugnisse. Studio Platform ist ein veröffentlichtes Paket mit privatem Repository. Der Netz-Dämpfungsbenchmark des Phase Orchestrator wurde am 12. Oktober 2026 zurückgezogen; weder ein Ergebnis an einem realen Stromnetz noch ein Quantenvorteil wird behauptet.
 
 ## Ökosystemkarte
 
-<p align="center">
-  <img alt="39 kartierte Repositories" src="assets/badges/mapped-repositories.de.svg">
-  <img alt="5 Portfolios" src="assets/badges/portfolios.de.svg">
-  <img alt="34 öffentliche Projekte" src="assets/badges/public-projects.de.svg">
-  <img alt="6 private Systeme" src="assets/badges/private-systems.de.svg">
-</p>
+<!-- profile-catalogue:inventory:start -->
+**Datierter Bestand: 2026-10-15**
+
+97 Portfolio-Repositories: 37 öffentlich, 6 privat, 54 lokal initialisiert und unveröffentlicht. Weitere 42 Katalogeinträge beschreiben Pakete, Module, Arbeitsbereiche oder Architekturziele. Sämtliche Arbeiten laufen.
+
+Gruppendeklarationen stammen vom 12.–13. Oktober; Repository-Präsenz und öffentliche Sichtbarkeit wurden am 15. Oktober 2026 geprüft. Lizenzangaben sind Quelldeklarationen, kein Rechtsaudit. Paketveröffentlichung und Hardwarequalifikation bleiben getrennt.
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/ecosystem-map-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="assets/ecosystem-map-light.svg">
-    <img src="assets/ecosystem-map-dark.svg" width="1200" alt="Anulum-Portfolio mit fünf unabhängigen Repository-Gruppen">
-  </picture>
+  <img alt="Portfolio repositories" src="assets/badges/mapped-repositories.svg">
+  <img alt="Research groups" src="assets/badges/portfolios.svg">
+  <img alt="Public repositories" src="assets/badges/public-projects.svg">
+  <img alt="Private repositories" src="assets/badges/private-systems.svg">
 </p>
 
-Die Karte umfasst 39 Portfolio-Repositories: 33 öffentliche Repositories und
-sechs private Produktbereiche. [HushLine](https://github.com/anulum/HushLine)
-ist ein eigenständiges öffentliches Werkzeug ausserhalb der fünf Portfolios.
-Verbindungen stellen Vertrags-, Integrations-, Evidenz- und Auditbeziehungen
-dar. Sie führen keine Verantwortlichkeiten zusammen und implizieren weder
-wissenschaftliche Validierung noch Betriebsbereitschaft oder
-Aktuierungsbefugnis. Zahlen verifiziert am <!-- verified-at -->2026-10-15<!-- /verified-at -->.
-Die interaktive Fassung dieser Karte, in der jedes registrierte Projekt eine
-Zeile ist und sich nach Gruppe, Reaktorfamilie, Sichtbarkeit, Lebenszyklus und
-Evidenz filtern lässt, steht unter
-[anulum.li/portfolio/](https://anulum.li/portfolio/); jedes Portfolio unten
-verweist auf seine eigene Ansicht.
-Das Konto führt mehr öffentliche Repositories als die Karte: die 34 kartierten
-öffentlichen Projekte plus dieses Profil-Repository und einige zur Referenz
-behaltene Forks.
+<p align="center"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/ecosystem-map-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/ecosystem-map-light.svg">
+  <img src="assets/ecosystem-map-dark.svg" width="1200" alt="Anulum: six research groups">
+</picture></p>
 
-**Statusschlüssel:** `ÖFFENTLICH` · `ÖFFENTLICH / NUR ARCHITEKTUR` · `PRIVAT` ·
-`PRIVAT / PROPRIETÄR`
+Der detaillierte Atlas ist in dieses Repository integriert. Seine 196 Einträge enthalten auch Programme, Unternehmensbedarf, Partnerrollen und Finanzierungswege; es sind keine 196 Repositories. Die Vorschauanleitung öffnet die interaktive Ansicht. Das bestehende Website-Portfolio wird separat gepflegt.
+
+[Quelle des detaillierten Atlas und lokale Vorschau](docs/atlas/README.md) · [anulum.li/portfolio/](https://anulum.li/portfolio/)
+
+Die technischen Beschreibungen zitieren die englischen Quelldatensätze. Ein benanntes Ziel ist keine separat veröffentlichte Fähigkeit. Gemeinsame Einträge werden einmal in ihrer Hauptgruppe gezählt.
 
 <details>
-<summary><strong>01 · SCPN Reactor Systems</strong> &nbsp; 25 öffentliche Repositories</summary>
+<summary><strong>01 · SCPN Reactor Systems</strong> · 55 Repositories · 55 Katalogeinträge</summary>
 
-Live-Ansicht dieses Portfolios auf anulum.li, filterbar und mit Karte: [anulum.li/portfolio/#g=SCPN-REACTOR-SYSTEMS](https://anulum.li/portfolio/#g=SCPN-REACTOR-SYSTEMS)
+55 zugeordnete Repositories einschliesslich ATLAS-REACTORUM: 26 öffentlich und 29 lokal initialisiert, unveröffentlicht. Fusions-, Spaltungs-, chemische und hybride Modelle, gemeinsame Kerne, Geometrie und Reaktornachweise. World Models, 3D-Simulationen und Geräteentwürfe sind laufende Programmziele; ein Entwurf ist kein validierter Reaktor.
 
-Gerätefamilienphysik, gemeinsame numerische Kerne, Reaktormodelle, Geometrie
-und Konfigurationsverantwortung. Das Vorhandensein eines Repositorys ist für
-sich allein kein Nachweis validierter Physik oder Maschinenreife. Jede
-Gerätefamilie hat auf anulum.li ein interaktives Portal mit Physik, Explorer,
-Glossar und Quellen; der [Hub der Reaktorsysteme](https://anulum.li/reactor-systems/)
-führt jeden Kern mit seiner Evidenzreife auf, und die
-[Vergleichsseite](https://anulum.li/reactor-systems/compare.html) stellt ihre
-Level-0-Anker nebeneinander.
+[Architekturkarten der Gruppen](https://github.com/anulum/atlas-reactorum/blob/main/docs/ecosystem.md)
 
-**Gemeinsame Grundlagen**
+| Projekt / Komponente | Aufgabe und Entwicklungsstand | Repository / Verfügbarkeit | Deklarierte Lizenz | Quelldatum |
+|---|---|---|---|---|
+| [ATLAS-REACTORUM](https://github.com/anulum/atlas-reactorum)<br><sub>Source and rights library with historical reactor taxonomy and interactive citation views.</sub> | In Arbeit · tool · Implementation and integration | Öffentlich | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-ADS-CORE<br><sub>Subcritical blanket plus typed external source/beam-target interface.</sub> | In Arbeit · component · Architecture and qualification | Lokal, unveröffentlicht | AGPL-3.0-or-later | 2026-10-12 |
+| [SCPN Beam Target Core](https://github.com/anulum/scpn-beam-target-core)<br><sub>Beam/target design and source-scoped reaction/stopping/yield.</sub> | In Arbeit · component · Computational prototypes and continued development | Öffentlich | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-BIOCHEM-CORE<br><sub>Source-specific enzyme/fermentation kinetics and reactor transport.</sub> | In Arbeit · component · Architecture and qualification | Lokal, unveröffentlicht | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-BREED-BURN-CORE<br><sub>Source-bounded breed-and-burn fuel-management concept.</sub> | In Arbeit · component · Architecture and qualification | Lokal, unveröffentlicht | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-BWR-CORE<br><sub>Boiling-channel thermal-spectrum family and void-feedback boundary.</sub> | In Arbeit · component · Architecture and qualification | Lokal, unveröffentlicht | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-CATALYTIC-BED-CORE<br><sub>Fixed-bed catalyst/transport/pressure-drop coupling.</sub> | In Arbeit · component · Architecture and qualification | Lokal, unveröffentlicht | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-CHANNEL-CORE<br><sub>Graphite-moderated channel reactor only; exclusive from PHWR pressure tubes.</sub> | In Arbeit · component · Architecture and qualification | Lokal, unveröffentlicht | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-CHEM-KINETICS-CORE<br><sub>Ideal gas batch/CSTR/PFR named kinetics and thermo models.</sub> | In Arbeit · component · Architecture and qualification | Lokal, unveröffentlicht | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-CHEM-PROCESS-HYBRID-CORE<br><sub>Chemical process/recycle/separation and carbon-capture composition.</sub> | In Arbeit · component · Architecture and qualification | Lokal, unveröffentlicht | AGPL-3.0-or-later | 2026-10-12 |
+| [SCPN Dense Plasma Focus Core](https://github.com/anulum/scpn-dense-plasma-focus-core)<br><sub>Focus device/bank/axial/radial/pinch and source-scoped neutron estimates.</sub> | In Arbeit · component · Computational prototypes and continued development | Öffentlich | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-ELECTROCHEM-CORE<br><sub>Electrode/cell transport and charge/reaction interface.</sub> | In Arbeit · component · Architecture and qualification | Lokal, unveröffentlicht | AGPL-3.0-or-later | 2026-10-12 |
+| [SCPN FRC Core](https://github.com/anulum/scpn-frc-core)<br><sub>Field-reversed configuration, radial pressure-balance and kinetic-scale model.</sub> | In Arbeit · component · Computational prototypes and continued development | Öffentlich | AGPL-3.0-or-later | 2026-10-12 |
+| [SCPN Fusion Core](https://github.com/anulum/scpn-fusion-core)<br><sub>Canonical plasma solver mathematics, transport/equilibrium and existing research pipeline.</sub> | In Arbeit · package · Released software · ongoing development | Öffentlich | AGPL-3.0-or-later | 2026-10-12 |
+| [SCPN Fusion-Fission Hybrid Core](https://github.com/anulum/scpn-fusion-fission-hybrid-core)<br><sub>Existing source-owned fusion/fission blanket device and proposed typed member couplings.</sub> | In Arbeit · component · Computational prototypes and continued development | Öffentlich | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-FUSION-PROCESS-HEAT-CORE<br><sub>Fusion-source to chemical-process heat/material composition.</sub> | In Arbeit · component · Architecture and qualification | Lokal, unveröffentlicht | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-GFR-CORE<br><sub>Gas-cooled fast-spectrum family with high-temperature heat-removal boundary.</sub> | In Arbeit · component · Architecture and qualification | Lokal, unveröffentlicht | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-HEAT-PIPE-CORE<br><sub>Solid-core heat-pipe microreactor and source-defined transport limits.</sub> | In Arbeit · component · Architecture and qualification | Lokal, unveröffentlicht | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-HTGR-CORE<br><sub>Graphite/TRISO helium-cooled design and distinct process-heat interface.</sub> | In Arbeit · component · Architecture and qualification | Lokal, unveröffentlicht | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-HYBRID-ENERGY-CORE<br><sub>Fission/renewable/storage electrical and thermal composition.</sub> | In Arbeit · component · Architecture and qualification | Lokal, unveröffentlicht | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-HYDROGEN-PROCESS-CORE<br><sub>HTSE and named thermochemical hydrogen process routes.</sub> | In Arbeit · component · Architecture and qualification | Lokal, unveröffentlicht | AGPL-3.0-or-later | 2026-10-12 |
+| [SCPN ICF Beam Core](https://github.com/anulum/scpn-icf-beam-core)<br><sub>Particle-beam illumination/capsule design with explicit coupling.</sub> | In Arbeit · component · Computational prototypes and continued development | Öffentlich | AGPL-3.0-or-later | 2026-10-12 |
+| [SCPN ICF Impact Core](https://github.com/anulum/scpn-icf-impact-core)<br><sub>Impact/projectile/fuel/compression design and source-limited energy relations.</sub> | In Arbeit · component · Computational prototypes and continued development | Öffentlich | AGPL-3.0-or-later | 2026-10-12 |
+| [SCPN ICF Laser Core](https://github.com/anulum/scpn-icf-laser-core)<br><sub>Laser-driven capsule/implosion design and source-scoped ignition/gain criteria.</sub> | In Arbeit · component · Computational prototypes and continued development | Öffentlich | AGPL-3.0-or-later | 2026-10-12 |
+| [SCPN IEC Core](https://github.com/anulum/scpn-iec-core)<br><sub>Gridded electrostatic device and distinct nonthermal loss/recirculation models.</sub> | In Arbeit · component · Computational prototypes and continued development | Öffentlich | AGPL-3.0-or-later | 2026-10-12 |
+| [SCPN Lattice Fusion Core](https://github.com/anulum/scpn-lattice-fusion-core)<br><sub>Source-bounded lattice-confinement fusion research and modelling.</sub> | In Arbeit · component · Architecture and qualification | Öffentlich | AGPL-3.0-or-later | 2026-10-12 |
+| [SCPN Levitated Dipole Core](https://github.com/anulum/scpn-levitated-dipole-core)<br><sub>Dipole coil/levitation/charging and anisotropic plasma model.</sub> | In Arbeit · component · Computational prototypes and continued development | Öffentlich | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-LFR-CORE<br><sub>Lead/LBE fast-spectrum family with materials/corrosion boundary.</sub> | In Arbeit · component · Architecture and qualification | Lokal, unveröffentlicht | AGPL-3.0-or-later | 2026-10-12 |
+| [SCPN Magnetic Cusp Core](https://github.com/anulum/scpn-magnetic-cusp-core)<br><sub>Cusp coil/configuration ownership and source-specific field/particle-loss model proposal.</sub> | In Arbeit · component · Computational prototypes and continued development | Öffentlich | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-MEMBRANE-CORE<br><sub>Reaction-separation with explicit membrane transport.</sub> | In Arbeit · component · Architecture and qualification | Lokal, unveröffentlicht | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-METHANE-REFORMER-CORE<br><sub>Steam-methane reforming kinetics and process train.</sub> | In Arbeit · component · Architecture and qualification | Lokal, unveröffentlicht | AGPL-3.0-or-later | 2026-10-12 |
+| [SCPN MIF Core](https://github.com/anulum/scpn-mif-core)<br><sub>Existing magneto-inertial dynamics/runtime with maintained multi-language/RTL chain.</sub> | In Arbeit · package · Released software · ongoing development | Öffentlich | AGPL-3.0-or-later | 2026-10-12 |
+| [SCPN MIF Liner Core](https://github.com/anulum/scpn-mif-liner-core)<br><sub>Mechanical/magnetic liner compression and target-energy coupling.</sub> | In Arbeit · component · Computational prototypes and continued development | Öffentlich | AGPL-3.0-or-later | 2026-10-12 |
+| [SCPN MIF MagLIF Core](https://github.com/anulum/scpn-mif-maglif-core)<br><sub>Magnetised liner drive/preheat/compression family.</sub> | In Arbeit · component · Computational prototypes and continued development | Öffentlich | AGPL-3.0-or-later | 2026-10-12 |
+| [SCPN MIF Plasma Jet Core](https://github.com/anulum/scpn-mif-plasma-jet-core)<br><sub>Discrete plasma-jet array and spherical liner convergence.</sub> | In Arbeit · component · Computational prototypes and continued development | Öffentlich | AGPL-3.0-or-later | 2026-10-12 |
+| [SCPN Mirror Core](https://github.com/anulum/scpn-mirror-core)<br><sub>Mirror/tandem confinement and source-specific flux-tube geometry.</sub> | In Arbeit · component · Computational prototypes and continued development | Öffentlich | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-MSR-CORE<br><sub>Liquid-fuel molten-salt family with chemistry, circulation and depletion.</sub> | In Arbeit · component · Architecture and qualification | Lokal, unveröffentlicht | AGPL-3.0-or-later | 2026-10-12 |
+| [SCPN Muon Fusion Core](https://github.com/anulum/scpn-muon-fusion-core)<br><sub>Muon-catalysed reaction models and complete energy accounting.</sub> | In Arbeit · component · Architecture and qualification | Öffentlich | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-NTP-CORE<br><sub>Reactor-side thermal propulsion and typed heat/flow interface.</sub> | In Arbeit · component · Architecture and qualification | Lokal, unveröffentlicht | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-NUCLEAR-DESALINATION-CORE<br><sub>Fission-to-desalination thermal/material composition.</sub> | In Arbeit · component · Architecture and qualification | Lokal, unveröffentlicht | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-NUCLEAR-HYDROGEN-CORE<br><sub>Typed fission-to-hydrogen thermal/electrical/material composition.</sub> | In Arbeit · component · Architecture and qualification | Lokal, unveröffentlicht | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-PHOTOCATALYTIC-CORE<br><sub>Photon-flux-driven reaction and optical/source coupling.</sub> | In Arbeit · component · Architecture and qualification | Lokal, unveröffentlicht | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-PHWR-CORE<br><sub>Heavy-water pressure-tube family with on-power fuel management.</sub> | In Arbeit · component · Architecture and qualification | Lokal, unveröffentlicht | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-PWR-CORE<br><sub>Light-water moderated/cooled vessel and primary-circuit design.</sub> | In Arbeit · component · Architecture and qualification | Lokal, unveröffentlicht | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-REACTOR-CATALOGUE<br><sub>Evidence-labelled source-authority catalogue, candidate revision/history and vocabulary.</sub> | In Arbeit · component · Architecture and qualification | Lokal, unveröffentlicht | AGPL-3.0-or-later | 2026-10-12 |
+| [SCPN Reactor Kernels](https://github.com/anulum/scpn-reactor-kernels)<br><sub>Shared equations, numerical primitives and geometry/CAD/export substrate.</sub> | In Arbeit · package · Implementation and integration | Öffentlich | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-RESEARCH-REACTOR-CORE<br><sub>Research/isotope-production core including separately supported pulse operation.</sub> | In Arbeit · component · Architecture and qualification | Lokal, unveröffentlicht | AGPL-3.0-or-later | 2026-10-12 |
+| [SCPN RFP Core](https://github.com/anulum/scpn-rfp-core)<br><sub>Reversed-field pinch relaxation/profile and toroidal device design.</sub> | In Arbeit · component · Computational prototypes and continued development | Öffentlich | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-SCWR-CORE<br><sub>Supercritical-water family with explicit thermophysical transition support.</sub> | In Arbeit · component · Architecture and qualification | Lokal, unveröffentlicht | AGPL-3.0-or-later | 2026-10-12 |
+| SCPN-SFR-CORE<br><sub>Sodium-cooled fast-spectrum family and fuel/material/heat-removal boundary.</sub> | In Arbeit · component · Architecture and qualification | Lokal, unveröffentlicht | AGPL-3.0-or-later | 2026-10-12 |
+| [SCPN Spheromak Core](https://github.com/anulum/scpn-spheromak-core)<br><sub>Relaxed compact-torus configuration, flux conserver and formation criteria.</sub> | In Arbeit · component · Computational prototypes and continued development | Öffentlich | AGPL-3.0-or-later | 2026-10-12 |
+| [SCPN Stellarator Core](https://github.com/anulum/scpn-stellarator-core)<br><sub>Three-dimensional magnetic-confinement configuration and coil/design ownership.</sub> | In Arbeit · component · Computational prototypes and continued development | Öffentlich | AGPL-3.0-or-later | 2026-10-12 |
+| [SCPN Theta Pinch Core](https://github.com/anulum/scpn-theta-pinch-core)<br><sub>Axial-field compression and pinch configuration with sharp-boundary model.</sub> | In Arbeit · component · Computational prototypes and continued development | Öffentlich | AGPL-3.0-or-later | 2026-10-12 |
+| [SCPN Tokamak Core](https://github.com/anulum/scpn-tokamak-core)<br><sub>Own tokamak physical modelling and reactor-design geometry, with explicitly qualified canonical plasma-solver dependencies.</sub> | In Arbeit · component · Computational prototypes and continued development | Öffentlich | AGPL-3.0-or-later | 2026-10-12 |
+| [SCPN Z-Pinch Core](https://github.com/anulum/scpn-z-pinch-core)<br><sub>Current-driven pinch, sheared-flow model and pulsed device design.</sub> | In Arbeit · component · Computational prototypes and continued development | Öffentlich | AGPL-3.0-or-later | 2026-10-12 |
 
-| Repository | Umfang | Status |
-|---|---|---|
-| [SCPN Reactor Kernels](https://github.com/anulum/scpn-reactor-kernels) | Gemeinsame deterministische Physik-, Geometrie- und Numerikkerne für das Reaktorportfolio | `ÖFFENTLICH` |
-| [SCPN Fusion Core](https://github.com/anulum/scpn-fusion-core) | Tokamakphysik, Löser, Validierungskampagnen, Transport und Regelungsforschung | `ÖFFENTLICH` |
-
-**[Geschlossener magnetischer Einschluss](https://anulum.li/reactor-systems/closed-magnetic/)** · toroidale Anlagen, die das Plasma auf geschlossenen Magnetflächen halten
-
-| Repository | Umfang | Status |
-|---|---|---|
-| [SCPN Tokamak Core](https://github.com/anulum/scpn-tokamak-core) | Konfigurations- und Diagnoseplanwahrheit für konventionelle und sphärische Tokamaks | `ÖFFENTLICH` |
-| [SCPN Stellarator Core](https://github.com/anulum/scpn-stellarator-core) | Stellarator-, Heliotron- und Torsatronsysteme | `ÖFFENTLICH` |
-| [SCPN RFP Core](https://github.com/anulum/scpn-rfp-core) | Fusionssysteme mit umgekehrtem Feld (Reversed-Field-Pinch) | `ÖFFENTLICH` |
-| [SCPN Spheromak Core](https://github.com/anulum/scpn-spheromak-core) | Selbstorganisierte kompakte Spheromak-Toroide | `ÖFFENTLICH` |
-| [SCPN FRC Core](https://github.com/anulum/scpn-frc-core) | Fusionssysteme mit feldumgekehrter Konfiguration (FRC) | `ÖFFENTLICH` |
-
-**[Offener und nicht-toroidaler magnetischer Einschluss](https://anulum.li/reactor-systems/open-magnetic/)** · Spiegel-, Magnetcusp- und Levitated-Dipole-Konfigurationen mit offenen Feldlinien
-
-| Repository | Umfang | Status |
-|---|---|---|
-| [SCPN Mirror Core](https://github.com/anulum/scpn-mirror-core) | Einfache, Tandem- und gasdynamische Magnetspiegel | `ÖFFENTLICH` |
-| [SCPN Magnetic Cusp Core](https://github.com/anulum/scpn-magnetic-cusp-core) | Rein magnetische Cusp-Einschlusssysteme | `ÖFFENTLICH` |
-| [SCPN Levitated Dipole Core](https://github.com/anulum/scpn-levitated-dipole-core) | Einschlusssysteme mit levitiertem Dipol | `ÖFFENTLICH` |
-
-**[Selbstmagnetische und gepulste Pinches](https://anulum.li/reactor-systems/pinches/)** · Anlagen, in denen der treibende Strom selbst das Plasma einschliesst
-
-| Repository | Umfang | Status |
-|---|---|---|
-| [SCPN Z-Pinch Core](https://github.com/anulum/scpn-z-pinch-core) | Klassische Z-Pinches und Z-Pinches mit Scherströmung, Level-0-Physik und deterministische Geometrie | `ÖFFENTLICH` |
-| [SCPN Theta Pinch Core](https://github.com/anulum/scpn-theta-pinch-core) | Theta-Pinch-Anlagen, Diagnoseverträge und zitierte Level-0-Physik | `ÖFFENTLICH` |
-| [SCPN Dense Plasma Focus Core](https://github.com/anulum/scpn-dense-plasma-focus-core) | Koaxiale Dense-Plasma-Focus-Anlagen, Diagnostik und Level-0-Physik | `ÖFFENTLICH` |
-
-**[Trägheitseinschluss](https://anulum.li/reactor-systems/inertial/)** · laser-, strahl- und aufprallgetriebene Kompression von Fusionstargets
-
-| Repository | Umfang | Status |
-|---|---|---|
-| [SCPN ICF Laser Core](https://github.com/anulum/scpn-icf-laser-core) | Laser-Trägheitsfusion mit direktem, indirektem und gestuftem Antrieb | `ÖFFENTLICH` |
-| [SCPN ICF Beam Core](https://github.com/anulum/scpn-icf-beam-core) | Trägheitsfusion mit Ionen- und gepulsten Elektronenstrahlen | `ÖFFENTLICH` |
-| [SCPN ICF Impact Core](https://github.com/anulum/scpn-icf-impact-core) | Projektil- und aufprallgetriebene Trägheitsfusion | `ÖFFENTLICH` |
-
-**[Magneto-inertiale Systeme und Systeme mit magnetisiertem Target](https://anulum.li/reactor-systems/magneto-inertial/)** · Kompression magnetisierter Targets durch Liner, Plasmajets oder FRC-Kollisionen
-
-| Repository | Umfang | Status |
-|---|---|---|
-| [SCPN MIF Core](https://github.com/anulum/scpn-mif-core) | Gepulste FRC/MIF-Kinematik, deterministische Triggerlogik, FPGA-RTL und formale Zeitnachweise | `ÖFFENTLICH` |
-| [SCPN MIF MagLIF Core](https://github.com/anulum/scpn-mif-maglif-core) | Vormagnetisierte, laservorgeheizte, pulsleistungsgetriebene MagLIF-Systeme | `ÖFFENTLICH` |
-| [SCPN MIF Plasma Jet Core](https://github.com/anulum/scpn-mif-plasma-jet-core) | Magneto-inertiale Fusionssysteme mit konvergierendem Plasmajet-Liner | `ÖFFENTLICH` |
-| [SCPN MIF Liner Core](https://github.com/anulum/scpn-mif-liner-core) | Fusion mit magnetisiertem Target und mechanischem oder flüssigem Liner | `ÖFFENTLICH` |
-
-**[Elektrostatische, Strahl-Target- und Hybridsysteme](https://anulum.li/reactor-systems/electrostatic-hybrid/)** · inertial-elektrostatische Potentialtöpfe, kollidierende Strahlen und Fusions-Spaltungs-Hybride
-
-| Repository | Umfang | Status |
-|---|---|---|
-| [SCPN IEC Core](https://github.com/anulum/scpn-iec-core) | Gitter- und Polywell-artiger inertial-elektrostatischer Einschluss | `ÖFFENTLICH` |
-| [SCPN Beam Target Core](https://github.com/anulum/scpn-beam-target-core) | Gerätewahrheit für Festtarget- und Kollisionsstrahl-Fusion | `ÖFFENTLICH` |
-| [SCPN Fusion-Fission Hybrid Core](https://github.com/anulum/scpn-fusion-fission-hybrid-core) | Fusionsneutronenquellen, gekoppelt an ausdrücklich unterkritische Spaltungsblankets | `ÖFFENTLICH` |
-
-**Reservierte Forschungsgrenzen** · reine Architektur-Repositories, noch ohne Gerätephysik
-
-| Repository | Umfang | Status |
-|---|---|---|
-| [SCPN Lattice Fusion Core](https://github.com/anulum/scpn-lattice-fusion-core) | Kontrollierte Grenze für die Forschung an extern getriebener Gitterfusion | `ÖFFENTLICH / NUR ARCHITEKTUR` |
-| [SCPN Muon Fusion Core](https://github.com/anulum/scpn-muon-fusion-core) | Kontrollierte Grenze für die Forschung an myonkatalysierter Fusion | `ÖFFENTLICH / NUR ARCHITEKTUR` |
-
-**Geplante Familien: Kernspaltung, Chemie und Hybride** · 29 weitere Familien, je ein eigenes Repository (genehmigt am 13.09.2026); Pläne geschrieben, Repositories noch nicht angelegt
-
-- **Kernspaltung (15):** PWR, BWR, PHWR, HTGR, SFR, LFR, MSR, GFR, SCWR, Kanalreaktoren, Forschungsreaktoren, Heatpipe-Mikroreaktoren, ADS, Breed-and-Burn, nuklearer thermischer Antrieb (NTP).
-- **Chemie (8):** chemische Kinetik, katalytische Festbetten, Dampfreformierung von Methan, Wasserstoffprozesse, elektrochemische, biochemische, photokatalytische und Membranreaktoren.
-- **Hybride (5):** nuklearer Wasserstoff, hybride Energiesysteme, gekoppelte Chemieprozesse, nukleare Meerwasserentsalzung, Prozesswärme aus Fusion.
-- **Katalog:** SCPN Reactor Catalogue, ein generierter Katalog aller Familien mit ihrem Evidenzstand.
-
-Reihenfolge: Welle A (chemische Kinetik, Katalog, PWR), danach die Wellen B und C. Repositories werden erst nach der Ratifizierung des Gruppenvertrags angelegt; keine dieser Familien hat daher bisher Code. Zugang: `GEPLANT`.
+**Portale der Reaktorfamilien**: [reactor-systems](https://anulum.li/reactor-systems/) · [compare.html](https://anulum.li/reactor-systems/compare.html) · [closed-magnetic](https://anulum.li/reactor-systems/closed-magnetic/) · [open-magnetic](https://anulum.li/reactor-systems/open-magnetic/) · [pinches](https://anulum.li/reactor-systems/pinches/) · [inertial](https://anulum.li/reactor-systems/inertial/) · [magneto-inertial](https://anulum.li/reactor-systems/magneto-inertial/) · [electrostatic-hybrid](https://anulum.li/reactor-systems/electrostatic-hybrid/)
 
 </details>
 
 <details>
-<summary><strong>02 · SCPN Systems Integration and Control</strong> &nbsp; 4 Repositories</summary>
+<summary><strong>02 · SCPN Systems Integration and Control</strong> · 4 Repositories · 4 Katalogeinträge</summary>
 
-Live-Ansicht dieses Portfolios auf anulum.li, filterbar und mit Karte: [anulum.li/portfolio/#g=SCPN-SYSTEMS-INTEGRATION-AND-CONTROL](https://anulum.li/portfolio/#g=SCPN-SYSTEMS-INTEGRATION-AND-CONTROL)
+Vier gleichrangige Produkte. Control und Phase Orchestrator sind öffentlich; Studio Hub und das Studio-Platform-Repository sind privat. Das öffentliche Paket scpn-studio-platform ist separat verfügbar. Deklarierte Studio-Schnittstellen belegen keine getestete Föderation.
 
-| Repository | Umfang | Status |
-|---|---|---|
-| [SCPN Control](https://github.com/anulum/scpn-control) | Neuro-symbolische Regler, Laufzeitzulassung, Replay, Audit und Grenzen für Softwareaktionen | `ÖFFENTLICH` |
-| [SCPN Phase Orchestrator](https://github.com/anulum/scpn-phase-orchestrator) | Analyse gekoppelter Rhythmen, versiegelte Synchronisationsevidenz und ausschliesslich zur Prüfung bestimmte Regelungsvorschläge | `ÖFFENTLICH` |
-| **SCPN Studio** | Föderierender Hub für wissenschaftliche Studios, Claim-Grenzen, Portfoliosichtbarkeit und kontrollierte Ausführung | `PRIVAT` |
-| **SCPN Studio Platform** | Domänenneutrales SDK für Evidenzbündel, Fähigkeitsmanifeste, Jobs, Identität und Portfoliovalidierung | `PRIVAT / OPEN-CORE` |
-
-</details>
-
-<details>
-<summary><strong>03 · Agentic Coordination, Assurance and Continuity</strong> &nbsp; 8 Repositories</summary>
-
-Live-Ansicht dieses Portfolios auf anulum.li, filterbar und mit Karte: [anulum.li/portfolio/#g=AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS](https://anulum.li/portfolio/#g=AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS)
-
-| Repository | Umfang | Status |
-|---|---|---|
-| [Director-AI](https://github.com/anulum/director-ai) | LLM-Halluzinationsschutz mit NLI/RAG-Verankerung, versiegelter Evidenz und optionalen Streaming-Widerspruchsprüfungen | `ÖFFENTLICH / OPEN-CORE` |
-| **Director Class AI** | Prüfung vor dem Absenden und Evidenzkontrollen für Aktionen autonomer Agenten mit hoher Tragweite | `PRIVAT / BUSL-1.1` |
-| **Director AI Cloud** | Verwaltete mandantenfähige Konten, API-Schlüssel, Messung, Kontingente und Steuerung des gehosteten Dienstes | `PRIVAT / BUSL-1.1` |
-| [Rigor Foundry](https://github.com/anulum/rigor-foundry) | Evidenzgebundenes Inventar, Auditkandidaten, Review-Bindung und Sanierungsplanung | `ÖFFENTLICH` |
-| [Remanentia](https://github.com/anulum/remanentia) | Auditierbares KI-Gedächtnis mit hybridem Retrieval, Graphen, Konsolidierung, CLI, MCP und API | `ÖFFENTLICH` |
-| **Remanentia Portal** | Kundenidentität, Berechtigungen und kommerzielle Control Plane ohne Ausführung von Kundenlasten | `PRIVAT` |
-| [Synapse Channel](https://github.com/anulum/synapse-channel) | Lokale Agentenkoordination mit Plänen, Claims, dauerhaften Nachrichten, Audit und Protokolladaptern | `ÖFFENTLICH` |
-| **Synapse Channel Fleet** | Lizenzierte Föderation mehrerer Maschinen, Vertrauensverwaltung, Offline-Lizenzzulassung und Hub-übergreifender Betrieb | `PRIVAT / PROPRIETÄR` |
+| Projekt / Komponente | Aufgabe und Entwicklungsstand | Repository / Verfügbarkeit | Deklarierte Lizenz | Quelldatum |
+|---|---|---|---|---|
+| [SCPN Phase Orchestrator](https://github.com/anulum/scpn-phase-orchestrator)<br><sub>Synchronisation analysis and evaluation of early-warning detectors on coupled phase-oscillator dynamics, with a Rust kernel.</sub> | In Arbeit · package · Released software · ongoing development | Öffentlich | AGPL-3.0-or-later | 2026-10-13 |
+| [SCPN Control](https://github.com/anulum/scpn-control)<br><sub>Compiler from stochastic Petri nets to controllers with runtime contracts, and plasma-control research paths.</sub> | In Arbeit · package · Released software · ongoing development | Öffentlich | AGPL-3.0-or-later | 2026-10-13 |
+| SCPN Studio Platform<br><sub>Domain-neutral SDK for studios: evidence bundles, capability manifests, bounded jobs and tenant-aware identity.</sub> | In Arbeit · package · Released software · ongoing development | Privat | AGPL-3.0-or-later | 2026-10-13 |
+| SCPN Studio<br><sub>The hub that federates studios over the platform contract: registry, cross-studio evidence audit, rendering and federation gating.</sub> | In Arbeit · service · Implementation and integration | Privat | AGPL-3.0-or-later | 2026-10-13 |
 
 </details>
 
 <details>
-<summary><strong>04 · SC Neuromorphic Computing Systems</strong> &nbsp; 1 öffentliches Repository</summary>
+<summary><strong>03 · Agentic Coordination, Assurance and Continuity</strong> · 10 Repositories · 10 Katalogeinträge</summary>
 
-Live-Ansicht dieses Portfolios auf anulum.li, filterbar und mit Karte: [anulum.li/portfolio/#g=SC-NEUROMORPHIC-COMPUTING-SYSTEMS](https://anulum.li/portfolio/#g=SC-NEUROMORPHIC-COMPUTING-SYSTEMS)
+Zehn Repositories für Koordination, Absicherung, Gedächtnis und geregelte Aktionen. HushLine gehört zu den Gruppenwerkzeugen; SYNAPSE-POLICY-CHECK-ACTION ist enthalten. Jedes Produkt behält seine Lizenz und Fähigkeitsgrenzen.
 
-| Repository | Umfang | Status |
-|---|---|---|
-| [SC-NeuroCore](https://github.com/anulum/sc-neurocore) | Stochastische und spikende neuronale Systeme mit Python-APIs, Rust-Beschleunigung, HDC/VSA und RTL-Generierung | `ÖFFENTLICH` |
+[Architekturkarten der Gruppen](https://github.com/anulum/synapse-channel/blob/main/docs/ecosystem.md)
+
+| Projekt / Komponente | Aufgabe und Entwicklungsstand | Repository / Verfügbarkeit | Deklarierte Lizenz | Quelldatum |
+|---|---|---|---|---|
+| [Synapse Channel](https://github.com/anulum/synapse-channel)<br><sub>Local-first coordination bus for AI agents: presence, file-scope work claims, messages, task status, receipts and an audit journal on one hub.</sub> | In Arbeit · package · Released software · ongoing development | Öffentlich | AGPL-3.0-or-later | 2026-10-11 |
+| Synapse Channel Fleet<br><sub>Multi-machine operation of the bus: durable follower daemon, per-peer trust and configuration, claim forwarding and diagnostics.</sub> | In Arbeit · package · Implementation and integration | Privat | LicenseRef-SYNAPSE-Enterprise | 2026-10-11 |
+| [SYNAPSE-POLICY-CHECK-ACTION](https://github.com/anulum/synapse-policy-check-action)<br><sub>GitHub Action that checks a SYNAPSE CHANNEL release receipt against a policy file in CI.</sub> | In Arbeit · tool · Implementation and integration | Öffentlich | AGPL-3.0-or-later | 2026-10-11 |
+| [Director-AI](https://github.com/anulum/director-ai)<br><sub>Response-level guardrail for LLM output: NLI and retrieval grounding, sealed evidence packets and an optional streaming contradiction halt.</sub> | In Arbeit · package · Released software · ongoing development | Öffentlich | Apache-2.0 AND BUSL-1.1 | 2026-10-11 |
+| Director Class AI<br><sub>Action control between an autonomous agent and its effectors: action-policy checks, human approvals, gateway enforcement and tamper-evident action evidence.</sub> | In Arbeit · package · Implementation and integration | Privat | BUSL-1.1 | 2026-10-11 |
+| Director AI Cloud<br><sub>Control plane for a hosted Director-AI API: accounts, API-key lifecycle, usage metering, plan quotas and operator exports.</sub> | In Arbeit · service · Implementation and integration | Privat | BUSL-1.1 | 2026-10-11 |
+| [Rigor Foundry](https://github.com/anulum/rigor-foundry)<br><sub>Evidence-bound repository auditing: inventories Git-tracked content, emits reproducible audit candidates, binds review decisions to exact evidence and prepares remediation inputs.</sub> | In Arbeit · package · Released software · ongoing development | Öffentlich | Apache-2.0 | 2026-10-11 |
+| [Remanentia](https://github.com/anulum/remanentia)<br><sub>Local-first, auditable memory for AI agents and knowledge-intensive software: project-file indexing, hybrid retrieval, consolidation and an entity graph, through a CLI, an MCP server and an HTTP API.</sub> | In Arbeit · package · Released software · ongoing development | Öffentlich | AGPL-3.0-or-later | 2026-10-11 |
+| Remanentia Portal<br><sub>Account and billing or licence-request portal for the product family. It runs no customer workload.</sub> | In Arbeit · service · Implementation and integration | Privat | AGPL-3.0-or-later | 2026-10-11 |
+| [HushLine](https://github.com/anulum/HushLine)<br><sub>Local command-output filter: runs a command, then limits, shapes and redacts its output before it reaches a caller. Four independent cores: Go, Rust, Python and Node.</sub> | In Arbeit · tool · Released software · ongoing development | Öffentlich | AGPL-3.0-or-later | 2026-10-11 |
 
 </details>
 
 <details>
-<summary><strong>05 · SCPN Quantum Computing Systems</strong> &nbsp; 1 öffentliches Repository</summary>
+<summary><strong>04 · SC Neuromorphic Computing Systems</strong> · 4 Repositories · 42 Katalogeinträge</summary>
 
-Live-Ansicht dieses Portfolios auf anulum.li, filterbar und mit Karte: [anulum.li/portfolio/#g=SCPN-QUANTUM-COMPUTING-SYSTEMS](https://anulum.li/portfolio/#g=SCPN-QUANTUM-COMPUTING-SYSTEMS)
+Der Kernbestand umfasst 40 benannte Einträge einschliesslich der permanenten SC-NeuroCore-Werkbank und Hilfswerkzeuge; zwei weitere Modul-/bedingte Ziele ergeben 42 Katalogeinträge. LOOP-TIMING-WITNESS besitzt ein öffentliches Host-Paket; die physische Boardqualifikation steht aus. EVIDENCE-MANIFEST-TOOLKIT ist unveröffentlicht. Module und zurückgestellte Ziele sind separat gekennzeichnet.
 
-| Repository | Umfang | Status |
-|---|---|---|
-| [SCPN Quantum Control](https://github.com/anulum/scpn-quantum-control) | Quantenexperimente mit gekoppelten Oszillatoren, Simulatoren, Optimierung, Hardwareläufe und hashgebundene Ergebnispakete | `ÖFFENTLICH` |
+[Architekturkarten der Gruppen](https://github.com/anulum/sc-neurocore/blob/main/docs/ecosystem.md)
+
+| Projekt / Komponente | Aufgabe und Entwicklungsstand | Repository / Verfügbarkeit | Deklarierte Lizenz | Quelldatum |
+|---|---|---|---|---|
+| [SC-NeuroCore](https://github.com/anulum/sc-neurocore)<br><sub>Permanent public development, composition and integration workbench for stochastic and spiking neural modelling, encoding, learning, simulation, selected hardware compilation and evidence inspection.</sub> | In Arbeit · workbench · Released software · ongoing development | Öffentlich | AGPL-3.0-or-later | 2026-10-13 |
+| [Loop Timing Witness](https://github.com/anulum/loop-timing-witness)<br><sub>Fabric-clock instrument for complete control-loop and selected accelerator timing, with simulation/host analysis separated from eventual board timing, fault response and rail-energy evidence.</sub> | In Arbeit · tool · Architecture and qualification | Öffentlich | AGPL-3.0-or-later | 2026-10-13 |
+| EVIDENCE-MANIFEST-TOOLKIT<br><sub>Canonicalises, references, seals and verifies evidence with explicit schemas, bounded sources and independently selected policy.</sub> | In Arbeit · shared · Architecture and qualification | Lokal, unveröffentlicht | AGPL-3.0-or-later | 2026-10-13 |
+| RANDOMNESS-WITNESS<br><sub>Assesses number-source suitability for a declared stochastic-computing use; it does not certify randomness for every purpose.</sub> | In Arbeit · shared · Design and preparation | Ziel / Modul / Paket | undecided | 2026-10-13 |
+| EXPERIMENT-LEDGER<br><sub>Records experiment lineage across tools without owning their raw evidence or running their computations.</sub> | In Arbeit · shared · Design and preparation | Ziel / Modul / Paket | undecided | 2026-10-13 |
+| SC-NC-CORE<br><sub>Neuron/synapse primitives, network graph, simulation loop, fixed-point semantics, constants and exceptions.</sub> | In Arbeit · component · Workbench transition | Ziel / Modul / Paket | Undecided for independent release | 2026-10-13 |
+| SC-NC-CATALOGUE<br><sub>Neuron models, model zoo and topology/connectome generators.</sub> | In Arbeit · component · Workbench transition | Ziel / Modul / Paket | Undecided for independent release | 2026-10-13 |
+| SC-NC-ENGINE<br><sub>Accelerated execution and its maintained language/native interfaces.</sub> | In Arbeit · component · Workbench transition | Ziel / Modul / Paket | Undecided for independent release | 2026-10-13 |
+| SC-NC-BRIDGES<br><sub>Interchange and cross-domain adapters including NIR, quantum, HDC/VSA and neuro-symbolic routes.</sub> | In Arbeit · component · Workbench transition | Ziel / Modul / Paket | Undecided for independent release | 2026-10-13 |
+| SC-NC-LEARN<br><sub>Training and adaptation, including surrogate gradients, plasticity, online learning, quantisation-aware training and distillation.</sub> | In Arbeit · component · Workbench transition | Ziel / Modul / Paket | Undecided for independent release | 2026-10-13 |
+| SC-NC-DATA<br><sub>Datasets, signal/event encoding, augmentation, codecs, sources and recording adapters.</sub> | In Arbeit · component · Workbench transition | Ziel / Modul / Paket | Undecided for independent release | 2026-10-13 |
+| SC-NC-ANALYSIS<br><sub>Spike-train analysis, visualisation and explainability.</sub> | In Arbeit · component · Workbench transition | Ziel / Modul / Paket | Undecided for independent release | 2026-10-13 |
+| SC-NC-COMPILER<br><sub>Equation/IR lowering and hardware collateral for supported numerical models.</sub> | In Arbeit · component · Workbench transition | Ziel / Modul / Paket | Undecided for independent release | 2026-10-13 |
+| SC-NC-HARDWARE<br><sub>Target profiles, mapping, deployment, drivers and power/thermal integration.</sub> | In Arbeit · component · Workbench transition | Ziel / Modul / Paket | Undecided for independent release | 2026-10-13 |
+| SC-NC-VERIFY<br><sub>Formal, fault, resilience and safety-readiness verification within explicit proof scopes.</sub> | In Arbeit · component · Workbench transition | Ziel / Modul / Paket | Undecided for independent release | 2026-10-13 |
+| SC-NC-STUDIO<br><sub>Visual composition, inspection and evidence presentation workflows.</sub> | In Arbeit · component · Workbench transition | Ziel / Modul / Paket | Undecided for independent release | 2026-10-13 |
+| SC-NC-RESEARCH<br><sub>Retained experimental paths, including evolutionary, biological and world-model directions.</sub> | In Arbeit · component · Workbench transition | Ziel / Modul / Paket | Undecided for independent release | 2026-10-13 |
+| SC-NC-BENCH<br><sub>Catalogue/workload suites and immutable source-bound benchmark records.</sub> | In Arbeit · component · Workbench transition | Ziel / Modul / Paket | Undecided for independent release | 2026-10-13 |
+| MODEL-PROVENANCE-PACK<br><sub>Binds a model's data, training, conversion, quantisation, encoding and supporting evidence into a verifiable provenance pack.</sub> | In Arbeit · tool · Design and implementation | Ziel / Modul / Paket | Undecided for independent release | 2026-10-13 |
+| SPIKE-LOG<br><sub>Records, indexes, verifies, slices and replays event streams without losing their provenance or timebase identity.</sub> | In Arbeit · tool · Design and implementation | Lokal, unveröffentlicht | Undecided for independent release | 2026-10-13 |
+| SPIKE-FORMAT-BRIDGE<br><sub>Converts event recordings between declared formats and reports every permitted loss rather than hiding timestamp, polarity or side-stream changes.</sub> | In Arbeit · tool · Design and implementation | Ziel / Modul / Paket | Undecided for independent release | 2026-10-13 |
+| SPIKE-CODEC-BENCH<br><sub>Measures compression of existing spike trains, comparing payload ratio, distortion, encode/decode latency and memory.</sub> | In Arbeit · tool · Design and implementation | Ziel / Modul / Paket | Undecided for independent release | 2026-10-13 |
+| SPIKE-ENCODER-CHARACTERISER<br><sub>Measures the information, spike-rate and latency trade-offs of sensor-to-spike encoders.</sub> | In Arbeit · tool · Design and implementation | Ziel / Modul / Paket | Undecided for independent release | 2026-10-13 |
+| SPIKE-QUALITY-GATE<br><sub>Checks event data against a named quality policy for timestamp, noise, sensor-health, rate, gap and spatial defects.</sub> | In Arbeit · tool · Design and implementation | Ziel / Modul / Paket | Undecided for independent release | 2026-10-13 |
+| SPIKE-GROUNDTRUTH<br><sub>Generates reproducible event-vision, audio, sensor and control stimuli with ground truth defined by the generator.</sub> | In Arbeit · tool · Design and implementation | Ziel / Modul / Paket | Undecided for independent release | 2026-10-13 |
+| SNN-DIVERGENCE-HARNESS<br><sub>Compares the same network and input across implementations under bit-exact, tolerance or statistical oracles.</sub> | In Arbeit · tool · Design and implementation | Ziel / Modul / Paket | Undecided for independent release | 2026-10-13 |
+| SC-STREAM-PROVER<br><sub>Compares realised stochastic-computing arithmetic error with a declared bound for a specific circuit, source and stream-length regime.</sub> | In Arbeit · tool · Design and implementation | Ziel / Modul / Paket | Undecided for independent release | 2026-10-13 |
+| MUTATION-SNN<br><sub>Measures test adequacy by generating declared semantic mutants and recording what the suite detects.</sub> | In Arbeit · tool · Design and implementation | Ziel / Modul / Paket | Undecided for independent release | 2026-10-13 |
+| NIR-CONFORMANCE<br><sub>Tests importer/exporter behaviour against the known semantics of a pinned Neuromorphic Intermediate Representation version.</sub> | In Arbeit · tool · Design and implementation | Ziel / Modul / Paket | Undecided for independent release | 2026-10-13 |
+| NEURO-EVIDENCE-BENCH<br><sub>Executes declared neuromorphic benchmark plans and traces each scoped result back to its raw evidence.</sub> | In Arbeit · tool · Design and implementation | Ziel / Modul / Paket | Undecided for independent release | 2026-10-13 |
+| SPIKE-CALIBRATOR<br><sub>Measures classifier confidence against correctness under declared signal definitions, shifts and placements.</sub> | In Arbeit · tool · Design and implementation | Ziel / Modul / Paket | Undecided for independent release | 2026-10-13 |
+| BITSTREAM-EVIDENCE-CI<br><sub>Captures pinned FPGA build inputs, reports and bitstream identity in a reproducibility-aware chained build ledger.</sub> | In Arbeit · tool · Design and implementation | Ziel / Modul / Paket | Undecided for independent release | 2026-10-13 |
+| PLASTICITY-WITNESS<br><sub>Compares observed learning-rule updates with an independently defined fixed-point or statistical oracle under stated spike/load/fault protocols.</sub> | In Arbeit · tool · Design and implementation | Ziel / Modul / Paket | Undecided for independent release | 2026-10-13 |
+| AER-LINK-WITNESS<br><sub>Measures event-link behaviour under load, including loss, reordering, fairness, starvation and forward progress.</sub> | In Arbeit · tool · Design and implementation | Ziel / Modul / Paket | Undecided for independent release | 2026-10-13 |
+| RELIABILITY-WITNESS<br><sub>Characterises reliability within a declared physical or explicitly simulated exposure, retaining conditions, gaps and rare-event uncertainty.</sub> | In Arbeit · tool · Design and implementation | Ziel / Modul / Paket | Undecided for independent release | 2026-10-13 |
+| SIM-REAL-WITNESS<br><sub>Quantifies simulation-to-fabric differences for the same model, input and observable population.</sub> | In Arbeit · tool · Design and implementation | Ziel / Modul / Paket | Undecided for independent release | 2026-10-13 |
+| DEPLOY-PACK<br><sub>Composes validated deployment evidence with bitstream/driver identity into a verifiable install/update package.</sub> | In Arbeit · tool · Design and implementation | Ziel / Modul / Paket | Undecided for independent release | 2026-10-13 |
+| FIELD-OPS-WITNESS<br><sub>Aggregates compact field health and drift evidence against deployment-time envelopes without actuating devices.</sub> | In Arbeit · tool · Design and implementation | Ziel / Modul / Paket | Undecided for independent release | 2026-10-13 |
+| FLIGHT-RECORDER<br><sub>Retains a bounded per-device event/state history for gap-honest incident reconstruction.</sub> | In Arbeit · tool · Design and implementation | Ziel / Modul / Paket | Undecided for independent release | 2026-10-13 |
+| NEURO-SAFETY-CASE<br><sub>Composes scoped evidence and open gaps into an assessor-facing assurance argument; it certifies nothing itself.</sub> | In Arbeit · tool · Design and implementation | Ziel / Modul / Paket | Undecided for independent release | 2026-10-13 |
+| SC-COMPUTE-ADAPTERS<br><sub>Owns the SC-NeuroCore-side wrappers and numerical/register/handshake contracts needed to put selected generated peripherals into the independent LOOP-TIMING-WITNESS DUT/capture path.</sub> | In Arbeit · workbench module · Architecture and interface work | Ziel / Modul / Paket | Independent distribution terms being defined | 2026-10-13 |
+| SC-NC-BIO<br><sub>Conditional destination for separately owned biological/biohybrid work if its independent release lifecycle is accepted; current experimental bioware remains in the developmental parent.</sub> | In Arbeit · conditional architecture destination · Architecture and interface work | Ziel / Modul / Paket | Independent distribution terms being defined | 2026-10-13 |
 
 </details>
 
 <details>
-<summary><strong>Eigenständiges Werkzeug</strong> &nbsp; 1 öffentliches Repository</summary>
+<summary><strong>05 · SCPN Quantum Computing Systems</strong> · 24 Repositories · 28 Katalogeinträge</summary>
 
-| Repository | Umfang | Status |
-|---|---|---|
-| [HushLine](https://github.com/anulum/HushLine) | Deterministischer Kommando-Wrapper zum Filtern, Begrenzen und optionalen Redigieren von stdout und stderr | `ÖFFENTLICH` |
+Permanente SCPN-QUANTUM-CONTROL-Werkbank; oscillatools und SCPN-QUANTUM-ENGINE sind separate Distributionen, keine zusätzlichen Werkbänke. Sechzehn Komponentenziele und acht Werkzeugziele entstehen; QUANTUM_LAB ist ein Arbeitsbereich. Unabhängige Paketlizenzen und Veröffentlichungen bleiben vom Elternprojekt getrennt.
+
+[Architekturkarten der Gruppen](https://github.com/anulum/scpn-quantum-control/blob/main/docs/ecosystem.md)
+
+| Projekt / Komponente | Aufgabe und Entwicklungsstand | Repository / Verfügbarkeit | Deklarierte Lizenz | Quelldatum |
+|---|---|---|---|---|
+| [SCPN Quantum Control](https://github.com/anulum/scpn-quantum-control)<br><sub>Integrated modelling, simulation, compilation, gradients, control, provider workflows, analysis and Quantum Studio.</sub> | In Arbeit · workbench · Released software · ongoing development | Öffentlich | AGPL-3.0-or-later | 2026-10-13 |
+| oscillatools<br><sub>Classical coupled-phase-oscillator dynamics, observables, sensitivities and control-oriented numerical tools.</sub> | In Arbeit · package · Released software · ongoing development | Ziel / Modul / Paket | AGPL-3.0-or-later | 2026-10-13 |
+| scpn-quantum-engine<br><sub>Optional Rust/PyO3 numerical acceleration and native computation used by supported workbench paths.</sub> | In Arbeit · package · Released software · ongoing development | Ziel / Modul / Paket | AGPL-3.0-or-later | 2026-10-13 |
+| QPU-RESULT-PACK<br><sub>Preserve raw results and their provenance, derivations and reviewable presentation.</sub> | In Arbeit · tool · Implementation and integration | Lokal, unveröffentlicht | not stated | 2026-10-13 |
+| TRANSPILE-WITNESS<br><sub>Retain scoped observations about compilation semantics, layout, global phase and replay.</sub> | In Arbeit · tool · Implementation and integration | Ziel / Modul / Paket | AGPL-3.0-or-later by file headers; no licence field in packaging | 2026-10-13 |
+| MITIGATION-WITNESS<br><sub>Evaluate mitigation on declared measurement panels with retained inputs and uncertainty.</sub> | In Arbeit · tool · Implementation and integration | Lokal, unveröffentlicht | AGPL-3.0-or-later | 2026-10-13 |
+| SCPN-QC-CONTRACTS<br><sub>Versioned parameter, result, semantic and evidence interface contracts shared by components.</sub> | In Arbeit · component · Workbench transition | Lokal, unveröffentlicht | Undecided for independent release | 2026-10-13 |
+| SCPN-QC-CORE<br><sub>Configuration, logging, resource budgets and generic Kuramoto-XY problem foundations, separated from paper-specific research assumptions.</sub> | In Arbeit · component · Workbench transition | Lokal, unveröffentlicht | Undecided for independent release | 2026-10-13 |
+| SCPN-QC-AD<br><sub>Whole-program automatic differentiation, derivative transforms, batching, optimisation and explicit supported-path contracts.</sub> | In Arbeit · component · Workbench transition | Lokal, unveröffentlicht | Undecided for independent release | 2026-10-13 |
+| SCPN-QC-SIM<br><sub>Classical and quantum oscillator dynamics, XY/Kuramoto solvers, open-system simulation, tensor-network paths and co-simulation.</sub> | In Arbeit · component · Workbench transition | Lokal, unveröffentlicht | Undecided for independent release | 2026-10-13 |
+| SCPN-QC-COMPILER<br><sub>Model and circuit frontends, intermediate representations, interchange and code generation.</sub> | In Arbeit · component · Workbench transition | Lokal, unveröffentlicht | Undecided for independent release | 2026-10-13 |
+| SCPN-QC-QNODE<br><sub>Quantum tapes, gradient execution and framework bridges for supported Qiskit, PennyLane, JAX, PyTorch and TensorFlow paths.</sub> | In Arbeit · component · Workbench transition | Lokal, unveröffentlicht | Undecided for independent release | 2026-10-13 |
+| SCPN-QC-HAL<br><sub>Provider-neutral workloads, capabilities, job/result contracts and optional provider adapters.</sub> | In Arbeit · component · Workbench transition | Lokal, unveröffentlicht | Undecided for independent release | 2026-10-13 |
+| SCPN-QC-MITIGATION<br><sub>Error-mitigation implementations and their method taxonomy.</sub> | In Arbeit · component · Workbench transition | Lokal, unveröffentlicht | Undecided for independent release | 2026-10-13 |
+| SCPN-QC-QEC<br><sub>Quantum error-correction analysis and fault-tolerant resource-reporting surfaces.</sub> | In Arbeit · component · Workbench transition | Lokal, unveröffentlicht | Undecided for independent release | 2026-10-13 |
+| SCPN-QC-CONTROL<br><sub>Feedback and co-design, chimera and topology-aware control, and DLA-constrained control paths.</sub> | In Arbeit · component · Workbench transition | Lokal, unveröffentlicht | Undecided for independent release | 2026-10-13 |
+| SCPN-QC-ANALYSIS<br><sub>Observables, synchronisation witnesses, result analysis and the open-data DLA-parity pathway.</sub> | In Arbeit · component · Workbench transition | Lokal, unveröffentlicht | Undecided for independent release | 2026-10-13 |
+| SCPN-QC-LEARN<br><sub>Forecasting, quantum neural models, surrogate models, kernels and variational learning paths.</sub> | In Arbeit · component · Workbench transition | Lokal, unveröffentlicht | Undecided for independent release | 2026-10-13 |
+| SCPN-QC-APPS<br><sub>Domain application adapters, quantum randomness, cryptography and sensing workflows, with explicit claim boundaries.</sub> | In Arbeit · component · Workbench transition | Lokal, unveröffentlicht | Undecided for independent release | 2026-10-13 |
+| SCPN-QC-BENCH<br><sub>Workload-specific benchmark suites, comparison harnesses, campaign reproduction and retained run evidence.</sub> | In Arbeit · component · Workbench transition | Lokal, unveröffentlicht | Undecided for independent release | 2026-10-13 |
+| SCPN-QC-STUDIO<br><sub>Quantum Studio's visual workflows, inspectors and evidence presentation through the shared Studio platform contract.</sub> | In Arbeit · component · Workbench transition | Lokal, unveröffentlicht | Undecided for independent release | 2026-10-13 |
+| SCPN-QC-RESEARCH<br><sub>Experimental SCPN theory, paper-specific assumptions and research adapters whose contracts are not stable.</sub> | In Arbeit · component · Workbench transition | Lokal, unveröffentlicht | Undecided for independent release | 2026-10-13 |
+| NOISE-MODEL-WITNESS<br><sub>Compare model predictions and replay observations for the same circuit and shot identities, with uncertainty, shot floors, calibration epochs and declared tolerances.</sub> | In Arbeit · tool · Design and implementation | Lokal, unveröffentlicht | Undecided for independent release | 2026-10-13 |
+| VENDOR-CLAIM-RECOMPUTER<br><sub>Recompute released-data quantum-volume, error-per-layer-gate and logical-error claims against fixed definitions, original inputs and declared computation budgets.</sub> | In Arbeit · tool · Design and implementation | Lokal, unveröffentlicht | Undecided for independent release | 2026-10-13 |
+| DECODER-WITNESS<br><sub>Compare real decoder engines on released shot data with lossless adapters, declared noise conditions and uncertainty-aware reports.</sub> | In Arbeit · tool · Design and implementation | Lokal, unveröffentlicht | Undecided for independent release | 2026-10-13 |
+| GRADIENT-WITNESS<br><sub>Check software derivatives against declared analytic, parameter-shift and finite-difference references, including complex, finite-shot and cross-framework cases.</sub> | In Arbeit · tool · Design and implementation | Lokal, unveröffentlicht | Undecided for independent release | 2026-10-13 |
+| CONFORMANCE-WITNESS<br><sub>Check versioned OpenQASM 3, adapter behaviour, provenance fields and repository-evidence criteria against their normative clauses and actual entry points.</sub> | In Arbeit · tool · Design and implementation | Lokal, unveröffentlicht | Undecided for independent release | 2026-10-13 |
+| QUANTUM_LAB<br><sub>Reserved research workspace name; implementation role is not assigned in the group map.</sub> | In Arbeit · workspace · Workspace definition | Ziel / Modul / Paket | Not stated | 2026-10-13 |
+
+↔ EVIDENCE-MANIFEST-TOOLKIT · RANDOMNESS-WITNESS · EXPERIMENT-LEDGER
 
 </details>
+
+<details>
+<summary><strong>06 · Scientific Discovery and Experimentation</strong> · 0 Repositories · 0 Katalogeinträge</summary>
+
+Registriert am 12. Oktober 2026; im Aufbau; null registrierte Projekte und Repositories. Zuständig für Hypothese → Experiment → Prüfung → Protokoll → Modelländerungsvorschlag und das gemeinsame Benchmark-/Berichtsformat. Domänenmodelle, Hardware und Ausführungsbefugnisse verbleiben bei den zuständigen Gruppen. Kein geschlossener wissenschaftlicher Zyklus wird behauptet.
+
+
+</details>
+
+**Weiterer öffentlicher Forschungsdatensatz**
+
+Fusion Equilibrium Challenge ist ein öffentliches Reproduktionspaket vom 14. Oktober 2026, nach dem Gruppeninventar. Es wird separat aufgeführt, damit die datierten Gruppensummen erhalten bleiben. Ergebnisse und Einschränkungen stehen im eigenen Datensatz.
+
+- [Fusion Equilibrium Challenge](https://github.com/anulum/fusion-equilibrium-challenge) · In Arbeit · AGPL-3.0-or-later · 2026-10-15
+<!-- profile-catalogue:inventory:end -->
 
 ## Sponsoring-Ziele
 
@@ -392,10 +436,10 @@ Evaluations-Benchmarks und CI.
 
 | Domäne | Ziel | Sponsoring bezahlt |
 |---|---|---|
-| **01 · Reactor Systems** | Ein öffentlicher Katalog von Reaktorkonzepten und ein **Reactor Studio**, in dem jedes Konzept in 3D/CAD entworfen, simuliert und virtuell getestet wird, bevor etwas gebaut wird. 21 Fusions-Gerätefamilien sind heute öffentlich (25 Reaktor-Repositories einschliesslich der gemeinsamen Kernel); 29 weitere Spaltungs-, Chemie- und Hybridfamilien sind geplant, die Pläne sind geschrieben, die Repositories folgen. Validierte parametrische Geometrie mit Mesh-Export in offene Formate gibt es heute; als Nächstes folgen vollständiges B-rep-CAD, Level-0-Physik für jede Familie und Szenariotests eines Entwurfs. | Rechenzeit für Simulationen, CAD-Werkzeuge, Dokumentation |
+| **01 · Reactor Systems** | 55 zugeordnete Repositories einschliesslich ATLAS-REACTORUM: 26 öffentlich und 29 lokal initialisiert, unveröffentlicht. Fusions-, Spaltungs-, chemische und hybride Modelle, gemeinsame Kerne, Geometrie und Reaktornachweise. World Models, 3D-Simulationen und Geräteentwürfe sind laufende Programmziele; ein Entwurf ist kein validierter Reaktor. | Rechenzeit für Simulationen, CAD-Werkzeuge, Dokumentation |
 | **02 · Systems Integration and Control** | Der **SCPN Studio Hub**, der die Studios aller Gruppen verbindet: ein Studio-Katalog, domänenübergreifend geprüfte Evidenz, jede Aussage an ihrer tatsächlichen Grenze dargestellt und ein Fail-closed-Gate für alles, was Hardware berühren könnte. Die Gruppe pflegt auch [scpn-control](https://github.com/anulum/scpn-control) und [scpn-phase-orchestrator](https://github.com/anulum/scpn-phase-orchestrator). | CI, Hardware-in-the-Loop-Replay, Dokumentation |
 | **04 · SC Neuromorphic Computing** | **SNN Studio 1.0**, die Browser-IDE für den ganzen Lebenszyklus spikender Netze: Neuronenmodelle entwerfen, Netze bauen, mit Surrogatgradienten trainieren, nach SystemVerilog kompilieren und auf FPGA synthetisieren, mit einem exportierbaren Evidenzdatensatz für jeden Lauf. Aufgebaut auf [sc-neurocore](https://github.com/anulum/sc-neurocore); heute eine Entwicklungsvorschau. | FPGA-Boards und Synthesezeit, Messplatz, CI |
-| **05 · SCPN Quantum Computing** | **Quantum Studio**, eine Arbeitsumgebung auf [scpn-quantum-control](https://github.com/anulum/scpn-quantum-control): eine Karte dessen, was existiert und wie es zusammenhängt, Schaltungen, die auf Simulatoren und echter Quantenhardware entworfen und ausgeführt werden, und jedes Ergebnis mit Rohdaten, Hashes, schriftlichem Protokoll und Entscheidungsregel, negative Ergebnisse eingeschlossen. IQM hat uns für diese Forschung erweiterten Zugang zu IQM Resonance gewährt. | QPU-Zeit, GPU-Simulation, Dokumentation |
+| **05 · SCPN Quantum Computing** | **Quantum Studio**, eine Arbeitsumgebung auf [scpn-quantum-control](https://github.com/anulum/scpn-quantum-control): eine Karte dessen, was existiert und wie es zusammenhängt, Schaltungen, die auf Simulatoren und echter Quantenhardware entworfen und ausgeführt werden, und jedes Ergebnis mit Rohdaten, Hashes, schriftlichem Protokoll und Entscheidungsregel, negative Ergebnisse eingeschlossen. | QPU-Zeit, GPU-Simulation, Dokumentation |
 
 ### Für Organisationen
 
@@ -422,7 +466,7 @@ Evaluations-Benchmarks und CI.
 | Releases und Publikationen | [anulum.li/news/](https://anulum.li/news/) · [RSS](https://anulum.li/news/feed.xml) |
 | Lebenslauf | [Einseitiges PDF](cv/Miroslav-Sotek-CV.pdf) · [Markdown-Quelle](cv/Miroslav-Sotek-CV.md) · [JSON Resume](cv/resume.json) |
 | Forschungsidentität | [ORCID 0009-0009-3560-0851](https://orcid.org/0009-0009-3560-0851) |
-| Software | [19 PyPI-Projekte](https://pypi.org/user/anulum/) |
+| Software | [20 erfasste PyPI-Distributionen](https://pypi.org/user/anulum/) |
 | Quantum Control | [DOI 10.5281/zenodo.18821929](https://doi.org/10.5281/zenodo.18821929) |
 | Fusion Core | [DOI 10.5281/zenodo.18820864](https://doi.org/10.5281/zenodo.18820864) |
 | Phasensystem-Preprints | [Studie mit angeglichener Fehlalarmrate](https://doi.org/10.5281/zenodo.22113062) und [Studie zur Netz-Regimekarte](https://doi.org/10.5281/zenodo.22113116) |
@@ -430,43 +474,39 @@ Evaluations-Benchmarks und CI.
 
 ## PyPI-Veröffentlichungen
 
-<p align="center">
-  <a href="https://pypi.org/user/anulum/"><img alt="Miroslav Sotek auf PyPI" src="assets/badges/pypi-profile.svg"></a>
-</p>
+[PyPI](https://pypi.org/user/anulum/)
 
-Das verifizierte [PyPI-Profil](https://pypi.org/user/anulum/) enthält derzeit
-19 veröffentlichte Projekte: Python-Pakete, Rust-beschleunigte Engines,
-Domänen-Kernels und Kommandozeilenwerkzeuge.
+<!-- profile-catalogue:packages:start -->
+20 benannte Distributionen wurden am 2026-10-15 einzeln über die PyPI-JSON-API geprüft. Dies ist eine geprüfte Liste, kein vollständiger Kontoindex. Versionen sind Paketmetadaten, keine wissenschaftliche Validierung oder Zuordnung zu historischen DOI-Versionen.
 
 <details>
-<summary><strong>Index der veröffentlichten Pakete</strong> &nbsp; 19 Projekte</summary>
+<summary><strong>Veröffentlichte Distributionen</strong> · 20</summary>
 
-**Agenten- und Sicherungssysteme:**
-[synapse-channel](https://pypi.org/project/synapse-channel/),
-[director-ai](https://pypi.org/project/director-ai/),
-[director-ai-lite](https://pypi.org/project/director-ai-lite/),
-[rigor-foundry](https://pypi.org/project/rigor-foundry/),
-[remanentia](https://pypi.org/project/remanentia/),
-[backfire-kernel](https://pypi.org/project/backfire-kernel/) und
-[hushline](https://pypi.org/project/hushline/).
-
-**SCPN-Systeme:**
-[scpn-phase-orchestrator](https://pypi.org/project/scpn-phase-orchestrator/),
-[spo-kernel](https://pypi.org/project/spo-kernel/),
-[scpn-control](https://pypi.org/project/scpn-control/),
-[scpn-fusion](https://pypi.org/project/scpn-fusion/),
-[scpn-fusion-rs](https://pypi.org/project/scpn-fusion-rs/),
-[scpn-mif-core](https://pypi.org/project/scpn-mif-core/),
-[scpn-quantum-control](https://pypi.org/project/scpn-quantum-control/),
-[scpn-quantum-engine](https://pypi.org/project/scpn-quantum-engine/),
-[oscillatools](https://pypi.org/project/oscillatools/) und
-[scpn-studio-platform](https://pypi.org/project/scpn-studio-platform/).
-
-**Neuromorphe Systeme:**
-[sc-neurocore](https://pypi.org/project/sc-neurocore/) und
-[sc-neurocore-engine](https://pypi.org/project/sc-neurocore-engine/).
+| PyPI | Version |
+|---|---|
+| [synapse-channel](https://pypi.org/project/synapse-channel/) | 0.99.38 |
+| [scpn-phase-orchestrator](https://pypi.org/project/scpn-phase-orchestrator/) | 1.4.3 |
+| [spo-kernel](https://pypi.org/project/spo-kernel/) | 0.5.10 |
+| [director-ai](https://pypi.org/project/director-ai/) | 3.21.0 |
+| [director-ai-lite](https://pypi.org/project/director-ai-lite/) | 3.21.0 |
+| [scpn-quantum-control](https://pypi.org/project/scpn-quantum-control/) | 1.2.0 |
+| [scpn-fusion-rs](https://pypi.org/project/scpn-fusion-rs/) | 4.0.0 |
+| [scpn-fusion](https://pypi.org/project/scpn-fusion/) | 4.0.0 |
+| [rigor-foundry](https://pypi.org/project/rigor-foundry/) | 1.0.0 |
+| [scpn-control](https://pypi.org/project/scpn-control/) | 0.23.0 |
+| [oscillatools](https://pypi.org/project/oscillatools/) | 0.1.0 |
+| [scpn-quantum-engine](https://pypi.org/project/scpn-quantum-engine/) | 0.2.0 |
+| [scpn-studio-platform](https://pypi.org/project/scpn-studio-platform/) | 0.11.2 |
+| [sc-neurocore-engine](https://pypi.org/project/sc-neurocore-engine/) | 3.16.0 |
+| [sc-neurocore](https://pypi.org/project/sc-neurocore/) | 3.16.0 |
+| [scpn-mif-core](https://pypi.org/project/scpn-mif-core/) | 0.1.1 |
+| [remanentia](https://pypi.org/project/remanentia/) | 0.5.0 |
+| [backfire-kernel](https://pypi.org/project/backfire-kernel/) | 0.1.3 |
+| [hushline](https://pypi.org/project/hushline/) | 0.1.5 |
+| [loop-timing-witness](https://pypi.org/project/loop-timing-witness/) | 0.1.0 |
 
 </details>
+<!-- profile-catalogue:packages:end -->
 
 ## Sprachen und Plattformen
 
@@ -561,6 +601,12 @@ oder Vorteilsbehauptung umzudeuten.
   Forschungsergebnisses.
 
 ## Zusammenarbeit
+
+<!-- profile-catalogue:partner:start -->
+### Gründungs- und Forschungspartner
+
+Wir suchen Pre-Seed-Kapital und Partner zur gemeinsamen Gründung eines Forschungsinstituts, eines Unternehmens und einer gemeinnützigen Forschungsgesellschaft. Das Programm gehört derzeit einer Einzelperson; Rechtsträger und Standorte sind Vorschläge, keine bereits gegründeten Institutionen. Das anfängliche geografische Bild umfasst die Schweiz oder Liechtenstein, Tschechien oder die Slowakei sowie einen noch offenen dritten Standort im Nahen Osten. Wir bringen Software, Forschungsprogramm und eine geregelte Agentenorganisation ein. Partner können Kapital, unabhängige Replikation, gemessene Domänendaten, Chipentwurf und Fertigung, Labore, Instrumente oder Hardware-in-the-Loop-Einrichtungen beitragen. Eine erste Zusammenarbeit sollte ein Problem, ein Ergebnis und die Erfolgskriterien festlegen. Weder eine Partnerzusage noch eine bewilligte Finanzierung wird behauptet.
+<!-- profile-catalogue:partner:end -->
 
 ### Lizenzmodelle
 

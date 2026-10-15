@@ -428,21 +428,21 @@
   "style": "for-the-badge",
   "colour": "4dd6c8",
   "label": "{stats.portfolios}",
-  "message": "Independent portfolios"
+  "message": "Research groups"
  },
  {
   "slug": "public-projects",
   "style": "for-the-badge",
   "colour": "2f81f7",
   "label": "{stats.public_projects}",
-  "message": "Public projects"
+  "message": "Public repositories"
  },
  {
   "slug": "private-systems",
   "style": "for-the-badge",
   "colour": "8e44ad",
   "label": "{stats.private_portfolio_repositories}",
-  "message": "Private systems"
+  "message": "Private repositories"
  },
  {
   "slug": "pytest",

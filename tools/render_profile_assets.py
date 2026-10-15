@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: AGPL-3.0-or-later
+# Commercial license available
+# © Concepts 1996–2026 Miroslav Šotek. All rights reserved.
+# © Code 2020–2026 Miroslav Šotek. All rights reserved.
+# ORCID: 0009-0009-3560-0851
+# Contact: www.anulum.li | protoscience@anulum.li
+# ANULUM profile source and rendered inventory verification
 """Render the profile header and ecosystem map SVGs from ``profile-data.json``.
 
 Every count, name and tagline in the two images comes from the manifest, so the
@@ -73,7 +79,8 @@ MAP_SLOTS = {
     "neuromorphic": Slot(430, 105, 340, 150, "slate", "public"),
     "quantum": Slot(800, 105, 340, 150, "slate", "public"),
     "integration-control": Slot(315, 330, 570, 116, "gold", "total"),
-    "agentic": Slot(240, 514, 720, 120, "teal", "total"),
+    "agentic": Slot(60, 514, 575, 120, "teal", "total"),
+    "discovery": Slot(665, 514, 475, 120, "slate", "total"),
 }
 
 THEMES: dict[str, dict[str, str]] = {
@@ -132,31 +139,38 @@ class Counts:
     repositories: int
     public: int
     private: int
+    unpublished: int
     standalone: int
-    per_portfolio: dict[str, tuple[int, int]]
+    per_portfolio: dict[str, tuple[int, int, int]]
 
     def desc(self) -> str:
         """Return the machine-readable count line embedded in every SVG."""
-        groups = " ".join(f"{key}={public}/{private}" for key, (public, private) in self.per_portfolio.items())
+        groups = " ".join(
+            f"{key}={public}/{private}/{unpublished}"
+            for key, (public, private, unpublished) in self.per_portfolio.items()
+        )
         return (
             f"counts: portfolios={self.portfolios} repositories={self.repositories} "
-            f"public={self.public} private={self.private} standalone={self.standalone}; {groups}"
+            f"public={self.public} private={self.private} unpublished={self.unpublished} "
+            f"standalone={self.standalone}; {groups}"
         )
 
 
 def load_counts(data: dict[str, Any]) -> Counts:
     """Derive every rendered number from the manifest."""
-    per: dict[str, tuple[int, int]] = {}
+    per: dict[str, tuple[int, int, int]] = {}
     for portfolio in data["portfolios"]:
         repos = portfolio["repositories"]
         public = sum(1 for repo in repos if repo["access"] == "public")
         private = sum(1 for repo in repos if repo["access"] == "private")
-        per[portfolio["id"]] = (public, private)
+        unpublished = sum(1 for repo in repos if repo["access"] == "unpublished")
+        per[portfolio["id"]] = (public, private, unpublished)
     return Counts(
         portfolios=len(data["portfolios"]),
-        repositories=sum(p + q for p, q in per.values()),
-        public=sum(p for p, _ in per.values()),
-        private=sum(q for _, q in per.values()),
+        repositories=sum(p + q + u for p, q, u in per.values()),
+        public=sum(p for p, _, _ in per.values()),
+        private=sum(q for _, q, _ in per.values()),
+        unpublished=sum(u for _, _, u in per.values()),
         standalone=len(data["standalone_repositories"]),
         per_portfolio=per,
     )
@@ -335,7 +349,7 @@ def render_map(data: dict[str, Any], theme: str, typeset: Typesetter, counts: Co
     cards: list[str] = []
     for key, slot in MAP_SLOTS.items():
         portfolio = by_id[key]
-        public, private = counts.per_portfolio[key]
+        public, private, unpublished = counts.per_portfolio[key]
         accent = slot.accent
         stroke = palette[accent]
         bar = "url(#gold)" if accent == "gold" else "url(#teal)" if accent == "teal" else palette["slate"]
@@ -354,7 +368,7 @@ def render_map(data: dict[str, Any], theme: str, typeset: Typesetter, counts: Co
         title = portfolio["short_name"]
         if slot.count == "public":
             number_fill = palette["gold2"] if accent == "gold" else palette["muted"]
-            title_size = 21 if accent == "gold" else 19
+            title_size = 21.0 if accent == "gold" else 19.0
             parts.append(typeset.run(title, x + 32, y + 43, size=title_size, weight=650, fill=palette["text"]))
             number = str(public)
             parts.append(typeset.run(number, x + 32, y + 79, size=34, weight=700, fill=number_fill))
@@ -366,10 +380,16 @@ def render_map(data: dict[str, Any], theme: str, typeset: Typesetter, counts: Co
             parts.append(typeset.run(portfolio["tagline"], x + 32, y + 117, size=14, weight=400, fill=palette["faint"]))
         else:
             line_fill = palette["gold2"] if accent == "gold" else palette["tealtext"]
-            parts.append(typeset.run(title, x + 35, y + 44, size=21, weight=650, fill=palette["text"]))
-            total = public + private
-            line = f"{_plural(total, 'repository')} · {portfolio['tagline']}"
-            parts.append(typeset.run(line, x + 35, y + 84, size=17, weight=400, fill=line_fill))
+            title_size = min(21.0, (w - 70) / typeset.measure(title, 1, 650))
+            parts.append(typeset.run(title, x + 35, y + 44, size=title_size, weight=650, fill=palette["text"]))
+            total = public + private + unpublished
+            line = (
+                "IN FORMATION · NO REGISTERED PROJECTS"
+                if key == "discovery"
+                else f"{_plural(total, 'repository')} · {portfolio['tagline']}"
+            )
+            line_size = min(17.0, (w - 70) / typeset.measure(line, 1, 400))
+            parts.append(typeset.run(line, x + 35, y + 84, size=line_size, weight=400, fill=line_fill))
         cards.append("    <g>\n      " + "\n      ".join(parts) + "\n    </g>")
 
     heading = typeset.run("PORTFOLIO ECOSYSTEM", 60, 52, size=28, weight=650, fill=palette["text"], letter_spacing=3)
@@ -378,7 +398,7 @@ def render_map(data: dict[str, Any], theme: str, typeset: Typesetter, counts: Co
         summary, 1140, 50, size=15, weight=400, fill=palette["label"], letter_spacing=1.4, anchor="end"
     )
     footer = typeset.run(
-        "CONTRACT FLOW · EVIDENCE FLOW · INDEPENDENT OWNERSHIP",
+        "DECLARED OPTIONAL INTERFACES · INDEPENDENT OWNERSHIP",
         600,
         675,
         size=14,
@@ -390,7 +410,7 @@ def render_map(data: dict[str, Any], theme: str, typeset: Typesetter, counts: Co
     licence = LICENCE_HEADER.format(purpose=f"Anulum portfolio ecosystem map, {theme} theme")
     intro = (
         f"{counts.portfolios} independent repository portfolios connected by integration, "
-        "evidence, and audit relationships."
+        "declared optional software interfaces; Discovery is in formation."
     )
     return f"""{licence}<svg {SVG_NAMESPACES} width="1200" height="700" viewBox="0 0 1200 700"
      role="img" aria-labelledby="title description">
@@ -428,15 +448,11 @@ def render_map(data: dict[str, Any], theme: str, typeset: Typesetter, counts: Co
 {heading}
 {summary_run}
 
-  <g fill="none" stroke-linecap="round" stroke-width="2.5">
+  <g fill="none" stroke-linecap="round" stroke-width="2.5" stroke-dasharray="7 9">
     <path d="M230 254 C250 300 360 316 440 350" stroke="{palette["gold"]}" marker-end="url(#arrowGold)"/>
     <path d="M600 254 L600 330" stroke="{palette["gold"]}" marker-end="url(#arrowGold)"/>
     <path d="M970 254 C950 300 840 316 760 350" stroke="{palette["gold"]}" marker-end="url(#arrowGold)"/>
-    <path d="M600 446 L600 514" stroke="{palette["teal"]}" marker-end="url(#arrowTeal)"/>
-    <path d="M190 254 C150 430 270 555 360 580" stroke="{palette["teal"]}" stroke-dasharray="7 9"
-          marker-end="url(#arrowTeal)"/>
-    <path d="M1010 254 C1050 430 930 555 840 580" stroke="{palette["teal"]}" stroke-dasharray="7 9"
-          marker-end="url(#arrowTeal)"/>
+    <path d="M347 514 C347 470 430 475 470 446" stroke="{palette["teal"]}" marker-end="url(#arrowTeal)"/>
   </g>
 
   <g>

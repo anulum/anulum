@@ -1,0 +1,3008 @@
+{
+  "schema": "anulum-profile-catalogue-source/1",
+  "as_of": "2026-10-13",
+  "source_sha256": "20bb84812f5d0fa88386e4ae3f6143410849fd9b764dc87d93097c5826e83fe6",
+  "scope": "Selected dated project identity, purpose, status, licence and repository observations used by the profile. Resource inventories, budget scenarios, full source documents and site figures are excluded. Source-content, scientific and release qualification remain separate.",
+  "nodes": [
+    {
+      "id": "ATLAS-REACTORUM",
+      "name": "ATLAS-REACTORUM",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Source and rights library with historical reactor taxonomy and interactive citation views.",
+      "kind": "tool",
+      "phase": "Implementation and integration",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": "https://github.com/anulum/atlas-reactorum",
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-ADS-CORE",
+      "name": "SCPN-ADS-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Subcritical blanket plus typed external source/beam-target interface.",
+      "kind": "component",
+      "phase": "Architecture and qualification",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": null,
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-BEAM-TARGET-CORE",
+      "name": "SCPN-BEAM-TARGET-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Beam/target design and source-scoped reaction/stopping/yield.",
+      "kind": "component",
+      "phase": "Computational prototypes and continued development",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": "https://github.com/anulum/scpn-beam-target-core",
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-BIOCHEM-CORE",
+      "name": "SCPN-BIOCHEM-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Source-specific enzyme/fermentation kinetics and reactor transport.",
+      "kind": "component",
+      "phase": "Architecture and qualification",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": null,
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-BREED-BURN-CORE",
+      "name": "SCPN-BREED-BURN-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Source-bounded breed-and-burn fuel-management concept.",
+      "kind": "component",
+      "phase": "Architecture and qualification",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": null,
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-BWR-CORE",
+      "name": "SCPN-BWR-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Boiling-channel thermal-spectrum family and void-feedback boundary.",
+      "kind": "component",
+      "phase": "Architecture and qualification",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": null,
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-CATALYTIC-BED-CORE",
+      "name": "SCPN-CATALYTIC-BED-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Fixed-bed catalyst/transport/pressure-drop coupling.",
+      "kind": "component",
+      "phase": "Architecture and qualification",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": null,
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-CHANNEL-CORE",
+      "name": "SCPN-CHANNEL-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Graphite-moderated channel reactor only; exclusive from PHWR pressure tubes.",
+      "kind": "component",
+      "phase": "Architecture and qualification",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": null,
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-CHEM-KINETICS-CORE",
+      "name": "SCPN-CHEM-KINETICS-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Ideal gas batch/CSTR/PFR named kinetics and thermo models.",
+      "kind": "component",
+      "phase": "Architecture and qualification",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": null,
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-CHEM-PROCESS-HYBRID-CORE",
+      "name": "SCPN-CHEM-PROCESS-HYBRID-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Chemical process/recycle/separation and carbon-capture composition.",
+      "kind": "component",
+      "phase": "Architecture and qualification",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": null,
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-DENSE-PLASMA-FOCUS-CORE",
+      "name": "SCPN-DENSE-PLASMA-FOCUS-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Focus device/bank/axial/radial/pinch and source-scoped neutron estimates.",
+      "kind": "component",
+      "phase": "Computational prototypes and continued development",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": "https://github.com/anulum/scpn-dense-plasma-focus-core",
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-ELECTROCHEM-CORE",
+      "name": "SCPN-ELECTROCHEM-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Electrode/cell transport and charge/reaction interface.",
+      "kind": "component",
+      "phase": "Architecture and qualification",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": null,
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-FRC-CORE",
+      "name": "SCPN-FRC-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Field-reversed configuration, radial pressure-balance and kinetic-scale model.",
+      "kind": "component",
+      "phase": "Computational prototypes and continued development",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": "https://github.com/anulum/scpn-frc-core",
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-FUSION-CORE",
+      "name": "SCPN-FUSION-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Canonical plasma solver mathematics, transport/equilibrium and existing research pipeline.",
+      "kind": "package",
+      "phase": "Released software · ongoing development",
+      "work_status": "In progress",
+      "release": "4.0.0",
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": "https://github.com/anulum/scpn-fusion-core",
+      "packages": [
+        {
+          "index": "PyPI scpn-fusion",
+          "published": true
+        }
+      ],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-FUSION-FISSION-HYBRID-CORE",
+      "name": "SCPN-FUSION-FISSION-HYBRID-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Existing source-owned fusion/fission blanket device and proposed typed member couplings.",
+      "kind": "component",
+      "phase": "Computational prototypes and continued development",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": "https://github.com/anulum/scpn-fusion-fission-hybrid-core",
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-FUSION-PROCESS-HEAT-CORE",
+      "name": "SCPN-FUSION-PROCESS-HEAT-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Fusion-source to chemical-process heat/material composition.",
+      "kind": "component",
+      "phase": "Architecture and qualification",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": null,
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-GFR-CORE",
+      "name": "SCPN-GFR-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Gas-cooled fast-spectrum family with high-temperature heat-removal boundary.",
+      "kind": "component",
+      "phase": "Architecture and qualification",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": null,
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-HEAT-PIPE-CORE",
+      "name": "SCPN-HEAT-PIPE-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Solid-core heat-pipe microreactor and source-defined transport limits.",
+      "kind": "component",
+      "phase": "Architecture and qualification",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": null,
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-HTGR-CORE",
+      "name": "SCPN-HTGR-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Graphite/TRISO helium-cooled design and distinct process-heat interface.",
+      "kind": "component",
+      "phase": "Architecture and qualification",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": null,
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-HYBRID-ENERGY-CORE",
+      "name": "SCPN-HYBRID-ENERGY-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Fission/renewable/storage electrical and thermal composition.",
+      "kind": "component",
+      "phase": "Architecture and qualification",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": null,
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-HYDROGEN-PROCESS-CORE",
+      "name": "SCPN-HYDROGEN-PROCESS-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "HTSE and named thermochemical hydrogen process routes.",
+      "kind": "component",
+      "phase": "Architecture and qualification",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": null,
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-ICF-BEAM-CORE",
+      "name": "SCPN-ICF-BEAM-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Particle-beam illumination/capsule design with explicit coupling.",
+      "kind": "component",
+      "phase": "Computational prototypes and continued development",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": "https://github.com/anulum/scpn-icf-beam-core",
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-ICF-IMPACT-CORE",
+      "name": "SCPN-ICF-IMPACT-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Impact/projectile/fuel/compression design and source-limited energy relations.",
+      "kind": "component",
+      "phase": "Computational prototypes and continued development",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": "https://github.com/anulum/scpn-icf-impact-core",
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-ICF-LASER-CORE",
+      "name": "SCPN-ICF-LASER-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Laser-driven capsule/implosion design and source-scoped ignition/gain criteria.",
+      "kind": "component",
+      "phase": "Computational prototypes and continued development",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": "https://github.com/anulum/scpn-icf-laser-core",
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-IEC-CORE",
+      "name": "SCPN-IEC-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Gridded electrostatic device and distinct nonthermal loss/recirculation models.",
+      "kind": "component",
+      "phase": "Computational prototypes and continued development",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": "https://github.com/anulum/scpn-iec-core",
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-LATTICE-FUSION-CORE",
+      "name": "SCPN-LATTICE-FUSION-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Source-bounded lattice-confinement fusion research and modelling.",
+      "kind": "component",
+      "phase": "Architecture and qualification",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": "https://github.com/anulum/scpn-lattice-fusion-core",
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-LEVITATED-DIPOLE-CORE",
+      "name": "SCPN-LEVITATED-DIPOLE-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Dipole coil/levitation/charging and anisotropic plasma model.",
+      "kind": "component",
+      "phase": "Computational prototypes and continued development",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": "https://github.com/anulum/scpn-levitated-dipole-core",
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-LFR-CORE",
+      "name": "SCPN-LFR-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Lead/LBE fast-spectrum family with materials/corrosion boundary.",
+      "kind": "component",
+      "phase": "Architecture and qualification",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": null,
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-MAGNETIC-CUSP-CORE",
+      "name": "SCPN-MAGNETIC-CUSP-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Cusp coil/configuration ownership and source-specific field/particle-loss model proposal.",
+      "kind": "component",
+      "phase": "Computational prototypes and continued development",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": "https://github.com/anulum/scpn-magnetic-cusp-core",
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-MEMBRANE-CORE",
+      "name": "SCPN-MEMBRANE-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Reaction-separation with explicit membrane transport.",
+      "kind": "component",
+      "phase": "Architecture and qualification",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": null,
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-METHANE-REFORMER-CORE",
+      "name": "SCPN-METHANE-REFORMER-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Steam-methane reforming kinetics and process train.",
+      "kind": "component",
+      "phase": "Architecture and qualification",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": null,
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-MIF-CORE",
+      "name": "SCPN-MIF-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Existing magneto-inertial dynamics/runtime with maintained multi-language/RTL chain.",
+      "kind": "package",
+      "phase": "Released software · ongoing development",
+      "work_status": "In progress",
+      "release": "0.1.1",
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": "https://github.com/anulum/scpn-mif-core",
+      "packages": [
+        {
+          "index": "PyPI scpn-mif-core",
+          "published": true
+        }
+      ],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-MIF-LINER-CORE",
+      "name": "SCPN-MIF-LINER-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Mechanical/magnetic liner compression and target-energy coupling.",
+      "kind": "component",
+      "phase": "Computational prototypes and continued development",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": "https://github.com/anulum/scpn-mif-liner-core",
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-MIF-MAGLIF-CORE",
+      "name": "SCPN-MIF-MAGLIF-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Magnetised liner drive/preheat/compression family.",
+      "kind": "component",
+      "phase": "Computational prototypes and continued development",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": "https://github.com/anulum/scpn-mif-maglif-core",
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-MIF-PLASMA-JET-CORE",
+      "name": "SCPN-MIF-PLASMA-JET-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Discrete plasma-jet array and spherical liner convergence.",
+      "kind": "component",
+      "phase": "Computational prototypes and continued development",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": "https://github.com/anulum/scpn-mif-plasma-jet-core",
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-MIRROR-CORE",
+      "name": "SCPN-MIRROR-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Mirror/tandem confinement and source-specific flux-tube geometry.",
+      "kind": "component",
+      "phase": "Computational prototypes and continued development",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": "https://github.com/anulum/scpn-mirror-core",
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-MSR-CORE",
+      "name": "SCPN-MSR-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Liquid-fuel molten-salt family with chemistry, circulation and depletion.",
+      "kind": "component",
+      "phase": "Architecture and qualification",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": null,
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-MUON-FUSION-CORE",
+      "name": "SCPN-MUON-FUSION-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Muon-catalysed reaction models and complete energy accounting.",
+      "kind": "component",
+      "phase": "Architecture and qualification",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": "https://github.com/anulum/scpn-muon-fusion-core",
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-NTP-CORE",
+      "name": "SCPN-NTP-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Reactor-side thermal propulsion and typed heat/flow interface.",
+      "kind": "component",
+      "phase": "Architecture and qualification",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": null,
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-NUCLEAR-DESALINATION-CORE",
+      "name": "SCPN-NUCLEAR-DESALINATION-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Fission-to-desalination thermal/material composition.",
+      "kind": "component",
+      "phase": "Architecture and qualification",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": null,
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-NUCLEAR-HYDROGEN-CORE",
+      "name": "SCPN-NUCLEAR-HYDROGEN-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Typed fission-to-hydrogen thermal/electrical/material composition.",
+      "kind": "component",
+      "phase": "Architecture and qualification",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": null,
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-PHOTOCATALYTIC-CORE",
+      "name": "SCPN-PHOTOCATALYTIC-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Photon-flux-driven reaction and optical/source coupling.",
+      "kind": "component",
+      "phase": "Architecture and qualification",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": null,
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-PHWR-CORE",
+      "name": "SCPN-PHWR-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Heavy-water pressure-tube family with on-power fuel management.",
+      "kind": "component",
+      "phase": "Architecture and qualification",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": null,
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-PWR-CORE",
+      "name": "SCPN-PWR-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Light-water moderated/cooled vessel and primary-circuit design.",
+      "kind": "component",
+      "phase": "Architecture and qualification",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": null,
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-REACTOR-CATALOGUE",
+      "name": "SCPN-REACTOR-CATALOGUE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Evidence-labelled source-authority catalogue, candidate revision/history and vocabulary.",
+      "kind": "component",
+      "phase": "Architecture and qualification",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": null,
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-REACTOR-KERNELS",
+      "name": "SCPN-REACTOR-KERNELS",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Shared equations, numerical primitives and geometry/CAD/export substrate.",
+      "kind": "package",
+      "phase": "Implementation and integration",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": "https://github.com/anulum/scpn-reactor-kernels",
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-RESEARCH-REACTOR-CORE",
+      "name": "SCPN-RESEARCH-REACTOR-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Research/isotope-production core including separately supported pulse operation.",
+      "kind": "component",
+      "phase": "Architecture and qualification",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": null,
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-RFP-CORE",
+      "name": "SCPN-RFP-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Reversed-field pinch relaxation/profile and toroidal device design.",
+      "kind": "component",
+      "phase": "Computational prototypes and continued development",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": "https://github.com/anulum/scpn-rfp-core",
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-SCWR-CORE",
+      "name": "SCPN-SCWR-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Supercritical-water family with explicit thermophysical transition support.",
+      "kind": "component",
+      "phase": "Architecture and qualification",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": null,
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-SFR-CORE",
+      "name": "SCPN-SFR-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Sodium-cooled fast-spectrum family and fuel/material/heat-removal boundary.",
+      "kind": "component",
+      "phase": "Architecture and qualification",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": null,
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-SPHEROMAK-CORE",
+      "name": "SCPN-SPHEROMAK-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Relaxed compact-torus configuration, flux conserver and formation criteria.",
+      "kind": "component",
+      "phase": "Computational prototypes and continued development",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": "https://github.com/anulum/scpn-spheromak-core",
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-STELLARATOR-CORE",
+      "name": "SCPN-STELLARATOR-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Three-dimensional magnetic-confinement configuration and coil/design ownership.",
+      "kind": "component",
+      "phase": "Computational prototypes and continued development",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": "https://github.com/anulum/scpn-stellarator-core",
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-THETA-PINCH-CORE",
+      "name": "SCPN-THETA-PINCH-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Axial-field compression and pinch configuration with sharp-boundary model.",
+      "kind": "component",
+      "phase": "Computational prototypes and continued development",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": "https://github.com/anulum/scpn-theta-pinch-core",
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-TOKAMAK-CORE",
+      "name": "SCPN-TOKAMAK-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Own tokamak physical modelling and reactor-design geometry, with explicitly qualified canonical plasma-solver dependencies.",
+      "kind": "component",
+      "phase": "Computational prototypes and continued development",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": "https://github.com/anulum/scpn-tokamak-core",
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-Z-PINCH-CORE",
+      "name": "SCPN-Z-PINCH-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": [
+        "SCPN-REACTOR-SYSTEMS"
+      ],
+      "function": "Current-driven pinch, sheared-flow model and pulsed device design.",
+      "kind": "component",
+      "phase": "Computational prototypes and continued development",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-12",
+      "url": "https://github.com/anulum/scpn-z-pinch-core",
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-PHASE-ORCHESTRATOR",
+      "name": "SCPN-PHASE-ORCHESTRATOR",
+      "group": "SCPN-SYSTEMS-INTEGRATION-AND-CONTROL",
+      "owning_groups": [
+        "SCPN-SYSTEMS-INTEGRATION-AND-CONTROL"
+      ],
+      "function": "Synchronisation analysis and evaluation of early-warning detectors on coupled phase-oscillator dynamics, with a Rust kernel.",
+      "kind": "package",
+      "phase": "Released software · ongoing development",
+      "work_status": "In progress",
+      "release": "1.4.3",
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-13",
+      "url": "https://github.com/anulum/scpn-phase-orchestrator",
+      "packages": [
+        {
+          "index": "Python index: scpn-phase-orchestrator",
+          "published": true
+        },
+        {
+          "index": "Python index: spo-kernel (0.5.10)",
+          "published": true
+        }
+      ]
+    },
+    {
+      "id": "SCPN-CONTROL",
+      "name": "SCPN-CONTROL",
+      "group": "SCPN-SYSTEMS-INTEGRATION-AND-CONTROL",
+      "owning_groups": [
+        "SCPN-SYSTEMS-INTEGRATION-AND-CONTROL"
+      ],
+      "function": "Compiler from stochastic Petri nets to controllers with runtime contracts, and plasma-control research paths.",
+      "kind": "package",
+      "phase": "Released software · ongoing development",
+      "work_status": "In progress",
+      "release": "0.23.0",
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-13",
+      "url": "https://github.com/anulum/scpn-control",
+      "packages": [
+        {
+          "index": "Python index: scpn-control",
+          "published": true
+        }
+      ]
+    },
+    {
+      "id": "SCPN-STUDIO-PLATFORM",
+      "name": "SCPN-STUDIO-PLATFORM",
+      "group": "SCPN-SYSTEMS-INTEGRATION-AND-CONTROL",
+      "owning_groups": [
+        "SCPN-SYSTEMS-INTEGRATION-AND-CONTROL"
+      ],
+      "function": "Domain-neutral SDK for studios: evidence bundles, capability manifests, bounded jobs and tenant-aware identity.",
+      "kind": "package",
+      "phase": "Released software · ongoing development",
+      "work_status": "In progress",
+      "release": "0.11.2",
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-13",
+      "url": "https://github.com/anulum/scpn-studio-platform",
+      "packages": [
+        {
+          "index": "Python index: scpn-studio-platform",
+          "published": true
+        }
+      ]
+    },
+    {
+      "id": "SCPN-STUDIO",
+      "name": "SCPN-STUDIO",
+      "group": "SCPN-SYSTEMS-INTEGRATION-AND-CONTROL",
+      "owning_groups": [
+        "SCPN-SYSTEMS-INTEGRATION-AND-CONTROL"
+      ],
+      "function": "The hub that federates studios over the platform contract: registry, cross-studio evidence audit, rendering and federation gating.",
+      "kind": "service",
+      "phase": "Implementation and integration",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-13",
+      "url": "https://github.com/anulum/scpn-studio",
+      "packages": []
+    },
+    {
+      "id": "SYNAPSE-CHANNEL",
+      "name": "SYNAPSE-CHANNEL",
+      "group": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS",
+      "owning_groups": [
+        "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS"
+      ],
+      "function": "Local-first coordination bus for AI agents: presence, file-scope work claims, messages, task status, receipts and an audit journal on one hub.",
+      "kind": "package",
+      "phase": "Released software · ongoing development",
+      "work_status": "In progress",
+      "release": "0.99.38",
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-11",
+      "url": "https://github.com/anulum/synapse-channel",
+      "packages": [
+        {
+          "index": "PyPI synapse-channel",
+          "published": true
+        },
+        {
+          "index": "npm @anulum/synapse-channel (JavaScript client, its own version)",
+          "published": true
+        }
+      ]
+    },
+    {
+      "id": "SYNAPSE-CHANNEL-FLEET",
+      "name": "SYNAPSE-CHANNEL-FLEET",
+      "group": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS",
+      "owning_groups": [
+        "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS"
+      ],
+      "function": "Multi-machine operation of the bus: durable follower daemon, per-peer trust and configuration, claim forwarding and diagnostics.",
+      "kind": "package",
+      "phase": "Implementation and integration",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "LicenseRef-SYNAPSE-Enterprise",
+      "as_of": "2026-10-11",
+      "url": null,
+      "packages": []
+    },
+    {
+      "id": "SYNAPSE-POLICY-CHECK-ACTION",
+      "name": "SYNAPSE-POLICY-CHECK-ACTION",
+      "group": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS",
+      "owning_groups": [
+        "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS"
+      ],
+      "function": "GitHub Action that checks a SYNAPSE CHANNEL release receipt against a policy file in CI.",
+      "kind": "tool",
+      "phase": "Implementation and integration",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-11",
+      "url": "https://github.com/anulum/synapse-policy-check-action",
+      "packages": []
+    },
+    {
+      "id": "DIRECTOR-AI",
+      "name": "DIRECTOR-AI",
+      "group": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS",
+      "owning_groups": [
+        "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS"
+      ],
+      "function": "Response-level guardrail for LLM output: NLI and retrieval grounding, sealed evidence packets and an optional streaming contradiction halt.",
+      "kind": "package",
+      "phase": "Released software · ongoing development",
+      "work_status": "In progress",
+      "release": "3.21.0",
+      "licence": "Apache-2.0 AND BUSL-1.1",
+      "as_of": "2026-10-11",
+      "url": "https://github.com/anulum/director-ai",
+      "packages": [
+        {
+          "index": "PyPI director-ai",
+          "published": true
+        },
+        {
+          "index": "PyPI director-ai-lite",
+          "published": true
+        },
+        {
+          "index": "PyPI backfire-kernel",
+          "published": true
+        }
+      ]
+    },
+    {
+      "id": "DIRECTOR-CLASS-AI",
+      "name": "DIRECTOR-CLASS-AI",
+      "group": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS",
+      "owning_groups": [
+        "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS"
+      ],
+      "function": "Action control between an autonomous agent and its effectors: action-policy checks, human approvals, gateway enforcement and tamper-evident action evidence.",
+      "kind": "package",
+      "phase": "Implementation and integration",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "BUSL-1.1",
+      "as_of": "2026-10-11",
+      "url": null,
+      "packages": []
+    },
+    {
+      "id": "DIRECTOR-AI-CLOUD",
+      "name": "DIRECTOR-AI-CLOUD",
+      "group": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS",
+      "owning_groups": [
+        "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS"
+      ],
+      "function": "Control plane for a hosted Director-AI API: accounts, API-key lifecycle, usage metering, plan quotas and operator exports.",
+      "kind": "service",
+      "phase": "Implementation and integration",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "BUSL-1.1",
+      "as_of": "2026-10-11",
+      "url": null,
+      "packages": []
+    },
+    {
+      "id": "RIGOR-FOUNDRY",
+      "name": "RIGOR-FOUNDRY",
+      "group": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS",
+      "owning_groups": [
+        "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS"
+      ],
+      "function": "Evidence-bound repository auditing: inventories Git-tracked content, emits reproducible audit candidates, binds review decisions to exact evidence and prepares remediation inputs.",
+      "kind": "package",
+      "phase": "Released software · ongoing development",
+      "work_status": "In progress",
+      "release": "1.0.0",
+      "licence": "Apache-2.0",
+      "as_of": "2026-10-11",
+      "url": "https://github.com/anulum/rigor-foundry",
+      "packages": [
+        {
+          "index": "PyPI rigor-foundry",
+          "published": true
+        }
+      ]
+    },
+    {
+      "id": "REMANENTIA",
+      "name": "REMANENTIA",
+      "group": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS",
+      "owning_groups": [
+        "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS"
+      ],
+      "function": "Local-first, auditable memory for AI agents and knowledge-intensive software: project-file indexing, hybrid retrieval, consolidation and an entity graph, through a CLI, an MCP server and an HTTP API.",
+      "kind": "package",
+      "phase": "Released software · ongoing development",
+      "work_status": "In progress",
+      "release": "0.5.0",
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-11",
+      "url": "https://github.com/anulum/remanentia",
+      "packages": [
+        {
+          "index": "PyPI remanentia",
+          "published": true
+        }
+      ]
+    },
+    {
+      "id": "REMANENTIA-PORTAL",
+      "name": "REMANENTIA-PORTAL",
+      "group": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS",
+      "owning_groups": [
+        "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS"
+      ],
+      "function": "Account and billing or licence-request portal for the product family. It runs no customer workload.",
+      "kind": "service",
+      "phase": "Implementation and integration",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-11",
+      "url": null,
+      "packages": []
+    },
+    {
+      "id": "HushLine",
+      "name": "HushLine",
+      "group": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS",
+      "owning_groups": [
+        "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS"
+      ],
+      "function": "Local command-output filter: runs a command, then limits, shapes and redacts its output before it reaches a caller. Four independent cores: Go, Rust, Python and Node.",
+      "kind": "tool",
+      "phase": "Released software · ongoing development",
+      "work_status": "In progress",
+      "release": "0.1.5",
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-11",
+      "url": "https://github.com/anulum/HushLine",
+      "packages": [
+        {
+          "index": "PyPI hushline",
+          "published": true
+        },
+        {
+          "index": "crates.io hushline",
+          "published": true
+        },
+        {
+          "index": "npm hushline",
+          "published": true
+        }
+      ]
+    },
+    {
+      "id": "SC-NEUROCORE",
+      "name": "SC-NEUROCORE",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Permanent public development, composition and integration workbench for stochastic and spiking neural modelling, encoding, learning, simulation, selected hardware compilation and evidence inspection.",
+      "kind": "workbench",
+      "phase": "Released software · ongoing development",
+      "work_status": "In progress",
+      "release": "3.16.0",
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-13",
+      "url": "https://github.com/anulum/sc-neurocore",
+      "packages": [
+        {
+          "index": "PyPI sc-neurocore",
+          "published": true
+        },
+        {
+          "index": "PyPI sc-neurocore-engine",
+          "published": true
+        }
+      ],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "LOOP-TIMING-WITNESS",
+      "name": "LOOP-TIMING-WITNESS",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Fabric-clock instrument for complete control-loop and selected accelerator timing, with simulation/host analysis separated from eventual board timing, fault response and rail-energy evidence.",
+      "kind": "tool",
+      "phase": "Architecture and qualification",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-13",
+      "url": "https://github.com/anulum/loop-timing-witness",
+      "packages": [
+        {
+          "index": "PyPI loop-timing-witness",
+          "published": true
+        }
+      ],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "EVIDENCE-MANIFEST-TOOLKIT",
+      "name": "EVIDENCE-MANIFEST-TOOLKIT",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Canonicalises, references, seals and verifies evidence with explicit schemas, bounded sources and independently selected policy.",
+      "kind": "shared",
+      "phase": "Architecture and qualification",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-13",
+      "url": null,
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "RANDOMNESS-WITNESS",
+      "name": "RANDOMNESS-WITNESS",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Assesses number-source suitability for a declared stochastic-computing use; it does not certify randomness for every purpose.",
+      "kind": "shared",
+      "phase": "Design and preparation",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "undecided",
+      "as_of": "2026-10-13",
+      "url": null,
+      "packages": [],
+      "repository_record": {
+        "stage": "Repository preparation in progress",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "EXPERIMENT-LEDGER",
+      "name": "EXPERIMENT-LEDGER",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Records experiment lineage across tools without owning their raw evidence or running their computations.",
+      "kind": "shared",
+      "phase": "Design and preparation",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "undecided",
+      "as_of": "2026-10-13",
+      "url": null,
+      "packages": [],
+      "repository_record": {
+        "stage": "Repository preparation in progress",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-QUANTUM-CONTROL",
+      "name": "SCPN-QUANTUM-CONTROL",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Integrated modelling, simulation, compilation, gradients, control, provider workflows, analysis and Quantum Studio.",
+      "kind": "workbench",
+      "phase": "Released software · ongoing development",
+      "work_status": "In progress",
+      "release": "1.2.0",
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-13",
+      "url": null,
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "oscillatools",
+      "name": "oscillatools",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Classical coupled-phase-oscillator dynamics, observables, sensitivities and control-oriented numerical tools.",
+      "kind": "package",
+      "phase": "Released software · ongoing development",
+      "work_status": "In progress",
+      "release": "0.1.0",
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-13",
+      "url": null,
+      "packages": []
+    },
+    {
+      "id": "scpn-quantum-engine",
+      "name": "scpn-quantum-engine",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Optional Rust/PyO3 numerical acceleration and native computation used by supported workbench paths.",
+      "kind": "package",
+      "phase": "Released software · ongoing development",
+      "work_status": "In progress",
+      "release": "0.2.0",
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-13",
+      "url": null,
+      "packages": []
+    },
+    {
+      "id": "QPU-RESULT-PACK",
+      "name": "QPU-RESULT-PACK",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Preserve raw results and their provenance, derivations and reviewable presentation.",
+      "kind": "tool",
+      "phase": "Implementation and integration",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "not stated",
+      "as_of": "2026-10-13",
+      "url": null,
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "TRANSPILE-WITNESS",
+      "name": "TRANSPILE-WITNESS",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Retain scoped observations about compilation semantics, layout, global phase and replay.",
+      "kind": "tool",
+      "phase": "Implementation and integration",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later by file headers; no licence field in packaging",
+      "as_of": "2026-10-13",
+      "url": null,
+      "packages": [],
+      "repository_record": {
+        "stage": "Repository preparation in progress",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "MITIGATION-WITNESS",
+      "name": "MITIGATION-WITNESS",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Evaluate mitigation on declared measurement panels with retained inputs and uncertainty.",
+      "kind": "tool",
+      "phase": "Implementation and integration",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-13",
+      "url": null,
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-QC-CONTRACTS",
+      "name": "SCPN-QC-CONTRACTS",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Versioned parameter, result, semantic and evidence interface contracts shared by components.",
+      "kind": "component",
+      "phase": "Workbench transition",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-QC-CORE",
+      "name": "SCPN-QC-CORE",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Configuration, logging, resource budgets and generic Kuramoto-XY problem foundations, separated from paper-specific research assumptions.",
+      "kind": "component",
+      "phase": "Workbench transition",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-QC-AD",
+      "name": "SCPN-QC-AD",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Whole-program automatic differentiation, derivative transforms, batching, optimisation and explicit supported-path contracts.",
+      "kind": "component",
+      "phase": "Workbench transition",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-QC-SIM",
+      "name": "SCPN-QC-SIM",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Classical and quantum oscillator dynamics, XY/Kuramoto solvers, open-system simulation, tensor-network paths and co-simulation.",
+      "kind": "component",
+      "phase": "Workbench transition",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-QC-COMPILER",
+      "name": "SCPN-QC-COMPILER",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Model and circuit frontends, intermediate representations, interchange and code generation.",
+      "kind": "component",
+      "phase": "Workbench transition",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-QC-QNODE",
+      "name": "SCPN-QC-QNODE",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Quantum tapes, gradient execution and framework bridges for supported Qiskit, PennyLane, JAX, PyTorch and TensorFlow paths.",
+      "kind": "component",
+      "phase": "Workbench transition",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-QC-HAL",
+      "name": "SCPN-QC-HAL",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Provider-neutral workloads, capabilities, job/result contracts and optional provider adapters.",
+      "kind": "component",
+      "phase": "Workbench transition",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-QC-MITIGATION",
+      "name": "SCPN-QC-MITIGATION",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Error-mitigation implementations and their method taxonomy.",
+      "kind": "component",
+      "phase": "Workbench transition",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-QC-QEC",
+      "name": "SCPN-QC-QEC",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Quantum error-correction analysis and fault-tolerant resource-reporting surfaces.",
+      "kind": "component",
+      "phase": "Workbench transition",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-QC-CONTROL",
+      "name": "SCPN-QC-CONTROL",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Feedback and co-design, chimera and topology-aware control, and DLA-constrained control paths.",
+      "kind": "component",
+      "phase": "Workbench transition",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-QC-ANALYSIS",
+      "name": "SCPN-QC-ANALYSIS",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Observables, synchronisation witnesses, result analysis and the open-data DLA-parity pathway.",
+      "kind": "component",
+      "phase": "Workbench transition",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-QC-LEARN",
+      "name": "SCPN-QC-LEARN",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Forecasting, quantum neural models, surrogate models, kernels and variational learning paths.",
+      "kind": "component",
+      "phase": "Workbench transition",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-QC-APPS",
+      "name": "SCPN-QC-APPS",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Domain application adapters, quantum randomness, cryptography and sensing workflows, with explicit claim boundaries.",
+      "kind": "component",
+      "phase": "Workbench transition",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-QC-BENCH",
+      "name": "SCPN-QC-BENCH",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Workload-specific benchmark suites, comparison harnesses, campaign reproduction and retained run evidence.",
+      "kind": "component",
+      "phase": "Workbench transition",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-QC-STUDIO",
+      "name": "SCPN-QC-STUDIO",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Quantum Studio's visual workflows, inspectors and evidence presentation through the shared Studio platform contract.",
+      "kind": "component",
+      "phase": "Workbench transition",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-QC-RESEARCH",
+      "name": "SCPN-QC-RESEARCH",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Experimental SCPN theory, paper-specific assumptions and research adapters whose contracts are not stable.",
+      "kind": "component",
+      "phase": "Workbench transition",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "NOISE-MODEL-WITNESS",
+      "name": "NOISE-MODEL-WITNESS",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Compare model predictions and replay observations for the same circuit and shot identities, with uncertainty, shot floors, calibration epochs and declared tolerances.",
+      "kind": "tool",
+      "phase": "Design and implementation",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "VENDOR-CLAIM-RECOMPUTER",
+      "name": "VENDOR-CLAIM-RECOMPUTER",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Recompute released-data quantum-volume, error-per-layer-gate and logical-error claims against fixed definitions, original inputs and declared computation budgets.",
+      "kind": "tool",
+      "phase": "Design and implementation",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "DECODER-WITNESS",
+      "name": "DECODER-WITNESS",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Compare real decoder engines on released shot data with lossless adapters, declared noise conditions and uncertainty-aware reports.",
+      "kind": "tool",
+      "phase": "Design and implementation",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "GRADIENT-WITNESS",
+      "name": "GRADIENT-WITNESS",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Check software derivatives against declared analytic, parameter-shift and finite-difference references, including complex, finite-shot and cross-framework cases.",
+      "kind": "tool",
+      "phase": "Design and implementation",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "CONFORMANCE-WITNESS",
+      "name": "CONFORMANCE-WITNESS",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Check versioned OpenQASM 3, adapter behaviour, provenance fields and repository-evidence criteria against their normative clauses and actual entry points.",
+      "kind": "tool",
+      "phase": "Design and implementation",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "QUANTUM_LAB",
+      "name": "QUANTUM_LAB",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Reserved research workspace name; implementation role is not assigned in the group map.",
+      "kind": "workspace",
+      "phase": "Workspace definition",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Not stated",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Repository preparation in progress",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SC-NC-CORE",
+      "name": "SC-NC-CORE",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Neuron/synapse primitives, network graph, simulation loop, fixed-point semantics, constants and exceptions.",
+      "kind": "component",
+      "phase": "Workbench transition",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Repository preparation in progress",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SC-NC-CATALOGUE",
+      "name": "SC-NC-CATALOGUE",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Neuron models, model zoo and topology/connectome generators.",
+      "kind": "component",
+      "phase": "Workbench transition",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Repository preparation in progress",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SC-NC-ENGINE",
+      "name": "SC-NC-ENGINE",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Accelerated execution and its maintained language/native interfaces.",
+      "kind": "component",
+      "phase": "Workbench transition",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Repository preparation in progress",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SC-NC-BRIDGES",
+      "name": "SC-NC-BRIDGES",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Interchange and cross-domain adapters including NIR, quantum, HDC/VSA and neuro-symbolic routes.",
+      "kind": "component",
+      "phase": "Workbench transition",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Repository preparation in progress",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SC-NC-LEARN",
+      "name": "SC-NC-LEARN",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Training and adaptation, including surrogate gradients, plasticity, online learning, quantisation-aware training and distillation.",
+      "kind": "component",
+      "phase": "Workbench transition",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Repository preparation in progress",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SC-NC-DATA",
+      "name": "SC-NC-DATA",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Datasets, signal/event encoding, augmentation, codecs, sources and recording adapters.",
+      "kind": "component",
+      "phase": "Workbench transition",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Repository preparation in progress",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SC-NC-ANALYSIS",
+      "name": "SC-NC-ANALYSIS",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Spike-train analysis, visualisation and explainability.",
+      "kind": "component",
+      "phase": "Workbench transition",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Repository preparation in progress",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SC-NC-COMPILER",
+      "name": "SC-NC-COMPILER",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Equation/IR lowering and hardware collateral for supported numerical models.",
+      "kind": "component",
+      "phase": "Workbench transition",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Repository preparation in progress",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SC-NC-HARDWARE",
+      "name": "SC-NC-HARDWARE",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Target profiles, mapping, deployment, drivers and power/thermal integration.",
+      "kind": "component",
+      "phase": "Workbench transition",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Repository preparation in progress",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SC-NC-VERIFY",
+      "name": "SC-NC-VERIFY",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Formal, fault, resilience and safety-readiness verification within explicit proof scopes.",
+      "kind": "component",
+      "phase": "Workbench transition",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Repository preparation in progress",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SC-NC-STUDIO",
+      "name": "SC-NC-STUDIO",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Visual composition, inspection and evidence presentation workflows.",
+      "kind": "component",
+      "phase": "Workbench transition",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Repository preparation in progress",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SC-NC-RESEARCH",
+      "name": "SC-NC-RESEARCH",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Retained experimental paths, including evolutionary, biological and world-model directions.",
+      "kind": "component",
+      "phase": "Workbench transition",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Repository preparation in progress",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SC-NC-BENCH",
+      "name": "SC-NC-BENCH",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Catalogue/workload suites and immutable source-bound benchmark records.",
+      "kind": "component",
+      "phase": "Workbench transition",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Repository preparation in progress",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "MODEL-PROVENANCE-PACK",
+      "name": "MODEL-PROVENANCE-PACK",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Binds a model's data, training, conversion, quantisation, encoding and supporting evidence into a verifiable provenance pack.",
+      "kind": "tool",
+      "phase": "Design and implementation",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Repository preparation in progress",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SPIKE-LOG",
+      "name": "SPIKE-LOG",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Records, indexes, verifies, slices and replays event streams without losing their provenance or timebase identity.",
+      "kind": "tool",
+      "phase": "Design and implementation",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SPIKE-FORMAT-BRIDGE",
+      "name": "SPIKE-FORMAT-BRIDGE",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Converts event recordings between declared formats and reports every permitted loss rather than hiding timestamp, polarity or side-stream changes.",
+      "kind": "tool",
+      "phase": "Design and implementation",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Repository preparation in progress",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SPIKE-CODEC-BENCH",
+      "name": "SPIKE-CODEC-BENCH",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Measures compression of existing spike trains, comparing payload ratio, distortion, encode/decode latency and memory.",
+      "kind": "tool",
+      "phase": "Design and implementation",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Repository preparation in progress",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SPIKE-ENCODER-CHARACTERISER",
+      "name": "SPIKE-ENCODER-CHARACTERISER",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Measures the information, spike-rate and latency trade-offs of sensor-to-spike encoders.",
+      "kind": "tool",
+      "phase": "Design and implementation",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Repository preparation in progress",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SPIKE-QUALITY-GATE",
+      "name": "SPIKE-QUALITY-GATE",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Checks event data against a named quality policy for timestamp, noise, sensor-health, rate, gap and spatial defects.",
+      "kind": "tool",
+      "phase": "Design and implementation",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Repository preparation in progress",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SPIKE-GROUNDTRUTH",
+      "name": "SPIKE-GROUNDTRUTH",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Generates reproducible event-vision, audio, sensor and control stimuli with ground truth defined by the generator.",
+      "kind": "tool",
+      "phase": "Design and implementation",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Repository preparation in progress",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SNN-DIVERGENCE-HARNESS",
+      "name": "SNN-DIVERGENCE-HARNESS",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Compares the same network and input across implementations under bit-exact, tolerance or statistical oracles.",
+      "kind": "tool",
+      "phase": "Design and implementation",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Repository preparation in progress",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SC-STREAM-PROVER",
+      "name": "SC-STREAM-PROVER",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Compares realised stochastic-computing arithmetic error with a declared bound for a specific circuit, source and stream-length regime.",
+      "kind": "tool",
+      "phase": "Design and implementation",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Repository preparation in progress",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "MUTATION-SNN",
+      "name": "MUTATION-SNN",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Measures test adequacy by generating declared semantic mutants and recording what the suite detects.",
+      "kind": "tool",
+      "phase": "Design and implementation",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Repository preparation in progress",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "NIR-CONFORMANCE",
+      "name": "NIR-CONFORMANCE",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Tests importer/exporter behaviour against the known semantics of a pinned Neuromorphic Intermediate Representation version.",
+      "kind": "tool",
+      "phase": "Design and implementation",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Repository preparation in progress",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "NEURO-EVIDENCE-BENCH",
+      "name": "NEURO-EVIDENCE-BENCH",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Executes declared neuromorphic benchmark plans and traces each scoped result back to its raw evidence.",
+      "kind": "tool",
+      "phase": "Design and implementation",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Repository preparation in progress",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SPIKE-CALIBRATOR",
+      "name": "SPIKE-CALIBRATOR",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Measures classifier confidence against correctness under declared signal definitions, shifts and placements.",
+      "kind": "tool",
+      "phase": "Design and implementation",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Repository preparation in progress",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "BITSTREAM-EVIDENCE-CI",
+      "name": "BITSTREAM-EVIDENCE-CI",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Captures pinned FPGA build inputs, reports and bitstream identity in a reproducibility-aware chained build ledger.",
+      "kind": "tool",
+      "phase": "Design and implementation",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Repository preparation in progress",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "PLASTICITY-WITNESS",
+      "name": "PLASTICITY-WITNESS",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Compares observed learning-rule updates with an independently defined fixed-point or statistical oracle under stated spike/load/fault protocols.",
+      "kind": "tool",
+      "phase": "Design and implementation",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Repository preparation in progress",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "AER-LINK-WITNESS",
+      "name": "AER-LINK-WITNESS",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Measures event-link behaviour under load, including loss, reordering, fairness, starvation and forward progress.",
+      "kind": "tool",
+      "phase": "Design and implementation",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Repository preparation in progress",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "RELIABILITY-WITNESS",
+      "name": "RELIABILITY-WITNESS",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Characterises reliability within a declared physical or explicitly simulated exposure, retaining conditions, gaps and rare-event uncertainty.",
+      "kind": "tool",
+      "phase": "Design and implementation",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Repository preparation in progress",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SIM-REAL-WITNESS",
+      "name": "SIM-REAL-WITNESS",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Quantifies simulation-to-fabric differences for the same model, input and observable population.",
+      "kind": "tool",
+      "phase": "Design and implementation",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Repository preparation in progress",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "DEPLOY-PACK",
+      "name": "DEPLOY-PACK",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Composes validated deployment evidence with bitstream/driver identity into a verifiable install/update package.",
+      "kind": "tool",
+      "phase": "Design and implementation",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Repository preparation in progress",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "FIELD-OPS-WITNESS",
+      "name": "FIELD-OPS-WITNESS",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Aggregates compact field health and drift evidence against deployment-time envelopes without actuating devices.",
+      "kind": "tool",
+      "phase": "Design and implementation",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Repository preparation in progress",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "FLIGHT-RECORDER",
+      "name": "FLIGHT-RECORDER",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Retains a bounded per-device event/state history for gap-honest incident reconstruction.",
+      "kind": "tool",
+      "phase": "Design and implementation",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Repository preparation in progress",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "NEURO-SAFETY-CASE",
+      "name": "NEURO-SAFETY-CASE",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Composes scoped evidence and open gaps into an assessor-facing assurance argument; it certifies nothing itself.",
+      "kind": "tool",
+      "phase": "Design and implementation",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-10-13",
+      "url": null,
+      "repository_record": {
+        "stage": "Repository preparation in progress",
+        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SC-COMPUTE-ADAPTERS",
+      "name": "SC-COMPUTE-ADAPTERS",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Owns the SC-NeuroCore-side wrappers and numerical/register/handshake contracts needed to put selected generated peripherals into the independent LOOP-TIMING-WITNESS DUT/capture path.",
+      "kind": "workbench module",
+      "phase": "Architecture and interface work",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Independent distribution terms being defined",
+      "as_of": "2026-10-13",
+      "url": null
+    },
+    {
+      "id": "SC-NC-BIO",
+      "name": "SC-NC-BIO",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Conditional destination for separately owned biological/biohybrid work if its independent release lifecycle is accepted; current experimental bioware remains in the developmental parent.",
+      "kind": "conditional architecture destination",
+      "phase": "Architecture and interface work",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Independent distribution terms being defined",
+      "as_of": "2026-10-13",
+      "url": null
+    }
+  ]
+}

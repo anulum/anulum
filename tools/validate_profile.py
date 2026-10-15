@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: AGPL-3.0-or-later
+# Commercial license available
+# © Concepts 1996–2026 Miroslav Šotek. All rights reserved.
+# © Code 2020–2026 Miroslav Šotek. All rights reserved.
+# ORCID: 0009-0009-3560-0851
+# Contact: www.anulum.li | protoscience@anulum.li
+# ANULUM profile source and rendered inventory verification
 """Validate the profile inventory and its rendered source surfaces."""
 
 from __future__ import annotations
@@ -12,6 +18,7 @@ from typing import Any
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
+import profile_catalogue  # noqa: E402
 import profile_feeds  # noqa: E402
 import render_publications  # noqa: E402
 
@@ -26,7 +33,7 @@ def expected_counts_line(data: dict[str, Any]) -> str:
     Computed independently of ``render_profile_assets.py`` so the gate checks the
     pictures against the manifest, not against the renderer's own arithmetic.
     """
-    per: list[tuple[str, int, int]] = []
+    per: list[tuple[str, int, int, int]] = []
     for portfolio in data["portfolios"]:
         repos = portfolio["repositories"]
         per.append(
@@ -34,13 +41,14 @@ def expected_counts_line(data: dict[str, Any]) -> str:
                 portfolio["id"],
                 sum(1 for repo in repos if repo["access"] == "public"),
                 sum(1 for repo in repos if repo["access"] == "private"),
+                sum(1 for repo in repos if repo["access"] == "unpublished"),
             )
         )
-    groups = " ".join(f"{key}={public}/{private}" for key, public, private in per)
+    groups = " ".join(f"{key}={public}/{private}/{unpublished}" for key, public, private, unpublished in per)
     return (
-        f"counts: portfolios={len(per)} repositories={sum(p + q for _, p, q in per)} "
-        f"public={sum(p for _, p, _ in per)} private={sum(q for _, _, q in per)} "
-        f"standalone={len(data['standalone_repositories'])}; {groups}"
+        f"counts: portfolios={len(per)} repositories={sum(p + q + u for _, p, q, u in per)} "
+        f"public={sum(p for _, p, _, _ in per)} private={sum(q for _, _, q, _ in per)} "
+        f"unpublished={sum(u for _, _, _, u in per)} standalone={len(data['standalone_repositories'])}; {groups}"
     )
 
 
@@ -135,7 +143,7 @@ def check_reactor_families(data: dict[str, Any], english: str) -> list[str]:
     reactor = next(p for p in data["portfolios"] if p["id"] == "reactor")
     names = [repo["name"] for repo in reactor["repositories"]]
     placed = [name for family in data["reactor_families"] for name in family["repositories"]]
-    placed += list(data["reactor_shared"]) + list(data["reactor_reserved"])
+    placed += list(data["reactor_shared"]) + list(data["reactor_reserved"]) + list(data["reactor_expansion"])
     for name in names:
         if placed.count(name) != 1:
             errors.append(f"reactor repository placed {placed.count(name)} times in the family map: {name}")
@@ -172,6 +180,8 @@ def main() -> int:
         "portfolio_repositories": len(repositories),
         "public_portfolio_repositories": len(public),
         "private_portfolio_repositories": len(private),
+        "unpublished_portfolio_repositories": sum(repo["access"] == "unpublished" for repo in repositories),
+        "catalogue_entries": len(data["catalogue"]),
         "standalone_public_repositories": len(data["standalone_repositories"]),
         "portfolios": len(portfolios),
         "public_projects": len(public) + len(data["standalone_repositories"]),
@@ -243,6 +253,7 @@ def main() -> int:
 
     if not (ROOT / "assets" / "anulum-logo.jpg").is_file():
         errors.append("missing profile asset: assets/anulum-logo.jpg")
+    errors.extend(profile_catalogue.check(data, ROOT))
     errors.extend(check_rendered_assets(data, readmes))
     errors.extend(check_live_surfaces(data, readmes))
     errors.extend(check_static_surfaces(data, readmes))
