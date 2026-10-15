@@ -1,51 +1,81 @@
 {
-  "fetched_at": "2026-09-29",
+  "fetched_at": "2026-10-15",
   "releases": [
     {
-      "project": "SYNAPSE CHANNEL",
-      "version": "v0.99.26",
-      "headline": "Dashboard feeds return unconfigured-store responses without starting report worker processes; configured-store reconstruction retains process isolation.",
-      "link": "https://github.com/anulum/synapse-channel/releases/tag/v0.99.26",
-      "date": "2026-09-05"
+      "project": "Synapse Channel",
+      "version": "v0.99.37",
+      "headline": "published software archive",
+      "link": "https://doi.org/10.5281/zenodo.23095056",
+      "date": "2026-10-02"
+    },
+    {
+      "project": "Loop Timing Witness",
+      "version": "v0.1.0",
+      "headline": "published host software",
+      "link": "https://doi.org/10.5281/zenodo.23092361",
+      "date": "2026-10-01"
+    },
+    {
+      "project": "Synapse Channel",
+      "version": "v0.99.36",
+      "headline": "historical software archive",
+      "link": "https://doi.org/10.5281/zenodo.23088472",
+      "date": "2026-10-01"
     },
     {
       "project": "SYNAPSE CHANNEL",
-      "version": "v0.99.25",
-      "headline": "Add a repeatable JavaScript SDK integration check against an isolated, authenticated Python hub, covering delivery, claim conflicts, release, snapshots, and reconnect.",
-      "link": "https://github.com/anulum/synapse-channel/releases/tag/v0.99.25",
-      "date": "2026-09-05"
-    },
-    {
-      "project": "SCPN-Phase-Orchestrator",
-      "version": "v1.4.3",
-      "headline": "Generate identical capability inventory ordering from Git checkouts and exported source trees.",
-      "link": "https://github.com/anulum/scpn-phase-orchestrator/releases/tag/v1.4.3",
-      "date": "2026-09-05"
+      "version": "v0.99.35",
+      "headline": "Shared-pool reservations with one authoritative owner (F02, not yet enforced).",
+      "link": "https://github.com/anulum/synapse-channel/releases/tag/v0.99.35",
+      "date": "2026-09-30"
     },
     {
       "project": "SYNAPSE CHANNEL",
-      "version": "v0.99.24",
-      "headline": "Keep managed Codex pane bridges waiter-reachable while an already-running provider is blocked by an update chooser, report the pending wake and pane compatibility state explicitly, and coalesce later routing hints until the same live pane becomes safe to…",
-      "link": "https://github.com/anulum/synapse-channel/releases/tag/v0.99.24",
-      "date": "2026-09-04"
-    },
-    {
-      "project": "SCPN-Phase-Orchestrator",
-      "version": "v1.4.2",
-      "headline": "A fourth sealed L3 request now binds only pulsed_electron_beam_icf to the exact SCPN-ICF-BEAM-CORE review.",
-      "link": "https://github.com/anulum/scpn-phase-orchestrator/releases/tag/v1.4.2",
-      "date": "2026-09-04"
+      "version": "v0.99.34",
+      "headline": "Signed peers behind a TLS-terminating proxy were admitted but served nothing. 0.99.33 said a peer hub's or Fleet follower's signed log pull works behind such a proxy. It did not.",
+      "link": "https://github.com/anulum/synapse-channel/releases/tag/v0.99.34",
+      "date": "2026-09-30"
     }
   ],
   "zenodo": [
     {
-      "id": 23029802,
-      "doi": "10.5281/zenodo.23029802",
+      "id": 23328518,
+      "doi": "10.5281/zenodo.23328518",
       "conceptdoi": "10.5281/zenodo.20801559",
       "title": "SYNAPSE CHANNEL: Local-first multi-agent coordination bus",
+      "date": "2026-10-13",
+      "type": "software/",
+      "version": "0.99.38",
+      "license": "agpl-3.0-or-later"
+    },
+    {
+      "id": 23298119,
+      "doi": "10.5281/zenodo.23298119",
+      "conceptdoi": "10.5281/zenodo.23298118",
+      "title": "The calibration epoch as the unit of evidence: preregistered parity-leakage and layout-transfer experiments on IQM Garnet",
+      "date": "2026-10-11",
+      "type": "publication/preprint",
+      "version": "",
+      "license": "cc-by-4.0"
+    },
+    {
+      "id": 23092361,
+      "doi": "10.5281/zenodo.23092361",
+      "conceptdoi": "10.5281/zenodo.23092360",
+      "title": "Loop Timing Witness",
+      "date": "2026-10-01",
+      "type": "software/",
+      "version": "0.1.0",
+      "license": "agpl-3.0-or-later"
+    },
+    {
+      "id": 23041094,
+      "doi": "10.5281/zenodo.23041094",
+      "conceptdoi": "10.5281/zenodo.18821929",
+      "title": "scpn-quantum-control: Quantum-Native SCPN Phase Dynamics and Control",
       "date": "2026-09-29",
       "type": "software/",
-      "version": "0.99.29",
+      "version": "1.2.0",
       "license": "agpl-3.0-or-later"
     },
     {
@@ -87,6 +117,16 @@
       "type": "software/",
       "version": "3.21.0",
       "license": "apache2.0"
+    },
+    {
+      "id": 23045316,
+      "doi": "10.5281/zenodo.23045316",
+      "conceptdoi": "10.5281/zenodo.18804939",
+      "title": "SCPN Control: Neuro-Symbolic Stochastic Petri Net Controllers with First-Principles Gyrokinetic Transport for Real-Time Tokamak Plasma Control",
+      "date": "2026-07-17",
+      "type": "software/",
+      "version": "0.23.0",
+      "license": "agpl-3.0-or-later"
     },
     {
       "id": 21198962,
@@ -189,16 +229,6 @@
       "license": "cc-by-4.0"
     },
     {
-      "id": 18821930,
-      "doi": "10.5281/zenodo.18821930",
-      "conceptdoi": "10.5281/zenodo.18821929",
-      "title": "scpn-quantum-control: Quantum-Native SCPN Phase Dynamics and Control",
-      "date": "2026-03-29",
-      "type": "software/",
-      "version": "0.9.6",
-      "license": "agpl-3.0-or-later"
-    },
-    {
       "id": 18985467,
       "doi": "10.5281/zenodo.18985467",
       "conceptdoi": "10.5281/zenodo.18985466",
@@ -227,16 +257,6 @@
       "type": "software/",
       "version": "1.4.1",
       "license": "apgl-v3"
-    },
-    {
-      "id": 18821816,
-      "doi": "10.5281/zenodo.18821816",
-      "conceptdoi": "10.5281/zenodo.18804939",
-      "title": "SCPN Control: Neuro-Symbolic Stochastic Petri Net Controller for Plasma Control",
-      "date": "2026-03-01",
-      "type": "software/",
-      "version": "0.4.0",
-      "license": "mit-license"
     },
     {
       "id": 18731981,

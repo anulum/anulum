@@ -105,7 +105,7 @@ sie sind Betriebssignale, keine Bewertung wissenschaftlicher Qualität.
 
 ## Aktueller Fokus
 
-<sub>Portfoliostand verifiziert am <!-- verified-at -->2026-09-28<!-- /verified-at -->.</sub>
+<sub>Portfoliostand verifiziert am <!-- verified-at -->2026-10-15<!-- /verified-at -->.</sub>
 
 <table>
   <tr>
@@ -120,13 +120,13 @@ sie sind Betriebssignale, keine Bewertung wissenschaftlicher Qualität.
 
 | Datum | Projekt | Release | Änderung |
 |---|---|---|---|
-| 2026-09-05 | SYNAPSE CHANNEL | [v0.99.26](https://github.com/anulum/synapse-channel/releases/tag/v0.99.26) | Dashboard feeds return unconfigured-store responses without starting report worker processes; configured-store reconstruction retains process isolation. |
-| 2026-09-05 | SYNAPSE CHANNEL | [v0.99.25](https://github.com/anulum/synapse-channel/releases/tag/v0.99.25) | Add a repeatable JavaScript SDK integration check against an isolated, authenticated Python hub, covering delivery, claim conflicts, release, snapshots, and reconnect. |
-| 2026-09-05 | SCPN-Phase-Orchestrator | [v1.4.3](https://github.com/anulum/scpn-phase-orchestrator/releases/tag/v1.4.3) | Generate identical capability inventory ordering from Git checkouts and exported source trees. |
-| 2026-09-04 | SYNAPSE CHANNEL | [v0.99.24](https://github.com/anulum/synapse-channel/releases/tag/v0.99.24) | Keep managed Codex pane bridges waiter-reachable while an already-running provider is blocked by an update chooser, report the pending wake and pane compatibility state explicitly, and coalesce later routing hints until the same live pane becomes safe to… |
-| 2026-09-04 | SCPN-Phase-Orchestrator | [v1.4.2](https://github.com/anulum/scpn-phase-orchestrator/releases/tag/v1.4.2) | A fourth sealed L3 request now binds only pulsed_electron_beam_icf to the exact SCPN-ICF-BEAM-CORE review. |
+| 2026-10-02 | Synapse Channel | [v0.99.37](https://doi.org/10.5281/zenodo.23095056) | published software archive |
+| 2026-10-01 | Loop Timing Witness | [v0.1.0](https://doi.org/10.5281/zenodo.23092361) | published host software |
+| 2026-10-01 | Synapse Channel | [v0.99.36](https://doi.org/10.5281/zenodo.23088472) | historical software archive |
+| 2026-09-30 | SYNAPSE CHANNEL | [v0.99.35](https://github.com/anulum/synapse-channel/releases/tag/v0.99.35) | Shared-pool reservations with one authoritative owner (F02, not yet enforced). |
+| 2026-09-30 | SYNAPSE CHANNEL | [v0.99.34](https://github.com/anulum/synapse-channel/releases/tag/v0.99.34) | Signed peers behind a TLS-terminating proxy were admitted but served nothing. 0.99.33 said a peer hub's or Fleet follower's signed log pull works behind such a proxy. It did not. |
 
-<sub>Gerendert aus [anulum.li/news](https://anulum.li/news/) (den CHANGELOG-Dateien der Projekte) und [Zenodo](https://zenodo.org/search?q=creators.orcid%3A%220009-0009-3560-0851%22) am 2026-09-29.</sub>
+<sub>Gerendert aus [anulum.li/news](https://anulum.li/news/) (den CHANGELOG-Dateien der Projekte) und [Zenodo](https://zenodo.org/search?q=creators.orcid%3A%220009-0009-3560-0851%22) am 2026-10-15.</sub>
 <!-- profile-feeds:releases:end -->
 
 <!-- profile-feeds:publication:start -->
@@ -134,9 +134,9 @@ sie sind Betriebssignale, keine Bewertung wissenschaftlicher Qualität.
 
 | Datum | Typ | Ergebnis | DOI |
 |---|---|---|---|
-| 2026-08-26 | Preprint | A domain-specific modal-growth detector clears a matched false-alarm bar on power-grid instability, and an eigenvalue regime map shows when its form transfers | [10.5281/zenodo.22113116](https://doi.org/10.5281/zenodo.22113116) |
+| 2026-10-11 | Preprint | The calibration epoch as the unit of evidence: preregistered parity-leakage and layout-transfer experiments on IQM Garnet | [10.5281/zenodo.23298119](https://doi.org/10.5281/zenodo.23298119) |
 
-<sub>Gerendert aus [anulum.li/news](https://anulum.li/news/) (den CHANGELOG-Dateien der Projekte) und [Zenodo](https://zenodo.org/search?q=creators.orcid%3A%220009-0009-3560-0851%22) am 2026-09-29.</sub>
+<sub>Gerendert aus [anulum.li/news](https://anulum.li/news/) (den CHANGELOG-Dateien der Projekte) und [Zenodo](https://zenodo.org/search?q=creators.orcid%3A%220009-0009-3560-0851%22) am 2026-10-15.</sub>
 <!-- profile-feeds:publication:end -->
 
 ## Zeitleiste
@@ -195,7 +195,7 @@ ist ein eigenständiges öffentliches Werkzeug ausserhalb der fünf Portfolios.
 Verbindungen stellen Vertrags-, Integrations-, Evidenz- und Auditbeziehungen
 dar. Sie führen keine Verantwortlichkeiten zusammen und implizieren weder
 wissenschaftliche Validierung noch Betriebsbereitschaft oder
-Aktuierungsbefugnis. Zahlen verifiziert am <!-- verified-at -->2026-09-28<!-- /verified-at -->.
+Aktuierungsbefugnis. Zahlen verifiziert am <!-- verified-at -->2026-10-15<!-- /verified-at -->.
 Die interaktive Fassung dieser Karte, in der jedes registrierte Projekt eine
 Zeile ist und sich nach Gruppe, Reaktorfamilie, Sichtbarkeit, Lebenszyklus und
 Evidenz filtern lässt, steht unter

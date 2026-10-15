@@ -7,8 +7,8 @@
 [Publications hub on anulum.li](https://anulum.li/papers/) ·
 [Releases and publications feed](https://anulum.li/news/)
 
-Zenodo inventory read on 2026-09-28: 28 records whose creator carries the ORCID
-above, 17 of publication type and 11 software archives. "Published"
+Zenodo inventory read on 2026-10-15: 30 records whose creator carries the ORCID
+above, 18 of publication type and 12 software archives. "Published"
 on this page means publicly deposited with a resolvable record. It does not imply
 journal acceptance or peer review. Titles are the records' own.
 
@@ -16,7 +16,8 @@ journal acceptance or peer review. Titles are the records' own.
 
 | Date | Project | Output | Record type | Status | DOI |
 |---|---|---|---|---|---|
-| 2026-08-26 | SCPN Phase Orchestrator | A domain-specific modal-growth detector clears a matched false-alarm bar on power-grid instability, and an eigenvalue regime map shows when its form transfers | Preprint | Under review (self-reported by the project); acceptance not claimed | [10.5281/zenodo.22113116](https://doi.org/10.5281/zenodo.22113116) |
+| 2026-10-11 | SCPN Quantum Control | The calibration epoch as the unit of evidence: preregistered parity-leakage and layout-transfer experiments on IQM Garnet | Preprint | Deposited | [10.5281/zenodo.23298119](https://doi.org/10.5281/zenodo.23298119) |
+| 2026-08-26 | SCPN Phase Orchestrator | A domain-specific modal-growth detector clears a matched false-alarm bar on power-grid instability, and an eigenvalue regime map shows when its form transfers | Preprint | Submitted to a journal and declined there without review on 4 October 2026; the preprint stands as published | [10.5281/zenodo.22113116](https://doi.org/10.5281/zenodo.22113116) |
 | 2026-08-26 | SCPN Phase Orchestrator | Generic early-warning signals are at chance under a matched false-alarm protocol across brain, heart, grid, climate and molecular data | Preprint | Under review (self-reported by the project); acceptance not claimed | [10.5281/zenodo.22113062](https://doi.org/10.5281/zenodo.22113062) |
 | 2026-05-25 | SCPN Quantum Control | scpn-quantum-control: reproducible Kuramoto--XY quantum-control workflows with Rust acceleration and hardware artefact packaging | Preprint | Deposited | [10.5281/zenodo.20382333](https://doi.org/10.5281/zenodo.20382333) |
 | 2026-05-25 | SCPN Quantum Control | Quantum simulation of coupled-oscillator synchronisation on a 156-qubit superconducting processor | Preprint | Deposited | [10.5281/zenodo.20382203](https://doi.org/10.5281/zenodo.20382203) |
@@ -41,16 +42,17 @@ GitHub releases; the version in this table is the one the cited record represent
 
 | Date | Software | Archived version | DOI |
 |---|---|---:|---|
-| 2026-09-23 | Synapse Channel | 0.99.27 | [10.5281/zenodo.22924555](https://doi.org/10.5281/zenodo.22924555) |
+| 2026-10-13 | Synapse Channel | 0.99.38 | [10.5281/zenodo.23328518](https://doi.org/10.5281/zenodo.23328518) |
+| 2026-10-01 | Loop Timing Witness | 0.1.0 | [10.5281/zenodo.23092361](https://doi.org/10.5281/zenodo.23092361) |
+| 2026-09-29 | SCPN Quantum Control | 1.2.0 | [10.5281/zenodo.23041094](https://doi.org/10.5281/zenodo.23041094) |
 | 2026-09-05 | SCPN Phase Orchestrator | v1.4.3 | [10.5281/zenodo.22355102](https://doi.org/10.5281/zenodo.22355102) |
 | 2026-07-29 | Director-AI | 3.21.0 | [10.5281/zenodo.21691551](https://doi.org/10.5281/zenodo.21691551) |
+| 2026-07-17 | SCPN Control | 0.23.0 | [10.5281/zenodo.23045316](https://doi.org/10.5281/zenodo.23045316) |
 | 2026-07-05 | SC-NeuroCore | 3.13.3 | [10.5281/zenodo.21198962](https://doi.org/10.5281/zenodo.21198962) |
 | 2026-07-03 | SCPN MIF Core | 0.1.1 | [10.5281/zenodo.21146933](https://doi.org/10.5281/zenodo.21146933) |
 | 2026-06-20 | HushLine | v0.1.7 | [10.5281/zenodo.20776102](https://doi.org/10.5281/zenodo.20776102) |
-| 2026-03-29 | SCPN Quantum Control | 0.9.6 | [10.5281/zenodo.18821930](https://doi.org/10.5281/zenodo.18821930) |
 | 2026-03-01 | SCPN Fusion Core | 3.9.3 | [10.5281/zenodo.22056375](https://doi.org/10.5281/zenodo.22056375) |
 | 2026-03-01 | Director Class AI | 1.4.1 | [10.5281/zenodo.18822167](https://doi.org/10.5281/zenodo.18822167) |
-| 2026-03-01 | SCPN Control | 0.4.0 | [10.5281/zenodo.18821816](https://doi.org/10.5281/zenodo.18821816) |
 | 2026-02-22 | SCPN Fusion Core | 3.9.0 | [10.5281/zenodo.18731981](https://doi.org/10.5281/zenodo.18731981) |
 
 ## Manuscripts In Preparation
