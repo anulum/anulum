@@ -99,7 +99,7 @@ scores.
 
 ## Current focus
 
-<sub>Portfolio state verified <!-- verified-at -->2026-10-15<!-- /verified-at -->.</sub>
+<sub>Portfolio state verified <!-- verified-at -->2026-10-17<!-- /verified-at -->.</sub>
 
 <table>
   <tr>
@@ -120,7 +120,7 @@ scores.
 | 2026-09-30 | SYNAPSE CHANNEL | [v0.99.35](https://github.com/anulum/synapse-channel/releases/tag/v0.99.35) | Shared-pool reservations with one authoritative owner (F02, not yet enforced). |
 | 2026-09-30 | SYNAPSE CHANNEL | [v0.99.34](https://github.com/anulum/synapse-channel/releases/tag/v0.99.34) | Signed peers behind a TLS-terminating proxy were admitted but served nothing. 0.99.33 said a peer hub's or Fleet follower's signed log pull works behind such a proxy. It did not. |
 
-<sub>Rendered from [anulum.li/news](https://anulum.li/news/) (the projects' CHANGELOG files) and [Zenodo](https://zenodo.org/search?q=creators.orcid%3A%220009-0009-3560-0851%22) on 2026-10-15.</sub>
+<sub>Rendered from [anulum.li/news](https://anulum.li/news/) (the projects' CHANGELOG files) and [Zenodo](https://zenodo.org/search?q=creators.orcid%3A%220009-0009-3560-0851%22) on 2026-10-17.</sub>
 <!-- profile-feeds:releases:end -->
 
 <!-- profile-feeds:publication:start -->
@@ -130,7 +130,7 @@ scores.
 |---|---|---|---|
 | 2026-10-11 | Preprint | The calibration epoch as the unit of evidence: preregistered parity-leakage and layout-transfer experiments on IQM Garnet | [10.5281/zenodo.23298119](https://doi.org/10.5281/zenodo.23298119) |
 
-<sub>Rendered from [anulum.li/news](https://anulum.li/news/) (the projects' CHANGELOG files) and [Zenodo](https://zenodo.org/search?q=creators.orcid%3A%220009-0009-3560-0851%22) on 2026-10-15.</sub>
+<sub>Rendered from [anulum.li/news](https://anulum.li/news/) (the projects' CHANGELOG files) and [Zenodo](https://zenodo.org/search?q=creators.orcid%3A%220009-0009-3560-0851%22) on 2026-10-17.</sub>
 <!-- profile-feeds:publication:end -->
 
 ## Timeline
