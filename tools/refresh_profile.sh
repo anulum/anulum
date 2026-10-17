@@ -1,12 +1,18 @@
 #!/usr/bin/env bash
 # SPDX-License-Identifier: AGPL-3.0-or-later
+# Commercial license available
+# © Concepts 1996–2026 Miroslav Šotek. All rights reserved.
+# © Code 2020–2026 Miroslav Šotek. All rights reserved.
+# ORCID: 0009-0009-3560-0851
+# Contact: www.anulum.li | protoscience@anulum.li
+# ANULUM — Canonical profile refresh
 # Local, canonical refresh of the profile's live surfaces.
 #
 # 1. fetch the release feed and the Zenodo inventory into tools/feeds.json,
 # 2. render the README blocks and PUBLICATIONS.md,
 # 3. run the online validation; when every target passes, stamp today's date as
 #    verified_at (manifest + README markers),
-# 4. run the offline validator and the tests,
+# 4. run the offline validator and the profile test modules,
 # 5. commit in the local repository when something changed. Never pushes:
 #    publication of the commit stays a separate, approved step.
 #
@@ -44,7 +50,9 @@ fi
 
 python3 tools/validate_profile.py
 python3 tools/render_profile_assets.py --check
-python3 -m unittest discover -s tests -p "test_*.py"
+for test_pattern in 'test_profile_*.py' 'test_render_*.py' 'test_validate_profile*.py'; do
+  python3 -m unittest discover -s tests -p "$test_pattern"
+done
 
 if git diff --quiet; then
   echo "nothing changed"
