@@ -1,0 +1,1439 @@
+<!--
+SPDX-License-Identifier: AGPL-3.0-or-later
+Commercial license available
+© Concepts 1996–2026 Miroslav Šotek. All rights reserved.
+© Code 2020–2026 Miroslav Šotek. All rights reserved.
+ORCID: 0009-0009-3560-0851
+Contact: www.anulum.li | protoscience@anulum.li
+ANULUM — Detailed ecosystem atlas
+-->
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4025 5116" width="4025" height="5116" id="atlas-svg" role="img" aria-labelledby="atlas-title atlas-description">
+<title id="atlas-title">ANULUM — complete named-project atlas, work in progress</title>
+<desc id="atlas-description">Every named source project and component appears as a separate entry. Group containers indicate catalogue responsibility. Technical relations are separate and source-bound. All work is in progress; release availability and qualification remain separate facts.</desc>
+<defs><marker id="edge-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M1 1 L7 4 L1 7" fill="none" stroke="context-stroke" stroke-width="1.5"/></marker></defs>
+<rect width="4025" height="5116" fill="#fafaf7"/>
+<g font-family="DejaVu Sans, sans-serif">
+<text x="65" y="70" font-size="26" fill="#5f7566" font-weight="600">ANULUM · ECOSYSTEM AND RESEARCH PROGRAMME</text>
+<text x="65" y="142" font-size="62" fill="#19392d" font-weight="600">Everything in motion</text>
+<text x="65" y="191" font-size="26" fill="#607366" font-weight="400">Named projects, components, tools, programmes and public presence · 13 October 2026</text>
+<g id="panels">
+<g class="group-panel" data-group="AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS"><rect x="65" y="250" width="1280" height="750" rx="24" fill="#f0f3ee" stroke="#315d4c" stroke-width="2"/>
+<text x="90" y="296" font-size="30" fill="#315d4c" font-weight="600">Agentic Coordination, Assurance and Continuity Systems</text>
+<text x="90" y="363" font-size="17" fill="#607366" font-weight="400">10 entries in this dated view · work in progress</text>
+</g>
+<g class="group-panel" data-group="SCPN-QUANTUM-COMPUTING-SYSTEMS"><rect x="1385" y="250" width="1280" height="1930" rx="24" fill="#f0f3ee" stroke="#485a91" stroke-width="2"/>
+<text x="1410" y="296" font-size="30" fill="#485a91" font-weight="600">SCPN Quantum Computing Systems</text>
+<text x="1410" y="363" font-size="17" fill="#607366" font-weight="400">29 entries in this dated view · work in progress</text>
+</g>
+<g class="group-panel" data-group="SC-NEUROMORPHIC-COMPUTING-SYSTEMS"><rect x="2705" y="250" width="1280" height="2756" rx="24" fill="#f0f3ee" stroke="#7a5387" stroke-width="2"/>
+<text x="2730" y="296" font-size="30" fill="#7a5387" font-weight="600">SC Neuromorphic Computing Systems</text>
+<text x="2730" y="363" font-size="17" fill="#607366" font-weight="400">44 entries in this dated view · work in progress</text>
+</g>
+<g class="group-panel" data-group="SCPN-REACTOR-SYSTEMS"><rect x="65" y="1040" width="1280" height="3936" rx="24" fill="#f0f3ee" stroke="#925a34" stroke-width="2"/>
+<text x="90" y="1086" font-size="30" fill="#925a34" font-weight="600">SCPN Reactor Systems</text>
+<text x="90" y="1153" font-size="17" fill="#607366" font-weight="400">64 entries in this dated view · work in progress</text>
+</g>
+<g class="group-panel" data-group="SCPN-SYSTEMS-INTEGRATION-AND-CONTROL"><rect x="1385" y="2220" width="1280" height="514" rx="24" fill="#f0f3ee" stroke="#286677" stroke-width="2"/>
+<text x="1410" y="2266" font-size="30" fill="#286677" font-weight="600">SCPN Systems Integration and Control</text>
+<text x="1410" y="2333" font-size="17" fill="#607366" font-weight="400">5 entries in this dated view · work in progress</text>
+</g>
+<g class="group-panel" data-group="SCIENTIFIC-DISCOVERY-AND-EXPERIMENTATION"><rect x="1385" y="2774" width="1280" height="514" rx="24" fill="#f0f3ee" stroke="#655531" stroke-width="2"/>
+<text x="1410" y="2820" font-size="30" fill="#655531" font-weight="600">Scientific Discovery and Experimentation</text>
+<text x="1410" y="2887" font-size="17" fill="#607366" font-weight="400">5 entries in this dated view · work in progress</text>
+</g>
+<g class="group-panel" data-group="ANULUM-COMPANY-OPERATIONS"><rect x="2705" y="3046" width="1280" height="1694" rx="24" fill="#f0f3ee" stroke="#474c64" stroke-width="2"/>
+<text x="2730" y="3092" font-size="30" fill="#474c64" font-weight="600">Company, research institute and funding</text>
+<text x="2730" y="3159" font-size="17" fill="#607366" font-weight="400">25 entries in this dated view · work in progress</text>
+</g>
+<g class="group-panel" data-group="WEBMASTER"><rect x="1385" y="3328" width="1280" height="986" rx="24" fill="#f0f3ee" stroke="#41674c" stroke-width="2"/>
+<text x="1410" y="3374" font-size="30" fill="#41674c" font-weight="600">Web and public presence</text>
+<text x="1410" y="3441" font-size="17" fill="#607366" font-weight="400">14 entries in this dated view · work in progress</text>
+</g>
+</g><g id="edges"></g><g id="nodes">
+<g class="node" data-id="DIRECTOR-AI" data-group="AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS" tabindex="0" role="button" aria-label="DIRECTOR-AI"><title>DIRECTOR-AI: Response-level guardrail for LLM output: NLI and retrieval grounding, sealed evidence packets and an optional streaming contradiction halt.</title>
+<rect x="90" y="387" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="90" y="402" width="5" height="73" rx="2" fill="#315d4c"/>
+<text x="106" y="414" font-size="18" fill="#315d4c" font-weight="600">DIRECTOR-AI</text>
+<text x="106" y="461" font-size="14" fill="#536d5b" font-weight="400">Released 3.21.0 · in progress</text>
+<text x="106" y="481" font-size="12" fill="#778478" font-weight="400">Licence: Apache-2.0 AND BUSL-1.1</text>
+</g>
+<g class="node" data-id="REMANENTIA" data-group="AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS" tabindex="0" role="button" aria-label="REMANENTIA"><title>REMANENTIA: Local-first, auditable memory for AI agents and knowledge-intensive software: project-file indexing, hybrid retrieval, consolidation and an entity graph, through a CLI, an MCP server and an HTTP API.</title>
+<rect x="715" y="387" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="715" y="402" width="5" height="73" rx="2" fill="#315d4c"/>
+<text x="731" y="414" font-size="18" fill="#315d4c" font-weight="600">REMANENTIA</text>
+<text x="731" y="461" font-size="14" fill="#536d5b" font-weight="400">Released 0.5.0 · in progress</text>
+<text x="731" y="481" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="RIGOR-FOUNDRY" data-group="AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS" tabindex="0" role="button" aria-label="RIGOR-FOUNDRY"><title>RIGOR-FOUNDRY: Evidence-bound repository auditing: inventories Git-tracked content, emits reproducible audit candidates, binds review decisions to exact evidence and prepares remediation inputs.</title>
+<rect x="90" y="505" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="90" y="520" width="5" height="73" rx="2" fill="#315d4c"/>
+<text x="106" y="532" font-size="18" fill="#315d4c" font-weight="600">RIGOR-FOUNDRY</text>
+<text x="106" y="579" font-size="14" fill="#536d5b" font-weight="400">Released 1.0.0 · in progress</text>
+<text x="106" y="599" font-size="12" fill="#778478" font-weight="400">Licence: Apache-2.0</text>
+</g>
+<g class="node" data-id="SYNAPSE-CHANNEL" data-group="AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS" tabindex="0" role="button" aria-label="SYNAPSE-CHANNEL"><title>SYNAPSE-CHANNEL: Local-first coordination bus for AI agents: presence, file-scope work claims, messages, task status, receipts and an audit journal on one hub.</title>
+<rect x="715" y="505" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="715" y="520" width="5" height="73" rx="2" fill="#315d4c"/>
+<text x="731" y="532" font-size="18" fill="#315d4c" font-weight="600">SYNAPSE-CHANNEL</text>
+<text x="731" y="579" font-size="14" fill="#536d5b" font-weight="400">Released 0.99.38 · in progress</text>
+<text x="731" y="599" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="HushLine" data-group="AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS" tabindex="0" role="button" aria-label="HushLine"><title>HushLine: Local command-output filter: runs a command, then limits, shapes and redacts its output before it reaches a caller. Four independent cores: Go, Rust, Python and Node.</title>
+<rect x="90" y="623" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="90" y="638" width="5" height="73" rx="2" fill="#315d4c"/>
+<text x="106" y="650" font-size="18" fill="#315d4c" font-weight="600">HushLine</text>
+<text x="106" y="697" font-size="14" fill="#536d5b" font-weight="400">Released 0.1.5 · in progress</text>
+<text x="106" y="717" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="DIRECTOR-CLASS-AI" data-group="AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS" tabindex="0" role="button" aria-label="DIRECTOR-CLASS-AI"><title>DIRECTOR-CLASS-AI: Action control between an autonomous agent and its effectors: action-policy checks, human approvals, gateway enforcement and tamper-evident action evidence.</title>
+<rect x="715" y="623" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="715" y="638" width="5" height="73" rx="2" fill="#315d4c"/>
+<text x="731" y="650" font-size="18" fill="#315d4c" font-weight="600">DIRECTOR-CLASS-AI</text>
+<text x="731" y="697" font-size="14" fill="#536d5b" font-weight="400">In progress · Implementation and integration</text>
+<text x="731" y="717" font-size="12" fill="#778478" font-weight="400">Licence: BUSL-1.1</text>
+</g>
+<g class="node" data-id="SYNAPSE-CHANNEL-FLEET" data-group="AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS" tabindex="0" role="button" aria-label="SYNAPSE-CHANNEL-FLEET"><title>SYNAPSE-CHANNEL-FLEET: Multi-machine operation of the bus: durable follower daemon, per-peer trust and configuration, claim forwarding and diagnostics.</title>
+<rect x="90" y="741" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="90" y="756" width="5" height="73" rx="2" fill="#315d4c"/>
+<text x="106" y="768" font-size="18" fill="#315d4c" font-weight="600">SYNAPSE-CHANNEL-FLEET</text>
+<text x="106" y="815" font-size="14" fill="#536d5b" font-weight="400">In progress · Implementation and integration</text>
+<text x="106" y="835" font-size="12" fill="#778478" font-weight="400">Licence: LicenseRef-SYNAPSE-Enterprise</text>
+</g>
+<g class="node" data-id="DIRECTOR-AI-CLOUD" data-group="AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS" tabindex="0" role="button" aria-label="DIRECTOR-AI-CLOUD"><title>DIRECTOR-AI-CLOUD: Control plane for a hosted Director-AI API: accounts, API-key lifecycle, usage metering, plan quotas and operator exports.</title>
+<rect x="715" y="741" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="715" y="756" width="5" height="73" rx="2" fill="#315d4c"/>
+<text x="731" y="768" font-size="18" fill="#315d4c" font-weight="600">DIRECTOR-AI-CLOUD</text>
+<text x="731" y="815" font-size="14" fill="#536d5b" font-weight="400">In progress · Implementation and integration</text>
+<text x="731" y="835" font-size="12" fill="#778478" font-weight="400">Licence: BUSL-1.1</text>
+</g>
+<g class="node" data-id="REMANENTIA-PORTAL" data-group="AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS" tabindex="0" role="button" aria-label="REMANENTIA-PORTAL"><title>REMANENTIA-PORTAL: Account and billing or licence-request portal for the product family. It runs no customer workload.</title>
+<rect x="90" y="859" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="90" y="874" width="5" height="73" rx="2" fill="#315d4c"/>
+<text x="106" y="886" font-size="18" fill="#315d4c" font-weight="600">REMANENTIA-PORTAL</text>
+<text x="106" y="933" font-size="14" fill="#536d5b" font-weight="400">In progress · Implementation and integration</text>
+<text x="106" y="953" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SYNAPSE-POLICY-CHECK-ACTION" data-group="AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS" tabindex="0" role="button" aria-label="SYNAPSE-POLICY-CHECK-ACTION"><title>SYNAPSE-POLICY-CHECK-ACTION: GitHub Action that checks a SYNAPSE CHANNEL release receipt against a policy file in CI.</title>
+<rect x="715" y="859" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="715" y="874" width="5" height="73" rx="2" fill="#315d4c"/>
+<text x="731" y="886" font-size="18" fill="#315d4c" font-weight="600">SYNAPSE-POLICY-CHECK-ACTION</text>
+<text x="731" y="933" font-size="14" fill="#536d5b" font-weight="400">In progress · Implementation and integration</text>
+<text x="731" y="953" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-QUANTUM-CONTROL" data-group="SCPN-QUANTUM-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-QUANTUM-CONTROL"><title>SCPN-QUANTUM-CONTROL: Integrated modelling, simulation, compilation, gradients, control, provider workflows, analysis and Quantum Studio.</title>
+<rect x="1410" y="387" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="1410" y="402" width="5" height="73" rx="2" fill="#485a91"/>
+<text x="1426" y="414" font-size="18" fill="#485a91" font-weight="600">SCPN-QUANTUM-CONTROL</text>
+<text x="1426" y="461" font-size="14" fill="#536d5b" font-weight="400">Released 1.2.0 · in progress</text>
+<text x="1426" y="481" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="oscillatools" data-group="SCPN-QUANTUM-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="oscillatools"><title>oscillatools: Classical coupled-phase-oscillator dynamics, observables, sensitivities and control-oriented numerical tools.</title>
+<rect x="2035" y="387" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2035" y="402" width="5" height="73" rx="2" fill="#485a91"/>
+<text x="2051" y="414" font-size="18" fill="#485a91" font-weight="600">oscillatools</text>
+<text x="2051" y="461" font-size="14" fill="#536d5b" font-weight="400">Released 0.1.0 · in progress</text>
+<text x="2051" y="481" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="scpn-quantum-engine" data-group="SCPN-QUANTUM-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="scpn-quantum-engine"><title>scpn-quantum-engine: Optional Rust/PyO3 numerical acceleration and native computation used by supported workbench paths.</title>
+<rect x="1410" y="505" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="1410" y="520" width="5" height="73" rx="2" fill="#485a91"/>
+<text x="1426" y="532" font-size="18" fill="#485a91" font-weight="600">scpn-quantum-engine</text>
+<text x="1426" y="579" font-size="14" fill="#536d5b" font-weight="400">Released 0.2.0 · in progress</text>
+<text x="1426" y="599" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-QC-AD" data-group="SCPN-QUANTUM-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-QC-AD"><title>SCPN-QC-AD: Whole-program automatic differentiation, derivative transforms, batching, optimisation and explicit supported-path contracts.</title>
+<rect x="2035" y="505" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2035" y="520" width="5" height="73" rx="2" fill="#485a91"/>
+<text x="2051" y="532" font-size="18" fill="#485a91" font-weight="600">SCPN-QC-AD</text>
+<text x="2051" y="579" font-size="14" fill="#536d5b" font-weight="400">In progress · Workbench transition</text>
+<text x="2051" y="599" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="SCPN-QC-ANALYSIS" data-group="SCPN-QUANTUM-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-QC-ANALYSIS"><title>SCPN-QC-ANALYSIS: Observables, synchronisation witnesses, result analysis and the open-data DLA-parity pathway.</title>
+<rect x="1410" y="623" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="1410" y="638" width="5" height="73" rx="2" fill="#485a91"/>
+<text x="1426" y="650" font-size="18" fill="#485a91" font-weight="600">SCPN-QC-ANALYSIS</text>
+<text x="1426" y="697" font-size="14" fill="#536d5b" font-weight="400">In progress · Workbench transition</text>
+<text x="1426" y="717" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="SCPN-QC-APPS" data-group="SCPN-QUANTUM-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-QC-APPS"><title>SCPN-QC-APPS: Domain application adapters, quantum randomness, cryptography and sensing workflows, with explicit claim boundaries.</title>
+<rect x="2035" y="623" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2035" y="638" width="5" height="73" rx="2" fill="#485a91"/>
+<text x="2051" y="650" font-size="18" fill="#485a91" font-weight="600">SCPN-QC-APPS</text>
+<text x="2051" y="697" font-size="14" fill="#536d5b" font-weight="400">In progress · Workbench transition</text>
+<text x="2051" y="717" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="SCPN-QC-BENCH" data-group="SCPN-QUANTUM-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-QC-BENCH"><title>SCPN-QC-BENCH: Workload-specific benchmark suites, comparison harnesses, campaign reproduction and retained run evidence.</title>
+<rect x="1410" y="741" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="1410" y="756" width="5" height="73" rx="2" fill="#485a91"/>
+<text x="1426" y="768" font-size="18" fill="#485a91" font-weight="600">SCPN-QC-BENCH</text>
+<text x="1426" y="815" font-size="14" fill="#536d5b" font-weight="400">In progress · Workbench transition</text>
+<text x="1426" y="835" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="SCPN-QC-COMPILER" data-group="SCPN-QUANTUM-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-QC-COMPILER"><title>SCPN-QC-COMPILER: Model and circuit frontends, intermediate representations, interchange and code generation.</title>
+<rect x="2035" y="741" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2035" y="756" width="5" height="73" rx="2" fill="#485a91"/>
+<text x="2051" y="768" font-size="18" fill="#485a91" font-weight="600">SCPN-QC-COMPILER</text>
+<text x="2051" y="815" font-size="14" fill="#536d5b" font-weight="400">In progress · Workbench transition</text>
+<text x="2051" y="835" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="SCPN-QC-CONTRACTS" data-group="SCPN-QUANTUM-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-QC-CONTRACTS"><title>SCPN-QC-CONTRACTS: Versioned parameter, result, semantic and evidence interface contracts shared by components.</title>
+<rect x="1410" y="859" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="1410" y="874" width="5" height="73" rx="2" fill="#485a91"/>
+<text x="1426" y="886" font-size="18" fill="#485a91" font-weight="600">SCPN-QC-CONTRACTS</text>
+<text x="1426" y="933" font-size="14" fill="#536d5b" font-weight="400">In progress · Workbench transition</text>
+<text x="1426" y="953" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="SCPN-QC-CONTROL" data-group="SCPN-QUANTUM-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-QC-CONTROL"><title>SCPN-QC-CONTROL: Feedback and co-design, chimera and topology-aware control, and DLA-constrained control paths.</title>
+<rect x="2035" y="859" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2035" y="874" width="5" height="73" rx="2" fill="#485a91"/>
+<text x="2051" y="886" font-size="18" fill="#485a91" font-weight="600">SCPN-QC-CONTROL</text>
+<text x="2051" y="933" font-size="14" fill="#536d5b" font-weight="400">In progress · Workbench transition</text>
+<text x="2051" y="953" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="SCPN-QC-CORE" data-group="SCPN-QUANTUM-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-QC-CORE"><title>SCPN-QC-CORE: Configuration, logging, resource budgets and generic Kuramoto-XY problem foundations, separated from paper-specific research assumptions.</title>
+<rect x="1410" y="977" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="1410" y="992" width="5" height="73" rx="2" fill="#485a91"/>
+<text x="1426" y="1004" font-size="18" fill="#485a91" font-weight="600">SCPN-QC-CORE</text>
+<text x="1426" y="1051" font-size="14" fill="#536d5b" font-weight="400">In progress · Workbench transition</text>
+<text x="1426" y="1071" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="SCPN-QC-HAL" data-group="SCPN-QUANTUM-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-QC-HAL"><title>SCPN-QC-HAL: Provider-neutral workloads, capabilities, job/result contracts and optional provider adapters.</title>
+<rect x="2035" y="977" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2035" y="992" width="5" height="73" rx="2" fill="#485a91"/>
+<text x="2051" y="1004" font-size="18" fill="#485a91" font-weight="600">SCPN-QC-HAL</text>
+<text x="2051" y="1051" font-size="14" fill="#536d5b" font-weight="400">In progress · Workbench transition</text>
+<text x="2051" y="1071" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="SCPN-QC-LEARN" data-group="SCPN-QUANTUM-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-QC-LEARN"><title>SCPN-QC-LEARN: Forecasting, quantum neural models, surrogate models, kernels and variational learning paths.</title>
+<rect x="1410" y="1095" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="1410" y="1110" width="5" height="73" rx="2" fill="#485a91"/>
+<text x="1426" y="1122" font-size="18" fill="#485a91" font-weight="600">SCPN-QC-LEARN</text>
+<text x="1426" y="1169" font-size="14" fill="#536d5b" font-weight="400">In progress · Workbench transition</text>
+<text x="1426" y="1189" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="SCPN-QC-MITIGATION" data-group="SCPN-QUANTUM-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-QC-MITIGATION"><title>SCPN-QC-MITIGATION: Error-mitigation implementations and their method taxonomy.</title>
+<rect x="2035" y="1095" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2035" y="1110" width="5" height="73" rx="2" fill="#485a91"/>
+<text x="2051" y="1122" font-size="18" fill="#485a91" font-weight="600">SCPN-QC-MITIGATION</text>
+<text x="2051" y="1169" font-size="14" fill="#536d5b" font-weight="400">In progress · Workbench transition</text>
+<text x="2051" y="1189" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="SCPN-QC-QEC" data-group="SCPN-QUANTUM-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-QC-QEC"><title>SCPN-QC-QEC: Quantum error-correction analysis and fault-tolerant resource-reporting surfaces.</title>
+<rect x="1410" y="1213" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="1410" y="1228" width="5" height="73" rx="2" fill="#485a91"/>
+<text x="1426" y="1240" font-size="18" fill="#485a91" font-weight="600">SCPN-QC-QEC</text>
+<text x="1426" y="1287" font-size="14" fill="#536d5b" font-weight="400">In progress · Workbench transition</text>
+<text x="1426" y="1307" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="SCPN-QC-QNODE" data-group="SCPN-QUANTUM-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-QC-QNODE"><title>SCPN-QC-QNODE: Quantum tapes, gradient execution and framework bridges for supported Qiskit, PennyLane, JAX, PyTorch and TensorFlow paths.</title>
+<rect x="2035" y="1213" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2035" y="1228" width="5" height="73" rx="2" fill="#485a91"/>
+<text x="2051" y="1240" font-size="18" fill="#485a91" font-weight="600">SCPN-QC-QNODE</text>
+<text x="2051" y="1287" font-size="14" fill="#536d5b" font-weight="400">In progress · Workbench transition</text>
+<text x="2051" y="1307" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="SCPN-QC-RESEARCH" data-group="SCPN-QUANTUM-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-QC-RESEARCH"><title>SCPN-QC-RESEARCH: Experimental SCPN theory, paper-specific assumptions and research adapters whose contracts are not stable.</title>
+<rect x="1410" y="1331" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="1410" y="1346" width="5" height="73" rx="2" fill="#485a91"/>
+<text x="1426" y="1358" font-size="18" fill="#485a91" font-weight="600">SCPN-QC-RESEARCH</text>
+<text x="1426" y="1405" font-size="14" fill="#536d5b" font-weight="400">In progress · Workbench transition</text>
+<text x="1426" y="1425" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="SCPN-QC-SIM" data-group="SCPN-QUANTUM-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-QC-SIM"><title>SCPN-QC-SIM: Classical and quantum oscillator dynamics, XY/Kuramoto solvers, open-system simulation, tensor-network paths and co-simulation.</title>
+<rect x="2035" y="1331" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2035" y="1346" width="5" height="73" rx="2" fill="#485a91"/>
+<text x="2051" y="1358" font-size="18" fill="#485a91" font-weight="600">SCPN-QC-SIM</text>
+<text x="2051" y="1405" font-size="14" fill="#536d5b" font-weight="400">In progress · Workbench transition</text>
+<text x="2051" y="1425" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="SCPN-QC-STUDIO" data-group="SCPN-QUANTUM-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-QC-STUDIO"><title>SCPN-QC-STUDIO: Quantum Studio&#x27;s visual workflows, inspectors and evidence presentation through the shared Studio platform contract.</title>
+<rect x="1410" y="1449" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="1410" y="1464" width="5" height="73" rx="2" fill="#485a91"/>
+<text x="1426" y="1476" font-size="18" fill="#485a91" font-weight="600">SCPN-QC-STUDIO</text>
+<text x="1426" y="1523" font-size="14" fill="#536d5b" font-weight="400">In progress · Workbench transition</text>
+<text x="1426" y="1543" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="World models / quantum noise" data-group="SCPN-QUANTUM-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="World models / quantum noise"><title>World models / quantum noise: Candidate model family with device calibration epoch as its unit of evidence.</title>
+<rect x="2035" y="1449" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2035" y="1464" width="5" height="73" rx="2" fill="#485a91"/>
+<text x="2051" y="1476" font-size="18" fill="#485a91" font-weight="600">World models / quantum noise</text>
+<text x="2051" y="1523" font-size="14" fill="#536d5b" font-weight="400">In progress · Research and architecture development</text>
+<text x="2051" y="1543" font-size="12" fill="#778478" font-weight="400">Licence: Programme; terms to be settled</text>
+</g>
+<g class="node" data-id="CONFORMANCE-WITNESS" data-group="SCPN-QUANTUM-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="CONFORMANCE-WITNESS"><title>CONFORMANCE-WITNESS: Check versioned OpenQASM 3, adapter behaviour, provenance fields and repository-evidence criteria against their normative clauses and actual entry points.</title>
+<rect x="1410" y="1567" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="1410" y="1582" width="5" height="73" rx="2" fill="#485a91"/>
+<text x="1426" y="1594" font-size="18" fill="#485a91" font-weight="600">CONFORMANCE-WITNESS</text>
+<text x="1426" y="1641" font-size="14" fill="#536d5b" font-weight="400">In progress · Design and implementation</text>
+<text x="1426" y="1661" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="DECODER-WITNESS" data-group="SCPN-QUANTUM-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="DECODER-WITNESS"><title>DECODER-WITNESS: Compare real decoder engines on released shot data with lossless adapters, declared noise conditions and uncertainty-aware reports.</title>
+<rect x="2035" y="1567" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2035" y="1582" width="5" height="73" rx="2" fill="#485a91"/>
+<text x="2051" y="1594" font-size="18" fill="#485a91" font-weight="600">DECODER-WITNESS</text>
+<text x="2051" y="1641" font-size="14" fill="#536d5b" font-weight="400">In progress · Design and implementation</text>
+<text x="2051" y="1661" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="GRADIENT-WITNESS" data-group="SCPN-QUANTUM-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="GRADIENT-WITNESS"><title>GRADIENT-WITNESS: Check software derivatives against declared analytic, parameter-shift and finite-difference references, including complex, finite-shot and cross-framework cases.</title>
+<rect x="1410" y="1685" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="1410" y="1700" width="5" height="73" rx="2" fill="#485a91"/>
+<text x="1426" y="1712" font-size="18" fill="#485a91" font-weight="600">GRADIENT-WITNESS</text>
+<text x="1426" y="1759" font-size="14" fill="#536d5b" font-weight="400">In progress · Design and implementation</text>
+<text x="1426" y="1779" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="MITIGATION-WITNESS" data-group="SCPN-QUANTUM-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="MITIGATION-WITNESS"><title>MITIGATION-WITNESS: Evaluate mitigation on declared measurement panels with retained inputs and uncertainty.</title>
+<rect x="2035" y="1685" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2035" y="1700" width="5" height="73" rx="2" fill="#485a91"/>
+<text x="2051" y="1712" font-size="18" fill="#485a91" font-weight="600">MITIGATION-WITNESS</text>
+<text x="2051" y="1759" font-size="14" fill="#536d5b" font-weight="400">In progress · Implementation and integration</text>
+<text x="2051" y="1779" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="NOISE-MODEL-WITNESS" data-group="SCPN-QUANTUM-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="NOISE-MODEL-WITNESS"><title>NOISE-MODEL-WITNESS: Compare model predictions and replay observations for the same circuit and shot identities, with uncertainty, shot floors, calibration epochs and declared tolerances.</title>
+<rect x="1410" y="1803" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="1410" y="1818" width="5" height="73" rx="2" fill="#485a91"/>
+<text x="1426" y="1830" font-size="18" fill="#485a91" font-weight="600">NOISE-MODEL-WITNESS</text>
+<text x="1426" y="1877" font-size="14" fill="#536d5b" font-weight="400">In progress · Design and implementation</text>
+<text x="1426" y="1897" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="QPU-RESULT-PACK" data-group="SCPN-QUANTUM-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="QPU-RESULT-PACK"><title>QPU-RESULT-PACK: Preserve raw results and their provenance, derivations and reviewable presentation.</title>
+<rect x="2035" y="1803" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2035" y="1818" width="5" height="73" rx="2" fill="#485a91"/>
+<text x="2051" y="1830" font-size="18" fill="#485a91" font-weight="600">QPU-RESULT-PACK</text>
+<text x="2051" y="1877" font-size="14" fill="#536d5b" font-weight="400">In progress · Implementation and integration</text>
+<text x="2051" y="1897" font-size="12" fill="#778478" font-weight="400">Licence: not stated</text>
+</g>
+<g class="node" data-id="TRANSPILE-WITNESS" data-group="SCPN-QUANTUM-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="TRANSPILE-WITNESS"><title>TRANSPILE-WITNESS: Retain scoped observations about compilation semantics, layout, global phase and replay.</title>
+<rect x="1410" y="1921" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="1410" y="1936" width="5" height="73" rx="2" fill="#485a91"/>
+<text x="1426" y="1948" font-size="18" fill="#485a91" font-weight="600">TRANSPILE-WITNESS</text>
+<text x="1426" y="1995" font-size="14" fill="#536d5b" font-weight="400">In progress · Implementation and integration</text>
+<text x="1426" y="2015" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later by file headers; no licence field in packaging</text>
+</g>
+<g class="node" data-id="VENDOR-CLAIM-RECOMPUTER" data-group="SCPN-QUANTUM-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="VENDOR-CLAIM-RECOMPUTER"><title>VENDOR-CLAIM-RECOMPUTER: Recompute released-data quantum-volume, error-per-layer-gate and logical-error claims against fixed definitions, original inputs and declared computation budgets.</title>
+<rect x="2035" y="1921" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2035" y="1936" width="5" height="73" rx="2" fill="#485a91"/>
+<text x="2051" y="1948" font-size="18" fill="#485a91" font-weight="600">VENDOR-CLAIM-RECOMPUTER</text>
+<text x="2051" y="1995" font-size="14" fill="#536d5b" font-weight="400">In progress · Design and implementation</text>
+<text x="2051" y="2015" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="QUANTUM_LAB" data-group="SCPN-QUANTUM-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="QUANTUM_LAB"><title>QUANTUM_LAB: Reserved research workspace name; implementation role is not assigned in the group map.</title>
+<rect x="1410" y="2039" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="1410" y="2054" width="5" height="73" rx="2" fill="#485a91"/>
+<text x="1426" y="2066" font-size="18" fill="#485a91" font-weight="600">QUANTUM_LAB</text>
+<text x="1426" y="2113" font-size="14" fill="#536d5b" font-weight="400">In progress · Workspace definition</text>
+<text x="1426" y="2133" font-size="12" fill="#778478" font-weight="400">Licence: Not stated</text>
+</g>
+<g class="node" data-id="SC-NEUROCORE" data-group="SC-NEUROMORPHIC-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="SC-NEUROCORE"><title>SC-NEUROCORE: Permanent public development, composition and integration workbench for stochastic and spiking neural modelling, encoding, learning, simulation, selected hardware compilation and evidence inspection.</title>
+<rect x="2730" y="387" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2730" y="402" width="5" height="73" rx="2" fill="#7a5387"/>
+<text x="2746" y="414" font-size="18" fill="#7a5387" font-weight="600">SC-NEUROCORE</text>
+<text x="2746" y="461" font-size="14" fill="#536d5b" font-weight="400">Released 3.16.0 · in progress</text>
+<text x="2746" y="481" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SC-NC-ANALYSIS" data-group="SC-NEUROMORPHIC-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="SC-NC-ANALYSIS"><title>SC-NC-ANALYSIS: Spike-train analysis, visualisation and explainability.</title>
+<rect x="3355" y="387" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="3355" y="402" width="5" height="73" rx="2" fill="#7a5387"/>
+<text x="3371" y="414" font-size="18" fill="#7a5387" font-weight="600">SC-NC-ANALYSIS</text>
+<text x="3371" y="461" font-size="14" fill="#536d5b" font-weight="400">In progress · Workbench transition</text>
+<text x="3371" y="481" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="SC-NC-BENCH" data-group="SC-NEUROMORPHIC-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="SC-NC-BENCH"><title>SC-NC-BENCH: Catalogue/workload suites and immutable source-bound benchmark records.</title>
+<rect x="2730" y="505" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2730" y="520" width="5" height="73" rx="2" fill="#7a5387"/>
+<text x="2746" y="532" font-size="18" fill="#7a5387" font-weight="600">SC-NC-BENCH</text>
+<text x="2746" y="579" font-size="14" fill="#536d5b" font-weight="400">In progress · Workbench transition</text>
+<text x="2746" y="599" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="SC-NC-BRIDGES" data-group="SC-NEUROMORPHIC-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="SC-NC-BRIDGES"><title>SC-NC-BRIDGES: Interchange and cross-domain adapters including NIR, quantum, HDC/VSA and neuro-symbolic routes.</title>
+<rect x="3355" y="505" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="3355" y="520" width="5" height="73" rx="2" fill="#7a5387"/>
+<text x="3371" y="532" font-size="18" fill="#7a5387" font-weight="600">SC-NC-BRIDGES</text>
+<text x="3371" y="579" font-size="14" fill="#536d5b" font-weight="400">In progress · Workbench transition</text>
+<text x="3371" y="599" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="SC-NC-CATALOGUE" data-group="SC-NEUROMORPHIC-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="SC-NC-CATALOGUE"><title>SC-NC-CATALOGUE: Neuron models, model zoo and topology/connectome generators.</title>
+<rect x="2730" y="623" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2730" y="638" width="5" height="73" rx="2" fill="#7a5387"/>
+<text x="2746" y="650" font-size="18" fill="#7a5387" font-weight="600">SC-NC-CATALOGUE</text>
+<text x="2746" y="697" font-size="14" fill="#536d5b" font-weight="400">In progress · Workbench transition</text>
+<text x="2746" y="717" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="SC-NC-COMPILER" data-group="SC-NEUROMORPHIC-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="SC-NC-COMPILER"><title>SC-NC-COMPILER: Equation/IR lowering and hardware collateral for supported numerical models.</title>
+<rect x="3355" y="623" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="3355" y="638" width="5" height="73" rx="2" fill="#7a5387"/>
+<text x="3371" y="650" font-size="18" fill="#7a5387" font-weight="600">SC-NC-COMPILER</text>
+<text x="3371" y="697" font-size="14" fill="#536d5b" font-weight="400">In progress · Workbench transition</text>
+<text x="3371" y="717" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="SC-NC-CORE" data-group="SC-NEUROMORPHIC-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="SC-NC-CORE"><title>SC-NC-CORE: Neuron/synapse primitives, network graph, simulation loop, fixed-point semantics, constants and exceptions.</title>
+<rect x="2730" y="741" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2730" y="756" width="5" height="73" rx="2" fill="#7a5387"/>
+<text x="2746" y="768" font-size="18" fill="#7a5387" font-weight="600">SC-NC-CORE</text>
+<text x="2746" y="815" font-size="14" fill="#536d5b" font-weight="400">In progress · Workbench transition</text>
+<text x="2746" y="835" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="SC-NC-DATA" data-group="SC-NEUROMORPHIC-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="SC-NC-DATA"><title>SC-NC-DATA: Datasets, signal/event encoding, augmentation, codecs, sources and recording adapters.</title>
+<rect x="3355" y="741" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="3355" y="756" width="5" height="73" rx="2" fill="#7a5387"/>
+<text x="3371" y="768" font-size="18" fill="#7a5387" font-weight="600">SC-NC-DATA</text>
+<text x="3371" y="815" font-size="14" fill="#536d5b" font-weight="400">In progress · Workbench transition</text>
+<text x="3371" y="835" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="SC-NC-ENGINE" data-group="SC-NEUROMORPHIC-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="SC-NC-ENGINE"><title>SC-NC-ENGINE: Accelerated execution and its maintained language/native interfaces.</title>
+<rect x="2730" y="859" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2730" y="874" width="5" height="73" rx="2" fill="#7a5387"/>
+<text x="2746" y="886" font-size="18" fill="#7a5387" font-weight="600">SC-NC-ENGINE</text>
+<text x="2746" y="933" font-size="14" fill="#536d5b" font-weight="400">In progress · Workbench transition</text>
+<text x="2746" y="953" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="SC-NC-HARDWARE" data-group="SC-NEUROMORPHIC-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="SC-NC-HARDWARE"><title>SC-NC-HARDWARE: Target profiles, mapping, deployment, drivers and power/thermal integration.</title>
+<rect x="3355" y="859" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="3355" y="874" width="5" height="73" rx="2" fill="#7a5387"/>
+<text x="3371" y="886" font-size="18" fill="#7a5387" font-weight="600">SC-NC-HARDWARE</text>
+<text x="3371" y="933" font-size="14" fill="#536d5b" font-weight="400">In progress · Workbench transition</text>
+<text x="3371" y="953" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="SC-NC-LEARN" data-group="SC-NEUROMORPHIC-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="SC-NC-LEARN"><title>SC-NC-LEARN: Training and adaptation, including surrogate gradients, plasticity, online learning, quantisation-aware training and distillation.</title>
+<rect x="2730" y="977" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2730" y="992" width="5" height="73" rx="2" fill="#7a5387"/>
+<text x="2746" y="1004" font-size="18" fill="#7a5387" font-weight="600">SC-NC-LEARN</text>
+<text x="2746" y="1051" font-size="14" fill="#536d5b" font-weight="400">In progress · Workbench transition</text>
+<text x="2746" y="1071" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="SC-NC-RESEARCH" data-group="SC-NEUROMORPHIC-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="SC-NC-RESEARCH"><title>SC-NC-RESEARCH: Retained experimental paths, including evolutionary, biological and world-model directions.</title>
+<rect x="3355" y="977" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="3355" y="992" width="5" height="73" rx="2" fill="#7a5387"/>
+<text x="3371" y="1004" font-size="18" fill="#7a5387" font-weight="600">SC-NC-RESEARCH</text>
+<text x="3371" y="1051" font-size="14" fill="#536d5b" font-weight="400">In progress · Workbench transition</text>
+<text x="3371" y="1071" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="SC-NC-STUDIO" data-group="SC-NEUROMORPHIC-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="SC-NC-STUDIO"><title>SC-NC-STUDIO: Visual composition, inspection and evidence presentation workflows.</title>
+<rect x="2730" y="1095" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2730" y="1110" width="5" height="73" rx="2" fill="#7a5387"/>
+<text x="2746" y="1122" font-size="18" fill="#7a5387" font-weight="600">SC-NC-STUDIO</text>
+<text x="2746" y="1169" font-size="14" fill="#536d5b" font-weight="400">In progress · Workbench transition</text>
+<text x="2746" y="1189" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="SC-NC-VERIFY" data-group="SC-NEUROMORPHIC-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="SC-NC-VERIFY"><title>SC-NC-VERIFY: Formal, fault, resilience and safety-readiness verification within explicit proof scopes.</title>
+<rect x="3355" y="1095" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="3355" y="1110" width="5" height="73" rx="2" fill="#7a5387"/>
+<text x="3371" y="1122" font-size="18" fill="#7a5387" font-weight="600">SC-NC-VERIFY</text>
+<text x="3371" y="1169" font-size="14" fill="#536d5b" font-weight="400">In progress · Workbench transition</text>
+<text x="3371" y="1189" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="SC-NC-BIO" data-group="SC-NEUROMORPHIC-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="SC-NC-BIO"><title>SC-NC-BIO: Conditional destination for separately owned biological/biohybrid work if its independent release lifecycle is accepted; current experimental bioware remains in the developmental parent.</title>
+<rect x="2730" y="1213" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2730" y="1228" width="5" height="73" rx="2" fill="#7a5387"/>
+<text x="2746" y="1240" font-size="18" fill="#7a5387" font-weight="600">SC-NC-BIO</text>
+<text x="2746" y="1287" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and interface work</text>
+<text x="2746" y="1307" font-size="12" fill="#778478" font-weight="400">Licence: Independent distribution terms being defined</text>
+</g>
+<g class="node" data-id="Laboratory / neuromorphic hardware" data-group="SC-NEUROMORPHIC-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="Laboratory / neuromorphic hardware"><title>Laboratory / neuromorphic hardware: Hardware measurements and loop integration through scoped qualification contracts.</title>
+<rect x="3355" y="1213" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="3355" y="1228" width="5" height="73" rx="2" fill="#7a5387"/>
+<text x="3371" y="1240" font-size="18" fill="#7a5387" font-weight="600">Laboratory / neuromorphic hardware</text>
+<text x="3371" y="1287" font-size="14" fill="#536d5b" font-weight="400">In progress · Research and architecture development</text>
+<text x="3371" y="1307" font-size="12" fill="#778478" font-weight="400">Licence: Programme; terms to be settled</text>
+</g>
+<g class="node" data-id="World models / neuromorphic dynamics" data-group="SC-NEUROMORPHIC-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="World models / neuromorphic dynamics"><title>World models / neuromorphic dynamics: Domain-owned neural dynamics and neuromorphic substrate models.</title>
+<rect x="2730" y="1331" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2730" y="1346" width="5" height="73" rx="2" fill="#7a5387"/>
+<text x="2746" y="1358" font-size="18" fill="#7a5387" font-weight="600">World models / neuromorphic dynamics</text>
+<text x="2746" y="1405" font-size="14" fill="#536d5b" font-weight="400">In progress · Research and architecture development</text>
+<text x="2746" y="1425" font-size="12" fill="#778478" font-weight="400">Licence: Programme; terms to be settled</text>
+</g>
+<g class="node" data-id="EVIDENCE-MANIFEST-TOOLKIT" data-group="SC-NEUROMORPHIC-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="EVIDENCE-MANIFEST-TOOLKIT"><title>EVIDENCE-MANIFEST-TOOLKIT: Canonicalises, references, seals and verifies evidence with explicit schemas, bounded sources and independently selected policy.</title>
+<rect x="3355" y="1331" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="3355" y="1346" width="5" height="73" rx="2" fill="#7a5387"/>
+<text x="3371" y="1358" font-size="18" fill="#7a5387" font-weight="600">EVIDENCE-MANIFEST-TOOLKIT</text>
+<text x="3371" y="1405" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
+<text x="3371" y="1425" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="EXPERIMENT-LEDGER" data-group="SC-NEUROMORPHIC-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="EXPERIMENT-LEDGER"><title>EXPERIMENT-LEDGER: Records experiment lineage across tools without owning their raw evidence or running their computations.</title>
+<rect x="2730" y="1449" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2730" y="1464" width="5" height="73" rx="2" fill="#7a5387"/>
+<text x="2746" y="1476" font-size="18" fill="#7a5387" font-weight="600">EXPERIMENT-LEDGER</text>
+<text x="2746" y="1523" font-size="14" fill="#536d5b" font-weight="400">In progress · Design and preparation</text>
+<text x="2746" y="1543" font-size="12" fill="#778478" font-weight="400">Licence: undecided</text>
+</g>
+<g class="node" data-id="RANDOMNESS-WITNESS" data-group="SC-NEUROMORPHIC-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="RANDOMNESS-WITNESS"><title>RANDOMNESS-WITNESS: Assesses number-source suitability for a declared stochastic-computing use; it does not certify randomness for every purpose.</title>
+<rect x="3355" y="1449" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="3355" y="1464" width="5" height="73" rx="2" fill="#7a5387"/>
+<text x="3371" y="1476" font-size="18" fill="#7a5387" font-weight="600">RANDOMNESS-WITNESS</text>
+<text x="3371" y="1523" font-size="14" fill="#536d5b" font-weight="400">In progress · Design and preparation</text>
+<text x="3371" y="1543" font-size="12" fill="#778478" font-weight="400">Licence: undecided</text>
+</g>
+<g class="node" data-id="AER-LINK-WITNESS" data-group="SC-NEUROMORPHIC-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="AER-LINK-WITNESS"><title>AER-LINK-WITNESS: Measures event-link behaviour under load, including loss, reordering, fairness, starvation and forward progress.</title>
+<rect x="2730" y="1567" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2730" y="1582" width="5" height="73" rx="2" fill="#7a5387"/>
+<text x="2746" y="1594" font-size="18" fill="#7a5387" font-weight="600">AER-LINK-WITNESS</text>
+<text x="2746" y="1641" font-size="14" fill="#536d5b" font-weight="400">In progress · Design and implementation</text>
+<text x="2746" y="1661" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="BITSTREAM-EVIDENCE-CI" data-group="SC-NEUROMORPHIC-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="BITSTREAM-EVIDENCE-CI"><title>BITSTREAM-EVIDENCE-CI: Captures pinned FPGA build inputs, reports and bitstream identity in a reproducibility-aware chained build ledger.</title>
+<rect x="3355" y="1567" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="3355" y="1582" width="5" height="73" rx="2" fill="#7a5387"/>
+<text x="3371" y="1594" font-size="18" fill="#7a5387" font-weight="600">BITSTREAM-EVIDENCE-CI</text>
+<text x="3371" y="1641" font-size="14" fill="#536d5b" font-weight="400">In progress · Design and implementation</text>
+<text x="3371" y="1661" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="DEPLOY-PACK" data-group="SC-NEUROMORPHIC-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="DEPLOY-PACK"><title>DEPLOY-PACK: Composes validated deployment evidence with bitstream/driver identity into a verifiable install/update package.</title>
+<rect x="2730" y="1685" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2730" y="1700" width="5" height="73" rx="2" fill="#7a5387"/>
+<text x="2746" y="1712" font-size="18" fill="#7a5387" font-weight="600">DEPLOY-PACK</text>
+<text x="2746" y="1759" font-size="14" fill="#536d5b" font-weight="400">In progress · Design and implementation</text>
+<text x="2746" y="1779" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="FIELD-OPS-WITNESS" data-group="SC-NEUROMORPHIC-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="FIELD-OPS-WITNESS"><title>FIELD-OPS-WITNESS: Aggregates compact field health and drift evidence against deployment-time envelopes without actuating devices.</title>
+<rect x="3355" y="1685" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="3355" y="1700" width="5" height="73" rx="2" fill="#7a5387"/>
+<text x="3371" y="1712" font-size="18" fill="#7a5387" font-weight="600">FIELD-OPS-WITNESS</text>
+<text x="3371" y="1759" font-size="14" fill="#536d5b" font-weight="400">In progress · Design and implementation</text>
+<text x="3371" y="1779" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="FLIGHT-RECORDER" data-group="SC-NEUROMORPHIC-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="FLIGHT-RECORDER"><title>FLIGHT-RECORDER: Retains a bounded per-device event/state history for gap-honest incident reconstruction.</title>
+<rect x="2730" y="1803" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2730" y="1818" width="5" height="73" rx="2" fill="#7a5387"/>
+<text x="2746" y="1830" font-size="18" fill="#7a5387" font-weight="600">FLIGHT-RECORDER</text>
+<text x="2746" y="1877" font-size="14" fill="#536d5b" font-weight="400">In progress · Design and implementation</text>
+<text x="2746" y="1897" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="LOOP-TIMING-WITNESS" data-group="SC-NEUROMORPHIC-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="LOOP-TIMING-WITNESS"><title>LOOP-TIMING-WITNESS: Fabric-clock instrument for complete control-loop and selected accelerator timing, with simulation/host analysis separated from eventual board timing, fault response and rail-energy evidence.</title>
+<rect x="3355" y="1803" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="3355" y="1818" width="5" height="73" rx="2" fill="#7a5387"/>
+<text x="3371" y="1830" font-size="18" fill="#7a5387" font-weight="600">LOOP-TIMING-WITNESS</text>
+<text x="3371" y="1877" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
+<text x="3371" y="1897" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="MODEL-PROVENANCE-PACK" data-group="SC-NEUROMORPHIC-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="MODEL-PROVENANCE-PACK"><title>MODEL-PROVENANCE-PACK: Binds a model&#x27;s data, training, conversion, quantisation, encoding and supporting evidence into a verifiable provenance pack.</title>
+<rect x="2730" y="1921" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2730" y="1936" width="5" height="73" rx="2" fill="#7a5387"/>
+<text x="2746" y="1948" font-size="18" fill="#7a5387" font-weight="600">MODEL-PROVENANCE-PACK</text>
+<text x="2746" y="1995" font-size="14" fill="#536d5b" font-weight="400">In progress · Design and implementation</text>
+<text x="2746" y="2015" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="MUTATION-SNN" data-group="SC-NEUROMORPHIC-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="MUTATION-SNN"><title>MUTATION-SNN: Measures test adequacy by generating declared semantic mutants and recording what the suite detects.</title>
+<rect x="3355" y="1921" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="3355" y="1936" width="5" height="73" rx="2" fill="#7a5387"/>
+<text x="3371" y="1948" font-size="18" fill="#7a5387" font-weight="600">MUTATION-SNN</text>
+<text x="3371" y="1995" font-size="14" fill="#536d5b" font-weight="400">In progress · Design and implementation</text>
+<text x="3371" y="2015" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="NEURO-EVIDENCE-BENCH" data-group="SC-NEUROMORPHIC-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="NEURO-EVIDENCE-BENCH"><title>NEURO-EVIDENCE-BENCH: Executes declared neuromorphic benchmark plans and traces each scoped result back to its raw evidence.</title>
+<rect x="2730" y="2039" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2730" y="2054" width="5" height="73" rx="2" fill="#7a5387"/>
+<text x="2746" y="2066" font-size="18" fill="#7a5387" font-weight="600">NEURO-EVIDENCE-BENCH</text>
+<text x="2746" y="2113" font-size="14" fill="#536d5b" font-weight="400">In progress · Design and implementation</text>
+<text x="2746" y="2133" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="NEURO-SAFETY-CASE" data-group="SC-NEUROMORPHIC-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="NEURO-SAFETY-CASE"><title>NEURO-SAFETY-CASE: Composes scoped evidence and open gaps into an assessor-facing assurance argument; it certifies nothing itself.</title>
+<rect x="3355" y="2039" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="3355" y="2054" width="5" height="73" rx="2" fill="#7a5387"/>
+<text x="3371" y="2066" font-size="18" fill="#7a5387" font-weight="600">NEURO-SAFETY-CASE</text>
+<text x="3371" y="2113" font-size="14" fill="#536d5b" font-weight="400">In progress · Design and implementation</text>
+<text x="3371" y="2133" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="NIR-CONFORMANCE" data-group="SC-NEUROMORPHIC-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="NIR-CONFORMANCE"><title>NIR-CONFORMANCE: Tests importer/exporter behaviour against the known semantics of a pinned Neuromorphic Intermediate Representation version.</title>
+<rect x="2730" y="2157" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2730" y="2172" width="5" height="73" rx="2" fill="#7a5387"/>
+<text x="2746" y="2184" font-size="18" fill="#7a5387" font-weight="600">NIR-CONFORMANCE</text>
+<text x="2746" y="2231" font-size="14" fill="#536d5b" font-weight="400">In progress · Design and implementation</text>
+<text x="2746" y="2251" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="PLASTICITY-WITNESS" data-group="SC-NEUROMORPHIC-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="PLASTICITY-WITNESS"><title>PLASTICITY-WITNESS: Compares observed learning-rule updates with an independently defined fixed-point or statistical oracle under stated spike/load/fault protocols.</title>
+<rect x="3355" y="2157" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="3355" y="2172" width="5" height="73" rx="2" fill="#7a5387"/>
+<text x="3371" y="2184" font-size="18" fill="#7a5387" font-weight="600">PLASTICITY-WITNESS</text>
+<text x="3371" y="2231" font-size="14" fill="#536d5b" font-weight="400">In progress · Design and implementation</text>
+<text x="3371" y="2251" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="RELIABILITY-WITNESS" data-group="SC-NEUROMORPHIC-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="RELIABILITY-WITNESS"><title>RELIABILITY-WITNESS: Characterises reliability within a declared physical or explicitly simulated exposure, retaining conditions, gaps and rare-event uncertainty.</title>
+<rect x="2730" y="2275" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2730" y="2290" width="5" height="73" rx="2" fill="#7a5387"/>
+<text x="2746" y="2302" font-size="18" fill="#7a5387" font-weight="600">RELIABILITY-WITNESS</text>
+<text x="2746" y="2349" font-size="14" fill="#536d5b" font-weight="400">In progress · Design and implementation</text>
+<text x="2746" y="2369" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="SC-STREAM-PROVER" data-group="SC-NEUROMORPHIC-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="SC-STREAM-PROVER"><title>SC-STREAM-PROVER: Compares realised stochastic-computing arithmetic error with a declared bound for a specific circuit, source and stream-length regime.</title>
+<rect x="3355" y="2275" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="3355" y="2290" width="5" height="73" rx="2" fill="#7a5387"/>
+<text x="3371" y="2302" font-size="18" fill="#7a5387" font-weight="600">SC-STREAM-PROVER</text>
+<text x="3371" y="2349" font-size="14" fill="#536d5b" font-weight="400">In progress · Design and implementation</text>
+<text x="3371" y="2369" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="SIM-REAL-WITNESS" data-group="SC-NEUROMORPHIC-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="SIM-REAL-WITNESS"><title>SIM-REAL-WITNESS: Quantifies simulation-to-fabric differences for the same model, input and observable population.</title>
+<rect x="2730" y="2393" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2730" y="2408" width="5" height="73" rx="2" fill="#7a5387"/>
+<text x="2746" y="2420" font-size="18" fill="#7a5387" font-weight="600">SIM-REAL-WITNESS</text>
+<text x="2746" y="2467" font-size="14" fill="#536d5b" font-weight="400">In progress · Design and implementation</text>
+<text x="2746" y="2487" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="SNN-DIVERGENCE-HARNESS" data-group="SC-NEUROMORPHIC-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="SNN-DIVERGENCE-HARNESS"><title>SNN-DIVERGENCE-HARNESS: Compares the same network and input across implementations under bit-exact, tolerance or statistical oracles.</title>
+<rect x="3355" y="2393" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="3355" y="2408" width="5" height="73" rx="2" fill="#7a5387"/>
+<text x="3371" y="2420" font-size="18" fill="#7a5387" font-weight="600">SNN-DIVERGENCE-HARNESS</text>
+<text x="3371" y="2467" font-size="14" fill="#536d5b" font-weight="400">In progress · Design and implementation</text>
+<text x="3371" y="2487" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="SPIKE-CALIBRATOR" data-group="SC-NEUROMORPHIC-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="SPIKE-CALIBRATOR"><title>SPIKE-CALIBRATOR: Measures classifier confidence against correctness under declared signal definitions, shifts and placements.</title>
+<rect x="2730" y="2511" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2730" y="2526" width="5" height="73" rx="2" fill="#7a5387"/>
+<text x="2746" y="2538" font-size="18" fill="#7a5387" font-weight="600">SPIKE-CALIBRATOR</text>
+<text x="2746" y="2585" font-size="14" fill="#536d5b" font-weight="400">In progress · Design and implementation</text>
+<text x="2746" y="2605" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="SPIKE-CODEC-BENCH" data-group="SC-NEUROMORPHIC-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="SPIKE-CODEC-BENCH"><title>SPIKE-CODEC-BENCH: Measures compression of existing spike trains, comparing payload ratio, distortion, encode/decode latency and memory.</title>
+<rect x="3355" y="2511" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="3355" y="2526" width="5" height="73" rx="2" fill="#7a5387"/>
+<text x="3371" y="2538" font-size="18" fill="#7a5387" font-weight="600">SPIKE-CODEC-BENCH</text>
+<text x="3371" y="2585" font-size="14" fill="#536d5b" font-weight="400">In progress · Design and implementation</text>
+<text x="3371" y="2605" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="SPIKE-ENCODER-CHARACTERISER" data-group="SC-NEUROMORPHIC-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="SPIKE-ENCODER-CHARACTERISER"><title>SPIKE-ENCODER-CHARACTERISER: Measures the information, spike-rate and latency trade-offs of sensor-to-spike encoders.</title>
+<rect x="2730" y="2629" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2730" y="2644" width="5" height="73" rx="2" fill="#7a5387"/>
+<text x="2746" y="2656" font-size="18" fill="#7a5387" font-weight="600">SPIKE-ENCODER-CHARACTERISER</text>
+<text x="2746" y="2703" font-size="14" fill="#536d5b" font-weight="400">In progress · Design and implementation</text>
+<text x="2746" y="2723" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="SPIKE-FORMAT-BRIDGE" data-group="SC-NEUROMORPHIC-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="SPIKE-FORMAT-BRIDGE"><title>SPIKE-FORMAT-BRIDGE: Converts event recordings between declared formats and reports every permitted loss rather than hiding timestamp, polarity or side-stream changes.</title>
+<rect x="3355" y="2629" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="3355" y="2644" width="5" height="73" rx="2" fill="#7a5387"/>
+<text x="3371" y="2656" font-size="18" fill="#7a5387" font-weight="600">SPIKE-FORMAT-BRIDGE</text>
+<text x="3371" y="2703" font-size="14" fill="#536d5b" font-weight="400">In progress · Design and implementation</text>
+<text x="3371" y="2723" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="SPIKE-GROUNDTRUTH" data-group="SC-NEUROMORPHIC-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="SPIKE-GROUNDTRUTH"><title>SPIKE-GROUNDTRUTH: Generates reproducible event-vision, audio, sensor and control stimuli with ground truth defined by the generator.</title>
+<rect x="2730" y="2747" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2730" y="2762" width="5" height="73" rx="2" fill="#7a5387"/>
+<text x="2746" y="2774" font-size="18" fill="#7a5387" font-weight="600">SPIKE-GROUNDTRUTH</text>
+<text x="2746" y="2821" font-size="14" fill="#536d5b" font-weight="400">In progress · Design and implementation</text>
+<text x="2746" y="2841" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="SPIKE-LOG" data-group="SC-NEUROMORPHIC-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="SPIKE-LOG"><title>SPIKE-LOG: Records, indexes, verifies, slices and replays event streams without losing their provenance or timebase identity.</title>
+<rect x="3355" y="2747" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="3355" y="2762" width="5" height="73" rx="2" fill="#7a5387"/>
+<text x="3371" y="2774" font-size="18" fill="#7a5387" font-weight="600">SPIKE-LOG</text>
+<text x="3371" y="2821" font-size="14" fill="#536d5b" font-weight="400">In progress · Design and implementation</text>
+<text x="3371" y="2841" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="SPIKE-QUALITY-GATE" data-group="SC-NEUROMORPHIC-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="SPIKE-QUALITY-GATE"><title>SPIKE-QUALITY-GATE: Checks event data against a named quality policy for timestamp, noise, sensor-health, rate, gap and spatial defects.</title>
+<rect x="2730" y="2865" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2730" y="2880" width="5" height="73" rx="2" fill="#7a5387"/>
+<text x="2746" y="2892" font-size="18" fill="#7a5387" font-weight="600">SPIKE-QUALITY-GATE</text>
+<text x="2746" y="2939" font-size="14" fill="#536d5b" font-weight="400">In progress · Design and implementation</text>
+<text x="2746" y="2959" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+</g>
+<g class="node" data-id="SC-COMPUTE-ADAPTERS" data-group="SC-NEUROMORPHIC-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="SC-COMPUTE-ADAPTERS"><title>SC-COMPUTE-ADAPTERS: Owns the SC-NeuroCore-side wrappers and numerical/register/handshake contracts needed to put selected generated peripherals into the independent LOOP-TIMING-WITNESS DUT/capture path.</title>
+<rect x="3355" y="2865" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="3355" y="2880" width="5" height="73" rx="2" fill="#7a5387"/>
+<text x="3371" y="2892" font-size="18" fill="#7a5387" font-weight="600">SC-COMPUTE-ADAPTERS</text>
+<text x="3371" y="2939" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and interface work</text>
+<text x="3371" y="2959" font-size="12" fill="#778478" font-weight="400">Licence: Independent distribution terms being defined</text>
+</g>
+<g class="node" data-id="SCPN-FUSION-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-FUSION-CORE"><title>SCPN-FUSION-CORE: Canonical plasma solver mathematics, transport/equilibrium and existing research pipeline.</title>
+<rect x="90" y="1177" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="90" y="1192" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="106" y="1204" font-size="18" fill="#925a34" font-weight="600">SCPN-FUSION-CORE</text>
+<text x="106" y="1251" font-size="14" fill="#536d5b" font-weight="400">Released 4.0.0 · in progress</text>
+<text x="106" y="1271" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-MIF-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-MIF-CORE"><title>SCPN-MIF-CORE: Existing magneto-inertial dynamics/runtime with maintained multi-language/RTL chain.</title>
+<rect x="715" y="1177" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="715" y="1192" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="731" y="1204" font-size="18" fill="#925a34" font-weight="600">SCPN-MIF-CORE</text>
+<text x="731" y="1251" font-size="14" fill="#536d5b" font-weight="400">Released 0.1.1 · in progress</text>
+<text x="731" y="1271" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-ADS-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-ADS-CORE"><title>SCPN-ADS-CORE: Subcritical blanket plus typed external source/beam-target interface.</title>
+<rect x="90" y="1295" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="90" y="1310" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="106" y="1322" font-size="18" fill="#925a34" font-weight="600">SCPN-ADS-CORE</text>
+<text x="106" y="1369" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
+<text x="106" y="1389" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-BEAM-TARGET-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-BEAM-TARGET-CORE"><title>SCPN-BEAM-TARGET-CORE: Beam/target design and source-scoped reaction/stopping/yield.</title>
+<rect x="715" y="1295" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="715" y="1310" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="731" y="1322" font-size="18" fill="#925a34" font-weight="600">SCPN-BEAM-TARGET-CORE</text>
+<text x="731" y="1369" font-size="14" fill="#536d5b" font-weight="400">In progress · Computational prototypes and continued development</text>
+<text x="731" y="1389" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-BIOCHEM-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-BIOCHEM-CORE"><title>SCPN-BIOCHEM-CORE: Source-specific enzyme/fermentation kinetics and reactor transport.</title>
+<rect x="90" y="1413" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="90" y="1428" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="106" y="1440" font-size="18" fill="#925a34" font-weight="600">SCPN-BIOCHEM-CORE</text>
+<text x="106" y="1487" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
+<text x="106" y="1507" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-BREED-BURN-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-BREED-BURN-CORE"><title>SCPN-BREED-BURN-CORE: Source-bounded breed-and-burn fuel-management concept.</title>
+<rect x="715" y="1413" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="715" y="1428" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="731" y="1440" font-size="18" fill="#925a34" font-weight="600">SCPN-BREED-BURN-CORE</text>
+<text x="731" y="1487" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
+<text x="731" y="1507" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-BWR-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-BWR-CORE"><title>SCPN-BWR-CORE: Boiling-channel thermal-spectrum family and void-feedback boundary.</title>
+<rect x="90" y="1531" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="90" y="1546" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="106" y="1558" font-size="18" fill="#925a34" font-weight="600">SCPN-BWR-CORE</text>
+<text x="106" y="1605" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
+<text x="106" y="1625" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-CATALYTIC-BED-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-CATALYTIC-BED-CORE"><title>SCPN-CATALYTIC-BED-CORE: Fixed-bed catalyst/transport/pressure-drop coupling.</title>
+<rect x="715" y="1531" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="715" y="1546" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="731" y="1558" font-size="18" fill="#925a34" font-weight="600">SCPN-CATALYTIC-BED-CORE</text>
+<text x="731" y="1605" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
+<text x="731" y="1625" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-CHANNEL-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-CHANNEL-CORE"><title>SCPN-CHANNEL-CORE: Graphite-moderated channel reactor only; exclusive from PHWR pressure tubes.</title>
+<rect x="90" y="1649" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="90" y="1664" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="106" y="1676" font-size="18" fill="#925a34" font-weight="600">SCPN-CHANNEL-CORE</text>
+<text x="106" y="1723" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
+<text x="106" y="1743" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-CHEM-KINETICS-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-CHEM-KINETICS-CORE"><title>SCPN-CHEM-KINETICS-CORE: Ideal gas batch/CSTR/PFR named kinetics and thermo models.</title>
+<rect x="715" y="1649" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="715" y="1664" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="731" y="1676" font-size="18" fill="#925a34" font-weight="600">SCPN-CHEM-KINETICS-CORE</text>
+<text x="731" y="1723" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
+<text x="731" y="1743" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-CHEM-PROCESS-HYBRID-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-CHEM-PROCESS-HYBRID-CORE"><title>SCPN-CHEM-PROCESS-HYBRID-CORE: Chemical process/recycle/separation and carbon-capture composition.</title>
+<rect x="90" y="1767" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="90" y="1782" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="106" y="1794" font-size="18" fill="#925a34" font-weight="600">SCPN-CHEM-PROCESS-HYBRID-CORE</text>
+<text x="106" y="1841" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
+<text x="106" y="1861" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-DENSE-PLASMA-FOCUS-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-DENSE-PLASMA-FOCUS-CORE"><title>SCPN-DENSE-PLASMA-FOCUS-CORE: Focus device/bank/axial/radial/pinch and source-scoped neutron estimates.</title>
+<rect x="715" y="1767" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="715" y="1782" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="731" y="1794" font-size="18" fill="#925a34" font-weight="600">SCPN-DENSE-PLASMA-FOCUS-CORE</text>
+<text x="731" y="1841" font-size="14" fill="#536d5b" font-weight="400">In progress · Computational prototypes and continued development</text>
+<text x="731" y="1861" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-ELECTROCHEM-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-ELECTROCHEM-CORE"><title>SCPN-ELECTROCHEM-CORE: Electrode/cell transport and charge/reaction interface.</title>
+<rect x="90" y="1885" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="90" y="1900" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="106" y="1912" font-size="18" fill="#925a34" font-weight="600">SCPN-ELECTROCHEM-CORE</text>
+<text x="106" y="1959" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
+<text x="106" y="1979" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-FRC-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-FRC-CORE"><title>SCPN-FRC-CORE: Field-reversed configuration, radial pressure-balance and kinetic-scale model.</title>
+<rect x="715" y="1885" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="715" y="1900" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="731" y="1912" font-size="18" fill="#925a34" font-weight="600">SCPN-FRC-CORE</text>
+<text x="731" y="1959" font-size="14" fill="#536d5b" font-weight="400">In progress · Computational prototypes and continued development</text>
+<text x="731" y="1979" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-FUSION-FISSION-HYBRID-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-FUSION-FISSION-HYBRID-CORE"><title>SCPN-FUSION-FISSION-HYBRID-CORE: Existing source-owned fusion/fission blanket device and proposed typed member couplings.</title>
+<rect x="90" y="2003" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="90" y="2018" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="106" y="2030" font-size="18" fill="#925a34" font-weight="600">SCPN-FUSION-FISSION-HYBRID-CORE</text>
+<text x="106" y="2077" font-size="14" fill="#536d5b" font-weight="400">In progress · Computational prototypes and continued development</text>
+<text x="106" y="2097" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-FUSION-PROCESS-HEAT-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-FUSION-PROCESS-HEAT-CORE"><title>SCPN-FUSION-PROCESS-HEAT-CORE: Fusion-source to chemical-process heat/material composition.</title>
+<rect x="715" y="2003" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="715" y="2018" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="731" y="2030" font-size="18" fill="#925a34" font-weight="600">SCPN-FUSION-PROCESS-HEAT-CORE</text>
+<text x="731" y="2077" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
+<text x="731" y="2097" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-GFR-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-GFR-CORE"><title>SCPN-GFR-CORE: Gas-cooled fast-spectrum family with high-temperature heat-removal boundary.</title>
+<rect x="90" y="2121" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="90" y="2136" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="106" y="2148" font-size="18" fill="#925a34" font-weight="600">SCPN-GFR-CORE</text>
+<text x="106" y="2195" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
+<text x="106" y="2215" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-HEAT-PIPE-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-HEAT-PIPE-CORE"><title>SCPN-HEAT-PIPE-CORE: Solid-core heat-pipe microreactor and source-defined transport limits.</title>
+<rect x="715" y="2121" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="715" y="2136" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="731" y="2148" font-size="18" fill="#925a34" font-weight="600">SCPN-HEAT-PIPE-CORE</text>
+<text x="731" y="2195" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
+<text x="731" y="2215" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-HTGR-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-HTGR-CORE"><title>SCPN-HTGR-CORE: Graphite/TRISO helium-cooled design and distinct process-heat interface.</title>
+<rect x="90" y="2239" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="90" y="2254" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="106" y="2266" font-size="18" fill="#925a34" font-weight="600">SCPN-HTGR-CORE</text>
+<text x="106" y="2313" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
+<text x="106" y="2333" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-HYBRID-ENERGY-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-HYBRID-ENERGY-CORE"><title>SCPN-HYBRID-ENERGY-CORE: Fission/renewable/storage electrical and thermal composition.</title>
+<rect x="715" y="2239" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="715" y="2254" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="731" y="2266" font-size="18" fill="#925a34" font-weight="600">SCPN-HYBRID-ENERGY-CORE</text>
+<text x="731" y="2313" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
+<text x="731" y="2333" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-HYDROGEN-PROCESS-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-HYDROGEN-PROCESS-CORE"><title>SCPN-HYDROGEN-PROCESS-CORE: HTSE and named thermochemical hydrogen process routes.</title>
+<rect x="90" y="2357" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="90" y="2372" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="106" y="2384" font-size="18" fill="#925a34" font-weight="600">SCPN-HYDROGEN-PROCESS-CORE</text>
+<text x="106" y="2431" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
+<text x="106" y="2451" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-ICF-BEAM-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-ICF-BEAM-CORE"><title>SCPN-ICF-BEAM-CORE: Particle-beam illumination/capsule design with explicit coupling.</title>
+<rect x="715" y="2357" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="715" y="2372" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="731" y="2384" font-size="18" fill="#925a34" font-weight="600">SCPN-ICF-BEAM-CORE</text>
+<text x="731" y="2431" font-size="14" fill="#536d5b" font-weight="400">In progress · Computational prototypes and continued development</text>
+<text x="731" y="2451" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-ICF-IMPACT-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-ICF-IMPACT-CORE"><title>SCPN-ICF-IMPACT-CORE: Impact/projectile/fuel/compression design and source-limited energy relations.</title>
+<rect x="90" y="2475" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="90" y="2490" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="106" y="2502" font-size="18" fill="#925a34" font-weight="600">SCPN-ICF-IMPACT-CORE</text>
+<text x="106" y="2549" font-size="14" fill="#536d5b" font-weight="400">In progress · Computational prototypes and continued development</text>
+<text x="106" y="2569" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-ICF-LASER-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-ICF-LASER-CORE"><title>SCPN-ICF-LASER-CORE: Laser-driven capsule/implosion design and source-scoped ignition/gain criteria.</title>
+<rect x="715" y="2475" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="715" y="2490" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="731" y="2502" font-size="18" fill="#925a34" font-weight="600">SCPN-ICF-LASER-CORE</text>
+<text x="731" y="2549" font-size="14" fill="#536d5b" font-weight="400">In progress · Computational prototypes and continued development</text>
+<text x="731" y="2569" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-IEC-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-IEC-CORE"><title>SCPN-IEC-CORE: Gridded electrostatic device and distinct nonthermal loss/recirculation models.</title>
+<rect x="90" y="2593" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="90" y="2608" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="106" y="2620" font-size="18" fill="#925a34" font-weight="600">SCPN-IEC-CORE</text>
+<text x="106" y="2667" font-size="14" fill="#536d5b" font-weight="400">In progress · Computational prototypes and continued development</text>
+<text x="106" y="2687" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-LATTICE-FUSION-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-LATTICE-FUSION-CORE"><title>SCPN-LATTICE-FUSION-CORE: Source-bounded lattice-confinement fusion research and modelling.</title>
+<rect x="715" y="2593" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="715" y="2608" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="731" y="2620" font-size="18" fill="#925a34" font-weight="600">SCPN-LATTICE-FUSION-CORE</text>
+<text x="731" y="2667" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
+<text x="731" y="2687" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-LEVITATED-DIPOLE-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-LEVITATED-DIPOLE-CORE"><title>SCPN-LEVITATED-DIPOLE-CORE: Dipole coil/levitation/charging and anisotropic plasma model.</title>
+<rect x="90" y="2711" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="90" y="2726" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="106" y="2738" font-size="18" fill="#925a34" font-weight="600">SCPN-LEVITATED-DIPOLE-CORE</text>
+<text x="106" y="2785" font-size="14" fill="#536d5b" font-weight="400">In progress · Computational prototypes and continued development</text>
+<text x="106" y="2805" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-LFR-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-LFR-CORE"><title>SCPN-LFR-CORE: Lead/LBE fast-spectrum family with materials/corrosion boundary.</title>
+<rect x="715" y="2711" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="715" y="2726" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="731" y="2738" font-size="18" fill="#925a34" font-weight="600">SCPN-LFR-CORE</text>
+<text x="731" y="2785" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
+<text x="731" y="2805" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-MAGNETIC-CUSP-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-MAGNETIC-CUSP-CORE"><title>SCPN-MAGNETIC-CUSP-CORE: Cusp coil/configuration ownership and source-specific field/particle-loss model proposal.</title>
+<rect x="90" y="2829" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="90" y="2844" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="106" y="2856" font-size="18" fill="#925a34" font-weight="600">SCPN-MAGNETIC-CUSP-CORE</text>
+<text x="106" y="2903" font-size="14" fill="#536d5b" font-weight="400">In progress · Computational prototypes and continued development</text>
+<text x="106" y="2923" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-MEMBRANE-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-MEMBRANE-CORE"><title>SCPN-MEMBRANE-CORE: Reaction-separation with explicit membrane transport.</title>
+<rect x="715" y="2829" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="715" y="2844" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="731" y="2856" font-size="18" fill="#925a34" font-weight="600">SCPN-MEMBRANE-CORE</text>
+<text x="731" y="2903" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
+<text x="731" y="2923" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-METHANE-REFORMER-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-METHANE-REFORMER-CORE"><title>SCPN-METHANE-REFORMER-CORE: Steam-methane reforming kinetics and process train.</title>
+<rect x="90" y="2947" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="90" y="2962" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="106" y="2974" font-size="18" fill="#925a34" font-weight="600">SCPN-METHANE-REFORMER-CORE</text>
+<text x="106" y="3021" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
+<text x="106" y="3041" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-MIF-LINER-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-MIF-LINER-CORE"><title>SCPN-MIF-LINER-CORE: Mechanical/magnetic liner compression and target-energy coupling.</title>
+<rect x="715" y="2947" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="715" y="2962" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="731" y="2974" font-size="18" fill="#925a34" font-weight="600">SCPN-MIF-LINER-CORE</text>
+<text x="731" y="3021" font-size="14" fill="#536d5b" font-weight="400">In progress · Computational prototypes and continued development</text>
+<text x="731" y="3041" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-MIF-MAGLIF-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-MIF-MAGLIF-CORE"><title>SCPN-MIF-MAGLIF-CORE: Magnetised liner drive/preheat/compression family.</title>
+<rect x="90" y="3065" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="90" y="3080" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="106" y="3092" font-size="18" fill="#925a34" font-weight="600">SCPN-MIF-MAGLIF-CORE</text>
+<text x="106" y="3139" font-size="14" fill="#536d5b" font-weight="400">In progress · Computational prototypes and continued development</text>
+<text x="106" y="3159" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-MIF-PLASMA-JET-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-MIF-PLASMA-JET-CORE"><title>SCPN-MIF-PLASMA-JET-CORE: Discrete plasma-jet array and spherical liner convergence.</title>
+<rect x="715" y="3065" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="715" y="3080" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="731" y="3092" font-size="18" fill="#925a34" font-weight="600">SCPN-MIF-PLASMA-JET-CORE</text>
+<text x="731" y="3139" font-size="14" fill="#536d5b" font-weight="400">In progress · Computational prototypes and continued development</text>
+<text x="731" y="3159" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-MIRROR-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-MIRROR-CORE"><title>SCPN-MIRROR-CORE: Mirror/tandem confinement and source-specific flux-tube geometry.</title>
+<rect x="90" y="3183" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="90" y="3198" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="106" y="3210" font-size="18" fill="#925a34" font-weight="600">SCPN-MIRROR-CORE</text>
+<text x="106" y="3257" font-size="14" fill="#536d5b" font-weight="400">In progress · Computational prototypes and continued development</text>
+<text x="106" y="3277" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-MSR-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-MSR-CORE"><title>SCPN-MSR-CORE: Liquid-fuel molten-salt family with chemistry, circulation and depletion.</title>
+<rect x="715" y="3183" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="715" y="3198" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="731" y="3210" font-size="18" fill="#925a34" font-weight="600">SCPN-MSR-CORE</text>
+<text x="731" y="3257" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
+<text x="731" y="3277" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-MUON-FUSION-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-MUON-FUSION-CORE"><title>SCPN-MUON-FUSION-CORE: Muon-catalysed reaction models and complete energy accounting.</title>
+<rect x="90" y="3301" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="90" y="3316" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="106" y="3328" font-size="18" fill="#925a34" font-weight="600">SCPN-MUON-FUSION-CORE</text>
+<text x="106" y="3375" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
+<text x="106" y="3395" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-NTP-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-NTP-CORE"><title>SCPN-NTP-CORE: Reactor-side thermal propulsion and typed heat/flow interface.</title>
+<rect x="715" y="3301" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="715" y="3316" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="731" y="3328" font-size="18" fill="#925a34" font-weight="600">SCPN-NTP-CORE</text>
+<text x="731" y="3375" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
+<text x="731" y="3395" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-NUCLEAR-DESALINATION-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-NUCLEAR-DESALINATION-CORE"><title>SCPN-NUCLEAR-DESALINATION-CORE: Fission-to-desalination thermal/material composition.</title>
+<rect x="90" y="3419" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="90" y="3434" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="106" y="3446" font-size="18" fill="#925a34" font-weight="600">SCPN-NUCLEAR-DESALINATION-CORE</text>
+<text x="106" y="3493" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
+<text x="106" y="3513" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-NUCLEAR-HYDROGEN-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-NUCLEAR-HYDROGEN-CORE"><title>SCPN-NUCLEAR-HYDROGEN-CORE: Typed fission-to-hydrogen thermal/electrical/material composition.</title>
+<rect x="715" y="3419" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="715" y="3434" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="731" y="3446" font-size="18" fill="#925a34" font-weight="600">SCPN-NUCLEAR-HYDROGEN-CORE</text>
+<text x="731" y="3493" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
+<text x="731" y="3513" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-PHOTOCATALYTIC-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-PHOTOCATALYTIC-CORE"><title>SCPN-PHOTOCATALYTIC-CORE: Photon-flux-driven reaction and optical/source coupling.</title>
+<rect x="90" y="3537" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="90" y="3552" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="106" y="3564" font-size="18" fill="#925a34" font-weight="600">SCPN-PHOTOCATALYTIC-CORE</text>
+<text x="106" y="3611" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
+<text x="106" y="3631" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-PHWR-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-PHWR-CORE"><title>SCPN-PHWR-CORE: Heavy-water pressure-tube family with on-power fuel management.</title>
+<rect x="715" y="3537" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="715" y="3552" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="731" y="3564" font-size="18" fill="#925a34" font-weight="600">SCPN-PHWR-CORE</text>
+<text x="731" y="3611" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
+<text x="731" y="3631" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-PWR-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-PWR-CORE"><title>SCPN-PWR-CORE: Light-water moderated/cooled vessel and primary-circuit design.</title>
+<rect x="90" y="3655" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="90" y="3670" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="106" y="3682" font-size="18" fill="#925a34" font-weight="600">SCPN-PWR-CORE</text>
+<text x="106" y="3729" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
+<text x="106" y="3749" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-REACTOR-CATALOGUE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-REACTOR-CATALOGUE"><title>SCPN-REACTOR-CATALOGUE: Evidence-labelled source-authority catalogue, candidate revision/history and vocabulary.</title>
+<rect x="715" y="3655" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="715" y="3670" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="731" y="3682" font-size="18" fill="#925a34" font-weight="600">SCPN-REACTOR-CATALOGUE</text>
+<text x="731" y="3729" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
+<text x="731" y="3749" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-RESEARCH-REACTOR-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-RESEARCH-REACTOR-CORE"><title>SCPN-RESEARCH-REACTOR-CORE: Research/isotope-production core including separately supported pulse operation.</title>
+<rect x="90" y="3773" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="90" y="3788" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="106" y="3800" font-size="18" fill="#925a34" font-weight="600">SCPN-RESEARCH-REACTOR-CORE</text>
+<text x="106" y="3847" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
+<text x="106" y="3867" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-RFP-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-RFP-CORE"><title>SCPN-RFP-CORE: Reversed-field pinch relaxation/profile and toroidal device design.</title>
+<rect x="715" y="3773" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="715" y="3788" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="731" y="3800" font-size="18" fill="#925a34" font-weight="600">SCPN-RFP-CORE</text>
+<text x="731" y="3847" font-size="14" fill="#536d5b" font-weight="400">In progress · Computational prototypes and continued development</text>
+<text x="731" y="3867" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-SCWR-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-SCWR-CORE"><title>SCPN-SCWR-CORE: Supercritical-water family with explicit thermophysical transition support.</title>
+<rect x="90" y="3891" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="90" y="3906" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="106" y="3918" font-size="18" fill="#925a34" font-weight="600">SCPN-SCWR-CORE</text>
+<text x="106" y="3965" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
+<text x="106" y="3985" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-SFR-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-SFR-CORE"><title>SCPN-SFR-CORE: Sodium-cooled fast-spectrum family and fuel/material/heat-removal boundary.</title>
+<rect x="715" y="3891" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="715" y="3906" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="731" y="3918" font-size="18" fill="#925a34" font-weight="600">SCPN-SFR-CORE</text>
+<text x="731" y="3965" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
+<text x="731" y="3985" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-SPHEROMAK-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-SPHEROMAK-CORE"><title>SCPN-SPHEROMAK-CORE: Relaxed compact-torus configuration, flux conserver and formation criteria.</title>
+<rect x="90" y="4009" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="90" y="4024" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="106" y="4036" font-size="18" fill="#925a34" font-weight="600">SCPN-SPHEROMAK-CORE</text>
+<text x="106" y="4083" font-size="14" fill="#536d5b" font-weight="400">In progress · Computational prototypes and continued development</text>
+<text x="106" y="4103" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-STELLARATOR-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-STELLARATOR-CORE"><title>SCPN-STELLARATOR-CORE: Three-dimensional magnetic-confinement configuration and coil/design ownership.</title>
+<rect x="715" y="4009" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="715" y="4024" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="731" y="4036" font-size="18" fill="#925a34" font-weight="600">SCPN-STELLARATOR-CORE</text>
+<text x="731" y="4083" font-size="14" fill="#536d5b" font-weight="400">In progress · Computational prototypes and continued development</text>
+<text x="731" y="4103" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-THETA-PINCH-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-THETA-PINCH-CORE"><title>SCPN-THETA-PINCH-CORE: Axial-field compression and pinch configuration with sharp-boundary model.</title>
+<rect x="90" y="4127" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="90" y="4142" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="106" y="4154" font-size="18" fill="#925a34" font-weight="600">SCPN-THETA-PINCH-CORE</text>
+<text x="106" y="4201" font-size="14" fill="#536d5b" font-weight="400">In progress · Computational prototypes and continued development</text>
+<text x="106" y="4221" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-TOKAMAK-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-TOKAMAK-CORE"><title>SCPN-TOKAMAK-CORE: Own tokamak physical modelling and reactor-design geometry, with explicitly qualified canonical plasma-solver dependencies.</title>
+<rect x="715" y="4127" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="715" y="4142" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="731" y="4154" font-size="18" fill="#925a34" font-weight="600">SCPN-TOKAMAK-CORE</text>
+<text x="731" y="4201" font-size="14" fill="#536d5b" font-weight="400">In progress · Computational prototypes and continued development</text>
+<text x="731" y="4221" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-Z-PINCH-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-Z-PINCH-CORE"><title>SCPN-Z-PINCH-CORE: Current-driven pinch, sheared-flow model and pulsed device design.</title>
+<rect x="90" y="4245" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="90" y="4260" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="106" y="4272" font-size="18" fill="#925a34" font-weight="600">SCPN-Z-PINCH-CORE</text>
+<text x="106" y="4319" font-size="14" fill="#536d5b" font-weight="400">In progress · Computational prototypes and continued development</text>
+<text x="106" y="4339" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-REACTOR-KERNELS" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-REACTOR-KERNELS"><title>SCPN-REACTOR-KERNELS: Shared equations, numerical primitives and geometry/CAD/export substrate.</title>
+<rect x="715" y="4245" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="715" y="4260" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="731" y="4272" font-size="18" fill="#925a34" font-weight="600">SCPN-REACTOR-KERNELS</text>
+<text x="731" y="4319" font-size="14" fill="#536d5b" font-weight="400">In progress · Implementation and integration</text>
+<text x="731" y="4339" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="INTERACTIVE-SOLVER-WORKBENCH" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="INTERACTIVE-SOLVER-WORKBENCH"><title>INTERACTIVE-SOLVER-WORKBENCH: A reproducible user experiment and source-backed learning journey over qualified solver adapters</title>
+<rect x="90" y="4363" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="90" y="4378" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="106" y="4390" font-size="18" fill="#925a34" font-weight="600">INTERACTIVE-SOLVER-WORKBENCH</text>
+<text x="106" y="4437" font-size="14" fill="#536d5b" font-weight="400">In progress · Instrument architecture and qualification</text>
+<text x="106" y="4457" font-size="12" fill="#778478" font-weight="400">Licence: Independent distribution terms being defined</text>
+</g>
+<g class="node" data-id="REACTOR-COUPLING-WITNESS" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="REACTOR-COUPLING-WITNESS"><title>REACTOR-COUPLING-WITNESS: Typed interface compatibility, conservation and coupled-scheme residuals for a specified system boundary</title>
+<rect x="715" y="4363" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="715" y="4378" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="731" y="4390" font-size="18" fill="#925a34" font-weight="600">REACTOR-COUPLING-WITNESS</text>
+<text x="731" y="4437" font-size="14" fill="#536d5b" font-weight="400">In progress · Instrument architecture and qualification</text>
+<text x="731" y="4457" font-size="12" fill="#778478" font-weight="400">Licence: Independent distribution terms being defined</text>
+</g>
+<g class="node" data-id="REACTOR-DATA-WITNESS" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="REACTOR-DATA-WITNESS"><title>REACTOR-DATA-WITNESS: Scientific data identity, representation/support, normalisation/uncertainty and usable rights for one declared model</title>
+<rect x="90" y="4481" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="90" y="4496" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="106" y="4508" font-size="18" fill="#925a34" font-weight="600">REACTOR-DATA-WITNESS</text>
+<text x="106" y="4555" font-size="14" fill="#536d5b" font-weight="400">In progress · Instrument architecture and qualification</text>
+<text x="106" y="4575" font-size="12" fill="#778478" font-weight="400">Licence: Independent distribution terms being defined</text>
+</g>
+<g class="node" data-id="REACTOR-ENGINEERING-BALANCE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="REACTOR-ENGINEERING-BALANCE"><title>REACTOR-ENGINEERING-BALANCE: Energy/material/exergy and compatible system-comparison bookkeeping within an explicit engineering boundary</title>
+<rect x="715" y="4481" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="715" y="4496" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="731" y="4508" font-size="18" fill="#925a34" font-weight="600">REACTOR-ENGINEERING-BALANCE</text>
+<text x="731" y="4555" font-size="14" fill="#536d5b" font-weight="400">In progress · Instrument architecture and qualification</text>
+<text x="731" y="4575" font-size="12" fill="#778478" font-weight="400">Licence: Independent distribution terms being defined</text>
+</g>
+<g class="node" data-id="REACTOR-GEOMETRY-WITNESS" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="REACTOR-GEOMETRY-WITNESS"><title>REACTOR-GEOMETRY-WITNESS: Consistency of physical design, analytic/CAD representations, mesh/material regions and export projection</title>
+<rect x="90" y="4599" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="90" y="4614" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="106" y="4626" font-size="18" fill="#925a34" font-weight="600">REACTOR-GEOMETRY-WITNESS</text>
+<text x="106" y="4673" font-size="14" fill="#536d5b" font-weight="400">In progress · Instrument architecture and qualification</text>
+<text x="106" y="4693" font-size="12" fill="#778478" font-weight="400">Licence: Independent distribution terms being defined</text>
+</g>
+<g class="node" data-id="REACTOR-MODEL-WITNESS" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="REACTOR-MODEL-WITNESS"><title>REACTOR-MODEL-WITNESS: Source-specified numerical/model verification endpoints for a frozen problem and method</title>
+<rect x="715" y="4599" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="715" y="4614" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="731" y="4626" font-size="18" fill="#925a34" font-weight="600">REACTOR-MODEL-WITNESS</text>
+<text x="731" y="4673" font-size="14" fill="#536d5b" font-weight="400">In progress · Instrument architecture and qualification</text>
+<text x="731" y="4693" font-size="12" fill="#778478" font-weight="400">Licence: Independent distribution terms being defined</text>
+</g>
+<g class="node" data-id="REACTOR-RUN-PACK" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="REACTOR-RUN-PACK"><title>REACTOR-RUN-PACK: Exact source/build/problem/plan/attempt/raw-output relationship and reproducibility of one Reactor experiment</title>
+<rect x="90" y="4717" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="90" y="4732" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="106" y="4744" font-size="18" fill="#925a34" font-weight="600">REACTOR-RUN-PACK</text>
+<text x="106" y="4791" font-size="14" fill="#536d5b" font-weight="400">In progress · Instrument architecture and qualification</text>
+<text x="106" y="4811" font-size="12" fill="#778478" font-weight="400">Licence: Independent distribution terms being defined</text>
+</g>
+<g class="node" data-id="REACTOR-UNCERTAINTY-STUDY" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="REACTOR-UNCERTAINTY-STUDY"><title>REACTOR-UNCERTAINTY-STUDY: Prespecified sensitivity and parameter/numerical/observation/model-discrepancy uncertainty for a defined response</title>
+<rect x="715" y="4717" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="715" y="4732" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="731" y="4744" font-size="18" fill="#925a34" font-weight="600">REACTOR-UNCERTAINTY-STUDY</text>
+<text x="731" y="4791" font-size="14" fill="#536d5b" font-weight="400">In progress · Instrument architecture and qualification</text>
+<text x="731" y="4811" font-size="12" fill="#778478" font-weight="400">Licence: Independent distribution terms being defined</text>
+</g>
+<g class="node" data-id="World models / plasma and control" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="World models / plasma and control"><title>World models / plasma and control: Domain-owned plasma dynamics and control models with verification records.</title>
+<rect x="90" y="4835" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="90" y="4850" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="106" y="4862" font-size="18" fill="#925a34" font-weight="600">World models / plasma and control</text>
+<text x="106" y="4909" font-size="14" fill="#536d5b" font-weight="400">In progress · Research and architecture development</text>
+<text x="106" y="4929" font-size="12" fill="#778478" font-weight="400">Licence: Programme; terms to be settled</text>
+</g>
+<g class="node" data-id="ATLAS-REACTORUM" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="ATLAS-REACTORUM"><title>ATLAS-REACTORUM: Source and rights library with historical reactor taxonomy and interactive citation views.</title>
+<rect x="715" y="4835" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="715" y="4850" width="5" height="73" rx="2" fill="#925a34"/>
+<text x="731" y="4862" font-size="18" fill="#925a34" font-weight="600">ATLAS-REACTORUM</text>
+<text x="731" y="4909" font-size="14" fill="#536d5b" font-weight="400">In progress · Implementation and integration</text>
+<text x="731" y="4929" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-CONTROL" data-group="SCPN-SYSTEMS-INTEGRATION-AND-CONTROL" tabindex="0" role="button" aria-label="SCPN-CONTROL"><title>SCPN-CONTROL: Compiler from stochastic Petri nets to controllers with runtime contracts, and plasma-control research paths.</title>
+<rect x="1410" y="2357" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="1410" y="2372" width="5" height="73" rx="2" fill="#286677"/>
+<text x="1426" y="2384" font-size="18" fill="#286677" font-weight="600">SCPN-CONTROL</text>
+<text x="1426" y="2431" font-size="14" fill="#536d5b" font-weight="400">Released 0.23.0 · in progress</text>
+<text x="1426" y="2451" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-PHASE-ORCHESTRATOR" data-group="SCPN-SYSTEMS-INTEGRATION-AND-CONTROL" tabindex="0" role="button" aria-label="SCPN-PHASE-ORCHESTRATOR"><title>SCPN-PHASE-ORCHESTRATOR: Synchronisation analysis and evaluation of early-warning detectors on coupled phase-oscillator dynamics, with a Rust kernel.</title>
+<rect x="2035" y="2357" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2035" y="2372" width="5" height="73" rx="2" fill="#286677"/>
+<text x="2051" y="2384" font-size="18" fill="#286677" font-weight="600">SCPN-PHASE-ORCHESTRATOR</text>
+<text x="2051" y="2431" font-size="14" fill="#536d5b" font-weight="400">Released 1.4.3 · in progress</text>
+<text x="2051" y="2451" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="SCPN-STUDIO-PLATFORM" data-group="SCPN-SYSTEMS-INTEGRATION-AND-CONTROL" tabindex="0" role="button" aria-label="SCPN-STUDIO-PLATFORM"><title>SCPN-STUDIO-PLATFORM: Domain-neutral SDK for studios: evidence bundles, capability manifests, bounded jobs and tenant-aware identity.</title>
+<rect x="1410" y="2475" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="1410" y="2490" width="5" height="73" rx="2" fill="#286677"/>
+<text x="1426" y="2502" font-size="18" fill="#286677" font-weight="600">SCPN-STUDIO-PLATFORM</text>
+<text x="1426" y="2549" font-size="14" fill="#536d5b" font-weight="400">Released 0.11.2 · in progress</text>
+<text x="1426" y="2569" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="World models / oscillators and grids" data-group="SCPN-SYSTEMS-INTEGRATION-AND-CONTROL" tabindex="0" role="button" aria-label="World models / oscillators and grids"><title>World models / oscillators and grids: First open model family: coupled-oscillator and synchronisation dynamics, prediction checks and reference solvers.</title>
+<rect x="2035" y="2475" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2035" y="2490" width="5" height="73" rx="2" fill="#286677"/>
+<text x="2051" y="2502" font-size="18" fill="#286677" font-weight="600">World models / oscillators and grids</text>
+<text x="2051" y="2549" font-size="14" fill="#536d5b" font-weight="400">In progress · Research and architecture development</text>
+<text x="2051" y="2569" font-size="12" fill="#778478" font-weight="400">Licence: Programme; terms to be settled</text>
+</g>
+<g class="node" data-id="SCPN-STUDIO" data-group="SCPN-SYSTEMS-INTEGRATION-AND-CONTROL" tabindex="0" role="button" aria-label="SCPN-STUDIO"><title>SCPN-STUDIO: The hub that federates studios over the platform contract: registry, cross-studio evidence audit, rendering and federation gating.</title>
+<rect x="1410" y="2593" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="1410" y="2608" width="5" height="73" rx="2" fill="#286677"/>
+<text x="1426" y="2620" font-size="18" fill="#286677" font-weight="600">SCPN-STUDIO</text>
+<text x="1426" y="2667" font-size="14" fill="#536d5b" font-weight="400">In progress · Implementation and integration</text>
+<text x="1426" y="2687" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="Fixed grid-detector experiment" data-group="SCIENTIFIC-DISCOVERY-AND-EXPERIMENTATION" tabindex="0" role="button" aria-label="Fixed grid-detector experiment"><title>Fixed grid-detector experiment: Fixed-aggregation detector check on held-out simulated grids, validity filtering, independent review and replay.</title>
+<rect x="1410" y="2911" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="1410" y="2926" width="5" height="73" rx="2" fill="#655531"/>
+<text x="1426" y="2938" font-size="18" fill="#655531" font-weight="600">Fixed grid-detector experiment</text>
+<text x="1426" y="2985" font-size="14" fill="#536d5b" font-weight="400">In progress · Protocol and harness development</text>
+<text x="1426" y="3005" font-size="12" fill="#778478" font-weight="400">Licence: Research protocol</text>
+</g>
+<g class="node" data-id="Neural-dynamics experiment" data-group="SCIENTIFIC-DISCOVERY-AND-EXPERIMENTATION" tabindex="0" role="button" aria-label="Neural-dynamics experiment"><title>Neural-dynamics experiment: Learned surrogate of AdEx dynamics with a tested validity boundary and preregistered checks.</title>
+<rect x="2035" y="2911" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2035" y="2926" width="5" height="73" rx="2" fill="#655531"/>
+<text x="2051" y="2938" font-size="18" fill="#655531" font-weight="600">Neural-dynamics experiment</text>
+<text x="2051" y="2985" font-size="14" fill="#536d5b" font-weight="400">In progress · Protocol and harness development</text>
+<text x="2051" y="3005" font-size="12" fill="#778478" font-weight="400">Licence: Research protocol</text>
+</g>
+<g class="node" data-id="Laboratory / chemistry and materials partners" data-group="SCIENTIFIC-DISCOVERY-AND-EXPERIMENTATION" tabindex="0" role="button" aria-label="Laboratory / chemistry and materials partners"><title>Laboratory / chemistry and materials partners: Partner-workflow interfaces for automated experiments, under domain and human hardware authority.</title>
+<rect x="1410" y="3029" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="1410" y="3044" width="5" height="73" rx="2" fill="#655531"/>
+<text x="1426" y="3056" font-size="18" fill="#655531" font-weight="600">Laboratory / chemistry and materials partners</text>
+<text x="1426" y="3103" font-size="14" fill="#536d5b" font-weight="400">In progress · Research and architecture development</text>
+<text x="1426" y="3123" font-size="12" fill="#778478" font-weight="400">Licence: Programme; terms to be settled</text>
+</g>
+<g class="node" data-id="Common benchmark and report format" data-group="SCIENTIFIC-DISCOVERY-AND-EXPERIMENTATION" tabindex="0" role="button" aria-label="Common benchmark and report format"><title>Common benchmark and report format: Common yardstick, domain-supplied criteria and replayable verification reports.</title>
+<rect x="2035" y="3029" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2035" y="3044" width="5" height="73" rx="2" fill="#655531"/>
+<text x="2051" y="3056" font-size="18" fill="#655531" font-weight="600">Common benchmark and report format</text>
+<text x="2051" y="3103" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and first-cycle integration</text>
+<text x="2051" y="3123" font-size="12" fill="#778478" font-weight="400">Licence: Not yet a released distribution</text>
+</g>
+<g class="node" data-id="Discovery orchestration" data-group="SCIENTIFIC-DISCOVERY-AND-EXPERIMENTATION" tabindex="0" role="button" aria-label="Discovery orchestration"><title>Discovery orchestration: Hypothesis, experiment requests, record admission and model-update proposals across domain clients.</title>
+<rect x="1410" y="3147" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="1410" y="3162" width="5" height="73" rx="2" fill="#655531"/>
+<text x="1426" y="3174" font-size="18" fill="#655531" font-weight="600">Discovery orchestration</text>
+<text x="1426" y="3221" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and first-cycle integration</text>
+<text x="1426" y="3241" font-size="12" fill="#778478" font-weight="400">Licence: Not yet a released distribution</text>
+</g>
+<g class="node" data-id="Funding / EIC Accelerator; EIC Advanced Innovation Challenge on physical AI (18 Jun 2027)" data-group="ANULUM-COMPANY-OPERATIONS" tabindex="0" role="button" aria-label="Funding / EIC Accelerator; EIC Advanced Innovation Challenge on physical AI (18 Jun 2027)"><title>Funding / EIC Accelerator; EIC Advanced Innovation Challenge on physical AI (18 Jun 2027): Funding preparation. Work-package context: product lines at high readiness. Partner profile: —.</title>
+<rect x="2730" y="3183" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2730" y="3198" width="5" height="73" rx="2" fill="#474c64"/>
+<text x="2746" y="3210" font-size="18" fill="#474c64" font-weight="600">Funding / EIC Accelerator; EIC Advanced</text>
+<text x="2746" y="3233" font-size="18" fill="#474c64" font-weight="600">Innovation Challenge on physical AI (18 Jun</text>
+<text x="2746" y="3257" font-size="14" fill="#536d5b" font-weight="400">In progress · Application and consortium preparation</text>
+<text x="2746" y="3277" font-size="12" fill="#778478" font-weight="400">Licence: Not a software distribution</text>
+</g>
+<g class="node" data-id="Funding / EIC Pathfinder Challenges 2026 — deep reasoning and abstraction" data-group="ANULUM-COMPANY-OPERATIONS" tabindex="0" role="button" aria-label="Funding / EIC Pathfinder Challenges 2026 — deep reasoning and abstraction"><title>Funding / EIC Pathfinder Challenges 2026 — deep reasoning and abstraction: Funding preparation. Work-package context: the reasoning substrate: parts of B, D, F. Partner profile: none required.</title>
+<rect x="3355" y="3183" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="3355" y="3198" width="5" height="73" rx="2" fill="#474c64"/>
+<text x="3371" y="3210" font-size="18" fill="#474c64" font-weight="600">Funding / EIC Pathfinder Challenges 2026 — deep</text>
+<text x="3371" y="3233" font-size="18" fill="#474c64" font-weight="600">reasoning and abstraction</text>
+<text x="3371" y="3257" font-size="14" fill="#536d5b" font-weight="400">In progress · Application and consortium preparation</text>
+<text x="3371" y="3277" font-size="12" fill="#778478" font-weight="400">Licence: Not a software distribution</text>
+</g>
+<g class="node" data-id="Funding / EIC Pathfinder Challenges 2027 — safe and governed continual learning of AI agents" data-group="ANULUM-COMPANY-OPERATIONS" tabindex="0" role="button" aria-label="Funding / EIC Pathfinder Challenges 2027 — safe and governed continual learning of AI agents"><title>Funding / EIC Pathfinder Challenges 2027 — safe and governed continual learning of AI agents: Funding preparation. Work-package context: B, C. Partner profile: to be decided with partners.</title>
+<rect x="2730" y="3301" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2730" y="3316" width="5" height="73" rx="2" fill="#474c64"/>
+<text x="2746" y="3328" font-size="18" fill="#474c64" font-weight="600">Funding / EIC Pathfinder Challenges 2027 — safe</text>
+<text x="2746" y="3351" font-size="18" fill="#474c64" font-weight="600">and governed continual learning of AI agents</text>
+<text x="2746" y="3375" font-size="14" fill="#536d5b" font-weight="400">In progress · Application and consortium preparation</text>
+<text x="2746" y="3395" font-size="12" fill="#778478" font-weight="400">Licence: Not a software distribution</text>
+</g>
+<g class="node" data-id="Funding / EIC Pathfinder Open 2027, first stage" data-group="ANULUM-COMPANY-OPERATIONS" tabindex="0" role="button" aria-label="Funding / EIC Pathfinder Open 2027, first stage"><title>Funding / EIC Pathfinder Open 2027, first stage: Funding preparation. Work-package context: B, C, D, F. Partner profile: two to four groups: learning of dynamical systems, verification of learned models, an experimental or high-fidelity simulation group, a Member State institution.</title>
+<rect x="3355" y="3301" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="3355" y="3316" width="5" height="73" rx="2" fill="#474c64"/>
+<text x="3371" y="3328" font-size="18" fill="#474c64" font-weight="600">Funding / EIC Pathfinder Open 2027, first stage</text>
+<text x="3371" y="3375" font-size="14" fill="#536d5b" font-weight="400">In progress · Application and consortium preparation</text>
+<text x="3371" y="3395" font-size="12" fill="#778478" font-weight="400">Licence: Not a software distribution</text>
+</g>
+<g class="node" data-id="Funding / Foresight Institute — AI for Science &amp; Safety Nodes" data-group="ANULUM-COMPANY-OPERATIONS" tabindex="0" role="button" aria-label="Funding / Foresight Institute — AI for Science &amp; Safety Nodes"><title>Funding / Foresight Institute — AI for Science &amp; Safety Nodes: Funding preparation. Work-package context: A: metered operation, a metered compute node, an outside replication. Partner profile: none required.</title>
+<rect x="2730" y="3419" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2730" y="3434" width="5" height="73" rx="2" fill="#474c64"/>
+<text x="2746" y="3446" font-size="18" fill="#474c64" font-weight="600">Funding / Foresight Institute — AI for Science</text>
+<text x="2746" y="3469" font-size="18" fill="#474c64" font-weight="600">&amp; Safety Nodes</text>
+<text x="2746" y="3493" font-size="14" fill="#536d5b" font-weight="400">In progress · Application and consortium preparation</text>
+<text x="2746" y="3513" font-size="12" fill="#778478" font-weight="400">Licence: Not a software distribution</text>
+</g>
+<g class="node" data-id="Funding / Horizon Europe Cluster 5 — data and foundation models for the energy system (innovation action)" data-group="ANULUM-COMPANY-OPERATIONS" tabindex="0" role="button" aria-label="Funding / Horizon Europe Cluster 5 — data and foundation models for the energy system (innovation action)"><title>Funding / Horizon Europe Cluster 5 — data and foundation models for the energy system (innovation action): Funding preparation. Work-package context: C, G (grids): an open verification and replication work package. Partner profile: a consortium with grid data that lacks independent, open verification of its learned models.</title>
+<rect x="3355" y="3419" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="3355" y="3434" width="5" height="73" rx="2" fill="#474c64"/>
+<text x="3371" y="3446" font-size="18" fill="#474c64" font-weight="600">Funding / Horizon Europe Cluster 5 — data and</text>
+<text x="3371" y="3469" font-size="18" fill="#474c64" font-weight="600">foundation models for the energy system</text>
+<text x="3371" y="3493" font-size="14" fill="#536d5b" font-weight="400">In progress · Application and consortium preparation</text>
+<text x="3371" y="3513" font-size="12" fill="#778478" font-weight="400">Licence: Not a software distribution</text>
+</g>
+<g class="node" data-id="Funding / Horizon Europe RAISE pilot — Automated Scientific Discovery, materials science" data-group="ANULUM-COMPANY-OPERATIONS" tabindex="0" role="button" aria-label="Funding / Horizon Europe RAISE pilot — Automated Scientific Discovery, materials science"><title>Funding / Horizon Europe RAISE pilot — Automated Scientific Discovery, materials science: Funding preparation. Work-package context: B, D, E, G (chemistry and materials). Partner profile: an automated laboratory with a digital workflow; a coordinating institution in a Member State.</title>
+<rect x="2730" y="3537" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2730" y="3552" width="5" height="73" rx="2" fill="#474c64"/>
+<text x="2746" y="3564" font-size="18" fill="#474c64" font-weight="600">Funding / Horizon Europe RAISE pilot —</text>
+<text x="2746" y="3587" font-size="18" fill="#474c64" font-weight="600">Automated Scientific Discovery, materials</text>
+<text x="2746" y="3611" font-size="14" fill="#536d5b" font-weight="400">In progress · Application and consortium preparation</text>
+<text x="2746" y="3631" font-size="12" fill="#778478" font-weight="400">Licence: Not a software distribution</text>
+</g>
+<g class="node" data-id="Funding / Horizon Europe — Frontier AI: frameworks for scaling models (research and innovation action)" data-group="ANULUM-COMPANY-OPERATIONS" tabindex="0" role="button" aria-label="Funding / Horizon Europe — Frontier AI: frameworks for scaling models (research and innovation action)"><title>Funding / Horizon Europe — Frontier AI: frameworks for scaling models (research and innovation action): Funding preparation. Work-package context: A, D: the agent organisation as an auditable experiment layer. Partner profile: a consortium on model scaling that wants its experiments recorded and checked independently.</title>
+<rect x="3355" y="3537" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="3355" y="3552" width="5" height="73" rx="2" fill="#474c64"/>
+<text x="3371" y="3564" font-size="18" fill="#474c64" font-weight="600">Funding / Horizon Europe — Frontier AI:</text>
+<text x="3371" y="3587" font-size="18" fill="#474c64" font-weight="600">frameworks for scaling models (research and</text>
+<text x="3371" y="3611" font-size="14" fill="#536d5b" font-weight="400">In progress · Application and consortium preparation</text>
+<text x="3371" y="3631" font-size="12" fill="#778478" font-weight="400">Licence: Not a software distribution</text>
+</g>
+<g class="node" data-id="Funding / Horizon Europe — Frontier AI: safe and compute-efficient solutions (research and innovation action)" data-group="ANULUM-COMPANY-OPERATIONS" tabindex="0" role="button" aria-label="Funding / Horizon Europe — Frontier AI: safe and compute-efficient solutions (research and innovation action)"><title>Funding / Horizon Europe — Frontier AI: safe and compute-efficient solutions (research and innovation action): Funding preparation. Work-package context: A, D: verification, evaluation by agents, measured efficiency. Partner profile: a consortium training a European frontier model that needs independent evaluation records.</title>
+<rect x="2730" y="3655" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2730" y="3670" width="5" height="73" rx="2" fill="#474c64"/>
+<text x="2746" y="3682" font-size="18" fill="#474c64" font-weight="600">Funding / Horizon Europe — Frontier AI: safe</text>
+<text x="2746" y="3705" font-size="18" fill="#474c64" font-weight="600">and compute-efficient solutions (research and</text>
+<text x="2746" y="3729" font-size="14" fill="#536d5b" font-weight="400">In progress · Application and consortium preparation</text>
+<text x="2746" y="3749" font-size="12" fill="#778478" font-weight="400">Licence: Not a software distribution</text>
+</g>
+<g class="node" data-id="Funding / National innovation funding for young companies; private investors" data-group="ANULUM-COMPANY-OPERATIONS" tabindex="0" role="button" aria-label="Funding / National innovation funding for young companies; private investors"><title>Funding / National innovation funding for young companies; private investors: Funding preparation. Work-package context: all blocks. Partner profile: investors who fund open research infrastructure.</title>
+<rect x="3355" y="3655" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="3355" y="3670" width="5" height="73" rx="2" fill="#474c64"/>
+<text x="3371" y="3682" font-size="18" fill="#474c64" font-weight="600">Funding / National innovation funding for young</text>
+<text x="3371" y="3705" font-size="18" fill="#474c64" font-weight="600">companies; private investors</text>
+<text x="3371" y="3729" font-size="14" fill="#536d5b" font-weight="400">In progress · Application and consortium preparation</text>
+<text x="3371" y="3749" font-size="12" fill="#778478" font-weight="400">Licence: Not a software distribution</text>
+</g>
+<g class="node" data-id="Funding / Provider and compute support (model usage, research access, EuroHPC AI Factories access modes)" data-group="ANULUM-COMPANY-OPERATIONS" tabindex="0" role="button" aria-label="Funding / Provider and compute support (model usage, research access, EuroHPC AI Factories access modes)"><title>Funding / Provider and compute support (model usage, research access, EuroHPC AI Factories access modes): Funding preparation. Work-package context: A, training compute for C. Partner profile: providers of compute and model usage.</title>
+<rect x="2730" y="3773" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2730" y="3788" width="5" height="73" rx="2" fill="#474c64"/>
+<text x="2746" y="3800" font-size="18" fill="#474c64" font-weight="600">Funding / Provider and compute support (model</text>
+<text x="2746" y="3823" font-size="18" fill="#474c64" font-weight="600">usage, research access, EuroHPC AI Factories</text>
+<text x="2746" y="3847" font-size="14" fill="#536d5b" font-weight="400">In progress · Application and consortium preparation</text>
+<text x="2746" y="3867" font-size="12" fill="#778478" font-weight="400">Licence: Not a software distribution</text>
+</g>
+<g class="node" data-id="Funding / Rolling small grants for open research (several programmes)" data-group="ANULUM-COMPANY-OPERATIONS" tabindex="0" role="button" aria-label="Funding / Rolling small grants for open research (several programmes)"><title>Funding / Rolling small grants for open research (several programmes): Funding preparation. Work-package context: A, part of F. Partner profile: none required.</title>
+<rect x="3355" y="3773" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="3355" y="3788" width="5" height="73" rx="2" fill="#474c64"/>
+<text x="3371" y="3800" font-size="18" fill="#474c64" font-weight="600">Funding / Rolling small grants for open</text>
+<text x="3371" y="3823" font-size="18" fill="#474c64" font-weight="600">research (several programmes)</text>
+<text x="3371" y="3847" font-size="14" fill="#536d5b" font-weight="400">In progress · Application and consortium preparation</text>
+<text x="3371" y="3867" font-size="12" fill="#778478" font-weight="400">Licence: Not a software distribution</text>
+</g>
+<g class="node" data-id="funding:sprind-ai-native-chip-design-2026" data-group="ANULUM-COMPANY-OPERATIONS" tabindex="0" role="button" aria-label="Funding / SPRIND AI-Native Chip Design"><title>Funding / SPRIND AI-Native Chip Design: AI-driven chip design and verification work-package preparation.</title>
+<rect x="2730" y="3891" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2730" y="3906" width="5" height="73" rx="2" fill="#474c64"/>
+<text x="2746" y="3918" font-size="18" fill="#474c64" font-weight="600">Funding / SPRIND AI-Native Chip Design</text>
+<text x="2746" y="3965" font-size="14" fill="#536d5b" font-weight="400">In progress · Application, team and company preparation</text>
+<text x="2746" y="3985" font-size="12" fill="#778478" font-weight="400">Licence: Call-specific participation terms under review</text>
+</g>
+<g class="node" data-id="Joint research institute" data-group="ANULUM-COMPANY-OPERATIONS" tabindex="0" role="button" aria-label="Joint research institute"><title>Joint research institute: Pre-seed joint founding offer: people, compute, research governance and partner work packages.</title>
+<rect x="3355" y="3891" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="3355" y="3906" width="5" height="73" rx="2" fill="#474c64"/>
+<text x="3371" y="3918" font-size="18" fill="#474c64" font-weight="600">Joint research institute</text>
+<text x="3371" y="3965" font-size="14" fill="#536d5b" font-weight="400">In progress · Research and architecture development</text>
+<text x="3371" y="3985" font-size="12" fill="#778478" font-weight="400">Licence: Programme; terms to be settled</text>
+</g>
+<g class="node" data-id="Laboratory / oscillator and electronics bench" data-group="ANULUM-COMPANY-OPERATIONS" tabindex="0" role="button" aria-label="Laboratory / oscillator and electronics bench"><title>Laboratory / oscillator and electronics bench: Existing electronics bench and automation work for oscillator and power-electronics experiments.</title>
+<rect x="2730" y="4009" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2730" y="4024" width="5" height="73" rx="2" fill="#474c64"/>
+<text x="2746" y="4036" font-size="18" fill="#474c64" font-weight="600">Laboratory / oscillator and electronics bench</text>
+<text x="2746" y="4083" font-size="14" fill="#536d5b" font-weight="400">In progress · Research and architecture development</text>
+<text x="2746" y="4103" font-size="12" fill="#778478" font-weight="400">Licence: Programme; terms to be settled</text>
+</g>
+<g class="node" data-id="ANULUM" data-group="ANULUM-COMPANY-OPERATIONS" tabindex="0" role="button" aria-label="ANULUM"><title>ANULUM: Public profile, research portfolio and evidence navigation.</title>
+<rect x="3355" y="4009" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="3355" y="4024" width="5" height="73" rx="2" fill="#474c64"/>
+<text x="3371" y="4036" font-size="18" fill="#474c64" font-weight="600">ANULUM</text>
+<text x="3371" y="4083" font-size="14" fill="#536d5b" font-weight="400">In progress · Implemented surfaces and continued integration</text>
+<text x="3371" y="4103" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="ANULUM-CORRESPONDENCE" data-group="ANULUM-COMPANY-OPERATIONS" tabindex="0" role="button" aria-label="ANULUM-CORRESPONDENCE"><title>ANULUM-CORRESPONDENCE: Read-only mailbox intake, pseudonymised metadata and local human-approved draft preparation.</title>
+<rect x="2730" y="4127" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2730" y="4142" width="5" height="73" rx="2" fill="#474c64"/>
+<text x="2746" y="4154" font-size="18" fill="#474c64" font-weight="600">ANULUM-CORRESPONDENCE</text>
+<text x="2746" y="4201" font-size="14" fill="#536d5b" font-weight="400">In progress · Implemented surfaces and continued integration</text>
+<text x="2746" y="4221" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+</g>
+<g class="node" data-id="Company / business/" data-group="ANULUM-COMPANY-OPERATIONS" tabindex="0" role="button" aria-label="Company / business/"><title>Company / business/: Products and offers of the company, business plans, investor material and its reviews, market and pricing</title>
+<rect x="3355" y="4127" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="3355" y="4142" width="5" height="73" rx="2" fill="#474c64"/>
+<text x="3371" y="4154" font-size="18" fill="#474c64" font-weight="600">Company / business/</text>
+<text x="3371" y="4201" font-size="14" fill="#536d5b" font-weight="400">In progress · Operational work and system architecture</text>
+<text x="3371" y="4221" font-size="12" fill="#778478" font-weight="400">Licence: Not a software distribution</text>
+</g>
+<g class="node" data-id="Company / challenges/" data-group="ANULUM-COMPANY-OPERATIONS" tabindex="0" role="button" aria-label="Company / challenges/"><title>Company / challenges/: company register of challenges we take part in or prepare; see `challenges/LOCATION.md`</title>
+<rect x="2730" y="4245" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2730" y="4260" width="5" height="73" rx="2" fill="#474c64"/>
+<text x="2746" y="4272" font-size="18" fill="#474c64" font-weight="600">Company / challenges/</text>
+<text x="2746" y="4319" font-size="14" fill="#536d5b" font-weight="400">In progress · Operational work and system architecture</text>
+<text x="2746" y="4339" font-size="12" fill="#778478" font-weight="400">Licence: Not a software distribution</text>
+</g>
+<g class="node" data-id="Company / correspondence/" data-group="ANULUM-COMPANY-OPERATIONS" tabindex="0" role="button" aria-label="Company / correspondence/"><title>Company / correspondence/: Mail dispositions, draft triage and send records, plans for the correspondence system</title>
+<rect x="3355" y="4245" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="3355" y="4260" width="5" height="73" rx="2" fill="#474c64"/>
+<text x="3371" y="4272" font-size="18" fill="#474c64" font-weight="600">Company / correspondence/</text>
+<text x="3371" y="4319" font-size="14" fill="#536d5b" font-weight="400">In progress · Operational work and system architecture</text>
+<text x="3371" y="4339" font-size="12" fill="#778478" font-weight="400">Licence: Not a software distribution</text>
+</g>
+<g class="node" data-id="Company / fleet/" data-group="ANULUM-COMPANY-OPERATIONS" tabindex="0" role="button" aria-label="Company / fleet/"><title>Company / fleet/: The CEO view of groups and seats: review routing and custody, peer delivery reconciliation, work delegated to a group with its plan</title>
+<rect x="2730" y="4363" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2730" y="4378" width="5" height="73" rx="2" fill="#474c64"/>
+<text x="2746" y="4390" font-size="18" fill="#474c64" font-weight="600">Company / fleet/</text>
+<text x="2746" y="4437" font-size="14" fill="#536d5b" font-weight="400">In progress · Operational work and system architecture</text>
+<text x="2746" y="4457" font-size="12" fill="#778478" font-weight="400">Licence: Not a software distribution</text>
+</g>
+<g class="node" data-id="Company / funding/" data-group="ANULUM-COMPANY-OPERATIONS" tabindex="0" role="button" aria-label="Company / funding/"><title>Company / funding/: Grants, funding calls, credits and support programmes</title>
+<rect x="3355" y="4363" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="3355" y="4378" width="5" height="73" rx="2" fill="#474c64"/>
+<text x="3371" y="4390" font-size="18" fill="#474c64" font-weight="600">Company / funding/</text>
+<text x="3371" y="4437" font-size="14" fill="#536d5b" font-weight="400">In progress · Operational work and system architecture</text>
+<text x="3371" y="4457" font-size="12" fill="#778478" font-weight="400">Licence: Not a software distribution</text>
+</g>
+<g class="node" data-id="Company / governance/" data-group="ANULUM-COMPANY-OPERATIONS" tabindex="0" role="button" aria-label="Company / governance/"><title>Company / governance/: Owner decisions and intents about the company layer, architecture and policy analyses of the company and agent system (portfolio operating system, secret broker design and its ADRs, rule-loading and policy evaluations, agent metadata inventory)</title>
+<rect x="2730" y="4481" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2730" y="4496" width="5" height="73" rx="2" fill="#474c64"/>
+<text x="2746" y="4508" font-size="18" fill="#474c64" font-weight="600">Company / governance/</text>
+<text x="2746" y="4555" font-size="14" fill="#536d5b" font-weight="400">In progress · Operational work and system architecture</text>
+<text x="2746" y="4575" font-size="12" fill="#778478" font-weight="400">Licence: Not a software distribution</text>
+</g>
+<g class="node" data-id="Company / infrastructure/" data-group="ANULUM-COMPANY-OPERATIONS" tabindex="0" role="button" aria-label="Company / infrastructure/"><title>Company / infrastructure/: Company accounts and assets: GitHub topology and billing, CI billing, server keys, storage audits and cleanup tracking, domain readiness, environment debt, alerting of the ML350</title>
+<rect x="3355" y="4481" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="3355" y="4496" width="5" height="73" rx="2" fill="#474c64"/>
+<text x="3371" y="4508" font-size="18" fill="#474c64" font-weight="600">Company / infrastructure/</text>
+<text x="3371" y="4555" font-size="14" fill="#536d5b" font-weight="400">In progress · Operational work and system architecture</text>
+<text x="3371" y="4575" font-size="12" fill="#778478" font-weight="400">Licence: Not a software distribution</text>
+</g>
+<g class="node" data-id="Company / public_presence/" data-group="ANULUM-COMPANY-OPERATIONS" tabindex="0" role="button" aria-label="Company / public_presence/"><title>Company / public_presence/: Company briefs for websites, social channels and press, slogans, audits of the public commercial surface</title>
+<rect x="2730" y="4599" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2730" y="4614" width="5" height="73" rx="2" fill="#474c64"/>
+<text x="2746" y="4626" font-size="18" fill="#474c64" font-weight="600">Company / public_presence/</text>
+<text x="2746" y="4673" font-size="14" fill="#536d5b" font-weight="400">In progress · Operational work and system architecture</text>
+<text x="2746" y="4693" font-size="12" fill="#778478" font-weight="400">Licence: Not a software distribution</text>
+</g>
+<g class="node" data-id="AAARTHUUS-CH" data-group="WEBMASTER" tabindex="0" role="button" aria-label="AAARTHUUS-CH"><title>AAARTHUUS-CH: Website and public-presence workspace; hosting state is not inferred from local files.</title>
+<rect x="1410" y="3465" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="1410" y="3480" width="5" height="73" rx="2" fill="#41674c"/>
+<text x="1426" y="3492" font-size="18" fill="#41674c" font-weight="600">AAARTHUUS-CH</text>
+<text x="1426" y="3539" font-size="14" fill="#536d5b" font-weight="400">In progress · Public-presence work</text>
+<text x="1426" y="3559" font-size="12" fill="#778478" font-weight="400">Licence: Not stated</text>
+</g>
+<g class="node" data-id="AAARTHUUS-LI" data-group="WEBMASTER" tabindex="0" role="button" aria-label="AAARTHUUS-LI"><title>AAARTHUUS-LI: Website and public-presence workspace; hosting state is not inferred from local files.</title>
+<rect x="2035" y="3465" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2035" y="3480" width="5" height="73" rx="2" fill="#41674c"/>
+<text x="2051" y="3492" font-size="18" fill="#41674c" font-weight="600">AAARTHUUS-LI</text>
+<text x="2051" y="3539" font-size="14" fill="#536d5b" font-weight="400">In progress · Public-presence work</text>
+<text x="2051" y="3559" font-size="12" fill="#778478" font-weight="400">Licence: Not stated</text>
+</g>
+<g class="node" data-id="ANULUM-CH" data-group="WEBMASTER" tabindex="0" role="button" aria-label="ANULUM-CH"><title>ANULUM-CH: Website and public-presence workspace; hosting state is not inferred from local files.</title>
+<rect x="1410" y="3583" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="1410" y="3598" width="5" height="73" rx="2" fill="#41674c"/>
+<text x="1426" y="3610" font-size="18" fill="#41674c" font-weight="600">ANULUM-CH</text>
+<text x="1426" y="3657" font-size="14" fill="#536d5b" font-weight="400">In progress · Public-presence work</text>
+<text x="1426" y="3677" font-size="12" fill="#778478" font-weight="400">Licence: Not stated</text>
+</g>
+<g class="node" data-id="ANULUM-CO-UK" data-group="WEBMASTER" tabindex="0" role="button" aria-label="ANULUM-CO-UK"><title>ANULUM-CO-UK: Website and public-presence workspace; hosting state is not inferred from local files.</title>
+<rect x="2035" y="3583" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2035" y="3598" width="5" height="73" rx="2" fill="#41674c"/>
+<text x="2051" y="3610" font-size="18" fill="#41674c" font-weight="600">ANULUM-CO-UK</text>
+<text x="2051" y="3657" font-size="14" fill="#536d5b" font-weight="400">In progress · Public-presence work</text>
+<text x="2051" y="3677" font-size="12" fill="#778478" font-weight="400">Licence: Not stated</text>
+</g>
+<g class="node" data-id="ANULUM-COM" data-group="WEBMASTER" tabindex="0" role="button" aria-label="ANULUM-COM"><title>ANULUM-COM: Website and public-presence workspace; hosting state is not inferred from local files.</title>
+<rect x="1410" y="3701" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="1410" y="3716" width="5" height="73" rx="2" fill="#41674c"/>
+<text x="1426" y="3728" font-size="18" fill="#41674c" font-weight="600">ANULUM-COM</text>
+<text x="1426" y="3775" font-size="14" fill="#536d5b" font-weight="400">In progress · Public-presence work</text>
+<text x="1426" y="3795" font-size="12" fill="#778478" font-weight="400">Licence: Not stated</text>
+</g>
+<g class="node" data-id="ANULUM-EU" data-group="WEBMASTER" tabindex="0" role="button" aria-label="ANULUM-EU"><title>ANULUM-EU: Website and public-presence workspace; hosting state is not inferred from local files.</title>
+<rect x="2035" y="3701" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2035" y="3716" width="5" height="73" rx="2" fill="#41674c"/>
+<text x="2051" y="3728" font-size="18" fill="#41674c" font-weight="600">ANULUM-EU</text>
+<text x="2051" y="3775" font-size="14" fill="#536d5b" font-weight="400">In progress · Public-presence work</text>
+<text x="2051" y="3795" font-size="12" fill="#778478" font-weight="400">Licence: Not stated</text>
+</g>
+<g class="node" data-id="ANULUM-LI" data-group="WEBMASTER" tabindex="0" role="button" aria-label="ANULUM-LI"><title>ANULUM-LI: Website and public-presence workspace; hosting state is not inferred from local files.</title>
+<rect x="1410" y="3819" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="1410" y="3834" width="5" height="73" rx="2" fill="#41674c"/>
+<text x="1426" y="3846" font-size="18" fill="#41674c" font-weight="600">ANULUM-LI</text>
+<text x="1426" y="3893" font-size="14" fill="#536d5b" font-weight="400">In progress · Public-presence work</text>
+<text x="1426" y="3913" font-size="12" fill="#778478" font-weight="400">Licence: Not stated</text>
+</g>
+<g class="node" data-id="ANULUM-ORG" data-group="WEBMASTER" tabindex="0" role="button" aria-label="ANULUM-ORG"><title>ANULUM-ORG: Website and public-presence workspace; hosting state is not inferred from local files.</title>
+<rect x="2035" y="3819" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2035" y="3834" width="5" height="73" rx="2" fill="#41674c"/>
+<text x="2051" y="3846" font-size="18" fill="#41674c" font-weight="600">ANULUM-ORG</text>
+<text x="2051" y="3893" font-size="14" fill="#536d5b" font-weight="400">In progress · Public-presence work</text>
+<text x="2051" y="3913" font-size="12" fill="#778478" font-weight="400">Licence: Not stated</text>
+</g>
+<g class="node" data-id="ANULUM-SK" data-group="WEBMASTER" tabindex="0" role="button" aria-label="ANULUM-SK"><title>ANULUM-SK: Website and public-presence workspace; hosting state is not inferred from local files.</title>
+<rect x="1410" y="3937" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="1410" y="3952" width="5" height="73" rx="2" fill="#41674c"/>
+<text x="1426" y="3964" font-size="18" fill="#41674c" font-weight="600">ANULUM-SK</text>
+<text x="1426" y="4011" font-size="14" fill="#536d5b" font-weight="400">In progress · Public-presence work</text>
+<text x="1426" y="4031" font-size="12" fill="#778478" font-weight="400">Licence: Not stated</text>
+</g>
+<g class="node" data-id="FORTISSTUDIO-COM" data-group="WEBMASTER" tabindex="0" role="button" aria-label="FORTISSTUDIO-COM"><title>FORTISSTUDIO-COM: Website and public-presence workspace; hosting state is not inferred from local files.</title>
+<rect x="2035" y="3937" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2035" y="3952" width="5" height="73" rx="2" fill="#41674c"/>
+<text x="2051" y="3964" font-size="18" fill="#41674c" font-weight="600">FORTISSTUDIO-COM</text>
+<text x="2051" y="4011" font-size="14" fill="#536d5b" font-weight="400">In progress · Public-presence work</text>
+<text x="2051" y="4031" font-size="12" fill="#778478" font-weight="400">Licence: Not stated</text>
+</g>
+<g class="node" data-id="INTEGRITA-SK" data-group="WEBMASTER" tabindex="0" role="button" aria-label="INTEGRITA-SK"><title>INTEGRITA-SK: Website and public-presence workspace; hosting state is not inferred from local files.</title>
+<rect x="1410" y="4055" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="1410" y="4070" width="5" height="73" rx="2" fill="#41674c"/>
+<text x="1426" y="4082" font-size="18" fill="#41674c" font-weight="600">INTEGRITA-SK</text>
+<text x="1426" y="4129" font-size="14" fill="#536d5b" font-weight="400">In progress · Public-presence work</text>
+<text x="1426" y="4149" font-size="12" fill="#778478" font-weight="400">Licence: Not stated</text>
+</g>
+<g class="node" data-id="NEVERIACI-SK" data-group="WEBMASTER" tabindex="0" role="button" aria-label="NEVERIACI-SK"><title>NEVERIACI-SK: Website and public-presence workspace; hosting state is not inferred from local files.</title>
+<rect x="2035" y="4055" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2035" y="4070" width="5" height="73" rx="2" fill="#41674c"/>
+<text x="2051" y="4082" font-size="18" fill="#41674c" font-weight="600">NEVERIACI-SK</text>
+<text x="2051" y="4129" font-size="14" fill="#536d5b" font-weight="400">In progress · Public-presence work</text>
+<text x="2051" y="4149" font-size="12" fill="#778478" font-weight="400">Licence: Not stated</text>
+</g>
+<g class="node" data-id="PARAZIT-SK" data-group="WEBMASTER" tabindex="0" role="button" aria-label="PARAZIT-SK"><title>PARAZIT-SK: Website and public-presence workspace; hosting state is not inferred from local files.</title>
+<rect x="1410" y="4173" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="1410" y="4188" width="5" height="73" rx="2" fill="#41674c"/>
+<text x="1426" y="4200" font-size="18" fill="#41674c" font-weight="600">PARAZIT-SK</text>
+<text x="1426" y="4247" font-size="14" fill="#536d5b" font-weight="400">In progress · Public-presence work</text>
+<text x="1426" y="4267" font-size="12" fill="#778478" font-weight="400">Licence: Not stated</text>
+</g>
+<g class="node" data-id="REMANENTIA-COM" data-group="WEBMASTER" tabindex="0" role="button" aria-label="REMANENTIA-COM"><title>REMANENTIA-COM: Website and public-presence workspace; hosting state is not inferred from local files.</title>
+<rect x="2035" y="4173" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
+<rect x="2035" y="4188" width="5" height="73" rx="2" fill="#41674c"/>
+<text x="2051" y="4200" font-size="18" fill="#41674c" font-weight="600">REMANENTIA-COM</text>
+<text x="2051" y="4247" font-size="14" fill="#536d5b" font-weight="400">In progress · Public-presence work</text>
+<text x="2051" y="4267" font-size="12" fill="#778478" font-weight="400">Licence: Not stated</text>
+</g>
+</g>
+<text x="65" y="5070" font-size="21" fill="#607366" font-weight="400">Source-bound snapshot. In progress describes active work; a released package and a qualified capability are separate facts.</text>
+</g></svg>

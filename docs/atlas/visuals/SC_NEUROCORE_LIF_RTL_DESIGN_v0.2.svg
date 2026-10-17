@@ -1,0 +1,94 @@
+<!-- SPDX-License-Identifier: AGPL-3.0-or-later -->
+<!-- Commercial license available -->
+<!-- © Concepts 1996–2026 Miroslav Šotek. All rights reserved. -->
+<!-- © Code 2020–2026 Miroslav Šotek. All rights reserved. -->
+<!-- ORCID: 0009-0009-3560-0851 -->
+<!-- Contact: www.anulum.li | protoscience@anulum.li -->
+<!-- ANULUM — Canonical LIF RTL design illustration -->
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1360" viewBox="0 0 1800 1360" role="img" aria-labelledby="title desc">
+<title id="title">SC-NeuroCore fixed-point LIF neuron — canonical RTL design</title>
+<desc id="desc">Source-derived design diagram, not a measured device. Runtime current, leak and gain generate signed product wires and shifted increments; noise enters the membrane sum. Sequential logic gives reset priority, then refractory handling, then threshold and spike/reset or membrane update. V_REST is an elaboration constant; the membrane and increments are signed W bits, the refractory counter is unsigned 32 bits and the spike is one bit. Source defaults use refractory zero, distinct from the supplier selected simulation with refractory two.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M1 1 L8 5 L1 9" fill="none" stroke="context-stroke" stroke-width="2"/></marker></defs>
+<rect width="1800" height="1360" fill="#f8f8f2"/>
+<g font-family="DejaVu Sans, sans-serif" fill="#173b30">
+<text x="60" y="62" font-size="22" fill="#627a69" font-weight="600">ANULUM / SC-NEUROCORE</text>
+<text x="60" y="122" font-size="42" fill="#173b30" font-weight="600">A source-defined neuron, from signals to state</text>
+<text x="60" y="162" font-size="22" fill="#526b60" font-weight="400">Fixed-point LIF RTL design · source snapshot 13 October 2026 · diagram for content review</text>
+<rect x="60" y="195" width="1680" height="64" rx="10" fill="#e8efe2"/>
+<text x="80" y="234" font-size="20" fill="#173b30" font-weight="400">Design illustration from hdl/sc_lif_neuron.v. It is not a measured hardware result or a model/backend equivalence claim.</text>
+<text x="60" y="303" font-size="20" fill="#627a69" font-weight="600">01  RUNTIME SIGNALS AND SIGNED ARITHMETIC</text>
+<rect x="60" y="335" width="310" height="250" rx="15" fill="#fff" stroke="#785987" stroke-width="2"/>
+<text x="82" y="372" font-size="24" fill="#785987" font-weight="600">Runtime ports</text>
+<text x="82" y="408" font-size="18" fill="#173b30" font-weight="400">I_t: input current</text>
+<text x="82" y="434" font-size="18" fill="#173b30" font-weight="400">leak_k: leak coefficient</text>
+<text x="82" y="460" font-size="18" fill="#173b30" font-weight="400">gain_k: input gain</text>
+<text x="82" y="486" font-size="18" fill="#173b30" font-weight="400">noise_in: external noise</text>
+<text x="82" y="512" font-size="18" fill="#173b30" font-weight="400">Signed W-bit values; W = 16</text>
+<rect x="430" y="335" width="420" height="135" rx="15" fill="#fff" stroke="#785987" stroke-width="2"/>
+<text x="452" y="372" font-size="24" fill="#785987" font-weight="600">Leak path</text>
+<text x="452" y="408" font-size="18" fill="#173b30" font-weight="400">leak_mul = (V_REST − v_reg) × leak_k</text>
+<text x="452" y="434" font-size="18" fill="#173b30" font-weight="400">dv_leak = leak_mul &gt;&gt;&gt; FRACTION</text>
+<rect x="430" y="500" width="420" height="135" rx="15" fill="#fff" stroke="#785987" stroke-width="2"/>
+<text x="452" y="537" font-size="24" fill="#785987" font-weight="600">Input path</text>
+<text x="452" y="573" font-size="18" fill="#173b30" font-weight="400">in_mul = I_t × gain_k</text>
+<text x="452" y="599" font-size="18" fill="#173b30" font-weight="400">dv_in = in_mul &gt;&gt;&gt; FRACTION</text>
+<rect x="930" y="365" width="470" height="230" rx="15" fill="#fff" stroke="#785987" stroke-width="2"/>
+<text x="952" y="402" font-size="24" fill="#785987" font-weight="600">Membrane proposal</text>
+<text x="952" y="438" font-size="18" fill="#173b30" font-weight="400">v_next = v_reg + dv_leak</text>
+<text x="952" y="464" font-size="18" fill="#173b30" font-weight="400">                  + dv_in + noise_in</text>
+<text x="952" y="490" font-size="18" fill="#173b30" font-weight="400">Product wires: signed 2W bits</text>
+<text x="952" y="516" font-size="18" fill="#173b30" font-weight="400">Increments and membrane: signed W bits</text>
+<rect x="1460" y="365" width="280" height="230" rx="15" fill="#fff" stroke="#785987" stroke-width="2"/>
+<text x="1482" y="395" font-size="21" fill="#785987" font-weight="600"><tspan>Membrane state</tspan><tspan x="1482" dy="28"> and constant</tspan></text>
+<text x="1482" y="461" font-size="18" fill="#173b30" font-weight="400">v_reg: clocked state</text>
+<text x="1482" y="487" font-size="18" fill="#173b30" font-weight="400">V_REST: constant</text><text x="1482" y="513" font-size="16" fill="#173b30">(compile/elaboration)</text>
+<text x="1482" y="539" font-size="18" fill="#173b30" font-weight="400">Source Q(FRACTION)</text>
+<text x="1482" y="565" font-size="18" fill="#173b30" font-weight="400">arithmetic, not mV</text>
+<path d="M 370 400 H 430" fill="none" stroke="#76578a" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M 370 535 H 430" fill="none" stroke="#76578a" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M 850 410 H 930" fill="none" stroke="#76578a" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M 850 563 H 930" fill="none" stroke="#76578a" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M 370 570 H 397 V 664 H 906 V 572 H 930" fill="none" stroke="#76578a" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="610" y="656" font-size="17" fill="#526b60" font-weight="400">noise_in enters the sum</text>
+<path d="M 1460 420 H 1400" fill="none" stroke="#76578a" stroke-width="3" marker-end="url(#arrow)" stroke-dasharray="9 6"/>
+<text x="1458" y="340" font-size="17" fill="#526b60" font-weight="400">current v_reg</text>
+<text x="60" y="714" font-size="20" fill="#627a69" font-weight="600">02  SEQUENTIAL PRIORITY — posedge clk OR negedge rst_n</text>
+<text x="60" y="740" font-size="17" fill="#526b60">Refractory counter: unsigned 32 bits; spike: 1 bit. Membrane and increments: signed W bits.</text>
+<rect x="60" y="752" width="450" height="180" rx="15" fill="#fff" stroke="#785987" stroke-width="2"/>
+<text x="82" y="789" font-size="24" fill="#785987" font-weight="600">1 · Reset asserted</text>
+<text x="82" y="825" font-size="18" fill="#173b30" font-weight="400">If rst_n is low:</text>
+<text x="82" y="851" font-size="18" fill="#173b30" font-weight="400">v_reg, v_out ← V_REST</text>
+<text x="82" y="877" font-size="18" fill="#173b30" font-weight="400">spike_out ← 0; counter ← 0</text>
+<rect x="555" y="752" width="450" height="180" rx="15" fill="#fff" stroke="#785987" stroke-width="2"/>
+<text x="577" y="789" font-size="24" fill="#785987" font-weight="600">2 · Refractory counter &gt; 0</text>
+<text x="577" y="825" font-size="18" fill="#173b30" font-weight="400">Otherwise: counter ← counter − 1</text>
+<text x="577" y="851" font-size="18" fill="#173b30" font-weight="400">v_reg, v_out ← V_REST</text>
+<text x="577" y="877" font-size="18" fill="#173b30" font-weight="400">spike_out ← 0</text>
+<rect x="1050" y="752" width="690" height="180" rx="15" fill="#fff" stroke="#785987" stroke-width="2"/>
+<text x="1072" y="789" font-size="24" fill="#785987" font-weight="600">3 · Threshold / membrane update</text>
+<text x="1072" y="825" font-size="18" fill="#173b30" font-weight="400">Otherwise, compare v_next ≥ V_THRESHOLD.</text>
+<text x="1072" y="851" font-size="18" fill="#173b30" font-weight="400">True: spike_out ← 1; v_reg, v_out ← V_RESET</text>
+<text x="1072" y="877" font-size="18" fill="#173b30" font-weight="400">counter ← REFRACTORY_PERIOD</text>
+<text x="1072" y="903" font-size="18" fill="#173b30" font-weight="400">False: spike_out ← 0; v_reg, v_out ← v_next</text>
+<path d="M 510 846 H 555" fill="none" stroke="#76578a" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M 1005 846 H 1050" fill="none" stroke="#76578a" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="517" y="818" font-size="16" fill="#526b60" font-weight="400">else</text>
+<text x="1012" y="818" font-size="16" fill="#526b60" font-weight="400">else</text>
+<path d="M 1170 595 V 709 H 1365 V 752" fill="none" stroke="#76578a" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="1200" y="701" font-size="17" fill="#526b60" font-weight="400">v_next used only in branch 3</text>
+<rect x="60" y="975" width="1680" height="135" rx="13" fill="#e9e5ef"/>
+<text x="80" y="1012" font-size="20" fill="#76578a" font-weight="600">CANONICAL SOURCE DEFAULTS</text>
+<text x="80" y="1051" font-size="20" fill="#173b30" font-weight="400">DATA_WIDTH = 16   ·   FRACTION = 8   ·   V_REST = 0   ·   V_RESET = 0   ·   V_THRESHOLD = 256   ·   REFRACTORY_PERIOD = 0</text>
+<text x="80" y="1083" font-size="17" fill="#526b60" font-weight="400">Threshold 256 is 1.0 in the source Q8 representation. Runtime leak_k and gain_k have no fixed value supplied here.</text>
+<text x="60" y="1160" font-size="25" fill="#173b30" font-weight="600">Source scope and limits</text>
+<text x="60" y="1199" font-size="18" fill="#173b30" font-weight="400">The supplier’s separate selected simulation used REFRACTORY_PERIOD = 2; its proof scope is not transferred to this default design.</text>
+<text x="60" y="1230" font-size="18" fill="#173b30" font-weight="400">Width/overflow behaviour follows the original RTL; this illustration adds no saturation, widening fix, private-candidate adoption or physical timing.</text>
+<text x="60" y="1274" font-size="17" fill="#526b60" font-weight="400">Source SHA-256: 4a9a8beeb6edca9a6986f6d5f8a75e5f96e67d18ca95f37759f69ee243c34860</text>
+<text x="60" y="1315" font-size="17" fill="#526b60" font-weight="400">© Miroslav Šotek · AGPL-3.0-or-later · commercial licence available · www.anulum.li</text>
+<path d="M 1600 365 V 321 H 610 V 335" fill="none" stroke="#76578a" stroke-width="3" stroke-dasharray="9 6" marker-end="url(#arrow)"/>
+<text x="930" y="313" font-size="17" fill="#526b60">current v_reg and V_REST constant feed the leak path</text>
+<path d="M 285 932 V 950 H 1770 V 545 H 1740" fill="none" stroke="#76578a" stroke-width="3" stroke-dasharray="9 6" marker-end="url(#arrow)"/>
+<path d="M 780 932 V 950 M 1395 932 V 950" fill="none" stroke="#76578a" stroke-width="3" stroke-dasharray="9 6"/>
+<text x="955" y="945" font-size="15" fill="#526b60">selected branch updates clocked state and outputs</text>
+</g></svg>

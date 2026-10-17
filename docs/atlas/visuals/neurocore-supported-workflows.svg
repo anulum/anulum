@@ -1,0 +1,76 @@
+<!--
+SPDX-License-Identifier: AGPL-3.0-or-later
+Commercial license available
+© Concepts 1996–2026 Miroslav Šotek. All rights reserved.
+© Code 2020–2026 Miroslav Šotek. All rights reserved.
+ORCID: 0009-0009-3560-0851
+Contact: www.anulum.li | protoscience@anulum.li
+ANULUM — Computing workflow architecture
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1300" role="img" aria-labelledby="title description"><title id="title">NeuroCore: from neural models to inspectable outputs</title><desc id="description">Base stochastic and equation-defined workflows, optional execution surfaces and separate hardware evidence. Source inspection does not qualify every model or a physical device.</desc>
+<defs><marker id="arrow" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 Z" fill="#477655"/></marker></defs>
+<rect width="1440" height="1300" fill="#fafbf8"/><g font-family="DejaVu Sans,sans-serif">
+<text x="54" y="44" font-size="17" font-weight="600" fill="#506958">ANULUM / SC NEUROMORPHIC COMPUTING SYSTEMS</text>
+<text x="54" y="96" font-size="34" font-weight="600" fill="#19392d">NeuroCore: from neural models to inspectable outputs</text>
+<text x="54" y="132" font-size="19" font-weight="400" fill="#506958">In progress · inspected source 2026-10-15 · workflows and evidence retain their own scope</text>
+<text x="54" y="191" font-size="19" font-weight="600" fill="#19392d">BASE-PACKAGE WORKFLOWS</text>
+<rect x="54" y="214" width="400" height="176" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="74" y="251" font-size="23" font-weight="600" fill="#19392d">Neuron and signal inputs</text>
+<text x="74" y="291" font-size="19" font-weight="400" fill="#506958">State, stimuli and time step</text>
+<text x="74" y="319" font-size="19" font-weight="400" fill="#506958">Seeded stochastic representation</text>
+<text x="74" y="347" font-size="19" font-weight="400" fill="#506958">Declared equation / threshold</text>
+<rect x="520" y="214" width="400" height="176" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="540" y="251" font-size="23" font-weight="600" fill="#19392d">Software computation</text>
+<text x="540" y="291" font-size="19" font-weight="400" fill="#506958">Stochastic neuron stepping</text>
+<text x="540" y="319" font-size="19" font-weight="400" fill="#506958">Independent bitstream product</text>
+<text x="540" y="347" font-size="19" font-weight="400" fill="#506958">Equation-defined simulation</text>
+<rect x="986" y="214" width="400" height="176" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="1006" y="251" font-size="23" font-weight="600" fill="#19392d">Inspectable observations</text>
+<text x="1006" y="291" font-size="19" font-weight="400" fill="#506958">Spikes and evolving state</text>
+<text x="1006" y="319" font-size="19" font-weight="400" fill="#506958">Decoded stochastic estimate</text>
+<text x="1006" y="347" font-size="19" font-weight="400" fill="#506958">Declared model and parameters</text>
+<path d="M454 302 H516" fill="none" stroke="#477655" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M920 302 H982" fill="none" stroke="#477655" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="54" y="418" width="1332" height="94" rx="16" fill="#f3f1e9" stroke="#d6c9a8" stroke-width="2"/>
+<text x="75" y="453" font-size="21" font-weight="600" fill="#19392d">Arithmetic meaning depends on encoding and correlation.</text>
+<text x="75" y="486" font-size="20" font-weight="400" fill="#506958">AND estimates a probability product for independent streams; reusing a stream changes the result.</text>
+<text x="54" y="567" font-size="19" font-weight="600" fill="#19392d">EXECUTION AND PACKAGE SURFACES</text>
+<rect x="54" y="592" width="400" height="174" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="74" y="629" font-size="23" font-weight="600" fill="#19392d">Base wheel and extras</text>
+<text x="74" y="669" font-size="19" font-weight="400" fill="#506958">Supported base examples</text>
+<text x="74" y="697" font-size="19" font-weight="400" fill="#506958">Optional features via extras</text>
+<text x="74" y="725" font-size="19" font-weight="400" fill="#506958">Separate Rust engine</text>
+<rect x="520" y="592" width="400" height="174" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="540" y="629" font-size="23" font-weight="600" fill="#19392d">Canonical SC selector</text>
+<text x="540" y="669" font-size="19" font-weight="400" fill="#506958">Captured probes: Rust / NumPy</text>
+<text x="540" y="697" font-size="19" font-weight="400" fill="#506958">Fallback to NumPy</text>
+<text x="540" y="725" font-size="19" font-weight="400" fill="#506958">Per-package dispatch is separate</text>
+<rect x="986" y="592" width="400" height="174" rx="16" fill="#e8f0f7" stroke="#b7cbbb" stroke-width="2"/>
+<text x="1006" y="629" font-size="23" font-weight="600" fill="#19392d">Source-checkout research</text>
+<text x="1006" y="669" font-size="19" font-weight="400" fill="#506958">Analysis and world_model</text>
+<text x="1006" y="697" font-size="19" font-weight="400" fill="#506958">Research / optional consumers</text>
+<text x="1006" y="725" font-size="19" font-weight="400" fill="#506958">Each has its own prerequisites</text>
+<text x="54" y="822" font-size="19" font-weight="600" fill="#19392d">SELECTED HARDWARE WORKFLOW</text>
+<rect x="54" y="847" width="400" height="170" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="74" y="884" font-size="23" font-weight="600" fill="#19392d">Selected equations</text>
+<text x="74" y="924" font-size="19" font-weight="400" fill="#506958">Explicit arithmetic and time step</text>
+<text x="74" y="952" font-size="19" font-weight="400" fill="#506958">Threshold, reset and precision</text>
+<text x="74" y="980" font-size="19" font-weight="400" fill="#506958">Source-model fidelity evidence</text>
+<rect x="520" y="847" width="400" height="170" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="540" y="884" font-size="23" font-weight="600" fill="#19392d">Generated Verilog text</text>
+<text x="540" y="924" font-size="19" font-weight="400" fill="#506958">Fixed-point representation</text>
+<text x="540" y="952" font-size="19" font-weight="400" fill="#506958">Selected supported equations</text>
+<text x="540" y="980" font-size="19" font-weight="400" fill="#506958">Inspect model meaning</text>
+<rect x="986" y="847" width="400" height="170" rx="16" fill="#e8f0f7" stroke="#b7cbbb" stroke-width="2"/>
+<text x="1006" y="884" font-size="23" font-weight="600" fill="#19392d">Separate acceptance stages</text>
+<text x="1006" y="924" font-size="19" font-weight="400" fill="#506958">Python / RTL comparison</text>
+<text x="1006" y="952" font-size="19" font-weight="400" fill="#506958">Synthesis and target timing</text>
+<text x="1006" y="980" font-size="19" font-weight="400" fill="#506958">Measured device behaviour</text>
+<path d="M454 932 H516" fill="none" stroke="#477655" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M920 932 H982" fill="none" stroke="#477655" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="54" y="1049" width="1332" height="142" rx="16" fill="#f3f1e9" stroke="#d6c9a8" stroke-width="2"/>
+<text x="75" y="1087" font-size="20" font-weight="600" fill="#19392d">EVIDENCE STAYS SPECIFIC TO THE MODEL, PATH AND TARGET</text>
+<text x="75" y="1123" font-size="20" font-weight="400" fill="#506958">Software parity, source-model fidelity and hardware behaviour require distinct evidence.</text>
+<text x="75" y="1158" font-size="19" font-weight="400" fill="#506958">Generated RTL or a polyglot implementation does not establish full catalogue or device qualification.</text>
+<text x="54" y="1244" font-size="18" font-weight="400" fill="#506958">Dated source inspection · examples not rerun here · source-owner and publication review pending</text>
+</g><metadata>{&quot;source_capture&quot;: &quot;2026-10-15T20:45:20.185924+00:00&quot;, &quot;source_fingerprints&quot;: [{&quot;project&quot;: &quot;SC-NEUROCORE&quot;, &quot;label&quot;: &quot;docs/guides/supported_workflows.md&quot;, &quot;source_sha256&quot;: &quot;7e193c0c3d59b93c9d14b11339e10d3e2e31fbe544ea4854e33c23475fe08ef6&quot;}, {&quot;project&quot;: &quot;SC-NEUROCORE&quot;, &quot;label&quot;: &quot;docs/architecture/SYSTEM_MAP.md&quot;, &quot;source_sha256&quot;: &quot;67a02b61c3ae61aa0f767ef15bb1ba517b83ec495bbd517bf8e2eed340b8f38f&quot;}, {&quot;project&quot;: &quot;SC-NEUROCORE&quot;, &quot;label&quot;: &quot;src/sc_neurocore/__init__.py&quot;, &quot;source_sha256&quot;: &quot;a1bff2b31a396a968a07abc797f9f16b5f67190d1a73679b4bc6c0de3fe755d4&quot;}, {&quot;project&quot;: &quot;SC-NEUROCORE&quot;, &quot;label&quot;: &quot;src/sc_neurocore/accel/backend.py&quot;, &quot;source_sha256&quot;: &quot;3b2dd63073d6abf4e84b490a1fa4ea7c45d7d68851209d1a834bd2f8c690d3e3&quot;}], &quot;representation&quot;: &quot;Source-supported architecture illustration; no experiment executed&quot;}</metadata></svg>

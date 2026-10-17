@@ -5,23 +5,130 @@ Commercial license available
 © Code 2020–2026 Miroslav Šotek. All rights reserved.
 ORCID: 0009-0009-3560-0851
 Contact: www.anulum.li | protoscience@anulum.li
-ANULUM — Research atlas introduction
+ANULUM — Research atlas
 -->
 # Research atlas
 
-The [profile catalogue](../../README.md) describes six research groups, their
-projects and current work. All programmes are in progress; repository access,
-software releases and scientific qualification have separate evidence.
+Explore the research programmes, project connections, expected outputs,
+partner contributions, material needs and preliminary resource scenarios.
+The map and detailed explanations are being developed. Active work, released
+software and qualified results have separate evidence.
 
-The detailed interactive explorer is being prepared for a separate website
-release. This profile entry does not include resource inventories, acquisition
-candidates, budget scenarios or the full investment-plan figures.
+The version and exact asset fingerprints are in [atlas-manifest.json](atlas-manifest.json).
+Individual source documents retain their own capture dates and fingerprints.
+A newer atlas snapshot does not make an older source document current.
 
-The profile's [dated catalogue source](../../assets/catalogue-source.json)
-retains the selected project identities, purposes, status, licences and
-repository observations used by the five language versions. Source capture
-dates and the original snapshot fingerprint are included. This is documentary
-provenance, not an independent runtime, scientific or licence audit.
+GitHub displays HTML files as source. To use the interactive explorer locally,
+run this from the repository root:
 
-[Research portfolio](https://anulum.li/portfolio/) ·
-[Public profile](../../README.md)
+```sh
+python3 -m http.server --bind 127.0.0.1 --directory docs/atlas 8000
+```
+
+Then open [the explorer](http://127.0.0.1:8000/index.html).
+The static tree also supports hosting beneath a path such as `/atlas/`;
+its assets and navigation use relative URLs.
+
+Useful entry points after serving the tree:
+
+| View | Relative address |
+|---|---|
+| Programme overview | `index.html#view=overview` |
+| Interactive map | `index.html#view=map` |
+| Technical explanations | `index.html#view=technical` |
+| Project detail | `index.html#project=SCPN-QC-SIM` |
+| Component comparison | `index.html#view=compare&entries=SCPN-QC-CORE,SCPN-QC-AD,SCPN-QC-SIM` |
+| Partner contributions | `index.html#view=partners` |
+| Material and resource needs | `index.html#view=resources` |
+| Source documents | `index.html#view=documents` |
+
+The [equipment and resource inventory](resources.html) has separate views for
+needs, acquisition candidates, people and spaces. Its selection link retains
+the view, group, project/group scope, search and applicable verification filters.
+For example, `resources.html#view=candidates&verification=independent`
+opens the dated candidates whose primary pages were independently read.
+
+Use **Download records as CSV** to export the current selection. Each row keeps
+its source date, author, supplied fingerprint and source URL where available;
+the original source record is also retained in a JSON column. Staffing and room
+estimates keep their original values and units. These are source records and
+acquisition alternatives, not a reconciled purchase total.
+
+For a static reading view, open the [complete SVG map](F2_complete_project_atlas_v0.6.svg)
+or [technical atlas](atlas_full.html). JSON downloads are linked in the explorer.
+
+Verify the integrated snapshot from the repository root:
+
+```sh
+python3 tools/sync_atlas.py --check
+```
+
+A subsequent selected export can be imported with `--source`, `--manifest`
+and `--expected-manifest-sha256`. The importer verifies every selected asset,
+checks all eight embedded datasets, and refuses changed local assets or an
+unmanaged destination. Only manifest-listed files transfer. Import does not
+deploy a website or change source-content, scientific or release qualification.
+
+The explorer and its original assets retain their copyright and licence statements.
+The [AGPL-3.0-or-later licence text](LICENSE) is included; source documents retain their own notices.
+
+Ownership sidecars accompany JSON files. The PHWR illustration receives an ownership
+comment; its original and projected fingerprints are retained in the manifest.
+Its geometry is unchanged. Illustration credits use the public project identity.
+
+The resource-selection tests require Node.js as well as Python:
+
+```sh
+python3 -m unittest discover -s tests -p test_resource_inventory.py -v
+```
+
+The native tests use the actual inventory and Python's CSV reader.
+`tests/test_resource_explorer.mjs` supplies a real Playwright Page check for
+all four views, downloaded files, restored selections, browser history and
+mobile layouts. Its `--browser-code` output supplies the Page callback; callers
+provide `baseUrl` and an owned `downloadDirectory`. After saving its returned
+report as JSON, `node tests/test_resource_explorer.mjs --verify REPORT.json`
+independently reads the downloaded CSV files and checks the original records.
+
+
+## Profile and website assets
+
+GitHub renders the five profile READMEs and their local images directly.
+The profile links here through `docs/atlas/README.md`; it does not load the
+interactive HTML or the atlas datasets. Its dated catalogue provenance is
+[assets/catalogue-source.json](../../assets/catalogue-source.json), a compact
+projection of project identities, purposes, status, licences and repository
+observations, independent of resource and budget data.
+
+| Surface | Required local content | Uncompressed bytes |
+|---|---|---:|
+| Profile images across all five languages | Four generated header/map SVGs, 91 badge SVGs and the footer image | 621,868 |
+| Dated catalogue provenance | `assets/catalogue-source.json`, plus its ownership sidecar | 114,267 before sidecar |
+| Interactive site snapshot | 73 manifest-listed assets | 34,382,481 |
+| Main interactive entry page | `index.html`, including its eight embedded datasets | 11,018,836 |
+
+The HTML, JavaScript modules, source-document JSON, illustrations and figure
+downloads belong to the separately hosted explorer. The full snapshot repeats
+datasets in the standalone downloads and HTML views; its byte count is not the
+size of a GitHub profile page or a compressed network transfer. Hosting
+`index.html` alone would omit linked modules, inventory views and downloads.
+The complete manifest is the supported site asset set.
+
+Public presentation uses role names for internal authorship. Literal product,
+API, dependency and reproducibility identifiers inside dated project source
+documents retain their technical meaning. The internal proposal budget history
+is excluded. Scenario amounts remain preliminary, separately sourced estimates.
+Experiment labels in the map and SVG/PDF/PNG figures use outward descriptions.
+These presentation changes do not refresh the underlying source capture dates.
+
+The PHWR explanation now distinguishes implemented development-validation tooling
+from its research model and intended physical outputs. Its refreshed source links
+use versioned document labels; earlier captures keep their original dates and
+fingerprints. The normal importer also verifies reading-view hashes, reference
+intervals, exact excerpts and resolved narrative citations before an update.
+
+The NeuroCore and Quantum Control guides include source-inspected implementation
+workflows and diagrams. Their shared local neural bridge explicitly returns
+scaled binary spike outputs from software statevector processing. Package,
+source-checkout, RTL and QPU routes keep separate scopes and evidence. Older
+scientific and architecture references retain their original capture dates.

@@ -1,0 +1,113 @@
+<!--
+SPDX-License-Identifier: AGPL-3.0-or-later
+Commercial license available
+© Concepts 1996–2026 Miroslav Šotek. All rights reserved.
+© Code 2020–2026 Miroslav Šotek. All rights reserved.
+ORCID: 0009-0009-3560-0851
+Contact: www.anulum.li | protoscience@anulum.li
+ANULUM — Research investment plan review candidate
+-->
+
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1900" viewBox="0 0 2400 1900" role="img" aria-labelledby="title desc">
+<title id="title">Funding routes → work blocks → outcomes</title><desc id="desc">Proposed fit of thirteen funding preparation routes to the seven work blocks, from a dated pitch table. Eligibility and scope require the call dossiers. Four budget scenarios are disclosed as estimates, not awards or quotations.</desc>
+<metadata>{&quot;as_of&quot;: &quot;2026-10-13&quot;, &quot;state&quot;: &quot;Review candidate&quot;, &quot;sources&quot;: {&quot;PLAN_DRAFT_v0.6_2026-10-13T151349Z_research_investment_plan_and_pitch.md&quot;: &quot;82407a5a33bd1fc9d8d7bcecfbc7a23c4f6a619efed16f50ae8c0fafbf8e903f&quot;, &quot;institute_budget_v0.2.json&quot;: &quot;187202802a827158f7c8165cf0b7d754b6ff23c56e83de6cd308d715def3be5f&quot;, &quot;PLAN_PARTS_8_9_10_13_AND_FACT_CORRECTIONS_v0.5.md&quot;: &quot;c4b640b14871011d3b887397993f6b2e823b713752f69746064ff164a1bfaaa9&quot;}}</metadata>
+<rect width="2400" height="1900" fill="#fafaf7"/><g font-family="DejaVu Sans,sans-serif">
+<text x="65" y="60" font-size="21" fill="#647968" font-weight="600">ANULUM / BUSINESS AND RESEARCH PLAN</text>
+<text x="65" y="125" font-size="49" fill="#19392d" font-weight="600">What each funding route is meant to build</text>
+<text x="65" y="174" font-size="24" fill="#647968" font-weight="400">Preparation map · updated source table, 13 October 2026 · call dossiers are being completed</text>
+<rect x="65" y="205" width="2270" height="74" rx="12" fill="#19392d" stroke="#cad8cd"/>
+<text x="90" y="252" font-size="26" fill="#ffffff" font-weight="400">Dots show proposed work-package fit, not eligibility, selection or a committed funder.</text>
+<text x="831" y="330" font-size="34" fill="#19392d" font-weight="600">A</text>
+<text x="831" y="368" font-size="19" fill="#647968" font-weight="400">Operation</text>
+<text x="1046" y="330" font-size="34" fill="#19392d" font-weight="600">B</text>
+<text x="1046" y="368" font-size="19" fill="#647968" font-weight="400">Discovery loop</text>
+<text x="1261" y="330" font-size="34" fill="#19392d" font-weight="600">C</text>
+<text x="1261" y="368" font-size="19" fill="#647968" font-weight="400">World models</text>
+<text x="1476" y="330" font-size="34" fill="#19392d" font-weight="600">D</text>
+<text x="1476" y="368" font-size="19" fill="#647968" font-weight="400">Verification</text>
+<text x="1691" y="330" font-size="34" fill="#19392d" font-weight="600">E</text>
+<text x="1691" y="368" font-size="19" fill="#647968" font-weight="400">Laboratory</text>
+<text x="1906" y="330" font-size="34" fill="#19392d" font-weight="600">F</text>
+<text x="1906" y="368" font-size="19" fill="#647968" font-weight="400">People</text>
+<text x="2121" y="330" font-size="34" fill="#19392d" font-weight="600">G</text>
+<text x="2121" y="368" font-size="19" fill="#647968" font-weight="400">Domain depth</text>
+<rect x="65" y="394" width="2270" height="61" rx="12" fill="#f0f3ee" stroke="#cad8cd"/>
+<text x="86" y="432" font-size="23" fill="#19392d" font-weight="400">01  Pathfinder Challenges 2026</text>
+<circle cx="1055" cy="425" r="13" fill="#487660"/>
+<circle cx="1485" cy="425" r="13" fill="#487660"/>
+<circle cx="1915" cy="425" r="13" fill="#487660"/>
+<rect x="65" y="463" width="2270" height="61" rx="12" fill="#ffffff" stroke="#cad8cd"/>
+<text x="86" y="501" font-size="23" fill="#19392d" font-weight="400">02  Foresight science / safety nodes</text>
+<circle cx="840" cy="494" r="13" fill="#487660"/>
+<rect x="65" y="532" width="2270" height="61" rx="12" fill="#f0f3ee" stroke="#cad8cd"/>
+<text x="86" y="570" font-size="23" fill="#19392d" font-weight="400">03  Rolling open-research grants</text>
+<circle cx="840" cy="563" r="13" fill="#487660"/>
+<circle cx="1915" cy="563" r="13" fill="#487660"/>
+<rect x="65" y="601" width="2270" height="61" rx="12" fill="#ffffff" stroke="#cad8cd"/>
+<text x="86" y="639" font-size="23" fill="#19392d" font-weight="400">04  Compute and model-usage support</text>
+<circle cx="840" cy="632" r="13" fill="#487660"/>
+<circle cx="1270" cy="632" r="13" fill="#487660"/>
+<rect x="65" y="670" width="2270" height="61" rx="12" fill="#f0f3ee" stroke="#cad8cd"/>
+<text x="86" y="708" font-size="23" fill="#19392d" font-weight="400">05  Energy-system foundation models</text>
+<circle cx="1270" cy="701" r="13" fill="#487660"/>
+<circle cx="2130" cy="701" r="13" fill="#487660"/>
+<rect x="65" y="739" width="2270" height="61" rx="12" fill="#ffffff" stroke="#cad8cd"/>
+<text x="86" y="777" font-size="23" fill="#19392d" font-weight="400">06  SPRIND: AI-native chip design</text>
+<circle cx="1485" cy="770" r="13" fill="#487660"/>
+<circle cx="2130" cy="770" r="13" fill="#487660"/>
+<rect x="65" y="808" width="2270" height="61" rx="12" fill="#f0f3ee" stroke="#cad8cd"/>
+<text x="86" y="846" font-size="23" fill="#19392d" font-weight="400">07  RAISE automated materials discovery</text>
+<circle cx="1055" cy="839" r="13" fill="#487660"/>
+<circle cx="1485" cy="839" r="13" fill="#487660"/>
+<circle cx="1700" cy="839" r="13" fill="#487660"/>
+<circle cx="2130" cy="839" r="13" fill="#487660"/>
+<rect x="65" y="877" width="2270" height="61" rx="12" fill="#ffffff" stroke="#cad8cd"/>
+<text x="86" y="915" font-size="23" fill="#19392d" font-weight="400">08  Frontier AI: model scaling</text>
+<circle cx="840" cy="908" r="13" fill="#487660"/>
+<circle cx="1485" cy="908" r="13" fill="#487660"/>
+<rect x="65" y="946" width="2270" height="61" rx="12" fill="#f0f3ee" stroke="#cad8cd"/>
+<text x="86" y="984" font-size="23" fill="#19392d" font-weight="400">09  Pathfinder Open 2027 · draft</text>
+<circle cx="1055" cy="977" r="13" fill="#b49966"/>
+<circle cx="1270" cy="977" r="13" fill="#b49966"/>
+<circle cx="1485" cy="977" r="13" fill="#b49966"/>
+<circle cx="1915" cy="977" r="13" fill="#b49966"/>
+<rect x="65" y="1015" width="2270" height="61" rx="12" fill="#ffffff" stroke="#cad8cd"/>
+<text x="86" y="1053" font-size="23" fill="#19392d" font-weight="400">10  Frontier AI: safe and efficient</text>
+<circle cx="840" cy="1046" r="13" fill="#487660"/>
+<circle cx="1485" cy="1046" r="13" fill="#487660"/>
+<rect x="65" y="1084" width="2270" height="61" rx="12" fill="#f0f3ee" stroke="#cad8cd"/>
+<text x="86" y="1122" font-size="23" fill="#19392d" font-weight="400">11  Pathfinder Challenges 2027 · draft</text>
+<circle cx="1055" cy="1115" r="13" fill="#b49966"/>
+<circle cx="1270" cy="1115" r="13" fill="#b49966"/>
+<rect x="65" y="1153" width="2270" height="61" rx="12" fill="#ffffff" stroke="#cad8cd"/>
+<text x="86" y="1191" font-size="23" fill="#19392d" font-weight="400">12  Company / physical-AI instruments</text>
+<rect x="65" y="1222" width="2270" height="61" rx="12" fill="#f0f3ee" stroke="#cad8cd"/>
+<text x="86" y="1260" font-size="23" fill="#19392d" font-weight="400">13  National company funding / investment</text>
+<circle cx="840" cy="1253" r="13" fill="#487660"/>
+<circle cx="1055" cy="1253" r="13" fill="#487660"/>
+<circle cx="1270" cy="1253" r="13" fill="#487660"/>
+<circle cx="1485" cy="1253" r="13" fill="#487660"/>
+<circle cx="1700" cy="1253" r="13" fill="#487660"/>
+<circle cx="1915" cy="1253" r="13" fill="#487660"/>
+<circle cx="2130" cy="1253" r="13" fill="#487660"/>
+<text x="65" y="1349" font-size="22" fill="#647968" font-weight="400">Readiness is carried by the call dossier. Generic/mixed routes must be split into individual instruments.</text>
+<text x="65" y="1389" font-size="20" fill="#19392d" font-weight="600">A / Operation</text>
+<text x="365" y="1389" font-size="20" fill="#647968" font-weight="400">Metered operating and useful-output reports</text>
+<text x="1225" y="1389" font-size="20" fill="#19392d" font-weight="600">B / Discovery loop</text>
+<text x="1525" y="1389" font-size="20" fill="#647968" font-weight="400">Replayable cycles for two domain clients</text>
+<text x="65" y="1447" font-size="20" fill="#19392d" font-weight="600">C / World models</text>
+<text x="365" y="1447" font-size="20" fill="#647968" font-weight="400">Open models and validity-scoped reports</text>
+<text x="1225" y="1447" font-size="20" fill="#19392d" font-weight="600">D / Verification</text>
+<text x="1525" y="1447" font-size="20" fill="#647968" font-weight="400">Independent checks and enforced boundaries</text>
+<text x="65" y="1505" font-size="20" fill="#19392d" font-weight="600">E / Laboratory</text>
+<text x="365" y="1505" font-size="20" fill="#647968" font-weight="400">Instrument-to-record experiment cycle</text>
+<text x="1225" y="1505" font-size="20" fill="#19392d" font-weight="600">F / People</text>
+<text x="1525" y="1505" font-size="20" fill="#647968" font-weight="400">Staffing, institute and shared human review</text>
+<text x="65" y="1563" font-size="20" fill="#19392d" font-weight="600">G / Domain depth</text>
+<text x="365" y="1563" font-size="20" fill="#647968" font-weight="400">Domain-owned model / solver validation</text>
+<rect x="65" y="1635" width="2270" height="105" rx="12" fill="#e2eee4" stroke="#cad8cd"/>
+<text x="90" y="1675" font-size="27" fill="#19392d" font-weight="600">P / FIRST TEAM: 12 months · EUR 1,533,693 · 48 person-months · preliminary, negotiable.</text>
+<text x="90" y="1710" font-size="21" fill="#647968" font-weight="400">This source case prices A operation, B loop, C first-family baselines and F people. It does not fund every laboratory.</text>
+<text x="65" y="1790" font-size="23" fill="#19392d" font-weight="400">Other separate cases: T1 / 12 months EUR 95,797 · T2 / 36 months EUR 6,018,462 · T3 / 36 months EUR 6,924,406.</text>
+<text x="65" y="1832" font-size="22" fill="#647968" font-weight="400">Model usage is a list-price estimate, not paid burn. Quotes and actual payment timing remain open.</text>
+</g></svg>

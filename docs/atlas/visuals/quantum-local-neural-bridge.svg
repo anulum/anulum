@@ -1,0 +1,79 @@
+<!--
+SPDX-License-Identifier: AGPL-3.0-or-later
+Commercial license available
+© Concepts 1996–2026 Miroslav Šotek. All rights reserved.
+© Code 2020–2026 Miroslav Šotek. All rights reserved.
+ORCID: 0009-0009-3560-0851
+Contact: www.anulum.li | protoscience@anulum.li
+ANULUM — Computing workflow architecture
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1450" role="img" aria-labelledby="title description"><title id="title">Quantum Control: a concrete local neural bridge</title><desc id="description">Trailing spike histories become firing rates and rotation inputs for a local dense statevector layer. Thresholded binary spikes return as scaled currents. Stable contracts and external provider execution are separate routes.</desc>
+<defs><marker id="arrow" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 Z" fill="#477655"/></marker></defs>
+<rect width="1440" height="1450" fill="#fafbf8"/><g font-family="DejaVu Sans,sans-serif">
+<text x="54" y="44" font-size="17" font-weight="600" fill="#506958">ANULUM / SCPN QUANTUM COMPUTING SYSTEMS</text>
+<text x="54" y="96" font-size="34" font-weight="600" fill="#19392d">Quantum Control: a concrete local neural bridge</text>
+<text x="54" y="132" font-size="19" font-weight="400" fill="#506958">In progress · inspected source 2026-10-15 · workflows and evidence retain their own scope</text>
+<text x="54" y="190" font-size="19" font-weight="600" fill="#19392d">LOCAL SNNQuantumBridge PATH</text>
+<rect x="54" y="215" width="400" height="176" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="74" y="252" font-size="23" font-weight="600" fill="#19392d">Spike-history arrays</text>
+<text x="74" y="292" font-size="19" font-weight="400" fill="#506958">Trailing-window mean rates</text>
+<text x="74" y="320" font-size="19" font-weight="400" fill="#506958">One input rate per input neuron</text>
+<text x="74" y="348" font-size="19" font-weight="400" fill="#506958">Optional ArcaneNeuron wrapper</text>
+<rect x="520" y="215" width="400" height="176" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="540" y="252" font-size="23" font-weight="600" fill="#19392d">Rotation inputs</text>
+<text x="540" y="292" font-size="19" font-weight="400" fill="#506958">Rates mapped to angles</text>
+<text x="540" y="320" font-size="19" font-weight="400" fill="#506958">Ry input-state encoding</text>
+<text x="540" y="348" font-size="19" font-weight="400" fill="#506958">Declared qubit allocation</text>
+<rect x="986" y="215" width="400" height="176" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="1006" y="252" font-size="23" font-weight="600" fill="#19392d">Local dense statevector</text>
+<text x="1006" y="292" font-size="19" font-weight="400" fill="#506958">NumPy Ry / CRy / CX operations</text>
+<text x="1006" y="320" font-size="19" font-weight="400" fill="#506958">Input and neuron qubits</text>
+<text x="1006" y="348" font-size="19" font-weight="400" fill="#506958">Allocation guard before creation</text>
+<path d="M454 303 H516" fill="none" stroke="#477655" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M920 303 H982" fill="none" stroke="#477655" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M1186 391 V440 H720 V481" fill="none" stroke="#477655" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="520" y="485" width="400" height="176" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="540" y="522" font-size="23" font-weight="600" fill="#19392d">Binary spike outputs</text>
+<text x="540" y="562" font-size="19" font-weight="400" fill="#506958">Exact marginal probabilities</text>
+<text x="540" y="590" font-size="19" font-weight="400" fill="#506958">Thresholded to integer spikes</text>
+<text x="540" y="618" font-size="19" font-weight="400" fill="#506958">QuantumDenseLayer.forward</text>
+<rect x="54" y="485" width="400" height="176" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="74" y="522" font-size="23" font-weight="600" fill="#19392d">Scaled output currents</text>
+<text x="74" y="562" font-size="19" font-weight="400" fill="#506958">Binary spikes multiplied by scale</text>
+<text x="74" y="590" font-size="19" font-weight="400" fill="#506958">Current array returned to caller</text>
+<text x="74" y="618" font-size="19" font-weight="400" fill="#506958">Consumer chooses integration</text>
+<path d="M516 573 H458" fill="none" stroke="#477655" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="986" y="485" width="400" height="176" rx="16" fill="#e8f0f7" stroke="#b7cbbb" stroke-width="2"/>
+<text x="1006" y="522" font-size="23" font-weight="600" fill="#19392d">Array / sibling boundary</text>
+<text x="1006" y="562" font-size="19" font-weight="400" fill="#506958">NumPy arrays work independently</text>
+<text x="1006" y="590" font-size="19" font-weight="400" fill="#506958">ArcaneNeuron needs NeuroCore</text>
+<text x="1006" y="618" font-size="19" font-weight="400" fill="#506958">Wrapper creates input neurons</text>
+<rect x="54" y="692" width="1332" height="94" rx="16" fill="#f3f1e9" stroke="#d6c9a8" stroke-width="2"/>
+<text x="75" y="727" font-size="21" font-weight="600" fill="#19392d">This captured bridge executes local statevector software.</text>
+<text x="75" y="760" font-size="19" font-weight="400" fill="#506958">Its output is scaled binary spikes. It does not submit a QPU job or establish neural / quantum equivalence.</text>
+<text x="54" y="841" font-size="19" font-weight="600" fill="#19392d">SEPARATE WORKBENCH ROUTES</text>
+<rect x="54" y="865" width="400" height="176" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="74" y="902" font-size="23" font-weight="600" fill="#19392d">Stable data contracts</text>
+<text x="74" y="942" font-size="19" font-weight="400" fill="#506958">Problem / Backend</text>
+<text x="74" y="970" font-size="19" font-weight="400" fill="#506958">Experiment / Result</text>
+<text x="74" y="998" font-size="19" font-weight="400" fill="#506958">Shape, capability and metadata</text>
+<rect x="520" y="865" width="400" height="176" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="540" y="902" font-size="23" font-weight="600" fill="#19392d">Compile and execution</text>
+<text x="540" y="942" font-size="19" font-weight="400" fill="#506958">Hamiltonian, circuit or kernel</text>
+<text x="540" y="970" font-size="19" font-weight="400" fill="#506958">Reference / provider / replay</text>
+<text x="540" y="998" font-size="19" font-weight="400" fill="#506958">Explicit admission and resources</text>
+<rect x="986" y="865" width="400" height="176" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="1006" y="902" font-size="23" font-weight="600" fill="#19392d">Results and interpretation</text>
+<text x="1006" y="942" font-size="19" font-weight="400" fill="#506958">Raw artefacts and provenance</text>
+<text x="1006" y="970" font-size="19" font-weight="400" fill="#506958">Mitigation and observables</text>
+<text x="1006" y="998" font-size="19" font-weight="400" fill="#506958">Evidence class and ledger</text>
+<path d="M454 953 H516" fill="none" stroke="#477655" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M920 953 H982" fill="none" stroke="#477655" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="75" y="1080" font-size="20" font-weight="400" fill="#506958">Contracts describe the request; execution is a separate action. Hardware needs its own admission.</text>
+<rect x="54" y="1119" width="1332" height="204" rx="16" fill="#f3f1e9" stroke="#d6c9a8" stroke-width="2"/>
+<text x="75" y="1157" font-size="20" font-weight="600" fill="#19392d">RESOURCE AND CLAIM BOUNDARIES</text>
+<text x="75" y="1196" font-size="19" font-weight="400" fill="#506958">Dense / compile budgets estimate allowed or refused work; they do not guarantee host-memory immunity.</text>
+<text x="75" y="1233" font-size="19" font-weight="400" fill="#506958">The gradient guide reports bounded candidates; no differentiable route is promoted in that capture.</text>
+<text x="75" y="1270" font-size="19" font-weight="400" fill="#506958">Software results, QPU measurements, scientific fidelity and a performance advantage need separate evidence.</text>
+<text x="54" y="1393" font-size="18" font-weight="400" fill="#506958">Dated source inspection · no experiment run here · source-owner and publication review pending</text>
+</g><metadata>{&quot;source_capture&quot;: &quot;2026-10-15T20:45:20.185924+00:00&quot;, &quot;source_fingerprints&quot;: [{&quot;project&quot;: &quot;SCPN-QUANTUM-CONTROL&quot;, &quot;label&quot;: &quot;docs/stable_core_api.md&quot;, &quot;source_sha256&quot;: &quot;8786ef39cb0eb10f827d3067fdd75f3995f1bea1406ca214c4585058238eb57c&quot;}, {&quot;project&quot;: &quot;SCPN-QUANTUM-CONTROL&quot;, &quot;label&quot;: &quot;docs/choosing_a_gradient_path.md&quot;, &quot;source_sha256&quot;: &quot;a89734f004440396d06c1f5917b15cd21277402fedb859428f48be12b19d6ab8&quot;}, {&quot;project&quot;: &quot;SCPN-QUANTUM-CONTROL&quot;, &quot;label&quot;: &quot;docs/resource_budget_gate.md&quot;, &quot;source_sha256&quot;: &quot;5f47394be216a70ad33ac1d6d7b57064ace3a81ec2905c83a823b2d21f3043d1&quot;}, {&quot;project&quot;: &quot;SCPN-QUANTUM-CONTROL&quot;, &quot;label&quot;: &quot;src/scpn_quantum_control/bridge/snn_adapter.py&quot;, &quot;source_sha256&quot;: &quot;f4529b9c83c3822b6ceedf5e74305a913f0195da4c2a74a517bdf38cd9ad3982&quot;}, {&quot;project&quot;: &quot;SCPN-QUANTUM-CONTROL&quot;, &quot;label&quot;: &quot;src/scpn_quantum_control/qsnn/qlayer.py&quot;, &quot;source_sha256&quot;: &quot;8e7d298cb74e119d4036252315e5a75913877d0a5bd04775e493e06bb3331c29&quot;}, {&quot;project&quot;: &quot;SCPN-QUANTUM-CONTROL&quot;, &quot;label&quot;: &quot;docs/architecture_map.md&quot;, &quot;source_sha256&quot;: &quot;759c286976748712434a7992448e7b9a9ab787cd54c2276e098ec529ad2b2fcb&quot;}, {&quot;project&quot;: &quot;SCPN-QUANTUM-CONTROL&quot;, &quot;label&quot;: &quot;src/scpn_quantum_control/stable_core.py&quot;, &quot;source_sha256&quot;: &quot;24a11819528a5be7b37a973dde8d570e4ce948b5d68f0b0835eea2d525b7e469&quot;}], &quot;representation&quot;: &quot;Source-supported architecture illustration; no experiment executed&quot;}</metadata></svg>

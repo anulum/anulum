@@ -1,0 +1,83 @@
+<!--
+SPDX-License-Identifier: AGPL-3.0-or-later
+Commercial license available
+© Concepts 1996–2026 Miroslav Šotek. All rights reserved.
+© Code 2020–2026 Miroslav Šotek. All rights reserved.
+ORCID: 0009-0009-3560-0851
+Contact: www.anulum.li | protoscience@anulum.li
+ANULUM — Research investment plan review candidate
+-->
+
+<svg xmlns="http://www.w3.org/2000/svg" width="2520" height="1500" viewBox="0 0 2520 1500" role="img" aria-labelledby="title desc">
+<title id="title">Conditional pre-seed first-year sequence</title><desc id="desc">First-team effort phases and conditional end-year targets from plan v0.6 and institute budget model v0.2. This is a negotiable twelve-month cost envelope, not an invoice cash schedule or a promise of validated models.</desc>
+<metadata>{&quot;as_of&quot;: &quot;2026-10-13&quot;, &quot;state&quot;: &quot;Review candidate&quot;, &quot;sources&quot;: {&quot;PLAN_DRAFT_v0.6_2026-10-13T151349Z_research_investment_plan_and_pitch.md&quot;: &quot;82407a5a33bd1fc9d8d7bcecfbc7a23c4f6a619efed16f50ae8c0fafbf8e903f&quot;, &quot;institute_budget_v0.2.json&quot;: &quot;187202802a827158f7c8165cf0b7d754b6ff23c56e83de6cd308d715def3be5f&quot;, &quot;PLAN_PARTS_8_9_10_13_AND_FACT_CORRECTIONS_v0.5.md&quot;: &quot;c4b640b14871011d3b887397993f6b2e823b713752f69746064ff164a1bfaaa9&quot;}}</metadata>
+<rect width="2520" height="1500" fill="#fafaf7"/><g font-family="DejaVu Sans,sans-serif">
+<text x="65" y="60" font-size="21" fill="#647968" font-weight="600">ANULUM / PRE-SEED AND PARTNER DEPENDENCIES</text>
+<text x="65" y="125" font-size="49" fill="#19392d" font-weight="600">The first twelve funded months · P first team</text>
+<text x="65" y="174" font-size="24" fill="#647968" font-weight="400">Conditional first-team case · EUR 1,533,693 estimate · 48 person-months · scope is a matter of agreement</text>
+<rect x="65" y="210" width="2390" height="76" rx="12" fill="#19392d" stroke="#cad8cd"/>
+<text x="90" y="257" font-size="24" fill="#ffffff" font-weight="400">Month 1 is an agreed activation. Staffing below is a source assumption, not hiring or payment dates.</text>
+<text x="702" y="340" font-size="24" fill="#647968" font-weight="600">1</text>
+<path d="M 650 360 V 615" stroke="#dce5da"/>
+<text x="844" y="340" font-size="24" fill="#647968" font-weight="600">2</text>
+<path d="M 792 360 V 615" stroke="#dce5da"/>
+<text x="986" y="340" font-size="24" fill="#647968" font-weight="600">3</text>
+<path d="M 934 360 V 615" stroke="#dce5da"/>
+<text x="1128" y="340" font-size="24" fill="#647968" font-weight="600">4</text>
+<path d="M 1076 360 V 615" stroke="#dce5da"/>
+<text x="1270" y="340" font-size="24" fill="#647968" font-weight="600">5</text>
+<path d="M 1218 360 V 615" stroke="#dce5da"/>
+<text x="1412" y="340" font-size="24" fill="#647968" font-weight="600">6</text>
+<path d="M 1360 360 V 615" stroke="#dce5da"/>
+<text x="1554" y="340" font-size="24" fill="#647968" font-weight="600">7</text>
+<path d="M 1502 360 V 615" stroke="#dce5da"/>
+<text x="1696" y="340" font-size="24" fill="#647968" font-weight="600">8</text>
+<path d="M 1644 360 V 615" stroke="#dce5da"/>
+<text x="1838" y="340" font-size="24" fill="#647968" font-weight="600">9</text>
+<path d="M 1786 360 V 615" stroke="#dce5da"/>
+<text x="1980" y="340" font-size="24" fill="#647968" font-weight="600">10</text>
+<path d="M 1928 360 V 615" stroke="#dce5da"/>
+<text x="2122" y="340" font-size="24" fill="#647968" font-weight="600">11</text>
+<path d="M 2070 360 V 615" stroke="#dce5da"/>
+<text x="2264" y="340" font-size="24" fill="#647968" font-weight="600">12</text>
+<path d="M 2212 360 V 615" stroke="#dce5da"/>
+<text x="65" y="415" font-size="23" fill="#19392d" font-weight="600">Director + half-time administration</text>
+<text x="65" y="449" font-size="19" fill="#647968" font-weight="400">1.5 full-time equivalents throughout</text>
+<rect x="650" y="390" width="1694" height="66" rx="12" fill="#dceae0" stroke="#cad8cd"/>
+<text x="667" y="431" font-size="22" fill="#19392d" font-weight="400">Months 1–12</text>
+<text x="65" y="525" font-size="23" fill="#19392d" font-weight="600">First-family researcher + two engineers</text>
+<text x="65" y="559" font-size="19" fill="#647968" font-weight="400">Adds 3 FTE from month 3; total 4.5 FTE</text>
+<rect x="934" y="500" width="1410" height="66" rx="12" fill="#e4e9f1" stroke="#cad8cd"/>
+<text x="951" y="541" font-size="22" fill="#19392d" font-weight="400">Months 3–12</text>
+<text x="65" y="665" font-size="25" fill="#19392d" font-weight="600">END-YEAR TARGETS / delivery scope and quantitative criteria remain to be agreed</text>
+<rect x="65" y="705" width="775" height="180" rx="12" fill="#edf3ee" stroke="#cad8cd"/>
+<text x="87" y="740" font-size="18" fill="#647968" font-weight="600">TARGET 01</text>
+<text x="87" y="780" font-size="21" fill="#19392d" font-weight="400">Found the proposed organisational vehicles; legal scope</text>
+<text x="87" y="807" font-size="21" fill="#19392d" font-weight="400">and quotations remain to be agreed.</text>
+<rect x="875" y="705" width="775" height="180" rx="12" fill="#edf3ee" stroke="#cad8cd"/>
+<text x="897" y="740" font-size="18" fill="#647968" font-weight="600">TARGET 02</text>
+<text x="897" y="780" font-size="21" fill="#19392d" font-weight="400">Continuous metered operation and a published cost per</text>
+<text x="897" y="807" font-size="21" fill="#19392d" font-weight="400">research cycle.</text>
+<rect x="1685" y="705" width="775" height="180" rx="12" fill="#edf3ee" stroke="#cad8cd"/>
+<text x="1707" y="740" font-size="18" fill="#647968" font-weight="600">TARGET 03</text>
+<text x="1707" y="780" font-size="21" fill="#19392d" font-weight="400">Run and report the first scientific loop cycle, including</text>
+<text x="1707" y="807" font-size="21" fill="#19392d" font-weight="400">a negative result if the criterion fails.</text>
+<rect x="65" y="910" width="775" height="180" rx="12" fill="#edf3ee" stroke="#cad8cd"/>
+<text x="87" y="945" font-size="18" fill="#647968" font-weight="600">TARGET 04</text>
+<text x="87" y="985" font-size="21" fill="#19392d" font-weight="400">Baseline models for the first family; tasks, data scale</text>
+<text x="87" y="1012" font-size="21" fill="#19392d" font-weight="400">and acceptance thresholds still require freezing.</text>
+<rect x="875" y="910" width="775" height="180" rx="12" fill="#edf3ee" stroke="#cad8cd"/>
+<text x="897" y="945" font-size="18" fill="#647968" font-weight="600">TARGET 05</text>
+<text x="897" y="985" font-size="21" fill="#19392d" font-weight="400">Release the experiment record formats.</text>
+<rect x="1685" y="910" width="775" height="180" rx="12" fill="#edf3ee" stroke="#cad8cd"/>
+<text x="1707" y="945" font-size="18" fill="#647968" font-weight="600">TARGET 06</text>
+<text x="1707" y="985" font-size="21" fill="#19392d" font-weight="400">Obtain partners and letters for the relevant consortium</text>
+<text x="1707" y="1012" font-size="21" fill="#19392d" font-weight="400">routes; no participation or award presumed.</text>
+<rect x="65" y="1140" width="2390" height="140" rx="12" fill="#19392d" stroke="#cad8cd"/>
+<text x="90" y="1178" font-size="20" fill="#dceade" font-weight="600">BEFORE A SCIENTIFIC CLAIM</text>
+<text x="90" y="1220" font-size="25" fill="#ffffff" font-weight="400">Freeze task, data scale, reference and acceptance criterion; retain and publish a failed criterion with its record.</text>
+<text x="90" y="1253" font-size="22" fill="#ffffff" font-weight="400">The first loop cycle is independent of a learned model. Baseline preparation is not validated-model acceptance.</text>
+<text x="65" y="1343" font-size="23" fill="#647968" font-weight="400">This P case does not fund the full group laboratories, a second model family or the separate chip-design call.</text>
+<text x="65" y="1383" font-size="23" fill="#647968" font-weight="400">P first-team schedule shown here. Core-institute delivery and call calendars follow separate scopes and agreements.</text>
+<text x="65" y="1450" font-size="21" fill="#647968" font-weight="400">Sources: plan v0.6 section 13; institute budget v0.2; inspected 13 October 2026. All targets remain conditional.</text>
+</g></svg>

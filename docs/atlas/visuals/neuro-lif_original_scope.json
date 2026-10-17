@@ -1,0 +1,37 @@
+{
+  "project": "SC-NEUROCORE",
+  "representation": "RTL design illustration; not a measured device or simulation trace",
+  "source_label": "hdl/sc_lif_neuron.v",
+  "source_sha256": "4a9a8beeb6edca9a6986f6d5f8a75e5f96e67d18ca95f37759f69ee243c34860",
+  "source_defaults": {
+    "DATA_WIDTH": 16,
+    "FRACTION": 8,
+    "V_REST": 0,
+    "V_RESET": 0,
+    "V_THRESHOLD": 256,
+    "REFRACTORY_PERIOD": 0
+  },
+  "source_date": "2026-10-13",
+  "author": "Miroslav \u0160otek",
+  "licence": "AGPL-3.0-or-later",
+  "commercial_licence_available": true,
+  "state": "Private corrected successor; exact source-content readback and independent review pending",
+  "limits": [
+    "No new execution, physical hardware/timing or cross-backend model equivalence",
+    "Distinct private candidate not adopted by this figure",
+    "Supplier selected refractory2 proof is not the default refractory0 scope"
+  ],
+  "version": "0.2",
+  "signal_types": {
+    "v_reg": "signed DATA_WIDTH-bit clocked membrane state",
+    "V_REST": "signed DATA_WIDTH-bit compile/elaboration parameter constant",
+    "v_out": "signed DATA_WIDTH-bit membrane output",
+    "v_next": "signed DATA_WIDTH-bit proposed membrane wire",
+    "dv_leak": "signed DATA_WIDTH-bit increment wire",
+    "dv_in": "signed DATA_WIDTH-bit increment wire",
+    "refractory_counter": "unsigned 32-bit register",
+    "spike_out": "1-bit output register"
+  },
+  "source_review_sha256": "ff4086b14e706c0aff9b25c806301f18096ee461f95df8f426c64849268a7511",
+  "scope_of_correction": "Wording/type labels only; no recurrence, parameter, feedback path, source or model change"
+}
