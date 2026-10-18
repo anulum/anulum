@@ -1,8 +1,34 @@
 {
-  "version": "0.19.1+phwr.1+computing.1",
+  "version": "0.19.1+phwr.1+computing.1+kernels.1",
   "state": "Private integrated visual candidate; presentation and publication reviews pending",
   "source_snapshot_date": "2026-10-13",
   "illustrations": [
+    {
+      "id": "kernels-geometry-and-cad-workflows",
+      "project": "SCPN-REACTOR-KERNELS",
+      "title": "Reactor Kernels geometry and CAD workflows",
+      "description": "Declared bodies, closed triangle meshes, precision-aware STL/GLB, optional native-unit STEP and tetrahedral meshes, with device-family and consumer responsibilities kept explicit.",
+      "representation": "design",
+      "representation_label": "Source-supported geometry and CAD architecture",
+      "asset": "visuals/kernels-geometry-and-cad-workflows.svg",
+      "asset_sha256": "68402abf4538747e1a50eec93637a9218af17498f6756272f66779124e9e82f4",
+      "downloads": [],
+      "source_version": "Repository source capture 2026-10-18T00:36:33.580466+00:00",
+      "author": "Concepts and code: Miroslav Šotek. Illustration prepared by Arcane Sapience.",
+      "licence": "AGPL-3.0-or-later; commercial statement retained. Repository-native SVG.",
+      "limits": [
+        "A generated device geometry, simulation or engineering result",
+        "Fresh numerical/parity/CAD validation or accepted consumer adoption",
+        "Real material properties, reactor performance, control or machine protection"
+      ],
+      "profile": "{\n  \"source_capture\": \"2026-10-18T00:36:33.580466+00:00\",\n  \"representation\": \"Source-supported workflow diagram; no kernel, CAD backend or solver executed\"\n}",
+      "review": {
+        "summary": "Canonical source contracts and selected implementation bodies inspected; source-owner content and publication review pending. No geometry or numerical execution performed for this illustration.",
+        "scope": "Reactor Kernels representation, export and ownership explanation",
+        "fingerprint": "004e52b64e4dee02fdc4e63e79a1b77533f289e898e442273ea6b64c9b99d78b",
+        "independent": false
+      }
+    },
     {
       "id": "repo_header",
       "project": "SCPN-TOKAMAK-CORE",

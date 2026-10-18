@@ -1,0 +1,90 @@
+<!--
+SPDX-License-Identifier: AGPL-3.0-or-later
+Commercial license available
+© Concepts 1996–2026 Miroslav Šotek. All rights reserved.
+© Code 2020–2026 Miroslav Šotek. All rights reserved.
+ORCID: 0009-0009-3560-0851
+Contact: www.anulum.li | protoscience@anulum.li
+ANULUM — Reactor Kernels geometry and CAD architecture
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1500" role="img" aria-labelledby="title description">
+<title id="title">Reactor Kernels: geometry, CAD and model ownership</title>
+<desc id="description">Source-supported geometry and export routes: declared bodies become closed float64 triangle meshes and separate float32 STL or GLB files. Optional B-rep solids and native-unit STEP feed tetrahedral meshing. Device physics, material properties, source validity and consumer acceptance remain separate. No geometry or simulation was executed for this illustration.</desc>
+<defs><marker id="arrow" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 Z" fill="#477655"/></marker></defs>
+<rect width="1440" height="1500" fill="#fafbf8"/><g font-family="DejaVu Sans,sans-serif">
+<text x="54" y="44" font-size="17" font-weight="600" fill="#506958">ANULUM / SCPN REACTOR SYSTEMS</text>
+<text x="54" y="96" font-size="34" font-weight="600" fill="#19392d">Reactor Kernels: geometry, CAD and model ownership</text>
+<text x="54" y="132" font-size="19" font-weight="400" fill="#506958">In progress · source capture 2026-10-18 · computational-prototype responsibilities</text>
+<text x="54" y="187" font-size="19" font-weight="600" fill="#19392d">DECLARED INPUTS AND REPRODUCIBILITY</text>
+<rect x="54" y="210" width="400" height="154" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="74" y="246" font-size="23" font-weight="600" fill="#19392d">Body parameters</text>
+<text x="74" y="285" font-size="19" font-weight="400" fill="#506958">Selected analytic shape</text>
+<text x="74" y="313" font-size="19" font-weight="400" fill="#506958">Dimensions and placement in metres</text>
+<text x="74" y="341" font-size="19" font-weight="400" fill="#506958">Declared valid input domain</text>
+<rect x="520" y="210" width="400" height="154" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="540" y="246" font-size="23" font-weight="600" fill="#19392d">Identity and meaning</text>
+<text x="540" y="285" font-size="19" font-weight="400" fill="#506958">Body name, role and material token</text>
+<text x="540" y="313" font-size="19" font-weight="400" fill="#506958">Caller-supplied provenance</text>
+<text x="540" y="341" font-size="19" font-weight="400" fill="#506958">Material properties are separate</text>
+<rect x="986" y="210" width="400" height="154" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="1006" y="246" font-size="23" font-weight="600" fill="#19392d">Exact library selection</text>
+<text x="1006" y="285" font-size="19" font-weight="400" fill="#506958">Distribution / version / inventory</text>
+<text x="1006" y="313" font-size="19" font-weight="400" fill="#506958">Consumer owns its pin in force</text>
+<text x="1006" y="341" font-size="19" font-weight="400" fill="#506958">Registration history is not that pin</text>
+<text x="54" y="416" font-size="19" font-weight="600" fill="#19392d">GEOMETRY AND OPEN-FORMAT EXPORT</text>
+<rect x="54" y="441" width="400" height="172" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="74" y="477" font-size="23" font-weight="600" fill="#19392d">Analytic primitives</text>
+<text x="74" y="516" font-size="19" font-weight="400" fill="#506958">Cylinders, tubes and profiles</text>
+<text x="74" y="544" font-size="19" font-weight="400" fill="#506958">Spheres and rectangular prisms</text>
+<text x="74" y="572" font-size="19" font-weight="400" fill="#506958">Selected placement operations</text>
+<rect x="520" y="441" width="400" height="172" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="540" y="477" font-size="23" font-weight="600" fill="#19392d">Closed triangle mesh</text>
+<text x="540" y="516" font-size="19" font-weight="400" fill="#506958">Closure and orientation checks</text>
+<text x="540" y="544" font-size="19" font-weight="400" fill="#506958">float64 vertices / triangle indices</text>
+<text x="540" y="572" font-size="19" font-weight="400" fill="#506958">Canonical geometry bytes + digest</text>
+<rect x="986" y="441" width="400" height="172" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="1006" y="477" font-size="23" font-weight="600" fill="#19392d">STL and glTF / GLB</text>
+<text x="1006" y="516" font-size="19" font-weight="400" fill="#506958">float32 position storage</text>
+<text x="1006" y="544" font-size="19" font-weight="400" fill="#506958">STL: caller-owned coordinate rebase</text>
+<text x="1006" y="572" font-size="19" font-weight="400" fill="#506958">GLB: local mesh + node transform</text>
+<path d="M454 527 H516" fill="none" stroke="#477655" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M920 527 H982" fill="none" stroke="#477655" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="54" y="639" width="1332" height="119" rx="16" fill="#f3f1e9" stroke="#d6c9a8" stroke-width="2"/>
+<text x="75" y="674" font-size="21" font-weight="600" fill="#19392d">The exported representation has its own precision and placement contract.</text>
+<text x="75" y="709" font-size="19" font-weight="400" fill="#506958">The canonical mesh digest identifies float64 geometry, not the STL / GLB bytes or material properties.</text>
+<text x="75" y="739" font-size="19" font-weight="400" fill="#506958">Storage checks refuse unsupported geometry; a visible rendered body alone is not evidence of preserved shape.</text>
+<text x="54" y="811" font-size="19" font-weight="600" fill="#19392d">OPTIONAL CAD AND VOLUME MESHING</text>
+<rect x="54" y="836" width="400" height="172" rx="16" fill="#e8f0f7" stroke="#b7cbbb" stroke-width="2"/>
+<text x="74" y="872" font-size="23" font-weight="600" fill="#19392d">B-rep solids and assembly</text>
+<text x="74" y="911" font-size="19" font-weight="400" fill="#506958">Optional third-party CAD backend</text>
+<text x="74" y="939" font-size="19" font-weight="400" fill="#506958">Named bodies in a declared order</text>
+<text x="74" y="967" font-size="19" font-weight="400" fill="#506958">Faceting can return TriangleMesh</text>
+<rect x="520" y="836" width="400" height="172" rx="16" fill="#e8f0f7" stroke="#b7cbbb" stroke-width="2"/>
+<text x="540" y="872" font-size="23" font-weight="600" fill="#19392d">Native-unit STEP</text>
+<text x="540" y="911" font-size="19" font-weight="400" fill="#506958">Writer uses metre length contexts</text>
+<text x="540" y="939" font-size="19" font-weight="400" fill="#506958">Provenance does not set the scale</text>
+<text x="540" y="967" font-size="19" font-weight="400" fill="#506958">Deterministic within one environment</text>
+<rect x="986" y="836" width="400" height="172" rx="16" fill="#e8f0f7" stroke="#b7cbbb" stroke-width="2"/>
+<text x="1006" y="872" font-size="23" font-weight="600" fill="#19392d">Tetrahedral MSH 4.1</text>
+<text x="1006" y="911" font-size="19" font-weight="400" fill="#506958">Metre coordinates and cell size</text>
+<text x="1006" y="939" font-size="19" font-weight="400" fill="#506958">Per-entity cubic-metre volumes</text>
+<text x="1006" y="967" font-size="19" font-weight="400" fill="#506958">Explicit gmsh session ownership</text>
+<path d="M454 922 H516" fill="none" stroke="#477655" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M920 922 H982" fill="none" stroke="#477655" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="75" y="1044" font-size="19" font-weight="400" fill="#506958">Third-party CAD uses its own analytic/tolerance evidence; mathematical Python / Rust bit parity is a different claim.</text>
+<rect x="54" y="1090" width="640" height="202" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="74" y="1126" font-size="23" font-weight="600" fill="#19392d">Device-family ownership</text>
+<text x="74" y="1165" font-size="19" font-weight="400" fill="#506958">Device model and chosen geometry</text>
+<text x="74" y="1193" font-size="19" font-weight="400" fill="#506958">Operating envelope, lifecycle and diagnostics</text>
+<text x="74" y="1221" font-size="19" font-weight="400" fill="#506958">Source, physics and validation evidence</text>
+<text x="74" y="1249" font-size="19" font-weight="400" fill="#506958">A complete reactor model needs its own evidence</text>
+<rect x="746" y="1090" width="640" height="202" rx="16" fill="#f3f1e9" stroke="#b7cbbb" stroke-width="2"/>
+<text x="766" y="1126" font-size="23" font-weight="600" fill="#19392d">Separate responsibilities</text>
+<text x="766" y="1165" font-size="19" font-weight="400" fill="#506958">Numerical primitive ≠ reactor solver</text>
+<text x="766" y="1193" font-size="19" font-weight="400" fill="#506958">Mesh / CAD file ≠ physical field result</text>
+<text x="766" y="1221" font-size="19" font-weight="400" fill="#506958">Volume mesh ≠ engineering qualification</text>
+<text x="766" y="1249" font-size="19" font-weight="400" fill="#506958">Consumer integration needs its own admission</text>
+<text x="75" y="1340" font-size="20" font-weight="400" fill="#506958">Signal semantics, control admission, portfolio execution and final protection retain their external owners.</text>
+<text x="75" y="1376" font-size="19" font-weight="400" fill="#506958">This library supplies declared-input results. It does not supply an actuator path or a qualified real-machine model.</text>
+<text x="54" y="1450" font-size="18" font-weight="400" fill="#506958">Source inspection only · no kernel / CAD / simulation run · source-owner and publication review pending</text>
+</g><metadata>{&quot;source_capture&quot;: &quot;2026-10-18T00:36:33.580466+00:00&quot;, &quot;source_fingerprints&quot;: [{&quot;project&quot;: &quot;SCPN-REACTOR-KERNELS&quot;, &quot;label&quot;: &quot;README.md&quot;, &quot;source_sha256&quot;: &quot;fe7096ef12960921dc446e49cda0a91c0bbc86a79f9d60913fe7087e987de1c8&quot;}, {&quot;project&quot;: &quot;SCPN-REACTOR-KERNELS&quot;, &quot;label&quot;: &quot;docs/ARCHITECTURE.md&quot;, &quot;source_sha256&quot;: &quot;2e0a691ef4be34a035a4ead5cbe98044d70d299dc8da38af2673cdb413631691&quot;}, {&quot;project&quot;: &quot;SCPN-REACTOR-KERNELS&quot;, &quot;label&quot;: &quot;src/scpn_reactor_kernels/__init__.py&quot;, &quot;source_sha256&quot;: &quot;501e0a7603726629c5f5b8fabee0ee61835c64097e99d92c22b8352468352e8a&quot;}, {&quot;project&quot;: &quot;SCPN-REACTOR-KERNELS&quot;, &quot;label&quot;: &quot;src/scpn_reactor_kernels/geometry/mesh.py&quot;, &quot;source_sha256&quot;: &quot;8cd537203787bbb23d31d17e55d01b7954253048808adcc225f22f336187d28f&quot;}, {&quot;project&quot;: &quot;SCPN-REACTOR-KERNELS&quot;, &quot;label&quot;: &quot;src/scpn_reactor_kernels/geometry/export.py&quot;, &quot;source_sha256&quot;: &quot;452ed39c7509a44455c719a3f13b6502594426e396f50d710d22431a4295a361&quot;}, {&quot;project&quot;: &quot;SCPN-REACTOR-KERNELS&quot;, &quot;label&quot;: &quot;src/scpn_reactor_kernels/cad/step.py&quot;, &quot;source_sha256&quot;: &quot;b7c13d06054bd652e5f2750c8a1b86eaab16d9f7463696baabe4c29241f1eefb&quot;}, {&quot;project&quot;: &quot;SCPN-REACTOR-KERNELS&quot;, &quot;label&quot;: &quot;src/scpn_reactor_kernels/cad/volume_mesh.py&quot;, &quot;source_sha256&quot;: &quot;12b95aa1eae0d5d979d9ddeb2fb66c7f8ec7f16123c157e918f641e4f7139249&quot;}, {&quot;project&quot;: &quot;SCPN-REACTOR-KERNELS&quot;, &quot;label&quot;: &quot;docs/adr/0006-cad-kernels.md&quot;, &quot;source_sha256&quot;: &quot;3cee22fffeddaa1680dd0d3ab3652a57bace038cd19d7ce85b211a4fcf30359d&quot;}], &quot;representation&quot;: &quot;Source-supported architecture diagram; no generated physical geometry or experimental result&quot;}</metadata></svg>

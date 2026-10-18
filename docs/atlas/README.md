@@ -104,8 +104,8 @@ observations, independent of resource and budget data.
 |---|---|---:|
 | Profile images across all five languages | Four generated header/map SVGs, 91 badge SVGs and the footer image | 621,868 |
 | Dated catalogue provenance | `assets/catalogue-source.json`, plus its ownership sidecar | 114,267 before sidecar |
-| Interactive site snapshot | 73 manifest-listed assets | 34,382,481 |
-| Main interactive entry page | `index.html`, including its eight embedded datasets | 11,018,836 |
+| Interactive site snapshot | 74 manifest-listed assets | 34,765,456 |
+| Main interactive entry page | `index.html`, including its eight embedded datasets | 11,181,899 |
 
 The HTML, JavaScript modules, source-document JSON, illustrations and figure
 downloads belong to the separately hosted explorer. The full snapshot repeats
@@ -132,3 +132,9 @@ workflows and diagrams. Their shared local neural bridge explicitly returns
 scaled binary spike outputs from software statevector processing. Package,
 source-checkout, RTL and QPU routes keep separate scopes and evidence. Older
 scientific and architecture references retain their original capture dates.
+
+The Reactor Kernels explanation now follows geometry and CAD representations
+through their exact source contracts: canonical meshes, precision-aware STL/GLB,
+native-unit STEP and tetrahedral meshing. Device models, physical properties,
+consumer adoption and scientific qualification remain separately owned. Earlier
+source captures and source-described project connections retain their own dates.
