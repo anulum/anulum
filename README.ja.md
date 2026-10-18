@@ -93,7 +93,7 @@ HTML/CSS、Shell、Docker、Linux。
 <a id="current-focus"></a>
 ## 現在の重点
 
-<sub>ポートフォリオ状態は <!-- verified-at -->2026-10-17<!-- /verified-at --> に検証済みです。</sub>
+<sub>ポートフォリオ状態は <!-- verified-at -->2026-10-18<!-- /verified-at --> に検証済みです。</sub>
 
 - 26 の公開 Reactor リポジトリにおける共有カーネルと管理された装置情報。
 - 所有権境界を保った協調、メモリ、応答保証、アクション審査、リポジトリエビデンス。
@@ -110,7 +110,7 @@ HTML/CSS、Shell、Docker、Linux。
 | 2026-09-30 | SYNAPSE CHANNEL | [v0.99.35](https://github.com/anulum/synapse-channel/releases/tag/v0.99.35) | Shared-pool reservations with one authoritative owner (F02, not yet enforced). |
 | 2026-09-30 | SYNAPSE CHANNEL | [v0.99.34](https://github.com/anulum/synapse-channel/releases/tag/v0.99.34) | Signed peers behind a TLS-terminating proxy were admitted but served nothing. 0.99.33 said a peer hub's or Fleet follower's signed log pull works behind such a proxy. It did not. |
 
-<sub>[anulum.li/news](https://anulum.li/news/)（各プロジェクトの CHANGELOG）と [Zenodo](https://zenodo.org/search?q=creators.orcid%3A%220009-0009-3560-0851%22) から 2026-10-17 に生成。</sub>
+<sub>[anulum.li/news](https://anulum.li/news/)（各プロジェクトの CHANGELOG）と [Zenodo](https://zenodo.org/search?q=creators.orcid%3A%220009-0009-3560-0851%22) から 2026-10-18 に生成。</sub>
 <!-- profile-feeds:releases:end -->
 
 <!-- profile-feeds:publication:start -->
@@ -120,7 +120,7 @@ HTML/CSS、Shell、Docker、Linux。
 |---|---|---|---|
 | 2026-10-11 | Preprint | The calibration epoch as the unit of evidence: preregistered parity-leakage and layout-transfer experiments on IQM Garnet | [10.5281/zenodo.23298119](https://doi.org/10.5281/zenodo.23298119) |
 
-<sub>[anulum.li/news](https://anulum.li/news/)（各プロジェクトの CHANGELOG）と [Zenodo](https://zenodo.org/search?q=creators.orcid%3A%220009-0009-3560-0851%22) から 2026-10-17 に生成。</sub>
+<sub>[anulum.li/news](https://anulum.li/news/)（各プロジェクトの CHANGELOG）と [Zenodo](https://zenodo.org/search?q=creators.orcid%3A%220009-0009-3560-0851%22) から 2026-10-18 に生成。</sub>
 <!-- profile-feeds:publication:end -->
 
 ## タイムライン
