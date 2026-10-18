@@ -1,0 +1,96 @@
+<!--
+SPDX-License-Identifier: AGPL-3.0-or-later
+Commercial license available
+© Concepts 1996–2026 Miroslav Šotek. All rights reserved.
+© Code 2020–2026 Miroslav Šotek. All rights reserved.
+ORCID: 0009-0009-3560-0851
+Contact: www.anulum.li | protoscience@anulum.li
+ANULUM — Timing events and measurement evidence
+-->
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1670" role="img" aria-labelledby="title description">
+<title id="title">Timing witness: events, intervals and measurement evidence</title>
+<desc id="description">CONTROL event intervals use original fabric timestamps. Capture, buffering, run manifest and analysis preserve source identities and visible loss. Power acquisition uses separately qualified windows. Simulated clocks and physical board acceptance remain separate. In development; no measured board result.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L0,6 L8,3 Z" fill="#477655"/></marker></defs>
+<rect width="1440" height="1670" fill="#fafbf8"/><g font-family="DejaVu Sans,sans-serif">
+<text x="54" y="44" font-size="17" fill="#506958" font-weight="600">ANULUM / NEUROMORPHIC COMPUTING SYSTEMS</text>
+<text x="54" y="96" font-size="34" fill="#19392d" font-weight="600">Timing witness: events → intervals → evidence</text>
+<text x="54" y="134" font-size="19" fill="#506958" font-weight="400">In progress · source reading 2026-10-18 · no measured board instrument or energy result</text>
+<text x="54" y="190" font-size="19" fill="#19392d" font-weight="600">1 / CONTROL PROFILE — ORIGINAL FABRIC TICKS, NOT HOST ARRIVAL TIMES</text>
+<path d="M140 275 L1300 275" fill="none" stroke="#477655" stroke-width="2.5" marker-end="url(#arrow)"/>
+<circle cx="170" cy="275" r="7" fill="#477655"/>
+<text x="90" y="240" font-size="18" fill="#19392d" font-weight="600">SAMPLE_READY</text>
+<circle cx="490" cy="275" r="7" fill="#477655"/>
+<text x="410" y="240" font-size="18" fill="#19392d" font-weight="600">SAMPLE_READ</text>
+<circle cx="840" cy="275" r="7" fill="#477655"/>
+<text x="760" y="240" font-size="18" fill="#19392d" font-weight="600">ACT_WRITE</text>
+<circle cx="1220" cy="275" r="7" fill="#477655"/>
+<text x="1140" y="240" font-size="18" fill="#19392d" font-weight="600">DEADLINE</text>
+<text x="165" y="325" font-size="19" fill="#506958" font-weight="400">Scheduling = read − ready</text>
+<text x="545" y="325" font-size="19" fill="#506958" font-weight="400">Compute = write − read</text>
+<text x="930" y="325" font-size="19" fill="#506958" font-weight="400">Timely write precedes deadline</text>
+<text x="165" y="366" font-size="19" fill="#506958" font-weight="400">Loop latency = write − ready. An absent timely write is a miss; ACT_LATE does not satisfy it.</text>
+<text x="165" y="400" font-size="17" fill="#506958" font-weight="400">Illustrative event order only: spacing is not a measured duration or performance result.</text>
+<text x="54" y="463" font-size="19" fill="#19392d" font-weight="600">2 / RETAIN THE OBSERVATION BEFORE DERIVING A METRIC</text>
+<g data-card="true"><rect x="54" y="488" width="400" height="222" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="75" y="525" font-size="23" fill="#19392d" font-weight="600">Capture original ticks</text>
+<text x="75" y="565" font-size="19" fill="#506958" font-weight="400">Code + cycle identity + original tick</text>
+<text x="75" y="594" font-size="19" fill="#506958" font-weight="400">16-byte little-endian event records</text>
+<text x="75" y="623" font-size="19" fill="#506958" font-weight="400">Retain simultaneous source strobes</text>
+<text x="75" y="652" font-size="19" fill="#506958" font-weight="400">Separate channels can share ticks</text>
+</g>
+<g data-card="true"><rect x="520" y="488" width="400" height="222" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="541" y="525" font-size="23" fill="#19392d" font-weight="600">Buffer and drain</text>
+<text x="541" y="565" font-size="19" fill="#506958" font-weight="400">No backpressure to measured source</text>
+<text x="541" y="594" font-size="19" fill="#506958" font-weight="400">Dual-clock FIFO, common run reset</text>
+<text x="541" y="623" font-size="19" fill="#506958" font-weight="400">Drop newest on full; preserve loss</text>
+<text x="541" y="652" font-size="19" fill="#506958" font-weight="400">Coherent status before reset</text>
+</g>
+<g data-card="true"><rect x="986" y="488" width="400" height="222" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="1007" y="525" font-size="23" fill="#19392d" font-weight="600">Bind the run package</text>
+<text x="1007" y="565" font-size="19" fill="#506958" font-weight="400">Domain snapshot + source/build files</text>
+<text x="1007" y="594" font-size="19" fill="#506958" font-weight="400">Placement / plant / controller / load</text>
+<text x="1007" y="623" font-size="19" fill="#506958" font-weight="400">Warm-up / faults / original records</text>
+<text x="1007" y="652" font-size="19" fill="#506958" font-weight="400">Manifest hashes bind actual bytes</text>
+</g>
+<path d="M454 599 L516 599" fill="none" stroke="#477655" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M920 599 L982 599" fill="none" stroke="#477655" stroke-width="2.5" marker-end="url(#arrow)"/>
+<g data-card="true"><rect x="54" y="750" width="640" height="222" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="75" y="787" font-size="23" fill="#19392d" font-weight="600">Host analysis: counts and coverage</text>
+<text x="75" y="827" font-size="19" fill="#506958" font-weight="400">Scheduling / compute / loop distributions</text>
+<text x="75" y="856" font-size="19" fill="#506958" font-weight="400">Adjacent jitter: never bridge missing pairs</text>
+<text x="75" y="885" font-size="19" fill="#506958" font-weight="400">Tracking RMS / peak on observed samples</text>
+<text x="75" y="914" font-size="19" fill="#506958" font-weight="400">Loss invalidates; receipts cannot fill gaps</text>
+</g>
+<g data-card="true"><rect x="746" y="750" width="640" height="222" rx="16" fill="#e8f0f7" stroke="#b7cbbb" stroke-width="2"/>
+<text x="767" y="787" font-size="23" fill="#19392d" font-weight="600">Separate acquisition: power windows</text>
+<text x="767" y="827" font-size="19" fill="#506958" font-weight="400">Driver / BSP / rails / shunts / units</text>
+<text x="767" y="856" font-size="19" fill="#506958" font-weight="400">Per-read host and fabric time brackets</text>
+<text x="767" y="885" font-size="19" fill="#506958" font-weight="400">Raw journal ≠ qualified power series</text>
+<text x="767" y="914" font-size="19" fill="#506958" font-weight="400">Window mean, whole-rail energy per cycle</text>
+</g>
+<text x="54" y="1027" font-size="19" fill="#19392d" font-weight="600">3 / MODELS, SOURCE IMPLEMENTATION AND PHYSICAL ACCEPTANCE</text>
+<g data-card="true"><rect x="54" y="1052" width="640" height="222" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="75" y="1089" font-size="23" fill="#19392d" font-weight="600">Source and simulation scope</text>
+<text x="75" y="1129" font-size="19" fill="#506958" font-weight="400">Emulated mechanical / thermal plants</text>
+<text x="75" y="1158" font-size="19" fill="#506958" font-weight="400">Matching fixed-point PID / LQR controllers</text>
+<text x="75" y="1187" font-size="19" fill="#506958" font-weight="400">CONTROL loop or generic COMPUTE slot</text>
+<text x="75" y="1216" font-size="19" fill="#506958" font-weight="400">RTL/native/ISA clocks are simulation evidence</text>
+</g>
+<g data-card="true"><rect x="746" y="1052" width="640" height="222" rx="16" fill="#eeeaf4" stroke="#b7cbbb" stroke-width="2"/>
+<text x="767" y="1089" font-size="23" fill="#19392d" font-weight="600">Physical instrument needs</text>
+<text x="767" y="1129" font-size="19" fill="#506958" font-weight="400">Icicle board / BSP / device integration</text>
+<text x="767" y="1158" font-size="19" fill="#506958" font-weight="400">Clock / CDC / interrupt / RAM qualification</text>
+<text x="767" y="1187" font-size="19" fill="#506958" font-weight="400">Known-period, delay, overflow, bus-offset tests</text>
+<text x="767" y="1216" font-size="19" fill="#506958" font-weight="400">Power alignment; optional logic analyser</text>
+</g>
+<g data-card="true"><rect x="54" y="1315" width="1332" height="166" rx="16" fill="#e8f0f7" stroke="#b7cbbb" stroke-width="2"/>
+<text x="75" y="1352" font-size="23" fill="#19392d" font-weight="600">What a partner can contribute</text>
+<text x="75" y="1392" font-size="19" fill="#506958" font-weight="400">Board access, FPGA integration, power acquisition and calibrated timing instrumentation.</text>
+<text x="75" y="1421" font-size="19" fill="#506958" font-weight="400">A source-bound measurement campaign with declared configurations, repeated runs and invalid-run visibility.</text>
+<text x="75" y="1450" font-size="19" fill="#506958" font-weight="400">These are documented contribution needs; no acquired equipment, agreed partner or completed result is implied.</text>
+</g>
+<text x="54" y="1536" font-size="19" fill="#506958" font-weight="400">The generic shared-counter instrument does not establish neural numerical, encoder or whole-run acceptance.</text>
+<text x="54" y="1570" font-size="19" fill="#506958" font-weight="400">Unchanged architecture retains its earlier source date; current fabric document includes uncommitted work.</text>
+<text x="54" y="1625" font-size="18" fill="#506958" font-weight="400">Source reading only · source-owner content, scientific, consumer and publication review pending</text>
+</g></svg>

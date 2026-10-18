@@ -1,5 +1,5 @@
 {
-  "version": "0.19.1+phwr.1+computing.1+kernels.1+control.1+spo.1+fusion.1+qpu-workflow.1+mif-workflow.1",
+  "version": "0.19.1+phwr.1+computing.1+kernels.1+control.1+spo.1+fusion.1+qpu-workflow.1+mif-workflow.1+timing-workflow.1",
   "state": "Private integrated visual candidate; presentation and publication reviews pending",
   "source_snapshot_date": "2026-10-13",
   "illustrations": [
@@ -415,10 +415,36 @@
         "fingerprint": "997ee675b49fc22b99898230c0fca0811cc7a4a1cd61970bdaf3e61ef1e418c7",
         "independent": false
       }
+    },
+    {
+      "id": "timing-events-to-qualified-measurements",
+      "project": "LOOP-TIMING-WITNESS",
+      "title": "Timing witness: events, intervals and measurement evidence",
+      "description": "Original fabric ticks, visible FIFO loss, source-bound run records, scoped latency/jitter/tracking and separately qualified power windows.",
+      "representation": "design",
+      "representation_label": "Source-supported timing and measurement architecture",
+      "asset": "visuals/timing-events-to-qualified-measurements.svg",
+      "asset_sha256": "eb4c211d5042eefc34acbe79f5120f4672c7a9ea45061af2f68654be442fd63d",
+      "downloads": [],
+      "source_version": "Selected source reading 2026-10-18T14:50:15.082871+00:00; unchanged architecture retains its original capture date",
+      "author": "Concepts and code: Miroslav Šotek. Illustration prepared by Arcane Sapience.",
+      "licence": "AGPL-3.0-or-later; commercial statement retained. Repository-native SVG.",
+      "limits": [
+        "A measured board clock, processor latency, power/energy or physical safe-state result",
+        "Completed neural workflow, numerical/encoder qualification or whole-run acceptance",
+        "Fresh RTL/native/model/proof execution or confirmed equipment/partner acquisition"
+      ],
+      "profile": "{\n  \"source_capture\": \"2026-10-18T14:50:15.082871+00:00\",\n  \"representation\": \"Source-supported architecture; fabric document includes uncommitted descriptions; no instrument execution\"\n}",
+      "review": {
+        "summary": "Selected source inspected; source-owner content, scientific, consumer and publication review pending. No domain execution performed.",
+        "scope": "Event capture, buffering, interpretation, power windows and physical measurement boundaries",
+        "fingerprint": "21e533cd46055dea25f997560d4b0cc89532d6bf6176ce7cb476c288664f2f88",
+        "independent": false
+      }
     }
   ],
   "source_reviews_independent": false,
   "project_nodes_added": false,
   "new_scientific_or_model_execution": false,
-  "updated_at_utc": "2026-10-18T13:03:55.198854+00:00"
+  "updated_at_utc": "2026-10-18T14:50:15.082871+00:00"
 }

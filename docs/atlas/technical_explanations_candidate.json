@@ -1,7 +1,7 @@
 {
-  "version": "0.14-fusion-source-refresh+qpu-workflow.1+mif-workflow.1",
+  "version": "0.14-fusion-source-refresh+qpu-workflow.1+mif-workflow.1+timing-workflow.1",
   "state": "Editorial explanations from repository documents; owning source-content and publication review pending",
-  "captured_at_utc": "2026-10-18T13:03:55.198854+00:00",
+  "captured_at_utc": "2026-10-18T14:50:15.082871+00:00",
   "guide_source_captures": {
     "SCPN-PHWR-CORE": "2026-10-15T17:12:12.636229+00:00",
     "SCPN-FUSION-CORE": "2026-10-18T03:42:40.675813+00:00",
@@ -11,7 +11,7 @@
     "SCPN-REACTOR-KERNELS": "2026-10-18T00:36:33.580466+00:00",
     "SCPN-CONTROL": "2026-10-18T01:37:59.965155+00:00",
     "SCPN-PHASE-ORCHESTRATOR": "2026-10-18T02:36:01.372344+00:00",
-    "LOOP-TIMING-WITNESS": "2026-10-14T01:50:52.154839+00:00",
+    "LOOP-TIMING-WITNESS": "2026-10-18T14:50:15.082871+00:00",
     "EVIDENCE-MANIFEST-TOOLKIT": "2026-10-14T01:50:52.154839+00:00",
     "SCPN-QC-CONTRACTS": "2026-10-14T01:50:52.154839+00:00",
     "TRANSPILE-WITNESS": "2026-10-14T01:50:52.154839+00:00",
@@ -1920,89 +1920,148 @@
         ]
       },
       "scope": {
-        "text": "Fabric/native/host components and integrated simulation are described in the source, but no board instrument or board timing/energy result has been measured. Physical I/O, power acquisition and processor timing remain unqualified.",
+        "text": "The instrument is in development. Source describes implemented capture, buffer, controller, simulation and host-analysis components, while the qualified instrument remains architecture_only and no board measurement exists. This map reads source; it does not run the instrument or qualify physical clocks, processor timing, power acquisition, safety or the unfinished neural workflow.",
         "references": [
-          "timing-board",
-          "timing-source-state"
+          "timing-flow-state",
+          "timing-flow-port",
+          "timing-flow-neural-scope"
         ]
       },
       "inputs": [
         {
-          "title": "Event stream and timebase",
-          "text": "Sample-ready/read, actuator-write/deadline or COMPUTE-profile strobes feed declared event records with cycle identity and retained timebase ticks.",
+          "title": "Declared event vocabulary and one capture timebase",
+          "text": "CONTROL records sample readiness/read, timely and late actuator commands, deadlines, safe state and faults. COMPUTE has input/start/done/output/interrupt events. Each run binds the actual event-domain snapshot, profile and cycle identity; a timestamp is meaningful within that declared timebase.",
           "references": [
-            "timing-purpose",
-            "timing-events"
+            "timing-flow-plant",
+            "timing-flow-placements",
+            "timing-flow-records"
           ]
         },
         {
-          "title": "Bound run configuration",
-          "text": "A manifest identifies measurement-domain bytes, placement, controller, plant, period, loads, faults, input artefacts, overflow and source kind.",
+          "title": "Controller, plant and run configuration",
+          "text": "Placement, controller coefficients, mechanical/thermal fixed-point plant, sample period, warm-up, load and fault schedule belong to the run. Native or ISA execution in simulated transactions still declares rtl_simulation; host monotonic timestamps do not become fabric ticks.",
           "references": [
-            "timing-records"
+            "timing-flow-plant",
+            "timing-flow-procedure",
+            "timing-flow-simulation"
           ]
         },
         {
-          "title": "Qualified power acquisition",
-          "text": "Energy interpretation needs the selected driver/BSP, rail/shunt mappings, units, sampling settings and acquisition brackets. A raw acquisition journal is not already a qualified power table.",
+          "title": "Original event bytes and completion/loss status",
+          "text": "The host needs complete 16-byte little-endian records, source/build artefacts, manifest hashes and final coherent loss/status information before reset. A completion receipt cannot fill missing events or repair an invalid run.",
           "references": [
-            "timing-power"
+            "timing-flow-records",
+            "timing-flow-port",
+            "timing-flow-simulation"
+          ]
+        },
+        {
+          "title": "Power acquisition with its own provenance",
+          "text": "Driver/BSP revision, rail/shunt mappings, units, sample configuration and per-read host/fabric brackets accompany PAC1934 acquisition. Its raw journal is distinct from a qualified power series; no physical acquisition or aligned energy result is established here.",
+          "references": [
+            "timing-flow-power",
+            "timing-flow-simulation"
           ]
         }
       ],
       "outputs": [
         {
-          "title": "Original event and run records",
-          "text": "Raw binary events, selected power records and their manifest/hashes preserve the run before deriving statistics.",
+          "title": "Source-bound run package",
+          "text": "Event bytes, optional tracking/power series and a versioned manifest retain the exact run-domain, configuration and referenced artefacts. Actual native source/context bindings belong to the original acquisition. This explanation creates no new run package.",
           "references": [
-            "timing-records"
+            "timing-flow-records",
+            "timing-flow-simulation"
           ]
         },
         {
-          "title": "Timing and response summaries",
-          "text": "Host analysis derives interval distributions, deadline misses, tracking error and fault/safe-state response with observed sample counts and duration.",
+          "title": "Latency distributions with explicit denominators",
+          "text": "Scheduling is SAMPLE_READ minus SAMPLE_READY; compute is ACT_WRITE minus SAMPLE_READ; loop latency is ACT_WRITE minus SAMPLE_READY. Reports retain sample counts, duration, distributions and deadline/fault response. Missing observations remain visible.",
           "references": [
-            "timing-events",
-            "timing-records"
+            "timing-flow-latencies",
+            "timing-flow-records",
+            "timing-flow-reporting"
           ]
         },
         {
-          "title": "Scoped reports and energy windows",
-          "text": "JSON, CSV and SVG outputs retain source/simulation versus board scope. Energy is a window-aligned metric, not an atomic per-cycle four-rail measurement by default.",
+          "title": "Jitter and tracking with bounded coverage",
+          "text": "Adjacent-cycle jitter uses the absolute change in the same complete post-warm-up interval, without bridging gaps; peak-to-peak spread is separate. Tracking RMS/peak describes observed samples when declared, with expected/observed/missing coverage and an invalid partial run.",
           "references": [
-            "timing-records",
-            "timing-power"
+            "timing-flow-reporting",
+            "timing-flow-simulation"
+          ]
+        },
+        {
+          "title": "Window-mean energy and scoped reports",
+          "text": "Energy is averaged over many cycles and reported per rail and together, not per core or as an atomic per-cycle rail snapshot. JSON/CSV/SVG reports retain simulation or unverified board-declaration scope; a valid file structure cannot supply independent board acceptance.",
+          "references": [
+            "timing-flow-records",
+            "timing-flow-power",
+            "timing-flow-reporting",
+            "timing-flow-limits"
+          ]
+        },
+        {
+          "title": "Visible failure and refusal evidence",
+          "text": "Overflow remains invalid even if capture later recovers. Saturated drop counters are lower bounds; missing records cannot establish an absent actuator write or reconstruct an interval. Reset flushes the run, so status custody precedes reset.",
+          "references": [
+            "timing-flow-loss",
+            "timing-flow-cdc",
+            "timing-flow-simulation"
           ]
         }
       ],
       "components": [
         {
-          "title": "Fabric timestamp witness",
-          "text": "Capture original event codes and timestamps without stalling the measured source; integrated simulation retains simultaneous strobes before serialisation.",
+          "title": "Sampled plant or generic accelerator slot",
+          "text": "Mechanical/thermal emulation and PID/LQR exercise the CONTROL path. COMPUTE exercises a generic slot with a fixed-latency test peripheral; accelerator-specific adapters remain in the accelerator repository.",
           "references": [
-            "timing-events"
+            "timing-flow-plant",
+            "timing-flow-placements",
+            "timing-neuro"
           ]
         },
         {
-          "title": "Buffer, deadline and fault path",
-          "text": "Retain reset/overflow semantics and defined deadline/safe-state events alongside injected faults.",
+          "title": "Timestamp capture and event arbitration",
+          "text": "The single-event capture samples the pre-increment counter value into a fixed record. Simultaneous control strobes require upstream retention/arbitration; shared-counter channels use separate FIFOs and the same capture timestamp.",
           "references": [
-            "timing-events"
+            "timing-flow-record-source",
+            "timing-flow-port",
+            "timing-flow-shared-counter",
+            "timing-flow-verification-scope"
           ]
         },
         {
-          "title": "Host acquisition and manifest",
-          "text": "Bind actual event/power bytes to the declared run and reject missing or inconsistent provenance.",
+          "title": "Dual-clock buffering and common run reset",
+          "text": "Gray-pointer FIFO flags are conservative across clocks; capture does not stall the measured source. Overflow drops the newest pending record. Shared reset flushes both domains, and processor status requires a coherent snapshot.",
           "references": [
-            "timing-records",
-            "timing-power"
+            "timing-flow-port",
+            "timing-flow-loss",
+            "timing-flow-cdc"
           ]
         },
         {
-          "title": "Derived analysis",
-          "text": "Compute distributions and bounded response/energy summaries without bridging warm-up or missing-pair gaps.",
+          "title": "Deadline, safe-state and injected faults",
+          "text": "The monitor records misses and applies the configured safe value after consecutive misses. Injected interrupt delays/drops, actuator freezes and overload requests have explicit event identities. Emulated safe-state behaviour is distinct from a physical machine-protection system.",
           "references": [
-            "timing-records"
+            "timing-flow-latencies",
+            "timing-flow-limits"
+          ]
+        },
+        {
+          "title": "Native/logger and separate power acquisition",
+          "text": "Linux, dedicated-hart and fabric placements have distinct source/runtime bindings. A logger drains events and retains status; a separate power worker preserves individual acquisition brackets. Processor and I/O qualification is still open.",
+          "references": [
+            "timing-flow-placements",
+            "timing-flow-power",
+            "timing-flow-simulation"
+          ]
+        },
+        {
+          "title": "Manifest verification and host interpretation",
+          "text": "The host verifies bytes against their manifest/domain, then derives reports with count, duration and missing-data meaning. Simulated fabric timing and host elapsed runtime remain separate clocks and evidence classes.",
+          "references": [
+            "timing-flow-records",
+            "timing-flow-simulation"
           ]
         }
       ],
@@ -2017,25 +2076,172 @@
       ],
       "limits": [
         {
-          "title": "Simulation is not a board measurement",
-          "text": "Native regression time or functional RTL evidence cannot become PolarFire latency, jitter, deadline, energy or control-quality evidence.",
+          "title": "An instrument in progress is not a measured board result",
+          "text": "Implemented source and described simulations do not qualify physical clocks, CDC, processor placements, I/O, control quality or power. architecture_only is the source qualification state, while development is actively in progress.",
           "references": [
-            "timing-board",
-            "timing-source-state"
+            "timing-flow-state",
+            "timing-flow-port",
+            "timing-flow-verification-scope"
           ]
         },
         {
-          "title": "Overflow invalidates the measured run",
-          "text": "A nonzero overflow count invalidates host interpretation; a planned drain frequency alone does not guarantee sustained acquisition throughput.",
+          "title": "Loss remains a measurement failure",
+          "text": "Nonzero overflow invalidates the run; saturating counts are lower bounds and drain frequency alone cannot establish throughput. Completion receipts do not reconstruct missing event pairs.",
           "references": [
-            "timing-events"
+            "timing-flow-latencies",
+            "timing-flow-loss",
+            "timing-flow-simulation"
           ]
         },
         {
-          "title": "Physical time and energy need alignment evidence",
-          "text": "Sequential power reads are not an atomic rail snapshot. Board timing/clock/power-window qualification is required separately.",
+          "title": "Energy is window-aligned and whole-rail",
+          "text": "Sequential rail reads do not share an exact instant, and the core rail supplies both processors and fabric. Power units, window timing and calibration need qualification; energy per cycle is a window mean rather than an atomic per-cycle/per-core observation.",
           "references": [
-            "timing-power"
+            "timing-flow-power",
+            "timing-flow-limits"
+          ]
+        },
+        {
+          "title": "This map supplies documentary correspondence",
+          "text": "The cited architecture reading retains its earlier date; newly selected document/code readings carry current byte fingerprints. The evolving neural document is an uncommitted source observation pending owner acceptance. No instrument, neural experiment, benchmark, proof or hardware run was executed for this update.",
+          "references": [
+            "timing-flow-state",
+            "timing-flow-neural-scope",
+            "timing-flow-verification-scope"
+          ]
+        }
+      ],
+      "implementation": [
+        {
+          "title": "The capture module stores the original counter tick",
+          "text": "event_record_capture increments its 64-bit counter each active edge, forwards event_valid as record_valid and stores counter_ticks, cycle_number, zero reserved fields and event_code when an event is present. Nonblocking assignments retain the pre-increment tick; capture pipeline/drain latency does not replace it.",
+          "references": [
+            "timing-flow-record-source",
+            "timing-flow-port"
+          ]
+        },
+        {
+          "title": "Buffering preserves accepted records and exposes loss",
+          "text": "The documented single-channel witness connects capture to the dual-clock FIFO. A full FIFO drops the newest pending record, sets sticky overflow and increments a saturating counter. The port consumes one event tuple per edge; simultaneous source events must be handled before it.",
+          "references": [
+            "timing-flow-port",
+            "timing-flow-loss",
+            "timing-flow-verification-scope"
+          ]
+        },
+        {
+          "title": "Shared-counter capture is a generic instrument surface",
+          "text": "The committed generic shared-counter design gives independent channels the same pre-increment timebase, with channel-specific attempt/accepted/drop/drain status and common reset. The inspected document also describes evolving neural decoding/correlation components; their presence is not complete neural-run or producer/encoder qualification.",
+          "references": [
+            "timing-flow-shared-counter",
+            "timing-flow-neural-scope"
+          ]
+        },
+        {
+          "title": "The software/RTL loop has a declared simulation clock",
+          "text": "The described integrated plants, fixed-point controllers, native commands and dedicated-hart capture use simulated transactions and explicit production-source bindings. Native host computation does not automatically advance model time, and these routes do not measure physical U54 scheduling or device I/O.",
+          "references": [
+            "timing-flow-state",
+            "timing-flow-placements",
+            "timing-flow-simulation"
+          ]
+        },
+        {
+          "title": "Analysis refuses to invent missing observations",
+          "text": "The source-described host pipeline validates run/domain/input bindings before deriving intervals, tracking and reports. Native completion counters are reconciled with captured events; loss cannot be repaired using the receipt. Adjacent jitter pairs exclude warm-up and missing-cycle gaps.",
+          "references": [
+            "timing-flow-records",
+            "timing-flow-reporting",
+            "timing-flow-simulation"
+          ]
+        },
+        {
+          "title": "Power logging retains acquisition rather than claiming calibrated energy",
+          "text": "The documented PAC1934 IIO worker validates selected driver/configuration and retains raw attributes with individual read brackets. Sequential reads are not an atomic rail snapshot; the journal needs separate board acquisition and window-alignment qualification before use as measured energy.",
+          "references": [
+            "timing-flow-power",
+            "timing-flow-simulation",
+            "timing-flow-limits"
+          ]
+        }
+      ],
+      "model_layers": [
+        {
+          "title": "Plant and controller models",
+          "text": "The mechanical and thermal fixed-point plants and matching PID/LQR are emulated control experiments. Their tracking error describes the emulated plant, not a physical reactor or general device model. COMPUTE describes accelerator event intervals, not a model-specific numerical verdict.",
+          "references": [
+            "timing-flow-plant",
+            "timing-flow-placements",
+            "timing-flow-limits"
+          ]
+        },
+        {
+          "title": "Observation representation and clock domains",
+          "text": "Event type, cycle identity and fabric tick are recorded facts within the declared source profile. Drain/host arrival time is different; CDC status and reset custody need their own contract. Neural payload interpretation is separate from shared-counter capture and cannot be hidden in reserved bits.",
+          "references": [
+            "timing-flow-port",
+            "timing-flow-shared-counter",
+            "timing-flow-cdc"
+          ]
+        },
+        {
+          "title": "Derived metrics and missing-data meaning",
+          "text": "Latency, adjacent jitter, spread, observed tracking error and window-mean energy answer different questions. Counts, duration, coverage and alignment determine the scope; neither missing pairs nor missing power observations are filled with a substitute.",
+          "references": [
+            "timing-flow-reporting",
+            "timing-flow-simulation",
+            "timing-flow-limits"
+          ]
+        },
+        {
+          "title": "Simulation clock versus physical measurement",
+          "text": "The declared 100 MHz capture clock and 10 ns tick are design settings, not demonstrated board resolution or timing closure. RTL functional checks, normalized synthesis/equivalence, device CDC/placement, same-bitstream acceptance and external metrology remain distinct evidence.",
+          "references": [
+            "timing-flow-platform",
+            "timing-flow-verification-scope",
+            "timing-flow-acceptance",
+            "timing-flow-limits"
+          ]
+        }
+      ],
+      "external_roles": [
+        {
+          "title": "Board, integration and physical timing contributors",
+          "text": "The documented target is a PolarFire SoC Icicle Kit. The source states no physical board is available. Board/BSP, Libero interconnect, clock/interrupt routing, RAM capacity, CDC constraints and actual processor/I/O qualification are concrete contribution needs, not acquired equipment or confirmed partners.",
+          "references": [
+            "timing-flow-state",
+            "timing-flow-platform",
+            "timing-flow-cdc"
+          ]
+        },
+        {
+          "title": "Power and instrumentation contributors",
+          "text": "PAC1934 rail/shunt/driver configuration, power-sampling timing and fabric/host read alignment need physical validation. An optional external logic analyser can compare mirrored strobes at its own resolution. No vendor quote, purchasing decision or agreed laboratory access is inferred.",
+          "references": [
+            "timing-flow-power",
+            "timing-flow-acceptance",
+            "timing-flow-limits"
+          ]
+        },
+        {
+          "title": "Measurement campaign and acceptance owners",
+          "text": "The protocol requires same-bitstream known-period, injected-delay, overflow and bus-offset acceptance records before board results. The specified campaign uses fixed warm-up, one million cycles and five repeats per configuration, with original run identities and invalid repeats retained. These are requirements, not completed measurements.",
+          "references": [
+            "timing-flow-procedure",
+            "timing-flow-acceptance",
+            "timing-flow-limits"
+          ]
+        }
+      ],
+      "source_notes": [
+        {
+          "title": "Current source observation and preserved history",
+          "text": "The unchanged architecture reading is reused with its original capture date and fingerprint. New fabric, protocol and capture-module reading views preserve their own date and exact original bytes; the fabric document includes uncommitted neural-work descriptions. Committed generic capture, source-described evolving components and complete qualified instrument/consumer acceptance remain distinct.",
+          "references": [
+            "timing-flow-state",
+            "timing-flow-shared-counter",
+            "timing-flow-neural-scope",
+            "timing-flow-record-source"
           ]
         }
       ]
@@ -12261,12 +12467,221 @@
       "projection_sha256": "a2b69048f924c68fa7a6dffa44dc518d2bd0ab5f62e1342ff2d08477646a5906",
       "captured_at_utc": "2026-10-18T13:03:55.198854+00:00",
       "excerpt": "## Cross-repository ownership boundaries\n\nMIF stays strictly inside its lane ([ADR 0001](../adr/0001-repository-scope-and-ownership-boundaries.md)):\n\n| Owned by a sibling — consumed, never duplicated | Sibling |\n|---|---|\n| Hall-MHD / FRC equilibrium / MRTI / tilt / self-consistent compression | SCPN-FUSION-CORE |\n| Petri-net runtime, NMPC, replay, neuro-symbolic controller | SCPN-CONTROL |\n| SNN→Verilog, Q8.8 SNN encoder, AER router HDL | SC-NEUROCORE |\n| Reusable Swarmalator / coherence-monitor primitives | SCPN-PHASE-ORCHESTRATOR |\n\nMIF owns: FRC kinematic merging, the pulsed-shot lifecycle, the capacitor bank, the AER\nsensor bridge, the sub-50 ns target trigger fabric, the timing-aware formal tier, the Lean\nkinematic-safety invariant, and Faraday recovery. Several kinematic surfaces are\n`SYNC-STATE: upstream-pending` — implemented locally until the reusable surface lands in\nthe owning sibling."
+    },
+    {
+      "id": "timing-flow-state",
+      "project": "LOOP-TIMING-WITNESS",
+      "document": "docs/ARCHITECTURE.md",
+      "start": 13,
+      "end": 25,
+      "source_sha256": "45bbd562307e1465e4f5ec7bbec89e94b33c0d9bc101555cb6fecc17d6da86c6",
+      "projection_sha256": "45bbd562307e1465e4f5ec7bbec89e94b33c0d9bc101555cb6fecc17d6da86c6",
+      "captured_at_utc": "2026-10-14T01:50:52.154839+00:00",
+      "excerpt": "## Evidence state\n\nThe full board instrument remains planned and no measured result exists. Synthesizable\ntimestamp capture, a dual-clock record buffer, numeric event codes, a run-manifest schema and\nhost analysis exist. Both sampled plants, references, deadline/safe-state monitor, fault injector\nand simultaneous-event capture feed the drain stream and host CLI in simulation. C, Rust and\nRTL PID/LQR kernels have bit-exact parity, with an integrated fabric feedback loop and native\ncommand replay through simulated actuator transactions. Native AXI simulation and Linux UIO run\nsoftware are implemented; physical I/O, power acquisition and processor timing remain unqualified.\nNo physical board is available. The\nmachine-readable design contract is `measurement-domain.json`, validated by\n`tools/validate_measurement_domain.py`; changes to that contract also update its schema, this\ndocument and the measurement protocol."
+    },
+    {
+      "id": "timing-flow-platform",
+      "project": "LOOP-TIMING-WITNESS",
+      "document": "docs/ARCHITECTURE.md",
+      "start": 27,
+      "end": 51,
+      "source_sha256": "45bbd562307e1465e4f5ec7bbec89e94b33c0d9bc101555cb6fecc17d6da86c6",
+      "projection_sha256": "45bbd562307e1465e4f5ec7bbec89e94b33c0d9bc101555cb6fecc17d6da86c6",
+      "captured_at_utc": "2026-10-14T01:50:52.154839+00:00",
+      "excerpt": "## Target platform\n\nPolarFire SoC Icicle Kit, device MPFS250T-FCVG484E, as described in the board user guide\n(Microchip DS60001679E). Facts used by the design:\n\n| Item | Use in the design |\n|---|---|\n| SiFive E51 monitor core and four U54 application cores | E51 boots the system; U54 cores run Linux or a bare-metal controller |\n| On-board 50 MHz oscillator | reference for the fabric clock conditioning circuit |\n| PAC1934 power monitor on the processor subsystem I²C bus, four rails (VDD, VDD25, VDDA25, VDDA) | energy windows |\n| Two Gigabit Ethernet ports | run control and data transfer to the host |\n| Raspberry Pi 4 compatible header | optional mirror of the event strobes for an external logic analyser |\n\nNot yet checked on hardware, and therefore not relied on: the asymmetric-multiprocessing\nreference release for the current board support package, the PAC1934 sampling configuration of\nthe reference Linux image, and the fabric RAM budget used to freeze the event buffer size.\n\nThe board-facing `rtl/icicle_witness.sv` presents a 38-bit AXI4-Lite address port to a fabric\ninterconnect that selects the planned 256-byte register range at `0x60020000` through\n`0x600200ff`. It passes the low eight address bits to `axi_control_witness` and exposes its\nretained interrupt level. This boundary is exercised in simulation; the Libero interconnect,\ncapture clock, interrupt route and physical timing are not yet qualified.\nThe pinned Icicle reference source configures the FIC0 bus clock at 125 MHz from CCC GL0_0\nand the witness capture clock at 100 MHz from CCC GL0_1. Those source settings do not\nestablish implemented clock rates or CDC timing closure."
+    },
+    {
+      "id": "timing-flow-plant",
+      "project": "LOOP-TIMING-WITNESS",
+      "document": "docs/ARCHITECTURE.md",
+      "start": 84,
+      "end": 107,
+      "source_sha256": "45bbd562307e1465e4f5ec7bbec89e94b33c0d9bc101555cb6fecc17d6da86c6",
+      "projection_sha256": "45bbd562307e1465e4f5ec7bbec89e94b33c0d9bc101555cb6fecc17d6da86c6",
+      "captured_at_utc": "2026-10-14T01:50:52.154839+00:00",
+      "excerpt": "### Plant emulator\n\nA discrete-time second-order plant (mass, spring, damper) and a first-order thermal plant, in\nsigned fixed point with a documented Q format per plant. The plant updates once per sample period\n(100 Hz to 20 kHz, 1 kHz by default) with the most recent actuator value that arrived before the\nupdate; a late command is applied one period later and counted. A reference generator (step,\nramp, sine) provides the tracking target. Implemented Q8.24 equations, coefficients and ports\nare specified in [`PLANT_WITNESS.md`](PLANT_WITNESS.md).\n\n### Controller input/output register and strobes\n\nAn AXI4-Lite peripheral on a fabric interface controller holds the sample register, the actuator\nregister and the cycle counter. It raises the `CONTROL` profile strobes:\n\n| Event | Meaning |\n|---|---|\n| `SAMPLE_READY` | plant update complete |\n| `SAMPLE_READ` | first bus read of the sample register in the cycle |\n| `ACT_WRITE` | first timely actuator command in the cycle |\n| `ACT_LATE` | first accepted out-of-cycle or deadline-edge command, tagged with its observation cycle |\n| `DEADLINE` | next sample instant |\n| `SAFE_STATE` | safe actuator value applied by the monitor |\n| `FAULT_INJECTED` | fault injector action |\n| `FAULT_DETECTED` | monitor detects the injected fault |"
+    },
+    {
+      "id": "timing-flow-latencies",
+      "project": "LOOP-TIMING-WITNESS",
+      "document": "docs/ARCHITECTURE.md",
+      "start": 109,
+      "end": 152,
+      "source_sha256": "45bbd562307e1465e4f5ec7bbec89e94b33c0d9bc101555cb6fecc17d6da86c6",
+      "projection_sha256": "45bbd562307e1465e4f5ec7bbec89e94b33c0d9bc101555cb6fecc17d6da86c6",
+      "captured_at_utc": "2026-10-14T01:50:52.154839+00:00",
+      "excerpt": "### Event witness and buffer\n\n`rtl/event_witness.sv` connects `rtl/event_record_capture.sv` to a Gray-pointer dual-clock\nFIFO and separate reset-release synchronisers. It accepts one event-code/cycle tuple per\ncapture-clock edge without stalling the measured source. The original timestamp is retained\nthrough the capture pipeline and drain. Event codes are declared in `measurement-domain.json`\nand `rtl/event_codes_pkg.sv`. Public ports and reset/overflow behaviour are specified in\n[`FABRIC_WITNESS.md`](FABRIC_WITNESS.md). The integrated plant entry point uses `control_event_capture.sv` to preserve simultaneous\nstrobes before serialization; its ports are in [`PLANT_WITNESS.md`](PLANT_WITNESS.md). The AXI\nboard interface remains planned.\n\nThe default buffer holds 16 384 records. A full buffer drops the newest record, pulses\n`event_dropped`, latches `overflowed` and increments a saturating 32-bit count. Reset starts a\nnew run and flushes both clock domains; there is no independent-domain reset. Capture-domain\nstatus is not a coherent processor snapshot. A nonzero overflow count invalidates the host run.\n\nLinux is planned to drain at least 20 times per second. At 20 kHz with four periodic events per\ncycle the buffer fills in about 205 ms, longer than the 50 ms slowest drain interval; the\nvalidator checks that inequality and the declared Gray-pointer capacity. Drain frequency alone\ncannot establish sustained throughput or prevent loss during software stalls; board RAM sizing,\ndrain bandwidth and physical CDC constraints still require qualification.\n\nDerived intervals per cycle:\n\n| Interval | Definition |\n|---|---|\n| scheduling latency | `SAMPLE_READ − SAMPLE_READY` |\n| compute time | `ACT_WRITE − SAMPLE_READ` |\n| loop latency | `ACT_WRITE − SAMPLE_READY` |\n| time to safe state | `SAFE_STATE −` first missed `DEADLINE` |\n\nA cycle misses its deadline when `ACT_WRITE` does not arrive before `DEADLINE`.\n\n### Deadline and safe-state monitor\n\nThe monitor counts misses in hardware. After a configurable number of consecutive misses it drives\nthe actuator to a defined safe value, raises a latched fault flag and interrupt, and records\n`SAFE_STATE`.\n\n### Fault injector\n\nDrops a sample-ready interrupt, delays it by a number of periods, freezes the actuator register,\nor requests a processor overload scenario from the software load generator. Every injection is an\nevent on the same timebase, so detection latency comes from the same clock as everything else."
+    },
+    {
+      "id": "timing-flow-placements",
+      "project": "LOOP-TIMING-WITNESS",
+      "document": "docs/ARCHITECTURE.md",
+      "start": 154,
+      "end": 193,
+      "source_sha256": "45bbd562307e1465e4f5ec7bbec89e94b33c0d9bc101555cb6fecc17d6da86c6",
+      "projection_sha256": "45bbd562307e1465e4f5ec7bbec89e94b33c0d9bc101555cb6fecc17d6da86c6",
+      "captured_at_utc": "2026-10-14T01:50:52.154839+00:00",
+      "excerpt": "### Fabric controller\n\n`fixed_point_controller.sv` implements PID with conditional integration and discrete LQR.\n`fabric_control_witness.sv` connects it to the sampled plant and existing independent monitor,\nrecord capture and drain. In simulation the first read follows sample-ready by one tick and\nthe timely actuator write follows by another tick. This is a registered RTL schedule, not\nphysical timing closure. Arithmetic, reset, coefficients and native counterparts are specified\nin [`CONTROLLERS.md`](CONTROLLERS.md). A board placement register remains planned.\n\n### Device-under-test slot and the `COMPUTE` profile\n\nThe register, strobes and witness are built around a generic slot: an AXI4-Lite peripheral with\ninput and output registers, a start strobe and a done interrupt. The `COMPUTE` profile records\n`INPUT_WRITE`, `COMPUTE_START`, `COMPUTE_DONE`, `OUTPUT_READ` and `INTERRUPT_ENTRY`, from which the\nmanifest derives input-to-start, compute duration, done-to-interrupt and input-to-output\nintervals. In this repository the profile is exercised with a fixed-latency test peripheral\nwritten for the purpose; accelerator-specific adapters live in the accelerator's own repository.\n\n## Processor subsystem\n\n| Placement | Where | How it runs |\n|---|---|---|\n| `linux_user_space` | U54 application cores | user-space task, registers and interrupt through UIO, `SCHED_FIFO` with CPU affinity; with and without a PREEMPT_RT kernel if one builds for the board support package |\n| `bare_metal_amp` | one dedicated U54 core | interrupt-driven bare-metal loop; Linux on the remaining cores for logging |\n| `fabric_logic` | FPGA fabric | fixed-point controller; the processors only log |\n\nControllers are textbook PID with anti-windup and discrete LQR, with identical coefficients in C,\nRust and fabric logic and bit-exact fixed-point parity checked in simulation. Native streaming\nCLIs, the in-process Linux UIO entry and [dedicated-hart ISA capture](AMP_SIMULATION.md)\nare implemented. The latter executes source-bound firmware against production RTL; Linux/HSS/PMP\ndeployment ownership and physical qualification remain pending. The [Linux AMP collector](AMP_LINUX.md)\nmaps separate explicit mailbox/fabric resources without owning the controller IRQ, using the same\nfirmware-ready handshake and actual run-contract checks. Physical mapping and boot ownership\nremain unqualified. The implemented host load generator covers idle, CPU arithmetic,\nmemory/cache strides, private loopback UDP and owned-file storage/fsync profiles. Source-bound\ncaptures retain policy readback, actual operation counters and worker/native time brackets; see\n[host load profiles](HOST_ANALYSIS.md#linux-host-load-profiles). These do not qualify physical\nprocessor timing, NIC traffic or uncached block-device load. A Linux run\ncontroller configures the fabric registers, starts and stops runs, drains the buffer, reads the\npower monitor and writes the run files."
+    },
+    {
+      "id": "timing-flow-power",
+      "project": "LOOP-TIMING-WITNESS",
+      "document": "docs/ARCHITECTURE.md",
+      "start": 195,
+      "end": 215,
+      "source_sha256": "45bbd562307e1465e4f5ec7bbec89e94b33c0d9bc101555cb6fecc17d6da86c6",
+      "projection_sha256": "45bbd562307e1465e4f5ec7bbec89e94b33c0d9bc101555cb6fecc17d6da86c6",
+      "captured_at_utc": "2026-10-14T01:50:52.154839+00:00",
+      "excerpt": "## Power and energy\n\nThe selected Microchip [`pac1934` driver](https://raw.githubusercontent.com/linux4microchip/linux/linux-6.18-mchp/drivers/iio/adc/pac1934.c)\nuses the Linux IIO interface. The logger must bind the selected BSP/driver revision, channel-to-rail\nmapping, shunts, sampling configuration and accumulator units. An assumed `hwmon` interface or\nautomatic direct-I²C fallback cannot establish that acquisition contract.\n\nThe native UIO entry accepts `--power-config file --power-journal file` together. Its separate\nnormal-policy worker validates the actual IIO node, kernel release, driver, enabled accumulators,\nlabels, sample rate and unsigned shunt scales. It preserves each raw/scale attribute with its own\nhost and fabric read brackets. The journal is acquisition evidence; it is not the analyzer's\nqualified `power.csv`. The current host has no PAC1934 device, so successful physical acquisition\nand energy-window qualification remain unverified. See [`HOST_ANALYSIS.md`](HOST_ANALYSIS.md)\nfor the explicit configuration and units.\n\nFabric counter brackets around acquisition and the driver's cache/refresh timing must be retained.\nSequential channel reads do not establish an atomic four-rail snapshot or an exact common fabric\ntick. Energy-window alignment remains unqualified until the acquisition timing contract is\nvalidated on the board. The reported metric is mean energy per control cycle over windows of many\ncycles, per rail and for the four rails together, with the limits stated in\n[`MEASUREMENT_PROTOCOL.md`](MEASUREMENT_PROTOCOL.md)."
+    },
+    {
+      "id": "timing-flow-records",
+      "project": "LOOP-TIMING-WITNESS",
+      "document": "docs/ARCHITECTURE.md",
+      "start": 217,
+      "end": 238,
+      "source_sha256": "45bbd562307e1465e4f5ec7bbec89e94b33c0d9bc101555cb6fecc17d6da86c6",
+      "projection_sha256": "45bbd562307e1465e4f5ec7bbec89e94b33c0d9bc101555cb6fecc17d6da86c6",
+      "captured_at_utc": "2026-10-14T01:50:52.154839+00:00",
+      "excerpt": "## Run records\n\n| File | Content |\n|---|---|\n| event file | little-endian 16-byte records: `event_type` u8, `reserved_byte` u8, `reserved_word` u16, `cycle` u32, `timebase_ticks` u64; SHA-256 recorded |\n| power file | timestamped rail voltage, current and energy samples; SHA-256 recorded |\n| run manifest | versioned schema with run identity, UTC start, source kind, a hash-bound measurement-domain snapshot, placement, controller, plant, period, load case, fault schedule, hash-bound inputs and artefacts, overflow count, acceptance fields and notes |\n\nNo run is reported without its manifest and hashes.\n\n## Host analysis\n\n`tools/analyze_run.py` validates the run manifest and referenced file hashes, interprets the\nverified measurement-domain snapshot, decodes events, computes derived intervals and their\ndistributions (median, 95th, 99th and 99.9th percentile,\nmaximum), deadline-miss rate, tracking error (RMS and peak), mean rail energy per cycle over\npower-sampling windows, fault detection and time to safe state. It writes JSON, CSV and SVG\nreports tied to sample counts and observation duration. Unreleased source analysis also\nreports absolute adjacent-cycle changes of each periodic latency, separate peak-to-peak\nspread and missing-pair coverage; warm-up and gaps are never bridged. This derived host\nmetric has no capture-format or controller-kernel counterpart. Inputs and limits are specified in\n[`HOST_ANALYSIS.md`](HOST_ANALYSIS.md). Board qualification and measured results remain absent."
+    },
+    {
+      "id": "timing-flow-acceptance",
+      "project": "LOOP-TIMING-WITNESS",
+      "document": "docs/ARCHITECTURE.md",
+      "start": 240,
+      "end": 252,
+      "source_sha256": "45bbd562307e1465e4f5ec7bbec89e94b33c0d9bc101555cb6fecc17d6da86c6",
+      "projection_sha256": "45bbd562307e1465e4f5ec7bbec89e94b33c0d9bc101555cb6fecc17d6da86c6",
+      "captured_at_utc": "2026-10-14T01:50:52.154839+00:00",
+      "excerpt": "## Verification of the instrument\n\n1. **Simulation** before hardware: witness, buffer, plant, monitor and fabric controller with a\n   vendor-neutral simulator, directed and randomised tests, bit-exact parity of fabric, C and\n   Rust controllers, including complete 64,000-sample trajectories per plant/controller.\n2. **Known-period test:** a period generated from the same timebase must appear as an exact\n   interval; any deviation is a witness defect.\n3. **Injected-delay test:** a delay of k periods must measure as k periods within one tick.\n4. **Bus-offset calibration:** the fabric placement, with no processor involvement, gives the\n   minimum read and write path latency, recorded as the instrument floor.\n5. **External cross-check (optional):** mirrored strobes on a logic analyser agree within the\n   analyser's resolution.\n6. **Overflow test:** an undrained buffer must be counted as overflow and invalidate the run."
+    },
+    {
+      "id": "timing-flow-record-source",
+      "project": "LOOP-TIMING-WITNESS",
+      "document": "rtl/event_record_capture.sv (source 2026-10-18T14:50:15.082871+00:00)",
+      "start": 9,
+      "end": 32,
+      "source_sha256": "222b1f380c4d38226bac5accea382de6141b169e77f8e39db04455b1e0001424",
+      "projection_sha256": "222b1f380c4d38226bac5accea382de6141b169e77f8e39db04455b1e0001424",
+      "captured_at_utc": "2026-10-18T14:50:15.082871+00:00",
+      "excerpt": "module event_record_capture (\n    input  logic         clock,\n    input  logic         reset_n,\n    input  logic         event_valid,\n    input  logic [7:0]   event_code,\n    input  logic [31:0]  cycle_number,\n    output logic         record_valid,\n    output logic [127:0] record,\n    output logic [63:0]  counter_ticks\n);\n    always_ff @(posedge clock or negedge reset_n) begin\n        if (!reset_n) begin\n            counter_ticks <= 64'd0;\n            record_valid <= 1'b0;\n            record <= 128'd0;\n        end else begin\n            counter_ticks <= counter_ticks + 64'd1;\n            record_valid <= event_valid;\n            if (event_valid) begin\n                record <= {counter_ticks, cycle_number, 16'd0, 8'd0, event_code};\n            end\n        end\n    end\nendmodule"
+    },
+    {
+      "id": "timing-flow-port",
+      "project": "LOOP-TIMING-WITNESS",
+      "document": "docs/FABRIC_WITNESS.md (source 2026-10-18T14:50:15.082871+00:00)",
+      "start": 13,
+      "end": 43,
+      "source_sha256": "e4fae2a930bd61f630c6bf640d8f64dde06afc3c3e92aec71e266670e47026cc",
+      "projection_sha256": "e4fae2a930bd61f630c6bf640d8f64dde06afc3c3e92aec71e266670e47026cc",
+      "captured_at_utc": "2026-10-18T14:50:15.082871+00:00",
+      "excerpt": "`rtl/event_witness.sv` connects the timestamp capture to a dual-clock FIFO. This is a\nsimulation-tested stream component. Peripheral event arbitration, AXI/UIO access, coherent\nprocessor status snapshots, physical clock constraints and board qualification remain planned.\nThe domain maturity is `architecture_only`; the capability inventory remains empty.\n\n## Event input and record output\n\n| Port | Clock domain | Contract |\n|---|---|---|\n| `event_valid`, `event_code[7:0]`, `cycle_number[31:0]` | capture | One tuple per rising edge when `capture_active` is high. No backpressure. |\n| `capture_active` | capture | Local run reset has released. |\n| `counter_ticks[63:0]` | capture | Free-running counter, cleared by run reset; record samples the pre-increment value. |\n| `buffer_full` | capture | No new record can be accepted at the current write edge. |\n| `event_dropped` | capture | High for each edge rejecting a pending captured record. Consecutive drops keep it high. |\n| `overflowed` | capture | Sticky loss flag until run reset. |\n| `overflow_count` | capture | Saturating count of rejected records; a lower bound after saturation. |\n| `drain_request` | drain | Request the next record; empty requests do not advance the pointer. |\n| `drain_valid`, `drain_record[127:0]` | drain | Registered result of the request at this rising edge; consume only when valid. |\n| `drain_empty` | drain | No record currently visible to the read domain. |\n\nA source tuple is captured at an edge, then offered to the FIFO at the next capture edge.\nIt retains the original timestamp even if it later crosses into the drain domain. The write\nstatus and overflow pulse therefore refer to the pending captured record. The source must\nsupply event codes from `rtl/event_codes_pkg.sv` and the hash-bound domain snapshot. The host\nrejects unknown codes, nonzero reserved fields, regressing ticks/cycles and duplicate events.\nArbitrate simultaneous source strobes before this input; this module cannot represent two\nevents at one capture edge. Clock crossing of asynchronous source strobes is also upstream.\n\nThe 128-bit output is `{timebase_ticks[63:0], cycle[31:0], 16'd0, 8'd0, event_code[7:0]}`.\nWrite its least significant byte first for the published 16-byte little-endian host format.\nThe record payload is unspecified when `drain_valid` is low, including during reset."
+    },
+    {
+      "id": "timing-flow-shared-counter",
+      "project": "LOOP-TIMING-WITNESS",
+      "document": "docs/FABRIC_WITNESS.md (source 2026-10-18T14:50:15.082871+00:00)",
+      "start": 47,
+      "end": 76,
+      "source_sha256": "e4fae2a930bd61f630c6bf640d8f64dde06afc3c3e92aec71e266670e47026cc",
+      "projection_sha256": "e4fae2a930bd61f630c6bf640d8f64dde06afc3c3e92aec71e266670e47026cc",
+      "captured_at_utc": "2026-10-18T14:50:15.082871+00:00",
+      "excerpt": "### Shared-counter channels\n\n`rtl/shared_event_witness.sv` gives independent event FIFOs one common 64-bit capture\ncounter. Each channel supplies its own pre-edge valid bit, eight-bit code and 32-bit\nidentity. Channel buses are flat: channel `i` occupies bits `i*width +: width`,\nwith widths 8 for code, 32 for identity, 64 for run counts and 128 for a record.\nSimultaneous tuples receive the same pre-increment timestamp, with zero\nreserved fields in the existing 128-bit record layout. Codes and identities are supplied\nby the caller's declared profile; the instrument does not interpret a neural state or\nencode it in reserved bits.\n\nThe shared capture reset and counter release together. Each registered tuple enters its\nchannel FIFO on the next capture edge. `attempt_count` counts those FIFO write attempts;\n`accepted_count` counts accepted writes. A full channel drops its newest record and\nupdates its own sticky flag, drop pulse and saturating overflow count. Other channels\ncontinue independently. Attempt and acceptance counts are 64-bit run counters; the\nadmitted run must end before their wrap. Capture-domain status needs a coherent snapshot\nbefore crossing to a processor or drain clock domain.\n\n`CHANNEL_COUNT` accepts 1 through 32; `ADDRESS_BITS` and `OVERFLOW_COUNTER_BITS` retain\nthe FIFO and single-channel witness limits. Every channel has its own drain request,\nvalid record and empty flag. An unused channel remains empty. Common reset flushes all\nchannels and clears the shared timebase and counts. Reset release, conservative FIFO\nflags, physical CDC constraints and RAM qualification follow the same rules below.\n\nThe dedicated simulation exports simultaneous known-edge records, continuously captures\n1,000 records plus two markers per channel at 1,024-record capacity before drain, and\nexercises isolated full-buffer loss, saturation, an empty channel and queued-data reset.\nThese are instrument-port controls. Neural wrapper, complete export/report integration\nand board qualification have separate acceptance requirements."
+    },
+    {
+      "id": "timing-flow-neural-scope",
+      "project": "LOOP-TIMING-WITNESS",
+      "document": "docs/FABRIC_WITNESS.md (source 2026-10-18T14:50:15.082871+00:00)",
+      "start": 78,
+      "end": 129,
+      "source_sha256": "e4fae2a930bd61f630c6bf640d8f64dde06afc3c3e92aec71e266670e47026cc",
+      "projection_sha256": "e4fae2a930bd61f630c6bf640d8f64dde06afc3c3e92aec71e266670e47026cc",
+      "captured_at_utc": "2026-10-18T14:50:15.082871+00:00",
+      "excerpt": "`loop_timing_witness.neural_event_stream.decode_neural_channel` decodes the separate\ninput, state and service capture streams, retaining original payload and alignment-marker\nbytes. Its neural record vocabulary uses data codes 14, 15 and 16 respectively and marker\ncode 17; it does not register a neural profile in the CONTROL/COMPUTE domain. Missing\nmarkers, identity gaps and empty streams remain visible. A marker-only service stream has\nan empty payload; this alone does not establish that the encoder tail or export completed.\nReserved bits, marker positions, population bounds, record order and the 16-bit no-wrap\nhorizon are checked independently of file-digest and source binding.\n\n`loop_timing_witness.neural_timing.correlate_neural_steps` joins decoded input and state\nrecords by their original step identities. It checks the complete requested populations,\ncontinuous input cadence, one-tick registered observation phase and matching dedicated\nmarkers across all three channels. Available pairs retain their original ticks and signed\nintervals even when a run fails those checks. The result contains explicit refusals and\ndoes not establish numerical equality, encoder provenance, loss-counter reconciliation,\nexport finalisation or physical timing. The separate RTL port controls exercise complete\n1,000-step phased streams before drain and a service channel containing only markers.\n\n`loop_timing_witness.neural_capture_counts.decode_neural_capture_counts` reads the closed\nversioned counter receipt in input/state/service order. Each channel retains the actual\nattempt, accepted, dropped and drained counts, sticky overflow flag and compiled drop-counter\nwidth. `reconcile_neural_capture` checks the original decoded record count against those\nsnapshots. Loss, mismatched totals, incomplete drain and missing exported records produce\nexplicit refusals. A drop count at its maximum remains a lower bound. A channel can satisfy\ncount reconciliation while missing alignment markers or an encoder tail; those independent\nrun predicates still require verification. The real RTL controls exercise both three-bit\nsaturation and exact unsaturated loss at the default 32-bit width.\n\n`loop_timing_witness.neural_capture_files.read_neural_bound_file` checks a closed relative-path,\nSHA-256 and byte-length reference against one caller-admitted finite allocation. It reads a\ncomplete regular file inside the source-custodied run directory and returns exactly the bytes\nwhose whole length and digest passed. The declared length plus the extra boundary byte must\nfit the host's index-sized read limit; oversized declarations are refused before opening the\nfile. Decoders reuse those bytes. A present zero-byte service\npayload can be bound with a zero-byte allocation; an absent file is refused. The source\ndirectory and its files must remain frozen throughout verification and reporting.\n\n`loop_timing_witness.neural_capture.load_neural_capture` combines these checks for all three\nchannels. It takes the original full/payload/marker references, a bound counter receipt and\nthe requested step count, service-ordinal population and no-wrap horizon. It verifies exact\nprojection bytes, reconciles counts and expected attempts including both markers, checks the\ncomplete service-ordinal population and joins the original input/state observations. Known\nloss, population, projection and phase failures remain located findings alongside available\nobservations. Unsupported declarations or unreadable/malformed bound inputs are refused.\n\n`loop_timing_witness.neural_capture_report.neural_capture_report` produces the capture component\nof a report from those retained bytes. It preserves the requested populations, all original\nobservations, their raw record byte offsets, actual source hashes, declared and derived\nprojection hashes, alignment markers, counter bounds and refusal locations. Missing markers\nremain null and an absent service population remains empty. The component reports shared-counter\nticks and makes no numerical, encoder-tail, source-qualification or whole-run acceptance claim.\n"
+    },
+    {
+      "id": "timing-flow-loss",
+      "project": "LOOP-TIMING-WITNESS",
+      "document": "docs/FABRIC_WITNESS.md (source 2026-10-18T14:50:15.082871+00:00)",
+      "start": 131,
+      "end": 141,
+      "source_sha256": "e4fae2a930bd61f630c6bf640d8f64dde06afc3c3e92aec71e266670e47026cc",
+      "projection_sha256": "e4fae2a930bd61f630c6bf640d8f64dde06afc3c3e92aec71e266670e47026cc",
+      "captured_at_utc": "2026-10-18T14:50:15.082871+00:00",
+      "excerpt": "records. The capture pipeline is not an extra accepted storage slot. A full FIFO preserves\nstored records and drops the newest pending record. There is no attempt to stall measured\nsource activity. `OVERFLOW_COUNTER_BITS` accepts 1 through 32, default 32. Invalid parameter\nvalues fail elaboration/simulation. Any loss invalidates the run, including after the buffer\nrecovers. The host manifest must record the final capture-domain count before run reset.\n\nThe machine-readable `event_fifo` contract declares the Gray-pointer implementation,\ndrop-newest policy, 32-bit counter and reset policy. The schema requires those policy fields\nwhen the implementation is declared; the validator checks a supported power-of-two depth.\nEarlier v1 domain snapshots without that implementation declaration retain their original\nsizing contract, so archived hash-bound runs remain interpretable."
+    },
+    {
+      "id": "timing-flow-cdc",
+      "project": "LOOP-TIMING-WITNESS",
+      "document": "docs/FABRIC_WITNESS.md (source 2026-10-18T14:50:15.082871+00:00)",
+      "start": 143,
+      "end": 165,
+      "source_sha256": "e4fae2a930bd61f630c6bf640d8f64dde06afc3c3e92aec71e266670e47026cc",
+      "projection_sha256": "e4fae2a930bd61f630c6bf640d8f64dde06afc3c3e92aec71e266670e47026cc",
+      "captured_at_utc": "2026-10-18T14:50:15.082871+00:00",
+      "excerpt": "## Clock crossing and reset\n\n`event_record_fifo.sv` uses binary pointers with an extra wrap bit, Gray-coded pointers,\ntwo destination-clock synchroniser stages, registered full/empty flags and a dual-clock\n128-bit memory. Full compares the next write Gray pointer to the synchronised read pointer\nwith its top two bits inverted. Empty compares the next read Gray pointer to the synchronised\nwrite pointer. Synchronisation makes flags conservative: newly written data or newly freed\nspace becomes visible after destination-clock edges, rather than immediately. Synchroniser\nregisters carry `ASYNC_REG` attributes. This follows FIFO style 1 in Clifford E. Cummings,\n[Simulation and Synthesis Techniques for Asynchronous FIFO Design, SNUG 2002](https://www.researchgate.net/publication/252160343_Simulation_and_Synthesis_Techniques_for_Asynchronous_FIFO_Design).\n\nBoth clocks share `run_reset_n`. Assertion is asynchronous; each `clock_reset_release.sv`\ninstance waits for two local rising edges before release. A stopped clock remains in reset.\nAssertion flushes the run, clears the timebase and loss state and prevents old records from\nbecoming valid. RAM contents and the invalid read payload are not cleared, preserving memory\ninference. Independent reset of one pointer domain is unsupported. Hold the common reset low\nfor the device's required minimum pulse width and meet reset-recovery/removal constraints.\n\nCapturing and draining need no coherent shared clock. Reading capture-domain status from\nprocessor logic does require a separate coherent CDC snapshot; synchronising each counter\nbit separately is insufficient. Gray-bus skew/max-delay constraints, placement of synchroniser\nstages and RAM inference must be supplied and reviewed in the vendor integration. RTL simulation\nand generic synthesis do not establish metastability rates, timing closure or physical RAM fit."
+    },
+    {
+      "id": "timing-flow-verification-scope",
+      "project": "LOOP-TIMING-WITNESS",
+      "document": "docs/FABRIC_WITNESS.md (source 2026-10-18T14:50:15.082871+00:00)",
+      "start": 167,
+      "end": 198,
+      "source_sha256": "e4fae2a930bd61f630c6bf640d8f64dde06afc3c3e92aec71e266670e47026cc",
+      "projection_sha256": "e4fae2a930bd61f630c6bf640d8f64dde06afc3c3e92aec71e266670e47026cc",
+      "captured_at_utc": "2026-10-18T14:50:15.082871+00:00",
+      "excerpt": "## Verification\n\nRun the dedicated public-port simulations and real host integration:\n\n```bash\n.venv/bin/pytest -q tests/test_clock_reset_release.py tests/test_event_record_fifo.py tests/test_event_witness.py\nyosys -s rtl/check_witness_memory.ys\nyosys -s rtl/check_witness_equivalence.ys\nverilator --lint-only --Wall --top-module event_witness rtl/clock_reset_release.sv rtl/event_record_capture.sv rtl/event_record_fifo.sv rtl/event_witness.sv\n```\n\nThe FIFO scoreboard exercises full capacity, requests at empty, four complete fill/drain\nrounds, deterministic random traffic, faster/slower/equal clock rates, queued-data reset and\nrecovery. The witness scoreboard checks every accepted record and its original timestamp,\ncontinuous events, 17 counted drops, small-width saturation, recovery and a fresh run. The\nhost tests bind the sources, compiled simulation and binary stream by SHA-256, check 5,000-tick\nperiods and 20-tick loop latency, and mark an actual overflow stream invalid. Those values are\ntest schedules, not board performance claims.\n\nGeneric synthesis must retain one 128-bit by 16,384 dual-clock memory at default capacity.\nPost-optimisation equivalence uses a small FIFO configuration with memory mapping and\n`async2sync` normalisation before comparing the prepared and synthesised designs. That proof\nchecks logic transformations under the normalised model; it does not prove physical CDC safety.\nBoard acceptance still requires the same-bitstream tests in\n[`MEASUREMENT_PROTOCOL.md`](MEASUREMENT_PROTOCOL.md).\n\n## Simultaneous control strobes\n\nThe one-event input remains the generic stream contract. The plant entry point instead uses\n`control_event_capture.sv` to snapshot simultaneous strobes before serialization and feeds this\nsame dual-clock FIFO. Its group-queue and combined loss semantics are specified in\n[`PLANT_WITNESS.md`](PLANT_WITNESS.md)."
+    },
+    {
+      "id": "timing-flow-procedure",
+      "project": "LOOP-TIMING-WITNESS",
+      "document": "docs/MEASUREMENT_PROTOCOL.md (source 2026-10-18T14:50:15.082871+00:00)",
+      "start": 13,
+      "end": 58,
+      "source_sha256": "48066f760fc251371b9ab64187352909c5c2faf3f7bb88568c3edd5031835f70",
+      "projection_sha256": "48066f760fc251371b9ab64187352909c5c2faf3f7bb88568c3edd5031835f70",
+      "captured_at_utc": "2026-10-18T14:50:15.082871+00:00",
+      "excerpt": "This document fixes how measurements will be taken and reported. It contains no board results:\nnone exist, and no physical board is currently available. Functional controller simulation\nis specified in [`CONTROLLERS.md`](CONTROLLERS.md); native CLI wall times are local regression\nevidence, not processor placement measurements. The numeric parameters that the validator can check live in\n`measurement-domain.json` under `design_contracts`; a change to either place must change both.\nThe implemented host file formats and calculations are specified in\n[`HOST_ANALYSIS.md`](HOST_ANALYSIS.md), with the input structure in\n[`run-manifest.schema.json`](../run-manifest.schema.json).\n\n## Configuration space\n\nOne configuration is one combination of:\n\n- controller placement: `linux_user_space`, `bare_metal_amp` or `fabric_logic`;\n- load case: idle, CPU stress, memory and cache stress, network stress, storage stress;\n- sample rate: from 100 Hz to 20 kHz, 1 kHz by default;\n- controller (PID with anti-windup or discrete LQR) with its coefficients, and plant\n  (second-order mechanical or first-order thermal) with its fixed-point format;\n- fault schedule, empty for timing runs.\n\n## Procedure\n\n1. The board is powered from its own supply only. Room temperature is recorded.\n2. The same bitstream serves every placement; the placement changes through a register only.\n3. Each repeat starts after a reboot.\n4. A fixed warm-up period is discarded; its length is recorded in the run manifest.\n5. Each repeat runs 1 000 000 control cycles (about 17 minutes at 1 kHz).\n6. Each configuration is repeated five times.\n7. Every repeat writes its event file, power file, measurement-domain snapshot and run manifest\n   with SHA-256 of each referenced file, the bitstream, firmware, operating-system images and\n   controller binary, and the tool versions.\n8. A repeat with any event-buffer overflow is invalid and is reported as invalid, not dropped.\n\nThe buffered RTL witness produces event files for host-tool verification through its actual\ndrain stream, including known-period and overflow simulations. Its drop-newest buffer retains\naccepted records, latches overflow and counts drops with a saturating 32-bit counter. The count\nis a lower bound after saturation, and `overflowed` remains set until common run reset. Record\nstatus before reset: reset flushes both domains and clears all run counters. A processor logger\nmust implement a coherent capture-domain status snapshot before using it in a manifest; raw CDC\nsampling is insufficient. RTL ports and reset timing are specified in\n[`FABRIC_WITNESS.md`](FABRIC_WITNESS.md). Those runs declare\n`source.kind: rtl_simulation` and remain simulation evidence even when the input series are\ninternally valid. A board run declares the source, all input and build artefact paths and their\nSHA-256 values; the host checks the referenced bytes. The board acceptance flags in the run\nmanifest are operator declarations, not a replacement for the separate same-bitstream acceptance\nrecords required below."
+    },
+    {
+      "id": "timing-flow-reporting",
+      "project": "LOOP-TIMING-WITNESS",
+      "document": "docs/MEASUREMENT_PROTOCOL.md (source 2026-10-18T14:50:15.082871+00:00)",
+      "start": 60,
+      "end": 82,
+      "source_sha256": "48066f760fc251371b9ab64187352909c5c2faf3f7bb88568c3edd5031835f70",
+      "projection_sha256": "48066f760fc251371b9ab64187352909c5c2faf3f7bb88568c3edd5031835f70",
+      "captured_at_utc": "2026-10-18T14:50:15.082871+00:00",
+      "excerpt": "## Reporting\n\n- Latency and jitter are reported as distributions — median, 95th, 99th and 99.9th percentile and\n  maximum — per repeat and pooled, with the spread between repeats.\n- Every statistic states its sample count and run duration. No single-run number is presented\n  without its distribution.\n- Per-run latency jitter means the absolute change in the same periodic event interval\n  between adjacent post-warm-up cycles. Both intervals must be complete; missing cycles\n  are never bridged. Pair counts, expected pairs and missing-pair coverage accompany the\n  distribution, with peak-to-peak latency spread reported separately. Fault and safe-state\n  intervals remain latency-only. The exact definition, null/zero semantics and auditable\n  pair outputs are specified in [host analysis](HOST_ANALYSIS.md#latency-jitter).\n  This derived software metric changes no capture or input-manifest parameter; pooled\n  repeats and physical jitter qualification still require their separate campaign evidence.\n- Deadline misses are reported as counts and rates from the hardware monitor.\n- Control quality is the tracking error of the emulated plant, RMS and peak.\n- Energy is reported as mean energy per control cycle over windows of many cycles, per rail and\n  for the four rails together.\n- Fault runs report detection latency and time to safe state per injected fault.\n- The instrument floor from the bus-offset calibration is reported with every latency table.\n- The host report retains the observation duration in timebase ticks and the contributing sample\n  count for each metric. Missing tracking or power input is reported as unavailable, not filled\n  with a simulation substitute."
+    },
+    {
+      "id": "timing-flow-simulation",
+      "project": "LOOP-TIMING-WITNESS",
+      "document": "docs/MEASUREMENT_PROTOCOL.md (source 2026-10-18T14:50:15.082871+00:00)",
+      "start": 84,
+      "end": 134,
+      "source_sha256": "48066f760fc251371b9ab64187352909c5c2faf3f7bb88568c3edd5031835f70",
+      "projection_sha256": "48066f760fc251371b9ab64187352909c5c2faf3f7bb88568c3edd5031835f70",
+      "captured_at_utc": "2026-10-18T14:50:15.082871+00:00",
+      "excerpt": "## Native simulation observations\n\nThe native capture path binds the executed source snapshot, configuration, executable, original\nevent stream, raw tracking and completion metadata to the run manifest. It declares\n`source.kind: rtl_simulation`; its reports remain `simulation_only`, with physical acceptance\nflags false and no power series. These captures verify software and RTL behaviour; they do not\nsatisfy the board procedure or instrument acceptance below.\nThe frozen source includes the production Makefile and its included Spike plugin make fragment,\neven when the selected target builds only the native simulator.\nThe run also binds `producer_context.json` and the actual parent project package,\npackaged contracts and loaded tools. The context records source origins and hashes,\ninterpreter, platform and dependency versions. Source or context drift during\ncapture refuses producer acceptance while retaining the original native artifacts.\n\n`tracking_sampling: observed` permits only the cycles actually read by the controller. Their\ntracking rows must match the captured `SAMPLE_READ` cycles exactly. After warm-up exclusion,\nthe report states the expected cycle count, observed sample count, missing cycles and coverage\nfraction. RMS and peak describe observed samples only. Incomplete coverage is `partial` and\ninvalidates the run; zero post-warm-up observations are `unavailable`. Neither missing samples\nnor their errors are interpolated. Omitting this option or selecting `complete` retains the\ncomplete-series contract in [`HOST_ANALYSIS.md`](HOST_ANALYSIS.md).\n\nOptional hash-bound `native_metadata` preserves the final live miss, overflow, sample and record\ncounts and safe-state status. Its fault kind, cycle and delay duration must agree with\nthe declared schedule even when the metadata and manifest hashes are updated together.\nWithout FIFO loss, those counts must agree with the complete\ncaptured event stream. With loss, the report retains live counts separately: missing actuator\nrecords cannot establish controller deadline misses, and the completion receipt cannot repair\nlost events or make the run valid. Finalisation waits for the configured final deadline,\ncapture quiescence and receiver drain, including events after safe state first latches.\n\nDedicated-hart ISA capture uses a separate hash-bound `amp_capture` receipt, reconciled with\noriginal firmware inputs, original pre-generation/pre-compilation plugin inputs and captured\nnative plugin build/source snapshot, raw observations\nand actual logger completion. It declares\n`bare_metal_amp` with `rtl_simulation`; neither parked companion harts nor the functional clock\nmap qualifies Linux coexistence or physical U54 latency. See [the AMP capture contract](AMP_SIMULATION.md).\n\nOptional hash-bound `host_load` identifies the idle, CPU, memory/cache, private loopback UDP or\nowned-file storage/fsync profile. Its worker interval must enclose the actual native interval;\npolicy readback and complete operation counters describe the whole worker interval. Host\nmonotonic time is separate from fabric event time. CPU affinity does not reserve a core,\nloopback traffic does not establish NIC load, and fsync does not establish uncached storage\nload. These receipts do not qualify board processor timing or energy.\n\nThe Linux PAC1934 journal retains raw accumulator attributes, units and individual host/fabric\nread brackets. It is not a qualified `power.csv`: physical acquisition, rail calibration and\nenergy-window alignment remain unverified. The journal cannot substitute for the power series\nrequired by the board procedure. Formats and validation are in\n[`HOST_ANALYSIS.md`](HOST_ANALYSIS.md); register snapshots, reset custody and final drain are in\n[`PLANT_WITNESS.md`](PLANT_WITNESS.md)."
+    },
+    {
+      "id": "timing-flow-limits",
+      "project": "LOOP-TIMING-WITNESS",
+      "document": "docs/MEASUREMENT_PROTOCOL.md (source 2026-10-18T14:50:15.082871+00:00)",
+      "start": 136,
+      "end": 166,
+      "source_sha256": "48066f760fc251371b9ab64187352909c5c2faf3f7bb88568c3edd5031835f70",
+      "projection_sha256": "48066f760fc251371b9ab64187352909c5c2faf3f7bb88568c3edd5031835f70",
+      "captured_at_utc": "2026-10-18T14:50:15.082871+00:00",
+      "excerpt": "## Stated limits\n\nThese limits are part of every report:\n\n- The PAC1934 rails do not separate processor cores from fabric: the core rail supplies both.\n  Placement energy is whole-rail energy, not per-core energy.\n- The power monitor samples far more slowly than a control cycle. Energy per cycle is a window\n  mean, not a per-cycle measurement.\n- Timestamps resolve 10 ns. Bus access inside the interconnect adds a fixed offset that is\n  calibrated and reported.\n- The plant is emulated. Results describe controller timing and its effect on the emulated plant,\n  not a physical machine.\n- A PREEMPT_RT comparison is included only if a matching kernel builds for the board support\n  package.\n\n## Acceptance of the instrument before any result\n\nA result may be reported only after the instrument has passed, on the same bitstream, the\nknown-period test, the injected-delay test, the overflow test and the bus-offset calibration\ndescribed in [`ARCHITECTURE.md`](ARCHITECTURE.md). Their records are kept with the run records.\n\n## Plant simulation prerequisite\n\n[`PLANT_WITNESS.md`](PLANT_WITNESS.md) specifies the implemented Q8.24 models, reference\nquantisation, strict deadline and safe-state priority, simultaneous event capture and fault\ninjection. `ACT_WRITE` denotes the first timely command; `ACT_LATE` is the first accepted\nlate command in its observation cycle and does not satisfy a deadline. Late-command counts\ncome from the hardware status counter, not the number of `ACT_LATE` records. Preserve clipping\nflags with sample output and include all coefficient values in source/configuration provenance.\nThe injected-delay simulation checks an exact k-period fabric delay; processor execution,\npower-monitor energy and physical safe-state behaviour need separate board acceptance."
     }
   ],
   "library": {
     "state": "Current document capture for these editorial explanations; source-content review pending",
     "scope": "Complete selected source text is shown. Private references are withheld, CRLF is normalised, and original/projected fingerprints remain separate. Source prose dates and qualification scopes still apply.",
-    "captured_at_utc": "2026-10-18T13:03:55.198854+00:00",
+    "captured_at_utc": "2026-10-18T14:50:15.082871+00:00",
     "projects": [
       {
         "project_id": "SCPN-PHWR-CORE",
@@ -60789,6 +61204,518 @@
                 "title": "What would change this architecture"
               }
             ]
+          },
+          {
+            "label": "docs/FABRIC_WITNESS.md (source 2026-10-18T14:50:15.082871+00:00)",
+            "format": "md",
+            "source_sha256": "e4fae2a930bd61f630c6bf640d8f64dde06afc3c3e92aec71e266670e47026cc",
+            "source_bytes": 13605,
+            "projection_sha256": "e4fae2a930bd61f630c6bf640d8f64dde06afc3c3e92aec71e266670e47026cc",
+            "private_references_withheld": 0,
+            "captured_at_utc": "2026-10-18T14:50:15.082871+00:00",
+            "lines": [
+              "<!--",
+              "SPDX-License-Identifier: AGPL-3.0-or-later",
+              "Commercial license available",
+              "© Concepts 1996–2026 Miroslav Šotek. All rights reserved.",
+              "© Code 2020–2026 Miroslav Šotek. All rights reserved.",
+              "ORCID: 0009-0009-3560-0851",
+              "Contact: www.anulum.li | protoscience@anulum.li",
+              "Loop Timing Witness — fabric witness RTL",
+              "-->",
+              "",
+              "# Fabric witness RTL",
+              "",
+              "`rtl/event_witness.sv` connects the timestamp capture to a dual-clock FIFO. This is a",
+              "simulation-tested stream component. Peripheral event arbitration, AXI/UIO access, coherent",
+              "processor status snapshots, physical clock constraints and board qualification remain planned.",
+              "The domain maturity is `architecture_only`; the capability inventory remains empty.",
+              "",
+              "## Event input and record output",
+              "",
+              "| Port | Clock domain | Contract |",
+              "|---|---|---|",
+              "| `event_valid`, `event_code[7:0]`, `cycle_number[31:0]` | capture | One tuple per rising edge when `capture_active` is high. No backpressure. |",
+              "| `capture_active` | capture | Local run reset has released. |",
+              "| `counter_ticks[63:0]` | capture | Free-running counter, cleared by run reset; record samples the pre-increment value. |",
+              "| `buffer_full` | capture | No new record can be accepted at the current write edge. |",
+              "| `event_dropped` | capture | High for each edge rejecting a pending captured record. Consecutive drops keep it high. |",
+              "| `overflowed` | capture | Sticky loss flag until run reset. |",
+              "| `overflow_count` | capture | Saturating count of rejected records; a lower bound after saturation. |",
+              "| `drain_request` | drain | Request the next record; empty requests do not advance the pointer. |",
+              "| `drain_valid`, `drain_record[127:0]` | drain | Registered result of the request at this rising edge; consume only when valid. |",
+              "| `drain_empty` | drain | No record currently visible to the read domain. |",
+              "",
+              "A source tuple is captured at an edge, then offered to the FIFO at the next capture edge.",
+              "It retains the original timestamp even if it later crosses into the drain domain. The write",
+              "status and overflow pulse therefore refer to the pending captured record. The source must",
+              "supply event codes from `rtl/event_codes_pkg.sv` and the hash-bound domain snapshot. The host",
+              "rejects unknown codes, nonzero reserved fields, regressing ticks/cycles and duplicate events.",
+              "Arbitrate simultaneous source strobes before this input; this module cannot represent two",
+              "events at one capture edge. Clock crossing of asynchronous source strobes is also upstream.",
+              "",
+              "The 128-bit output is `{timebase_ticks[63:0], cycle[31:0], 16'd0, 8'd0, event_code[7:0]}`.",
+              "Write its least significant byte first for the published 16-byte little-endian host format.",
+              "The record payload is unspecified when `drain_valid` is low, including during reset.",
+              "",
+              "## Capacity and loss",
+              "",
+              "### Shared-counter channels",
+              "",
+              "`rtl/shared_event_witness.sv` gives independent event FIFOs one common 64-bit capture",
+              "counter. Each channel supplies its own pre-edge valid bit, eight-bit code and 32-bit",
+              "identity. Channel buses are flat: channel `i` occupies bits `i*width +: width`,",
+              "with widths 8 for code, 32 for identity, 64 for run counts and 128 for a record.",
+              "Simultaneous tuples receive the same pre-increment timestamp, with zero",
+              "reserved fields in the existing 128-bit record layout. Codes and identities are supplied",
+              "by the caller's declared profile; the instrument does not interpret a neural state or",
+              "encode it in reserved bits.",
+              "",
+              "The shared capture reset and counter release together. Each registered tuple enters its",
+              "channel FIFO on the next capture edge. `attempt_count` counts those FIFO write attempts;",
+              "`accepted_count` counts accepted writes. A full channel drops its newest record and",
+              "updates its own sticky flag, drop pulse and saturating overflow count. Other channels",
+              "continue independently. Attempt and acceptance counts are 64-bit run counters; the",
+              "admitted run must end before their wrap. Capture-domain status needs a coherent snapshot",
+              "before crossing to a processor or drain clock domain.",
+              "",
+              "`CHANNEL_COUNT` accepts 1 through 32; `ADDRESS_BITS` and `OVERFLOW_COUNTER_BITS` retain",
+              "the FIFO and single-channel witness limits. Every channel has its own drain request,",
+              "valid record and empty flag. An unused channel remains empty. Common reset flushes all",
+              "channels and clears the shared timebase and counts. Reset release, conservative FIFO",
+              "flags, physical CDC constraints and RAM qualification follow the same rules below.",
+              "",
+              "The dedicated simulation exports simultaneous known-edge records, continuously captures",
+              "1,000 records plus two markers per channel at 1,024-record capacity before drain, and",
+              "exercises isolated full-buffer loss, saturation, an empty channel and queued-data reset.",
+              "These are instrument-port controls. Neural wrapper, complete export/report integration",
+              "and board qualification have separate acceptance requirements.",
+              "",
+              "`loop_timing_witness.neural_event_stream.decode_neural_channel` decodes the separate",
+              "input, state and service capture streams, retaining original payload and alignment-marker",
+              "bytes. Its neural record vocabulary uses data codes 14, 15 and 16 respectively and marker",
+              "code 17; it does not register a neural profile in the CONTROL/COMPUTE domain. Missing",
+              "markers, identity gaps and empty streams remain visible. A marker-only service stream has",
+              "an empty payload; this alone does not establish that the encoder tail or export completed.",
+              "Reserved bits, marker positions, population bounds, record order and the 16-bit no-wrap",
+              "horizon are checked independently of file-digest and source binding.",
+              "",
+              "`loop_timing_witness.neural_timing.correlate_neural_steps` joins decoded input and state",
+              "records by their original step identities. It checks the complete requested populations,",
+              "continuous input cadence, one-tick registered observation phase and matching dedicated",
+              "markers across all three channels. Available pairs retain their original ticks and signed",
+              "intervals even when a run fails those checks. The result contains explicit refusals and",
+              "does not establish numerical equality, encoder provenance, loss-counter reconciliation,",
+              "export finalisation or physical timing. The separate RTL port controls exercise complete",
+              "1,000-step phased streams before drain and a service channel containing only markers.",
+              "",
+              "`loop_timing_witness.neural_capture_counts.decode_neural_capture_counts` reads the closed",
+              "versioned counter receipt in input/state/service order. Each channel retains the actual",
+              "attempt, accepted, dropped and drained counts, sticky overflow flag and compiled drop-counter",
+              "width. `reconcile_neural_capture` checks the original decoded record count against those",
+              "snapshots. Loss, mismatched totals, incomplete drain and missing exported records produce",
+              "explicit refusals. A drop count at its maximum remains a lower bound. A channel can satisfy",
+              "count reconciliation while missing alignment markers or an encoder tail; those independent",
+              "run predicates still require verification. The real RTL controls exercise both three-bit",
+              "saturation and exact unsaturated loss at the default 32-bit width.",
+              "",
+              "`loop_timing_witness.neural_capture_files.read_neural_bound_file` checks a closed relative-path,",
+              "SHA-256 and byte-length reference against one caller-admitted finite allocation. It reads a",
+              "complete regular file inside the source-custodied run directory and returns exactly the bytes",
+              "whose whole length and digest passed. The declared length plus the extra boundary byte must",
+              "fit the host's index-sized read limit; oversized declarations are refused before opening the",
+              "file. Decoders reuse those bytes. A present zero-byte service",
+              "payload can be bound with a zero-byte allocation; an absent file is refused. The source",
+              "directory and its files must remain frozen throughout verification and reporting.",
+              "",
+              "`loop_timing_witness.neural_capture.load_neural_capture` combines these checks for all three",
+              "channels. It takes the original full/payload/marker references, a bound counter receipt and",
+              "the requested step count, service-ordinal population and no-wrap horizon. It verifies exact",
+              "projection bytes, reconciles counts and expected attempts including both markers, checks the",
+              "complete service-ordinal population and joins the original input/state observations. Known",
+              "loss, population, projection and phase failures remain located findings alongside available",
+              "observations. Unsupported declarations or unreadable/malformed bound inputs are refused.",
+              "",
+              "`loop_timing_witness.neural_capture_report.neural_capture_report` produces the capture component",
+              "of a report from those retained bytes. It preserves the requested populations, all original",
+              "observations, their raw record byte offsets, actual source hashes, declared and derived",
+              "projection hashes, alignment markers, counter bounds and refusal locations. Missing markers",
+              "remain null and an absent service population remains empty. The component reports shared-counter",
+              "ticks and makes no numerical, encoder-tail, source-qualification or whole-run acceptance claim.",
+              "",
+              "`ADDRESS_BITS` accepts 1 through 14; capacity is `2**ADDRESS_BITS`, with the default 16,384",
+              "records. The capture pipeline is not an extra accepted storage slot. A full FIFO preserves",
+              "stored records and drops the newest pending record. There is no attempt to stall measured",
+              "source activity. `OVERFLOW_COUNTER_BITS` accepts 1 through 32, default 32. Invalid parameter",
+              "values fail elaboration/simulation. Any loss invalidates the run, including after the buffer",
+              "recovers. The host manifest must record the final capture-domain count before run reset.",
+              "",
+              "The machine-readable `event_fifo` contract declares the Gray-pointer implementation,",
+              "drop-newest policy, 32-bit counter and reset policy. The schema requires those policy fields",
+              "when the implementation is declared; the validator checks a supported power-of-two depth.",
+              "Earlier v1 domain snapshots without that implementation declaration retain their original",
+              "sizing contract, so archived hash-bound runs remain interpretable.",
+              "",
+              "## Clock crossing and reset",
+              "",
+              "`event_record_fifo.sv` uses binary pointers with an extra wrap bit, Gray-coded pointers,",
+              "two destination-clock synchroniser stages, registered full/empty flags and a dual-clock",
+              "128-bit memory. Full compares the next write Gray pointer to the synchronised read pointer",
+              "with its top two bits inverted. Empty compares the next read Gray pointer to the synchronised",
+              "write pointer. Synchronisation makes flags conservative: newly written data or newly freed",
+              "space becomes visible after destination-clock edges, rather than immediately. Synchroniser",
+              "registers carry `ASYNC_REG` attributes. This follows FIFO style 1 in Clifford E. Cummings,",
+              "[Simulation and Synthesis Techniques for Asynchronous FIFO Design, SNUG 2002](https://www.researchgate.net/publication/252160343_Simulation_and_Synthesis_Techniques_for_Asynchronous_FIFO_Design).",
+              "",
+              "Both clocks share `run_reset_n`. Assertion is asynchronous; each `clock_reset_release.sv`",
+              "instance waits for two local rising edges before release. A stopped clock remains in reset.",
+              "Assertion flushes the run, clears the timebase and loss state and prevents old records from",
+              "becoming valid. RAM contents and the invalid read payload are not cleared, preserving memory",
+              "inference. Independent reset of one pointer domain is unsupported. Hold the common reset low",
+              "for the device's required minimum pulse width and meet reset-recovery/removal constraints.",
+              "",
+              "Capturing and draining need no coherent shared clock. Reading capture-domain status from",
+              "processor logic does require a separate coherent CDC snapshot; synchronising each counter",
+              "bit separately is insufficient. Gray-bus skew/max-delay constraints, placement of synchroniser",
+              "stages and RAM inference must be supplied and reviewed in the vendor integration. RTL simulation",
+              "and generic synthesis do not establish metastability rates, timing closure or physical RAM fit.",
+              "",
+              "## Verification",
+              "",
+              "Run the dedicated public-port simulations and real host integration:",
+              "",
+              "```bash",
+              ".venv/bin/pytest -q tests/test_clock_reset_release.py tests/test_event_record_fifo.py tests/test_event_witness.py",
+              "yosys -s rtl/check_witness_memory.ys",
+              "yosys -s rtl/check_witness_equivalence.ys",
+              "verilator --lint-only --Wall --top-module event_witness rtl/clock_reset_release.sv rtl/event_record_capture.sv rtl/event_record_fifo.sv rtl/event_witness.sv",
+              "```",
+              "",
+              "The FIFO scoreboard exercises full capacity, requests at empty, four complete fill/drain",
+              "rounds, deterministic random traffic, faster/slower/equal clock rates, queued-data reset and",
+              "recovery. The witness scoreboard checks every accepted record and its original timestamp,",
+              "continuous events, 17 counted drops, small-width saturation, recovery and a fresh run. The",
+              "host tests bind the sources, compiled simulation and binary stream by SHA-256, check 5,000-tick",
+              "periods and 20-tick loop latency, and mark an actual overflow stream invalid. Those values are",
+              "test schedules, not board performance claims.",
+              "",
+              "Generic synthesis must retain one 128-bit by 16,384 dual-clock memory at default capacity.",
+              "Post-optimisation equivalence uses a small FIFO configuration with memory mapping and",
+              "`async2sync` normalisation before comparing the prepared and synthesised designs. That proof",
+              "checks logic transformations under the normalised model; it does not prove physical CDC safety.",
+              "Board acceptance still requires the same-bitstream tests in",
+              "[`MEASUREMENT_PROTOCOL.md`](MEASUREMENT_PROTOCOL.md).",
+              "",
+              "## Simultaneous control strobes",
+              "",
+              "The one-event input remains the generic stream contract. The plant entry point instead uses",
+              "`control_event_capture.sv` to snapshot simultaneous strobes before serialization and feeds this",
+              "same dual-clock FIFO. Its group-queue and combined loss semantics are specified in",
+              "[`PLANT_WITNESS.md`](PLANT_WITNESS.md).",
+              ""
+            ],
+            "chapters": [
+              {
+                "line": 11,
+                "level": 1,
+                "title": "Fabric witness RTL"
+              },
+              {
+                "line": 18,
+                "level": 2,
+                "title": "Event input and record output"
+              },
+              {
+                "line": 45,
+                "level": 2,
+                "title": "Capacity and loss"
+              },
+              {
+                "line": 47,
+                "level": 3,
+                "title": "Shared-counter channels"
+              },
+              {
+                "line": 143,
+                "level": 2,
+                "title": "Clock crossing and reset"
+              },
+              {
+                "line": 167,
+                "level": 2,
+                "title": "Verification"
+              },
+              {
+                "line": 193,
+                "level": 2,
+                "title": "Simultaneous control strobes"
+              }
+            ]
+          },
+          {
+            "label": "docs/MEASUREMENT_PROTOCOL.md (source 2026-10-18T14:50:15.082871+00:00)",
+            "format": "md",
+            "source_sha256": "48066f760fc251371b9ab64187352909c5c2faf3f7bb88568c3edd5031835f70",
+            "source_bytes": 10646,
+            "projection_sha256": "48066f760fc251371b9ab64187352909c5c2faf3f7bb88568c3edd5031835f70",
+            "private_references_withheld": 0,
+            "captured_at_utc": "2026-10-18T14:50:15.082871+00:00",
+            "lines": [
+              "<!--",
+              "SPDX-License-Identifier: AGPL-3.0-or-later",
+              "Commercial license available",
+              "© Concepts 1996–2026 Miroslav Šotek. All rights reserved.",
+              "© Code 2020–2026 Miroslav Šotek. All rights reserved.",
+              "ORCID: 0009-0009-3560-0851",
+              "Contact: www.anulum.li | protoscience@anulum.li",
+              "Loop Timing Witness — measurement protocol",
+              "-->",
+              "",
+              "# Measurement protocol",
+              "",
+              "This document fixes how measurements will be taken and reported. It contains no board results:",
+              "none exist, and no physical board is currently available. Functional controller simulation",
+              "is specified in [`CONTROLLERS.md`](CONTROLLERS.md); native CLI wall times are local regression",
+              "evidence, not processor placement measurements. The numeric parameters that the validator can check live in",
+              "`measurement-domain.json` under `design_contracts`; a change to either place must change both.",
+              "The implemented host file formats and calculations are specified in",
+              "[`HOST_ANALYSIS.md`](HOST_ANALYSIS.md), with the input structure in",
+              "[`run-manifest.schema.json`](../run-manifest.schema.json).",
+              "",
+              "## Configuration space",
+              "",
+              "One configuration is one combination of:",
+              "",
+              "- controller placement: `linux_user_space`, `bare_metal_amp` or `fabric_logic`;",
+              "- load case: idle, CPU stress, memory and cache stress, network stress, storage stress;",
+              "- sample rate: from 100 Hz to 20 kHz, 1 kHz by default;",
+              "- controller (PID with anti-windup or discrete LQR) with its coefficients, and plant",
+              "  (second-order mechanical or first-order thermal) with its fixed-point format;",
+              "- fault schedule, empty for timing runs.",
+              "",
+              "## Procedure",
+              "",
+              "1. The board is powered from its own supply only. Room temperature is recorded.",
+              "2. The same bitstream serves every placement; the placement changes through a register only.",
+              "3. Each repeat starts after a reboot.",
+              "4. A fixed warm-up period is discarded; its length is recorded in the run manifest.",
+              "5. Each repeat runs 1 000 000 control cycles (about 17 minutes at 1 kHz).",
+              "6. Each configuration is repeated five times.",
+              "7. Every repeat writes its event file, power file, measurement-domain snapshot and run manifest",
+              "   with SHA-256 of each referenced file, the bitstream, firmware, operating-system images and",
+              "   controller binary, and the tool versions.",
+              "8. A repeat with any event-buffer overflow is invalid and is reported as invalid, not dropped.",
+              "",
+              "The buffered RTL witness produces event files for host-tool verification through its actual",
+              "drain stream, including known-period and overflow simulations. Its drop-newest buffer retains",
+              "accepted records, latches overflow and counts drops with a saturating 32-bit counter. The count",
+              "is a lower bound after saturation, and `overflowed` remains set until common run reset. Record",
+              "status before reset: reset flushes both domains and clears all run counters. A processor logger",
+              "must implement a coherent capture-domain status snapshot before using it in a manifest; raw CDC",
+              "sampling is insufficient. RTL ports and reset timing are specified in",
+              "[`FABRIC_WITNESS.md`](FABRIC_WITNESS.md). Those runs declare",
+              "`source.kind: rtl_simulation` and remain simulation evidence even when the input series are",
+              "internally valid. A board run declares the source, all input and build artefact paths and their",
+              "SHA-256 values; the host checks the referenced bytes. The board acceptance flags in the run",
+              "manifest are operator declarations, not a replacement for the separate same-bitstream acceptance",
+              "records required below.",
+              "",
+              "## Reporting",
+              "",
+              "- Latency and jitter are reported as distributions — median, 95th, 99th and 99.9th percentile and",
+              "  maximum — per repeat and pooled, with the spread between repeats.",
+              "- Every statistic states its sample count and run duration. No single-run number is presented",
+              "  without its distribution.",
+              "- Per-run latency jitter means the absolute change in the same periodic event interval",
+              "  between adjacent post-warm-up cycles. Both intervals must be complete; missing cycles",
+              "  are never bridged. Pair counts, expected pairs and missing-pair coverage accompany the",
+              "  distribution, with peak-to-peak latency spread reported separately. Fault and safe-state",
+              "  intervals remain latency-only. The exact definition, null/zero semantics and auditable",
+              "  pair outputs are specified in [host analysis](HOST_ANALYSIS.md#latency-jitter).",
+              "  This derived software metric changes no capture or input-manifest parameter; pooled",
+              "  repeats and physical jitter qualification still require their separate campaign evidence.",
+              "- Deadline misses are reported as counts and rates from the hardware monitor.",
+              "- Control quality is the tracking error of the emulated plant, RMS and peak.",
+              "- Energy is reported as mean energy per control cycle over windows of many cycles, per rail and",
+              "  for the four rails together.",
+              "- Fault runs report detection latency and time to safe state per injected fault.",
+              "- The instrument floor from the bus-offset calibration is reported with every latency table.",
+              "- The host report retains the observation duration in timebase ticks and the contributing sample",
+              "  count for each metric. Missing tracking or power input is reported as unavailable, not filled",
+              "  with a simulation substitute.",
+              "",
+              "## Native simulation observations",
+              "",
+              "The native capture path binds the executed source snapshot, configuration, executable, original",
+              "event stream, raw tracking and completion metadata to the run manifest. It declares",
+              "`source.kind: rtl_simulation`; its reports remain `simulation_only`, with physical acceptance",
+              "flags false and no power series. These captures verify software and RTL behaviour; they do not",
+              "satisfy the board procedure or instrument acceptance below.",
+              "The frozen source includes the production Makefile and its included Spike plugin make fragment,",
+              "even when the selected target builds only the native simulator.",
+              "The run also binds `producer_context.json` and the actual parent project package,",
+              "packaged contracts and loaded tools. The context records source origins and hashes,",
+              "interpreter, platform and dependency versions. Source or context drift during",
+              "capture refuses producer acceptance while retaining the original native artifacts.",
+              "",
+              "`tracking_sampling: observed` permits only the cycles actually read by the controller. Their",
+              "tracking rows must match the captured `SAMPLE_READ` cycles exactly. After warm-up exclusion,",
+              "the report states the expected cycle count, observed sample count, missing cycles and coverage",
+              "fraction. RMS and peak describe observed samples only. Incomplete coverage is `partial` and",
+              "invalidates the run; zero post-warm-up observations are `unavailable`. Neither missing samples",
+              "nor their errors are interpolated. Omitting this option or selecting `complete` retains the",
+              "complete-series contract in [`HOST_ANALYSIS.md`](HOST_ANALYSIS.md).",
+              "",
+              "Optional hash-bound `native_metadata` preserves the final live miss, overflow, sample and record",
+              "counts and safe-state status. Its fault kind, cycle and delay duration must agree with",
+              "the declared schedule even when the metadata and manifest hashes are updated together.",
+              "Without FIFO loss, those counts must agree with the complete",
+              "captured event stream. With loss, the report retains live counts separately: missing actuator",
+              "records cannot establish controller deadline misses, and the completion receipt cannot repair",
+              "lost events or make the run valid. Finalisation waits for the configured final deadline,",
+              "capture quiescence and receiver drain, including events after safe state first latches.",
+              "",
+              "Dedicated-hart ISA capture uses a separate hash-bound `amp_capture` receipt, reconciled with",
+              "original firmware inputs, original pre-generation/pre-compilation plugin inputs and captured",
+              "native plugin build/source snapshot, raw observations",
+              "and actual logger completion. It declares",
+              "`bare_metal_amp` with `rtl_simulation`; neither parked companion harts nor the functional clock",
+              "map qualifies Linux coexistence or physical U54 latency. See [the AMP capture contract](AMP_SIMULATION.md).",
+              "",
+              "Optional hash-bound `host_load` identifies the idle, CPU, memory/cache, private loopback UDP or",
+              "owned-file storage/fsync profile. Its worker interval must enclose the actual native interval;",
+              "policy readback and complete operation counters describe the whole worker interval. Host",
+              "monotonic time is separate from fabric event time. CPU affinity does not reserve a core,",
+              "loopback traffic does not establish NIC load, and fsync does not establish uncached storage",
+              "load. These receipts do not qualify board processor timing or energy.",
+              "",
+              "The Linux PAC1934 journal retains raw accumulator attributes, units and individual host/fabric",
+              "read brackets. It is not a qualified `power.csv`: physical acquisition, rail calibration and",
+              "energy-window alignment remain unverified. The journal cannot substitute for the power series",
+              "required by the board procedure. Formats and validation are in",
+              "[`HOST_ANALYSIS.md`](HOST_ANALYSIS.md); register snapshots, reset custody and final drain are in",
+              "[`PLANT_WITNESS.md`](PLANT_WITNESS.md).",
+              "",
+              "## Stated limits",
+              "",
+              "These limits are part of every report:",
+              "",
+              "- The PAC1934 rails do not separate processor cores from fabric: the core rail supplies both.",
+              "  Placement energy is whole-rail energy, not per-core energy.",
+              "- The power monitor samples far more slowly than a control cycle. Energy per cycle is a window",
+              "  mean, not a per-cycle measurement.",
+              "- Timestamps resolve 10 ns. Bus access inside the interconnect adds a fixed offset that is",
+              "  calibrated and reported.",
+              "- The plant is emulated. Results describe controller timing and its effect on the emulated plant,",
+              "  not a physical machine.",
+              "- A PREEMPT_RT comparison is included only if a matching kernel builds for the board support",
+              "  package.",
+              "",
+              "## Acceptance of the instrument before any result",
+              "",
+              "A result may be reported only after the instrument has passed, on the same bitstream, the",
+              "known-period test, the injected-delay test, the overflow test and the bus-offset calibration",
+              "described in [`ARCHITECTURE.md`](ARCHITECTURE.md). Their records are kept with the run records.",
+              "",
+              "## Plant simulation prerequisite",
+              "",
+              "[`PLANT_WITNESS.md`](PLANT_WITNESS.md) specifies the implemented Q8.24 models, reference",
+              "quantisation, strict deadline and safe-state priority, simultaneous event capture and fault",
+              "injection. `ACT_WRITE` denotes the first timely command; `ACT_LATE` is the first accepted",
+              "late command in its observation cycle and does not satisfy a deadline. Late-command counts",
+              "come from the hardware status counter, not the number of `ACT_LATE` records. Preserve clipping",
+              "flags with sample output and include all coefficient values in source/configuration provenance.",
+              "The injected-delay simulation checks an exact k-period fabric delay; processor execution,",
+              "power-monitor energy and physical safe-state behaviour need separate board acceptance.",
+              ""
+            ],
+            "chapters": [
+              {
+                "line": 11,
+                "level": 1,
+                "title": "Measurement protocol"
+              },
+              {
+                "line": 22,
+                "level": 2,
+                "title": "Configuration space"
+              },
+              {
+                "line": 33,
+                "level": 2,
+                "title": "Procedure"
+              },
+              {
+                "line": 60,
+                "level": 2,
+                "title": "Reporting"
+              },
+              {
+                "line": 84,
+                "level": 2,
+                "title": "Native simulation observations"
+              },
+              {
+                "line": 136,
+                "level": 2,
+                "title": "Stated limits"
+              },
+              {
+                "line": 151,
+                "level": 2,
+                "title": "Acceptance of the instrument before any result"
+              },
+              {
+                "line": 157,
+                "level": 2,
+                "title": "Plant simulation prerequisite"
+              }
+            ]
+          },
+          {
+            "label": "rtl/event_record_capture.sv (source 2026-10-18T14:50:15.082871+00:00)",
+            "format": "sv",
+            "source_sha256": "222b1f380c4d38226bac5accea382de6141b169e77f8e39db04455b1e0001424",
+            "source_bytes": 1132,
+            "projection_sha256": "222b1f380c4d38226bac5accea382de6141b169e77f8e39db04455b1e0001424",
+            "private_references_withheld": 0,
+            "captured_at_utc": "2026-10-18T14:50:15.082871+00:00",
+            "lines": [
+              "// SPDX-License-Identifier: AGPL-3.0-or-later",
+              "// Commercial license available",
+              "// © Concepts 1996–2026 Miroslav Šotek. All rights reserved.",
+              "// © Code 2020–2026 Miroslav Šotek. All rights reserved.",
+              "// ORCID: 0009-0009-3560-0851",
+              "// Contact: www.anulum.li | protoscience@anulum.li",
+              "// Loop Timing Witness — fabric timestamp record capture",
+              "",
+              "module event_record_capture (",
+              "    input  logic         clock,",
+              "    input  logic         reset_n,",
+              "    input  logic         event_valid,",
+              "    input  logic [7:0]   event_code,",
+              "    input  logic [31:0]  cycle_number,",
+              "    output logic         record_valid,",
+              "    output logic [127:0] record,",
+              "    output logic [63:0]  counter_ticks",
+              ");",
+              "    always_ff @(posedge clock or negedge reset_n) begin",
+              "        if (!reset_n) begin",
+              "            counter_ticks <= 64'd0;",
+              "            record_valid <= 1'b0;",
+              "            record <= 128'd0;",
+              "        end else begin",
+              "            counter_ticks <= counter_ticks + 64'd1;",
+              "            record_valid <= event_valid;",
+              "            if (event_valid) begin",
+              "                record <= {counter_ticks, cycle_number, 16'd0, 8'd0, event_code};",
+              "            end",
+              "        end",
+              "    end",
+              "endmodule",
+              ""
+            ],
+            "chapters": []
           }
         ]
       },

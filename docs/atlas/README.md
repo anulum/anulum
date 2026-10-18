@@ -104,8 +104,8 @@ observations, independent of resource and budget data.
 |---|---|---:|
 | Profile images across all five languages | Four generated header/map SVGs, 91 badge SVGs and the footer image | 621,868 |
 | Dated catalogue provenance | `assets/catalogue-source.json`, plus its ownership sidecar | 114,267 before sidecar |
-| Interactive site snapshot | 79 manifest-listed assets | 36,776,446 |
-| Main interactive entry page | `index.html`, including its eight embedded datasets | 12,054,162 |
+| Interactive site snapshot | 80 manifest-listed assets | 36,970,989 |
+| Main interactive entry page | `index.html`, including its eight embedded datasets | 12,140,685 |
 
 The HTML, JavaScript modules, source-document JSON, illustrations and figure
 downloads belong to the separately hosted explorer. The full snapshot repeats
@@ -168,3 +168,10 @@ Fusion-to-Fire software chain. Stateless stochastic admission and the stateful
 exact-current AER diagnostic keep distinct model and authority scopes. Local RTL
 cycles, FUSION model outputs, replay provenance and physical timing qualification
 remain separate; source inspection here performs no new domain execution.
+
+The Timing Witness explanation follows original fabric event ticks through loss-aware
+buffering, manifest-bound run records and scoped latency, jitter and tracking reports.
+Power windows, emulated plant/controller models and physical instrument acceptance
+retain separate meanings. Current fabric documentation includes unfinished neural
+work; reused architecture references preserve their earlier source date. Concrete
+board, integration and instrumentation roles are requirements, not acquisitions.
