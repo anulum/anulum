@@ -104,8 +104,8 @@ observations, independent of resource and budget data.
 |---|---|---:|
 | Profile images across all five languages | Four generated header/map SVGs, 91 badge SVGs and the footer image | 621,868 |
 | Dated catalogue provenance | `assets/catalogue-source.json`, plus its ownership sidecar | 114,267 before sidecar |
-| Interactive site snapshot | 76 manifest-listed assets | 35,819,981 |
-| Main interactive entry page | `index.html`, including its eight embedded datasets | 11,638,303 |
+| Interactive site snapshot | 77 manifest-listed assets | 36,312,909 |
+| Main interactive entry page | `index.html`, including its eight embedded datasets | 11,852,098 |
 
 The HTML, JavaScript modules, source-document JSON, illustrations and figure
 downloads belong to the separately hosted explorer. The full snapshot repeats
@@ -150,3 +150,9 @@ extraction from the generic seeded model loop. Phase/amplitude evolution,
 projected model-only feedback and audit records keep their declared origins;
 reactor-semantic review retains separate producer and CONTROL admission roles.
 Existing connections and earlier source captures preserve their original dates.
+
+The Fusion Core explanation follows declared equilibrium problems, radial
+transport and synthetic/inverse diagnostics. Its 3D surface export and reduced
+Fourier force-balance calculation retain distinct inputs, outputs and checks;
+case-level scientific evidence and downstream consumer admission remain separate.
+Earlier project links and captured sources keep their original dates.

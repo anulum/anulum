@@ -1,0 +1,91 @@
+<!--
+SPDX-License-Identifier: AGPL-3.0-or-later
+Commercial license available
+© Concepts 1996–2026 Miroslav Šotek. All rights reserved.
+© Code 2020–2026 Miroslav Šotek. All rights reserved.
+ORCID: 0009-0009-3560-0851
+Contact: www.anulum.li | protoscience@anulum.li
+ANULUM — Fusion fields, profiles, diagnostics and 3D models
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1640" role="img" aria-labelledby="title description">
+<title id="title">Fusion Core: fields, profiles, diagnostics and 3D models</title>
+<desc id="description">A declared equilibrium problem produces selected flux and field outputs. Radial transport, synthetic and inverse diagnostics, toroidal surface export and reduced Fourier force-balance retain their own inputs and representations. Case-bound evidence and downstream consumer admission are separate. Source inspection only; no physics model, geometry export or hardware executed.</desc>
+<defs><marker id="arrow" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 Z" fill="#477655"/></marker></defs>
+<rect width="1440" height="1640" fill="#fafbf8"/><g font-family="DejaVu Sans,sans-serif">
+<text x="54" y="44" font-size="17" font-weight="600" fill="#506958">ANULUM / SCPN REACTOR SYSTEMS</text>
+<text x="54" y="96" font-size="32" font-weight="600" fill="#19392d">Fusion Core: fields, profiles, diagnostics and 3D models</text>
+<text x="54" y="132" font-size="19" font-weight="400" fill="#506958">In progress · source capture 2026-10-18 · source-described solver and representation paths</text>
+<text x="54" y="187" font-size="19" font-weight="600" fill="#19392d">1 / DEFINE THE EQUILIBRIUM CASE AND SELECT ITS SOLVER</text>
+<rect x="54" y="210" width="400" height="172" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="74" y="246" font-size="23" font-weight="600" fill="#19392d">Declared forward problem</text>
+<text x="74" y="285" font-size="19" font-weight="400" fill="#506958">Grid, coils and profile derivatives</text>
+<text x="74" y="313" font-size="19" font-weight="400" fill="#506958">Boundary / response data</text>
+<text x="74" y="341" font-size="19" font-weight="400" fill="#506958">Exact source and solver settings</text>
+<rect x="520" y="210" width="400" height="172" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="540" y="246" font-size="23" font-weight="600" fill="#19392d">Selected equilibrium path</text>
+<text x="540" y="285" font-size="19" font-weight="400" fill="#506958">Grad–Shafranov formulation</text>
+<text x="540" y="313" font-size="19" font-weight="400" fill="#506958">Explicit compiled JAX option</text>
+<text x="540" y="341" font-size="19" font-weight="400" fill="#506958">Convergence and reference checks</text>
+<rect x="986" y="210" width="400" height="172" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="1006" y="246" font-size="23" font-weight="600" fill="#19392d">Equilibrium outputs</text>
+<text x="1006" y="285" font-size="19" font-weight="400" fill="#506958">Poloidal flux psi(R, Z)</text>
+<text x="1006" y="313" font-size="19" font-weight="400" fill="#506958">Axis / X-point / field where produced</text>
+<text x="1006" y="341" font-size="19" font-weight="400" fill="#506958">Source, grid and solver identity</text>
+<path d="M454 296 H516" fill="none" stroke="#477655" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M920 296 H982" fill="none" stroke="#477655" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="54" y="433" font-size="19" font-weight="600" fill="#19392d">2 / RELATED LANES WITH THEIR OWN INPUTS AND ASSUMPTIONS</text>
+<rect x="54" y="457" width="400" height="172" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="74" y="493" font-size="23" font-weight="600" fill="#19392d">Radial transport</text>
+<text x="74" y="532" font-size="19" font-weight="400" fill="#506958">Temperature / density and geometry</text>
+<text x="74" y="560" font-size="19" font-weight="400" fill="#506958">Declared sources and closures</text>
+<text x="74" y="588" font-size="19" font-weight="400" fill="#506958">Evolved profiles and diffusivities</text>
+<rect x="520" y="457" width="400" height="172" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="540" y="493" font-size="23" font-weight="600" fill="#19392d">Diagnostics and inversion</text>
+<text x="540" y="532" font-size="19" font-weight="400" fill="#506958">Virtual instruments and noise</text>
+<text x="540" y="560" font-size="19" font-weight="400" fill="#506958">Forward / line-integrated channels</text>
+<text x="540" y="588" font-size="19" font-weight="400" fill="#506958">Reconstructed fields and metrics</text>
+<rect x="986" y="457" width="400" height="172" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="1006" y="493" font-size="23" font-weight="600" fill="#19392d">Three-dimensional views</text>
+<text x="1006" y="532" font-size="19" font-weight="400" fill="#506958">Traced 2D LCFS or Fourier shaping</text>
+<text x="1006" y="560" font-size="19" font-weight="400" fill="#506958">Triangulated surface and OBJ</text>
+<text x="1006" y="588" font-size="19" font-weight="400" fill="#506958">A representation with its own scope</text>
+<rect x="54" y="655" width="1332" height="119" rx="16" fill="#f3f1e9" stroke="#d6c9a8" stroke-width="2"/>
+<text x="75" y="690" font-size="21" font-weight="600" fill="#19392d">A field, a profile, a reconstructed signal and a surface describe different calculations.</text>
+<text x="75" y="725" font-size="19" font-weight="400" fill="#506958">Each lane retains its selected geometry, sources, numerical resolution, backend and evidence.</text>
+<text x="75" y="755" font-size="19" font-weight="400" fill="#506958">This is a map of related capabilities; it does not assert that every module runs in one automatic pipeline.</text>
+<text x="54" y="825" font-size="19" font-weight="600" fill="#19392d">3 / TWO DISTINCT THREE-DIMENSIONAL OUTPUTS</text>
+<rect x="54" y="849" width="640" height="202" rx="16" fill="#e8f0f7" stroke="#b7cbbb" stroke-width="2"/>
+<text x="74" y="885" font-size="23" font-weight="600" fill="#19392d">Geometric surface</text>
+<text x="74" y="924" font-size="19" font-weight="400" fill="#506958">Trace an approximate 2D boundary</text>
+<text x="74" y="952" font-size="19" font-weight="400" fill="#506958">Or sample a reduced Fourier surface</text>
+<text x="74" y="980" font-size="19" font-weight="400" fill="#506958">Return triangle vertices / faces and OBJ</text>
+<text x="74" y="1008" font-size="19" font-weight="400" fill="#506958">Closest-sample / ellipse fallbacks</text>
+<rect x="746" y="849" width="640" height="202" rx="16" fill="#e8f0f7" stroke="#b7cbbb" stroke-width="2"/>
+<text x="766" y="885" font-size="23" font-weight="600" fill="#19392d">Reduced ForceBalance3D</text>
+<text x="766" y="924" font-size="19" font-weight="400" fill="#506958">Sample a reduced MHD force residual</text>
+<text x="766" y="952" font-size="19" font-weight="400" fill="#506958">Iterate Fourier mode coefficients</text>
+<text x="766" y="980" font-size="19" font-weight="400" fill="#506958">Return residual history / convergence</text>
+<text x="766" y="1008" font-size="19" font-weight="400" fill="#506958">Separate from a full VMEC formulation</text>
+<text x="54" y="1102" font-size="19" font-weight="600" fill="#19392d">4 / INTERCHANGE, CASE EVIDENCE AND CONSUMER OWNERSHIP</text>
+<rect x="54" y="1126" width="400" height="172" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="74" y="1162" font-size="23" font-weight="600" fill="#19392d">Distinct exported records</text>
+<text x="74" y="1201" font-size="19" font-weight="400" fill="#506958">GEQDSK / IMAS and model data</text>
+<text x="74" y="1229" font-size="19" font-weight="400" fill="#506958">Figures / meshes / controller research</text>
+<text x="74" y="1257" font-size="19" font-weight="400" fill="#506958">Source-bound reports and manifests</text>
+<rect x="520" y="1126" width="400" height="172" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="540" y="1162" font-size="23" font-weight="600" fill="#19392d">Case-level qualification</text>
+<text x="540" y="1201" font-size="19" font-weight="400" fill="#506958">Actual inputs and convergence</text>
+<text x="540" y="1229" font-size="19" font-weight="400" fill="#506958">Reference / conservation / parity</text>
+<text x="540" y="1257" font-size="19" font-weight="400" fill="#506958">Synthetic or measured origin</text>
+<rect x="986" y="1126" width="400" height="172" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="1006" y="1162" font-size="23" font-weight="600" fill="#19392d">Downstream consumers</text>
+<text x="1006" y="1201" font-size="19" font-weight="400" fill="#506958">CONTROL: its own admission</text>
+<text x="1006" y="1229" font-size="19" font-weight="400" fill="#506958">MIF / Quantum: their own workflows</text>
+<text x="1006" y="1257" font-size="19" font-weight="400" fill="#506958">Studio: discovery and interface</text>
+<rect x="54" y="1334" width="1332" height="136" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="75" y="1373" font-size="23" font-weight="600" fill="#19392d">A 3D view does not complete a reactor design or qualify a physical plant.</text>
+<text x="75" y="1412" font-size="19" font-weight="400" fill="#506958">Engineering, material, wall, thermal and nuclear models retain their own assumptions and validation requirements.</text>
+<text x="75" y="1443" font-size="19" font-weight="400" fill="#506958">Solver availability, a valid export or a narrow benchmark does not settle full-fidelity or facility acceptance.</text>
+<text x="54" y="1558" font-size="19" font-weight="400" fill="#506958">Source inspection only · no equilibrium / transport / diagnostic / 3D / export / backend execution</text>
+<text x="54" y="1592" font-size="19" font-weight="400" fill="#506958">Source-owner content, scientific, consumer and publication review pending</text>
+</g><metadata>{&quot;source_capture&quot;: &quot;2026-10-18T03:42:40.675813+00:00&quot;, &quot;source_fingerprints&quot;: [{&quot;project&quot;: &quot;SCPN-FUSION-CORE&quot;, &quot;label&quot;: &quot;docs/ARCHITECTURE.md&quot;, &quot;source_sha256&quot;: &quot;ddab9d629ce66e383b66f5190d732660fedc87ab28d949b6555940f6c81b2603&quot;}, {&quot;project&quot;: &quot;SCPN-FUSION-CORE&quot;, &quot;label&quot;: &quot;docs/sphinx/userguide/equilibrium.rst&quot;, &quot;source_sha256&quot;: &quot;d746afa7074cf99b5c83f50315fdacece463fc81060eb1b3eb9cf2da9ff9d18e&quot;}, {&quot;project&quot;: &quot;SCPN-FUSION-CORE&quot;, &quot;label&quot;: &quot;docs/sphinx/userguide/transport.rst&quot;, &quot;source_sha256&quot;: &quot;b24ba98e306799dec3a2258b0745b12702962b983d4be3bed3ead0964b57735e&quot;}, {&quot;project&quot;: &quot;SCPN-FUSION-CORE&quot;, &quot;label&quot;: &quot;docs/sphinx/userguide/diagnostics.rst&quot;, &quot;source_sha256&quot;: &quot;5e5e1c4ded651b7213619b9146005dfd83847fad6c4b2ab098403779c9fd217b&quot;}, {&quot;project&quot;: &quot;SCPN-FUSION-CORE&quot;, &quot;label&quot;: &quot;src/scpn_fusion/core/geometry_3d.py&quot;, &quot;source_sha256&quot;: &quot;e6d93e50f553feb4fbd8c63ce7bd8281bcc57499e1132eeb3a277a25ad27438f&quot;}, {&quot;project&quot;: &quot;SCPN-FUSION-CORE&quot;, &quot;label&quot;: &quot;src/scpn_fusion/core/equilibrium_3d.py&quot;, &quot;source_sha256&quot;: &quot;e8406b31153b33a69432cc4be6f8612c59574c7b597d85db8b2a900336e81ef0&quot;}, {&quot;project&quot;: &quot;SCPN-FUSION-CORE&quot;, &quot;label&quot;: &quot;src/scpn_fusion/core/jax_predictive_forward_compiled.py&quot;, &quot;source_sha256&quot;: &quot;b6b6efe157701e9e60f1591a0743718dc9d5fc13ec1ca6a49c3ab1f1cf46b0f5&quot;}], &quot;representation&quot;: &quot;Source-supported architecture diagram; no physics model or physical execution&quot;}</metadata></svg>

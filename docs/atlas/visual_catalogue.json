@@ -1,8 +1,34 @@
 {
-  "version": "0.19.1+phwr.1+computing.1+kernels.1+control.1+spo.1",
+  "version": "0.19.1+phwr.1+computing.1+kernels.1+control.1+spo.1+fusion.1",
   "state": "Private integrated visual candidate; presentation and publication reviews pending",
   "source_snapshot_date": "2026-10-13",
   "illustrations": [
+    {
+      "id": "fusion-fields-profiles-and-3d-models",
+      "project": "SCPN-FUSION-CORE",
+      "title": "Fusion fields, profiles, diagnostics and 3D models",
+      "description": "Equilibrium forward problems, radial transport, synthetic/inverse diagnostics and distinct geometric-surface/reduced-force outputs, with case evidence and consumer ownership kept explicit.",
+      "representation": "design",
+      "representation_label": "Source-supported solver and 3D-representation architecture",
+      "asset": "visuals/fusion-fields-profiles-and-3d-models.svg",
+      "asset_sha256": "7d03ca48c945e0b40c315957273affc5d33979fa19576101da40b3fc5f8bdd35",
+      "downloads": [],
+      "source_version": "Repository source capture 2026-10-18T03:42:40.675813+00:00",
+      "author": "Concepts and code: Miroslav Šotek. Illustration prepared by Arcane Sapience.",
+      "licence": "AGPL-3.0-or-later; commercial statement retained. Repository-native SVG.",
+      "limits": [
+        "An executed equilibrium, transport, diagnostic or 3D model",
+        "A new convergence/parity result, qualified measured source or complete reactor design",
+        "A physical actuator connection, machine protection or facility safety approval"
+      ],
+      "profile": "{\n  \"source_capture\": \"2026-10-18T03:42:40.675813+00:00\",\n  \"representation\": \"Source-supported workflow diagram; no solver/transport/diagnostic/3D/export/backend execution\"\n}",
+      "review": {
+        "summary": "Documentation and selected source contracts inspected; source-owner content, scientific, consumer and publication review pending. No physics or geometry execution performed.",
+        "scope": "Fusion solver lanes, diagnostics and geometric/reduced-physics representations",
+        "fingerprint": "0b5cce0250e2d234dab9fa3cbcbaac90e2f79d44ead9fe774e9bf855e24dd896",
+        "independent": false
+      }
+    },
     {
       "id": "spo-phase-models-and-semantic-review",
       "project": "SCPN-PHASE-ORCHESTRATOR",
