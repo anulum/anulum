@@ -1,8 +1,34 @@
 {
-  "version": "0.19.1+phwr.1+computing.1+kernels.1+control.1",
+  "version": "0.19.1+phwr.1+computing.1+kernels.1+control.1+spo.1",
   "state": "Private integrated visual candidate; presentation and publication reviews pending",
   "source_snapshot_date": "2026-10-13",
   "illustrations": [
+    {
+      "id": "spo-phase-models-and-semantic-review",
+      "project": "SCPN-PHASE-ORCHESTRATOR",
+      "title": "Phase models, proposals and semantic review",
+      "description": "Domain binding, separately integrated signal extractors, seeded phase/amplitude simulation, model-only policy feedback, audit records and the distinct producer-to-CONTROL semantic-review path.",
+      "representation": "design",
+      "representation_label": "Source-supported phase-model and semantic-review architecture",
+      "asset": "visuals/spo-phase-models-and-semantic-review.svg",
+      "asset_sha256": "577976cd730135bf3f1cb2eefc6110360ef312013eb304d8bcec571d41e54bd2",
+      "downloads": [],
+      "source_version": "Repository source capture 2026-10-18T02:36:01.372344+00:00",
+      "author": "Concepts and code: Miroslav Šotek. Illustration prepared by Arcane Sapience.",
+      "licence": "AGPL-3.0-or-later; commercial statement retained. Repository-native SVG.",
+      "limits": [
+        "An executed phase model, extractor, supervisor or replay",
+        "Qualified physical observation, current backend validation or domain evidence",
+        "A physical actuator connection, machine protection or facility safety approval"
+      ],
+      "profile": "{\n  \"source_capture\": \"2026-10-18T02:36:01.372344+00:00\",\n  \"representation\": \"Source-supported workflow diagram; no phase-model/extractor/supervisor/replay/hardware execution\"\n}",
+      "review": {
+        "summary": "Documentation and selected source contracts inspected; source-owner content, domain evidence and publication review pending. No model or scientific execution performed.",
+        "scope": "SPO seeded model, signal-extraction and semantic-review boundaries",
+        "fingerprint": "b4754bd7de6e8a02e9871770477b63f33a72bd565223220dded18a70450ccbb3",
+        "independent": false
+      }
+    },
     {
       "id": "control-logic-runtime-and-evidence",
       "project": "SCPN-CONTROL",

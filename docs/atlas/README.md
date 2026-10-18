@@ -104,8 +104,8 @@ observations, independent of resource and budget data.
 |---|---|---:|
 | Profile images across all five languages | Four generated header/map SVGs, 91 badge SVGs and the footer image | 621,868 |
 | Dated catalogue provenance | `assets/catalogue-source.json`, plus its ownership sidecar | 114,267 before sidecar |
-| Interactive site snapshot | 75 manifest-listed assets | 35,276,423 |
-| Main interactive entry page | `index.html`, including its eight embedded datasets | 11,402,080 |
+| Interactive site snapshot | 76 manifest-listed assets | 35,819,981 |
+| Main interactive entry page | `index.html`, including its eight embedded datasets | 11,638,303 |
 
 The HTML, JavaScript modules, source-document JSON, illustrations and figure
 downloads belong to the separately hosted explorer. The full snapshot repeats
@@ -144,3 +144,9 @@ controller artefacts, observation-to-action ticks and the separately bound
 stateful exact-current neuron profile. Runtime-bound proofs, host timing admission
 and non-actionable semantic review retain their own evidence requirements.
 Existing project connections and older source captures keep their original dates.
+
+The Phase Orchestrator explanation distinguishes domain binding and signal
+extraction from the generic seeded model loop. Phase/amplitude evolution,
+projected model-only feedback and audit records keep their declared origins;
+reactor-semantic review retains separate producer and CONTROL admission roles.
+Existing connections and earlier source captures preserve their original dates.

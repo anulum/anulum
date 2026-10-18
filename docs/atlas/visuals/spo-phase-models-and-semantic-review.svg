@@ -1,0 +1,100 @@
+<!--
+SPDX-License-Identifier: AGPL-3.0-or-later
+Commercial license available
+© Concepts 1996–2026 Miroslav Šotek. All rights reserved.
+© Code 2020–2026 Miroslav Šotek. All rights reserved.
+ORCID: 0009-0009-3560-0851
+Contact: www.anulum.li | protoscience@anulum.li
+ANULUM — SPO phase models, proposals and semantic review
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1720" role="img" aria-labelledby="title description">
+<title id="title">SPO: phase models, proposals and semantic review</title>
+<desc id="description">A domain binding configures a seed-initialised model; signal-extraction APIs remain a separately integrated source path. Phase or amplitude dynamics feed model diagnostics, bounded policy proposals and internal model-knob feedback. Logs retain model and audit identities. Reactor-semantic review is a separate producer-to-SPO-to-CONTROL exchange with no actuation authority. Source inspection only, no model or hardware executed.</desc>
+<defs><marker id="arrow" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 Z" fill="#477655"/></marker></defs>
+<rect width="1440" height="1720" fill="#fafbf8"/><g font-family="DejaVu Sans,sans-serif">
+<text x="54" y="44" font-size="17" font-weight="600" fill="#506958">ANULUM / SYSTEMS INTEGRATION AND CONTROL</text>
+<text x="54" y="96" font-size="34" font-weight="600" fill="#19392d">SPO: phase models, proposals and semantic review</text>
+<text x="54" y="132" font-size="19" font-weight="400" fill="#506958">In progress · source capture 2026-10-18 · synchronisation analysis and review</text>
+<text x="54" y="187" font-size="19" font-weight="600" fill="#19392d">1 / CONFIGURATION, SIGNAL PROCESSING AND MODEL INITIALISATION</text>
+<rect x="54" y="210" width="400" height="172" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="74" y="246" font-size="23" font-weight="600" fill="#19392d">Domain binding</text>
+<text x="74" y="285" font-size="19" font-weight="400" fill="#506958">Hierarchy, oscillator families</text>
+<text x="74" y="313" font-size="19" font-weight="400" fill="#506958">Coupling, drive, objectives, limits</text>
+<text x="74" y="341" font-size="19" font-weight="400" fill="#506958">Sample / control period and policy</text>
+<rect x="520" y="210" width="400" height="172" rx="16" fill="#e8f0f7" stroke="#b7cbbb" stroke-width="2"/>
+<text x="540" y="246" font-size="23" font-weight="600" fill="#19392d">Signal-extraction APIs</text>
+<text x="540" y="285" font-size="19" font-weight="400" fill="#506958">P: waveform phase / frequency</text>
+<text x="540" y="313" font-size="19" font-weight="400" fill="#506958">I: event cadence · S: state sequences</text>
+<text x="540" y="341" font-size="19" font-weight="400" fill="#506958">Source and calibration stay explicit</text>
+<rect x="986" y="210" width="400" height="172" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="1006" y="246" font-size="23" font-weight="600" fill="#19392d">Generic spo run route</text>
+<text x="1006" y="285" font-size="19" font-weight="400" fill="#506958">Validate a research-tier binding</text>
+<text x="1006" y="313" font-size="19" font-weight="400" fill="#506958">Seed-generated initial phases</text>
+<text x="1006" y="341" font-size="19" font-weight="400" fill="#506958">Declared model frequencies</text>
+<path d="M254 388 V399 H1186 V388" fill="none" stroke="#477655" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="565" y="426" font-size="18" font-weight="400" fill="#506958">Binding → selected generic model route; signal APIs need explicit integration.</text>
+<text x="54" y="480" font-size="19" font-weight="600" fill="#19392d">2 / THE GENERIC LOOP CHANGES ITS OWN MATHEMATICAL MODEL</text>
+<rect x="54" y="504" width="400" height="172" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="74" y="540" font-size="23" font-weight="600" fill="#19392d">Evolve model state</text>
+<text x="74" y="579" font-size="19" font-weight="400" fill="#506958">Coupling / lag / external drive</text>
+<text x="74" y="607" font-size="19" font-weight="400" fill="#506958">UPDE phase or amplitude model</text>
+<text x="74" y="635" font-size="19" font-weight="400" fill="#506958">Configured numerical integration</text>
+<rect x="520" y="504" width="400" height="172" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="540" y="540" font-size="23" font-weight="600" fill="#19392d">Observe and propose</text>
+<text x="540" y="579" font-size="19" font-weight="400" fill="#506958">Per-layer coherence and boundaries</text>
+<text x="540" y="607" font-size="19" font-weight="400" fill="#506958">Regime manager and policy rules</text>
+<text x="540" y="635" font-size="19" font-weight="400" fill="#506958">Actions at the control interval</text>
+<rect x="986" y="504" width="400" height="172" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="1006" y="540" font-size="23" font-weight="600" fill="#19392d">Project model changes</text>
+<text x="1006" y="579" font-size="19" font-weight="400" fill="#506958">Clamp and rate-limit proposals</text>
+<text x="1006" y="607" font-size="19" font-weight="400" fill="#506958">Supported coupling / drive knobs</text>
+<text x="1006" y="635" font-size="19" font-weight="400" fill="#506958">Feedback stays inside the model</text>
+<path d="M454 590 H516" fill="none" stroke="#477655" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M920 590 H982" fill="none" stroke="#477655" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M1186 688 V719 H254 V683" fill="none" stroke="#477655" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="566" y="753" font-size="18" font-weight="400" fill="#506958">Projected model-knob feedback · open-loop baseline disables policy feedback</text>
+<rect x="54" y="787" width="1332" height="119" rx="16" fill="#f3f1e9" stroke="#d6c9a8" stroke-width="2"/>
+<text x="75" y="822" font-size="21" font-weight="600" fill="#19392d">Simulation inputs and extracted or measured signals keep different origins.</text>
+<text x="75" y="857" font-size="19" font-weight="400" fill="#506958">A binding declaration does not prove that the generic run reads a physical archive or qualifies a diagnostic.</text>
+<text x="75" y="887" font-size="19" font-weight="400" fill="#506958">A conformal confidence gate requires the caller-supplied calibrated gate and matching confidence source.</text>
+<text x="54" y="957" font-size="19" font-weight="600" fill="#19392d">3 / MODEL OUTPUTS AND AUDIT EVIDENCE</text>
+<rect x="54" y="981" width="400" height="172" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="74" y="1017" font-size="23" font-weight="600" fill="#19392d">SimulationResult</text>
+<text x="74" y="1056" font-size="19" font-weight="400" fill="#506958">Final phases / optional amplitudes</text>
+<text x="74" y="1084" font-size="19" font-weight="400" fill="#506958">Good / bad coherence histories</text>
+<text x="74" y="1112" font-size="19" font-weight="400" fill="#506958">Regime, boundaries and action counts</text>
+<rect x="520" y="981" width="400" height="172" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="540" y="1017" font-size="23" font-weight="600" fill="#19392d">Audit and replay</text>
+<text x="540" y="1056" font-size="19" font-weight="400" fill="#506958">SHA-256-chained JSONL</text>
+<text x="540" y="1084" font-size="19" font-weight="400" fill="#506958">Mode / key-dependent HMAC</text>
+<text x="540" y="1112" font-size="19" font-weight="400" fill="#506958">Optional protobuf stream integrity</text>
+<rect x="986" y="981" width="400" height="172" rx="16" fill="#f3f1e9" stroke="#b7cbbb" stroke-width="2"/>
+<text x="1006" y="1017" font-size="23" font-weight="600" fill="#19392d">Keep authority explicit</text>
+<text x="1006" y="1056" font-size="19" font-weight="400" fill="#506958">Replay checks the declared model</text>
+<text x="1006" y="1084" font-size="19" font-weight="400" fill="#506958">Hash validity is not sensor truth</text>
+<text x="1006" y="1112" font-size="19" font-weight="400" fill="#506958">No hardware write by simulate</text>
+<text x="54" y="1204" font-size="19" font-weight="600" fill="#19392d">4 / REACTOR SEMANTIC REVIEW — A DISTINCT EXCHANGE</text>
+<rect x="54" y="1228" width="400" height="172" rx="16" fill="#e8f0f7" stroke="#b7cbbb" stroke-width="2"/>
+<text x="74" y="1264" font-size="23" font-weight="600" fill="#19392d">Fusion / MIF producers</text>
+<text x="74" y="1303" font-size="19" font-weight="400" fill="#506958">Declared source, values and units</text>
+<text x="74" y="1331" font-size="19" font-weight="400" fill="#506958">Frames, clocks and calibration</text>
+<text x="74" y="1359" font-size="19" font-weight="400" fill="#506958">Producer-owned evidence class</text>
+<rect x="520" y="1228" width="400" height="172" rx="16" fill="#e8f0f7" stroke="#b7cbbb" stroke-width="2"/>
+<text x="540" y="1264" font-size="23" font-weight="600" fill="#19392d">SPO typed interpretation</text>
+<text x="540" y="1303" font-size="19" font-weight="400" fill="#506958">Carrier meaning and comparability</text>
+<text x="540" y="1331" font-size="19" font-weight="400" fill="#506958">Phase / event / noncyclic / numerical</text>
+<text x="540" y="1359" font-size="19" font-weight="400" fill="#506958">Review evidence with provenance</text>
+<rect x="986" y="1228" width="400" height="172" rx="16" fill="#e8f0f7" stroke="#b7cbbb" stroke-width="2"/>
+<text x="1006" y="1264" font-size="23" font-weight="600" fill="#19392d">CONTROL review boundary</text>
+<text x="1006" y="1303" font-size="19" font-weight="400" fill="#506958">Separate consumer admission</text>
+<text x="1006" y="1331" font-size="19" font-weight="400" fill="#506958">Review-only and non-actionable</text>
+<text x="1006" y="1359" font-size="19" font-weight="400" fill="#506958">Independent protection stays external</text>
+<path d="M454 1314 H516" fill="none" stroke="#477655" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M920 1314 H982" fill="none" stroke="#477655" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="54" y="1436" width="1332" height="133" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="75" y="1473" font-size="23" font-weight="600" fill="#19392d">A phase network is a selected model of rhythms and couplings.</text>
+<text x="75" y="1511" font-size="19" font-weight="400" fill="#506958">It does not replace a full plant/world model, qualified measured data, device validation or facility acceptance.</text>
+<text x="75" y="1542" font-size="19" font-weight="400" fill="#506958">Domain scaffolds, backend availability and documentary flags do not establish an actuator permission.</text>
+<text x="54" y="1646" font-size="19" font-weight="400" fill="#506958">Source inspection only · no simulation / extraction / policy / replay / backend / hardware execution</text>
+<text x="54" y="1680" font-size="19" font-weight="400" fill="#506958">Source-owner content, domain evidence and publication review pending</text>
+</g><metadata>{&quot;source_capture&quot;: &quot;2026-10-18T02:36:01.372344+00:00&quot;, &quot;source_fingerprints&quot;: [{&quot;project&quot;: &quot;SCPN-PHASE-ORCHESTRATOR&quot;, &quot;label&quot;: &quot;docs/architecture/README.md&quot;, &quot;source_sha256&quot;: &quot;24903c15ff2fd3daf5456d767ea6773ff92fe053220f8b961ef88ba18511c81f&quot;}, {&quot;project&quot;: &quot;SCPN-PHASE-ORCHESTRATOR&quot;, &quot;label&quot;: &quot;docs/architecture/subsystems/inputs.md&quot;, &quot;source_sha256&quot;: &quot;05ec06889e81fbd2f459e7680e86bc1c0e1784fd03248738ae789c2a34f3630c&quot;}, {&quot;project&quot;: &quot;SCPN-PHASE-ORCHESTRATOR&quot;, &quot;label&quot;: &quot;docs/architecture/subsystems/upde.md&quot;, &quot;source_sha256&quot;: &quot;5c2ca2708e57ea7c88f709c3f49a67fa3232bf3e0cbd191630cf906302414cd8&quot;}, {&quot;project&quot;: &quot;SCPN-PHASE-ORCHESTRATOR&quot;, &quot;label&quot;: &quot;docs/architecture/subsystems/supervisor.md&quot;, &quot;source_sha256&quot;: &quot;a67d3ee24f8595f78f6502934f499f508adb166d73e9b551cee089becdc6b1b0&quot;}, {&quot;project&quot;: &quot;SCPN-PHASE-ORCHESTRATOR&quot;, &quot;label&quot;: &quot;docs/architecture/subsystems/runtime-trust.md&quot;, &quot;source_sha256&quot;: &quot;b8062e5cbecc96e48c8402b4844b3b492912d9e0beb231230e0a55a5e682829a&quot;}, {&quot;project&quot;: &quot;SCPN-PHASE-ORCHESTRATOR&quot;, &quot;label&quot;: &quot;docs/reference/api/reactor_semantics.md&quot;, &quot;source_sha256&quot;: &quot;cde4644adc1a1976a1e32e250c9bf23b42b5c009937a2e330c01d3142f1f4bc6&quot;}, {&quot;project&quot;: &quot;SCPN-PHASE-ORCHESTRATOR&quot;, &quot;label&quot;: &quot;src/scpn_phase_orchestrator/runtime/simulation.py&quot;, &quot;source_sha256&quot;: &quot;f215134303bc25c8d9b9a0ee25e121618bcaedffb1d26eef429ea568a2465df1&quot;}, {&quot;project&quot;: &quot;SCPN-PHASE-ORCHESTRATOR&quot;, &quot;label&quot;: &quot;src/scpn_phase_orchestrator/runtime/audit_logger.py&quot;, &quot;source_sha256&quot;: &quot;e4f73b0d9423278a62db29df8958cde22203f77d8eac1d253f177a5dc41c7bbc&quot;}, {&quot;project&quot;: &quot;SCPN-PHASE-ORCHESTRATOR&quot;, &quot;label&quot;: &quot;src/scpn_phase_orchestrator/runtime/cli/run.py&quot;, &quot;source_sha256&quot;: &quot;eb26ec3fc88964bfbd41782f8acafe5c48dc435c353f26a03e1b50b423f57716&quot;}], &quot;representation&quot;: &quot;Source-supported architecture diagram; no model or physical execution&quot;}</metadata></svg>
