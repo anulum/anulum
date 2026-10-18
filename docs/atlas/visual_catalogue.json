@@ -1,5 +1,5 @@
 {
-  "version": "0.19.1+phwr.1+computing.1+kernels.1+control.1+spo.1+fusion.1+qpu-workflow.1",
+  "version": "0.19.1+phwr.1+computing.1+kernels.1+control.1+spo.1+fusion.1+qpu-workflow.1+mif-workflow.1",
   "state": "Private integrated visual candidate; presentation and publication reviews pending",
   "source_snapshot_date": "2026-10-13",
   "illustrations": [
@@ -389,10 +389,36 @@
         "fingerprint": "6a3a3a150c6d3b1771b78c3ed9c189f827266f362463b0898d7545ae6e4510e4",
         "independent": false
       }
+    },
+    {
+      "id": "mif-kinematics-trigger-and-evidence",
+      "project": "SCPN-MIF-CORE",
+      "title": "MIF: kinematics, trigger decisions and evidence",
+      "description": "Typed merge decisions, separate stateless permit and stateful non-actuating diagnostic, local RTL admission, FUSION model actuation and distinct timing evidence.",
+      "representation": "design",
+      "representation_label": "Source-supported MIF decision and software-chain architecture",
+      "asset": "visuals/mif-kinematics-trigger-and-evidence.svg",
+      "asset_sha256": "43c5ddf7f61b53e454b90be77c8601311cb9e0184d731c9897a54dea71818df9",
+      "downloads": [],
+      "source_version": "Selected committed source capture 2026-10-18T13:03:55.198854+00:00",
+      "author": "Concepts and code: Miroslav Šotek. Illustration prepared by Arcane Sapience.",
+      "licence": "AGPL-3.0-or-later; commercial statement retained. Repository-native SVG.",
+      "limits": [
+        "An executed merge-trigger, full-chain, RTL or physics run",
+        "Fresh scientific, formal, replay, compatibility or timing qualification",
+        "Physical actuation, post-route FPGA timing, calibrated HIL or facility safety acceptance"
+      ],
+      "profile": "{\n  \"source_capture\": \"2026-10-18T13:03:55.198854+00:00\",\n  \"representation\": \"Source-supported architecture; no model, control, RTL, formal or hardware execution\"\n}",
+      "review": {
+        "summary": "Selected source/documents inspected; source-owner content, scientific, consumer and publication review pending. No domain execution performed.",
+        "scope": "MIF model decisions, neural execution modes, causal software admission and evidence classes",
+        "fingerprint": "997ee675b49fc22b99898230c0fca0811cc7a4a1cd61970bdaf3e61ef1e418c7",
+        "independent": false
+      }
     }
   ],
   "source_reviews_independent": false,
   "project_nodes_added": false,
   "new_scientific_or_model_execution": false,
-  "updated_at_utc": "2026-10-18T11:22:51.227679+00:00"
+  "updated_at_utc": "2026-10-18T13:03:55.198854+00:00"
 }

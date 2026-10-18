@@ -104,8 +104,8 @@ observations, independent of resource and budget data.
 |---|---|---:|
 | Profile images across all five languages | Four generated header/map SVGs, 91 badge SVGs and the footer image | 621,868 |
 | Dated catalogue provenance | `assets/catalogue-source.json`, plus its ownership sidecar | 114,267 before sidecar |
-| Interactive site snapshot | 78 manifest-listed assets | 36,391,324 |
-| Main interactive entry page | `index.html`, including its eight embedded datasets | 11,884,480 |
+| Interactive site snapshot | 79 manifest-listed assets | 36,776,446 |
+| Main interactive entry page | `index.html`, including its eight embedded datasets | 12,054,162 |
 
 The HTML, JavaScript modules, source-document JSON, illustrations and figure
 downloads belong to the separately hosted explorer. The full snapshot repeats
@@ -162,3 +162,9 @@ construction: capture, import, derive, seal, verify, inspect and render. Its
 evidence representations, numerical bindings, trust/time contexts and passive
 reading views keep separate responsibilities. Developer checks do not establish
 standalone domain acceptance; earlier source captures retain their own dates.
+
+The MIF explanation follows typed merge decisions and the separately bound
+Fusion-to-Fire software chain. Stateless stochastic admission and the stateful
+exact-current AER diagnostic keep distinct model and authority scopes. Local RTL
+cycles, FUSION model outputs, replay provenance and physical timing qualification
+remain separate; source inspection here performs no new domain execution.

@@ -1,0 +1,89 @@
+<!--
+SPDX-License-Identifier: AGPL-3.0-or-later
+Commercial license available
+© Concepts 1996–2026 Miroslav Šotek. All rights reserved.
+© Code 2020–2026 Miroslav Šotek. All rights reserved.
+ORCID: 0009-0009-3560-0851
+Contact: www.anulum.li | protoscience@anulum.li
+ANULUM — MIF kinematics, trigger and evidence
+-->
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1740" role="img" aria-labelledby="title description">
+<title id="title">MIF: kinematics, trigger decisions and evidence</title>
+<desc id="description">A declared kinematic scenario produces a sampled safety, lock and bank decision. The separately bound software demonstration requires CONTROL admission and an observed local Verilator pulse before calling the FUSION model. The stateful exact-current AER diagnostic is a separate non-actuating branch. Replay provenance, software cycles and physical timing evidence remain distinct. Source reading only; no model or hardware executed.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L0,6 L8,3 Z" fill="#477655"/></marker></defs>
+<rect width="1440" height="1740" fill="#fafbf8"/><g font-family="DejaVu Sans,sans-serif">
+<text x="54" y="44" font-size="17" fill="#506958" font-weight="600">ANULUM / SCPN REACTOR SYSTEMS</text>
+<text x="54" y="96" font-size="34" fill="#19392d" font-weight="600">MIF: kinematics, trigger decisions and evidence</text>
+<text x="54" y="134" font-size="19" fill="#506958" font-weight="400">In progress · source capture 2026-10-18 · source-described software and model responsibilities</text>
+<text x="54" y="187" font-size="19" fill="#19392d" font-weight="600">1 / MIF DECISION — SAMPLE THE DECLARED MERGE SCENARIO</text>
+<rect x="54" y="211" width="400" height="222" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="75" y="248" font-size="23" fill="#19392d" font-weight="600">Typed approach and pulse</text>
+<text x="75" y="288" font-size="19" fill="#506958" font-weight="400">Phases / axial positions / velocities</text>
+<text x="75" y="317" font-size="19" fill="#506958" font-weight="400">Step, tolerances and safety envelope</text>
+<text x="75" y="346" font-size="19" fill="#506958" font-weight="400">Bank, voltage and requested pulse</text>
+<text x="75" y="375" font-size="19" fill="#506958" font-weight="400">Optional prescribed expansion</text>
+<rect x="520" y="211" width="400" height="222" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="541" y="248" font-size="23" fill="#19392d" font-weight="600">Compute and check</text>
+<text x="541" y="288" font-size="19" fill="#506958" font-weight="400">Moving-frame phase / position trace</text>
+<text x="541" y="317" font-size="19" fill="#506958" font-weight="400">Sustained phase-and-spatial lock</text>
+<text x="541" y="346" font-size="19" fill="#506958" font-weight="400">Sampled envelope + bank feasibility</text>
+<text x="541" y="375" font-size="19" fill="#506958" font-weight="400">Optional recovery from given fields</text>
+<rect x="986" y="211" width="400" height="222" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="1007" y="248" font-size="23" fill="#19392d" font-weight="600">MIF decision report</text>
+<text x="1007" y="288" font-size="19" fill="#506958" font-weight="400">Fire / hold / abort unsafe or bank</text>
+<text x="1007" y="317" font-size="19" fill="#506958" font-weight="400">Trace, lock time and safety result</text>
+<text x="1007" y="346" font-size="19" fill="#506958" font-weight="400">Bank energy and optional recovery</text>
+<text x="1007" y="375" font-size="19" fill="#506958" font-weight="400">Safety first, then lock, then bank</text>
+<path d="M454 322 H516" fill="none" stroke="#477655" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M920 322 H982" fill="none" stroke="#477655" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="54" y="486" font-size="19" fill="#19392d" font-weight="600">2 / FULL-CHAIN DEMONSTRATION — USE THE REPORT WITH ACTUAL SIBLING BINDINGS</text>
+<rect x="54" y="510" width="400" height="222" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="75" y="547" font-size="23" fill="#19392d" font-weight="600">CONTROL admission</text>
+<text x="75" y="587" font-size="19" fill="#506958" font-weight="400">Stateless stochastic transition gate</text>
+<text x="75" y="616" font-size="19" fill="#506958" font-weight="400">Rust dense + explicit-state checks</text>
+<text x="75" y="645" font-size="19" fill="#506958" font-weight="400">CONTROL pulsed-shot scheduler</text>
+<text x="75" y="674" font-size="19" fill="#506958" font-weight="400">No temporal state in this permit</text>
+<rect x="520" y="510" width="400" height="222" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="541" y="547" font-size="23" fill="#19392d" font-weight="600">MIF RTL simulation</text>
+<text x="541" y="587" font-size="19" fill="#506958" font-weight="400">Deterministic ADC-reference input</text>
+<text x="541" y="616" font-size="19" fill="#506958" font-weight="400">Actual Verilator trigger fabric</text>
+<text x="541" y="645" font-size="19" fill="#506958" font-weight="400">Reference agreement and veto</text>
+<text x="541" y="674" font-size="19" fill="#506958" font-weight="400">Count the observed RTL pulses</text>
+<rect x="986" y="510" width="400" height="222" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="1007" y="547" font-size="23" fill="#19392d" font-weight="600">FUSION model actuator</text>
+<text x="1007" y="587" font-size="19" fill="#506958" font-weight="400">MIF fire + CONTROL admission</text>
+<text x="1007" y="616" font-size="19" fill="#506958" font-weight="400">Require exactly one RTL trigger</text>
+<text x="1007" y="645" font-size="19" fill="#506958" font-weight="400">Compression trajectory + recovery</text>
+<text x="1007" y="674" font-size="19" fill="#506958" font-weight="400">Physics remains FUSION-owned</text>
+<path d="M454 621 H516" fill="none" stroke="#477655" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M920 621 H982" fill="none" stroke="#477655" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="54" y="772" width="1332" height="166" rx="16" fill="#eeeaf4" stroke="#b7cbbb" stroke-width="2"/>
+<text x="75" y="809" font-size="23" fill="#19392d" font-weight="600">Separate branch: stateful exact-current AER diagnostic</text>
+<text x="75" y="849" font-size="19" fill="#506958" font-weight="400">ADC-reference events → integrity / address mapping → CONTROL exact-current state evolution</text>
+<text x="75" y="878" font-size="19" fill="#506958" font-weight="400">Normalised simulation calibration; event, projection and execution identities stay in the case record.</text>
+<text x="75" y="907" font-size="19" fill="#506958" font-weight="400">actuation_authority = false. This branch does not replace the transition permit, scheduler or independent veto.</text>
+<text x="54" y="993" font-size="19" fill="#19392d" font-weight="600">3 / RETAIN THE CASE RECORD AND ITS EVIDENCE CLASS</text>
+<rect x="54" y="1017" width="640" height="222" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="75" y="1054" font-size="23" fill="#19392d" font-weight="600">Replay and output custody</text>
+<text x="75" y="1094" font-size="19" fill="#506958" font-weight="400">Run nominal and unsafe-veto cases, then rerun both</text>
+<text x="75" y="1123" font-size="19" fill="#506958" font-weight="400">Compare canonical JSON and each trajectory channel</text>
+<text x="75" y="1152" font-size="19" fill="#506958" font-weight="400">Manifest binds sources, artefacts, versions and tools</text>
+<text x="75" y="1181" font-size="19" fill="#506958" font-weight="400">Payload keeps the distinct neural execution modes</text>
+<rect x="746" y="1017" width="640" height="222" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="767" y="1054" font-size="23" fill="#19392d" font-weight="600">Different timing claims</text>
+<text x="767" y="1094" font-size="19" fill="#506958" font-weight="400">Model traces / sampled certificate: software scope</text>
+<text x="767" y="1123" font-size="19" fill="#506958" font-weight="400">Local Verilator and formal cycles: distinct evidence</text>
+<text x="767" y="1152" font-size="19" fill="#506958" font-weight="400">Post-route device and end-to-end HIL: separate</text>
+<text x="767" y="1181" font-size="19" fill="#506958" font-weight="400">Sub-50 ns remains a physical engineering target</text>
+<rect x="54" y="1281" width="1332" height="200" rx="16" fill="#e8f0f7" stroke="#b7cbbb" stroke-width="2"/>
+<text x="75" y="1318" font-size="23" fill="#19392d" font-weight="600">Before hardware or physical claims</text>
+<text x="75" y="1358" font-size="19" fill="#506958" font-weight="400">Named FPGA / toolchain / constraints / PVT corner / timing-report identity</text>
+<text x="75" y="1387" font-size="19" fill="#506958" font-weight="400">Calibrated ADC, sensor link, driver, measurement instrument and trace identity</text>
+<text x="75" y="1416" font-size="19" fill="#506958" font-weight="400">Source-bound physical models, independent reference comparisons and actual consumer acceptance</text>
+<text x="75" y="1445" font-size="19" fill="#506958" font-weight="400">An inspectable software result does not connect or qualify a physical reactor.</text>
+<text x="54" y="1540" font-size="19" fill="#506958" font-weight="400">FUSION owns plasma physics; MIF kinematic evolution and prescribed recovery inputs retain their own meaning.</text>
+<text x="54" y="1574" font-size="19" fill="#506958" font-weight="400">Nominal software admission calls a model actuator; unsafe-veto injection must suppress that call.</text>
+<text x="54" y="1650" font-size="19" fill="#506958" font-weight="400">Source reading only · no kinematic / control / RTL / formal / FUSION / hardware execution performed</text>
+<text x="54" y="1686" font-size="19" fill="#506958" font-weight="400">Source-owner content, scientific, consumer and publication review pending</text>
+</g></svg>
