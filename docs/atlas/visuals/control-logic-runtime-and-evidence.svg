@@ -1,0 +1,98 @@
+<!--
+SPDX-License-Identifier: AGPL-3.0-or-later
+Commercial license available
+© Concepts 1996–2026 Miroslav Šotek. All rights reserved.
+© Code 2020–2026 Miroslav Šotek. All rights reserved.
+ORCID: 0009-0009-3560-0851
+Contact: www.anulum.li | protoscience@anulum.li
+ANULUM — CONTROL compiler, execution and evidence architecture
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1660" role="img" aria-labelledby="title description">
+<title id="title">SCPN Control: controller logic, execution and evidence</title>
+<desc id="description">Petri-net structure compiles to a configured controller artefact. A control tick maps declared observations and targets to features, marking updates and bounded returned commands. A separately bound persistent exact-current SC-NeuroCore mode has its own state and packets. Formal runtime identity, host timing and review-only semantics retain separate contracts. Source inspection only; no compiler, controller, neuron or physical loop executed.</desc>
+<defs><marker id="arrow" markerUnits="userSpaceOnUse" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 Z" fill="#477655"/></marker></defs>
+<rect width="1440" height="1660" fill="#fafbf8"/><g font-family="DejaVu Sans,sans-serif">
+<text x="54" y="44" font-size="17" font-weight="600" fill="#506958">ANULUM / SYSTEMS INTEGRATION AND CONTROL</text>
+<text x="54" y="96" font-size="36" font-weight="600" fill="#19392d">SCPN Control: logic, execution and evidence</text>
+<text x="54" y="132" font-size="19" font-weight="400" fill="#506958">In progress · source capture 2026-10-18 · research-grade software workflow</text>
+<text x="54" y="187" font-size="19" font-weight="600" fill="#19392d">1 / BUILD A CONTROLLER ARTEFACT</text>
+<rect x="54" y="210" width="400" height="172" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="74" y="246" font-size="23" font-weight="600" fill="#19392d">Petri-net structure</text>
+<text x="74" y="285" font-size="19" font-weight="400" fill="#506958">Ordered places and transitions</text>
+<text x="74" y="313" font-size="19" font-weight="400" fill="#506958">Arc weights, thresholds, delays</text>
+<text x="74" y="341" font-size="19" font-weight="400" fill="#506958">Initial marking and selected mode</text>
+<rect x="520" y="210" width="400" height="172" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="540" y="246" font-size="23" font-weight="600" fill="#19392d">FusionCompiler</text>
+<text x="540" y="285" font-size="19" font-weight="400" fill="#506958">Dense matrices and transition data</text>
+<text x="540" y="313" font-size="19" font-weight="400" fill="#506958">Optional packed stochastic weights</text>
+<text x="540" y="341" font-size="19" font-weight="400" fill="#506958">CompiledNet keeps both forms</text>
+<rect x="986" y="210" width="400" height="172" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="1006" y="246" font-size="23" font-weight="600" fill="#19392d">Configured artefact</text>
+<text x="1006" y="285" font-size="19" font-weight="400" fill="#506958">Control period and feature injection</text>
+<text x="1006" y="313" font-size="19" font-weight="400" fill="#506958">Action readout, gains and limits</text>
+<text x="1006" y="341" font-size="19" font-weight="400" fill="#506958">Export refuses inhibitor topology</text>
+<path d="M454 296 H516" fill="none" stroke="#477655" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M920 296 H982" fill="none" stroke="#477655" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="54" y="436" font-size="19" font-weight="600" fill="#19392d">2 / EXECUTE ONE DECLARED CONTROL TICK</text>
+<rect x="54" y="459" width="400" height="172" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="74" y="495" font-size="23" font-weight="600" fill="#19392d">Observations and targets</text>
+<text x="74" y="534" font-size="19" font-weight="400" fill="#506958">Named or fixed-order observations</text>
+<text x="74" y="562" font-size="19" font-weight="400" fill="#506958">Declared targets and scales</text>
+<text x="74" y="590" font-size="19" font-weight="400" fill="#506958">Signed error → positive / negative</text>
+<rect x="520" y="459" width="400" height="172" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="540" y="495" font-size="23" font-weight="600" fill="#19392d">NeuroSymbolicController</text>
+<text x="540" y="534" font-size="19" font-weight="400" fill="#506958">Inject features into place markings</text>
+<text x="540" y="562" font-size="19" font-weight="400" fill="#506958">Selected stochastic execution</text>
+<text x="540" y="590" font-size="19" font-weight="400" fill="#506958">Optional float-oracle diagnostics</text>
+<rect x="986" y="459" width="400" height="172" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="1006" y="495" font-size="23" font-weight="600" fill="#19392d">Return bounded commands</text>
+<text x="1006" y="534" font-size="19" font-weight="400" fill="#506958">Decode configured action channels</text>
+<text x="1006" y="562" font-size="19" font-weight="400" fill="#506958">Gain, slew and absolute limits</text>
+<text x="1006" y="590" font-size="19" font-weight="400" fill="#506958">Caller owns downstream integration</text>
+<path d="M454 545 H516" fill="none" stroke="#477655" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M920 545 H982" fill="none" stroke="#477655" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="54" y="658" width="1332" height="120" rx="16" fill="#f3f1e9" stroke="#d6c9a8" stroke-width="2"/>
+<text x="75" y="693" font-size="21" font-weight="600" fill="#19392d">Trace records and deadlines depend on the selected execution mode.</text>
+<text x="75" y="728" font-size="18" font-weight="400" fill="#506958">Optional JSONL retains observations, features, firings, marking, actions and timing. Strict deadline mode refuses synchronous logs.</text>
+<text x="75" y="757" font-size="18" font-weight="400" fill="#506958">With an admitted deadline monitor, a strict overrun restores control-relevant state before the error propagates.</text>
+<text x="54" y="829" font-size="19" font-weight="600" fill="#19392d">3 / OPTIONAL STATEFUL NEURON EXECUTION — A SEPARATE CONTRACT</text>
+<rect x="54" y="853" width="400" height="172" rx="16" fill="#e8f0f7" stroke="#b7cbbb" stroke-width="2"/>
+<text x="74" y="889" font-size="23" font-weight="600" fill="#19392d">Exact profile binding</text>
+<text x="74" y="928" font-size="19" font-weight="400" fill="#506958">Explicit compiler option</text>
+<text x="74" y="956" font-size="19" font-weight="400" fill="#506958">SC-NeuroCore version / units / SHA</text>
+<text x="74" y="984" font-size="19" font-weight="400" fill="#506958">Consumer pin, not a latest claim</text>
+<rect x="520" y="853" width="400" height="172" rx="16" fill="#e8f0f7" stroke="#b7cbbb" stroke-width="2"/>
+<text x="540" y="889" font-size="23" font-weight="600" fill="#19392d">Persistent exact-current LIF</text>
+<text x="540" y="928" font-size="19" font-weight="400" fill="#506958">Membrane state and shot time</text>
+<text x="540" y="956" font-size="19" font-weight="400" fill="#506958">Complete ordered SC packets</text>
+<text x="540" y="984" font-size="19" font-weight="400" fill="#506958">Checkpoint / restore / explicit reset</text>
+<rect x="986" y="853" width="400" height="172" rx="16" fill="#e8f0f7" stroke="#b7cbbb" stroke-width="2"/>
+<text x="1006" y="889" font-size="23" font-weight="600" fill="#19392d">Keep modes distinct</text>
+<text x="1006" y="928" font-size="19" font-weight="400" fill="#506958">Stateless lif_fire gate unchanged</text>
+<text x="1006" y="956" font-size="19" font-weight="400" fill="#506958">No stochastic / adaptive substitution</text>
+<text x="1006" y="984" font-size="19" font-weight="400" fill="#506958">No RTL or HIL inference</text>
+<path d="M454 939 H516" fill="none" stroke="#477655" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="54" y="1076" font-size="19" font-weight="600" fill="#19392d">4 / DISTINCT EVIDENCE AND ACCEPTANCE CONTRACTS</text>
+<rect x="54" y="1100" width="400" height="182" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="74" y="1136" font-size="23" font-weight="600" fill="#19392d">Runtime-bound proof</text>
+<text x="74" y="1175" font-size="19" font-weight="400" fill="#506958">Bounded formal certificate</text>
+<text x="74" y="1203" font-size="19" font-weight="400" fill="#506958">Topology / config / target / timing</text>
+<text x="74" y="1231" font-size="19" font-weight="400" fill="#506958">Matching live identity and replay</text>
+<rect x="520" y="1100" width="400" height="182" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="540" y="1136" font-size="23" font-weight="600" fill="#19392d">Live host admission</text>
+<text x="540" y="1175" font-size="19" font-weight="400" fill="#506958">off / warn / require policies</text>
+<text x="540" y="1203" font-size="19" font-weight="400" fill="#506958">RT kernel, affinity, scheduler, locks</text>
+<text x="540" y="1231" font-size="19" font-weight="400" fill="#506958">Historical reader ≠ live host proof</text>
+<rect x="986" y="1100" width="400" height="182" rx="16" fill="#f3f1e9" stroke="#b7cbbb" stroke-width="2"/>
+<text x="1006" y="1136" font-size="23" font-weight="600" fill="#19392d">Semantic review only</text>
+<text x="1006" y="1175" font-size="19" font-weight="400" fill="#506958">Fusion → SPO → CONTROL bytes</text>
+<text x="1006" y="1203" font-size="19" font-weight="400" fill="#506958">Review-only; non-actionable</text>
+<text x="1006" y="1231" font-size="19" font-weight="400" fill="#506958">Creates no ControlAction</text>
+<rect x="54" y="1318" width="1332" height="180" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="75" y="1356" font-size="23" font-weight="600" fill="#19392d">Plant models, controller commands and facility acceptance remain separately evidenced.</text>
+<text x="75" y="1395" font-size="19" font-weight="400" fill="#506958">Fusion owns broad physics development; CONTROL ports or wraps selected control-facing surfaces.</text>
+<text x="75" y="1425" font-size="19" font-weight="400" fill="#506958">The documented integrated-scenario heating demo is a separate bounded simulation route, not every controller wired together.</text>
+<text x="75" y="1455" font-size="19" font-weight="400" fill="#506958">Software commands, replay packets, formal proofs and local timing do not establish physical actuation or facility safety approval.</text>
+<text x="54" y="1580" font-size="19" font-weight="400" fill="#506958">Source inspection only · no compiler / controller / proof / neuron / host / plant run</text>
+<text x="54" y="1614" font-size="19" font-weight="400" fill="#506958">Source-owner content, installed-profile adoption and publication review pending</text>
+</g><metadata>{&quot;source_capture&quot;: &quot;2026-10-18T01:37:59.965155+00:00&quot;, &quot;source_fingerprints&quot;: [{&quot;project&quot;: &quot;SCPN-CONTROL&quot;, &quot;label&quot;: &quot;docs/architecture.md&quot;, &quot;source_sha256&quot;: &quot;d5846d0cba2c46878ebc1565155cf022820af1b6e2939d85a433f4674cae5f06&quot;}, {&quot;project&quot;: &quot;SCPN-CONTROL&quot;, &quot;label&quot;: &quot;docs/scpn/runtime_safety_certificate.md&quot;, &quot;source_sha256&quot;: &quot;3f81387933715541231f68f8a15c56053c1af82d307812f9e41cecc91b71344e&quot;}, {&quot;project&quot;: &quot;SCPN-CONTROL&quot;, &quot;label&quot;: &quot;docs/control/runtime_admission.md&quot;, &quot;source_sha256&quot;: &quot;eb05f60f19ea8f7107f554877586e53fb8e2b9ab797ee254a624f69756ac9dfb&quot;}, {&quot;project&quot;: &quot;SCPN-CONTROL&quot;, &quot;label&quot;: &quot;docs/guides/exact_current_lif_runtime.md&quot;, &quot;source_sha256&quot;: &quot;c38f0fdb12558a8052180c460e4599b29c4460035ac9293ccae970022705e2ee&quot;}, {&quot;project&quot;: &quot;SCPN-CONTROL&quot;, &quot;label&quot;: &quot;src/scpn_control/scpn/compiler.py&quot;, &quot;source_sha256&quot;: &quot;de95728f7b25d7a61ed9b9fb169babace13d8ad447d0219a6c9d070048722e86&quot;}, {&quot;project&quot;: &quot;SCPN-CONTROL&quot;, &quot;label&quot;: &quot;src/scpn_control/scpn/controller.py&quot;, &quot;source_sha256&quot;: &quot;0316ba5ba55e8b0e3006a0b4ceb0382ac2e894db080a0fc6f7725cb167035fcf&quot;}, {&quot;project&quot;: &quot;SCPN-CONTROL&quot;, &quot;label&quot;: &quot;src/scpn_control/scpn/contracts.py&quot;, &quot;source_sha256&quot;: &quot;5480585683b56385ed12c362a75507880136573a1e0da854b11bbea371f4a032&quot;}], &quot;representation&quot;: &quot;Source-supported architecture diagram; no controller or physical execution&quot;}</metadata></svg>

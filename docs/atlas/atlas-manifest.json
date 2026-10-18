@@ -1,7 +1,7 @@
 {
   "schema": "anulum-atlas-snapshot/1",
-  "version": "0.31+resource-sharing.1+publication-review.1.2+phwr-source.1.3+computing-source.1.1+kernels-source.1",
-  "source_manifest_sha256": "ab9d143b838dea30eeafb1364b35fb16b8c8bc1cc5ede2894431199976cb8658",
+  "version": "0.31+resource-sharing.1+publication-review.1.2+phwr-source.1.3+computing-source.1.1+kernels-source.1+control-source.1",
+  "source_manifest_sha256": "b820568b22e9f143073a9d91a2574d650ef96276325d3f5a065620160f26ccc6",
   "qualification": "Development snapshot; source-content and scientific review remain open.",
   "ownership_projections": {
     "visuals/phwr-proposed-owned-architecture-flow.svg": {
@@ -32,7 +32,7 @@
     "direct_repository_sources.json.license": "403944020b1fbec498605fa95262500cdd30471519e77972782259b5aa5f046c",
     "document_library_candidate.json": "25935b96d2cd18109fde23a26b5c44d985c9ff05a4ec0c9823461187cb868d56",
     "document_library_candidate.json.license": "bd03bae1187beddbae352ce768f6cb1106ccdadce17fcee3d56ca74d5bc5b6fb",
-    "index.html": "d22b55f41baca81c2fabe077271b10804a5ff78a25ea092c4fc358666ccf9d81",
+    "index.html": "e4b4dbf8f319df797225d05a3124c243e94b43bace8e4415d8949d2fbc65fffc",
     "public_atlas_data.json": "61eb80cb99b5455dc980a061fae060dae29685f911643a58c79ea5d2383122c5",
     "public_atlas_data.json.license": "e03cf60bbdf2792f14680a92d4f3b328629c31b9a4ec6bd49fa4f57f0c736cf0",
     "public_budget_data.json": "db67d69b5e94f866f19c4bef260206bca2d07160b0ebbaed73cd5961d17b3dd9",
@@ -64,9 +64,9 @@
     "resources.html": "a360228806cbd71a39bb05f230e9180c46016b02045cf4704516cc111cee9047",
     "source_update_candidate.json": "7ff81712668283961d269342ea7cca6c1273c24180d2ec6239872243d642c6d0",
     "source_update_candidate.json.license": "209226cfb5baf1cdf237f302a22477123588a93b153821bcdf748add4d3114b3",
-    "technical_explanations_candidate.json": "7b21421557021cb626b15c003805190664930458826536ae57a580b7e0c28294",
+    "technical_explanations_candidate.json": "c830033c024e48cc977866d2343ac00c8baaa0ced6fcf98f5f6ac9992236c738",
     "technical_explanations_candidate.json.license": "57ed96eb718cd2f364152768a3e9f19ccfab48c0dc9fc93708fc716db0418fc1",
-    "visual_catalogue.json": "dee6c30bf683bd2b904c540bf67c807d2092ef3c2ef1505d58cc4a30f5f1f280",
+    "visual_catalogue.json": "a4be95f30af9c97280b4763e5713fc4297546103d7d564c7ab94fa18ed09f557",
     "visual_catalogue.json.license": "e478a346290cfea6d91ada44b25e5895d981e204c363c32febfa9623d8935ff8",
     "visuals/QPU_RESULT_PACK_PROVENANCE_DESIGN_v0.1.png": "5c5c5c95d55f14675eed1ecd0f06031103286a1c8517ac66bcb142e7270c6737",
     "visuals/QPU_RESULT_PACK_PROVENANCE_DESIGN_v0.1.svg": "8ca905be8c39907aa1fd763cc0974548266d4d0de8d507a45360d50df7c38200",
@@ -83,6 +83,7 @@
     "visuals/phwr-current-and-target-architecture.svg": "c43c2e479bead22146421119665a0b19a796b3460c8bc630725cb175714db1c9",
     "visuals/neurocore-supported-workflows.svg": "f876e28efaa7904297b09e9f22d4c3f2c94b4d25ee5b0349f6fe0d9f8464a796",
     "visuals/quantum-local-neural-bridge.svg": "72dc048c375afccca2b5882bfd8704c2d4ae8d163333ed9e980c2624cb59b0be",
-    "visuals/kernels-geometry-and-cad-workflows.svg": "68402abf4538747e1a50eec93637a9218af17498f6756272f66779124e9e82f4"
+    "visuals/kernels-geometry-and-cad-workflows.svg": "68402abf4538747e1a50eec93637a9218af17498f6756272f66779124e9e82f4",
+    "visuals/control-logic-runtime-and-evidence.svg": "7783644760259e527816264feb23056aa2845646724d701815d6f453aece8ed2"
   }
 }

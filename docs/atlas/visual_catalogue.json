@@ -1,8 +1,34 @@
 {
-  "version": "0.19.1+phwr.1+computing.1+kernels.1",
+  "version": "0.19.1+phwr.1+computing.1+kernels.1+control.1",
   "state": "Private integrated visual candidate; presentation and publication reviews pending",
   "source_snapshot_date": "2026-10-13",
   "illustrations": [
+    {
+      "id": "control-logic-runtime-and-evidence",
+      "project": "SCPN-CONTROL",
+      "title": "Control logic, execution and evidence",
+      "description": "Petri-net compilation, configured controller artefacts, observation-to-action ticks, a separately bound stateful neuron mode and distinct runtime/proof/host/semantic-review contracts.",
+      "representation": "design",
+      "representation_label": "Source-supported controller workflow architecture",
+      "asset": "visuals/control-logic-runtime-and-evidence.svg",
+      "asset_sha256": "7783644760259e527816264feb23056aa2845646724d701815d6f453aece8ed2",
+      "downloads": [],
+      "source_version": "Repository source capture 2026-10-18T01:37:59.965155+00:00",
+      "author": "Concepts and code: Miroslav Šotek. Illustration prepared by Arcane Sapience.",
+      "licence": "AGPL-3.0-or-later; commercial statement retained. Repository-native SVG.",
+      "limits": [
+        "An executed controller, neuron or plant simulation",
+        "Fresh formal proof, live host qualification or installed-profile adoption",
+        "A physical actuator connection, machine protection or facility safety approval"
+      ],
+      "profile": "{\n  \"source_capture\": \"2026-10-18T01:37:59.965155+00:00\",\n  \"representation\": \"Source-supported workflow diagram; no compiler/controller/proof/neuron/host/plant execution\"\n}",
+      "review": {
+        "summary": "Documentation and selected source contracts inspected; source-owner content, installed-profile adoption and publication review pending. No controller or scientific execution performed.",
+        "scope": "CONTROL compiler, execution modes and evidence boundaries",
+        "fingerprint": "0db11b61a23b7010954cda6e32ca65b050c65d3165f457f1e2994be642ec87b1",
+        "independent": false
+      }
+    },
     {
       "id": "kernels-geometry-and-cad-workflows",
       "project": "SCPN-REACTOR-KERNELS",

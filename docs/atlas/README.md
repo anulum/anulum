@@ -104,8 +104,8 @@ observations, independent of resource and budget data.
 |---|---|---:|
 | Profile images across all five languages | Four generated header/map SVGs, 91 badge SVGs and the footer image | 621,868 |
 | Dated catalogue provenance | `assets/catalogue-source.json`, plus its ownership sidecar | 114,267 before sidecar |
-| Interactive site snapshot | 74 manifest-listed assets | 34,765,456 |
-| Main interactive entry page | `index.html`, including its eight embedded datasets | 11,181,899 |
+| Interactive site snapshot | 75 manifest-listed assets | 35,276,423 |
+| Main interactive entry page | `index.html`, including its eight embedded datasets | 11,402,080 |
 
 The HTML, JavaScript modules, source-document JSON, illustrations and figure
 downloads belong to the separately hosted explorer. The full snapshot repeats
@@ -138,3 +138,9 @@ through their exact source contracts: canonical meshes, precision-aware STL/GLB,
 native-unit STEP and tetrahedral meshing. Device models, physical properties,
 consumer adoption and scientific qualification remain separately owned. Earlier
 source captures and source-described project connections retain their own dates.
+
+The CONTROL workflow explanation distinguishes Petri-net compilation, configured
+controller artefacts, observation-to-action ticks and the separately bound
+stateful exact-current neuron profile. Runtime-bound proofs, host timing admission
+and non-actionable semantic review retain their own evidence requirements.
+Existing project connections and older source captures keep their original dates.
