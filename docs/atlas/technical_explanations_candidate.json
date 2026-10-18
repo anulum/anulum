@@ -1,13 +1,13 @@
 {
-  "version": "0.14-fusion-source-refresh",
+  "version": "0.14-fusion-source-refresh+qpu-workflow.1",
   "state": "Editorial explanations from repository documents; owning source-content and publication review pending",
-  "captured_at_utc": "2026-10-18T03:42:40.675813+00:00",
+  "captured_at_utc": "2026-10-18T11:22:51.227679+00:00",
   "guide_source_captures": {
     "SCPN-PHWR-CORE": "2026-10-15T17:12:12.636229+00:00",
     "SCPN-FUSION-CORE": "2026-10-18T03:42:40.675813+00:00",
     "SC-NEUROCORE": "2026-10-15T20:45:20.185924+00:00",
     "SCPN-QUANTUM-CONTROL": "2026-10-15T20:45:20.185924+00:00",
-    "QPU-RESULT-PACK": "2026-10-14T01:13:13.396533+00:00",
+    "QPU-RESULT-PACK": "2026-10-18T11:22:51.227679+00:00",
     "SCPN-REACTOR-KERNELS": "2026-10-18T00:36:33.580466+00:00",
     "SCPN-CONTROL": "2026-10-18T01:37:59.965155+00:00",
     "SCPN-PHASE-ORCHESTRATOR": "2026-10-18T02:36:01.372344+00:00",
@@ -996,37 +996,76 @@
             "qpu-workflow",
             "qpu-contract"
           ]
+        },
+        {
+          "title": "Review chain with explicit unavailable states",
+          "text": "The target deliverable connects preserved job bytes and custody facts, a bound numerical derivation and a separately immutable verification report to readable inspection/rendering. Complete quantities, reasons and source references must remain visible, including missing information. The seven domain operations are required semantics under construction; this illustration adds no accepted quantum-job result or executable implementation.",
+          "references": [
+            "qpu-current-purpose",
+            "qpu-current-workflow",
+            "qpu-current-passive-reading",
+            "qpu-current-acceptance"
+          ]
         }
       ],
       "components": [
         {
-          "title": "Capture and import",
-          "text": "Preserve original bytes and acquisition facts separately from normalised views.",
+          "title": "Capture — completed observations and their origin",
+          "text": "The domain workflow is being built around completed-result producers. Capture must retain original result bytes alongside separate acquisition and custody facts: job identity, timestamps, calibration associations and quantity inventories. A declared provider or requested resource cannot stand in for an observed event.",
           "references": [
-            "qpu-workflow",
-            "qpu-contract"
+            "qpu-current-purpose",
+            "qpu-current-observations",
+            "qpu-current-workflow"
           ]
         },
         {
-          "title": "Derive",
-          "text": "Use the caller-owned installed numerical binding and validate earlier raw output. Cancellation/refusal keeps diagnostics without generating a successful result.",
+          "title": "Import — preserve meaning across representations",
+          "text": "Import must preserve foreign/native originals, original representations, field origin and missing information while providing a normalised reading view. Requested shots, observed totals, counts and probability estimates remain distinct quantities; normalisation must not invent an observation or promote a reported estimate into a count.",
           "references": [
-            "qpu-workflow",
-            "qpu-contract"
+            "qpu-current-purpose",
+            "qpu-current-observations",
+            "qpu-current-workflow"
           ]
         },
         {
-          "title": "Seal and verify",
-          "text": "The shared runtime owns content addressing, canonicalisation, signing and Common evaluation; the pack owns domain comparison and policy conjunction.",
+          "title": "Derive — bind the actual numerical programme",
+          "text": "The required derivation path binds the caller-owned installed programme and environment lock, ordered inputs, complete output schema and scalar inventory, units, precision, comparison rule and optional seed. It validates earlier raw output before later execution/output wrappers. Failure, cancellation or resource refusal retains diagnostics without a successful result. A received artefact cannot choose executable code.",
           "references": [
-            "qpu-contract"
+            "qpu-current-derivation",
+            "qpu-current-workflow"
           ]
         },
         {
-          "title": "Inspect and render",
-          "text": "Present preserved scope and unavailable states safely. Resolve assurance from actual class information rather than a declared validation label.",
+          "title": "Seal — shared evidence and domain responsibilities",
+          "text": "The separately owned evidence runtime is responsible for content addressing, canonicalisation, signing and Common evaluation. The pack is responsible for domain comparison and policy conjunction. The intended sealed pack preserves provenance and scope; success at the shared evidence layer does not establish physical measurement qualification or current domain eligibility.",
           "references": [
-            "qpu-contract"
+            "qpu-current-shared-evaluation",
+            "qpu-current-purpose"
+          ]
+        },
+        {
+          "title": "Verify — a new report for an explicit policy and time",
+          "text": "Verification must create a separate immutable observation, leaving the original pack unchanged. It binds explicit policy/time and the caller-selected unsigned or protected trust context. Actual installed types and selected source versions must agree with the entire request. Historical intervals require genuine event evidence, rather than a later operational evaluation witness.",
+          "references": [
+            "qpu-current-shared-evaluation",
+            "qpu-current-trust-and-time",
+            "qpu-current-workflow"
+          ]
+        },
+        {
+          "title": "Inspect — retain the full reviewable record",
+          "text": "The required inspection view retains complete claims, reasons, quantities, references and unavailable states. It presents preserved observations and evaluation scope without running a received programme or granting eligibility. A reviewer can distinguish numerical agreement, provider assurance, producer authenticity and measurement qualification.",
+          "references": [
+            "qpu-current-passive-reading",
+            "qpu-current-workflow"
+          ]
+        },
+        {
+          "title": "Render — readable output without changing assurance",
+          "text": "Rendering must escape foreign text and preserve the full scope already present in the record. Assurance follows actual class information, rather than relabelling a declared validation token. This is a passive document-consumer responsibility, separate from execution, scientific acceptance and the still-open standalone domain workflow.",
+          "references": [
+            "qpu-current-passive-reading",
+            "qpu-current-acceptance"
           ]
         }
       ],
@@ -1071,6 +1110,52 @@
           "references": [
             "qpu-workflow",
             "qpu-contract"
+          ]
+        }
+      ],
+      "model_layers": [
+        {
+          "title": "Observation and representation model",
+          "text": "The pack is an evidence model, not a quantum-state or physical-device simulator. Original bytes and separately supplied acquisition facts support representations of observed/reported quantities. Requested shots, observed totals, probability estimates and counts keep their original meaning and unavailable fields.",
+          "references": [
+            "qpu-current-purpose",
+            "qpu-current-observations",
+            "qpu-current-workflow"
+          ]
+        },
+        {
+          "title": "Numerical re-derivation contract",
+          "text": "A numerical comparison is meaningful only for the selected installed programme, environment, input order and complete output contract. Units, precision, comparison and optional seed are part of that contract. Agreement under it does not independently establish the origin or physical quality of the measurements.",
+          "references": [
+            "qpu-current-derivation",
+            "qpu-current-workflow"
+          ]
+        },
+        {
+          "title": "Assurance, domain policy and measurement qualification",
+          "text": "Content addressing, canonicalisation, signing and Common evaluation concern the shared evidence layer. Domain comparison and policy conjunction belong to the pack. Provider assurance, producer authenticity, measurement qualification and current eligibility are distinct decisions; one successful layer cannot substitute for the others.",
+          "references": [
+            "qpu-current-shared-evaluation",
+            "qpu-current-workflow"
+          ]
+        },
+        {
+          "title": "Historical events and a current evaluation",
+          "text": "A report evaluates a particular policy, time and caller-selected trust context. It is a new immutable observation, not a rewrite of the original job. A later operational witness cannot supply missing historical events or silently change the source/type bindings of the complete request.",
+          "references": [
+            "qpu-current-trust-and-time",
+            "qpu-current-shared-evaluation"
+          ]
+        }
+      ],
+      "source_notes": [
+        {
+          "title": "Development checks and the quantum-result workflow have different scopes",
+          "text": "The refreshed README documents repository-development checks, including source enrollment, native documentation and selected developer gates; its stated remaining obligations and admission_evaluated=false are explicit. Those checks do not demonstrate capture/import/derive/seal/verify/inspect/render domain acceptance. Current architecture files still identify that standalone implementation as not integrated. Earlier source documents remain available with their original dates and fingerprints.",
+          "references": [
+            "qpu-current-developer-scope",
+            "qpu-current-purpose",
+            "qpu-current-acceptance"
           ]
         }
       ]
@@ -11506,12 +11591,111 @@
       "projection_sha256": "e6d93e50f553feb4fbd8c63ce7bd8281bcc57499e1132eeb3a277a25ad27438f",
       "captured_at_utc": "2026-10-18T03:42:40.675813+00:00",
       "excerpt": "    def _trace_lcfs(self, resolution_poloidal: int, radial_steps: int) -> FloatArray:\n        if resolution_poloidal < 8:\n            raise ValueError(\"resolution_poloidal must be >= 8.\")\n        if radial_steps < 16:\n            raise ValueError(\"radial_steps must be >= 16.\")\n\n        kernel = self._require_kernel()\n        r_ax, z_ax, psi_axis, psi_boundary = self._axis_and_boundary_flux()\n\n        max_radius = 1.05 * max(\n            abs(kernel.R[-1] - r_ax),\n            abs(kernel.R[0] - r_ax),\n            abs(kernel.Z[-1] - z_ax),\n            abs(kernel.Z[0] - z_ax),\n        )\n\n        points: list[list[float]] = []\n        thetas = np.linspace(0.0, 2.0 * np.pi, resolution_poloidal, endpoint=False)\n        ray_samples = np.linspace(0.0, max_radius, radial_steps + 1)\n\n        for theta in thetas:\n            cos_t = float(np.cos(theta))\n            sin_t = float(np.sin(theta))\n\n            prev_radius = 0.0\n            prev_diff = psi_axis - psi_boundary\n            found = False\n            sampled_radii: list[float] = []\n            sampled_diffs: list[float] = []\n\n            for radius in ray_samples[1:]:\n                r_test = r_ax + radius * cos_t\n                z_test = z_ax + radius * sin_t\n\n                if not self._inside_domain(r_test, z_test):\n                    break\n\n                psi_test = self._sample_psi_bilinear(r_test, z_test)\n                diff = psi_test - psi_boundary\n                sampled_radii.append(float(radius))\n                sampled_diffs.append(float(diff))\n\n                crossed = (\n                    diff == 0.0\n                    or (prev_diff > 0.0 and diff < 0.0)\n                    or (prev_diff < 0.0 and diff > 0.0)\n                )\n                if crossed:\n                    delta = diff - prev_diff\n                    frac = 0.0 if abs(delta) < 1e-12 else float(-prev_diff / delta)\n                    frac = float(np.clip(frac, 0.0, 1.0))\n                    hit_radius = prev_radius + frac * (radius - prev_radius)\n                    points.append(\n                        [\n                            r_ax + hit_radius * cos_t,\n                            z_ax + hit_radius * sin_t,\n                        ]\n                    )\n                    found = True\n                    break\n\n                prev_radius = radius\n                prev_diff = diff\n\n            if not found and sampled_diffs:\n                # If no strict crossing is found on this ray (common on coarse/sparse\n                # equilibria), use the closest sampled point to the boundary level.\n                min_idx = int(np.argmin(np.abs(np.asarray(sampled_diffs, dtype=float))))\n                hit_radius = sampled_radii[min_idx]\n                points.append(\n                    [\n                        r_ax + hit_radius * cos_t,\n                        z_ax + hit_radius * sin_t,\n                    ]\n                )\n\n        if len(points) < max(8, resolution_poloidal // 3):\n            return self._fallback_ellipse(resolution_poloidal, r_ax, z_ax)\n"
+    },
+    {
+      "id": "qpu-current-purpose",
+      "project": "QPU-RESULT-PACK",
+      "document": "README.md (source 2026-10-18T11:22:51.227679+00:00)",
+      "start": 13,
+      "end": 19,
+      "source_sha256": "de73fe300aebe443db2e209d26ac3ab7b219f46f0cb3e12be1f17db1c86d6aa5",
+      "projection_sha256": "de73fe300aebe443db2e209d26ac3ab7b219f46f0cb3e12be1f17db1c86d6aa5",
+      "captured_at_utc": "2026-10-18T11:22:51.227679+00:00",
+      "excerpt": "Offline evidence packs for completed quantum jobs and their reported numerical results.\n\nThis standalone repository is being prepared for implementation. Its current material includes repository documentation, legal boundaries, a hash-locked development environment and executable documentation checks; the quantum result workflow has not passed standalone acceptance. No public release, measured performance or verified scientific claim is asserted for this checkout.\n\nThe instrument's contract covers preservation of original result bytes, complete job and quantity inventories, explicit source provenance, deterministic numerical re-derivation, immutable sealing, policy-based verification and readable inspection. Native and foreign records retain their own origin and missing information. A probability estimate does not become an observed count, and a provider label does not establish measurement qualification.\n\nNumerical programmes and the shared evidence library remain separately owned dependencies. Verification must bind actual installed artefacts, complete output contracts, ordered inputs, precision, comparison rules and independent execution evidence. Local builds retain their exact unpublished status."
+    },
+    {
+      "id": "qpu-current-workflow",
+      "project": "QPU-RESULT-PACK",
+      "document": "ARCHITECTURE.md",
+      "start": 13,
+      "end": 19,
+      "source_sha256": "70bed720eb25a7e3696cd2afa94860a49592f24b341fd327b117ea1824ced784",
+      "projection_sha256": "70bed720eb25a7e3696cd2afa94860a49592f24b341fd327b117ea1824ced784",
+      "captured_at_utc": "2026-10-14T01:13:13.396533+00:00",
+      "excerpt": "QPU-RESULT-PACK is an offline evidence boundary between completed-result producers, an explicitly installed numerical programme, a shared evidence runtime and document consumers.\n\nOriginal bytes and acquisition facts remain separate from normalised views. Counts, requested shots, observed totals, timestamps, calibration association and reported quantities have distinct meanings. Numerical agreement, provider assurance, producer authenticity, measurement qualification and current eligibility are separate outcomes.\n\nThe intended public workflow consists of capture, import, derive, seal, verify, inspect and render. Inspection and rendering preserve data without executing a received programme. A caller-owned installed binding controls execution; artefact fields cannot select code. Verification produces a new observation rather than mutating the original pack.\n\nThis checkout currently contains repository documents and metadata. Its domain implementation is not yet integrated or accepted. [The detailed boundary](docs/ARCHITECTURE.md) and [threat model](docs/THREAT_MODEL.md) describe the contracts that implementation must preserve."
+    },
+    {
+      "id": "qpu-current-observations",
+      "project": "QPU-RESULT-PACK",
+      "document": "docs/ARCHITECTURE.md",
+      "start": 13,
+      "end": 13,
+      "source_sha256": "8de9cca705f1dd0ef0fae29ac7100c3887f79be5721a08930968d580b3a010e9",
+      "projection_sha256": "8de9cca705f1dd0ef0fae29ac7100c3887f79be5721a08930968d580b3a010e9",
+      "captured_at_utc": "2026-10-14T01:13:13.396533+00:00",
+      "excerpt": "A completed-job producer supplies original observations and separate custody facts. Import preserves foreign bytes, original representations and field origin. A count total, requested resource, calibration label and observed timestamp are distinct assertions."
+    },
+    {
+      "id": "qpu-current-derivation",
+      "project": "QPU-RESULT-PACK",
+      "document": "docs/ARCHITECTURE.md",
+      "start": 15,
+      "end": 15,
+      "source_sha256": "8de9cca705f1dd0ef0fae29ac7100c3887f79be5721a08930968d580b3a010e9",
+      "projection_sha256": "8de9cca705f1dd0ef0fae29ac7100c3887f79be5721a08930968d580b3a010e9",
+      "captured_at_utc": "2026-10-14T01:13:13.396533+00:00",
+      "excerpt": "Derivation binds the actual installed programme, environment lock, ordered inputs, output schema, full scalar inventory, precision, units, comparison and optional seed. Earlier raw output is validated before later execution/output wrappers. Failure, cancellation and resource refusal retain actual diagnostics without producing a successful output."
+    },
+    {
+      "id": "qpu-current-shared-evaluation",
+      "project": "QPU-RESULT-PACK",
+      "document": "docs/ARCHITECTURE.md",
+      "start": 17,
+      "end": 17,
+      "source_sha256": "8de9cca705f1dd0ef0fae29ac7100c3887f79be5721a08930968d580b3a010e9",
+      "projection_sha256": "8de9cca705f1dd0ef0fae29ac7100c3887f79be5721a08930968d580b3a010e9",
+      "captured_at_utc": "2026-10-14T01:13:13.396533+00:00",
+      "excerpt": "The shared runtime owns content addressing, canonicalisation, signing and Common evaluation. The pack owns domain comparison and policy conjunction. Common success does not certify physical measurement or current domain eligibility. Verification creates a separate immutable report for the explicit policy and time."
+    },
+    {
+      "id": "qpu-current-trust-and-time",
+      "project": "QPU-RESULT-PACK",
+      "document": "docs/ARCHITECTURE.md",
+      "start": 19,
+      "end": 19,
+      "source_sha256": "8de9cca705f1dd0ef0fae29ac7100c3887f79be5721a08930968d580b3a010e9",
+      "projection_sha256": "8de9cca705f1dd0ef0fae29ac7100c3887f79be5721a08930968d580b3a010e9",
+      "captured_at_utc": "2026-10-14T01:13:13.396533+00:00",
+      "excerpt": "Caller-owned unsigned and protected trust contexts have different fields. Selected source versions and installed types must agree with the whole request and evaluation inputs. Historical intervals need genuine event sources; an operational evaluation witness is not their replacement."
+    },
+    {
+      "id": "qpu-current-passive-reading",
+      "project": "QPU-RESULT-PACK",
+      "document": "docs/ARCHITECTURE.md",
+      "start": 21,
+      "end": 21,
+      "source_sha256": "8de9cca705f1dd0ef0fae29ac7100c3887f79be5721a08930968d580b3a010e9",
+      "projection_sha256": "8de9cca705f1dd0ef0fae29ac7100c3887f79be5721a08930968d580b3a010e9",
+      "captured_at_utc": "2026-10-14T01:13:13.396533+00:00",
+      "excerpt": "Inspection retains complete claims, reasons, quantities, references and unavailable states without executing programmes or granting eligibility. Rendering escapes foreign text and preserves full scope. Assurance resolves actual class information rather than relabelling a declared validation token."
+    },
+    {
+      "id": "qpu-current-acceptance",
+      "project": "QPU-RESULT-PACK",
+      "document": "docs/ARCHITECTURE.md",
+      "start": 23,
+      "end": 23,
+      "source_sha256": "8de9cca705f1dd0ef0fae29ac7100c3887f79be5721a08930968d580b3a010e9",
+      "projection_sha256": "8de9cca705f1dd0ef0fae29ac7100c3887f79be5721a08930968d580b3a010e9",
+      "captured_at_utc": "2026-10-14T01:13:13.396533+00:00",
+      "excerpt": "The standalone domain implementation is not yet integrated. These are required public semantics, not observed whole-workflow acceptance."
+    },
+    {
+      "id": "qpu-current-developer-scope",
+      "project": "QPU-RESULT-PACK",
+      "document": "README.md (source 2026-10-18T11:22:51.227679+00:00)",
+      "start": 86,
+      "end": 86,
+      "source_sha256": "de73fe300aebe443db2e209d26ac3ab7b219f46f0cb3e12be1f17db1c86d6aa5",
+      "projection_sha256": "de73fe300aebe443db2e209d26ac3ab7b219f46f0cb3e12be1f17db1c86d6aa5",
+      "captured_at_utc": "2026-10-18T11:22:51.227679+00:00",
+      "excerpt": "Select an independently chosen absolute SOURCE_PROFILE and an existing absolute temporary directory outside the public input population. Available checks are python-lint, python-format, strict-types, source-documentation, rendered-references, licensing, strict-json, toml-syntax, yaml-syntax, configuration-policy and citation-metadata. Python paths are explicitly enrolled from the complete inventory, including ignore-hidden roots and interfaces. Source-documentation runs the existing complete profile/native/attribute/reference command. Installed versions must match the maintained developer pins. Exit zero concerns only the full selected check population; JSON retains every remaining file/check obligation and admission_evaluated=false. Tests, coverage, source-policy admission and the other required repository gates remain distinct obligations."
     }
   ],
   "library": {
     "state": "Current document capture for these editorial explanations; source-content review pending",
     "scope": "Complete selected source text is shown. Private references are withheld, CRLF is normalised, and original/projected fingerprints remain separate. Source prose dates and qualification scopes still apply.",
-    "captured_at_utc": "2026-10-18T03:42:40.675813+00:00",
+    "captured_at_utc": "2026-10-18T11:22:51.227679+00:00",
     "projects": [
       {
         "project_id": "SCPN-PHWR-CORE",
@@ -45976,6 +46160,250 @@
                 "line": 11,
                 "level": 1,
                 "title": "Evidence and numerical boundary"
+              }
+            ]
+          },
+          {
+            "label": "README.md (source 2026-10-18T11:22:51.227679+00:00)",
+            "format": "md",
+            "source_sha256": "de73fe300aebe443db2e209d26ac3ab7b219f46f0cb3e12be1f17db1c86d6aa5",
+            "source_bytes": 15787,
+            "projection_sha256": "de73fe300aebe443db2e209d26ac3ab7b219f46f0cb3e12be1f17db1c86d6aa5",
+            "private_references_withheld": 0,
+            "captured_at_utc": "2026-10-18T11:22:51.227679+00:00",
+            "lines": [
+              "<!--",
+              "SPDX-License-Identifier: AGPL-3.0-or-later",
+              "Commercial license available",
+              "© Concepts 1996–2026 Miroslav Šotek. All rights reserved.",
+              "© Code 2020–2026 Miroslav Šotek. All rights reserved.",
+              "ORCID: 0009-0009-3560-0851",
+              "Contact: www.anulum.li | protoscience@anulum.li",
+              "QPU-RESULT-PACK — README.md",
+              "-->",
+              "",
+              "# QPU-RESULT-PACK",
+              "",
+              "Offline evidence packs for completed quantum jobs and their reported numerical results.",
+              "",
+              "This standalone repository is being prepared for implementation. Its current material includes repository documentation, legal boundaries, a hash-locked development environment and executable documentation checks; the quantum result workflow has not passed standalone acceptance. No public release, measured performance or verified scientific claim is asserted for this checkout.",
+              "",
+              "The instrument's contract covers preservation of original result bytes, complete job and quantity inventories, explicit source provenance, deterministic numerical re-derivation, immutable sealing, policy-based verification and readable inspection. Native and foreign records retain their own origin and missing information. A probability estimate does not become an observed count, and a provider label does not establish measurement qualification.",
+              "",
+              "Numerical programmes and the shared evidence library remain separately owned dependencies. Verification must bind actual installed artefacts, complete output contracts, ordered inputs, precision, comparison rules and independent execution evidence. Local builds retain their exact unpublished status.",
+              "",
+              "With development dependencies installed, `python -m tools.check_documentation` checks rendered local Markdown references and bounded document reads. `python -m tools.check_python_docstrings tools/documentation.py tools/python_docstrings.py` checks declared class fields and constructor binding stores against their native Attributes sections, including grouped entries and documented property listings. Development setup and commands are described in [CONTRIBUTING.md](CONTRIBUTING.md).",
+              "",
+              "See [architecture](ARCHITECTURE.md), [validation](VALIDATION.md), [contribution](CONTRIBUTING.md), [security](SECURITY.md) and [licensing](NOTICE.md). Citation metadata is in [CITATION.cff](CITATION.cff). For support or a commercial licence, contact protoscience@anulum.li.",
+              "",
+              "Native Python documentation can be inspected without importing the source:",
+              "",
+              "```bash",
+              ".venv/bin/python -m tools.check_native_docstrings tools/__init__.py",
+              "```",
+              "",
+              "Add `--json` to emit one complete observation, including source and AST fingerprints, per file. Native findings retain exit status 1; complete per-symbol applicability and repository enforcement remain open.",
+              "",
+              "The library helper `tools.native_applicability.assess_native_applicability` compares individual ES01/SA01/EX01 dispositions with the captured file and definition fingerprints. It retains the complete raw report and refuses missing, stale, duplicate, unresolved or unreported decisions. Its correspondence result does not authenticate review metadata or establish owning profile adoption.",
+              "",
+              "The selected-profile correspondence command is available through:",
+              "",
+              "```bash",
+              ".venv/bin/python -m tools.check_native_correspondence \\",
+              "  --profile SELECTED_PROFILE.json --json SOURCE...",
+              "```",
+              "",
+              "Select the actual owning profile independently before interpreting received source. The command captures the selected profile once, binds every source label and complete file digest, retains raw native observations and individual decisions, and refuses missing, stale, duplicate or extra selections. Its exit status checks correspondence; review authentication and owning admission remain separate.",
+              "",
+              "The complete Python source selection can be checked before documentation interpretation:",
+              "```bash",
+              ".venv/bin/python -m tools.check_native_inventory --root . \\",
+              "  --profile SELECTED_PROFILE.json --source-root tools --source-root tests \\",
+              "  --source-root type_stubs --json",
+              "```",
+              "This command discovers every maintained Python/interface path and compares the entire population with the selected profile, including whole-file digests. It rejects omitted files, newly introduced roots and stale source. A successful inventory check supplies byte/enrollment correspondence; actual profile admission and native documentation assessment remain separate.",
+              "",
+              "The repository documentation command combines complete Python enrollment, native section decisions, own-attribute correspondence and rendered local references:",
+              "```bash",
+              ".venv/bin/python -m tools.check_repository_documentation --root . \\",
+              "  --profile SELECTED_PROFILE.json --source-root tools --source-root tests \\",
+              "  --source-root type_stubs --json",
+              "```",
+              "Profile or inventory refusal stops later source interpretation. Native and attribute observations use the same immutable captured bytes and retain every raw finding and selected decision. The command reports documentation correspondence; actual owning profile admission and whole-tool scientific/runtime acceptance remain separate.",
+              "",
+              "The complete maintained file population and its required validation checks can be observed with:",
+              "",
+              "```bash",
+              ".venv/bin/python -m tools.check_repository_surfaces --root . --json",
+              "```",
+              "",
+              "This command captures bounded complete file identities, including source, configuration, licences and dependency locks, without executing their contents or trusting ignore rules to hide maintained files. Unknown formats, inaccessible or linked files, private-path leaks and exceeded bounds refuse. Its successful result describes an inventory; `checks_executed` and `admission_evaluated` remain false. Required gates, installed-artifact qualification and whole-tool acceptance are separate obligations.",
+              "",
+              "An explicitly selected Linux developer command can run with bounded output and process lifetime:",
+              "",
+              "    .venv/bin/python -m tools.check_validation_command \\",
+              "      --root \"$PWD\" --temporary-directory \"$VALIDATION_TMP\" \\",
+              "      -- \"$PWD/.venv/bin/python\" -B -m tools.check_repository_surfaces \\",
+              "      --root \"$PWD\" --json",
+              "",
+              "VALIDATION_TMP selects an existing absolute writable directory for the owned command's temporary and cache outputs. Relative temporary paths refuse before any child starts. The executor reports actual exit status, process-group collection and bounded captured-output identities. It does not echo child output or describe an incomplete prefix as complete output. This execution component does not yet implement the complete repository gate catalogue or admit a source profile.",
+              "",
+              "The selected developer-check command runs fixed installed tools over the complete observed population:",
+              "",
+              "```bash",
+              ".venv/bin/python -m tools.check_developer_gates \\",
+              "  --root \"$PWD\" --temporary-directory \"$VALIDATION_TMP\" \\",
+              "  --python \"$PWD/.venv/bin/python\" --check python-lint --check python-format \\",
+              "  --check strict-types --check source-documentation --profile \"$SOURCE_PROFILE\"",
+              "```",
+              "",
+              "Select an independently chosen absolute SOURCE_PROFILE and an existing absolute temporary directory outside the public input population. Available checks are python-lint, python-format, strict-types, source-documentation, rendered-references, licensing, strict-json, toml-syntax, yaml-syntax, configuration-policy and citation-metadata. Python paths are explicitly enrolled from the complete inventory, including ignore-hidden roots and interfaces. Source-documentation runs the existing complete profile/native/attribute/reference command. Installed versions must match the maintained developer pins. Exit zero concerns only the full selected check population; JSON retains every remaining file/check obligation and admission_evaluated=false. Tests, coverage, source-policy admission and the other required repository gates remain distinct obligations.",
+              "",
+              "Licensing uses serial REUSE JSON and reconciles its actual file labels with the complete maintained inventory. Native zero exit cannot conceal a VCS-ignored source. Canonical licence texts, sidecars, REUSE configuration and empty files retain their own explicit licensing obligations in remaining; native file coverage does not accept those obligations. Full legal/provenance review remains separate.",
+              "",
+              "Create a complete public copy before running checks that inspect physical files:",
+              "",
+              "```bash",
+              ".venv/bin/python -m tools.project_repository \\",
+              "  --root \"$PWD\" --output-parent \"$PUBLIC_OUTPUT_PARENT\"",
+              "```",
+              "",
+              "PUBLIC_OUTPUT_PARENT must be an existing absolute directory outside the input",
+              "repository. On exit zero, the JSON root identifies the new directory containing",
+              "every captured maintained file. Use that absolute root with check_developer_gates",
+              "and a source profile bound to the captured Python/interface bytes. Capture ignores",
+              "no maintained source because of Git ignore patterns; the declared private and",
+              "cache locations remain excluded. Every captured label, digest, size and complete",
+              "body must match the final copy. JSON contains metadata rather than file bodies.",
+              "An interrupted or refused copy retains its created root as partial output; require",
+              "complete=true and exit zero before using it. Projection alone does not execute",
+              "checks or evaluate repository admission.",
+              "",
+              "Run projection and the complete selected developer check population in one command:",
+              "",
+              "```bash",
+              ".venv/bin/python -m tools.check_projected_developer_gates \\",
+              "  --root \"$PWD\" --output-parent \"$PUBLIC_OUTPUT_PARENT\" \\",
+              "  --temporary-directory \"$VALIDATION_TMP\" --python \"$PWD/.venv/bin/python\" \\",
+              "  --profile \"$SOURCE_PROFILE\"",
+              "```",
+              "",
+              "All fixed native checks run by default; repeated --check options explicitly",
+              "select a smaller population. Public projection is mandatory. Output and temporary",
+              "parents must be existing absolute directories outside the original repository.",
+              "The recorded source root must remain an accessible real directory when projection",
+              "starts; a missing, file-valued, linked or unreadable root refuses before new output.",
+              "The selected source profile is explicit and absolute when documentation is checked.",
+              "",
+              "The command binds original file identities, actual retained bytes, the complete",
+              "public copy and native input observations. It also rechecks original source and",
+              "selected profile endpoints. Refusal or cancellation clears coordinated completion,",
+              "retains any created root and actual process metadata, and leaves every observed",
+              "obligation unassessed. Success discharges public projection plus the full selected",
+              "native population; remaining obligations and admission_evaluated=false stay explicit.",
+              "",
+              "Check all maintained JSON, TOML and YAML syntax directly:",
+              "",
+              "```bash",
+              ".venv/bin/python -m tools.check_configuration_syntax --root \"$PWD\"",
+              "```",
+              "",
+              "Repeated --format json, --format toml or --format yaml options select explicit",
+              "families. The default checks every family; a selected family without files refuses.",
+              "The same checks run by default in the projected developer command. JSON rejects",
+              "duplicate decoded keys, nonfinite numbers and lone surrogates. TOML retains native",
+              "date/time and special-number syntax. YAML parses every stream document as events",
+              "without constructing objects or expanding aliases. YAML key, tag and alias meaning,",
+              "configuration schemas and security remain separate owning obligations. Output",
+              "contains file identities and authored findings, with admission_evaluated=false.",
+              "",
+              "The fixed configuration policy has its own real command:",
+              "",
+              "```bash",
+              ".venv/bin/python -m tools.check_configuration_policy --root \"$PWD\"",
+              "```",
+              "",
+              "It checks complete native values in pyproject.toml and REUSE.toml, plus the entire",
+              "funding event stream and the complete literal rules in .editorconfig, .gitattributes,",
+              ".gitignore and .github/CODEOWNERS. Native settings cannot disable the selected lint, typing,",
+              "test and coverage policy. Required configurations cannot disappear or acquire",
+              "unreviewed fields; every new TOML/YAML input needs explicit owning enrollment.",
+              "Comments and equivalent TOML spellings or funding mapping-key order are allowed.",
+              "This check runs in the default projected command and discharges only the named",
+              "configuration-policy obligation. Independent configuration review, licensing,",
+              "security, live funding ownership and admission remain separate.",
+              "",
+              "The four repository controls preserve every active line in its original order. Only",
+              "empty lines, full-line hash comments and CRLF/LF changes are normalised; other",
+              "formatting and alternative native spellings conservatively refuse. Missing, nested,",
+              "case-varied or alternative-location controls also refuse until explicitly enrolled.",
+              "This checks the current fixed local rule set. It does not parse arbitrary native",
+              "control syntax, prove tracked-file privacy or resolve hosted owners and settings.",
+              "",
+              "Newline normalisation replaces actual CRLF pairs with LF. A bare terminal CR,",
+              "a doubled CR before LF or an embedded CR in an active control rule remains literal",
+              "and refuses. Original LF, full CRLF and restored original inputs are exercised",
+              "through the public configuration-policy API and fresh module command.",
+              "",
+              "## Source citation metadata",
+              "",
+              "Run the complete native-schema and source-identity check:",
+              "",
+              "    python -B -m tools.check_citation_metadata --root /absolute/repository",
+              "",
+              "The citation-metadata developer catalogue entry also runs by default through",
+              "tools.check_projected_developer_gates. It captures all maintained files, requires",
+              "both actual metadata files and the complete pinned schemas under schemas/citation,",
+              "and rechecks source identities before reporting completion. The full CFF 1.2.0",
+              "Draft7 schema uses native date/URI format validation. The full Zenodo legacy",
+              "Draft4 schema is an additional structural check, not a current service profile.",
+              "",
+              "Before native validation, UTF-8 decoding rejects duplicate decoded YAML/JSON keys,",
+              "extra YAML documents, aliases, anchors, tags, complex keys and excessive resource",
+              "use. Ordinary native YAML scalar types are preserved. The decoded tree must have",
+              "string mapping keys, finite JSON-compatible values, at most 16,384 nodes and at",
+              "most 64 nested collections; YAML also has a 16,384-event bound.",
+              "",
+              "The separate source-only policy requires every actual QPU title, author spelling,",
+              "owner ORCID, licence, citation message, deposit description and access_right.",
+              "Unknown fields and unearned versions, dates, affiliations or DOIs refuse. Comments,",
+              "mapping order and equivalent string quoting can change without changing those",
+              "values. Missing, renamed, nested or case-varied citation/deposit inputs and",
+              "unregistered citation schemas refuse. Pinned schema bytes cannot be changed by",
+              "received metadata. See [schema provenance](schemas/citation/README.md).",
+              "",
+              "JSON output retains complete before/after identities, native_checked, checked,",
+              "unassessed and static findings. Refusal uses exit 1; argument errors use exit 2.",
+              "No raw source or native exception text is exported. Native acceptance alone can",
+              "remain visible when the source-only policy refuses. This check clears only its",
+              "citation-schema, source-metadata-policy and citation-schema-correspondence obligations;",
+              "independent metadata review, upstream rights, publication and repository admission",
+              "remain separate. Adding real release metadata requires its actual record/release",
+              "authority and an explicit owning policy change.",
+              "",
+              "REUSE uses exact override annotations only for the two upstream schema paths.",
+              "Their effective machine-readable copyright and licences remain upstream;",
+              "the repository-owner fields in adjacent acquisition records do not make",
+              "the owner an original schema author. This does not replace rights review.",
+              "",
+              "The metadata command normally emits both complete inventory tables. Its optional",
+              "--summary output retains their canonical JSON SHA-256 digests, full observed",
+              "file counts, acquisition findings and every required metadata/schema identity.",
+              "Validation, native results, refusal status and input population are identical.",
+              "The fixed developer catalogue uses this representation to avoid repeating the",
+              "coordinator's complete tables within its existing shared output limit.",
+              ""
+            ],
+            "chapters": [
+              {
+                "line": 11,
+                "level": 1,
+                "title": "QPU-RESULT-PACK"
+              },
+              {
+                "line": 174,
+                "level": 2,
+                "title": "Source citation metadata"
               }
             ]
           }

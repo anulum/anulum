@@ -1,6 +1,6 @@
 {
   "schema": "anulum-atlas-snapshot/1",
-  "version": "0.31+resource-sharing.1+publication-review.1.2+phwr-source.1.3+computing-source.1.1+kernels-source.1+control-source.1+spo-source.1+fusion-source.1",
+  "version": "0.31+resource-sharing.1+publication-review.1.2+phwr-source.1.3+computing-source.1.1+kernels-source.1+control-source.1+spo-source.1+fusion-source.1+qpu-workflow.1",
   "source_manifest_sha256": "e0d4fe31f7381834fdaf27c72a8ca41b9877568dc5b6d96dbfa3603a8267a56b",
   "qualification": "Development snapshot; source-content and scientific review remain open.",
   "ownership_projections": {
@@ -32,7 +32,7 @@
     "direct_repository_sources.json.license": "403944020b1fbec498605fa95262500cdd30471519e77972782259b5aa5f046c",
     "document_library_candidate.json": "25935b96d2cd18109fde23a26b5c44d985c9ff05a4ec0c9823461187cb868d56",
     "document_library_candidate.json.license": "bd03bae1187beddbae352ce768f6cb1106ccdadce17fcee3d56ca74d5bc5b6fb",
-    "index.html": "79687cdd8f90fd13310daa35db0d58c888e083fc96c87abb18882f3000c8e498",
+    "index.html": "5153799873520c7693caebdc71d7dd2218e2e9fcd1dece74ee6da70080768814",
     "public_atlas_data.json": "61eb80cb99b5455dc980a061fae060dae29685f911643a58c79ea5d2383122c5",
     "public_atlas_data.json.license": "e03cf60bbdf2792f14680a92d4f3b328629c31b9a4ec6bd49fa4f57f0c736cf0",
     "public_budget_data.json": "db67d69b5e94f866f19c4bef260206bca2d07160b0ebbaed73cd5961d17b3dd9",
@@ -64,9 +64,9 @@
     "resources.html": "a360228806cbd71a39bb05f230e9180c46016b02045cf4704516cc111cee9047",
     "source_update_candidate.json": "7ff81712668283961d269342ea7cca6c1273c24180d2ec6239872243d642c6d0",
     "source_update_candidate.json.license": "209226cfb5baf1cdf237f302a22477123588a93b153821bcdf748add4d3114b3",
-    "technical_explanations_candidate.json": "fa24a394e2dd7247e36f279367ba1c2b5e56b498701f198bef6f556a4323ad2d",
+    "technical_explanations_candidate.json": "6a3a3a150c6d3b1771b78c3ed9c189f827266f362463b0898d7545ae6e4510e4",
     "technical_explanations_candidate.json.license": "57ed96eb718cd2f364152768a3e9f19ccfab48c0dc9fc93708fc716db0418fc1",
-    "visual_catalogue.json": "797f7de9161006bbb6a5550f0e4a50c85f663bb3cf838614b94f4df6cd02c667",
+    "visual_catalogue.json": "7c1b8e257e0b674fb53ed06b10b5f108621f6096d42c11c845e063affdbfd956",
     "visual_catalogue.json.license": "e478a346290cfea6d91ada44b25e5895d981e204c363c32febfa9623d8935ff8",
     "visuals/QPU_RESULT_PACK_PROVENANCE_DESIGN_v0.1.png": "5c5c5c95d55f14675eed1ecd0f06031103286a1c8517ac66bcb142e7270c6737",
     "visuals/QPU_RESULT_PACK_PROVENANCE_DESIGN_v0.1.svg": "8ca905be8c39907aa1fd763cc0974548266d4d0de8d507a45360d50df7c38200",
@@ -86,6 +86,8 @@
     "visuals/kernels-geometry-and-cad-workflows.svg": "68402abf4538747e1a50eec93637a9218af17498f6756272f66779124e9e82f4",
     "visuals/control-logic-runtime-and-evidence.svg": "7783644760259e527816264feb23056aa2845646724d701815d6f453aece8ed2",
     "visuals/spo-phase-models-and-semantic-review.svg": "577976cd730135bf3f1cb2eefc6110360ef312013eb304d8bcec571d41e54bd2",
-    "visuals/fusion-fields-profiles-and-3d-models.svg": "7d03ca48c945e0b40c315957273affc5d33979fa19576101da40b3fc5f8bdd35"
-  }
+    "visuals/fusion-fields-profiles-and-3d-models.svg": "7d03ca48c945e0b40c315957273affc5d33979fa19576101da40b3fc5f8bdd35",
+    "visuals/qpu-result-evidence-workflow.svg": "8a447a3881d11d0a86d73b1f85db7127fa37be514ebd874bf584c98e3d8d61b0"
+  },
+  "editorial_base_manifest_sha256": "52d189cbeeb20ae9a770c47b20482dcd43a5ccecc95ff0c646610bc81fdbdf2f"
 }

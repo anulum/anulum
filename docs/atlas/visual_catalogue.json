@@ -1,5 +1,5 @@
 {
-  "version": "0.19.1+phwr.1+computing.1+kernels.1+control.1+spo.1+fusion.1",
+  "version": "0.19.1+phwr.1+computing.1+kernels.1+control.1+spo.1+fusion.1+qpu-workflow.1",
   "state": "Private integrated visual candidate; presentation and publication reviews pending",
   "source_snapshot_date": "2026-10-13",
   "illustrations": [
@@ -363,10 +363,36 @@
         "fingerprint": "065465ffb3d96bf6db9f9edabc097fbbe4a3671560a300c82410a1ed0c130d4c",
         "independent": false
       }
+    },
+    {
+      "id": "qpu-result-evidence-workflow",
+      "project": "QPU-RESULT-PACK",
+      "title": "QPU results: from observations to review",
+      "description": "Seven required operations under construction, preserving observation origin, installed numerical bindings, separate immutable evaluations and passive readable outputs.",
+      "representation": "design",
+      "representation_label": "Source-supported evidence workflow under construction",
+      "asset": "visuals/qpu-result-evidence-workflow.svg",
+      "asset_sha256": "8a447a3881d11d0a86d73b1f85db7127fa37be514ebd874bf584c98e3d8d61b0",
+      "downloads": [],
+      "source_version": "README capture 2026-10-18T11:22:51.227679+00:00; unchanged architecture captured 2026-10-14",
+      "author": "Concepts and code: Miroslav Šotek. Illustration prepared by Arcane Sapience.",
+      "licence": "AGPL-3.0-or-later; commercial statement retained. Repository-native SVG.",
+      "limits": [
+        "An implemented or executed seven-operation domain workflow",
+        "A captured QPU job, numerical re-derivation, seal or verification result",
+        "Physical measurement qualification, accepted consumer adoption or current domain eligibility"
+      ],
+      "profile": "{\n  \"source_capture\": \"2026-10-18T11:22:51.227679+00:00\",\n  \"representation\": \"Required domain workflow under construction; no quantum/evidence programme executed\"\n}",
+      "review": {
+        "summary": "Current public source documents inspected. Development checks and domain acceptance remain separate; source-owner content, consumer, scientific and publication review pending.",
+        "scope": "QPU result-pack provenance, numerical and evaluation responsibilities",
+        "fingerprint": "6a3a3a150c6d3b1771b78c3ed9c189f827266f362463b0898d7545ae6e4510e4",
+        "independent": false
+      }
     }
   ],
   "source_reviews_independent": false,
   "project_nodes_added": false,
   "new_scientific_or_model_execution": false,
-  "updated_at_utc": "2026-10-15T17:12:12.636229+00:00"
+  "updated_at_utc": "2026-10-18T11:22:51.227679+00:00"
 }
