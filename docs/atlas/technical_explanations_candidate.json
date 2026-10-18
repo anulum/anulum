@@ -1,7 +1,7 @@
 {
-  "version": "0.14-fusion-source-refresh+qpu-workflow.1+mif-workflow.1+timing-workflow.1",
+  "version": "0.14-fusion-source-refresh+qpu-workflow.1+mif-workflow.1+timing-workflow.1+emt-workflow.1",
   "state": "Editorial explanations from repository documents; owning source-content and publication review pending",
-  "captured_at_utc": "2026-10-18T14:50:15.082871+00:00",
+  "captured_at_utc": "2026-10-18T18:01:59.844238+00:00",
   "guide_source_captures": {
     "SCPN-PHWR-CORE": "2026-10-15T17:12:12.636229+00:00",
     "SCPN-FUSION-CORE": "2026-10-18T03:42:40.675813+00:00",
@@ -12,7 +12,7 @@
     "SCPN-CONTROL": "2026-10-18T01:37:59.965155+00:00",
     "SCPN-PHASE-ORCHESTRATOR": "2026-10-18T02:36:01.372344+00:00",
     "LOOP-TIMING-WITNESS": "2026-10-18T14:50:15.082871+00:00",
-    "EVIDENCE-MANIFEST-TOOLKIT": "2026-10-14T01:50:52.154839+00:00",
+    "EVIDENCE-MANIFEST-TOOLKIT": "2026-10-18T18:01:59.844238+00:00",
     "SCPN-QC-CONTRACTS": "2026-10-14T01:50:52.154839+00:00",
     "TRANSPILE-WITNESS": "2026-10-14T01:50:52.154839+00:00",
     "MITIGATION-WITNESS": "2026-10-14T01:50:52.154839+00:00",
@@ -2256,135 +2256,326 @@
         ]
       },
       "scope": {
-        "text": "The source runtime is under development and its qualified inventories remain empty. Command completion and Common eligibility do not supply scientific domain acceptance, an operational root, signer or qualified clock.",
+        "text": "Development is in progress. The documented six-function Python surface and four offline command grammars coexist with local governance tooling, while qualified capability, claim and schema inventories remain empty and installed packaging remains under development. This source reading does not execute the runtime or establish operational trust, clock, signer, scientific acceptance or a currently qualified consumer binding.",
         "references": [
-          "emt-purpose",
-          "emt-reports"
+          "emt-flow-status",
+          "emt-flow-functions",
+          "emt-flow-cli-inputs",
+          "emt-flow-governance"
         ]
       },
       "inputs": [
         {
-          "title": "Original bytes and explicit limits",
-          "text": "JSON/blob data carry an explicit raw or canonical identity basis and positive byte/count/graph/depth limits. Metadata constructors do not retrieve or authenticate referenced bytes.",
+          "title": "Original content with an explicit identity basis",
+          "text": "Caller-supplied JSON/blob bytes retain raw_bytes or jcs_content identity, complete declared length, media type and optional schema identifier. A BlobRef constructor or mapping validates a declaration, not acquired byte identity; canonicalisation does not replace the original raw representation.",
           "references": [
-            "emt-operations"
+            "emt-flow-functions",
+            "emt-flow-byte-identity"
           ]
         },
         {
-          "title": "Caller-owned registry, resolver and policy",
-          "text": "The caller selects complete schema entries, bounded reference acquisition and the actual claim/purpose population. Received artefacts cannot choose executable code or network schema resolution.",
+          "title": "Finite acquisition and representation limits",
+          "text": "All six bounds are explicit positive integers: JSON/blob/total-reference bytes, reference count, graph depth and JSON depth. The selected resolver returns actual bounded bytes; cumulative budgets cover the selected graph. No unlimited/default mode or artifact-selected executable/schema download is supplied.",
           "references": [
-            "emt-authority"
+            "emt-flow-functions",
+            "emt-flow-registry-resolver"
           ]
         },
         {
-          "title": "Selected trust, signer and clock",
-          "text": "Authority snapshots/floors/time and signing are explicit caller selections. Timestamp validation does not qualify the source clock or derive trusted time from producer text.",
+          "title": "Caller-selected registry, policy and authority",
+          "text": "A complete SchemaRegistry and actual reference source accompany exact claim/purpose selection. TrustContext supplies independently accepted bootstrap/current/floor/time and optional archived state. Those trusted-caller premises are not created by parsing a received success flag or producer timestamp.",
           "references": [
-            "emt-authority",
-            "emt-time"
+            "emt-flow-registry-resolver",
+            "emt-flow-trust-policy",
+            "emt-flow-verify-contract"
+          ]
+        },
+        {
+          "title": "Explicit detached receipts and optional signing",
+          "text": "The caller supplies receipt bytes in original order. Signed sealing requires signing request, actual signer and current trust together; unsigned construction is an explicitly different selection. UTC token validity does not qualify the clock, and signer configuration cannot enroll an implementation.",
+          "references": [
+            "emt-flow-signing",
+            "emt-flow-time",
+            "emt-flow-cli-inputs",
+            "emt-flow-cli-signers"
           ]
         }
       ],
       "outputs": [
         {
-          "title": "Canonical bytes and byte references",
-          "text": "canonicalize_json produces complete canonical bytes; reference_bytes binds selected raw or canonical content without installing a schema or storing the input.",
+          "title": "Canonical content and selected byte reference",
+          "text": "canonicalize_json returns complete canonical JSON bytes; reference_bytes binds the selected raw or canonical basis without storing input or registering a schema. Different representation identities must not be silently substituted.",
           "references": [
-            "emt-operations"
+            "emt-flow-functions",
+            "emt-flow-byte-identity"
           ]
         },
         {
-          "title": "Inspection, difference and optional seal",
-          "text": "Inspection preserves declarations/diagnostics without acceptance; difference retains identities/pointers/receipts; sealing returns canonical content and an optional detached envelope under the selected signing context.",
+          "title": "Passive inspection and comparison",
+          "text": "inspect returns declarations/diagnostics with acceptance not_evaluated. diff retains both content identities, changed pointers and ordered receipt identities. Neither operation authenticates a receipt or grants evidence eligibility.",
           "references": [
-            "emt-operations",
-            "emt-authority"
+            "emt-flow-functions",
+            "emt-flow-report"
           ]
         },
         {
-          "title": "Complete verification report",
-          "text": "The report retains structure, integrity, authenticity, availability, Common/domain/current eligibility, reference observations and located reasons instead of collapsing refusal to a successful Boolean.",
+          "title": "Unsigned content or a separately checked detached envelope",
+          "text": "SealResult keeps canonical_content, content_ref and envelope_json. The unsigned result has no envelope; a signed result checks current authority before invoking the actual signer and verifies the returned complete-message signature. Failed signing does not produce an unsigned fallback.",
           "references": [
-            "emt-reports"
+            "emt-flow-signing",
+            "emt-flow-seal-contract",
+            "emt-flow-seal-unsigned",
+            "emt-flow-seal-signed"
+          ]
+        },
+        {
+          "title": "All fifteen verification fields",
+          "text": "VerificationReport separately retains content/policy/registry identities, evaluation mode/time, evaluated claims, structure, integrity, authenticity, availability, common_eligibility, domain_verdict, current_eligibility, reference observations and reasons. The common runtime leaves domain_verdict as not_evaluated.",
+          "references": [
+            "emt-flow-report",
+            "emt-flow-verify-contract"
+          ]
+        },
+        {
+          "title": "Complete immutable local transport result",
+          "text": "The offline grammar describes a fresh seal directory or exclusively created report file. Complete JSON output, typed refusals and failure precedence remain visible. Publication success or exit zero cannot clear failed gates or establish scientific/current acceptance.",
+          "references": [
+            "emt-flow-output",
+            "emt-flow-exits"
           ]
         }
       ],
       "components": [
         {
-          "title": "Strict representation and acquisition",
-          "text": "Validate received syntax and resource bounds while preserving original-versus-canonical identity and full reference occurrences.",
+          "title": "Byte identity and strict canonical representation",
+          "text": "Strict content handling and explicit bounds distinguish original bytes, canonical content and metadata declarations. Shape, length and digest are checked when actual source bytes are acquired.",
           "references": [
-            "emt-components",
-            "emt-operations",
-            "emt-authority"
+            "emt-flow-byte-identity",
+            "emt-flow-registry-resolver"
           ]
         },
         {
-          "title": "Passive inspection and comparison",
-          "text": "Expose complete declarations and differences without authenticating receipts or granting eligibility.",
+          "title": "Static registry and bounded reference closure",
+          "text": "The caller selects schema bytes, dependencies, reference paths and common semantics. Resolver reads share the operation budget and preserve exact missing full references or digest-only requests. An artifact URL is not an instruction to fetch code or a filesystem path.",
           "references": [
-            "emt-operations",
-            "emt-reports"
+            "emt-flow-registry-resolver",
+            "emt-flow-store"
           ]
         },
         {
-          "title": "Caller-selected sealing and verification",
-          "text": "Use the explicit registry/resolver/policy/trust/signing context. Verification does not install snapshots, advance trust floors or issue a certificate.",
+          "title": "Read-only inspection and difference",
+          "text": "These operations expose declarations and differences without installing trust, authenticating receipts or silently converting an observation into an acceptance verdict.",
           "references": [
-            "emt-authority"
+            "emt-flow-functions",
+            "emt-flow-report"
           ]
         },
         {
-          "title": "Separate governance tooling",
-          "text": "Local source/configuration/inventory/workflow diagnostics remain repository checks; supplied outcome values do not prove hosted execution or scientific capability.",
+          "title": "Known-schema construction and optional signing",
+          "text": "Sealing validates the registry, complete content, required closure and reasons before returning unsigned content or checking current signing authority. Full signer response validation precedes an envelope result.",
           "references": [
-            "emt-purpose",
-            "emt-components"
+            "emt-flow-seal-unsigned",
+            "emt-flow-seal-signed"
+          ]
+        },
+        {
+          "title": "Common verification and complete reporting",
+          "text": "Verification acquires inputs, selects trust state, checks actual receipts against content/claim identities and composes the complete independent report axes. Scientific domain acceptance remains with the domain consumer.",
+          "references": [
+            "emt-flow-verify-chain",
+            "emt-flow-report"
+          ]
+        },
+        {
+          "title": "Offline transport and separate repository governance",
+          "text": "Four CLI grammars handle explicit local inputs/object store and fresh output destinations. Repository metadata/dependency/workflow guards remain distinct checks and do not implement evidence acceptance or prove hosted execution.",
+          "references": [
+            "emt-flow-cli-inputs",
+            "emt-flow-store",
+            "emt-flow-output",
+            "emt-flow-governance"
           ]
         }
       ],
       "connections": [],
       "external_roles": [
         {
-          "title": "Scientific domain consumers",
-          "text": "A separately owned domain consumer supplies domain acceptance. A requirement for a common runtime does not by itself establish a qualified installed binding to this repository.",
+          "title": "Domain consumers and independent validation owners",
+          "text": "Scientific or engineering consumers supply the domain judgement the common report deliberately does not evaluate. A need for a common runtime, including the QPU domain contract, is not proof of a qualified installed binding to EMT. No new project connection is asserted here.",
           "references": [
-            "emt-reports",
+            "emt-flow-report",
             "qpu-contract"
           ]
         },
         {
-          "title": "Registry, resolver, signer and clock owners",
-          "text": "Caller-owned sources and independently qualified adapters retain their own authority and acquisition obligations; the toolkit does not invent them from a received artefact.",
+          "title": "Registry, reference-custody and policy owners",
+          "text": "Contributors must supply complete independently selected schema snapshots, policies, reference bytes and their acquisition/custody context. Finite resolver and graph contracts are explicit integration needs; untrusted artifacts cannot choose these owners or executable implementations.",
           "references": [
-            "emt-authority",
-            "emt-time"
+            "emt-flow-registry-resolver",
+            "emt-flow-trust-policy",
+            "emt-flow-store"
+          ]
+        },
+        {
+          "title": "Trust, signer and calibrated-clock owners",
+          "text": "Operational bootstrap/current/floor/archive authority, a locally enrolled qualified signer and independently qualified time source remain separate owner obligations. The checkout supplies no qualified CLI signing adapter. These are required roles and evidence, not agreed partners, purchased services or deployed authorities.",
+          "references": [
+            "emt-flow-signing",
+            "emt-flow-time",
+            "emt-flow-cli-signers"
+          ]
+        },
+        {
+          "title": "Packaging, storage-platform and consumer integration",
+          "text": "Installed packaging remains under development; publication semantics depend on the actual supported host/filesystem capability. Integration needs matching installation, complete input/output/refusal behaviour and consumer qualification rather than a successful command-name demonstration. No new package or storage service is provisioned by this map.",
+          "references": [
+            "emt-flow-cli-inputs",
+            "emt-flow-output",
+            "emt-flow-exits"
           ]
         }
       ],
       "limits": [
         {
-          "title": "Common and domain outcomes differ",
-          "text": "domain_verdict remains not_evaluated in the common report; historical Common eligibility does not establish current eligibility.",
+          "title": "Source development is not operational qualification",
+          "text": "The repository states architecture_only with empty qualified inventories and incomplete installed packaging. This map reads uncommitted public source without importing or executing the runtime, signer, clock, authority or scientific consumer.",
           "references": [
-            "emt-reports"
+            "emt-flow-status",
+            "emt-flow-functions",
+            "emt-flow-cli-inputs"
           ]
         },
         {
-          "title": "A valid token is not a qualified producer",
-          "text": "Valid UTC text, reference shape or schema ID cannot qualify a clock, source identity, registry admission or physical observation.",
+          "title": "The complete report must retain every outcome axis",
+          "text": "Common eligibility does not become a domain verdict; historical eligibility does not establish current eligibility. Missing references, typed refusals and located reasons cannot be flattened into a successful Boolean or hidden by successful output transport.",
           "references": [
-            "emt-operations",
-            "emt-time"
+            "emt-flow-report",
+            "emt-flow-exits"
           ]
         },
         {
-          "title": "Signing failure must retain its meaning",
-          "text": "A failed selected signer cannot silently trigger unsigned construction. Root issuance and adapter qualification remain outside these functions.",
+          "title": "Received declarations cannot enroll authority or implementation",
+          "text": "Constructor/UTC/schema shape checks do not qualify the source, key custody, policy, registry, signer or clock. Verification changes no trust floor and installs no snapshot; failed signing cannot silently switch modes.",
           "references": [
-            "emt-authority",
-            "emt-reports"
+            "emt-flow-byte-identity",
+            "emt-flow-trust-policy",
+            "emt-flow-time",
+            "emt-flow-signing",
+            "emt-flow-cli-signers"
+          ]
+        },
+        {
+          "title": "One source surface does not qualify every exported route",
+          "text": "Public value-type exports and helper functions do not by themselves prove complete successor-operation wiring, current installed compatibility or an accepted domain integration. The explanation follows the inspected six-operation source and documented four command grammars, with qualification still separately owned.",
+          "references": [
+            "emt-flow-public-exports",
+            "emt-flow-verify-contract",
+            "emt-flow-seal-contract",
+            "emt-flow-status"
+          ]
+        }
+      ],
+      "implementation": [
+        {
+          "title": "The public module exposes six documented operations",
+          "text": "The inspected facade exports canonicalize_json, reference_bytes, inspect, diff, seal and verify with explicit public value types. The documented four CLI commands transport seal/verify/inspect/diff; canonicalisation and byte-reference construction are Python functions rather than additional claimed CLI grammars.",
+          "references": [
+            "emt-flow-public-exports",
+            "emt-flow-functions",
+            "emt-flow-cli-inputs"
+          ]
+        },
+        {
+          "title": "Sealing checks configuration and required content before producing a result",
+          "text": "seal validates Limits, registry/schema selection and all-or-none signing options, then creates one ReferenceBudget, validates the schema registry and prepares the complete content. Missing closure or content reasons refuse construction. Only the explicitly unsigned branch returns an envelope-free SealResult.",
+          "references": [
+            "emt-flow-seal-unsigned",
+            "emt-flow-seal-contract"
+          ]
+        },
+        {
+          "title": "Signed construction invokes a selected signer after authority checks",
+          "text": "The signed branch constructs the complete statement, initializes the local verifier and obtains the allowed key through signing_public_key before sign_statement is called. It returns the resulting detached envelope with the same canonical content/reference; no failed-signer retry into the unsigned branch appears in this path.",
+          "references": [
+            "emt-flow-seal-signed",
+            "emt-flow-signing"
+          ]
+        },
+        {
+          "title": "Verification retains the whole selected claim and receipt context",
+          "text": "verify passes complete bytes, ordered envelopes, schema, resolver, limits, policy and trust into acquire_verification_inputs. It selects trust state under the same operation budget, derives actual content claim IDs, evaluates each supplied envelope through receipt_authority and composes the complete report. This is inspected source flow, not a new successful verification run.",
+          "references": [
+            "emt-flow-verify-contract",
+            "emt-flow-verify-chain"
+          ]
+        },
+        {
+          "title": "Offline acquisition is local and bounded",
+          "text": "The CLI document describes a read-only digest-addressed object directory, anchored descriptor, regular-file/no-symlink checks and bounded reads. Repeated signature flags preserve caller order; signatures are not silently discovered in the store. Unavailable signer/provider paths retain their distinct failure semantics.",
+          "references": [
+            "emt-flow-cli-inputs",
+            "emt-flow-cli-signers",
+            "emt-flow-store"
+          ]
+        },
+        {
+          "title": "Output creation and exit status retain their own meaning",
+          "text": "The documented local directory publisher uses no-replacement publication on the supported Linux/filesystem route; existing destinations survive. Failures after publication can leave a complete immutable output while returning I/O failure, so retry requires a new destination. Refusal reports can be published successfully without becoming accepted evidence.",
+          "references": [
+            "emt-flow-output",
+            "emt-flow-exits"
+          ]
+        }
+      ],
+      "model_layers": [
+        {
+          "title": "Representation identity is distinct from the asserted fact",
+          "text": "Raw bytes, canonical JSON, BlobRef metadata and acquired byte observations have different meanings. Canonicalising a document or confirming its digest does not validate the physical measurement or scientific conclusion described inside.",
+          "references": [
+            "emt-flow-byte-identity",
+            "emt-flow-report"
+          ]
+        },
+        {
+          "title": "Schema and graph validity are distinct from authority",
+          "text": "Caller-selected static schema/closure checks establish the declared common structure under finite limits. A schema identifier or received registry-looking object cannot select executable code, install registry state or manufacture trust.",
+          "references": [
+            "emt-flow-registry-resolver",
+            "emt-flow-trust-policy"
+          ]
+        },
+        {
+          "title": "Signature, trust context and clock qualification are separate",
+          "text": "A checked message signature, independently accepted authority/floor/archive selection and a qualified source of time retain separate obligations. UTC lexical/calendar validity does not establish freshness or uncertainty; historical Common eligibility does not establish current eligibility.",
+          "references": [
+            "emt-flow-signing",
+            "emt-flow-trust-policy",
+            "emt-flow-time",
+            "emt-flow-report"
+          ]
+        },
+        {
+          "title": "Common gates, domain judgement and transport completion are separate",
+          "text": "The complete report preserves structure/integrity/authenticity/availability and Common/domain/current axes. domain_verdict remains not_evaluated. A report file or exit zero does not substitute for a separately owned domain decision, operational qualification or current consumer admission.",
+          "references": [
+            "emt-flow-report",
+            "emt-flow-exits",
+            "emt-flow-status"
+          ]
+        }
+      ],
+      "source_notes": [
+        {
+          "title": "Earlier documentation dates and current code observations coexist",
+          "text": "README, component architecture and Python API are byte-identical to the existing14Octreading views and retain their dates. The newly captured offline CLI/facade/verify/seal readings are complete uncommitted source observations with current fingerprints. Source-owner engineering progress, package acceptance and scientific/operational qualification are not inferred from their capture.",
+          "references": [
+            "emt-flow-status",
+            "emt-flow-governance",
+            "emt-flow-functions",
+            "emt-flow-cli-inputs",
+            "emt-flow-public-exports",
+            "emt-flow-verify-contract",
+            "emt-flow-seal-contract"
           ]
         }
       ]
@@ -12676,12 +12867,232 @@
       "projection_sha256": "48066f760fc251371b9ab64187352909c5c2faf3f7bb88568c3edd5031835f70",
       "captured_at_utc": "2026-10-18T14:50:15.082871+00:00",
       "excerpt": "## Stated limits\n\nThese limits are part of every report:\n\n- The PAC1934 rails do not separate processor cores from fabric: the core rail supplies both.\n  Placement energy is whole-rail energy, not per-core energy.\n- The power monitor samples far more slowly than a control cycle. Energy per cycle is a window\n  mean, not a per-cycle measurement.\n- Timestamps resolve 10 ns. Bus access inside the interconnect adds a fixed offset that is\n  calibrated and reported.\n- The plant is emulated. Results describe controller timing and its effect on the emulated plant,\n  not a physical machine.\n- A PREEMPT_RT comparison is included only if a matching kernel builds for the board support\n  package.\n\n## Acceptance of the instrument before any result\n\nA result may be reported only after the instrument has passed, on the same bitstream, the\nknown-period test, the injected-delay test, the overflow test and the bus-offset calibration\ndescribed in [`ARCHITECTURE.md`](ARCHITECTURE.md). Their records are kept with the run records.\n\n## Plant simulation prerequisite\n\n[`PLANT_WITNESS.md`](PLANT_WITNESS.md) specifies the implemented Q8.24 models, reference\nquantisation, strict deadline and safe-state priority, simultaneous event capture and fault\ninjection. `ACT_WRITE` denotes the first timely command; `ACT_LATE` is the first accepted\nlate command in its observation cycle and does not satisfy a deadline. Late-command counts\ncome from the hardware status counter, not the number of `ACT_LATE` records. Preserve clipping\nflags with sample output and include all coefficient values in source/configuration provenance.\nThe injected-delay simulation checks an exact k-period fabric delay; processor execution,\npower-monitor energy and physical safe-state behaviour need separate board acceptance."
+    },
+    {
+      "id": "emt-flow-status",
+      "project": "EVIDENCE-MANIFEST-TOOLKIT",
+      "document": "README.md",
+      "start": 13,
+      "end": 17,
+      "source_sha256": "c5d3dbcea9e813b510cbbe9dddf9a1ee4b1d435ac85f989ad3792af8cd853879",
+      "projection_sha256": "c5d3dbcea9e813b510cbbe9dddf9a1ee4b1d435ac85f989ad3792af8cd853879",
+      "captured_at_utc": "2026-10-14T01:50:52.154839+00:00",
+      "excerpt": "Local repository validation infrastructure and a Python evidence runtime under development. The source module exports canonicalization, byte references, inspection, difference, seal and verification operations, with four offline command grammars. Read the [Python API](docs/api.md) and [Offline CLI](docs/offline-cli.md) for their inputs and result semantics.\n\nThe repository records `architecture_only` maturity. Its qualified capability, claim and schema inventories remain empty. Installed packaging and operational root, signer, clock and domain qualification are not supplied by this checkout. Common report eligibility and command completion do not establish scientific acceptance.\n\nThe implemented infrastructure checks local metadata, attribution, workflows, dependency alignment, documentation and inventory. The preflight command combines those gates with the complete development-tool checks. A successful report covers only the requested local repository operation."
+    },
+    {
+      "id": "emt-flow-governance",
+      "project": "EVIDENCE-MANIFEST-TOOLKIT",
+      "document": "docs/ARCHITECTURE.md",
+      "start": 13,
+      "end": 33,
+      "source_sha256": "7d1b4a85011cfd619d511c9b1e926c320b2b878165b34ea8a66b472eca9e5f3f",
+      "projection_sha256": "7d1b4a85011cfd619d511c9b1e926c320b2b878165b34ea8a66b472eca9e5f3f",
+      "captured_at_utc": "2026-10-14T01:50:52.154839+00:00",
+      "excerpt": "The public guard scripts dispatch to cohesive modules for strict inputs, deterministic reports, owned process execution, metadata, inventory, dependencies, attribution, workflows and documentation. Expected identity, schema/source hashes, resource bounds and role ownership are maintained constants. Received files cannot select executables, weaken expected schemas or enable network fallback.\n\nJSON rejects duplicate members, nonfinite numbers and invalid scalar Unicode. YAML preserves the GitHub `on` key and refuses aliases, merges, executable tags and duplicate members. Source traversal checks actual kinds and counts before reading content; excluded tooling trees must be real local directories. Git tracking remains separately inspected.\n\nDependency alignment checks the complete known development package declaration\nalongside the original scaffold form. Direct development requirements include the\none explicit local runtime input, with exact versions and unique package names.\nThese declaration checks retain the separate locked graph, installed producer,\nprovenance and audit gates; they do not qualify the evidence runtime or load a\nreceived backend, entrypoint or include path.\n\nThe workflow guard checks one retained policy and all seven workflow inputs.\nIts optional `--outcomes` file is read once through the bounded JSON reader.\nThe closed six-role projection accepts only flat outcome strings and requires\nall six successes in addition to the complete static graph. Earlier graph\nfindings remain in the same report. Neither an omitted projection nor supplied\nsuccess values establish hosted execution.\n\nInventory generation and verification are acyclic. Metadata validates before generation; final verification checks every required path and the actual metadata source digest. Preflight verifies only and preserves each role's observed result. Owned Linux process groups have bounded capture, termination and reaping. Required roles share one total deadline.\n\nThe evidence runtime is a separate source surface under development. Its six functions receive explicit bytes, limits, static schema registries and caller-owned sources; verification retains complete independent report axes and reference observations. The [Python API](api.md) and [Offline CLI](offline-cli.md) describe the current boundary. Governance guards do not implement evidence acceptance, and neither surface changes a trust floor, installs received registry state or supplies a scientific domain verdict."
+    },
+    {
+      "id": "emt-flow-functions",
+      "project": "EVIDENCE-MANIFEST-TOOLKIT",
+      "document": "docs/api.md",
+      "start": 12,
+      "end": 23,
+      "source_sha256": "c6e67a1337a3cb088f1d178766e81a68907641da6ba901a35b699cc1bd43cb69",
+      "projection_sha256": "c6e67a1337a3cb088f1d178766e81a68907641da6ba901a35b699cc1bd43cb69",
+      "captured_at_utc": "2026-10-14T01:50:52.154839+00:00",
+      "excerpt": "The source module is `evidence_manifest_toolkit`. Its runtime is under development; the repository's qualified capability inventory remains empty. The functions below operate on caller-supplied bytes, configurations and sources. Operational root, signer, clock and scientific qualification are separate obligations.\n\n| Function | Explicit inputs | Result |\n|---|---|---|\n| `canonicalize_json` | `data: bytes`, keyword `limits: Limits` | Complete RFC 8785 canonical bytes. |\n| `reference_bytes` | `data: bytes`, keywords `media_type`, `digest_basis`, `schema_id`, `limits` | `BlobRef` identifying the selected raw or canonical bytes. |\n| `inspect` | `content_json: bytes`, keyword `limits` | `Inspection` containing declarations and diagnostics; acceptance is `not_evaluated`. |\n| `diff` | `left_json`, `right_json`, keyword `limits`, optional ordered `left_envelopes` and `right_envelopes` | `Difference` with content identities, changed pointers and receipt identities. |\n| `seal` | `content_json`, keywords `schema_id`, `registry`, `resolver`, `limits`, optional `signing`, `signer`, `trust` | `SealResult` with canonical content, its reference and an optional detached envelope. |\n| `verify` | `content_json`, keywords `schema_id`, `envelopes`, `registry`, `resolver`, `limits`, `policy`, `trust` | Complete fifteen-field `VerificationReport`. |\n\nAll six limit fields are explicit positive integers: `max_json_bytes`, `max_blob_bytes`, `max_total_reference_bytes`, `max_reference_count`, `max_graph_depth` and `max_json_depth`. `Limits.validate()` checks the declaration; operations independently check it before acquisition. Construction supplies no defaults or unlimited mode."
+    },
+    {
+      "id": "emt-flow-byte-identity",
+      "project": "EVIDENCE-MANIFEST-TOOLKIT",
+      "document": "docs/api.md",
+      "start": 25,
+      "end": 31,
+      "source_sha256": "c6e67a1337a3cb088f1d178766e81a68907641da6ba901a35b699cc1bd43cb69",
+      "projection_sha256": "c6e67a1337a3cb088f1d178766e81a68907641da6ba901a35b699cc1bd43cb69",
+      "captured_at_utc": "2026-10-14T01:50:52.154839+00:00",
+      "excerpt": "Native parser or canonical writer recursion exhaustion raises `InputRefused` with\n`Reason.code=\"limit_exceeded\"`, even when `max_json_depth` permits the document's\ncontainer depth.\n\n`BlobRef` retains `digest`, decimal-string `byte_length`, `media_type`, `digest_basis` and optional `schema_id`. Its constructor retains the supplied declaration. `BlobRef.from_mapping()` and `to_mapping()` validate the complete wire shape; the returned mapping is detached and read-only. Neither method retrieves bytes or establishes their identity. The wire representation omits an absent `schema_id`; an explicitly received null is invalid.\n\n`reference_bytes` requires `digest_basis=\"raw_bytes\"` or `\"jcs_content\"`. Raw identity binds the original bytes; canonical identity binds the complete strict canonical document. The helper does not rewrite or store the input. A declared schema ID does not register that schema."
+    },
+    {
+      "id": "emt-flow-registry-resolver",
+      "project": "EVIDENCE-MANIFEST-TOOLKIT",
+      "document": "docs/api.md",
+      "start": 33,
+      "end": 48,
+      "source_sha256": "c6e67a1337a3cb088f1d178766e81a68907641da6ba901a35b699cc1bd43cb69",
+      "projection_sha256": "c6e67a1337a3cb088f1d178766e81a68907641da6ba901a35b699cc1bd43cb69",
+      "captured_at_utc": "2026-10-14T01:50:52.154839+00:00",
+      "excerpt": "## Sources and authority\n\nThe caller selects a complete `SchemaRegistry`, including its snapshot reference and all fourteen fields of every `RegistryEntry`. Static schema bytes, dependencies, reference paths and common semantics are independently checked. An artifact cannot choose a Python implementation or network schema resolver.\n\nThe caller's `Resolver` implements both methods:\n\n```python\nresolve(reference: BlobRef, *, max_bytes: int) -> bytes\nresolve_digest(digest: str, *, max_bytes: int) -> bytes\n```\n\nEach read returns actual bounded bytes. A missing target raises `ReferenceUnavailable` with the exact original argument in `.reference`. A digest-only lookup retains the original digest string; it does not fabricate a missing length or schema declaration. Operations check returned identities and share cumulative reference budgets across the whole selected graph.\n\nAn uncached full-reference read receives the smaller of `max_blob_bytes` and the\nremaining cumulative allowance. An exhausted allowance refuses before calling\nthe resolver. Cached bytes retain their metadata checks and require no new read."
+    },
+    {
+      "id": "emt-flow-trust-policy",
+      "project": "EVIDENCE-MANIFEST-TOOLKIT",
+      "document": "docs/api.md",
+      "start": 50,
+      "end": 52,
+      "source_sha256": "c6e67a1337a3cb088f1d178766e81a68907641da6ba901a35b699cc1bd43cb69",
+      "projection_sha256": "c6e67a1337a3cb088f1d178766e81a68907641da6ba901a35b699cc1bd43cb69",
+      "captured_at_utc": "2026-10-14T01:50:52.154839+00:00",
+      "excerpt": "`TrustContext` selects an independently accepted bootstrap policy, current snapshot, accepted sequence floor, evaluation mode and time, explicit control envelopes, and an optional archived snapshot. Historical mode requires the selected archive and retains current floor and revocation checks. Verification does not install a snapshot, advance a floor, issue a certificate or derive trusted time from a producer timestamp.\n\n`VerificationPolicy` supplies the policy reference, exact required claim and purpose populations, and any declared reference requirements. The referenced policy and caller selections must agree. Selecting a narrower claim population preserves the full content and reference observations; it does not rewrite the inventory or supply a domain verdict."
+    },
+    {
+      "id": "emt-flow-signing",
+      "project": "EVIDENCE-MANIFEST-TOOLKIT",
+      "document": "docs/api.md",
+      "start": 54,
+      "end": 54,
+      "source_sha256": "c6e67a1337a3cb088f1d178766e81a68907641da6ba901a35b699cc1bd43cb69",
+      "projection_sha256": "c6e67a1337a3cb088f1d178766e81a68907641da6ba901a35b699cc1bd43cb69",
+      "captured_at_utc": "2026-10-14T01:50:52.154839+00:00",
+      "excerpt": "Unsigned `seal` uses `signing=None`, `signer=None` and `trust=None`. Signed construction requires all three together and current authority. The actual caller-owned `Signer` exposes raw public-key bytes and `sign(message: bytes) -> bytes`. The signature covers the complete context-specific message and is checked before an envelope is returned. A signer failure does not trigger unsigned construction. Initial root issuance and adapter qualification are outside these functions."
+    },
+    {
+      "id": "emt-flow-time",
+      "project": "EVIDENCE-MANIFEST-TOOLKIT",
+      "document": "docs/api.md",
+      "start": 56,
+      "end": 62,
+      "source_sha256": "c6e67a1337a3cb088f1d178766e81a68907641da6ba901a35b699cc1bd43cb69",
+      "projection_sha256": "c6e67a1337a3cb088f1d178766e81a68907641da6ba901a35b699cc1bd43cb69",
+      "captured_at_utc": "2026-10-14T01:50:52.154839+00:00",
+      "excerpt": "## UTC values\n\n`Utc(raw)` validates an original string using the Gregorian calendar, the selected leap-second history and the complete fractional token. It is an immutable string subtype. It preserves the original spelling, including the distinction between `T` and `t`, and uses ordinary string equality for wire identity.\n\n`value.compare(other)` accepts `Utc` or a string, revalidates both operands and returns `-1`, `0` or `1` by exact instant order. It does not round through a floating-point epoch. Malformed scalar input raises `InputRefused` with the original located reason.\n\nThe caller's independently qualified `Clock.now()` supplies the time token. `Utc(clock.now())` validates that token; it does not qualify the clock's source, controller, capture, freshness or uncertainty. The existing clock precondition remains with its owner. Required unavailable clock qualification retains the policy refusal in the complete verification report."
+    },
+    {
+      "id": "emt-flow-report",
+      "project": "EVIDENCE-MANIFEST-TOOLKIT",
+      "document": "docs/api.md",
+      "start": 64,
+      "end": 75,
+      "source_sha256": "c6e67a1337a3cb088f1d178766e81a68907641da6ba901a35b699cc1bd43cb69",
+      "projection_sha256": "c6e67a1337a3cb088f1d178766e81a68907641da6ba901a35b699cc1bd43cb69",
+      "captured_at_utc": "2026-10-14T01:50:52.154839+00:00",
+      "excerpt": "## Reports and failures\n\n`VerificationReport` retains all fifteen fields: `content_ref`, `policy_ref`, `registry_ref`, `evaluation_mode`, `evaluation_time`, `evaluated_claim_ids`, `structure`, `integrity`, `authenticity`, `availability`, `common_eligibility`, `domain_verdict`, `current_eligibility`, `reference_observations` and `reasons`.\n\nCommon eligibility reports the applicable common gates. `domain_verdict` remains `not_evaluated`; the separately owned domain consumer supplies scientific acceptance. Historical common eligibility does not establish current eligibility. Inspection and difference results do not authenticate receipts or accept evidence.\n\nThrown `EmtError` subclasses carry one complete `.reason`: `InputRefused`, `ConfigurationError`, `ReferenceUnavailable`, `SignerUnavailable` or `StorageError`. A `Reason` has `code`, `subject_digest`, `claim_id`, `pointer` and fixed `detail`. Unknown identities retain their null values. Returned verification refusals remain complete reports rather than being replaced with a successful Boolean.\n\nAfter an eligible signing adapter is called, response failure uses the fixed\n`SignerUnavailable` reason and known content digest. Other typed operation errors\nretain their classification. Internal verifier errors are separate from adapter\nresponse failures."
+    },
+    {
+      "id": "emt-flow-cli-inputs",
+      "project": "EVIDENCE-MANIFEST-TOOLKIT",
+      "document": "docs/offline-cli.md (source 2026-10-18T18:01:59.844238+00:00)",
+      "start": 12,
+      "end": 27,
+      "source_sha256": "16db526d1d357d81f4da72b72f1b4faa1a5d2c5aa519070ce40a591374f21660",
+      "projection_sha256": "16db526d1d357d81f4da72b72f1b4faa1a5d2c5aa519070ce40a591374f21660",
+      "captured_at_utc": "2026-10-18T18:01:59.844238+00:00",
+      "excerpt": "The source checkout runs the commands through `python -m evidence_manifest_toolkit` from the `src/` directory, using explicit absolute input and output paths. Installed `emt` packaging remains under development. The grammar below uses the executable's design name.\n\n```text\nemt seal --content FILE --schema-id ID --registry FILE --objects DIR --limits FILE --output NEW_DIR [--signing-request FILE --signer-config FILE --trust FILE]\nemt verify --content FILE --schema-id ID --registry FILE --objects DIR --limits FILE --policy FILE --trust FILE --report NEW_FILE [--signature FILE]...\nemt inspect --content FILE --limits FILE --report NEW_FILE\nemt diff --left FILE --right FILE --limits FILE --report NEW_FILE [--left-signature FILE]... [--right-signature FILE]...\n```\n\nEvery configuration is an explicit closed local JSON value. `--limits` supplies all six positive integer bounds described in the [Python API](api.md). Its initial read is bounded by the size measured on the same opened regular-file handle. Once decoded, its bounds control subsequent inputs. A small `max_json_bytes` does not impose that future bound on the limits file itself.\n\nNative parser or canonical writer recursion exhaustion produces `limit_exceeded`\nand exit `2` before successful output publication, including when the configured\n`max_json_depth` permits the document's container depth.\n\nRegistry, policy and trust files encode the complete corresponding public value types. Bytes in configurations use canonical unpadded Base64URL. Decimal lengths, digests and UTC strings retain their original spelling. Repeated detached-signature flags preserve caller order; the command does not discover signatures in the object store."
+    },
+    {
+      "id": "emt-flow-cli-signers",
+      "project": "EVIDENCE-MANIFEST-TOOLKIT",
+      "document": "docs/offline-cli.md (source 2026-10-18T18:01:59.844238+00:00)",
+      "start": 29,
+      "end": 36,
+      "source_sha256": "16db526d1d357d81f4da72b72f1b4faa1a5d2c5aa519070ce40a591374f21660",
+      "projection_sha256": "16db526d1d357d81f4da72b72f1b4faa1a5d2c5aa519070ce40a591374f21660",
+      "captured_at_utc": "2026-10-18T18:01:59.844238+00:00",
+      "excerpt": "Signed `seal` requires all three signing flags together. `SignerConfig` contains only `adapter_ref`, `signer_key_id`, `public_key` and `profile_id`. The reference names an owner-controlled, locally enrolled signing adapter. The current checkout supplies no qualified CLI adapter; selecting an unavailable adapter refuses signing. No private key or executable is loaded from these configuration fields, and a failed signed request does not become an unsigned result.\n\nTrusted installation code holds the read-only association between an exact descriptor and an already existing signer. Caller configuration must match that descriptor; it cannot enroll or replace the object. A mismatch is a located configuration failure. An empty installation produces `signer_unavailable` with null subject, claim and pointer before signing or publication. Once an eligible signer is invoked, a failed response retains the known content digest in the original signer-response refusal.\n\nA missing local verification provider produces `configuration_error` and exit `4`\nbefore authentication, with null subject, claim and pointer. It creates no requested\nreport. Restoring the provider permits evaluation of the complete original input;\nthe command retains every verification gate and requires a fresh report destination."
+    },
+    {
+      "id": "emt-flow-store",
+      "project": "EVIDENCE-MANIFEST-TOOLKIT",
+      "document": "docs/offline-cli.md (source 2026-10-18T18:01:59.844238+00:00)",
+      "start": 38,
+      "end": 42,
+      "source_sha256": "16db526d1d357d81f4da72b72f1b4faa1a5d2c5aa519070ce40a591374f21660",
+      "projection_sha256": "16db526d1d357d81f4da72b72f1b4faa1a5d2c5aa519070ce40a591374f21660",
+      "captured_at_utc": "2026-10-18T18:01:59.844238+00:00",
+      "excerpt": "## Read-only object store\n\n`--objects` selects an existing directory. A digest `sha256:<64 lowercase hex>` maps to the immediate file `<objects>/<64 lowercase hex>`. The store adds no extension, basis suffix or index. Captured bytes must satisfy every applicable declaration, including declarations sharing a digest under different bases.\n\nThe resolver anchors the directory descriptor and refuses symlinks and nonregular targets. It reads within the original per-object and remaining cumulative allowance. Input and store files remain unchanged. Artifact URLs and labels are not filesystem paths or network lookup instructions."
+    },
+    {
+      "id": "emt-flow-output",
+      "project": "EVIDENCE-MANIFEST-TOOLKIT",
+      "document": "docs/offline-cli.md (source 2026-10-18T18:01:59.844238+00:00)",
+      "start": 44,
+      "end": 54,
+      "source_sha256": "16db526d1d357d81f4da72b72f1b4faa1a5d2c5aa519070ce40a591374f21660",
+      "projection_sha256": "16db526d1d357d81f4da72b72f1b4faa1a5d2c5aa519070ce40a591374f21660",
+      "captured_at_utc": "2026-10-18T18:01:59.844238+00:00",
+      "excerpt": "## Complete output publication\n\nUnsigned `seal` creates a fresh directory containing exactly `content.json` and `refs.json`. Content is the bare canonical library result. The unregistered reference index contains exactly `content_ref`. Signed transport additionally carries the detached envelope and its reference when an eligible adapter supplies a verified signature.\n\nSeal stdout preserves all three `SealResult` field names. `canonical_content` is represented by `{content_ref, output_file}`, where `output_file` is the selected directory joined with `content.json`. The root `content_ref` is that same complete reference. `envelope_json` is null for unsigned construction, or unpadded Base64URL of the exact detached-envelope file bytes for signed transport.\n\n`verify`, `inspect` and `diff` exclusively create the selected report file. Stdout and that file contain the same complete report bytes. All transport JSON is strict UTF-8 RFC 8785 JCS without a BOM, padding or trailing newline. Serialization adds no accepted flag or registered evidence schema.\n\nOutput parents must already exist. The current directory publisher uses Linux `renameat2(RENAME_NOREPLACE)` with an anchored parent, sibling staging, actual absent/occupied capability checks and complete file/directory synchronization. It never substitutes a check followed by an overwriting rename. Existing files, directories and symlinks are preserved. Support on other hosts and filesystems requires equivalent native validation.\n\nBefore publication, failures remove only the transaction's unchanged owned staging entries. After publication, a stdout or durability failure leaves the complete immutable output and returns an I/O failure. A retry uses a distinct fresh destination; the command does not delete or overwrite the previous result."
+    },
+    {
+      "id": "emt-flow-exits",
+      "project": "EVIDENCE-MANIFEST-TOOLKIT",
+      "document": "docs/offline-cli.md (source 2026-10-18T18:01:59.844238+00:00)",
+      "start": 56,
+      "end": 67,
+      "source_sha256": "16db526d1d357d81f4da72b72f1b4faa1a5d2c5aa519070ce40a591374f21660",
+      "projection_sha256": "16db526d1d357d81f4da72b72f1b4faa1a5d2c5aa519070ce40a591374f21660",
+      "captured_at_utc": "2026-10-18T18:01:59.844238+00:00",
+      "excerpt": "## Exits\n\n| Exit | Meaning |\n|---|---|\n| `0` | Construction or diagnostic transport completed, or verification's requested common mode is eligible. |\n| `2` | Input or verification gate refused without a higher-priority failure. |\n| `3` | Required reference or signer unavailable, or actual storage, cleanup, stdout or durability failure. |\n| `4` | Invalid invocation/configuration or unsupported implementation capability. |\n\nObserved failures use precedence `4 > 3 > 2 > 0`. A report's successful publication clears no gate. Common or historical exit `0` does not establish scientific or current acceptance; read the complete report.\n\nThrown failures produce stdout `{\"operation\": ..., \"reasons\": [...]}` with the full located reasons and no success field. They create no requested successful report or seal destination. A well-formed returned refusal report can be published in full. Malformed invocations name a recognized command when available and otherwise use `operation=\"emt\"`. Caller diagnostics use fixed authored details rather than interpreter messages or local paths."
+    },
+    {
+      "id": "emt-flow-public-exports",
+      "project": "EVIDENCE-MANIFEST-TOOLKIT",
+      "document": "src/evidence_manifest_toolkit/__init__.py (source 2026-10-18T18:01:59.844238+00:00)",
+      "start": 11,
+      "end": 83,
+      "source_sha256": "40d6c2f04aac7715be0ae7c491aa11ecf0fda5e9159c53813397c4928f99e4a8",
+      "projection_sha256": "40d6c2f04aac7715be0ae7c491aa11ecf0fda5e9159c53813397c4928f99e4a8",
+      "captured_at_utc": "2026-10-18T18:01:59.844238+00:00",
+      "excerpt": "from ._difference import diff\nfrom ._errors import (\n    ConfigurationError,\n    EmtError,\n    InputRefused,\n    ReferenceUnavailable,\n    SignerUnavailable,\n    StorageError,\n)\nfrom ._inspection import inspect\nfrom ._interfaces import Resolver, Signer\nfrom ._json import canonicalize_json\nfrom ._references import reference_bytes\nfrom ._registry_types import (\n    PathStep,\n    ReferencePath,\n    ReferenceRequirement,\n    RegistryEntry,\n    SchemaDependency,\n    SchemaRegistry,\n)\nfrom ._results import Difference, Inspection, ReferenceObservation, SealResult, VerificationReport\nfrom ._sealing import seal\nfrom ._successor_trust import (\n    DelegatedTrustContextV2,\n    SoftwareTrustContextV2,\n    UnsignedTrustContextV2,\n)\nfrom ._trust_types import Envelope, SignerConfig, SigningRequest, TrustContext, VerificationPolicy\nfrom ._values import BlobRef, Digest, DigestBasis, Limits, Reason, Utc\nfrom ._verification import verify\n\n__all__ = [\n    \"BlobRef\",\n    \"ConfigurationError\",\n    \"DelegatedTrustContextV2\",\n    \"Difference\",\n    \"Digest\",\n    \"DigestBasis\",\n    \"EmtError\",\n    \"Envelope\",\n    \"InputRefused\",\n    \"Inspection\",\n    \"Limits\",\n    \"PathStep\",\n    \"Reason\",\n    \"ReferenceObservation\",\n    \"ReferencePath\",\n    \"ReferenceRequirement\",\n    \"ReferenceUnavailable\",\n    \"RegistryEntry\",\n    \"Resolver\",\n    \"SchemaDependency\",\n    \"SchemaRegistry\",\n    \"SealResult\",\n    \"Signer\",\n    \"SignerConfig\",\n    \"SignerUnavailable\",\n    \"SigningRequest\",\n    \"SoftwareTrustContextV2\",\n    \"StorageError\",\n    \"TrustContext\",\n    \"UnsignedTrustContextV2\",\n    \"Utc\",\n    \"VerificationPolicy\",\n    \"VerificationReport\",\n    \"canonicalize_json\",\n    \"diff\",\n    \"inspect\",\n    \"reference_bytes\",\n    \"seal\",\n    \"verify\",\n]"
+    },
+    {
+      "id": "emt-flow-verify-contract",
+      "project": "EVIDENCE-MANIFEST-TOOLKIT",
+      "document": "src/evidence_manifest_toolkit/_verification.py (source 2026-10-18T18:01:59.844238+00:00)",
+      "start": 22,
+      "end": 68,
+      "source_sha256": "cb79137f82bf8150e0c52d5f6ce2465e786a7bc363925fa87ebd881d0d43ee09",
+      "projection_sha256": "cb79137f82bf8150e0c52d5f6ce2465e786a7bc363925fa87ebd881d0d43ee09",
+      "captured_at_utc": "2026-10-18T18:01:59.844238+00:00",
+      "excerpt": "def verify(\n    content_json: bytes,\n    *,\n    schema_id: str,\n    envelopes: tuple[bytes, ...],\n    registry: SchemaRegistry,\n    resolver: Resolver,\n    limits: Limits,\n    policy: VerificationPolicy,\n    trust: TrustContext,\n) -> VerificationReport:\n    \"\"\"Evaluate whole common content, required closure and independently selected authority.\n\n    Parameters\n    ----------\n    content_json : bytes\n        Entire original strict JSON source; no claim projection or byte identity is invented.\n    schema_id : str\n        Explicit independently selected content schema, not an artifact code selector.\n    envelopes : tuple of bytes\n        All actual explicitly supplied detached receipts in original order.\n    registry : SchemaRegistry\n        Complete independently selected raw schema catalogue, selectors and native roles.\n    resolver : Resolver\n        Actual bounded offline source; no URL, executable or hidden receipt discovery.\n    limits : Limits\n        All six original positive bounds shared by every source and control acquisition.\n    policy : VerificationPolicy\n        Whole independently selected policy and complete exact claim/purpose/selector scope.\n    trust : TrustContext\n        Independent accepted bootstrap/current/floor/time and optional selected archive.\n        Prior owner or fixture approval is an explicit trusted-caller premise, not a parsed bit.\n\n    Returns\n    -------\n    VerificationReport\n        All fifteen original fields with separate common/domain/current results, complete\n        observations and actual reasons. No snapshot, floor, key or source record is changed.\n\n    Raises\n    ------\n    ConfigurationError\n        Caller/local policy/registry or the maintained local verifier cannot be configured.\n    InputRefused\n        Strict source, native envelope or an explicit operation bound is violated.\n    ReferenceUnavailable\n        Required bootstrap/current/archive source cannot be acquired, retaining its exact"
+    },
+    {
+      "id": "emt-flow-verify-chain",
+      "project": "EVIDENCE-MANIFEST-TOOLKIT",
+      "document": "src/evidence_manifest_toolkit/_verification.py (source 2026-10-18T18:01:59.844238+00:00)",
+      "start": 69,
+      "end": 111,
+      "source_sha256": "cb79137f82bf8150e0c52d5f6ce2465e786a7bc363925fa87ebd881d0d43ee09",
+      "projection_sha256": "cb79137f82bf8150e0c52d5f6ce2465e786a7bc363925fa87ebd881d0d43ee09",
+      "captured_at_utc": "2026-10-18T18:01:59.844238+00:00",
+      "excerpt": "        original full reference. Missing selected graph/control links remain report observations.\n    \"\"\"\n    inputs = acquire_verification_inputs(\n        content_json,\n        schema_id=schema_id,\n        envelopes=envelopes,\n        registry=registry,\n        resolver=resolver,\n        limits=limits,\n        policy=policy,\n        trust=trust,\n    )\n    state = select_trust_state(\n        trust,\n        registry=registry,\n        schemas=inputs.schemas,\n        resolver=resolver,\n        budget=inputs.budget,\n        verifier=inputs.verifier,\n    )\n    actual_claims = tuple(claim.claim_id for claim in inputs.content.content_claim_obligations)\n    receipts = tuple(\n        receipt_authority(\n            envelope,\n            content_reference=inputs.content.content_ref,\n            actual_claim_ids=actual_claims,\n            state=state,\n            trust=trust,\n            policy=inputs.policy_declaration,\n            resolver=resolver,\n            budget=inputs.budget,\n            verifier=inputs.verifier,\n        )\n        for envelope in inputs.envelopes\n    )\n    return compose_verification_report(\n        inputs,\n        state=state,\n        receipts=receipts,\n        policy=policy,\n        trust=trust,\n        registry=registry,\n    )"
+    },
+    {
+      "id": "emt-flow-seal-contract",
+      "project": "EVIDENCE-MANIFEST-TOOLKIT",
+      "document": "src/evidence_manifest_toolkit/_sealing.py (source 2026-10-18T18:01:59.844238+00:00)",
+      "start": 29,
+      "end": 80,
+      "source_sha256": "0ccb9f86a6a697f5f8774d4488ddfcb8930b25393d7466ec075d5a82d1359b09",
+      "projection_sha256": "0ccb9f86a6a697f5f8774d4488ddfcb8930b25393d7466ec075d5a82d1359b09",
+      "captured_at_utc": "2026-10-18T18:01:59.844238+00:00",
+      "excerpt": "def seal(\n    content_json: bytes,\n    *,\n    schema_id: str,\n    registry: SchemaRegistry,\n    resolver: Resolver,\n    limits: Limits,\n    signing: SigningRequest | None = None,\n    signer: Signer | None = None,\n    trust: TrustContext | None = None,\n) -> SealResult:\n    \"\"\"Construct the whole immutable subject after its required native source checks.\n\n    Parameters\n    ----------\n    content_json : bytes\n        Entire original content; no identity, verdict, future link or timestamp is inserted.\n    schema_id : str\n        Independently selected known schema, never chosen by artifact fields.\n    registry : SchemaRegistry\n        Complete pinned static schemas, dependencies, common roles and closure selectors.\n    resolver : Resolver\n        Actual bounded source for the selected required references.\n    limits : Limits\n        All six explicit positive bounds shared by every selected read and graph root.\n    signing : SigningRequest or None\n        Exact context-specific statement fields, excluding all computed identities.\n    signer : Signer or None\n        Actual caller-owned adapter, invoked only after full current authority checks.\n    trust : TrustContext or None\n        Independently accepted current caller selection; provenance of its prior approval\n        is an external caller precondition, not a received configuration Boolean.\n\n    Returns\n    -------\n    SealResult\n        All three immutable fields: whole canonical bytes, their complete content reference,\n        and the independently verified detached envelope or None for unsigned construction.\n        Construction establishes no domain or current evidence-acceptance verdict.\n\n    Raises\n    ------\n    ConfigurationError\n        Limits, schema registry, partial signing configuration or verifier setup is invalid.\n    InputRefused\n        Complete content, required closure, native semantics or current authority fails.\n    ReferenceUnavailable\n        A required original full reference or typed digest cannot be read.\n    SignerUnavailable\n        The eligible caller adapter fails to supply a verified exact-message raw64 signature.\n        No unsigned retry or output publication occurs.\n    \"\"\""
+    },
+    {
+      "id": "emt-flow-seal-unsigned",
+      "project": "EVIDENCE-MANIFEST-TOOLKIT",
+      "document": "src/evidence_manifest_toolkit/_sealing.py (source 2026-10-18T18:01:59.844238+00:00)",
+      "start": 81,
+      "end": 118,
+      "source_sha256": "0ccb9f86a6a697f5f8774d4488ddfcb8930b25393d7466ec075d5a82d1359b09",
+      "projection_sha256": "0ccb9f86a6a697f5f8774d4488ddfcb8930b25393d7466ec075d5a82d1359b09",
+      "captured_at_utc": "2026-10-18T18:01:59.844238+00:00",
+      "excerpt": "    validate_limits(limits)\n    if not isinstance(registry, SchemaRegistry):\n        raise configuration_refusal(\"/registry\")\n    if not isinstance(schema_id, str) or not schema_id:\n        raise configuration_refusal(\"/schema_id\")\n    options = (signing is not None, signer is not None, trust is not None)\n    if any(options) and not all(options):\n        raise configuration_refusal(\"/signing\")\n    if trust is not None:\n        validate_trust_argument(trust, signed_construction=True)\n    fields = None if signing is None else validate_signing_request(signing, limits=limits)\n    budget = ReferenceBudget(limits)\n    schemas = validate_registry(registry, limits=limits, budget=budget, resolver=resolver)\n    if schema_id not in schemas:\n        raise InputRefused(\n            Reason(\n                \"unknown_schema\",\n                None,\n                None,\n                None,\n                \"Selected schema is not known.\",\n            )\n        )\n    content = prepare_content(\n        content_json,\n        schema_id=schema_id,\n        schemas=schemas,\n        resolver=resolver,\n        budget=budget,\n        requirements=(),\n    )\n    if content.closure.missing_references:\n        raise ReferenceUnavailable(content.closure.missing_references[0])\n    if content.reasons:\n        raise InputRefused(content.reasons[0])\n    if fields is None or signer is None or trust is None:\n        return SealResult(content.canonical_content, content.content_ref, None)\n    statement = construct_statement(fields, content=content)"
+    },
+    {
+      "id": "emt-flow-seal-signed",
+      "project": "EVIDENCE-MANIFEST-TOOLKIT",
+      "document": "src/evidence_manifest_toolkit/_sealing.py (source 2026-10-18T18:01:59.844238+00:00)",
+      "start": 119,
+      "end": 136,
+      "source_sha256": "0ccb9f86a6a697f5f8774d4488ddfcb8930b25393d7466ec075d5a82d1359b09",
+      "projection_sha256": "0ccb9f86a6a697f5f8774d4488ddfcb8930b25393d7466ec075d5a82d1359b09",
+      "captured_at_utc": "2026-10-18T18:01:59.844238+00:00",
+      "excerpt": "    verifier = initialize_verifier()\n    public_key = signing_public_key(\n        statement,\n        content=content,\n        trust=trust,\n        registry=registry,\n        schemas=schemas,\n        resolver=resolver,\n        budget=budget,\n        verifier=verifier,\n    )\n    envelope = sign_statement(\n        statement,\n        signer=signer,\n        expected_public_key=public_key,\n        verifier=verifier,\n    )\n    return SealResult(content.canonical_content, content.content_ref, envelope)"
     }
   ],
   "library": {
     "state": "Current document capture for these editorial explanations; source-content review pending",
     "scope": "Complete selected source text is shown. Private references are withheld, CRLF is normalised, and original/projected fingerprints remain separate. Source prose dates and qualification scopes still apply.",
-    "captured_at_utc": "2026-10-18T14:50:15.082871+00:00",
+    "captured_at_utc": "2026-10-18T18:01:59.844238+00:00",
     "projects": [
       {
         "project_id": "SCPN-PHWR-CORE",
@@ -61932,6 +62343,584 @@
                 "line": 64,
                 "level": 2,
                 "title": "Reports and failures"
+              }
+            ]
+          },
+          {
+            "label": "docs/offline-cli.md (source 2026-10-18T18:01:59.844238+00:00)",
+            "format": "md",
+            "source_sha256": "16db526d1d357d81f4da72b72f1b4faa1a5d2c5aa519070ce40a591374f21660",
+            "source_bytes": 6880,
+            "projection_sha256": "16db526d1d357d81f4da72b72f1b4faa1a5d2c5aa519070ce40a591374f21660",
+            "private_references_withheld": 0,
+            "captured_at_utc": "2026-10-18T18:01:59.844238+00:00",
+            "lines": [
+              "<!--",
+              "SPDX-License-Identifier: AGPL-3.0-or-later",
+              "Commercial license available",
+              "© Concepts 1996–2026 Miroslav Šotek. All rights reserved.",
+              "© Code 2020–2026 Miroslav Šotek. All rights reserved.",
+              "ORCID: 0009-0009-3560-0851",
+              "Contact: www.anulum.li | protoscience@anulum.li",
+              "EVIDENCE-MANIFEST-TOOLKIT — offline command transport",
+              "-->",
+              "# Offline CLI",
+              "",
+              "The source checkout runs the commands through `python -m evidence_manifest_toolkit` from the `src/` directory, using explicit absolute input and output paths. Installed `emt` packaging remains under development. The grammar below uses the executable's design name.",
+              "",
+              "```text",
+              "emt seal --content FILE --schema-id ID --registry FILE --objects DIR --limits FILE --output NEW_DIR [--signing-request FILE --signer-config FILE --trust FILE]",
+              "emt verify --content FILE --schema-id ID --registry FILE --objects DIR --limits FILE --policy FILE --trust FILE --report NEW_FILE [--signature FILE]...",
+              "emt inspect --content FILE --limits FILE --report NEW_FILE",
+              "emt diff --left FILE --right FILE --limits FILE --report NEW_FILE [--left-signature FILE]... [--right-signature FILE]...",
+              "```",
+              "",
+              "Every configuration is an explicit closed local JSON value. `--limits` supplies all six positive integer bounds described in the [Python API](api.md). Its initial read is bounded by the size measured on the same opened regular-file handle. Once decoded, its bounds control subsequent inputs. A small `max_json_bytes` does not impose that future bound on the limits file itself.",
+              "",
+              "Native parser or canonical writer recursion exhaustion produces `limit_exceeded`",
+              "and exit `2` before successful output publication, including when the configured",
+              "`max_json_depth` permits the document's container depth.",
+              "",
+              "Registry, policy and trust files encode the complete corresponding public value types. Bytes in configurations use canonical unpadded Base64URL. Decimal lengths, digests and UTC strings retain their original spelling. Repeated detached-signature flags preserve caller order; the command does not discover signatures in the object store.",
+              "",
+              "Signed `seal` requires all three signing flags together. `SignerConfig` contains only `adapter_ref`, `signer_key_id`, `public_key` and `profile_id`. The reference names an owner-controlled, locally enrolled signing adapter. The current checkout supplies no qualified CLI adapter; selecting an unavailable adapter refuses signing. No private key or executable is loaded from these configuration fields, and a failed signed request does not become an unsigned result.",
+              "",
+              "Trusted installation code holds the read-only association between an exact descriptor and an already existing signer. Caller configuration must match that descriptor; it cannot enroll or replace the object. A mismatch is a located configuration failure. An empty installation produces `signer_unavailable` with null subject, claim and pointer before signing or publication. Once an eligible signer is invoked, a failed response retains the known content digest in the original signer-response refusal.",
+              "",
+              "A missing local verification provider produces `configuration_error` and exit `4`",
+              "before authentication, with null subject, claim and pointer. It creates no requested",
+              "report. Restoring the provider permits evaluation of the complete original input;",
+              "the command retains every verification gate and requires a fresh report destination.",
+              "",
+              "## Read-only object store",
+              "",
+              "`--objects` selects an existing directory. A digest `sha256:<64 lowercase hex>` maps to the immediate file `<objects>/<64 lowercase hex>`. The store adds no extension, basis suffix or index. Captured bytes must satisfy every applicable declaration, including declarations sharing a digest under different bases.",
+              "",
+              "The resolver anchors the directory descriptor and refuses symlinks and nonregular targets. It reads within the original per-object and remaining cumulative allowance. Input and store files remain unchanged. Artifact URLs and labels are not filesystem paths or network lookup instructions.",
+              "",
+              "## Complete output publication",
+              "",
+              "Unsigned `seal` creates a fresh directory containing exactly `content.json` and `refs.json`. Content is the bare canonical library result. The unregistered reference index contains exactly `content_ref`. Signed transport additionally carries the detached envelope and its reference when an eligible adapter supplies a verified signature.",
+              "",
+              "Seal stdout preserves all three `SealResult` field names. `canonical_content` is represented by `{content_ref, output_file}`, where `output_file` is the selected directory joined with `content.json`. The root `content_ref` is that same complete reference. `envelope_json` is null for unsigned construction, or unpadded Base64URL of the exact detached-envelope file bytes for signed transport.",
+              "",
+              "`verify`, `inspect` and `diff` exclusively create the selected report file. Stdout and that file contain the same complete report bytes. All transport JSON is strict UTF-8 RFC 8785 JCS without a BOM, padding or trailing newline. Serialization adds no accepted flag or registered evidence schema.",
+              "",
+              "Output parents must already exist. The current directory publisher uses Linux `renameat2(RENAME_NOREPLACE)` with an anchored parent, sibling staging, actual absent/occupied capability checks and complete file/directory synchronization. It never substitutes a check followed by an overwriting rename. Existing files, directories and symlinks are preserved. Support on other hosts and filesystems requires equivalent native validation.",
+              "",
+              "Before publication, failures remove only the transaction's unchanged owned staging entries. After publication, a stdout or durability failure leaves the complete immutable output and returns an I/O failure. A retry uses a distinct fresh destination; the command does not delete or overwrite the previous result.",
+              "",
+              "## Exits",
+              "",
+              "| Exit | Meaning |",
+              "|---|---|",
+              "| `0` | Construction or diagnostic transport completed, or verification's requested common mode is eligible. |",
+              "| `2` | Input or verification gate refused without a higher-priority failure. |",
+              "| `3` | Required reference or signer unavailable, or actual storage, cleanup, stdout or durability failure. |",
+              "| `4` | Invalid invocation/configuration or unsupported implementation capability. |",
+              "",
+              "Observed failures use precedence `4 > 3 > 2 > 0`. A report's successful publication clears no gate. Common or historical exit `0` does not establish scientific or current acceptance; read the complete report.",
+              "",
+              "Thrown failures produce stdout `{\"operation\": ..., \"reasons\": [...]}` with the full located reasons and no success field. They create no requested successful report or seal destination. A well-formed returned refusal report can be published in full. Malformed invocations name a recognized command when available and otherwise use `operation=\"emt\"`. Caller diagnostics use fixed authored details rather than interpreter messages or local paths.",
+              ""
+            ],
+            "chapters": [
+              {
+                "line": 10,
+                "level": 1,
+                "title": "Offline CLI"
+              },
+              {
+                "line": 38,
+                "level": 2,
+                "title": "Read-only object store"
+              },
+              {
+                "line": 44,
+                "level": 2,
+                "title": "Complete output publication"
+              },
+              {
+                "line": 56,
+                "level": 2,
+                "title": "Exits"
+              }
+            ]
+          },
+          {
+            "label": "src/evidence_manifest_toolkit/__init__.py (source 2026-10-18T18:01:59.844238+00:00)",
+            "format": "py",
+            "source_sha256": "40d6c2f04aac7715be0ae7c491aa11ecf0fda5e9159c53813397c4928f99e4a8",
+            "source_bytes": 2163,
+            "projection_sha256": "40d6c2f04aac7715be0ae7c491aa11ecf0fda5e9159c53813397c4928f99e4a8",
+            "private_references_withheld": 0,
+            "captured_at_utc": "2026-10-18T18:01:59.844238+00:00",
+            "lines": [
+              "# SPDX-License-Identifier: AGPL-3.0-or-later",
+              "# Commercial license available",
+              "# © Concepts 1996–2026 Miroslav Šotek. All rights reserved.",
+              "# © Code 2020–2026 Miroslav Šotek. All rights reserved.",
+              "# ORCID: 0009-0009-3560-0851",
+              "# Contact: www.anulum.li | protoscience@anulum.li",
+              "# EVIDENCE-MANIFEST-TOOLKIT — offline evidence operations",
+              "",
+              "\"\"\"Construct explicit byte identities and inspect immutable evidence declarations.\"\"\"",
+              "",
+              "from ._difference import diff",
+              "from ._errors import (",
+              "    ConfigurationError,",
+              "    EmtError,",
+              "    InputRefused,",
+              "    ReferenceUnavailable,",
+              "    SignerUnavailable,",
+              "    StorageError,",
+              ")",
+              "from ._inspection import inspect",
+              "from ._interfaces import Resolver, Signer",
+              "from ._json import canonicalize_json",
+              "from ._references import reference_bytes",
+              "from ._registry_types import (",
+              "    PathStep,",
+              "    ReferencePath,",
+              "    ReferenceRequirement,",
+              "    RegistryEntry,",
+              "    SchemaDependency,",
+              "    SchemaRegistry,",
+              ")",
+              "from ._results import Difference, Inspection, ReferenceObservation, SealResult, VerificationReport",
+              "from ._sealing import seal",
+              "from ._successor_trust import (",
+              "    DelegatedTrustContextV2,",
+              "    SoftwareTrustContextV2,",
+              "    UnsignedTrustContextV2,",
+              ")",
+              "from ._trust_types import Envelope, SignerConfig, SigningRequest, TrustContext, VerificationPolicy",
+              "from ._values import BlobRef, Digest, DigestBasis, Limits, Reason, Utc",
+              "from ._verification import verify",
+              "",
+              "__all__ = [",
+              "    \"BlobRef\",",
+              "    \"ConfigurationError\",",
+              "    \"DelegatedTrustContextV2\",",
+              "    \"Difference\",",
+              "    \"Digest\",",
+              "    \"DigestBasis\",",
+              "    \"EmtError\",",
+              "    \"Envelope\",",
+              "    \"InputRefused\",",
+              "    \"Inspection\",",
+              "    \"Limits\",",
+              "    \"PathStep\",",
+              "    \"Reason\",",
+              "    \"ReferenceObservation\",",
+              "    \"ReferencePath\",",
+              "    \"ReferenceRequirement\",",
+              "    \"ReferenceUnavailable\",",
+              "    \"RegistryEntry\",",
+              "    \"Resolver\",",
+              "    \"SchemaDependency\",",
+              "    \"SchemaRegistry\",",
+              "    \"SealResult\",",
+              "    \"Signer\",",
+              "    \"SignerConfig\",",
+              "    \"SignerUnavailable\",",
+              "    \"SigningRequest\",",
+              "    \"SoftwareTrustContextV2\",",
+              "    \"StorageError\",",
+              "    \"TrustContext\",",
+              "    \"UnsignedTrustContextV2\",",
+              "    \"Utc\",",
+              "    \"VerificationPolicy\",",
+              "    \"VerificationReport\",",
+              "    \"canonicalize_json\",",
+              "    \"diff\",",
+              "    \"inspect\",",
+              "    \"reference_bytes\",",
+              "    \"seal\",",
+              "    \"verify\",",
+              "]",
+              ""
+            ],
+            "chapters": [
+              {
+                "line": 1,
+                "level": 1,
+                "title": "SPDX-License-Identifier: AGPL-3.0-or-later"
+              },
+              {
+                "line": 2,
+                "level": 1,
+                "title": "Commercial license available"
+              },
+              {
+                "line": 3,
+                "level": 1,
+                "title": "© Concepts 1996–2026 Miroslav Šotek. All rights reserved."
+              },
+              {
+                "line": 4,
+                "level": 1,
+                "title": "© Code 2020–2026 Miroslav Šotek. All rights reserved."
+              },
+              {
+                "line": 5,
+                "level": 1,
+                "title": "ORCID: 0009-0009-3560-0851"
+              },
+              {
+                "line": 6,
+                "level": 1,
+                "title": "Contact: www.anulum.li | protoscience@anulum.li"
+              },
+              {
+                "line": 7,
+                "level": 1,
+                "title": "EVIDENCE-MANIFEST-TOOLKIT — offline evidence operations"
+              }
+            ]
+          },
+          {
+            "label": "src/evidence_manifest_toolkit/_verification.py (source 2026-10-18T18:01:59.844238+00:00)",
+            "format": "py",
+            "source_sha256": "cb79137f82bf8150e0c52d5f6ce2465e786a7bc363925fa87ebd881d0d43ee09",
+            "source_bytes": 4119,
+            "projection_sha256": "cb79137f82bf8150e0c52d5f6ce2465e786a7bc363925fa87ebd881d0d43ee09",
+            "private_references_withheld": 0,
+            "captured_at_utc": "2026-10-18T18:01:59.844238+00:00",
+            "lines": [
+              "# SPDX-License-Identifier: AGPL-3.0-or-later",
+              "# Commercial license available",
+              "# © Concepts 1996–2026 Miroslav Šotek. All rights reserved.",
+              "# © Code 2020–2026 Miroslav Šotek. All rights reserved.",
+              "# ORCID: 0009-0009-3560-0851",
+              "# Contact: www.anulum.li | protoscience@anulum.li",
+              "# EVIDENCE-MANIFEST-TOOLKIT — whole explicit offline common verification",
+              "",
+              "\"\"\"Verify complete selected common evidence without installing trust or accepting domain claims.\"\"\"",
+              "",
+              "from ._interfaces import Resolver",
+              "from ._receipt_authority import receipt_authority",
+              "from ._registry_types import SchemaRegistry",
+              "from ._results import VerificationReport",
+              "from ._trust_state import select_trust_state",
+              "from ._trust_types import TrustContext, VerificationPolicy",
+              "from ._values import Limits",
+              "from ._verification_inputs import acquire_verification_inputs",
+              "from ._verification_report import compose_verification_report",
+              "",
+              "",
+              "def verify(",
+              "    content_json: bytes,",
+              "    *,",
+              "    schema_id: str,",
+              "    envelopes: tuple[bytes, ...],",
+              "    registry: SchemaRegistry,",
+              "    resolver: Resolver,",
+              "    limits: Limits,",
+              "    policy: VerificationPolicy,",
+              "    trust: TrustContext,",
+              ") -> VerificationReport:",
+              "    \"\"\"Evaluate whole common content, required closure and independently selected authority.",
+              "",
+              "    Parameters",
+              "    ----------",
+              "    content_json : bytes",
+              "        Entire original strict JSON source; no claim projection or byte identity is invented.",
+              "    schema_id : str",
+              "        Explicit independently selected content schema, not an artifact code selector.",
+              "    envelopes : tuple of bytes",
+              "        All actual explicitly supplied detached receipts in original order.",
+              "    registry : SchemaRegistry",
+              "        Complete independently selected raw schema catalogue, selectors and native roles.",
+              "    resolver : Resolver",
+              "        Actual bounded offline source; no URL, executable or hidden receipt discovery.",
+              "    limits : Limits",
+              "        All six original positive bounds shared by every source and control acquisition.",
+              "    policy : VerificationPolicy",
+              "        Whole independently selected policy and complete exact claim/purpose/selector scope.",
+              "    trust : TrustContext",
+              "        Independent accepted bootstrap/current/floor/time and optional selected archive.",
+              "        Prior owner or fixture approval is an explicit trusted-caller premise, not a parsed bit.",
+              "",
+              "    Returns",
+              "    -------",
+              "    VerificationReport",
+              "        All fifteen original fields with separate common/domain/current results, complete",
+              "        observations and actual reasons. No snapshot, floor, key or source record is changed.",
+              "",
+              "    Raises",
+              "    ------",
+              "    ConfigurationError",
+              "        Caller/local policy/registry or the maintained local verifier cannot be configured.",
+              "    InputRefused",
+              "        Strict source, native envelope or an explicit operation bound is violated.",
+              "    ReferenceUnavailable",
+              "        Required bootstrap/current/archive source cannot be acquired, retaining its exact",
+              "        original full reference. Missing selected graph/control links remain report observations.",
+              "    \"\"\"",
+              "    inputs = acquire_verification_inputs(",
+              "        content_json,",
+              "        schema_id=schema_id,",
+              "        envelopes=envelopes,",
+              "        registry=registry,",
+              "        resolver=resolver,",
+              "        limits=limits,",
+              "        policy=policy,",
+              "        trust=trust,",
+              "    )",
+              "    state = select_trust_state(",
+              "        trust,",
+              "        registry=registry,",
+              "        schemas=inputs.schemas,",
+              "        resolver=resolver,",
+              "        budget=inputs.budget,",
+              "        verifier=inputs.verifier,",
+              "    )",
+              "    actual_claims = tuple(claim.claim_id for claim in inputs.content.content_claim_obligations)",
+              "    receipts = tuple(",
+              "        receipt_authority(",
+              "            envelope,",
+              "            content_reference=inputs.content.content_ref,",
+              "            actual_claim_ids=actual_claims,",
+              "            state=state,",
+              "            trust=trust,",
+              "            policy=inputs.policy_declaration,",
+              "            resolver=resolver,",
+              "            budget=inputs.budget,",
+              "            verifier=inputs.verifier,",
+              "        )",
+              "        for envelope in inputs.envelopes",
+              "    )",
+              "    return compose_verification_report(",
+              "        inputs,",
+              "        state=state,",
+              "        receipts=receipts,",
+              "        policy=policy,",
+              "        trust=trust,",
+              "        registry=registry,",
+              "    )",
+              ""
+            ],
+            "chapters": [
+              {
+                "line": 1,
+                "level": 1,
+                "title": "SPDX-License-Identifier: AGPL-3.0-or-later"
+              },
+              {
+                "line": 2,
+                "level": 1,
+                "title": "Commercial license available"
+              },
+              {
+                "line": 3,
+                "level": 1,
+                "title": "© Concepts 1996–2026 Miroslav Šotek. All rights reserved."
+              },
+              {
+                "line": 4,
+                "level": 1,
+                "title": "© Code 2020–2026 Miroslav Šotek. All rights reserved."
+              },
+              {
+                "line": 5,
+                "level": 1,
+                "title": "ORCID: 0009-0009-3560-0851"
+              },
+              {
+                "line": 6,
+                "level": 1,
+                "title": "Contact: www.anulum.li | protoscience@anulum.li"
+              },
+              {
+                "line": 7,
+                "level": 1,
+                "title": "EVIDENCE-MANIFEST-TOOLKIT — whole explicit offline common verification"
+              }
+            ]
+          },
+          {
+            "label": "src/evidence_manifest_toolkit/_sealing.py (source 2026-10-18T18:01:59.844238+00:00)",
+            "format": "py",
+            "source_sha256": "0ccb9f86a6a697f5f8774d4488ddfcb8930b25393d7466ec075d5a82d1359b09",
+            "source_bytes": 5430,
+            "projection_sha256": "0ccb9f86a6a697f5f8774d4488ddfcb8930b25393d7466ec075d5a82d1359b09",
+            "private_references_withheld": 0,
+            "captured_at_utc": "2026-10-18T18:01:59.844238+00:00",
+            "lines": [
+              "# SPDX-License-Identifier: AGPL-3.0-or-later",
+              "# Commercial license available",
+              "# © Concepts 1996–2026 Miroslav Šotek. All rights reserved.",
+              "# © Code 2020–2026 Miroslav Šotek. All rights reserved.",
+              "# ORCID: 0009-0009-3560-0851",
+              "# Contact: www.anulum.li | protoscience@anulum.li",
+              "# EVIDENCE-MANIFEST-TOOLKIT — full immutable known-schema construction",
+              "",
+              "\"\"\"Construct complete known-schema content and optional current-authorized detached receipts.\"\"\"",
+              "",
+              "from ._budget import ReferenceBudget",
+              "from ._caller_config import validate_trust_argument",
+              "from ._content import prepare_content",
+              "from ._errors import InputRefused, ReferenceUnavailable",
+              "from ._interfaces import Resolver, Signer",
+              "from ._json import validate_limits",
+              "from ._reference_paths import configuration_refusal",
+              "from ._registry import validate_registry",
+              "from ._registry_types import SchemaRegistry",
+              "from ._results import SealResult",
+              "from ._signature_provider import initialize_verifier",
+              "from ._signer_response import sign_statement",
+              "from ._signing_authority import signing_public_key",
+              "from ._signing_request import construct_statement, validate_signing_request",
+              "from ._trust_types import SigningRequest, TrustContext",
+              "from ._values import Limits, Reason",
+              "",
+              "",
+              "def seal(",
+              "    content_json: bytes,",
+              "    *,",
+              "    schema_id: str,",
+              "    registry: SchemaRegistry,",
+              "    resolver: Resolver,",
+              "    limits: Limits,",
+              "    signing: SigningRequest | None = None,",
+              "    signer: Signer | None = None,",
+              "    trust: TrustContext | None = None,",
+              ") -> SealResult:",
+              "    \"\"\"Construct the whole immutable subject after its required native source checks.",
+              "",
+              "    Parameters",
+              "    ----------",
+              "    content_json : bytes",
+              "        Entire original content; no identity, verdict, future link or timestamp is inserted.",
+              "    schema_id : str",
+              "        Independently selected known schema, never chosen by artifact fields.",
+              "    registry : SchemaRegistry",
+              "        Complete pinned static schemas, dependencies, common roles and closure selectors.",
+              "    resolver : Resolver",
+              "        Actual bounded source for the selected required references.",
+              "    limits : Limits",
+              "        All six explicit positive bounds shared by every selected read and graph root.",
+              "    signing : SigningRequest or None",
+              "        Exact context-specific statement fields, excluding all computed identities.",
+              "    signer : Signer or None",
+              "        Actual caller-owned adapter, invoked only after full current authority checks.",
+              "    trust : TrustContext or None",
+              "        Independently accepted current caller selection; provenance of its prior approval",
+              "        is an external caller precondition, not a received configuration Boolean.",
+              "",
+              "    Returns",
+              "    -------",
+              "    SealResult",
+              "        All three immutable fields: whole canonical bytes, their complete content reference,",
+              "        and the independently verified detached envelope or None for unsigned construction.",
+              "        Construction establishes no domain or current evidence-acceptance verdict.",
+              "",
+              "    Raises",
+              "    ------",
+              "    ConfigurationError",
+              "        Limits, schema registry, partial signing configuration or verifier setup is invalid.",
+              "    InputRefused",
+              "        Complete content, required closure, native semantics or current authority fails.",
+              "    ReferenceUnavailable",
+              "        A required original full reference or typed digest cannot be read.",
+              "    SignerUnavailable",
+              "        The eligible caller adapter fails to supply a verified exact-message raw64 signature.",
+              "        No unsigned retry or output publication occurs.",
+              "    \"\"\"",
+              "    validate_limits(limits)",
+              "    if not isinstance(registry, SchemaRegistry):",
+              "        raise configuration_refusal(\"/registry\")",
+              "    if not isinstance(schema_id, str) or not schema_id:",
+              "        raise configuration_refusal(\"/schema_id\")",
+              "    options = (signing is not None, signer is not None, trust is not None)",
+              "    if any(options) and not all(options):",
+              "        raise configuration_refusal(\"/signing\")",
+              "    if trust is not None:",
+              "        validate_trust_argument(trust, signed_construction=True)",
+              "    fields = None if signing is None else validate_signing_request(signing, limits=limits)",
+              "    budget = ReferenceBudget(limits)",
+              "    schemas = validate_registry(registry, limits=limits, budget=budget, resolver=resolver)",
+              "    if schema_id not in schemas:",
+              "        raise InputRefused(",
+              "            Reason(",
+              "                \"unknown_schema\",",
+              "                None,",
+              "                None,",
+              "                None,",
+              "                \"Selected schema is not known.\",",
+              "            )",
+              "        )",
+              "    content = prepare_content(",
+              "        content_json,",
+              "        schema_id=schema_id,",
+              "        schemas=schemas,",
+              "        resolver=resolver,",
+              "        budget=budget,",
+              "        requirements=(),",
+              "    )",
+              "    if content.closure.missing_references:",
+              "        raise ReferenceUnavailable(content.closure.missing_references[0])",
+              "    if content.reasons:",
+              "        raise InputRefused(content.reasons[0])",
+              "    if fields is None or signer is None or trust is None:",
+              "        return SealResult(content.canonical_content, content.content_ref, None)",
+              "    statement = construct_statement(fields, content=content)",
+              "    verifier = initialize_verifier()",
+              "    public_key = signing_public_key(",
+              "        statement,",
+              "        content=content,",
+              "        trust=trust,",
+              "        registry=registry,",
+              "        schemas=schemas,",
+              "        resolver=resolver,",
+              "        budget=budget,",
+              "        verifier=verifier,",
+              "    )",
+              "    envelope = sign_statement(",
+              "        statement,",
+              "        signer=signer,",
+              "        expected_public_key=public_key,",
+              "        verifier=verifier,",
+              "    )",
+              "    return SealResult(content.canonical_content, content.content_ref, envelope)",
+              ""
+            ],
+            "chapters": [
+              {
+                "line": 1,
+                "level": 1,
+                "title": "SPDX-License-Identifier: AGPL-3.0-or-later"
+              },
+              {
+                "line": 2,
+                "level": 1,
+                "title": "Commercial license available"
+              },
+              {
+                "line": 3,
+                "level": 1,
+                "title": "© Concepts 1996–2026 Miroslav Šotek. All rights reserved."
+              },
+              {
+                "line": 4,
+                "level": 1,
+                "title": "© Code 2020–2026 Miroslav Šotek. All rights reserved."
+              },
+              {
+                "line": 5,
+                "level": 1,
+                "title": "ORCID: 0009-0009-3560-0851"
+              },
+              {
+                "line": 6,
+                "level": 1,
+                "title": "Contact: www.anulum.li | protoscience@anulum.li"
+              },
+              {
+                "line": 7,
+                "level": 1,
+                "title": "EVIDENCE-MANIFEST-TOOLKIT — full immutable known-schema construction"
               }
             ]
           }

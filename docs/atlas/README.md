@@ -104,8 +104,8 @@ observations, independent of resource and budget data.
 |---|---|---:|
 | Profile images across all five languages | Four generated header/map SVGs, 91 badge SVGs and the footer image | 621,868 |
 | Dated catalogue provenance | `assets/catalogue-source.json`, plus its ownership sidecar | 114,267 before sidecar |
-| Interactive site snapshot | 80 manifest-listed assets | 36,970,989 |
-| Main interactive entry page | `index.html`, including its eight embedded datasets | 12,140,685 |
+| Interactive site snapshot | 81 manifest-listed assets | 37,134,407 |
+| Main interactive entry page | `index.html`, including its eight embedded datasets | 12,211,069 |
 
 The HTML, JavaScript modules, source-document JSON, illustrations and figure
 downloads belong to the separately hosted explorer. The full snapshot repeats
@@ -175,3 +175,10 @@ Power windows, emulated plant/controller models and physical instrument acceptan
 retain separate meanings. Current fabric documentation includes unfinished neural
 work; reused architecture references preserve their earlier source date. Concrete
 board, integration and instrumentation roles are requirements, not acquisitions.
+
+The Evidence Manifest Toolkit explanation follows explicit byte identity, bounded
+reference acquisition and caller-selected sealing/verification through their actual
+source boundaries. Its fifteen-field report preserves Common, domain and current
+outcomes; scientific judgement remains separately owned. Earlier unchanged readings
+retain their dates, while new uncommitted code readings do not establish installed
+packaging, operational signer/clock qualification or a consumer adoption.

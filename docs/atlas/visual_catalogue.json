@@ -1,5 +1,5 @@
 {
-  "version": "0.19.1+phwr.1+computing.1+kernels.1+control.1+spo.1+fusion.1+qpu-workflow.1+mif-workflow.1+timing-workflow.1",
+  "version": "0.19.1+phwr.1+computing.1+kernels.1+control.1+spo.1+fusion.1+qpu-workflow.1+mif-workflow.1+timing-workflow.1+emt-workflow.1",
   "state": "Private integrated visual candidate; presentation and publication reviews pending",
   "source_snapshot_date": "2026-10-13",
   "illustrations": [
@@ -441,10 +441,36 @@
         "fingerprint": "21e533cd46055dea25f997560d4b0cc89532d6bf6176ce7cb476c288664f2f88",
         "independent": false
       }
+    },
+    {
+      "id": "evidence-bytes-authority-and-domain-verdict",
+      "project": "EVIDENCE-MANIFEST-TOOLKIT",
+      "title": "Evidence toolkit: bytes, authority and domain judgement",
+      "description": "Explicit raw/canonical byte identity, finite reference closure, caller-selected sealing/verification and separate Common, domain and current outcomes.",
+      "representation": "design",
+      "representation_label": "Source-supported evidence workflow and responsibility boundaries",
+      "asset": "visuals/evidence-bytes-authority-and-domain-verdict.svg",
+      "asset_sha256": "65a8e136c57d17918053b437cff44c8d57bb26f46276757be18e287b07830c39",
+      "downloads": [],
+      "source_version": "Selected source reading 2026-10-18T18:01:59.844238+00:00; unchanged README/architecture/API retain earlier capture dates",
+      "author": "Concepts and code: Miroslav Šotek. Illustration prepared by Arcane Sapience.",
+      "licence": "AGPL-3.0-or-later; commercial statement retained. Repository-native SVG.",
+      "limits": [
+        "A new successful API/CLI run, installed package or accepted consumer binding",
+        "Operational trust, signer, clock, successor-path or storage-platform qualification",
+        "Scientific domain acceptance, agreed partner or provisioned service"
+      ],
+      "profile": "{\n  \"source_capture\": \"2026-10-18T18:01:59.844238+00:00\",\n  \"representation\": \"Source-supported architecture; new code readings are uncommitted; no evidence runtime executed\"\n}",
+      "review": {
+        "summary": "Selected documentary and source flow inspected; source-owner content, scientific, consumer and publication review pending. No domain execution performed.",
+        "scope": "Byte identity, explicit caller context, construction/verification report and domain responsibility",
+        "fingerprint": "b743a0aa3460c8b362f9346c275f66b6e3634f425c94e9a8b98645e906022747",
+        "independent": false
+      }
     }
   ],
   "source_reviews_independent": false,
   "project_nodes_added": false,
   "new_scientific_or_model_execution": false,
-  "updated_at_utc": "2026-10-18T14:50:15.082871+00:00"
+  "updated_at_utc": "2026-10-18T18:01:59.844238+00:00"
 }
