@@ -99,7 +99,7 @@ scores.
 
 ## Current focus
 
-<sub>Portfolio state verified <!-- verified-at -->2026-10-18<!-- /verified-at -->.</sub>
+<sub>Portfolio state verified <!-- verified-at -->2026-10-19<!-- /verified-at -->.</sub>
 
 <table>
   <tr>
@@ -114,13 +114,13 @@ scores.
 
 | Date | Project | Release | Change |
 |---|---|---|---|
+| 2026-10-13 | Synapse Channel | [v0.99.38](https://doi.org/10.5281/zenodo.23328518) | published software archive |
+| 2026-10-13 | SYNAPSE CHANNEL | [v0.99.38](https://github.com/anulum/synapse-channel/releases/tag/v0.99.38) | Read-only delivery receipt projection joining the aggregate to its exact source event in one snapshot, with message/state binding, optional row MAC verification and SQLCipher key support. |
 | 2026-10-02 | Synapse Channel | [v0.99.37](https://doi.org/10.5281/zenodo.23095056) | published software archive |
+| 2026-10-02 | SYNAPSE CHANNEL | [v0.99.37](https://github.com/anulum/synapse-channel/releases/tag/v0.99.37) | Bind durable delivery decisions to the receiving hub, preserving the immutable request origin. Forwarded requests can expire and resolve replaced sessions; forwarded-only journals refuse startup under another hub identity. |
 | 2026-10-01 | Loop Timing Witness | [v0.1.0](https://doi.org/10.5281/zenodo.23092361) | published host software |
-| 2026-10-01 | Synapse Channel | [v0.99.36](https://doi.org/10.5281/zenodo.23088472) | historical software archive |
-| 2026-09-30 | SYNAPSE CHANNEL | [v0.99.35](https://github.com/anulum/synapse-channel/releases/tag/v0.99.35) | Shared-pool reservations with one authoritative owner (F02, not yet enforced). |
-| 2026-09-30 | SYNAPSE CHANNEL | [v0.99.34](https://github.com/anulum/synapse-channel/releases/tag/v0.99.34) | Signed peers behind a TLS-terminating proxy were admitted but served nothing. 0.99.33 said a peer hub's or Fleet follower's signed log pull works behind such a proxy. It did not. |
 
-<sub>Rendered from [anulum.li/news](https://anulum.li/news/) (the projects' CHANGELOG files) and [Zenodo](https://zenodo.org/search?q=creators.orcid%3A%220009-0009-3560-0851%22) on 2026-10-18.</sub>
+<sub>Rendered from [anulum.li/news](https://anulum.li/news/) (the projects' CHANGELOG files) and [Zenodo](https://zenodo.org/search?q=creators.orcid%3A%220009-0009-3560-0851%22) on 2026-10-19.</sub>
 <!-- profile-feeds:releases:end -->
 
 <!-- profile-feeds:publication:start -->
@@ -130,7 +130,7 @@ scores.
 |---|---|---|---|
 | 2026-10-11 | Preprint | The calibration epoch as the unit of evidence: preregistered parity-leakage and layout-transfer experiments on IQM Garnet | [10.5281/zenodo.23298119](https://doi.org/10.5281/zenodo.23298119) |
 
-<sub>Rendered from [anulum.li/news](https://anulum.li/news/) (the projects' CHANGELOG files) and [Zenodo](https://zenodo.org/search?q=creators.orcid%3A%220009-0009-3560-0851%22) on 2026-10-18.</sub>
+<sub>Rendered from [anulum.li/news](https://anulum.li/news/) (the projects' CHANGELOG files) and [Zenodo](https://zenodo.org/search?q=creators.orcid%3A%220009-0009-3560-0851%22) on 2026-10-19.</sub>
 <!-- profile-feeds:publication:end -->
 
 ## Timeline

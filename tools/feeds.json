@@ -1,6 +1,20 @@
 {
-  "fetched_at": "2026-10-18",
+  "fetched_at": "2026-10-19",
   "releases": [
+    {
+      "project": "Synapse Channel",
+      "version": "v0.99.38",
+      "headline": "published software archive",
+      "link": "https://doi.org/10.5281/zenodo.23328518",
+      "date": "2026-10-13"
+    },
+    {
+      "project": "SYNAPSE CHANNEL",
+      "version": "v0.99.38",
+      "headline": "Read-only delivery receipt projection joining the aggregate to its exact source event in one snapshot, with message/state binding, optional row MAC verification and SQLCipher key support.",
+      "link": "https://github.com/anulum/synapse-channel/releases/tag/v0.99.38",
+      "date": "2026-10-13"
+    },
     {
       "project": "Synapse Channel",
       "version": "v0.99.37",
@@ -9,32 +23,18 @@
       "date": "2026-10-02"
     },
     {
+      "project": "SYNAPSE CHANNEL",
+      "version": "v0.99.37",
+      "headline": "Bind durable delivery decisions to the receiving hub, preserving the immutable request origin. Forwarded requests can expire and resolve replaced sessions; forwarded-only journals refuse startup under another hub identity.",
+      "link": "https://github.com/anulum/synapse-channel/releases/tag/v0.99.37",
+      "date": "2026-10-02"
+    },
+    {
       "project": "Loop Timing Witness",
       "version": "v0.1.0",
       "headline": "published host software",
       "link": "https://doi.org/10.5281/zenodo.23092361",
       "date": "2026-10-01"
-    },
-    {
-      "project": "Synapse Channel",
-      "version": "v0.99.36",
-      "headline": "historical software archive",
-      "link": "https://doi.org/10.5281/zenodo.23088472",
-      "date": "2026-10-01"
-    },
-    {
-      "project": "SYNAPSE CHANNEL",
-      "version": "v0.99.35",
-      "headline": "Shared-pool reservations with one authoritative owner (F02, not yet enforced).",
-      "link": "https://github.com/anulum/synapse-channel/releases/tag/v0.99.35",
-      "date": "2026-09-30"
-    },
-    {
-      "project": "SYNAPSE CHANNEL",
-      "version": "v0.99.34",
-      "headline": "Signed peers behind a TLS-terminating proxy were admitted but served nothing. 0.99.33 said a peer hub's or Fleet follower's signed log pull works behind such a proxy. It did not.",
-      "link": "https://github.com/anulum/synapse-channel/releases/tag/v0.99.34",
-      "date": "2026-09-30"
     }
   ],
   "zenodo": [
