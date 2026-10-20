@@ -104,8 +104,8 @@ observations, independent of resource and budget data.
 |---|---|---:|
 | Profile images across all five languages | Four generated header/map SVGs, 91 badge SVGs and the footer image | 621,868 |
 | Dated catalogue provenance | `assets/catalogue-source.json`, plus its ownership sidecar | 114,267 before sidecar |
-| Interactive site snapshot | 81 manifest-listed assets | 37,134,407 |
-| Main interactive entry page | `index.html`, including its eight embedded datasets | 12,211,069 |
+| Interactive site snapshot | 82 manifest-listed assets | 37,416,723 |
+| Main interactive entry page | `index.html`, including its eight embedded datasets | 12,336,416 |
 
 The HTML, JavaScript modules, source-document JSON, illustrations and figure
 downloads belong to the separately hosted explorer. The full snapshot repeats
@@ -182,3 +182,10 @@ source boundaries. Its fifteen-field report preserves Common, domain and current
 outcomes; scientific judgement remains separately owned. Earlier unchanged readings
 retain their dates, while new uncommitted code readings do not establish installed
 packaging, operational signer/clock qualification or a consumer adoption.
+
+The Transpile Witness explanation follows original circuit/compiler observations,
+explicit layout maps and two distinct replay questions: exact raw output bytes
+and independent native checker outcomes. Matching negative results stay negative.
+The source-level Common dependency, complete evaluator and certificate lifecycle
+retain their own qualification requirements; no checker, converter or QPU was run.
+Earlier source captures and all original profile/feed work remain unchanged.

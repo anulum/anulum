@@ -1,5 +1,5 @@
 {
-  "version": "0.19.1+phwr.1+computing.1+kernels.1+control.1+spo.1+fusion.1+qpu-workflow.1+mif-workflow.1+timing-workflow.1+emt-workflow.1",
+  "version": "0.19.1+phwr.1+computing.1+kernels.1+control.1+spo.1+fusion.1+qpu-workflow.1+mif-workflow.1+timing-workflow.1+emt-workflow.1+transpile-workflow.1",
   "state": "Private integrated visual candidate; presentation and publication reviews pending",
   "source_snapshot_date": "2026-10-13",
   "illustrations": [
@@ -467,10 +467,36 @@
         "fingerprint": "b743a0aa3460c8b362f9346c275f66b6e3634f425c94e9a8b98645e906022747",
         "independent": false
       }
+    },
+    {
+      "id": "transpile-observations-layout-and-replay",
+      "project": "TRANSPILE-WITNESS",
+      "title": "Transpile Witness: observations, layout and replay",
+      "description": "Original circuit/compilation custody, explicit maps, raw-byte replay, independent native-outcome comparison and the separate evidence/domain lifecycle.",
+      "representation": "design",
+      "representation_label": "Source-supported compiler and replay evidence architecture",
+      "asset": "visuals/transpile-observations-layout-and-replay.svg",
+      "asset_sha256": "c3459de32eeac1fa5ef2ed355651339d8ba6aa94994f4036a1dfeb6bf3c3ecdd",
+      "downloads": [],
+      "source_version": "Selected source observations 2026-10-20T08:17:04.433728+00:00; original source directory has no Git entity",
+      "author": "Concepts and code: Miroslav Šotek. Illustration prepared by Arcane Sapience.",
+      "licence": "AGPL-3.0-or-later; commercial statement retained. Repository-native SVG.",
+      "limits": [
+        "A new compiler, QCEC, PyZX, converter or QPU execution",
+        "Scientific equivalence, compiler-wide determinism or independent-converter qualification",
+        "Complete evaluator/Clock/runtime/certificate or current consumer acceptance"
+      ],
+      "profile": "{\n  \"source_capture\": \"2026-10-20T08:17:04.433728+00:00\",\n  \"representation\": \"Source-supported architecture; source observations only, no Git source commit or domain execution\"\n}",
+      "review": {
+        "summary": "Selected source/documents inspected; source-owner content, scientific, consumer and publication review pending. No domain execution performed.",
+        "scope": "Programme/layout representations, byte and native-outcome replay, Common/domain boundaries",
+        "fingerprint": "5554b0b6b92b0065fef76f50d60a9d9b99759a636769ffba867bf7dddacd09bd",
+        "independent": false
+      }
     }
   ],
   "source_reviews_independent": false,
   "project_nodes_added": false,
   "new_scientific_or_model_execution": false,
-  "updated_at_utc": "2026-10-18T18:01:59.844238+00:00"
+  "updated_at_utc": "2026-10-20T08:17:04.433728+00:00"
 }

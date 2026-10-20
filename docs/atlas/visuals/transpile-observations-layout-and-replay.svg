@@ -1,0 +1,88 @@
+<!--
+SPDX-License-Identifier: AGPL-3.0-or-later
+Commercial license available
+© Concepts 1996–2026 Miroslav Šotek. All rights reserved.
+© Code 2020–2026 Miroslav Šotek. All rights reserved.
+ORCID: 0009-0009-3560-0851
+Contact: www.anulum.li | protoscience@anulum.li
+ANULUM — Transpile observations, layout and replay
+-->
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1650" role="img" aria-labelledby="title description">
+<title id="title">Transpile Witness: compiler observations, layout and replay</title>
+<desc id="description">Original quantum programmes, compiler frames, explicit maps and supplier observations preserve different kinds of evidence. Exact output-byte replay and independent native-outcome replay remain separate; equal negative checker results remain negative. Genuine Common interfaces and domain evaluation are part of a certificate workflow still under development. Offline source reading; no compiler, checker, converter or QPU executed.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L0,6 L8,3 Z" fill="#477655"/></marker></defs>
+<rect width="1440" height="1650" fill="#fafbf8"/><g font-family="DejaVu Sans,sans-serif">
+<text x="54" y="44" font-size="17" fill="#506958" font-weight="600">ANULUM / QUANTUM COMPUTING SYSTEMS</text>
+<text x="54" y="96" font-size="33" fill="#19392d" font-weight="600">Transpile Witness: observations, layout and replay</text>
+<text x="54" y="134" font-size="19" fill="#506958" font-weight="400">In progress · source reading 2026-10-20 · certificate and complete evaluator integration remain open</text>
+<text x="54" y="187" font-size="19" fill="#19392d" font-weight="600">1 / RETAIN THE ORIGINAL COMPARISON PROBLEM AND ITS OBSERVATIONS</text>
+<g data-card="true"><rect x="54" y="211" width="400" height="222" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="75" y="248" font-size="22" fill="#19392d" font-weight="600">Original circuit pair</text>
+<text x="75" y="288" font-size="19" fill="#506958" font-weight="400">Source + compiled QASM / QPY</text>
+<text x="75" y="317" font-size="19" fill="#506958" font-weight="400">Original dependencies and profiles</text>
+<text x="75" y="346" font-size="19" fill="#506958" font-weight="400">Explicit wire order and semantics</text>
+<text x="75" y="375" font-size="19" fill="#506958" font-weight="400">Keep missing / refused members</text>
+</g>
+<g data-card="true"><rect x="520" y="211" width="400" height="222" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="541" y="248" font-size="22" fill="#19392d" font-weight="600">Compiler observations</text>
+<text x="541" y="288" font-size="19" fill="#506958" font-weight="400">Ordered actual callback frames</text>
+<text x="541" y="317" font-size="19" fill="#506958" font-weight="400">Original output and SDK settings</text>
+<text x="541" y="346" font-size="19" fill="#506958" font-weight="400">Initial / final / logical wire maps</text>
+<text x="541" y="375" font-size="19" fill="#506958" font-weight="400">Ancilla roles and widths explicit</text>
+</g>
+<g data-card="true"><rect x="986" y="211" width="400" height="222" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="1007" y="248" font-size="22" fill="#19392d" font-weight="600">Native checker results</text>
+<text x="1007" y="288" font-size="19" fill="#506958" font-weight="400">QCEC / PyZX, fixed owned routes</text>
+<text x="1007" y="317" font-size="19" fill="#506958" font-weight="400">Native verdict, settings and streams</text>
+<text x="1007" y="346" font-size="19" fill="#506958" font-weight="400">Errors / timeouts remain visible</text>
+<text x="1007" y="375" font-size="19" fill="#506958" font-weight="400">Observation is not eligibility</text>
+</g>
+<path d="M454 322 H516" fill="none" stroke="#477655" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M920 322 H982" fill="none" stroke="#477655" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="54" y="486" font-size="19" fill="#19392d" font-weight="600">2 / TWO DIFFERENT REPLAY QUESTIONS</text>
+<g data-card="true"><rect x="54" y="510" width="640" height="222" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="75" y="547" font-size="22" fill="#19392d" font-weight="600">Original output-byte replay</text>
+<text x="75" y="587" font-size="19" fill="#506958" font-weight="400">Compare the complete original and repeated QPY bytes</text>
+<text x="75" y="616" font-size="19" fill="#506958" font-weight="400">Equal / different / unavailable, lengths and first offset</text>
+<text x="75" y="645" font-size="19" fill="#506958" font-weight="400">Never normalise a differing serialisation to make it pass</text>
+<text x="75" y="674" font-size="19" fill="#506958" font-weight="400">Equal files do not prove compiler-wide determinism</text>
+</g>
+<g data-card="true"><rect x="746" y="510" width="640" height="222" rx="16" fill="#eeeaf4" stroke="#b7cbbb" stroke-width="2"/>
+<text x="767" y="547" font-size="22" fill="#19392d" font-weight="600">Independent engine replay</text>
+<text x="767" y="587" font-size="19" fill="#506958" font-weight="400">Same original problem; distinct witness / evaluation runs</text>
+<text x="767" y="616" font-size="19" fill="#506958" font-weight="400">Retain all source, profile, request and conversion joins</text>
+<text x="767" y="645" font-size="19" fill="#506958" font-weight="400">Definite negatives can match and remain negative</text>
+<text x="767" y="674" font-size="19" fill="#506958" font-weight="400">Failed or undecided observations stay unavailable</text>
+</g>
+<g data-card="true"><rect x="54" y="772" width="1332" height="166" rx="16" fill="#e8f0f7" stroke="#b7cbbb" stroke-width="2"/>
+<text x="75" y="809" font-size="22" fill="#19392d" font-weight="600">Evidence lifecycle in progress: witness / seal / verify / inspect / render</text>
+<text x="75" y="849" font-size="19" fill="#506958" font-weight="400">Source selects genuine Evidence Manifest Toolkit interfaces; Common custody and domain decisions stay separate.</text>
+<text x="75" y="878" font-size="19" fill="#506958" font-weight="400">Complete native / C0 subjects, claims, policy, ordered members and source observations retain their identities.</text>
+<text x="75" y="907" font-size="19" fill="#506958" font-weight="400">Candidate capture, Common success or a rendered document does not supply complete qualified domain verification.</text>
+</g>
+<text x="54" y="991" font-size="19" fill="#19392d" font-weight="600">3 / KEEP REPRESENTATION, SCIENCE AND EXECUTION SCOPE DISTINCT</text>
+<g data-card="true"><rect x="54" y="1015" width="640" height="222" rx="16" fill="#edf3ee" stroke="#b7cbbb" stroke-width="2"/>
+<text x="75" y="1052" font-size="22" fill="#19392d" font-weight="600">Route-specific interpretation</text>
+<text x="75" y="1092" font-size="19" fill="#506958" font-weight="400">PyZX False means reduction did not succeed</text>
+<text x="75" y="1121" font-size="19" fill="#506958" font-weight="400">The affected QASM2 phase route cannot prove unitary_exact</text>
+<text x="75" y="1150" font-size="19" fill="#506958" font-weight="400">QCEC phase / probabilistic vocabulary stays intact</text>
+<text x="75" y="1179" font-size="19" fill="#506958" font-weight="400">Separate workers still share conversion dependencies</text>
+</g>
+<g data-card="true"><rect x="746" y="1015" width="640" height="222" rx="16" fill="#eeeaf4" stroke="#b7cbbb" stroke-width="2"/>
+<text x="767" y="1052" font-size="22" fill="#19392d" font-weight="600">Before domain eligibility</text>
+<text x="767" y="1092" font-size="19" fill="#506958" font-weight="400">Valid maps do not prove quantum equivalence</text>
+<text x="767" y="1121" font-size="19" fill="#506958" font-weight="400">Process / memory / Clock / runtime need qualification</text>
+<text x="767" y="1150" font-size="19" fill="#506958" font-weight="400">Whole evaluator and final report integration stay open</text>
+<text x="767" y="1179" font-size="19" fill="#506958" font-weight="400">Offline library: no circuit submission to a QPU</text>
+</g>
+<g data-card="true"><rect x="54" y="1277" width="1332" height="166" rx="16" fill="#e8f0f7" stroke="#b7cbbb" stroke-width="2"/>
+<text x="75" y="1314" font-size="22" fill="#19392d" font-weight="600">Concrete contributor and partner responsibilities</text>
+<text x="75" y="1354" font-size="19" fill="#506958" font-weight="400">Supplier/profile and converter review; independently supported circuit, phase, ancilla and measurement cases.</text>
+<text x="75" y="1383" font-size="19" fill="#506958" font-weight="400">Actual Common and domain consumer integration; complete source, process, Clock and sensitive-data custody.</text>
+<text x="75" y="1412" font-size="19" fill="#506958" font-weight="400">These are required roles, not agreed partners, acquired infrastructure or completed scientific acceptance.</text>
+</g>
+<text x="54" y="1497" font-size="19" fill="#506958" font-weight="400">Mapping, raw byte identity, native outcome consistency and current certificate eligibility are separate claims.</text>
+<text x="54" y="1532" font-size="19" fill="#506958" font-weight="400">Selected original source bytes retain complete reading views and hashes; no source commit or release is implied.</text>
+<text x="54" y="1595" font-size="18" fill="#506958" font-weight="400">No compiler / checker / converter / QPU execution · source-owner and scientific / publication review pending</text>
+</g></svg>
