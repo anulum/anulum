@@ -46,7 +46,8 @@ export default async function checkResourceCoverage(
         document.querySelector('script[type="importmap"]')
       );
       /** @type {{imports: Record<string,string>}} */
-      const declarations = JSON.parse(map.textContent || "");
+      // A script element's textContent is a string, including the empty string.
+      const declarations = JSON.parse(/** @type {string} */ (map.textContent));
       for (const name of required) {
         const target = name.endsWith(".css")
           ? /** @type {HTMLLinkElement} */ (
@@ -141,7 +142,8 @@ export default async function checkResourceCoverage(
   const data = await page
     .locator("#resource-data")
     .evaluate(function capturedCoverageResources(node) {
-      return JSON.parse(node.textContent || "");
+      // This locator supplies an Element, whose textContent is a string.
+      return JSON.parse(/** @type {string} */ (node.textContent));
     });
   const explorer = page.getByRole("region", {
     name: "Resource inventory coverage and open quantities",

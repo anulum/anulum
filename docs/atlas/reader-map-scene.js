@@ -50,13 +50,14 @@ const svgEl = (tag, attrs = {}, text) => {
  * @returns {string[]} Lines in their original text order.
  */
 function wrap(value, limit, maxLines) {
-  const words = value
-    .split(/\s+/)
-    .flatMap((word) =>
-      word.length > limit
-        ? word.match(new RegExp(".{1," + limit + "}", "g")) || []
-        : [word],
-    );
+  const words = value.split(/\s+/).flatMap((word) =>
+    word.length > limit
+      ? // Positive internal limits and word.length > limit guarantee a match.
+        /** @type {string[]} */ (
+          word.match(new RegExp(".{1," + limit + "}", "g"))
+        )
+      : [word],
+  );
   const lines = [];
   for (const word of words) {
     if (

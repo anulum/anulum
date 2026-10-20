@@ -65,9 +65,10 @@ export default async function checkResourceExplorer(
   await visit(base + "resources.html");
   await page.locator("#counter").filter({ hasText: "matching" }).waitFor();
   /** @type {import('../types/atlas.js').ResourceData} */
-  const data = await page
-    .locator("#resource-data")
-    .evaluate((node) => JSON.parse(node.textContent || ""));
+  const data = await page.locator("#resource-data").evaluate((node) => {
+    // This locator supplies an Element, whose textContent is a string.
+    return JSON.parse(/** @type {string} */ (node.textContent));
+  });
   const browserHistoryLength = () => history.length;
   const browserLocationHref = () => location.href;
   const initialHistoryLength = await page.evaluate(browserHistoryLength);
@@ -87,13 +88,15 @@ export default async function checkResourceExplorer(
       .length,
   };
   const visibleIds = () =>
-    page
-      .locator("#results article")
-      .evaluateAll((nodes) =>
-        nodes.map(
-          (node) => /** @type {HTMLElement} */ (node).dataset.recordId || "",
-        ),
-      );
+    page.locator("#results article").evaluateAll((nodes) =>
+      nodes.map(
+        // Every inventory article receives recordId in the renderer before insertion.
+        (node) =>
+          /** @type {string} */ (
+            /** @type {HTMLElement} */ (node).dataset.recordId
+          ),
+      ),
+    );
   /**
    * Save a native browser download and the exact public selection that produced it.
    * @param {string} tag - Public inventory view or filtered selection label.

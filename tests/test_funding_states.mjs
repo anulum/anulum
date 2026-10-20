@@ -106,7 +106,8 @@ export default async function checkFundingStates(
   const tiles = await page.locator(".map-entry").evaluateAll((entries) =>
     entries.map((entry) => ({
       id: entry.getAttribute("data-entry"),
-      text: entry.textContent || "",
+      // Element.textContent is a string, including the empty string.
+      text: /** @type {string} */ (entry.textContent),
     })),
   );
   assert.ok(

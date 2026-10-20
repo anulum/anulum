@@ -49,9 +49,11 @@ const sections = [
  * @returns {void} The route replaces the current content surface.
  */
 function comparisonView(params) {
+  const entries = params.get("entries");
+  // The single nonempty parameter read reaches split without a second nullable lookup.
   const requested = params.has("entries")
-    ? params.get("entries")
-      ? (params.get("entries") || "").split(",")
+    ? entries
+      ? entries.split(",")
       : []
     : defaults;
   const root = R_clear([["Compare systems", null]]);

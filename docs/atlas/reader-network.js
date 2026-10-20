@@ -153,9 +153,9 @@ function graph(center, edges) {
   );
   svg.append(defs);
   for (const edge of edges) {
-    const a = positions.get(edge.from),
-      b = positions.get(edge.to);
-    if (!a || !b) continue;
+    // Every endpoint in edges is inserted into positions above.
+    const a = requireRecord(positions.get(edge.from)),
+      b = requireRecord(positions.get(edge.to));
     const forward = a.x < b.x,
       x1 = a.x + (forward ? a.w : 0),
       x2 = b.x + (forward ? 0 : b.w);
