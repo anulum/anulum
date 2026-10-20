@@ -58,6 +58,7 @@
     const root = R.clear([['Shared resources', null]]);
     root.append(el('p', 'Understand what support enables', 'eyebrow'), el('h1', 'Needs, shared resources and expected uses'),
       el('p', 'Follow a source requirement to the projects it serves and the separate preliminary budget cases associated with it. Shared ownership and capacity remain subject to the owners’ decisions.', 'lede'));
+    root.append(window.AtlasResourceCoverage.render(R.resources));
     const summary = el('div', undefined, 'intent-grid');
     for (const [count, title] of [[R.budget.shared.length, 'shared-resource families'],
       [R.budget.dedicated_facilities.length, 'dedicated requirements'],

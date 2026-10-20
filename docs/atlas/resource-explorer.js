@@ -18,6 +18,7 @@ const results = document.getElementById('results');
 const counter = document.getElementById('counter');
 const download = document.getElementById('download-selection');
 const selectionLink = document.getElementById('selection-link');
+document.querySelector('main').prepend(window.AtlasResourceCoverage.render(data));
 const views = {needs: 'Resource needs', candidates: 'Acquisition candidates', people: 'People', spaces: 'Spaces'};
 let selection = readSelection(location.hash, data);
 

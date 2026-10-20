@@ -1,0 +1,22 @@
+/* SPDX-License-Identifier: AGPL-3.0-or-later */
+/* Commercial license available */
+/* © Concepts 1996–2026 Miroslav Šotek. All rights reserved. */
+/* © Code 2020–2026 Miroslav Šotek. All rights reserved. */
+/* ORCID: 0009-0009-3560-0851 */
+/* Contact: www.anulum.li | protoscience@anulum.li */
+/* ANULUM — Resource coverage shared across the map and inventory */
+.resource-coverage{margin:24px 0;padding:24px;background:#f0f5ef;border:1px solid #c7d7c5;border-radius:14px;overflow-wrap:anywhere}
+.resource-coverage h2{margin-top:0}
+.resource-coverage .coverage-source{font-size:.9rem;color:#46604c}
+.resource-coverage .coverage-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:20px 0}
+.resource-coverage .coverage-stat{display:flex;flex-direction:column;gap:5px;padding:16px;background:#fff;border:1px solid #d7e1d7;border-radius:10px}
+.resource-coverage .coverage-stat strong{font-size:2rem;line-height:1.2}
+.resource-coverage .coverage-gap{padding:14px;background:#fff7e7;border-left:4px solid #a27626}
+.resource-coverage summary{cursor:pointer;min-height:44px;padding:10px 0;font-weight:600}
+.resource-coverage .coverage-groups{list-style:none;padding:0;margin:8px 0 0}
+.resource-coverage .coverage-groups li{display:flex;flex-direction:column;gap:7px;padding:16px 0;border-top:1px solid #c7d7c5}
+.resource-coverage .coverage-links{display:flex;flex-wrap:wrap;gap:4px 18px}
+.resource-coverage .coverage-links a{display:inline-flex;align-items:center;min-height:44px}
+.resource-coverage a:focus-visible,.resource-coverage summary:focus-visible{outline:3px solid #52774a;outline-offset:3px}
+@media(max-width:760px){.resource-coverage .coverage-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:420px){.resource-coverage{padding:16px}.resource-coverage .coverage-grid{grid-template-columns:minmax(0,1fr)}}

@@ -1,6 +1,6 @@
 {
   "schema": "anulum-atlas-snapshot/1",
-  "version": "0.31+resource-sharing.1+publication-review.1.2+phwr-source.1.3+computing-source.1.1+kernels-source.1+control-source.1+spo-source.1+fusion-source.1+qpu-workflow.1+mif-workflow.1+timing-workflow.1+emt-workflow.1+transpile-workflow.1+mitigation-workflow.1+qc-contracts-workflow.1",
+  "version": "0.31+resource-sharing.1+publication-review.1.2+phwr-source.1.3+computing-source.1.1+kernels-source.1+control-source.1+spo-source.1+fusion-source.1+qpu-workflow.1+mif-workflow.1+timing-workflow.1+emt-workflow.1+transpile-workflow.1+mitigation-workflow.1+qc-contracts-workflow.1+resource-coverage.1",
   "source_manifest_sha256": "e0d4fe31f7381834fdaf27c72a8ca41b9877568dc5b6d96dbfa3603a8267a56b",
   "qualification": "Development snapshot; source-content and scientific review remain open.",
   "ownership_projections": {
@@ -32,7 +32,7 @@
     "direct_repository_sources.json.license": "403944020b1fbec498605fa95262500cdd30471519e77972782259b5aa5f046c",
     "document_library_candidate.json": "25935b96d2cd18109fde23a26b5c44d985c9ff05a4ec0c9823461187cb868d56",
     "document_library_candidate.json.license": "bd03bae1187beddbae352ce768f6cb1106ccdadce17fcee3d56ca74d5bc5b6fb",
-    "index.html": "bced118b70c353b0e967a05719c0c02ae0744266dbfa9bfbabc7187b292003e1",
+    "index.html": "a2b71894e1a3af40f5cab2899eee33e57194e5a2948061ab69306549eec5c5f3",
     "public_atlas_data.json": "61eb80cb99b5455dc980a061fae060dae29685f911643a58c79ea5d2383122c5",
     "public_atlas_data.json.license": "e03cf60bbdf2792f14680a92d4f3b328629c31b9a4ec6bd49fa4f57f0c736cf0",
     "public_budget_data.json": "db67d69b5e94f866f19c4bef260206bca2d07160b0ebbaed73cd5961d17b3dd9",
@@ -50,7 +50,7 @@
     "reader-map.js": "024a58e790b03b474903a3fc7d7a7b7a3bde2f84d1213506202e624a5ba68721",
     "reader-network.js": "33cf258c04653b7187f9575ae3ab134f57e27aab962914304cc19b864280bf58",
     "reader-passport.js": "08773a09dbcde7113ec6d75598e4d9639255d93517b2b7429afec1fb1791bf9c",
-    "reader-resources.js": "420849179d31e15d19322974b9808b446949d5292271ef893d37823807baee1b",
+    "reader-resources.js": "64c9b48abffa26764f68aea9270a0fa1b95e17c8747655d559e045d8bc305603",
     "reader-source-updates.js": "7d60219e78fb1e8c4ea2417a661b89ecbe7793dee304f61f93fa6f3520d79f2a",
     "reader-support-records.js": "8092679ac45f5f3b4d7ad6b122472280fefb6ac7b09321f12d6a6bac4ca1fd92",
     "reader-support.js": "86485bf468db879e68af25e7357ab0f1b31202149df8ce8ba3a9878f50572832",
@@ -59,9 +59,9 @@
     "reader-views.js": "ba3debb6b15e25f77c85e2182907b123d474c6e0e48611aaa1e567ddc5838efb",
     "reader-visuals.js": "68f15e75d7d56daa6d1d63c74abcff34da18005f02dafb1920bccad554693598",
     "reader.css": "b52b47cefe3032a4f0037663c0bb9bd43d02e7e465fa424a4ae1975a2226cac6",
-    "resource-explorer.js": "46bb07826842dd4cfc3ae6e0a030e580be58d01e0448b647dd54f7956421592a",
+    "resource-explorer.js": "96bf6f50dd2ccb47d516f48db07907b308ea62869a64591edc967bcf2da68725",
     "resource-inventory.js": "be6a63d5e22443747bbbd55209d36adc1b9c50523b16b927972b12e350103d70",
-    "resources.html": "a360228806cbd71a39bb05f230e9180c46016b02045cf4704516cc111cee9047",
+    "resources.html": "a48e86ac53b14d61f1e33464f4ac59c7f817c244aa82315e1e24295551630246",
     "source_update_candidate.json": "7ff81712668283961d269342ea7cca6c1273c24180d2ec6239872243d642c6d0",
     "source_update_candidate.json.license": "209226cfb5baf1cdf237f302a22477123588a93b153821bcdf748add4d3114b3",
     "technical_explanations_candidate.json": "49755ad46f97ccbba907e3a6b2723155219b959feb52113ffde182f6d4dadbf1",
@@ -93,7 +93,9 @@
     "visuals/evidence-bytes-authority-and-domain-verdict.svg": "65a8e136c57d17918053b437cff44c8d57bb26f46276757be18e287b07830c39",
     "visuals/transpile-observations-layout-and-replay.svg": "c3459de32eeac1fa5ef2ed355651339d8ba6aa94994f4036a1dfeb6bf3c3ecdd",
     "visuals/mitigation-counts-uncertainty-and-verdicts.svg": "f43a9c14174bbaf55a19670610d625d5a0d23ce28619d25e44762e55e3e64023",
-    "visuals/quantum-contracts-ownership-and-compatibility.svg": "7d7b182f53b0a3e4550e637a91c230cbb1651ee62653b545ce2aa7e3559675e5"
+    "visuals/quantum-contracts-ownership-and-compatibility.svg": "7d7b182f53b0a3e4550e637a91c230cbb1651ee62653b545ce2aa7e3559675e5",
+    "resource-coverage.js": "855ae10af4039cb42cae50f2f6880fe708daad1c51e5e464c6c8312f7af4d29d",
+    "resource-coverage.css": "6902624d5650606613c2e1354a09fd5e92114aa9a319584c95022074126e4244"
   },
-  "editorial_base_manifest_sha256": "52c541683cf1d96c609cb90ddb2578f1dc483c434d9f50fae0337fa42e1cfeb1"
+  "editorial_base_manifest_sha256": "dbd811d1bd275b49b83e77f3791f49bcec9315f3e304ccab309fc2403f246e6c"
 }
