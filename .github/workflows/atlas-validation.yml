@@ -74,7 +74,7 @@ jobs:
             sleep 1
           done
           curl --fail --silent "$ATLAS_BASE_URL" --output /dev/null
-          node --test --test-concurrency=1 tests/test_resource_inventory.mjs tests/test_render_atlas.mjs tests/test_atlas_routes.mjs
+          node --test --test-concurrency=1 tests/test_resource_inventory.mjs tests/test_render_atlas.mjs tests/*.test.mjs
       - name: Enforce complete per-file statement and branch coverage
         if: always() && steps.runtime-tests.outcome != 'skipped'
         run: |
