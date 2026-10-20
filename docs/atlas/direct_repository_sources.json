@@ -2,10 +2,10 @@
   "version": "0.2",
   "captured_at_utc": "2026-10-13T23:51:08.190562+00:00",
   "state": "Private direct repository source candidate; content reconciliation and publication review pending",
-  "read_scope": "Complete selected document and entry-source bytes read and retained. Selected prose, architecture sections, structured declarations and static top-level Python declarations projected; no source execution or whole scientific/implementation validation.",
+  "read_scope": "Complete selected document and entry-source bytes read and retained. Selected prose, architecture sections, structured declarations and static top-level Python declarations projected; no source execution or whole scientific/implementation validation. Repository-internal documents, excerpts and declarations are withheld from the public projection.",
   "project_entries": 196,
-  "entries_with_documents": 82,
-  "source_documents_captured": 614,
+  "entries_with_documents": 75,
+  "source_documents_captured": 561,
   "changed_after_read": [],
   "projects": [
     {
@@ -6353,95 +6353,24 @@
     },
     {
       "project_id": "SCPN-STUDIO-PLATFORM",
-      "lookup_state": "Selected repository documents captured",
-      "documents": [
-        {
-          "label": "README.md",
-          "sha256": "dbdd5c253612adc1579bc3554e5bec145e7f48628ef7797fad479497dcc9ec27",
-          "bytes": 8914
-        },
-        {
-          "label": "pyproject.toml",
-          "sha256": "bb10dcb08506362a14e845479882e390116226d3d2df4b0bda9d8b4937be896e",
-          "bytes": 4362
-        },
-        {
-          "label": "src/scpn_studio_platform/__init__.py",
-          "sha256": "5cffad705d89bd0190add68a23746c0f639052f77469fb554886aa3ece0fe459",
-          "bytes": 2179,
-          "static_top_level_declarations": []
-        }
-      ],
+      "lookup_state": "Repository contents withheld from the public atlas.",
+      "documents": [],
       "git_marker_present": true,
-      "identity_basis": "Exact id/name directory match or explicit package path; no whole canonical/source acceptance inferred",
-      "declared_package_metadata": {
-        "pyproject.toml": {
-          "name": "scpn-studio-platform",
-          "version": "0.11.3.dev0",
-          "description": "Domain-neutral SDK for the SCPN Studio ecosystem — provenance-first evidence bundles, capability manifests, bounded jobs, and tenant-aware identity.",
-          "requires-python": ">=3.11"
-        }
-      },
+      "identity_basis": "Project identity retained; internal source contents are not published.",
+      "declared_package_metadata": {},
       "boundary_declarations": {},
-      "readme_excerpts": [
-        "The domain-neutral SDK at the foundation of the **SCPN Studio** ecosystem: a\nfederation of standalone scientific studios (neuromorphic, fusion, control,\nquantum, magneto-inertial, phase dynamics) that share one platform, one evidence\nstandard, and one look, composed by a federating Hub shell.",
-        "This package is the **open-core foundation**. Each project builds its studio\nvertical on it; the managed multi-tenant Hub is the separate paid layer. The\nboundary is permanent and documented in\n[docs/guides/open_core_boundary.md](docs/guides/open_core_boundary.md): the\nclaim lattice and every verification path stay open-core forever; the Hub\nsells operation, never trust semantics.",
-        "Provenance-first, as a product surface rather than only an engineering practice.\nEvery number a studio surfaces is an evidence bundle that:"
-      ],
+      "readme_excerpts": [],
       "architecture_documents": []
     },
     {
       "project_id": "SCPN-STUDIO",
-      "lookup_state": "Selected repository documents captured",
-      "documents": [
-        {
-          "label": "README.md",
-          "sha256": "d45ed9cccac71d7bff26a0846b42193c08e53efe6e20e620c215b3ff168379f7",
-          "bytes": 12357
-        },
-        {
-          "label": "pyproject.toml",
-          "sha256": "9d3c93b35665c4f39a53a14a5608ff26dc0e5f8e691548029c7bfe40e597f7fa",
-          "bytes": 3662
-        },
-        {
-          "label": "src/scpn_studio/__init__.py",
-          "sha256": "64cb4f3551be1ed38760ac1838a72886df0fa0bd7aee5ec4b55530567c3544e4",
-          "bytes": 2469,
-          "static_top_level_declarations": []
-        },
-        {
-          "label": "src/scpn_studio/cli/main.py",
-          "sha256": "c5b373e22f020e748c470e66c97e6c0599802843a733d7853f9e9d97e1d7f486",
-          "bytes": 2943,
-          "static_top_level_declarations": [
-            {
-              "name": "main",
-              "kind": "FunctionDef",
-              "line": 50
-            }
-          ]
-        }
-      ],
+      "lookup_state": "Repository contents withheld from the public atlas.",
+      "documents": [],
       "git_marker_present": true,
-      "identity_basis": "Exact id/name directory match or explicit package path; no whole canonical/source acceptance inferred",
-      "declared_package_metadata": {
-        "pyproject.toml": {
-          "name": "scpn-studio",
-          "version": "0.1.0",
-          "description": "The federating SCPN Studio Hub — a registry, cross-studio evidence audit, honesty-preserving rendering, and federation gating over the scpn-studio-platform contract.",
-          "requires-python": ">=3.12",
-          "declared_scripts": {
-            "scpn": "scpn_studio.cli.main:main"
-          }
-        }
-      },
+      "identity_basis": "Project identity retained; internal source contents are not published.",
+      "declared_package_metadata": {},
       "boundary_declarations": {},
-      "readme_excerpts": [
-        "The federating Hub of the SCPN Studio ecosystem. Each scientific studio (SNN,\nFusion, Control, Phase, Quantum, MIF, …) runs standalone on\n[`scpn-studio-platform`](https://github.com/anulum/scpn-studio-platform); the Hub\ncatalogues them, audits their evidence across domains, renders every claim at its\ntrue boundary, and gates verb execution by the contract's safety rules.",
-        "This package is the domain-neutral **Hub core** — the framework-agnostic logic the\nweb shell (Module Federation 2.x) wraps. It is the open layer beneath the paid\nmanaged Hub.",
-        "The Hub's reason to exist is that **no claim reaches the screen labelled as\nvalidated unless it truly is.** `rendering.render` returns `VALIDATED` only when a\nbundle's claim boundary is admissible and (for a proven bundle) its proof has not\nbeen voided by subject drift; everything else is shown at its boundary verbatim.\n`audit` counts admissibility through the same rule, so the audit never reports more\nvalidated claims than the UI would ever show."
-      ],
+      "readme_excerpts": [],
       "architecture_documents": []
     },
     {
@@ -6733,56 +6662,13 @@
     },
     {
       "project_id": "SYNAPSE-CHANNEL-FLEET",
-      "lookup_state": "Selected repository documents captured",
-      "documents": [
-        {
-          "label": "README.md",
-          "sha256": "65aab41d739205baf18dc76404fe1d123f1d15454b4880f27d383b38011ab40c",
-          "bytes": 15924
-        },
-        {
-          "label": "pyproject.toml",
-          "sha256": "e33a44d99bb72ba856f5ab3293ef010169c21a35c72c956fcc02adc6a8308d37",
-          "bytes": 2579
-        },
-        {
-          "label": "src/synapse_fleet/__init__.py",
-          "sha256": "48208f6df236581b96d072bce30db5b86287381e689da3428b9a613f20166a05",
-          "bytes": 4910,
-          "static_top_level_declarations": []
-        },
-        {
-          "label": "src/synapse_fleet/cli.py",
-          "sha256": "aa7976911861ae03df8aa2bf8fc2e0bda2afea9d877aeaeb1936cd85a2dae114",
-          "bytes": 26280,
-          "static_top_level_declarations": [
-            {
-              "name": "main",
-              "kind": "FunctionDef",
-              "line": 671
-            }
-          ]
-        }
-      ],
+      "lookup_state": "Repository contents withheld from the public atlas.",
+      "documents": [],
       "git_marker_present": true,
-      "identity_basis": "Exact id/name directory match or explicit package path; no whole canonical/source acceptance inferred",
-      "declared_package_metadata": {
-        "pyproject.toml": {
-          "name": "synapse-channel-fleet",
-          "version": "0.8.1",
-          "description": "Multi-machine fleet fabric for SYNAPSE CHANNEL: durable hub-to-hub sync daemon, fleet operations tooling (commercial tier)",
-          "requires-python": ">=3.10",
-          "declared_scripts": {
-            "synapse-fleet": "synapse_fleet.cli:main"
-          }
-        }
-      },
+      "identity_basis": "Project identity retained; internal source contents are not published.",
+      "declared_package_metadata": {},
       "boundary_declarations": {},
-      "readme_excerpts": [
-        "Proprietary multi-machine fleet fabric for SYNAPSE CHANNEL. **Not open\nsource** — licensed to named licensees under the SYNAPSE Enterprise\nLicence Agreement (see `LICENSE`). Distributed as a private wheel, never\non public PyPI.",
-        "The open-source core provides the federation primitives (multihub\nfollower, claim forwarding, deny-by-default federation gate with\nmTLS+Ed25519, the wire protocol). This package operates them at\nproduction grade.",
-        "Builds against the exact current product Core (`synapse-channel==0.99.37` in\n`pyproject.toml`). The packaged [Core compatibility contract](docs/core-compatibility.md)\nseparates that product pin and its 0.99.5 diagnostic matrix from the immutable\nCore 0.99.2 D3 evidence profiles. Wire types and federation logic are consumed,\nnever redefined — interoperability stays in the open-source core."
-      ],
+      "readme_excerpts": [],
       "architecture_documents": []
     },
     {
@@ -6944,390 +6830,25 @@
     },
     {
       "project_id": "DIRECTOR-CLASS-AI",
-      "lookup_state": "Selected repository documents captured",
-      "documents": [
-        {
-          "label": "README.md",
-          "sha256": "85419d7ec1a5290aec2e28406f67ab4b93daa51df34231f686bd454e410d468e",
-          "bytes": 29221
-        },
-        {
-          "label": "ARCHITECTURE.md",
-          "sha256": "34f8bddc9182c6d9c2933e2d8d6bf174826a21e4c35d759e93710db17e987d98",
-          "bytes": 3094
-        },
-        {
-          "label": "ROADMAP.md",
-          "sha256": "c9abe8aa420b96c9272f5346a7c833e0917accb82b05ad928c25e4a49733310a",
-          "bytes": 1549
-        },
-        {
-          "label": "VALIDATION.md",
-          "sha256": "b7c1b2e527ff0f7424542915f19baf330d9ed59114bf9d0a0f6e94340c5965d5",
-          "bytes": 2424
-        },
-        {
-          "label": "pyproject.toml",
-          "sha256": "8b46de9985879f51c138f9974d36ffe97016d2a8fe146e969169c8da5188ac04",
-          "bytes": 3977
-        },
-        {
-          "label": "Cargo.toml",
-          "sha256": "a8203d2b9627e1c7ef24b32a91166c9dadaf5b0618d3d9eb617a37138dffbdd7",
-          "bytes": 1328
-        },
-        {
-          "label": "director_class_ai/__init__.py",
-          "sha256": "ee405929bc764fd0a4bb7fab7334bb73a4eb4a9676524e880771e92869347013",
-          "bytes": 1502,
-          "static_top_level_declarations": []
-        },
-        {
-          "label": "src/lib.rs",
-          "sha256": "31b745186699aa7f42f220a472ae71fee567a15db22e7c6f7adb4e66f9d2cfa2",
-          "bytes": 16662
-        },
-        {
-          "label": "director_class_ai/cli/approve.py",
-          "sha256": "f7393f19942e0a1106a7a08d36af011afd86d55e682ff5fefaff33b529798a64",
-          "bytes": 4600,
-          "static_top_level_declarations": [
-            {
-              "name": "main",
-              "kind": "FunctionDef",
-              "line": 113
-            }
-          ]
-        },
-        {
-          "label": "director_class_ai/cli/guard.py",
-          "sha256": "0fdc2e492fbfaaed582d692440c0e598899c10ae722595c0e6c7488325567c20",
-          "bytes": 11324,
-          "static_top_level_declarations": [
-            {
-              "name": "CommandGuardOptions",
-              "kind": "ClassDef",
-              "line": 59
-            },
-            {
-              "name": "build_command_request",
-              "kind": "FunctionDef",
-              "line": 104
-            },
-            {
-              "name": "run_guard",
-              "kind": "FunctionDef",
-              "line": 121
-            },
-            {
-              "name": "main",
-              "kind": "FunctionDef",
-              "line": 198
-            }
-          ]
-        },
-        {
-          "label": "director_class_ai/gateway/mcp_cli.py",
-          "sha256": "8cfcd5217d585d2360c021047be8a89b838b0d01ef9996a27acf9af72ab1edca",
-          "bytes": 5916,
-          "static_top_level_declarations": [
-            {
-              "name": "MCPGatewayServerOptions",
-              "kind": "ClassDef",
-              "line": 35
-            },
-            {
-              "name": "build_gateway_server",
-              "kind": "FunctionDef",
-              "line": 69
-            },
-            {
-              "name": "main",
-              "kind": "FunctionDef",
-              "line": 86
-            }
-          ]
-        },
-        {
-          "label": "director_class_ai/cli/policy.py",
-          "sha256": "d26f17dcfc8be8ce2c37f9984f2b4409f1ae09088a7033c7107e6f58ee6f2e9f",
-          "bytes": 9072,
-          "static_top_level_declarations": [
-            {
-              "name": "main",
-              "kind": "FunctionDef",
-              "line": 220
-            }
-          ]
-        },
-        {
-          "label": "director_class_ai/audit/export_cli.py",
-          "sha256": "4295bb9ce7d167d2825aca83a765cde3e147339a74cfe440ce5996ac90d4e82a",
-          "bytes": 4735,
-          "static_top_level_declarations": [
-            {
-              "name": "AuditExportOptions",
-              "kind": "ClassDef",
-              "line": 34
-            },
-            {
-              "name": "AuditExportResult",
-              "kind": "ClassDef",
-              "line": 58
-            },
-            {
-              "name": "run_export",
-              "kind": "FunctionDef",
-              "line": 69
-            },
-            {
-              "name": "main",
-              "kind": "FunctionDef",
-              "line": 95
-            }
-          ]
-        },
-        {
-          "label": "director_class_ai/evidence/ai_act_cli.py",
-          "sha256": "08133ed3c9ab7055569d31abc297e0d537013053f44647960d613a545058ac15",
-          "bytes": 6233,
-          "static_top_level_declarations": [
-            {
-              "name": "AiActEvidenceOptions",
-              "kind": "ClassDef",
-              "line": 47
-            },
-            {
-              "name": "AiActEvidenceResult",
-              "kind": "ClassDef",
-              "line": 74
-            },
-            {
-              "name": "run_ai_act_pack",
-              "kind": "FunctionDef",
-              "line": 84
-            },
-            {
-              "name": "main",
-              "kind": "FunctionDef",
-              "line": 119
-            }
-          ]
-        },
-        {
-          "label": "director_class_ai/sidecar/cli.py",
-          "sha256": "96d9af82bac0d3b953bf482b26be937ae54f3a731e8f233359064bb902c417cc",
-          "bytes": 4597,
-          "static_top_level_declarations": [
-            {
-              "name": "HaltSidecarOptions",
-              "kind": "ClassDef",
-              "line": 33
-            },
-            {
-              "name": "run_sidecar_command",
-              "kind": "FunctionDef",
-              "line": 59
-            },
-            {
-              "name": "main",
-              "kind": "FunctionDef",
-              "line": 71
-            }
-          ]
-        },
-        {
-          "label": "director_class_ai/gateway/mcp_scan_cli.py",
-          "sha256": "d8dde629d38dfd2572ea6e8c3cda063882b79b26a04e6c469851ade47c59d83e",
-          "bytes": 3685,
-          "static_top_level_declarations": [
-            {
-              "name": "main",
-              "kind": "FunctionDef",
-              "line": 80
-            }
-          ]
-        },
-        {
-          "label": "director_class_ai/attest/enforcement_quote_cli.py",
-          "sha256": "0f273fcb99b99a92f51d6b95a7abd895a7df05eca32c4c6b1dfaf1f4dca63c9b",
-          "bytes": 5237,
-          "static_top_level_declarations": [
-            {
-              "name": "main",
-              "kind": "FunctionDef",
-              "line": 140
-            }
-          ]
-        }
-      ],
+      "lookup_state": "Repository contents withheld from the public atlas.",
+      "documents": [],
       "git_marker_present": true,
-      "identity_basis": "Exact id/name directory match or explicit package path; no whole canonical/source acceptance inferred",
-      "declared_package_metadata": {
-        "pyproject.toml": {
-          "name": "director-class-ai",
-          "version": "0.2.0",
-          "description": "Runtime action-control and evidence layer for autonomous AI agents",
-          "requires-python": ">=3.11",
-          "declared_scripts": {
-            "director-class-approve": "director_class_ai.cli.approve:main",
-            "director-class-guard": "director_class_ai.cli.guard:main",
-            "director-class-mcp-gateway": "director_class_ai.gateway.mcp_cli:main",
-            "director-class-policy": "director_class_ai.cli.policy:main",
-            "director-class-siem-export": "director_class_ai.audit.export_cli:main",
-            "director-class-ai-act-evidence": "director_class_ai.evidence.ai_act_cli:main",
-            "director-class-halt-sidecar": "director_class_ai.sidecar.cli:main",
-            "director-class-mcp-scan": "director_class_ai.gateway.mcp_scan_cli:main",
-            "director-class-attest": "director_class_ai.attest.enforcement_quote_cli:main"
-          }
-        },
-        "Cargo.toml": {
-          "name": "director_class_ai_rust",
-          "version": "0.2.0",
-          "description": "Rust command de-obfuscation core for Director-Class AI"
-        }
-      },
+      "identity_basis": "Project identity retained; internal source contents are not published.",
+      "declared_package_metadata": {},
       "boundary_declarations": {},
-      "readme_excerpts": [
-        "The parallel detector ensemble governs three planes at once —",
-        "The action plane is the differentiator. Prompt and content checks are supporting\nsignals that feed effector-bound governance; they are not positioned as a\nstandalone prevention guarantee. Current benchmark evidence is local functional\nevidence, not a public advantage claim.",
-        "Use the onboarding guide for a clean local setup, first guard run, and evidence\nboundary check:"
-      ],
-      "architecture_documents": [
-        {
-          "document": "ARCHITECTURE.md",
-          "sha256": "34f8bddc9182c6d9c2933e2d8d6bf174826a21e4c35d759e93710db17e987d98",
-          "sections": [
-            {
-              "heading": "Architecture",
-              "excerpt": "Director-Class AI supplies runtime action review and decision evidence.\nApplications connect its decisions to their own dispatch boundaries. The\n[README](README.md) describes the supported interfaces and examples.",
-              "excerpt_truncated": false
-            },
-            {
-              "heading": "Source organisation",
-              "excerpt": "| Source area | Responsibility |\n| --- | --- |\n| `director_class_ai/core` | Detector signals, evaluation requests, ensemble scoring and verdicts. |\n| `director_class_ai/action` and `detectors` | Action, content and integrity review signals. |\n| `director_class_ai/policy` | Profiles, capabilities, privilege rules and reviewed policy state. |\n| `director_class_ai/sdk` and `effectors` | Middleware and application-owned execution integration. |\n| `director_class_ai/approvals` | Durable digest-scoped approval records and operator interfaces. |\n| `director_class_ai/audit` and `evidence` | Hash-chain records, evidence packages and export interfaces. |\n| `director_class_ai/gateway` | MCP discovery, call and response review. |\n| `director_class_ai/sidecar` and `attest` | Local halt-state interfaces and software enforcement quotes. |\n| `director_class_ai/cli` | Command-line wrappers for action review, approval and policy operations. |\n| `director_class_ai/telemetry` | Structured service logging and metrics. |\n| `director_class_ai/serving` | Shared HTTP-server and graceful-shutdown primitives. |\n| `director_class_ai/workflows` | Governed execution workflows composed from the action boundary. |\n| `director_class_ai/federation` | Studio capability-manifest interfaces. |\n| `src` | Rust implementation exposed through the optional PyO3 extension. |\n\nThe package root exports its version; public Python interfaces are organised by\nsubpackage. The standard-library control interfaces stay separate from optional\nmodel adapters. The detector extra declares the compatible Director-AI range.",
-              "excerpt_truncated": false
-            },
-            {
-              "heading": "Application boundaries",
-              "excerpt": "The SDK and command guard review actions before optional dispatch. Their\nexamples use explicit executor integration and durable approval and audit paths.\nThe MCP gateway reviews messages without dispatching tools. Local halt state\nbelongs in an operator-owned path.\n\nLinux confinement depends on the native extension and the host's available\nkernel facilities. Software enforcement quotes describe measured software\nstate and signing identity; the documented quote contract is distinct from a\nhardware root of trust. The Rust path retains Python reference behaviour and\nits differential validation boundary.\n\nRead [operations](docs/operations.md), [detectors](docs/detectors.md) and\n[claim boundaries](docs/CLAIM_BOUNDARIES.md) for supported configuration and\nlimitations. [Validation](VALIDATION.md) identifies the verification interfaces;\n[the roadmap](ROADMAP.md) records product qualification work.",
-              "excerpt_truncated": false
-            }
-          ]
-        }
-      ]
+      "readme_excerpts": [],
+      "architecture_documents": []
     },
     {
       "project_id": "DIRECTOR-AI-CLOUD",
-      "lookup_state": "Selected repository documents captured",
-      "documents": [
-        {
-          "label": "README.md",
-          "sha256": "98d7dcb4b149422164762b1cd736daca72f593d5216a2f394926e4b75bed4549",
-          "bytes": 6313
-        },
-        {
-          "label": "ARCHITECTURE.md",
-          "sha256": "ddbf8a0c9ca9477bcb14aae5392b648389c27379880894dbbda2c725aec2acf6",
-          "bytes": 1121
-        },
-        {
-          "label": "docs/ARCHITECTURE.md",
-          "sha256": "29e14b78a657700c37f3af7a4fe132216fb083fc74c8be4809c899a03e2342c6",
-          "bytes": 3057
-        },
-        {
-          "label": "ROADMAP.md",
-          "sha256": "ec576d9d790e184028f8260a727627b4266b5a5abd2877a7dd5cbe6b2415d91b",
-          "bytes": 1510
-        },
-        {
-          "label": "VALIDATION.md",
-          "sha256": "d870fb306c5736a124d5e0542ebc2f8377baf05ab2e0fc1cb65f9c4c22d34ac4",
-          "bytes": 3950
-        },
-        {
-          "label": "pyproject.toml",
-          "sha256": "32669c2a3421d5cbf66cd70a954d17e71eec071e300189f1c243eabae0841636",
-          "bytes": 1958
-        },
-        {
-          "label": "src/director_ai_cloud/__init__.py",
-          "sha256": "06b5fa6f489d4ba966151dde99c39603fdf2fd9409f054624954b2f998a821d1",
-          "bytes": 1197,
-          "static_top_level_declarations": []
-        },
-        {
-          "label": "src/director_ai_cloud/cli.py",
-          "sha256": "0a737489a85837c51403fce1a9c7485ace18a592d463c2c67aaef1c1f0eea1a1",
-          "bytes": 5666,
-          "static_top_level_declarations": [
-            {
-              "name": "main",
-              "kind": "FunctionDef",
-              "line": 142
-            }
-          ]
-        }
-      ],
+      "lookup_state": "Repository contents withheld from the public atlas.",
+      "documents": [],
       "git_marker_present": true,
-      "identity_basis": "Exact id/name directory match or explicit package path; no whole canonical/source acceptance inferred",
-      "declared_package_metadata": {
-        "pyproject.toml": {
-          "name": "director-ai-cloud",
-          "version": "0.1.0",
-          "description": "Managed control plane for the hosted Director-AI API (accounts, keys, usage metering, plan quotas)",
-          "requires-python": ">=3.11",
-          "declared_scripts": {
-            "director-ai-cloud": "director_ai_cloud.cli:main"
-          }
-        }
-      },
+      "identity_basis": "Project identity retained; internal source contents are not published.",
+      "declared_package_metadata": {},
       "boundary_declarations": {},
-      "readme_excerpts": [
-        "The managed control plane for the hosted Director-AI API: accounts, API-key\nlifecycle, usage metering, plan quotas and operator exports. The control-plane\ncore uses the standard library; FastAPI and Director-AI are optional integrations.",
-        "The control-plane core is standard-library only. `gate.fastapi_dependency` wraps\nit for a FastAPI app. The deployment adapter accepts an existing app; its default\nserver constructor requires the separate Director-AI server distribution.",
-        "Pre-beta. Account administration, CLI exports and the FastAPI account route are\nimplemented. Deployment, production billing configuration, atomic quota\nreservation and RPM enforcement remain outside the current service contract.\nSee [operations](docs/operations.md) and [development](docs/development.md)."
-      ],
-      "architecture_documents": [
-        {
-          "document": "ARCHITECTURE.md",
-          "sha256": "ddbf8a0c9ca9477bcb14aae5392b648389c27379880894dbbda2c725aec2acf6",
-          "sections": [
-            {
-              "heading": "Architecture",
-              "excerpt": "Director-AI Cloud manages accounts, API keys, usage and plan decisions in a\nSQLite control-plane database. Its optional FastAPI integration can wrap an\nexisting application. The control-plane package and operator CLI are implemented;\na production hosted service is outside the current contract.\n\n[The architecture guide](docs/ARCHITECTURE.md) describes modules, state,\ninterfaces and dependency boundaries. [The threat model](docs/THREAT_MODEL.md)\nrecords the implemented trust boundaries and unresolved enforcement limits.\n[The repository-boundary decision](docs/adr/0001-repository-boundary.md) explains\nthe separation from the Director-AI scoring runtime.\n\nUse [validation](VALIDATION.md) to reproduce local checks and\n[operations](docs/operations.md) for the actual operator interface.",
-              "excerpt_truncated": false
-            }
-          ]
-        },
-        {
-          "document": "docs/ARCHITECTURE.md",
-          "sha256": "29e14b78a657700c37f3af7a4fe132216fb083fc74c8be4809c899a03e2342c6",
-          "sections": [
-            {
-              "heading": "Control-plane architecture",
-              "excerpt": "Director-AI Cloud owns account/key administration, usage recording and quota\ndecisions. Director-AI owns the scoring runtime. The operator CLI needs only the\nstandard library; the HTTP adapter imports FastAPI and Starlette.",
-              "excerpt_truncated": false
-            },
-            {
-              "heading": "Modules and interfaces",
-              "excerpt": "| Module | State or behaviour |\n|---|---|\n| `_db` | Short-lived SQLite connections with WAL, foreign keys and commit-on-success |\n| `accounts` | `AccountStore` persists accounts and API-key hashes; active accounts and unrevoked keys authenticate |\n| `usage` | `UsageMeter` stores events and aggregates counts/token totals over timestamp windows |\n| `plans` | `PlanRegistry` resolves provisional plans; unknown names fall back to free |\n| `gate` | `ManagedGate.check` authenticates, counts current UTC-month usage, decides a cap and records allowed requests |\n| `cli` | `director-ai-cloud` account/key/plan and usage-export commands |\n| `service` | `add_managed_gate` wraps an existing FastAPI application and adds `/v1/account` |\n\nThe CLI chooses the database from `--db`, `DIRECTOR_MANAGED_DB`, then\n`director_managed.db`. Operator state belongs outside the source checkout;\nsee [operations](operations.md).",
-              "excerpt_truncated": false
-            },
-            {
-              "heading": "State and request flow",
-              "excerpt": "Accounts and key records share a database with usage events. A raw API key is\nreturned once at issuance; the database keeps a SHA-256 digest and a display\nprefix. Authentication updates the key's last-used timestamp.\n\nA managed request supplies a bearer token or `X-API-Key`. The gate returns\n401 for missing/invalid credentials, 429 at the monthly cap, or an allowed\noutcome with quota headers. It records an allowed request before the downstream\napplication runs. The current count/decision/record sequence is not one atomic\nquota reservation.\n\nMiddleware exempts paths beginning with `/v1/health`, `/v1/live`,\n`/v1/ready`, `/docs`, `/openapi` and `/redoc`.\nThe exact `/v1/account` route performs its own authentication and returns usage\nand key metadata without metering the account query.\nThese current prefix rules are part of the integration boundary and need review\nwhen adding protected routes.",
-              "excerpt_truncated": false
-            },
-            {
-              "heading": "Dependencies and exclusions",
-              "excerpt": "`build_managed_app` accepts an existing application. Without one it imports\n`director_ai.server.create_app`, which needs a separate server distribution.\nInstalling the public Director-AI core does not establish that deployment path.\n\nThe current package does not implement production billing, final commercial\nplan limits, atomic quota reservation, RPM enforcement, a hosted console,\nPostgreSQL migration or a deployed service guarantee.\n[The threat model](THREAT_MODEL.md) records boundary risks.\n[ADR 0001](adr/0001-repository-boundary.md) explains repository ownership.",
-              "excerpt_truncated": false
-            }
-          ]
-        }
-      ]
+      "readme_excerpts": [],
+      "architecture_documents": []
     },
     {
       "project_id": "RIGOR-FOUNDRY",
@@ -8350,167 +7871,14 @@
     },
     {
       "project_id": "REMANENTIA-PORTAL",
-      "lookup_state": "Selected repository documents captured",
-      "documents": [
-        {
-          "label": "README.md",
-          "sha256": "882a92418077c5f09e483a62cf14db7378abb527f99ca8eb786158021e7f897c",
-          "bytes": 17934
-        },
-        {
-          "label": "ARCHITECTURE.md",
-          "sha256": "e3363087719fa0408cebe0c5bf4a93ccd37cda0a8712e7d761e99ba21750aee2",
-          "bytes": 3268
-        },
-        {
-          "label": "ROADMAP.md",
-          "sha256": "a2c7dad9c25ebfc0bffd304dca88e85e464a9242dbaa141c1d0620c6fd443061",
-          "bytes": 1921
-        },
-        {
-          "label": "VALIDATION.md",
-          "sha256": "c8a4b763822446c204d9f77c316f05d02620541f2730b4aaa9c5e7c88de6d0d1",
-          "bytes": 4191
-        },
-        {
-          "label": "pyproject.toml",
-          "sha256": "4f8334883011b55bfa5da680ff2158845385f4dcfdf93696d967f1a2e4dd8693",
-          "bytes": 2353
-        },
-        {
-          "label": "src/remanentia_portal/__init__.py",
-          "sha256": "71d39d30a0c1524a7005dd47222abc93d462abe8eecba2d7d1111580abb86869",
-          "bytes": 915,
-          "static_top_level_declarations": []
-        },
-        {
-          "label": "tools/check_documentation.py",
-          "sha256": "95ee6de094f564dca7a81803e894951f917f0b2c98ab9883e05cc80407d31676",
-          "bytes": 9543,
-          "static_top_level_declarations": [
-            {
-              "name": "DocumentationReport",
-              "kind": "ClassDef",
-              "line": 33
-            },
-            {
-              "name": "check_documentation",
-              "kind": "FunctionDef",
-              "line": 52
-            },
-            {
-              "name": "main",
-              "kind": "FunctionDef",
-              "line": 202
-            }
-          ]
-        },
-        {
-          "label": "src/remanentia_portal/serve.py",
-          "sha256": "4d42082c43078fcd3e4d008170c15c171bce5da39276d0a756ac3cb51d6f1d52",
-          "bytes": 1176,
-          "static_top_level_declarations": [
-            {
-              "name": "main",
-              "kind": "FunctionDef",
-              "line": 24
-            }
-          ]
-        },
-        {
-          "label": "src/remanentia_portal/admin_cli.py",
-          "sha256": "b170c01ba3461707a9ff45f35566c7d99d09410fac099b9c413891a4f8e1e19c",
-          "bytes": 4987,
-          "static_top_level_declarations": [
-            {
-              "name": "main",
-              "kind": "FunctionDef",
-              "line": 84
-            }
-          ]
-        },
-        {
-          "label": "src/remanentia_portal/mail_worker.py",
-          "sha256": "554620f0709c7a5c36453fd1b8834641801a3e7b0345e8673b7d30de5ef9ee04",
-          "bytes": 8461,
-          "static_top_level_declarations": [
-            {
-              "name": "MailRetryPolicy",
-              "kind": "ClassDef",
-              "line": 41
-            },
-            {
-              "name": "MailDeliveryAttempt",
-              "kind": "ClassDef",
-              "line": 76
-            },
-            {
-              "name": "MailDrainSummary",
-              "kind": "ClassDef",
-              "line": 84
-            },
-            {
-              "name": "MailDrainWorker",
-              "kind": "ClassDef",
-              "line": 93
-            },
-            {
-              "name": "main",
-              "kind": "FunctionDef",
-              "line": 206
-            }
-          ]
-        }
-      ],
+      "lookup_state": "Repository contents withheld from the public atlas.",
+      "documents": [],
       "git_marker_present": true,
-      "identity_basis": "Exact id/name directory match or explicit package path; no whole canonical/source acceptance inferred",
-      "declared_package_metadata": {
-        "pyproject.toml": {
-          "name": "remanentia-portal",
-          "version": "0.6.0",
-          "description": "Customer portal service for the remanentia.com product family: accounts, licences, billing integration, and transactional mail",
-          "requires-python": ">=3.12",
-          "declared_scripts": {
-            "remanentia-portal": "remanentia_portal.serve:main",
-            "remanentia-portal-admin": "remanentia_portal.admin_cli:main",
-            "remanentia-portal-mail": "remanentia_portal.mail_worker:main"
-          }
-        }
-      },
+      "identity_basis": "Project identity retained; internal source contents are not published.",
+      "declared_package_metadata": {},
       "boundary_declarations": {},
-      "readme_excerpts": [
-        "Customer and commercial control plane for the remanentia.com product\nfamily: REMANENTIA, DIRECTOR-AI, DIRECTOR-CLASS-AI, SYNAPSE CHANNEL, and\nSYNAPSE CHANNEL FLEET. One customer identity carries separate,\nauditable product entitlements; it does not run any customer's memory,\ninference, coordination, or fleet workloads.",
-        "The target origin is `https://www.remanentia.com`: nginx serves the\nexisting presentation pages and proxies `/account/*`, `/api/v1/*`, and\nthe status endpoints to this loopback-only service. Webhouse continues\nto carry mail and the locked private wheel index. The portal does not\nadvertise PyPI as the REMANENTIA installation channel.",
-        "Use [the documentation index](docs/index.md) to find architecture, validation,\ncontribution, support and operator guides. Start with [Getting started](#getting-started)\nfor the locked development environment and [Usage](#usage) for console entries."
-      ],
-      "architecture_documents": [
-        {
-          "document": "ARCHITECTURE.md",
-          "sha256": "e3363087719fa0408cebe0c5bf4a93ccd37cda0a8712e7d761e99ba21750aee2",
-          "sections": [
-            {
-              "heading": "Architecture",
-              "excerpt": "Remanentia Portal is a Python ASGI service for customer accounts, product\nentitlements, billing delivery ingestion and transactional mail. Product\nworkloads remain in their owning services. The browser-facing deployment and\nprivate package index are separate surfaces; see [the deployment runbook](deploy/README.md).",
-              "excerpt_truncated": false
-            },
-            {
-              "heading": "Request and storage boundaries",
-              "excerpt": "[app.py](src/remanentia_portal/app.py) assembles Starlette routes, host checks,\nresponse middleware and application lifespan. [config.py](src/remanentia_portal/config.py)\nvalidates environment settings. The installed `remanentia-portal` entry runs\nuvicorn on loopback by default; the reverse proxy supplies public TLS.\n\n[sqlite_store.py](src/remanentia_portal/sqlite_store.py) opens SQLite storage,\napplies forward migrations and owns the connection for the application\nlifespan. Request handlers share the application database lock. Account,\nsession, entitlement, billing, order and outbox records use the same database;\nexternal mail delivery happens after messages are queued.\n\n| Responsibility | Owning modules |\n| --- | --- |\n| Accounts and password records | `accounts.py`, `passwords.py` |\n| Sessions and login limits | `sessions.py`, `login_guard.py` |\n| Email verification and password recovery | `email_verification.py`, `account_recovery.py` |\n| Authenticator setup and possession proofs | `mfa.py`, `mfa_crypto.py`, `mfa_challenges.py` |\n| Browser and account API | `portal_views.py`, `account_http.py`, `mfa_views.py`, `recovery_views.py` |\n| Product catalogue and access | `product_catalog.py`, `accounts.py` |\n| Billing deliveries and commercial acceptance | `billing_webhook.py`, `order_forms.py` |\n| Transactional delivery | `mail_outbox.py`, `mail_transport.py`, `mail_worker.py` |\n| Operator index credentials and publication | `admin_cli.py`, `index_credentials.py`, `index_publication.py` |",
-              "excerpt_truncated": false
-            },
-            {
-              "heading": "Independent operator actions",
-              "excerpt": "The web process queues mail; the installed `remanentia-portal-mail` worker\nleases and drains it. SMTP requires explicit configuration and a reviewed\nreadiness report. Polar product mappings are operator configuration, not\nbrowser-supplied identifiers. Customer entitlements and licensee-keyed private\nindex credentials are distinct records; index administration does not issue\nsigned product licence files or provide customer downloads.\n\nThe MFA sealing key lives outside SQLite and must accompany a database restore\ncontaining enabled authenticators. The index publisher has its own protected\nenvironment file. Index publication and local credential changes are separate\noperations; publication recovery is described in the runbook.",
-              "excerpt_truncated": false
-            },
-            {
-              "heading": "Native reference",
-              "excerpt": "Run `make docs` to render the actual Python declarations and their source-hash\nmanifest. [Validation](VALIDATION.md) explains the separate checks and their\nscope. [Documentation index](docs/index.md) provides the reading order.",
-              "excerpt_truncated": false
-            }
-          ]
-        }
-      ]
+      "readme_excerpts": [],
+      "architecture_documents": []
     },
     {
       "project_id": "HushLine",
@@ -11073,104 +10441,14 @@
     },
     {
       "project_id": "ANULUM-CORRESPONDENCE",
-      "lookup_state": "Selected repository documents captured",
-      "documents": [
-        {
-          "label": "README.md",
-          "sha256": "bde5d18b37f7b8ea79f7c3e39ff0844bc4a5b1fd303b2caf4428caa8b3d02b35",
-          "bytes": 3539
-        },
-        {
-          "label": "ARCHITECTURE.md",
-          "sha256": "14cc0a5dd43113e0e7a411a559f98c5c5b86bac9b535e2a6fffd186d0090c1ba",
-          "bytes": 2013
-        },
-        {
-          "label": "ROADMAP.md",
-          "sha256": "1e0ac8a8fd19f4c256ecbb96cb45e126b19295d03150f4526c4c1fbdde037c6c",
-          "bytes": 1741
-        },
-        {
-          "label": "VALIDATION.md",
-          "sha256": "55f6f34f0cc55f5068156208f6e7690f34d6bcf2fd7f96eeaa5f46005782ae7f",
-          "bytes": 1671
-        },
-        {
-          "label": "pyproject.toml",
-          "sha256": "39ba3a437cebc31e8fe5ec87adc244659e00c398462dbf62830229d861221ff5",
-          "bytes": 2089
-        },
-        {
-          "label": "src/anulum_correspondence/__init__.py",
-          "sha256": "16a5e8b7e6d8cfd4c78d38c8c7a9735af39abd750950002351c80b06a2c7a5ea",
-          "bytes": 847,
-          "static_top_level_declarations": []
-        },
-        {
-          "label": "src/anulum_correspondence/cli.py",
-          "sha256": "8e4bf7d3eee2e93ba9d5956ebfaf5a6ba8f049ef936a5bb8c47813f88015fb58",
-          "bytes": 3299,
-          "static_top_level_declarations": [
-            {
-              "name": "build_parser",
-              "kind": "FunctionDef",
-              "line": 24
-            },
-            {
-              "name": "main",
-              "kind": "FunctionDef",
-              "line": 41
-            }
-          ]
-        }
-      ],
+      "lookup_state": "Repository contents withheld from the public atlas.",
+      "documents": [],
       "git_marker_present": true,
-      "identity_basis": "Exact id/name directory match or explicit package path; no whole canonical/source acceptance inferred",
-      "declared_package_metadata": {
-        "pyproject.toml": {
-          "name": "anulum-correspondence",
-          "version": "0.1.0",
-          "description": "Fail-closed, read-only correspondence intake and local draft control plane.",
-          "requires-python": ">=3.12",
-          "declared_scripts": {
-            "anulum-correspondence": "anulum_correspondence.cli:main"
-          }
-        }
-      },
+      "identity_basis": "Project identity retained; internal source contents are not published.",
+      "declared_package_metadata": {},
       "boundary_declarations": {},
-      "readme_excerpts": [
-        "ANULUM Correspondence is a fail-closed control plane for mailbox intake and\nhuman-approved response preparation. The current Mail-0 slice can validate\nmailbox manifests, enforce a read-only IMAP operation policy, retrieve selected\nheaders through `BODY.PEEK`, pseudonymise retained metadata, and write local\nunsent drafts.",
-        "It cannot send mail, auto-reply, fetch message bodies, change flags, move or\ndelete messages, persist credentials, or synchronise continuously. OpenBao\n2.5.4 and its Samsung-local service definition are installed, but the service\nis disabled, inactive and not initialised. No credential has been provisioned.",
-        "Run module-specific tests rather than the whole local test tree:"
-      ],
-      "architecture_documents": [
-        {
-          "document": "ARCHITECTURE.md",
-          "sha256": "14cc0a5dd43113e0e7a411a559f98c5c5b86bac9b535e2a6fffd186d0090c1ba",
-          "sections": [
-            {
-              "heading": "Architecture",
-              "excerpt": "ANULUM Correspondence separates secrets, mailbox intake and draft preparation.\nMail-0 is intentionally read-only and has no transmission surface.\n\n```text\nsecret-free manifest\n       |\n       v\nlocal OpenBao reference resolver ----> credential in process memory only\n       |\n       v\nread-only IMAP (`EXAMINE`, `BODY.PEEK`)\n       |\n       v\npseudonymised selected metadata -----> Samsung runtime tree\n       |\n       v\nowner-only local unsent drafts ------> no SMTP or send command\n```",
-              "excerpt_truncated": false
-            },
-            {
-              "heading": "Components",
-              "excerpt": "- `config.py` validates secret-free mailbox manifests and rejects unknown\n  fields.\n- `openbao.py` resolves bounded KV v2 responses from numeric loopback only.\n- `imap_readonly.py` exposes a closed read-only IMAP surface.\n- `redaction.py` pseudonymises retained identifiers.\n- `draft_sink.py` creates exclusive owner-only unsent draft files.\n- `policy.py` defines the denied and allowed operation boundary.",
-              "excerpt_truncated": false
-            },
-            {
-              "heading": "Durable boundaries",
-              "excerpt": "OpenBao stores credentials and cryptographic keys. The correspondence runtime\nstores pseudonymised metadata, local unsent drafts and its own action journal.\nThe two runtime trees remain separate under `[private reference withheld]\n\nSee the detailed\n[Samsung-local OpenBao architecture](docs/architecture/openbao_samsung.md),\n[threat model](docs/threat_model.md) and\n[deployment boundary](deploy/openbao/README.md).",
-              "excerpt_truncated": false
-            },
-            {
-              "heading": "Phase boundary",
-              "excerpt": "Persistent sync, body or attachment retrieval, mailbox mutation, approval\nworkflow, SMTP, auto-reply and marketing publication are not hidden features.\nThey are unimplemented phase changes requiring separate architecture, review\nand owner approval.",
-              "excerpt_truncated": false
-            }
-          ]
-        }
-      ]
+      "readme_excerpts": [],
+      "architecture_documents": []
     },
     {
       "project_id": "Company / challenges/",
@@ -11799,5 +11077,6 @@
       "readme_excerpts": [],
       "architecture_documents": []
     }
-  ]
+  ],
+  "public_projection_updated_at_utc": "2026-10-20T20:41:21.996854+00:00"
 }

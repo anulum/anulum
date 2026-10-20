@@ -38288,31 +38288,26 @@
       "owning_groups": [
         "ANULUM-COMPANY-OPERATIONS"
       ],
-      "function": "Read-only mailbox intake, pseudonymised metadata and local human-approved draft preparation.",
+      "function": "Internal repository. Contents are not published.",
       "kind": "service",
-      "phase": "Implemented surfaces and continued integration",
+      "phase": "Internal development; implementation details withheld.",
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
       "as_of": "2026-10-13",
       "url": null,
-      "boundary": "",
-      "sources": [
-        "https://anulum.li/"
-      ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "boundary": "Repository identity is shown in the ecosystem architecture; repository contents are strictly internal.",
+      "sources": [],
+      "source_note": "Repository contents withheld under the owner’s publication restriction.",
       "dossier": {
-        "review_state": "Architect-authored details requested",
-        "purpose": "Read-only mailbox intake, pseudonymised metadata and local human-approved draft preparation.",
+        "review_state": "Internal source contents withheld.",
         "current_surfaces": [],
         "expected_outputs": [],
         "inputs": [],
         "outputs": [],
         "acceptance": [],
         "partner_needs": [],
-        "open_fields": [
-          "Detailed output specifications and interface acceptance are being consolidated by the owning group."
-        ]
+        "open_fields": []
       }
     },
     {
