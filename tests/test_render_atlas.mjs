@@ -244,14 +244,6 @@ test("the public generator refuses withheld repository contents before deriving 
       original: staticSource,
       corrupted: altered,
     });
-    for (const replacement of ['aria-label="unapproved contents"', ""]) {
-      const corrupted = staticSource.replace(
-        /(<g\b(?=[^>]*data-id="QPU-RESULT-PACK")[^>]*?)aria-label="[^"]*"/,
-        "$1" + replacement,
-      );
-      assert.notEqual(corrupted, staticSource);
-      faults.push({ file: staticFile, original: staticSource, corrupted });
-    }
     const entry = await readFile(join(directory, "index.html"), "utf8");
     const manifest = await readFile(
       join(directory, "atlas-manifest.json"),
@@ -274,6 +266,51 @@ test("the public generator refuses withheld repository contents before deriving 
         manifest,
       );
       await writeFile(path, fault.original);
+    }
+    for (const [
+      pattern,
+      replacement,
+      message,
+    ] of /** @type {[RegExp,string,RegExp][]} */ ([
+      [
+        /(<g\b(?=[^>]*data-id="QPU-RESULT-PACK")[^>]*?)aria-label="[^"]*"/,
+        '$1aria-label="unapproved contents"',
+        /Accessible label does not match the approved publication label/,
+      ],
+      [
+        /(<g\b(?=[^>]*data-id="QPU-RESULT-PACK")[^>]*?)aria-label="[^"]*"/,
+        "$1",
+        /Accessible label does not match the approved publication label/,
+      ],
+      [
+        /(<g\b(?=[^>]*data-id="QPU-RESULT-PACK")[^>]*?)aria-describedby="[^"]*"/,
+        '$1aria-describedby="absent-purpose"',
+        /Accessible description does not match the approved project purpose/,
+      ],
+      [
+        /(<g\b(?=[^>]*data-id="QPU-RESULT-PACK")[^>]*?)aria-describedby="[^"]*"/,
+        "$1",
+        /Accessible description does not match the approved project purpose/,
+      ],
+      [
+        /(<g\b(?=[^>]*data-id="QPU-RESULT-PACK")[^>]*>[\s\S]*?<title)\s+id="[^"]*"/,
+        "$1",
+        /Accessible description does not match the approved project purpose/,
+      ],
+    ])) {
+      const corrupted = staticSource.replace(pattern, replacement);
+      assert.notEqual(corrupted, staticSource);
+      await writeFile(join(directory, staticFile), corrupted);
+      await assert.rejects(renderAtlas(directory, { write: true }), message);
+      assert.equal(
+        await readFile(join(directory, "index.html"), "utf8"),
+        entry,
+      );
+      assert.equal(
+        await readFile(join(directory, "atlas-manifest.json"), "utf8"),
+        manifest,
+      );
+      await writeFile(join(directory, staticFile), staticSource);
     }
     const publicDrawing = await readFile(
       join(directory, "F4_funding_blocks_outcomes_v0.4.svg"),

@@ -116,8 +116,8 @@ observations, independent of resource and budget data.
 | ---------------------------------------- | ------------------------------------------------------------------ | ---------------------: |
 | Profile images across all five languages | Four generated header/map SVGs, 91 badge SVGs and the footer image |                621,868 |
 | Dated catalogue provenance               | `assets/catalogue-source.json`, plus its ownership sidecar         | 114,267 before sidecar |
-| Interactive site snapshot                | 77 manifest-listed assets                                          |             32,202,820 |
-| Main interactive entry page              | `index.html`, including its eight embedded datasets                |             10,197,274 |
+| Interactive site snapshot                | 77 manifest-listed assets                                          |             33,029,740 |
+| Main interactive entry page              | `index.html`, including its eight embedded datasets                |             10,197,562 |
 
 The HTML, JavaScript modules, source-document JSON, illustrations and figure
 downloads belong to the separately hosted explorer. The full snapshot repeats

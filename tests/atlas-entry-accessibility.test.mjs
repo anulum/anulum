@@ -11,6 +11,7 @@ import assert from "node:assert/strict";
 import { writeFile, mkdir } from "node:fs/promises";
 import AxeBuilder from "@axe-core/playwright";
 import { withAtlasPage, baseUrl, navigate } from "./atlas-runtime.mjs";
+import { atlas } from "./atlas-data.mjs";
 
 /** Entry accessibility contract: each complete static reader supports desktop and phone accessibility checks and prepared reservation metadata. */
 test(
@@ -34,6 +35,43 @@ test(
               .getAttribute("content"),
             "1",
           );
+          if (name === "atlas_full.html") {
+            const descriptions = await page
+              .locator(".node")
+              .evaluateAll((cards) =>
+                cards.map((card) => ({
+                  project: card.getAttribute("data-id"),
+                  describedBy: card.getAttribute("aria-describedby"),
+                  titleId: /** @type {Element} */ (card.querySelector("title"))
+                    .id,
+                  purpose: /** @type {Element} */ (card.querySelector("title"))
+                    .textContent,
+                })),
+              );
+            assert.equal(descriptions.length, atlas.nodes.length);
+            assert.equal(
+              new Set(descriptions.map((row) => row.titleId)).size,
+              atlas.nodes.length,
+            );
+            for (const node of atlas.nodes) {
+              const description = descriptions.find(
+                (row) => row.project === node.id,
+              );
+              assert.ok(description);
+              assert.ok(description.purpose);
+              assert.ok(description.describedBy);
+              assert.match(
+                description.describedBy,
+                /^atlas-purpose-[a-f0-9]{16}$/,
+              );
+              assert.equal(description.describedBy, description.titleId);
+              assert.ok(
+                description.purpose
+                  .replace(/\s+/g, " ")
+                  .includes(node.function.replace(/\s+/g, " ")),
+              );
+            }
+          }
           const result = await new AxeBuilder({ page }).analyze();
           await mkdir("coverage/accessibility", { recursive: true });
           await writeFile(

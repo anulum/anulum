@@ -48,6 +48,7 @@ class AtlasSyncTests(unittest.TestCase):
         """Refuse every outward carrier with public donor content and preserve the real export."""
         policy = json.loads((ATLAS.parents[1] / "tools/atlas_publication_policy.json").read_bytes())
         cases: list[tuple[str, bytes]] = []
+        errors: dict[bytes, str] = {}
         library_name = "document_library_candidate.json"
         for owner in ["QPU-RESULT-PACK", "SC-NC-CORE"]:
             data = json.loads((ATLAS / library_name).read_bytes())
@@ -131,6 +132,18 @@ class AtlasSyncTests(unittest.TestCase):
             changed = re.sub(label_pattern, r"\g<1>" + replacement, static, count=1)
             self.assertNotEqual(changed, static)
             cases.append(("atlas_full.html", changed.encode()))
+            errors[changed.encode()] = "Accessible label does not match the approved publication label"
+        description_pattern = r'(<g\b(?=[^>]*data-id="QPU-RESULT-PACK")[^>]*?)aria-describedby="[^"]*"'
+        missing_title_id = r'(<g\b(?=[^>]*data-id="QPU-RESULT-PACK")[^>]*>[\s\S]*?<title)\s+id="[^"]*"'
+        for pattern, replacement in [
+            (description_pattern, 'aria-describedby="absent-purpose"'),
+            (description_pattern, ""),
+            (missing_title_id, ""),
+        ]:
+            changed = re.sub(pattern, r"\g<1>" + replacement, static, count=1)
+            self.assertNotEqual(changed, static)
+            cases.append(("atlas_full.html", changed.encode()))
+            errors[changed.encode()] = "Accessible description does not match the approved project purpose"
         with tempfile.TemporaryDirectory(prefix="atlas-publication-") as directory:
             source = Path(directory) / "source"
             selected = source / "atlas-manifest.json"
@@ -149,7 +162,9 @@ class AtlasSyncTests(unittest.TestCase):
                     selected.write_text(json.dumps(current))
                     destination = Path(directory) / "refused"
                     try:
-                        with self.assertRaisesRegex(ValueError, "Repository-internal contents are not publishable"):
+                        with self.assertRaisesRegex(
+                            ValueError, errors.get(content, "Repository-internal contents are not publishable")
+                        ):
                             sync_atlas.sync(
                                 source, selected, hashlib.sha256(selected.read_bytes()).hexdigest(), destination
                             )

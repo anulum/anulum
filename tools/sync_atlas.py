@@ -174,7 +174,7 @@ def _publication(members: dict[str, bytes]) -> None:
             if title is None or " ".join(title[1].split()) != " ".join(expected.split()):
                 raise ValueError("Repository-internal contents are not publishable.")
             phase = (
-                "architecture stage; no model"
+                "architecture stage: a reviewed boundary and validation tooling, no model"
                 if approved_node.get("repository_record")
                 else "Contents are not published."
             )
@@ -183,7 +183,11 @@ def _publication(members: dict[str, bytes]) -> None:
             )
             label = re.search(r'\baria-label="([^"]*)"', card[0])
             if label is None or label[1] != expected_label:
-                raise ValueError("Repository-internal contents are not publishable.")
+                raise ValueError("Accessible label does not match the approved publication label.")
+            description_id = "atlas-purpose-" + hashlib.sha256(str(approved_node["id"]).encode()).hexdigest()[:16]
+            description = re.search(r'\baria-describedby="([^"]*)"', card[0])
+            if description is None or description[1] != description_id or f'id="{description_id}"' not in title[0]:
+                raise ValueError("Accessible description does not match the approved project purpose.")
 
 
 def _content(members: dict[str, bytes]) -> None:

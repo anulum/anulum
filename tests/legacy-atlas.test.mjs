@@ -283,6 +283,9 @@ test(
       trackLabel = "",
       referenceTitle = "",
       referenceUrl = "",
+      configurationProject = "",
+      configurationState = "",
+      configurationNames = /** @type {string[]} */ ([]),
       candidateProject = "",
       candidateLabel = "",
       relationProject = "";
@@ -293,6 +296,18 @@ test(
             .filter((row) => row.documents.length)
             .map((row) => row.project_id),
         );
+        const configured = atlas.nodes.find(
+          (row) =>
+            publicOwners.has(row.id) &&
+            row.dossier?.configurations?.length &&
+            row.dossier.evidence_state,
+        );
+        assert.ok(configured?.dossier?.configurations);
+        assert.ok(configured.dossier.evidence_state);
+        configurationProject = configured.id;
+        configurationState = configured.dossier.evidence_state;
+        configurationNames = [...configured.dossier.configurations];
+        configured.dossier.configuration_state = configurationState;
         zeroGroup = atlas.groups[0].id;
         atlas.groups[0].x = 0;
         absentGeometry = atlas.groups[1].id;
@@ -402,6 +417,26 @@ test(
               await page.locator('#detail a[href^="javascript:"]').count(),
               0,
             );
+            await navigate(
+              page,
+              servedBase +
+                "atlas_full.html#project=" +
+                encodeURIComponent(configurationProject),
+            );
+            const configuredDetail = page.locator("#detail");
+            await configuredDetail
+              .getByText(configurationState, { exact: true })
+              .waitFor();
+            assert.equal(
+              await configuredDetail
+                .getByText(configurationState, { exact: true })
+                .count(),
+              1,
+            );
+            for (const configuration of configurationNames)
+              assert.ok(
+                (await configuredDetail.innerText()).includes(configuration),
+              );
             await navigate(
               page,
               servedBase +

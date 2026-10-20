@@ -103,7 +103,10 @@ test(
       label = "",
       referenceTitle = "",
       referenceUrl = "",
-      referenceRevision = "";
+      referenceRevision = "",
+      configurationProject = "",
+      configurationState = "",
+      configurationNames = /** @type {string[]} */ ([]);
     await withAtlasSourceVariant(
       ({ atlas, library, technical }) => {
         const publicOwners = new Set(
@@ -111,6 +114,18 @@ test(
             .filter((row) => row.documents.length)
             .map((row) => row.project_id),
         );
+        const configured = atlas.nodes.find(
+          (row) =>
+            publicOwners.has(row.id) &&
+            row.dossier?.configurations?.length &&
+            row.dossier.evidence_state,
+        );
+        assert.ok(configured?.dossier?.configurations);
+        assert.ok(configured.dossier.evidence_state);
+        configurationProject = configured.id;
+        configurationState = configured.dossier.evidence_state;
+        configurationNames = [...configured.dossier.configurations];
+        configured.dossier.configuration_state = configurationState;
         const absent = atlas.nodes.find((row) => publicOwners.has(row.id));
         assert.ok(absent);
         missing = absent.id;
@@ -207,6 +222,23 @@ test(
               await page.locator('#content a[href^="javascript:"]').count(),
               0,
             );
+            await openRoute(page, {
+              project: configurationProject,
+              tab: "outputs",
+            });
+            assert.equal(
+              await page
+                .locator("#content p.caption")
+                .filter({ hasText: new RegExp("^" + configurationState + "$") })
+                .count(),
+              1,
+            );
+            for (const configuration of configurationNames)
+              assert.ok(
+                (await page.locator("#content").innerText()).includes(
+                  configuration,
+                ),
+              );
           },
           { servedBase },
         );

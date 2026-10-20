@@ -200,7 +200,7 @@ export async function renderAtlas(directory, { write = false } = {}) {
         node.work_status +
         " · " +
         (node.repository_record
-          ? "architecture stage; no model"
+          ? "architecture stage: a reviewed boundary and validation tooling, no model"
           : "Contents are not published.") +
         " Licence: " +
         node.licence
@@ -212,7 +212,19 @@ export async function renderAtlas(directory, { write = false } = {}) {
         .replaceAll("'", "&#x27;");
       const label = card[0].match(/\baria-label="([^"]*)"/);
       if (!label || label[1] !== expectedLabel)
-        throw new Error("Repository-internal contents are not publishable.");
+        throw new Error(
+          "Accessible label does not match the approved publication label.",
+        );
+      const descriptionId = "atlas-purpose-" + digest(node.id).slice(0, 16);
+      const description = card[0].match(/\baria-describedby="([^"]*)"/);
+      if (
+        !description ||
+        description[1] !== descriptionId ||
+        !title[0].includes('id="' + descriptionId + '"')
+      )
+        throw new Error(
+          "Accessible description does not match the approved project purpose.",
+        );
     }
   }
   const javascript = names.filter((name) => name.endsWith(".js"));
