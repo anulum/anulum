@@ -226,14 +226,15 @@ const projectCard = (n) => {
   return card;
 };
 /**
- * Index the supplied purpose, outputs, partner and resource terms as plain text.
+ * Index the supplied name, purpose, outputs, partner and resource terms as plain text.
  * @param {import('../../types/atlas.js').AtlasNode} n - Source entry.
- * @returns {string} Case-normalised supplied purpose, outputs and resource terms.
+ * @returns {string} Case-normalised supplied name, purpose, outputs and resource terms.
  */
 const searchText = (n) => {
   const d = n.dossier || {};
   return JSON.stringify([
     n.id,
+    n.name,
     n.function,
     n.kind,
     d.purpose,

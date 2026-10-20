@@ -11,12 +11,55 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
+import { atlas } from "./atlas-data.mjs";
 import {
   withAtlasPage,
   openRoute,
   navigate,
   withAtlasArtifact,
 } from "./atlas-runtime.mjs";
+
+test(
+  "displayed source names and exact identities find the same entry in main search and map",
+  { timeout: 120000 },
+  async () => {
+    const node = atlas.nodes.find(
+      (row) => row.id === "funding:sprind-ai-native-chip-design-2026",
+    );
+    assert.ok(node);
+    await withAtlasPage(async (page) => {
+      for (const view of ["search", "map"]) {
+        await openRoute(page, { view });
+        const input = page.locator(
+          view === "search" ? "#reader-search" : "#map-project-search",
+        );
+        const results = page.locator(
+          view === "search" ? ".project-card" : ".map-search-result",
+        );
+        for (const query of [node.id, node.name]) {
+          await input.fill(query);
+          assert.equal(await results.count(), 1, view + ": " + query);
+          /** @type {import("playwright").Locator} */
+          const link =
+            view === "search"
+              ? results.getByRole("link", { name: node.name, exact: true })
+              : results;
+          /** @type {string | null} */
+          const address = await link.getAttribute("href");
+          assert.ok(address);
+          const params = new URLSearchParams(address.split("#")[1]);
+          assert.equal(
+            params.get(view === "search" ? "project" : "focus"),
+            node.id,
+          );
+          assert.ok((await results.innerText()).includes(node.name));
+        }
+        await input.fill("NO_SOURCE_MATCH_7a2b86c1");
+        assert.equal(await results.count(), 0);
+      }
+    });
+  },
+);
 
 test(
   "broken cross-source ownership fails explicitly in the real reader",
