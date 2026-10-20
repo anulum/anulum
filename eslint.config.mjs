@@ -8,6 +8,7 @@
 
 import js from "@eslint/js";
 import jsdoc from "eslint-plugin-jsdoc";
+import noUnsanitized from "eslint-plugin-no-unsanitized";
 
 /** Browser globals used by the static reader; Node globals are confined to tests. */
 const browser = Object.fromEntries(
@@ -41,13 +42,22 @@ export default [
   js.configs.recommended,
   jsdoc.configs["flat/recommended-typescript-flavor-error"],
   {
+    files: ["docs/atlas/*.js", "tests/*.mjs", "tools/*.mjs", "*.config.mjs"],
+    plugins: { "no-unsanitized": noUnsanitized },
+    rules: {
+      "no-unsanitized/method": "error",
+      "no-unsanitized/property": "error",
+      "no-eval": "error",
+      "no-new-func": "error",
+      "no-implied-eval": "error",
+      "no-script-url": "error",
+    },
+  },
+  {
     files: ["docs/atlas/*.js"],
     languageOptions: { globals: browser },
     rules: {
       eqeqeq: ["error", "always"],
-      "no-eval": "error",
-      "no-new-func": "error",
-      "no-implied-eval": "error",
       "no-throw-literal": "error",
       "prefer-const": "error",
       "jsdoc/require-description": "error",

@@ -309,6 +309,7 @@ test(
         tracked.dossier.programme_tracks = [
           { name: trackLabel, scope: tracked.function },
         ];
+        // eslint-disable-next-line no-script-url -- Inert hostile source data must be refused by the real reference renderer.
         tracked.dossier.references[0].url = "javascript:alert(1)";
         tracked.owning_groups.push("absent-source-owner");
         const candidate = atlas.nodes.find(
