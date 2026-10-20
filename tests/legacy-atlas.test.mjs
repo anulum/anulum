@@ -8,8 +8,16 @@
 
 import test from "node:test";
 import assert from "node:assert/strict";
-import { withAtlasPage, baseUrl, navigate } from "./atlas-runtime.mjs";
+import { readFile, writeFile } from "node:fs/promises";
+import { join } from "node:path";
+import {
+  withAtlasPage,
+  baseUrl,
+  navigate,
+  withAtlasArtifact,
+} from "./atlas-runtime.mjs";
 import { atlas } from "./atlas-data.mjs";
+import { withAtlasSourceVariant } from "./atlas-source-variant.mjs";
 
 test(
   "the complete technical atlas retains every source detail and its native controls",
@@ -125,5 +133,310 @@ test(
         retainedSelection,
       );
     });
+  },
+);
+
+test(
+  "legacy SVG identity faults and native touch cancellation cannot corrupt the selection or camera",
+  { timeout: 120000 },
+  async () => {
+    let damagedIdentity = "";
+    await withAtlasArtifact(
+      async (directory) => {
+        const path = join(directory, "atlas_full.html"),
+          html = await readFile(path, "utf8"),
+          identity = html.match(/class="node"\s+data-id="([^"]+)"/),
+          changed = html.replace(
+            /(class="node"\s+)data-id="[^"]+"/,
+            '$1data-id=""',
+          );
+        assert.notEqual(changed, html);
+        assert.ok(identity);
+        damagedIdentity = identity[1];
+        await writeFile(path, changed);
+      },
+      async (servedBase) => {
+        await withAtlasPage(
+          async (page) => {
+            await navigate(
+              page,
+              servedBase +
+                "atlas_full.html#project=" +
+                encodeURIComponent(damagedIdentity),
+            );
+            const before = await page.locator("#detail").textContent(),
+              malformed = page.locator('.node[data-id=""]');
+            await malformed.focus();
+            await page.keyboard.press("Enter");
+            await page.keyboard.press("Space");
+            await malformed.click();
+            await malformed.dispatchEvent("click", {
+              bubbles: true,
+              cancelable: true,
+            });
+            assert.equal(await page.locator("#detail").textContent(), before);
+            assert.equal(await page.locator(".node.selected").count(), 0);
+            const known = atlas.nodes.find((row) => row.id !== damagedIdentity);
+            assert.ok(known);
+            await navigate(
+              page,
+              servedBase +
+                "atlas_full.html#project=" +
+                encodeURIComponent(known.id),
+            );
+            const node = page.locator('.node[data-id="' + known.id + '"]');
+            await node.click();
+            assert.equal(
+              await page.locator(".node.selected").getAttribute("data-id"),
+              known.id,
+            );
+            const svg = page.locator("#atlas-svg"),
+              view = await svg.getAttribute("viewBox"),
+              box = await node.boundingBox();
+            assert.ok(box);
+            const x = box.x + box.width / 2,
+              y = box.y + box.height / 2;
+            await page.mouse.move(x, y);
+            await page.mouse.down();
+            const protocol = await page.context().newCDPSession(page);
+            await protocol.send("Emulation.setTouchEmulationEnabled", {
+              enabled: true,
+              maxTouchPoints: 1,
+            });
+            await protocol.send("Input.dispatchTouchEvent", {
+              type: "touchStart",
+              touchPoints: [{ x, y }],
+            });
+            await protocol.send("Input.dispatchTouchEvent", {
+              type: "touchCancel",
+              touchPoints: [],
+            });
+            await protocol.send("Emulation.setTouchEmulationEnabled", {
+              enabled: false,
+            });
+            await protocol.detach();
+            await page.mouse.up();
+            await page.mouse.move(x + 30, y + 30);
+            assert.equal(await svg.getAttribute("viewBox"), view);
+            assert.equal(
+              await page.locator("#detail h2").textContent(),
+              known.name,
+            );
+          },
+          { servedBase },
+        );
+      },
+    );
+  },
+);
+
+test(
+  "public DOM activation (click event) respects SVG identities and panning; this is not AT proof",
+  { timeout: 120000 },
+  async () => {
+    await withAtlasPage(async (page) => {
+      await navigate(page, baseUrl + "atlas_full.html");
+      const source = atlas.nodes[0],
+        other = atlas.nodes[1],
+        first = page.locator('.node[data-id="' + source.id + '"]'),
+        second = page.locator('.node[data-id="' + other.id + '"]');
+      await first.dispatchEvent("click", { bubbles: true, cancelable: true });
+      assert.equal(await page.locator("#detail h2").textContent(), source.name);
+      assert.equal(
+        await page.locator(".node.selected").getAttribute("data-id"),
+        source.id,
+      );
+      await first.hover();
+      const box = await first.boundingBox();
+      assert.ok(box);
+      const x = box.x + box.width / 2,
+        y = box.y + box.height / 2;
+      await page.mouse.down();
+      await page.mouse.move(x + 30, y + 25);
+      await second.dispatchEvent("click", { bubbles: true, cancelable: true });
+      assert.equal(await page.locator("#detail h2").textContent(), source.name);
+      await page.mouse.up();
+      await page.evaluate(function legacyActivationFrame() {
+        return new Promise((resolve) => requestAnimationFrame(resolve));
+      });
+      await second.dispatchEvent("click", { bubbles: true, cancelable: true });
+      assert.equal(await page.locator("#detail h2").textContent(), other.name);
+      assert.equal(
+        await page.locator(".node.selected").getAttribute("data-id"),
+        other.id,
+      );
+    });
+  },
+);
+
+test(
+  "zero-position groups and incomplete legacy sources retain native navigation and text safety",
+  { timeout: 120000 },
+  async () => {
+    let zeroGroup = "",
+      absentGeometry = "",
+      orphan = "",
+      sparse = "",
+      sparseName = "",
+      trackProject = "",
+      trackName = "",
+      trackLabel = "",
+      candidateProject = "",
+      candidateLabel = "",
+      relationProject = "";
+    await withAtlasSourceVariant(
+      ({ atlas }) => {
+        zeroGroup = atlas.groups[0].id;
+        atlas.groups[0].x = 0;
+        absentGeometry = atlas.groups[1].id;
+        Reflect.deleteProperty(atlas.groups[1], "x");
+        const removed = atlas.nodes.pop();
+        assert.ok(removed);
+        orphan = removed.id;
+        const node = atlas.nodes[0];
+        sparse = node.id;
+        sparseName = node.name;
+        Reflect.deleteProperty(node, "dossier");
+        const tracked = atlas.nodes.find(
+          (row) => row.dossier?.references?.length,
+        );
+        assert.ok(tracked);
+        assert.ok(tracked.dossier);
+        assert.ok(tracked.dossier.references);
+        trackProject = tracked.id;
+        trackName = tracked.name;
+        trackLabel = '<img src=x onerror="window.atlasInjected=true">';
+        tracked.dossier.programme_tracks = [
+          { name: trackLabel, scope: tracked.function },
+        ];
+        tracked.dossier.references[0].url = "javascript:alert(1)";
+        tracked.owning_groups.push("absent-source-owner");
+        const candidate = atlas.nodes.find(
+          (row) => row.resource_candidates?.length,
+        );
+        assert.ok(candidate);
+        assert.ok(candidate.resource_candidates);
+        candidateProject = candidate.id;
+        const acquisition = candidate.resource_candidates[0];
+        acquisition.author = "";
+        candidateLabel = acquisition.item + " · " + acquisition.maker;
+        const edge = atlas.edges.find((row) => row.to !== orphan);
+        assert.ok(edge);
+        edge.from = "absent-source-position";
+        edge.kind = "planned interface";
+        relationProject = edge.to;
+      },
+      async (servedBase) => {
+        await withAtlasPage(
+          async (page) => {
+            await navigate(page, servedBase + "atlas_full.html");
+            const originalDetail = await page.locator("#detail").textContent();
+            await page.locator("#show-proposals").check();
+            await page.locator("#show-proposals").uncheck();
+            await page.locator("#edge-mode").selectOption("all");
+            await page.locator('.node[data-id="' + orphan + '"]').focus();
+            await page.keyboard.press("Enter");
+            assert.equal(
+              await page.locator("#detail").textContent(),
+              originalDetail,
+            );
+            await page.locator("#search").fill(sparseName);
+            await page.locator("#results button").first().click();
+            assert.equal(
+              await page.locator("#detail h2").textContent(),
+              sparseName,
+            );
+            await page.locator("#search").fill("NO_MATCH_7a2b86c1");
+            await navigate(
+              page,
+              servedBase +
+                "atlas_full.html#project=" +
+                encodeURIComponent(trackProject),
+            );
+            await page
+              .locator("#detail h2")
+              .filter({ hasText: trackName })
+              .waitFor();
+            assert.equal(await page.locator("#search").inputValue(), "");
+            const trackedText = await page.locator("#detail").textContent();
+            assert.ok(trackedText);
+            assert.ok(trackedText.includes(trackLabel));
+            assert.ok(trackedText.includes("absent-source-owner"));
+            assert.equal(await page.locator('#detail img[src="x"]').count(), 0);
+            assert.equal(
+              await page.locator('#detail a[href^="javascript:"]').count(),
+              0,
+            );
+            await navigate(
+              page,
+              servedBase +
+                "atlas_full.html#project=" +
+                encodeURIComponent(candidateProject),
+            );
+            await page
+              .locator("#detail summary")
+              .filter({ hasText: candidateLabel })
+              .first()
+              .click();
+            assert.ok(
+              (await page.locator("#detail").innerText()).includes(
+                "Owning group; independent primary-page check by CEO seat",
+              ),
+            );
+            await navigate(
+              page,
+              servedBase +
+                "atlas_full.html#project=" +
+                encodeURIComponent(relationProject),
+            );
+            const relationText = await page.locator("#detail").textContent();
+            assert.ok(relationText);
+            assert.ok(relationText.includes("Interface in progress"));
+            await navigate(
+              page,
+              servedBase +
+                "atlas_full.html#group=" +
+                encodeURIComponent(zeroGroup),
+            );
+            assert.equal(
+              await page.locator("#group-filter").inputValue(),
+              zeroGroup,
+            );
+            const viewBox = await page
+              .locator("#atlas-svg")
+              .getAttribute("viewBox");
+            assert.ok(viewBox);
+            assert.ok(!viewBox.includes("NaN"));
+            assert.equal(
+              await page
+                .locator('#group-filter option[value="' + absentGeometry + '"]')
+                .count(),
+              0,
+            );
+            await navigate(
+              page,
+              servedBase +
+                "atlas_full.html#group=" +
+                encodeURIComponent(absentGeometry),
+            );
+            assert.equal(
+              await page.locator("#group-filter").inputValue(),
+              zeroGroup,
+            );
+            await navigate(
+              page,
+              servedBase +
+                "atlas_full.html#project=" +
+                encodeURIComponent(sparse),
+            );
+            assert.equal(
+              await page.locator("#detail h2").textContent(),
+              sparseName,
+            );
+          },
+          { servedBase },
+        );
+      },
+    );
   },
 );

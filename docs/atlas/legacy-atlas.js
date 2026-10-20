@@ -597,7 +597,7 @@ function refresh() {
   } else results.classList.add("hidden");
 }
 for (const g of data.groups) {
-  if (!g.x) continue;
+  if (!Number.isFinite(g.x)) continue;
   const o = document.createElement("option");
   o.value = g.id;
   o.textContent = g.name;
@@ -772,7 +772,7 @@ function readLink() {
   }
   const gid = p.get("group");
   const g = data.groups.find((x) => x.id === gid);
-  if (g?.x) {
+  if (g && Number.isFinite(g.x)) {
     filter = g.id;
     /** @type {HTMLSelectElement} */ (
       document.getElementById("group-filter")

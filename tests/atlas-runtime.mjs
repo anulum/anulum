@@ -209,13 +209,17 @@ async function retainCoverage(page) {
 }
 
 /**
- * Preserve precise coverage from the old execution context before navigating the actual page.
+ * Preserve counters before a full navigation while keeping fragment changes in one detailed V8 session.
  * @param {import('playwright').Page} page - Caller-owned real browser page.
  * @param {string} url - Actual public entry URL.
  * @returns {Promise<void>} The new entry reaches its native load event.
  */
 export async function navigate(page, url) {
-  await checkpoint(page);
+  const previous = new URL(page.url()),
+    next = new URL(url),
+    fragmentChanged = previous.hash !== next.hash;
+  previous.hash = next.hash = "";
+  if (!fragmentChanged || previous.href !== next.href) await checkpoint(page);
   await page.goto(url);
 }
 

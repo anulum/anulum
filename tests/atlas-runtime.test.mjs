@@ -17,6 +17,7 @@ import {
   withAtlasArtifact,
   withAtlasPage,
 } from "./atlas-runtime.mjs";
+import { atlas } from "./atlas-data.mjs";
 
 test(
   "a foreign HTTP script executes but cannot become trusted local source coverage",
@@ -99,5 +100,60 @@ test(
       }
     }
     assert.equal(ownedBudget, 1, "The actual canonical execution is retained");
+  },
+);
+
+test(
+  "same-document navigation preserves detailed V8 branches across native fragment changes",
+  { timeout: 120000 },
+  async () => {
+    await mkdir("coverage/browser-raw", { recursive: true });
+    const before = new Set(await readdir("coverage/browser-raw"));
+    await withAtlasPage(async (page) => {
+      await navigate(page, baseUrl + "atlas_full.html");
+      await navigate(
+        page,
+        baseUrl +
+          "atlas_full.html#project=" +
+          encodeURIComponent(atlas.nodes[0].id),
+      );
+      await page
+        .locator("#detail h2")
+        .filter({ hasText: atlas.nodes[0].name })
+        .waitFor();
+      await navigate(
+        page,
+        baseUrl +
+          "atlas_full.html#group=" +
+          encodeURIComponent(atlas.groups[0].id),
+      );
+      assert.equal(
+        await page.locator("#group-filter").inputValue(),
+        atlas.groups[0].id,
+      );
+    });
+    let observed = 0;
+    for (const name of await readdir("coverage/browser-raw")) {
+      if (before.has(name)) continue;
+      /** @type {{url:string,functions:{functionName:string,isBlockCoverage:boolean,ranges:{count:number}[]}[]}[]} */
+      const entries = JSON.parse(
+        await readFile("coverage/browser-raw/" + name, "utf8"),
+      );
+      for (const entry of entries) {
+        if (!entry.url.startsWith(baseUrl + "legacy-atlas.js?")) continue;
+        const readLink = entry.functions.find(
+          (row) => row.functionName === "readLink",
+        );
+        assert.ok(readLink);
+        assert.equal(readLink.isBlockCoverage, true);
+        assert.ok(
+          readLink.ranges[0].count >= 3,
+          "Initial load and both actual fragment handlers share one detailed session",
+        );
+        assert.ok(readLink.ranges.length > 1);
+        observed++;
+      }
+    }
+    assert.equal(observed, 1);
   },
 );
