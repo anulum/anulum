@@ -1,5 +1,5 @@
 {
-  "version": "0.19.1+phwr.1+computing.1+kernels.1+control.1+spo.1+fusion.1+qpu-workflow.1+mif-workflow.1+timing-workflow.1+emt-workflow.1+transpile-workflow.1",
+  "version": "0.19.1+phwr.1+computing.1+kernels.1+control.1+spo.1+fusion.1+qpu-workflow.1+mif-workflow.1+timing-workflow.1+emt-workflow.1+transpile-workflow.1+mitigation-workflow.1",
   "state": "Private integrated visual candidate; presentation and publication reviews pending",
   "source_snapshot_date": "2026-10-13",
   "illustrations": [
@@ -493,10 +493,36 @@
         "fingerprint": "5554b0b6b92b0065fef76f50d60a9d9b99759a636769ffba867bf7dddacd09bd",
         "independent": false
       }
+    },
+    {
+      "id": "mitigation-counts-uncertainty-and-verdicts",
+      "project": "MITIGATION-WITNESS",
+      "title": "Mitigation Witness: counts, uncertainty and verdicts",
+      "description": "Loss-preserving count example, exact quantities, native method and uncertainty roles, actual Common report and separate native/domain acceptance.",
+      "representation": "design",
+      "representation_label": "Source-supported mitigation accounting and evidence architecture",
+      "asset": "visuals/mitigation-counts-uncertainty-and-verdicts.svg",
+      "asset_sha256": "f43a9c14174bbaf55a19670610d625d5a0d23ce28619d25e44762e55e3e64023",
+      "downloads": [],
+      "source_version": "Selected source observations 2026-10-20T10:26:37.408739+00:00; unborn local main at capture, no source commit assigned",
+      "author": "Concepts and code: Miroslav Šotek. Illustration prepared by Arcane Sapience.",
+      "licence": "AGPL-3.0-or-later; commercial statement retained. Repository-native SVG.",
+      "limits": [
+        "A new measurement, statistical or mitigation experiment or QPU execution",
+        "Independent sampling/calibration, numerical/statistical/physical or supplier qualification",
+        "Complete native verifier, successful witness or current consumer admission"
+      ],
+      "profile": "{\n  \"source_capture\": \"2026-10-20T10:26:37.408739+00:00\",\n  \"representation\": \"Source-supported architecture and labelled input example; no native/statistical/Common experiment executed\"\n}",
+      "review": {
+        "summary": "Selected source/documents inspected; source-owner content, scientific, consumer and publication review pending. No domain execution performed.",
+        "scope": "Count/rational representation, source study, certified interval comparison and Common/native boundaries",
+        "fingerprint": "1c88a7e04d5efdcb251d3cd896ad47150e606d2932446bbf9fd7bee153d1e401",
+        "independent": false
+      }
     }
   ],
   "source_reviews_independent": false,
   "project_nodes_added": false,
   "new_scientific_or_model_execution": false,
-  "updated_at_utc": "2026-10-20T08:17:04.433728+00:00"
+  "updated_at_utc": "2026-10-20T10:26:37.408739+00:00"
 }

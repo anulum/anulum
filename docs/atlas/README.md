@@ -104,8 +104,8 @@ observations, independent of resource and budget data.
 |---|---|---:|
 | Profile images across all five languages | Four generated header/map SVGs, 91 badge SVGs and the footer image | 621,868 |
 | Dated catalogue provenance | `assets/catalogue-source.json`, plus its ownership sidecar | 114,267 before sidecar |
-| Interactive site snapshot | 82 manifest-listed assets | 37,416,723 |
-| Main interactive entry page | `index.html`, including its eight embedded datasets | 12,336,416 |
+| Interactive site snapshot | 83 manifest-listed assets | 37,723,836 |
+| Main interactive entry page | `index.html`, including its eight embedded datasets | 12,470,975 |
 
 The HTML, JavaScript modules, source-document JSON, illustrations and figure
 downloads belong to the separately hosted explorer. The full snapshot repeats
@@ -189,3 +189,10 @@ and independent native checker outcomes. Matching negative results stay negative
 The source-level Common dependency, complete evaluator and certificate lifecycle
 retain their own qualification requirements; no checker, converter or QPU was run.
 Earlier source captures and all original profile/feed work remain unchanged.
+
+The Mitigation Witness explanation follows loss-preserving measurement accounting,
+exact quantities, native case observations and prescribed uncertainty. Selected
+retention root certificates remain distinct from sampling or scientific qualification.
+Actual Common report transport and source-level parent/Common dependencies do not
+complete native verification or consumer admission. Earlier source readings retain
+their own dates and fingerprints.
