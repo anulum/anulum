@@ -303,42 +303,6 @@
       }
     },
     {
-      "id": "qpu-result-provenance",
-      "project": "QPU-RESULT-PACK",
-      "title": "How a quantum result keeps its provenance",
-      "description": "Original observations and separate custody, derivation identities, shared and domain evaluation, a separate immutable verification report and inspection.",
-      "representation": "design",
-      "representation_label": "Source-derived result-provenance DESIGN; required semantics, not observed whole-workflow acceptance",
-      "asset": "visuals/QPU_RESULT_PACK_PROVENANCE_DESIGN_v0.1.svg",
-      "asset_sha256": "8ca905be8c39907aa1fd763cc0974548266d4d0de8d507a45360d50df7c38200",
-      "downloads": [
-        {
-          "label": "Download PNG",
-          "path": "visuals/QPU_RESULT_PACK_PROVENANCE_DESIGN_v0.1.png"
-        },
-        {
-          "label": "Original scope snapshot",
-          "path": "visuals/qpu-result-provenance_original_scope.json"
-        }
-      ],
-      "source_version": "QPU provenance design v0.1",
-      "author": "Miroslav Šotek",
-      "licence": "AGPL-3.0-or-later",
-      "limits": [
-        "Measured or simulated quantum results",
-        "Scientific/statistical qualification",
-        "Whole seven-operation acceptance through installed library and command interface",
-        "Domain integration, adopted producer/consumer workflow or release acceptance"
-      ],
-      "profile": "{\n  \"numerical_device_profile_selected\": false\n}",
-      "review": {
-        "summary": "The source owner found the exact provenance design v0.1 compatible with its source content.",
-        "scope": "SOURCE_CONTENT_COMPATIBLE for exact private provenance design v0.1 only",
-        "fingerprint": "562310812b8c5356fcb63d2be0fd58a79b798314b9880526f68c6a1b9393a1d2",
-        "independent": false
-      }
-    },
-    {
       "id": "quantum-local-neural-bridge",
       "project": "SCPN-QUANTUM-CONTROL",
       "title": "Quantum Control local neural bridge",
@@ -361,32 +325,6 @@
         "summary": "Direct repository source inspection; source-owner content and publication review pending. No new execution performed for this illustration.",
         "scope": "SCPN-QUANTUM-CONTROL workflow and interface explanation",
         "fingerprint": "065465ffb3d96bf6db9f9edabc097fbbe4a3671560a300c82410a1ed0c130d4c",
-        "independent": false
-      }
-    },
-    {
-      "id": "qpu-result-evidence-workflow",
-      "project": "QPU-RESULT-PACK",
-      "title": "QPU results: from observations to review",
-      "description": "Seven required operations under construction, preserving observation origin, installed numerical bindings, separate immutable evaluations and passive readable outputs.",
-      "representation": "design",
-      "representation_label": "Source-supported evidence workflow under construction",
-      "asset": "visuals/qpu-result-evidence-workflow.svg",
-      "asset_sha256": "8a447a3881d11d0a86d73b1f85db7127fa37be514ebd874bf584c98e3d8d61b0",
-      "downloads": [],
-      "source_version": "README capture 2026-10-18T11:22:51.227679+00:00; unchanged architecture captured 2026-10-14",
-      "author": "Concepts and code: Miroslav Šotek. Illustration prepared by Arcane Sapience.",
-      "licence": "AGPL-3.0-or-later; commercial statement retained. Repository-native SVG.",
-      "limits": [
-        "An implemented or executed seven-operation domain workflow",
-        "A captured QPU job, numerical re-derivation, seal or verification result",
-        "Physical measurement qualification, accepted consumer adoption or current domain eligibility"
-      ],
-      "profile": "{\n  \"source_capture\": \"2026-10-18T11:22:51.227679+00:00\",\n  \"representation\": \"Required domain workflow under construction; no quantum/evidence programme executed\"\n}",
-      "review": {
-        "summary": "Current public source documents inspected. Development checks and domain acceptance remain separate; source-owner content, consumer, scientific and publication review pending.",
-        "scope": "QPU result-pack provenance, numerical and evaluation responsibilities",
-        "fingerprint": "6a3a3a150c6d3b1771b78c3ed9c189f827266f362463b0898d7545ae6e4510e4",
         "independent": false
       }
     },
@@ -467,88 +405,11 @@
         "fingerprint": "b743a0aa3460c8b362f9346c275f66b6e3634f425c94e9a8b98645e906022747",
         "independent": false
       }
-    },
-    {
-      "id": "transpile-observations-layout-and-replay",
-      "project": "TRANSPILE-WITNESS",
-      "title": "Transpile Witness: observations, layout and replay",
-      "description": "Original circuit/compilation custody, explicit maps, raw-byte replay, independent native-outcome comparison and the separate evidence/domain lifecycle.",
-      "representation": "design",
-      "representation_label": "Source-supported compiler and replay evidence architecture",
-      "asset": "visuals/transpile-observations-layout-and-replay.svg",
-      "asset_sha256": "c3459de32eeac1fa5ef2ed355651339d8ba6aa94994f4036a1dfeb6bf3c3ecdd",
-      "downloads": [],
-      "source_version": "Selected source observations 2026-10-20T08:17:04.433728+00:00; original source directory has no Git entity",
-      "author": "Concepts and code: Miroslav Šotek. Illustration prepared by Arcane Sapience.",
-      "licence": "AGPL-3.0-or-later; commercial statement retained. Repository-native SVG.",
-      "limits": [
-        "A new compiler, QCEC, PyZX, converter or QPU execution",
-        "Scientific equivalence, compiler-wide determinism or independent-converter qualification",
-        "Complete evaluator/Clock/runtime/certificate or current consumer acceptance"
-      ],
-      "profile": "{\n  \"source_capture\": \"2026-10-20T08:17:04.433728+00:00\",\n  \"representation\": \"Source-supported architecture; source observations only, no Git source commit or domain execution\"\n}",
-      "review": {
-        "summary": "Selected source/documents inspected; source-owner content, scientific, consumer and publication review pending. No domain execution performed.",
-        "scope": "Programme/layout representations, byte and native-outcome replay, Common/domain boundaries",
-        "fingerprint": "5554b0b6b92b0065fef76f50d60a9d9b99759a636769ffba867bf7dddacd09bd",
-        "independent": false
-      }
-    },
-    {
-      "id": "mitigation-counts-uncertainty-and-verdicts",
-      "project": "MITIGATION-WITNESS",
-      "title": "Mitigation Witness: counts, uncertainty and verdicts",
-      "description": "Loss-preserving count example, exact quantities, native method and uncertainty roles, actual Common report and separate native/domain acceptance.",
-      "representation": "design",
-      "representation_label": "Source-supported mitigation accounting and evidence architecture",
-      "asset": "visuals/mitigation-counts-uncertainty-and-verdicts.svg",
-      "asset_sha256": "f43a9c14174bbaf55a19670610d625d5a0d23ce28619d25e44762e55e3e64023",
-      "downloads": [],
-      "source_version": "Selected source observations 2026-10-20T10:26:37.408739+00:00; unborn local main at capture, no source commit assigned",
-      "author": "Concepts and code: Miroslav Šotek. Illustration prepared by Arcane Sapience.",
-      "licence": "AGPL-3.0-or-later; commercial statement retained. Repository-native SVG.",
-      "limits": [
-        "A new measurement, statistical or mitigation experiment or QPU execution",
-        "Independent sampling/calibration, numerical/statistical/physical or supplier qualification",
-        "Complete native verifier, successful witness or current consumer admission"
-      ],
-      "profile": "{\n  \"source_capture\": \"2026-10-20T10:26:37.408739+00:00\",\n  \"representation\": \"Source-supported architecture and labelled input example; no native/statistical/Common experiment executed\"\n}",
-      "review": {
-        "summary": "Selected source/documents inspected; source-owner content, scientific, consumer and publication review pending. No domain execution performed.",
-        "scope": "Count/rational representation, source study, certified interval comparison and Common/native boundaries",
-        "fingerprint": "1c88a7e04d5efdcb251d3cd896ad47150e606d2932446bbf9fd7bee153d1e401",
-        "independent": false
-      }
-    },
-    {
-      "id": "quantum-contracts-ownership-and-compatibility",
-      "project": "SCPN-QC-CONTRACTS",
-      "title": "Quantum contracts: ownership and compatibility",
-      "description": "Intended contract ownership and dependency direction, complete record meaning, actual empty domain inventory and separate implemented inventory tooling.",
-      "representation": "design",
-      "representation_label": "Source-supported contract architecture and repository tooling",
-      "asset": "visuals/quantum-contracts-ownership-and-compatibility.svg",
-      "asset_sha256": "7d7b182f53b0a3e4550e637a91c230cbb1651ee62653b545ce2aa7e3559675e5",
-      "downloads": [],
-      "source_version": "Selected source observations 2026-10-20T11:16:20.988166+00:00; observed local HEAD e30fca7bd8f822765205f0e4c225c7b07ae3f989 with uncommitted infrastructure work",
-      "author": "Concepts and code: Miroslav Šotek. Illustration prepared by Arcane Sapience.",
-      "licence": "AGPL-3.0-or-later; commercial statement retained. Repository-native SVG.",
-      "limits": [
-        "Implemented domain schemas, a distributable quantum package or qualified installed consumers",
-        "Deployed numerical, hardware, evidence or Studio integration",
-        "Scientific correctness, acquired equipment, partner commitment or publication acceptance"
-      ],
-      "profile": "{\n  \"source_capture\": \"2026-10-20T11:16:20.988166+00:00\",\n  \"representation\": \"Intended domain architecture and separately inspected repository tooling; no source-project execution\"\n}",
-      "review": {
-        "summary": "Selected public sources and inventory implementation inspected; source-owner, consumer, scientific and publication review pending. No independent acceptance.",
-        "scope": "Ownership, dependency direction, full record semantics, actual domain inventory and current repository inventory code",
-        "fingerprint": "49755ad46f97ccbba907e3a6b2723155219b959feb52113ffde182f6d4dadbf1",
-        "independent": false
-      }
     }
   ],
   "source_reviews_independent": false,
   "project_nodes_added": false,
   "new_scientific_or_model_execution": false,
-  "updated_at_utc": "2026-10-20T11:16:20.988166+00:00"
+  "updated_at_utc": "2026-10-20T11:16:20.988166+00:00",
+  "public_projection_updated_at_utc": "2026-10-20T21:01:15.996660+00:00"
 }

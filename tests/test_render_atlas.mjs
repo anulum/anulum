@@ -16,6 +16,7 @@ import {
   writeFile,
   rm,
   symlink,
+  stat,
 } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join, resolve } from "node:path";
@@ -144,8 +145,19 @@ test("the public generator refuses withheld repository contents before deriving 
 
 test("canonical atlas passes the public generator without rewriting source bytes", async () => {
   const result = await renderAtlas(resolve("docs/atlas"));
-  assert.equal(result.assets, 88);
-  assert.ok(result.bytes > 37000000);
+  /** @type {{files:Record<string,string>}} */
+  const manifest = JSON.parse(
+    await readFile("docs/atlas/atlas-manifest.json", "utf8"),
+  );
+  const sizes = await Promise.all(
+    Object.keys(manifest.files).map(
+      async (name) => (await stat(join("docs/atlas", name))).size,
+    ),
+  );
+  assert.deepEqual(result, {
+    assets: sizes.length,
+    bytes: sizes.reduce((total, size) => total + size, 0),
+  });
 });
 
 test("changed complete source is regenerated only explicitly and then reproduces exactly", async () => {

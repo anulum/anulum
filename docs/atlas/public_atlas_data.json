@@ -10932,81 +10932,24 @@
       ],
       "function": "Domain-neutral SDK for studios: evidence bundles, capability manifests, bounded jobs and tenant-aware identity.",
       "kind": "package",
-      "phase": "Released software · ongoing development",
       "work_status": "In progress",
-      "release": "0.11.2",
-      "licence": "AGPL-3.0-or-later",
       "as_of": "2026-10-13",
-      "url": "https://github.com/anulum/scpn-studio-platform",
-      "packages": [
-        {
-          "index": "Python index: scpn-studio-platform",
-          "published": true
-        }
-      ],
-      "maturity": {
-        "value": null,
-        "source": "no development-status classifier in packaging or on the index"
-      },
-      "boundary": "The package is public on the index; the repository is private. The repository also holds a studio vertical (snn-studio) whose standing is an open question to the owner.",
-      "resource_needs": [
-        {
-          "id": "SCPN-SYSTEMS-INTEGRATION-AND-CONTROL:19",
-          "group": "SCPN-SYSTEMS-INTEGRATION-AND-CONTROL",
-          "project": "SCPN-STUDIO-PLATFORM",
-          "project_ids": [
-            "SCPN-STUDIO-PLATFORM"
-          ],
-          "need": "Object storage for evidence bundles",
-          "kind": "storage",
-          "unlocks": "bundles that stay retrievable and verifiable for years",
-          "today": "Manager’s dated report; not independently verified by this atlas: unknown to this seat",
-          "quantity": "Unknown; derivation pending",
-          "price": "Not priced",
-          "partner_slot": "—",
-          "when": "next",
-          "basis": "Owning-manager needs record, 13 October 2026; documentary statements carry their stated verification limits.",
-          "source_sha256": "aa4dec5795136852664791152e4be07dcb45c9edbacce9c270c9cc98ff0d93ef",
-          "as_of": "2026-10-13",
-          "author": "SCPN-SYSTEMS-INTEGRATION-AND-CONTROL manager",
-          "state": "Requirement in progress; acquisition and sizing remain open."
-        },
-        {
-          "id": "SCPN-SYSTEMS-INTEGRATION-AND-CONTROL:20",
-          "group": "SCPN-SYSTEMS-INTEGRATION-AND-CONTROL",
-          "project": "SCPN-STUDIO-PLATFORM",
-          "project_ids": [
-            "SCPN-STUDIO-PLATFORM"
-          ],
-          "need": "Hardware-protected signing keys for the evidence seal",
-          "kind": "board-or-device",
-          "unlocks": "a seal whose key cannot be copied from a disk",
-          "today": "Manager’s dated report; not independently verified by this atlas: software keys, as far as this seat knows",
-          "quantity": "Unknown; derivation pending",
-          "price": "Not priced",
-          "partner_slot": "—",
-          "when": "next",
-          "basis": "Owning-manager needs record, 13 October 2026; documentary statements carry their stated verification limits.",
-          "source_sha256": "aa4dec5795136852664791152e4be07dcb45c9edbacce9c270c9cc98ff0d93ef",
-          "as_of": "2026-10-13",
-          "author": "SCPN-SYSTEMS-INTEGRATION-AND-CONTROL manager",
-          "state": "Requirement in progress; acquisition and sizing remain open."
-        }
-      ],
+      "phase": "Contents are not published.",
+      "release": null,
+      "licence": "Not published",
+      "url": null,
+      "boundary": "Contents are not published.",
       "sources": [],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "source_note": "Contents are not published.",
       "dossier": {
-        "review_state": "Architect-authored details requested",
-        "purpose": "Domain-neutral SDK for studios: evidence bundles, capability manifests, bounded jobs and tenant-aware identity.",
+        "review_state": "Contents are not published.",
         "current_surfaces": [],
         "expected_outputs": [],
         "inputs": [],
         "outputs": [],
         "acceptance": [],
         "partner_needs": [],
-        "open_fields": [
-          "Detailed output specifications and interface acceptance are being consolidated by the owning group."
-        ]
+        "open_fields": []
       }
     },
     {
@@ -11018,97 +10961,24 @@
       ],
       "function": "The hub that federates studios over the platform contract: registry, cross-studio evidence audit, rendering and federation gating.",
       "kind": "service",
-      "phase": "Implementation and integration",
       "work_status": "In progress",
-      "release": null,
-      "licence": "AGPL-3.0-or-later",
       "as_of": "2026-10-13",
-      "url": "https://github.com/anulum/scpn-studio",
-      "packages": [],
-      "maturity": {
-        "value": "alpha",
-        "source": "packaging classifier 'Development Status :: 3 - Alpha' (pyproject.toml)"
-      },
-      "boundary": "Private repository, no public release. It declares an unpublished distribution `scpn-studio`.",
-      "resource_needs": [
-        {
-          "id": "SCPN-SYSTEMS-INTEGRATION-AND-CONTROL:18",
-          "group": "SCPN-SYSTEMS-INTEGRATION-AND-CONTROL",
-          "project": "SCPN-STUDIO",
-          "project_ids": [
-            "SCPN-STUDIO"
-          ],
-          "need": "Production hosting with tenant separation, and a staging copy",
-          "kind": "hosted-compute",
-          "unlocks": "the hub open to the other groups and to outside users; today it is private",
-          "today": "Manager’s dated report; not independently verified by this atlas: Static hosting and a single server, according to the manager’s dated workflow/document inspection; infrastructure tenancy, staging and object storage not established.",
-          "quantity": "Unknown; derivation pending",
-          "price": "Not priced",
-          "partner_slot": "8",
-          "when": "next",
-          "basis": "Owning-manager needs record, 13 October 2026; documentary statements carry their stated verification limits.",
-          "source_sha256": "aa4dec5795136852664791152e4be07dcb45c9edbacce9c270c9cc98ff0d93ef",
-          "as_of": "2026-10-13",
-          "author": "SCPN-SYSTEMS-INTEGRATION-AND-CONTROL manager",
-          "state": "Requirement in progress; acquisition and sizing remain open."
-        },
-        {
-          "id": "SCPN-SYSTEMS-INTEGRATION-AND-CONTROL:21",
-          "group": "SCPN-SYSTEMS-INTEGRATION-AND-CONTROL",
-          "project": "SCPN-STUDIO",
-          "project_ids": [
-            "SCPN-STUDIO"
-          ],
-          "need": "Browser and device test capacity",
-          "kind": "hosted-compute",
-          "unlocks": "the hub's interface tested on real browsers and devices on every change",
-          "today": "Manager’s dated report; not independently verified by this atlas: hosted runners",
-          "quantity": "Unknown; derivation pending",
-          "price": "Not priced",
-          "partner_slot": "—",
-          "when": "later",
-          "basis": "Owning-manager needs record, 13 October 2026; documentary statements carry their stated verification limits.",
-          "source_sha256": "aa4dec5795136852664791152e4be07dcb45c9edbacce9c270c9cc98ff0d93ef",
-          "as_of": "2026-10-13",
-          "author": "SCPN-SYSTEMS-INTEGRATION-AND-CONTROL manager",
-          "state": "Requirement in progress; acquisition and sizing remain open."
-        },
-        {
-          "id": "SCPN-SYSTEMS-INTEGRATION-AND-CONTROL:22",
-          "group": "SCPN-SYSTEMS-INTEGRATION-AND-CONTROL",
-          "project": "SCPN-STUDIO",
-          "project_ids": [
-            "SCPN-STUDIO"
-          ],
-          "need": "An external security assessment before the hub is opened",
-          "kind": "people",
-          "unlocks": "tenant isolation and identity checked by someone who did not write them",
-          "today": "Manager’s dated report; not independently verified by this atlas: nothing",
-          "quantity": "Unknown; derivation pending",
-          "price": "Not priced",
-          "partner_slot": "—",
-          "when": "next",
-          "basis": "Owning-manager needs record, 13 October 2026; documentary statements carry their stated verification limits.",
-          "source_sha256": "aa4dec5795136852664791152e4be07dcb45c9edbacce9c270c9cc98ff0d93ef",
-          "as_of": "2026-10-13",
-          "author": "SCPN-SYSTEMS-INTEGRATION-AND-CONTROL manager",
-          "state": "Requirement in progress; acquisition and sizing remain open."
-        }
-      ],
+      "phase": "Contents are not published.",
+      "release": null,
+      "licence": "Not published",
+      "url": null,
+      "boundary": "Contents are not published.",
       "sources": [],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "source_note": "Contents are not published.",
       "dossier": {
-        "review_state": "Architect-authored details requested",
-        "purpose": "The hub that federates studios over the platform contract: registry, cross-studio evidence audit, rendering and federation gating.",
+        "review_state": "Contents are not published.",
         "current_surfaces": [],
         "expected_outputs": [],
         "inputs": [],
         "outputs": [],
         "acceptance": [],
         "partner_needs": [],
-        "open_fields": [
-          "Detailed output specifications and interface acceptance are being consolidated by the owning group."
-        ]
+        "open_fields": []
       }
     },
     {
@@ -11233,78 +11103,24 @@
       ],
       "function": "Multi-machine operation of the bus: durable follower daemon, per-peer trust and configuration, claim forwarding and diagnostics.",
       "kind": "package",
-      "phase": "Implementation and integration",
       "work_status": "In progress",
-      "release": null,
-      "licence": "LicenseRef-SYNAPSE-Enterprise",
       "as_of": "2026-10-11",
+      "phase": "Contents are not published.",
+      "release": null,
+      "licence": "Not published",
       "url": null,
-      "packages": [],
-      "maturity": {
-        "value": "alpha",
-        "source": "packaging classifier"
-      },
-      "boundary": "Delivered as a private wheel under agreement; no public release. No tag and no hosted release exist; the packaging version is a development version.",
-      "resource_needs": [
-        {
-          "id": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS:7",
-          "group": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS",
-          "project": "SYNAPSE-CHANNEL-FLEET",
-          "project_ids": [
-            "SYNAPSE-CHANNEL-FLEET"
-          ],
-          "need": "physical hosts of three operating systems on a network whose faults can be programmed, and the instrument that applies the faults",
-          "kind": "computer; instrument",
-          "unlocks": "qualification with several hubs, faults during execution, long runs, upgrade and return",
-          "today": "Manager’s dated report; not independently verified by this atlas: a documented run on two machines of one operating system",
-          "quantity": "Unknown; derivation pending",
-          "price": "Not priced",
-          "partner_slot": "Not specified",
-          "when": "Stage being completed",
-          "basis": "Owning-manager needs record, 13 October 2026; documentary statements carry their stated verification limits.",
-          "source_sha256": "f7963a1abb4010f52b03ab5e8ded9fa96d43c483b159590309a5f1679d388cd9",
-          "as_of": "2026-10-13",
-          "author": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS manager",
-          "state": "Requirement in progress; acquisition and sizing remain open."
-        },
-        {
-          "id": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS:8",
-          "group": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS",
-          "project": "SYNAPSE-CHANNEL-FLEET",
-          "project_ids": [
-            "SYNAPSE-CHANNEL-FLEET"
-          ],
-          "need": "hosted machines in several regions and behind real address translation",
-          "kind": "hosted-compute",
-          "unlocks": "federation measured over real distance and real middleboxes",
-          "today": "Manager’s dated report; not independently verified by this atlas: one private link",
-          "quantity": "Unknown; derivation pending",
-          "price": "Not priced",
-          "partner_slot": "Not specified",
-          "when": "Stage being completed",
-          "basis": "Owning-manager needs record, 13 October 2026; documentary statements carry their stated verification limits.",
-          "source_sha256": "f7963a1abb4010f52b03ab5e8ded9fa96d43c483b159590309a5f1679d388cd9",
-          "as_of": "2026-10-13",
-          "author": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS manager",
-          "state": "Requirement in progress; acquisition and sizing remain open."
-        }
-      ],
-      "sources": [
-        "https://github.com/anulum/synapse-channel/blob/main/docs/ecosystem.md"
-      ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "boundary": "Contents are not published.",
+      "sources": [],
+      "source_note": "Contents are not published.",
       "dossier": {
-        "review_state": "Architect-authored details requested",
-        "purpose": "Multi-machine operation of the bus: durable follower daemon, per-peer trust and configuration, claim forwarding and diagnostics.",
+        "review_state": "Contents are not published.",
         "current_surfaces": [],
         "expected_outputs": [],
         "inputs": [],
         "outputs": [],
         "acceptance": [],
         "partner_needs": [],
-        "open_fields": [
-          "Detailed output specifications and interface acceptance are being consolidated by the owning group."
-        ]
+        "open_fields": []
       }
     },
     {
@@ -11557,104 +11373,24 @@
       ],
       "function": "Action control between an autonomous agent and its effectors: action-policy checks, human approvals, gateway enforcement and tamper-evident action evidence.",
       "kind": "package",
-      "phase": "Implementation and integration",
       "work_status": "In progress",
-      "release": null,
-      "licence": "BUSL-1.1",
       "as_of": "2026-10-11",
+      "phase": "Contents are not published.",
+      "release": null,
+      "licence": "Not published",
       "url": null,
-      "packages": [],
-      "maturity": {
-        "value": "alpha",
-        "source": "packaging classifier"
-      },
-      "boundary": "Offered by commercial engagement; no public package. Its benchmark evidence is local functional evidence, and no deployment is claimed. One tag (v0.1.0) exists and no hosted release; the packaging version is a development version.",
-      "resource_needs": [
-        {
-          "id": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS:12",
-          "group": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS",
-          "project": "DIRECTOR-AI, DIRECTOR-CLASS-AI, DIRECTOR-AI-CLOUD",
-          "project_ids": [
-            "DIRECTOR-AI",
-            "DIRECTOR-CLASS-AI",
-            "DIRECTOR-AI-CLOUD"
-          ],
-          "need": "isolated Linux capacity for complete Python-version and native matrices",
-          "kind": "hosted-compute",
-          "unlocks": "complete suites and native parity at the current head; execution of the replacement scanners",
-          "today": "Manager’s dated report; not independently verified by this atlas: hosted matrices exist; current source unpublished and not qualified there",
-          "quantity": "Unknown; derivation pending",
-          "price": "Not priced",
-          "partner_slot": "Not specified",
-          "when": "Stage being completed",
-          "basis": "Owning-manager needs record, 13 October 2026; documentary statements carry their stated verification limits.",
-          "source_sha256": "f7963a1abb4010f52b03ab5e8ded9fa96d43c483b159590309a5f1679d388cd9",
-          "as_of": "2026-10-13",
-          "author": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS manager",
-          "state": "Requirement in progress; acquisition and sizing remain open."
-        },
-        {
-          "id": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS:13",
-          "group": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS",
-          "project": "DIRECTOR-AI-CLOUD, DIRECTOR-CLASS-AI",
-          "project_ids": [
-            "DIRECTOR-AI-CLOUD",
-            "DIRECTOR-CLASS-AI"
-          ],
-          "need": "an explicitly authorised, repository-scoped, read-only credential for the posture assessment tool",
-          "kind": "other (authorisation)",
-          "unlocks": "a genuine native posture report",
-          "today": "Manager’s dated report; not independently verified by this atlas: unresolved; the owner's open decision",
-          "quantity": "Unknown; derivation pending",
-          "price": "Not priced",
-          "partner_slot": "Not specified",
-          "when": "Stage being completed",
-          "basis": "Owning-manager needs record, 13 October 2026; documentary statements carry their stated verification limits.",
-          "source_sha256": "f7963a1abb4010f52b03ab5e8ded9fa96d43c483b159590309a5f1679d388cd9",
-          "as_of": "2026-10-13",
-          "author": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS manager",
-          "state": "Requirement in progress; acquisition and sizing remain open."
-        },
-        {
-          "id": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS:14",
-          "group": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS",
-          "project": "DIRECTOR-AI family",
-          "project_ids": [
-            "DIRECTOR-AI",
-            "DIRECTOR-CLASS-AI",
-            "DIRECTOR-AI-CLOUD"
-          ],
-          "need": "durable evidence storage with two verified copies",
-          "kind": "storage",
-          "unlocks": "reports and fixtures that outlive a short build-artefact window",
-          "today": "Manager’s dated report; not independently verified by this atlas: one local copy",
-          "quantity": "Unknown; derivation pending",
-          "price": "Not priced",
-          "partner_slot": "Not specified",
-          "when": "Stage being completed",
-          "basis": "Owning-manager needs record, 13 October 2026; documentary statements carry their stated verification limits.",
-          "source_sha256": "f7963a1abb4010f52b03ab5e8ded9fa96d43c483b159590309a5f1679d388cd9",
-          "as_of": "2026-10-13",
-          "author": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS manager",
-          "state": "Requirement in progress; acquisition and sizing remain open."
-        }
-      ],
-      "sources": [
-        "https://github.com/anulum/synapse-channel/blob/main/docs/ecosystem.md"
-      ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "boundary": "Contents are not published.",
+      "sources": [],
+      "source_note": "Contents are not published.",
       "dossier": {
-        "review_state": "Architect-authored details requested",
-        "purpose": "Action control between an autonomous agent and its effectors: action-policy checks, human approvals, gateway enforcement and tamper-evident action evidence.",
+        "review_state": "Contents are not published.",
         "current_surfaces": [],
         "expected_outputs": [],
         "inputs": [],
         "outputs": [],
         "acceptance": [],
         "partner_needs": [],
-        "open_fields": [
-          "Detailed output specifications and interface acceptance are being consolidated by the owning group."
-        ]
+        "open_fields": []
       }
     },
     {
@@ -11666,104 +11402,24 @@
       ],
       "function": "Control plane for a hosted Director-AI API: accounts, API-key lifecycle, usage metering, plan quotas and operator exports.",
       "kind": "service",
-      "phase": "Implementation and integration",
       "work_status": "In progress",
-      "release": null,
-      "licence": "BUSL-1.1",
       "as_of": "2026-10-11",
+      "phase": "Contents are not published.",
+      "release": null,
+      "licence": "Not published",
       "url": null,
-      "packages": [],
-      "maturity": {
-        "value": null,
-        "source": null
-      },
-      "boundary": "Unreleased. No production hosted service, billing or rate enforcement is claimed.",
-      "resource_needs": [
-        {
-          "id": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS:12",
-          "group": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS",
-          "project": "DIRECTOR-AI, DIRECTOR-CLASS-AI, DIRECTOR-AI-CLOUD",
-          "project_ids": [
-            "DIRECTOR-AI",
-            "DIRECTOR-CLASS-AI",
-            "DIRECTOR-AI-CLOUD"
-          ],
-          "need": "isolated Linux capacity for complete Python-version and native matrices",
-          "kind": "hosted-compute",
-          "unlocks": "complete suites and native parity at the current head; execution of the replacement scanners",
-          "today": "Manager’s dated report; not independently verified by this atlas: hosted matrices exist; current source unpublished and not qualified there",
-          "quantity": "Unknown; derivation pending",
-          "price": "Not priced",
-          "partner_slot": "Not specified",
-          "when": "Stage being completed",
-          "basis": "Owning-manager needs record, 13 October 2026; documentary statements carry their stated verification limits.",
-          "source_sha256": "f7963a1abb4010f52b03ab5e8ded9fa96d43c483b159590309a5f1679d388cd9",
-          "as_of": "2026-10-13",
-          "author": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS manager",
-          "state": "Requirement in progress; acquisition and sizing remain open."
-        },
-        {
-          "id": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS:13",
-          "group": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS",
-          "project": "DIRECTOR-AI-CLOUD, DIRECTOR-CLASS-AI",
-          "project_ids": [
-            "DIRECTOR-AI-CLOUD",
-            "DIRECTOR-CLASS-AI"
-          ],
-          "need": "an explicitly authorised, repository-scoped, read-only credential for the posture assessment tool",
-          "kind": "other (authorisation)",
-          "unlocks": "a genuine native posture report",
-          "today": "Manager’s dated report; not independently verified by this atlas: unresolved; the owner's open decision",
-          "quantity": "Unknown; derivation pending",
-          "price": "Not priced",
-          "partner_slot": "Not specified",
-          "when": "Stage being completed",
-          "basis": "Owning-manager needs record, 13 October 2026; documentary statements carry their stated verification limits.",
-          "source_sha256": "f7963a1abb4010f52b03ab5e8ded9fa96d43c483b159590309a5f1679d388cd9",
-          "as_of": "2026-10-13",
-          "author": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS manager",
-          "state": "Requirement in progress; acquisition and sizing remain open."
-        },
-        {
-          "id": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS:14",
-          "group": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS",
-          "project": "DIRECTOR-AI family",
-          "project_ids": [
-            "DIRECTOR-AI",
-            "DIRECTOR-CLASS-AI",
-            "DIRECTOR-AI-CLOUD"
-          ],
-          "need": "durable evidence storage with two verified copies",
-          "kind": "storage",
-          "unlocks": "reports and fixtures that outlive a short build-artefact window",
-          "today": "Manager’s dated report; not independently verified by this atlas: one local copy",
-          "quantity": "Unknown; derivation pending",
-          "price": "Not priced",
-          "partner_slot": "Not specified",
-          "when": "Stage being completed",
-          "basis": "Owning-manager needs record, 13 October 2026; documentary statements carry their stated verification limits.",
-          "source_sha256": "f7963a1abb4010f52b03ab5e8ded9fa96d43c483b159590309a5f1679d388cd9",
-          "as_of": "2026-10-13",
-          "author": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS manager",
-          "state": "Requirement in progress; acquisition and sizing remain open."
-        }
-      ],
-      "sources": [
-        "https://github.com/anulum/synapse-channel/blob/main/docs/ecosystem.md"
-      ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "boundary": "Contents are not published.",
+      "sources": [],
+      "source_note": "Contents are not published.",
       "dossier": {
-        "review_state": "Architect-authored details requested",
-        "purpose": "Control plane for a hosted Director-AI API: accounts, API-key lifecycle, usage metering, plan quotas and operator exports.",
+        "review_state": "Contents are not published.",
         "current_surfaces": [],
         "expected_outputs": [],
         "inputs": [],
         "outputs": [],
         "acceptance": [],
         "partner_needs": [],
-        "open_fields": [
-          "Detailed output specifications and interface acceptance are being consolidated by the owning group."
-        ]
+        "open_fields": []
       }
     },
     {
@@ -12176,57 +11832,24 @@
       ],
       "function": "Account and billing or licence-request portal for the product family. It runs no customer workload.",
       "kind": "service",
-      "phase": "Implementation and integration",
       "work_status": "In progress",
-      "release": null,
-      "licence": "AGPL-3.0-or-later",
       "as_of": "2026-10-11",
+      "phase": "Contents are not published.",
+      "release": null,
+      "licence": "Not published",
       "url": null,
-      "packages": [],
-      "maturity": {
-        "value": null,
-        "source": null
-      },
-      "boundary": "No release. Self-service entitlement issuance, refunds and live billing are not claimed.",
-      "resource_needs": [
-        {
-          "id": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS:18",
-          "group": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS",
-          "project": "REMANENTIA-PORTAL",
-          "project_ids": [
-            "REMANENTIA-PORTAL"
-          ],
-          "need": "a staging environment and operator-supplied mail, billing, entitlement and distribution contracts",
-          "kind": "hosted-compute; other",
-          "unlocks": "the complete customer path with real receipts and restore evidence",
-          "today": "Manager’s dated report; not independently verified by this atlas: local source only; provider readiness not checked",
-          "quantity": "Unknown; derivation pending",
-          "price": "Not priced",
-          "partner_slot": "Not specified",
-          "when": "Stage being completed",
-          "basis": "Owning-manager needs record, 13 October 2026; documentary statements carry their stated verification limits.",
-          "source_sha256": "f7963a1abb4010f52b03ab5e8ded9fa96d43c483b159590309a5f1679d388cd9",
-          "as_of": "2026-10-13",
-          "author": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS manager",
-          "state": "Requirement in progress; acquisition and sizing remain open."
-        }
-      ],
-      "sources": [
-        "https://github.com/anulum/synapse-channel/blob/main/docs/ecosystem.md"
-      ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "boundary": "Contents are not published.",
+      "sources": [],
+      "source_note": "Contents are not published.",
       "dossier": {
-        "review_state": "Architect-authored details requested",
-        "purpose": "Account and billing or licence-request portal for the product family. It runs no customer workload.",
+        "review_state": "Contents are not published.",
         "current_surfaces": [],
         "expected_outputs": [],
         "inputs": [],
         "outputs": [],
         "acceptance": [],
         "partner_needs": [],
-        "open_fields": [
-          "Detailed output specifications and interface acceptance are being consolidated by the owning group."
-        ]
+        "open_fields": []
       }
     },
     {
@@ -19070,244 +18693,24 @@
       ],
       "function": "Preserve raw results and their provenance, derivations and reviewable presentation.",
       "kind": "tool",
-      "phase": "Implementation and integration",
       "work_status": "In progress",
-      "release": null,
-      "licence": "not stated",
       "as_of": "2026-10-13",
+      "phase": "Contents are not published.",
+      "release": null,
+      "licence": "Not published",
       "url": null,
-      "packages": [],
-      "maturity": null,
-      "boundary": "none of the quantum tools is released",
-      "repository_record": {
-        "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
-        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
-      },
-      "resource_needs": [
-        {
-          "id": "SCPN-QUANTUM-COMPUTING-SYSTEMS:24",
-          "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-          "project": "QPU-RESULT-PACK,TRANSPILE-WITNESS,MITIGATION-WITNESS,NOISE-MODEL-WITNESS,DECODER-WITNESS,GRADIENT-WITNESS,CONFORMANCE-WITNESS,VENDOR-CLAIM-RECOMPUTER",
-          "project_ids": [
-            "QPU-RESULT-PACK",
-            "TRANSPILE-WITNESS",
-            "MITIGATION-WITNESS",
-            "NOISE-MODEL-WITNESS",
-            "DECODER-WITNESS",
-            "GRADIENT-WITNESS",
-            "CONFORMANCE-WITNESS",
-            "VENDOR-CLAIM-RECOMPUTER"
-          ],
-          "need": "Preliminary requirement · Accounts at several processor services and at a broker that reaches many",
-          "kind": "quantum resources",
-          "unlocks": "Proposed development or measurement scope: Result packs, transpilation and conformance witnesses checked against real provider output, not one provider's",
-          "today": "Manager’s dated report; not independently verified by this atlas: Manager needs record; no maker pages or complete adapter qualification were read for it. Intended tests do not establish hardware support or current holdings.",
-          "quantity": "Unknown; derivation pending",
-          "price": "Not priced",
-          "partner_slot": "Not specified",
-          "when": "First-step candidate",
-          "basis": "Owning-manager needs record, 13 October 2026; documentary statements carry their stated verification limits.",
-          "source_sha256": "1bc6c1f078560dde8eb9c0f77a599a0ac2770e797715ae7467744b7985c5549d",
-          "as_of": "2026-10-13",
-          "author": "SCPN-QUANTUM-COMPUTING-SYSTEMS manager",
-          "state": "Requirement in progress; acquisition and sizing remain open.",
-          "own_or_access": "access",
-          "preliminary_price_class": "S",
-          "class_basis": "Manager preliminary class only: A<€1k, B€1k–10k, C€10k–100k, D€100k–1M, E>€1M; S paid-use, P application. No quotation, price or programme terms checked."
-        },
-        {
-          "id": "SCPN-QUANTUM-COMPUTING-SYSTEMS:25",
-          "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-          "project": "QPU-RESULT-PACK,TRANSPILE-WITNESS,MITIGATION-WITNESS,NOISE-MODEL-WITNESS,DECODER-WITNESS,GRADIENT-WITNESS,CONFORMANCE-WITNESS,VENDOR-CLAIM-RECOMPUTER",
-          "project_ids": [
-            "QPU-RESULT-PACK",
-            "TRANSPILE-WITNESS",
-            "MITIGATION-WITNESS",
-            "NOISE-MODEL-WITNESS",
-            "DECODER-WITNESS",
-            "GRADIENT-WITNESS",
-            "CONFORMANCE-WITNESS",
-            "VENDOR-CLAIM-RECOMPUTER"
-          ],
-          "need": "Preliminary requirement · A signing key held in hardware and a trusted time source",
-          "kind": "quantum resources",
-          "unlocks": "Proposed development or measurement scope: Signed result packs and timestamps that a third party can verify; unsigned operation is the declared default until then",
-          "today": "Manager’s dated report; not independently verified by this atlas: Manager needs record; no maker pages or complete adapter qualification were read for it. Intended tests do not establish hardware support or current holdings.",
-          "quantity": "Unknown; derivation pending",
-          "price": "Not priced",
-          "partner_slot": "Not specified",
-          "when": "In progress; sequence being agreed",
-          "basis": "Owning-manager needs record, 13 October 2026; documentary statements carry their stated verification limits.",
-          "source_sha256": "1bc6c1f078560dde8eb9c0f77a599a0ac2770e797715ae7467744b7985c5549d",
-          "as_of": "2026-10-13",
-          "author": "SCPN-QUANTUM-COMPUTING-SYSTEMS manager",
-          "state": "Requirement in progress; acquisition and sizing remain open.",
-          "own_or_access": "own",
-          "preliminary_price_class": "A–B",
-          "class_basis": "Manager preliminary class only: A<€1k, B€1k–10k, C€10k–100k, D€100k–1M, E>€1M; S paid-use, P application. No quotation, price or programme terms checked."
-        },
-        {
-          "id": "SCPN-QUANTUM-COMPUTING-SYSTEMS:26",
-          "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-          "project": "QPU-RESULT-PACK,TRANSPILE-WITNESS,MITIGATION-WITNESS,NOISE-MODEL-WITNESS,DECODER-WITNESS,GRADIENT-WITNESS,CONFORMANCE-WITNESS,VENDOR-CLAIM-RECOMPUTER",
-          "project_ids": [
-            "QPU-RESULT-PACK",
-            "TRANSPILE-WITNESS",
-            "MITIGATION-WITNESS",
-            "NOISE-MODEL-WITNESS",
-            "DECODER-WITNESS",
-            "GRADIENT-WITNESS",
-            "CONFORMANCE-WITNESS",
-            "VENDOR-CLAIM-RECOMPUTER"
-          ],
-          "need": "Preliminary requirement · Evaluation licences of commercial compilation, error-suppression and decoding products",
-          "kind": "quantum resources",
-          "unlocks": "Proposed development or measurement scope: The tools exist to recompute such products' claims",
-          "today": "Manager’s dated report; not independently verified by this atlas: Manager needs record; no maker pages or complete adapter qualification were read for it. Intended tests do not establish hardware support or current holdings.",
-          "quantity": "Unknown; derivation pending",
-          "price": "Not priced",
-          "partner_slot": "Not specified",
-          "when": "In progress; sequence being agreed",
-          "basis": "Owning-manager needs record, 13 October 2026; documentary statements carry their stated verification limits.",
-          "source_sha256": "1bc6c1f078560dde8eb9c0f77a599a0ac2770e797715ae7467744b7985c5549d",
-          "as_of": "2026-10-13",
-          "author": "SCPN-QUANTUM-COMPUTING-SYSTEMS manager",
-          "state": "Requirement in progress; acquisition and sizing remain open.",
-          "own_or_access": "access",
-          "preliminary_price_class": "S",
-          "class_basis": "Manager preliminary class only: A<€1k, B€1k–10k, C€10k–100k, D€100k–1M, E>€1M; S paid-use, P application. No quotation, price or programme terms checked."
-        },
-        {
-          "id": "SCPN-QUANTUM-COMPUTING-SYSTEMS:27",
-          "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-          "project": "QPU-RESULT-PACK,TRANSPILE-WITNESS,MITIGATION-WITNESS,NOISE-MODEL-WITNESS,DECODER-WITNESS,GRADIENT-WITNESS,CONFORMANCE-WITNESS,VENDOR-CLAIM-RECOMPUTER",
-          "project_ids": [
-            "QPU-RESULT-PACK",
-            "TRANSPILE-WITNESS",
-            "MITIGATION-WITNESS",
-            "NOISE-MODEL-WITNESS",
-            "DECODER-WITNESS",
-            "GRADIENT-WITNESS",
-            "CONFORMANCE-WITNESS",
-            "VENDOR-CLAIM-RECOMPUTER"
-          ],
-          "need": "Preliminary requirement · Programmable-logic boards",
-          "kind": "quantum resources",
-          "unlocks": "Proposed development or measurement scope: Decoder latency measured on hardware (DECODER-WITNESS)",
-          "today": "Manager’s dated report; not independently verified by this atlas: Manager needs record; no maker pages or complete adapter qualification were read for it. Intended tests do not establish hardware support or current holdings.",
-          "quantity": "Unknown; derivation pending",
-          "price": "Not priced",
-          "partner_slot": "Not specified",
-          "when": "In progress; sequence being agreed",
-          "basis": "Owning-manager needs record, 13 October 2026; documentary statements carry their stated verification limits.",
-          "source_sha256": "1bc6c1f078560dde8eb9c0f77a599a0ac2770e797715ae7467744b7985c5549d",
-          "as_of": "2026-10-13",
-          "author": "SCPN-QUANTUM-COMPUTING-SYSTEMS manager",
-          "state": "Requirement in progress; acquisition and sizing remain open.",
-          "own_or_access": "own (shared with other groups)",
-          "preliminary_price_class": "B–C",
-          "class_basis": "Manager preliminary class only: A<€1k, B€1k–10k, C€10k–100k, D€100k–1M, E>€1M; S paid-use, P application. No quotation, price or programme terms checked."
-        },
-        {
-          "id": "SCPN-QUANTUM-COMPUTING-SYSTEMS:28",
-          "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-          "project": "QPU-RESULT-PACK,TRANSPILE-WITNESS,MITIGATION-WITNESS,NOISE-MODEL-WITNESS,DECODER-WITNESS,GRADIENT-WITNESS,CONFORMANCE-WITNESS,VENDOR-CLAIM-RECOMPUTER",
-          "project_ids": [
-            "QPU-RESULT-PACK",
-            "TRANSPILE-WITNESS",
-            "MITIGATION-WITNESS",
-            "NOISE-MODEL-WITNESS",
-            "DECODER-WITNESS",
-            "GRADIENT-WITNESS",
-            "CONFORMANCE-WITNESS",
-            "VENDOR-CLAIM-RECOMPUTER"
-          ],
-          "need": "Preliminary requirement · Calibration and noise data from several devices over time",
-          "kind": "quantum resources",
-          "unlocks": "Proposed development or measurement scope: NOISE-MODEL-WITNESS and the calibration-epoch method",
-          "today": "Manager’s dated report; not independently verified by this atlas: Manager needs record; no maker pages or complete adapter qualification were read for it. Intended tests do not establish hardware support or current holdings.",
-          "quantity": "Unknown; derivation pending",
-          "price": "Not priced",
-          "partner_slot": "Not specified",
-          "when": "In progress; sequence being agreed",
-          "basis": "Owning-manager needs record, 13 October 2026; documentary statements carry their stated verification limits.",
-          "source_sha256": "1bc6c1f078560dde8eb9c0f77a599a0ac2770e797715ae7467744b7985c5549d",
-          "as_of": "2026-10-13",
-          "author": "SCPN-QUANTUM-COMPUTING-SYSTEMS manager",
-          "state": "Requirement in progress; acquisition and sizing remain open.",
-          "own_or_access": "access",
-          "preliminary_price_class": "P / S",
-          "class_basis": "Manager preliminary class only: A<€1k, B€1k–10k, C€10k–100k, D€100k–1M, E>€1M; S paid-use, P application. No quotation, price or programme terms checked."
-        },
-        {
-          "id": "SCPN-QUANTUM-COMPUTING-SYSTEMS:29",
-          "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-          "project": "QPU-RESULT-PACK,TRANSPILE-WITNESS,MITIGATION-WITNESS,NOISE-MODEL-WITNESS,DECODER-WITNESS,GRADIENT-WITNESS,CONFORMANCE-WITNESS,VENDOR-CLAIM-RECOMPUTER",
-          "project_ids": [
-            "QPU-RESULT-PACK",
-            "TRANSPILE-WITNESS",
-            "MITIGATION-WITNESS",
-            "NOISE-MODEL-WITNESS",
-            "DECODER-WITNESS",
-            "GRADIENT-WITNESS",
-            "CONFORMANCE-WITNESS",
-            "VENDOR-CLAIM-RECOMPUTER"
-          ],
-          "need": "Preliminary requirement · An independent reviewer of another vendor or a human expert, per tool",
-          "kind": "quantum resources",
-          "unlocks": "Proposed development or measurement scope: A witness tool reviewed only by its author's vendor is not a witness",
-          "today": "Manager’s dated report; not independently verified by this atlas: Manager needs record; no maker pages or complete adapter qualification were read for it. Intended tests do not establish hardware support or current holdings.",
-          "quantity": "Unknown; derivation pending",
-          "price": "Not priced",
-          "partner_slot": "Not specified",
-          "when": "First-step candidate",
-          "basis": "Owning-manager needs record, 13 October 2026; documentary statements carry their stated verification limits.",
-          "source_sha256": "1bc6c1f078560dde8eb9c0f77a599a0ac2770e797715ae7467744b7985c5549d",
-          "as_of": "2026-10-13",
-          "author": "SCPN-QUANTUM-COMPUTING-SYSTEMS manager",
-          "state": "Requirement in progress; acquisition and sizing remain open.",
-          "own_or_access": "access",
-          "preliminary_price_class": "S",
-          "class_basis": "Manager preliminary class only: A<€1k, B€1k–10k, C€10k–100k, D€100k–1M, E>€1M; S paid-use, P application. No quotation, price or programme terms checked."
-        }
-      ],
-      "partner_slots": [
-        {
-          "id": "quantum-partner:3",
-          "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-          "gap": "A reviewer of another vendor or a human expert for the witness tools. A tool that recomputes other people's claims and was reviewed only by its author's vendor is not a witness",
-          "project_scope": "QPU-RESULT-PACK, TRANSPILE-WITNESS, MITIGATION-WITNESS (in work): before any first release",
-          "project_ids": [
-            "MITIGATION-WITNESS",
-            "QPU-RESULT-PACK",
-            "TRANSPILE-WITNESS"
-          ],
-          "profile": "a metrology or verification group; a compiler team of a provider; an academic group in error mitigation",
-          "brings_gains": "brings: an adversarial reading of one tool's contract and one day of attempts to make it pass a wrong result. Gains: a neutral tool it can point its own claims at",
-          "first_step": "one tool, one contract document, a written list of the cases that should fail",
-          "author": "Quantum group manager",
-          "as_of": "2026-10-13",
-          "source_sha256": "68f96fb28f700e333b5e666b94c63c90c2cc678ff913b2cbcd5477f2ffb539cb",
-          "state": "Source-reported gap and preliminary collaboration proposal; no organisation approached or committed"
-        }
-      ],
-      "sources": [
-        "https://github.com/anulum/scpn-quantum-control/blob/main/docs/ecosystem.md"
-      ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "boundary": "Contents are not published.",
+      "sources": [],
+      "source_note": "Contents are not published.",
       "dossier": {
-        "review_state": "Architect-authored details requested",
-        "purpose": "Preserve raw results and their provenance, derivations and reviewable presentation.",
+        "review_state": "Contents are not published.",
         "current_surfaces": [],
         "expected_outputs": [],
         "inputs": [],
         "outputs": [],
         "acceptance": [],
         "partner_needs": [],
-        "open_fields": [
-          "Detailed output specifications and interface acceptance are being consolidated by the owning group."
-        ]
+        "open_fields": []
       }
     },
     {
@@ -19319,244 +18722,24 @@
       ],
       "function": "Retain scoped observations about compilation semantics, layout, global phase and replay.",
       "kind": "tool",
-      "phase": "Implementation and integration",
       "work_status": "In progress",
-      "release": null,
-      "licence": "AGPL-3.0-or-later by file headers; no licence field in packaging",
       "as_of": "2026-10-13",
+      "phase": "Contents are not published.",
+      "release": null,
+      "licence": "Not published",
       "url": null,
-      "packages": [],
-      "maturity": null,
-      "boundary": "",
-      "repository_record": {
-        "stage": "Repository preparation in progress",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
-        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
-      },
-      "resource_needs": [
-        {
-          "id": "SCPN-QUANTUM-COMPUTING-SYSTEMS:24",
-          "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-          "project": "QPU-RESULT-PACK,TRANSPILE-WITNESS,MITIGATION-WITNESS,NOISE-MODEL-WITNESS,DECODER-WITNESS,GRADIENT-WITNESS,CONFORMANCE-WITNESS,VENDOR-CLAIM-RECOMPUTER",
-          "project_ids": [
-            "QPU-RESULT-PACK",
-            "TRANSPILE-WITNESS",
-            "MITIGATION-WITNESS",
-            "NOISE-MODEL-WITNESS",
-            "DECODER-WITNESS",
-            "GRADIENT-WITNESS",
-            "CONFORMANCE-WITNESS",
-            "VENDOR-CLAIM-RECOMPUTER"
-          ],
-          "need": "Preliminary requirement · Accounts at several processor services and at a broker that reaches many",
-          "kind": "quantum resources",
-          "unlocks": "Proposed development or measurement scope: Result packs, transpilation and conformance witnesses checked against real provider output, not one provider's",
-          "today": "Manager’s dated report; not independently verified by this atlas: Manager needs record; no maker pages or complete adapter qualification were read for it. Intended tests do not establish hardware support or current holdings.",
-          "quantity": "Unknown; derivation pending",
-          "price": "Not priced",
-          "partner_slot": "Not specified",
-          "when": "First-step candidate",
-          "basis": "Owning-manager needs record, 13 October 2026; documentary statements carry their stated verification limits.",
-          "source_sha256": "1bc6c1f078560dde8eb9c0f77a599a0ac2770e797715ae7467744b7985c5549d",
-          "as_of": "2026-10-13",
-          "author": "SCPN-QUANTUM-COMPUTING-SYSTEMS manager",
-          "state": "Requirement in progress; acquisition and sizing remain open.",
-          "own_or_access": "access",
-          "preliminary_price_class": "S",
-          "class_basis": "Manager preliminary class only: A<€1k, B€1k–10k, C€10k–100k, D€100k–1M, E>€1M; S paid-use, P application. No quotation, price or programme terms checked."
-        },
-        {
-          "id": "SCPN-QUANTUM-COMPUTING-SYSTEMS:25",
-          "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-          "project": "QPU-RESULT-PACK,TRANSPILE-WITNESS,MITIGATION-WITNESS,NOISE-MODEL-WITNESS,DECODER-WITNESS,GRADIENT-WITNESS,CONFORMANCE-WITNESS,VENDOR-CLAIM-RECOMPUTER",
-          "project_ids": [
-            "QPU-RESULT-PACK",
-            "TRANSPILE-WITNESS",
-            "MITIGATION-WITNESS",
-            "NOISE-MODEL-WITNESS",
-            "DECODER-WITNESS",
-            "GRADIENT-WITNESS",
-            "CONFORMANCE-WITNESS",
-            "VENDOR-CLAIM-RECOMPUTER"
-          ],
-          "need": "Preliminary requirement · A signing key held in hardware and a trusted time source",
-          "kind": "quantum resources",
-          "unlocks": "Proposed development or measurement scope: Signed result packs and timestamps that a third party can verify; unsigned operation is the declared default until then",
-          "today": "Manager’s dated report; not independently verified by this atlas: Manager needs record; no maker pages or complete adapter qualification were read for it. Intended tests do not establish hardware support or current holdings.",
-          "quantity": "Unknown; derivation pending",
-          "price": "Not priced",
-          "partner_slot": "Not specified",
-          "when": "In progress; sequence being agreed",
-          "basis": "Owning-manager needs record, 13 October 2026; documentary statements carry their stated verification limits.",
-          "source_sha256": "1bc6c1f078560dde8eb9c0f77a599a0ac2770e797715ae7467744b7985c5549d",
-          "as_of": "2026-10-13",
-          "author": "SCPN-QUANTUM-COMPUTING-SYSTEMS manager",
-          "state": "Requirement in progress; acquisition and sizing remain open.",
-          "own_or_access": "own",
-          "preliminary_price_class": "A–B",
-          "class_basis": "Manager preliminary class only: A<€1k, B€1k–10k, C€10k–100k, D€100k–1M, E>€1M; S paid-use, P application. No quotation, price or programme terms checked."
-        },
-        {
-          "id": "SCPN-QUANTUM-COMPUTING-SYSTEMS:26",
-          "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-          "project": "QPU-RESULT-PACK,TRANSPILE-WITNESS,MITIGATION-WITNESS,NOISE-MODEL-WITNESS,DECODER-WITNESS,GRADIENT-WITNESS,CONFORMANCE-WITNESS,VENDOR-CLAIM-RECOMPUTER",
-          "project_ids": [
-            "QPU-RESULT-PACK",
-            "TRANSPILE-WITNESS",
-            "MITIGATION-WITNESS",
-            "NOISE-MODEL-WITNESS",
-            "DECODER-WITNESS",
-            "GRADIENT-WITNESS",
-            "CONFORMANCE-WITNESS",
-            "VENDOR-CLAIM-RECOMPUTER"
-          ],
-          "need": "Preliminary requirement · Evaluation licences of commercial compilation, error-suppression and decoding products",
-          "kind": "quantum resources",
-          "unlocks": "Proposed development or measurement scope: The tools exist to recompute such products' claims",
-          "today": "Manager’s dated report; not independently verified by this atlas: Manager needs record; no maker pages or complete adapter qualification were read for it. Intended tests do not establish hardware support or current holdings.",
-          "quantity": "Unknown; derivation pending",
-          "price": "Not priced",
-          "partner_slot": "Not specified",
-          "when": "In progress; sequence being agreed",
-          "basis": "Owning-manager needs record, 13 October 2026; documentary statements carry their stated verification limits.",
-          "source_sha256": "1bc6c1f078560dde8eb9c0f77a599a0ac2770e797715ae7467744b7985c5549d",
-          "as_of": "2026-10-13",
-          "author": "SCPN-QUANTUM-COMPUTING-SYSTEMS manager",
-          "state": "Requirement in progress; acquisition and sizing remain open.",
-          "own_or_access": "access",
-          "preliminary_price_class": "S",
-          "class_basis": "Manager preliminary class only: A<€1k, B€1k–10k, C€10k–100k, D€100k–1M, E>€1M; S paid-use, P application. No quotation, price or programme terms checked."
-        },
-        {
-          "id": "SCPN-QUANTUM-COMPUTING-SYSTEMS:27",
-          "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-          "project": "QPU-RESULT-PACK,TRANSPILE-WITNESS,MITIGATION-WITNESS,NOISE-MODEL-WITNESS,DECODER-WITNESS,GRADIENT-WITNESS,CONFORMANCE-WITNESS,VENDOR-CLAIM-RECOMPUTER",
-          "project_ids": [
-            "QPU-RESULT-PACK",
-            "TRANSPILE-WITNESS",
-            "MITIGATION-WITNESS",
-            "NOISE-MODEL-WITNESS",
-            "DECODER-WITNESS",
-            "GRADIENT-WITNESS",
-            "CONFORMANCE-WITNESS",
-            "VENDOR-CLAIM-RECOMPUTER"
-          ],
-          "need": "Preliminary requirement · Programmable-logic boards",
-          "kind": "quantum resources",
-          "unlocks": "Proposed development or measurement scope: Decoder latency measured on hardware (DECODER-WITNESS)",
-          "today": "Manager’s dated report; not independently verified by this atlas: Manager needs record; no maker pages or complete adapter qualification were read for it. Intended tests do not establish hardware support or current holdings.",
-          "quantity": "Unknown; derivation pending",
-          "price": "Not priced",
-          "partner_slot": "Not specified",
-          "when": "In progress; sequence being agreed",
-          "basis": "Owning-manager needs record, 13 October 2026; documentary statements carry their stated verification limits.",
-          "source_sha256": "1bc6c1f078560dde8eb9c0f77a599a0ac2770e797715ae7467744b7985c5549d",
-          "as_of": "2026-10-13",
-          "author": "SCPN-QUANTUM-COMPUTING-SYSTEMS manager",
-          "state": "Requirement in progress; acquisition and sizing remain open.",
-          "own_or_access": "own (shared with other groups)",
-          "preliminary_price_class": "B–C",
-          "class_basis": "Manager preliminary class only: A<€1k, B€1k–10k, C€10k–100k, D€100k–1M, E>€1M; S paid-use, P application. No quotation, price or programme terms checked."
-        },
-        {
-          "id": "SCPN-QUANTUM-COMPUTING-SYSTEMS:28",
-          "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-          "project": "QPU-RESULT-PACK,TRANSPILE-WITNESS,MITIGATION-WITNESS,NOISE-MODEL-WITNESS,DECODER-WITNESS,GRADIENT-WITNESS,CONFORMANCE-WITNESS,VENDOR-CLAIM-RECOMPUTER",
-          "project_ids": [
-            "QPU-RESULT-PACK",
-            "TRANSPILE-WITNESS",
-            "MITIGATION-WITNESS",
-            "NOISE-MODEL-WITNESS",
-            "DECODER-WITNESS",
-            "GRADIENT-WITNESS",
-            "CONFORMANCE-WITNESS",
-            "VENDOR-CLAIM-RECOMPUTER"
-          ],
-          "need": "Preliminary requirement · Calibration and noise data from several devices over time",
-          "kind": "quantum resources",
-          "unlocks": "Proposed development or measurement scope: NOISE-MODEL-WITNESS and the calibration-epoch method",
-          "today": "Manager’s dated report; not independently verified by this atlas: Manager needs record; no maker pages or complete adapter qualification were read for it. Intended tests do not establish hardware support or current holdings.",
-          "quantity": "Unknown; derivation pending",
-          "price": "Not priced",
-          "partner_slot": "Not specified",
-          "when": "In progress; sequence being agreed",
-          "basis": "Owning-manager needs record, 13 October 2026; documentary statements carry their stated verification limits.",
-          "source_sha256": "1bc6c1f078560dde8eb9c0f77a599a0ac2770e797715ae7467744b7985c5549d",
-          "as_of": "2026-10-13",
-          "author": "SCPN-QUANTUM-COMPUTING-SYSTEMS manager",
-          "state": "Requirement in progress; acquisition and sizing remain open.",
-          "own_or_access": "access",
-          "preliminary_price_class": "P / S",
-          "class_basis": "Manager preliminary class only: A<€1k, B€1k–10k, C€10k–100k, D€100k–1M, E>€1M; S paid-use, P application. No quotation, price or programme terms checked."
-        },
-        {
-          "id": "SCPN-QUANTUM-COMPUTING-SYSTEMS:29",
-          "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-          "project": "QPU-RESULT-PACK,TRANSPILE-WITNESS,MITIGATION-WITNESS,NOISE-MODEL-WITNESS,DECODER-WITNESS,GRADIENT-WITNESS,CONFORMANCE-WITNESS,VENDOR-CLAIM-RECOMPUTER",
-          "project_ids": [
-            "QPU-RESULT-PACK",
-            "TRANSPILE-WITNESS",
-            "MITIGATION-WITNESS",
-            "NOISE-MODEL-WITNESS",
-            "DECODER-WITNESS",
-            "GRADIENT-WITNESS",
-            "CONFORMANCE-WITNESS",
-            "VENDOR-CLAIM-RECOMPUTER"
-          ],
-          "need": "Preliminary requirement · An independent reviewer of another vendor or a human expert, per tool",
-          "kind": "quantum resources",
-          "unlocks": "Proposed development or measurement scope: A witness tool reviewed only by its author's vendor is not a witness",
-          "today": "Manager’s dated report; not independently verified by this atlas: Manager needs record; no maker pages or complete adapter qualification were read for it. Intended tests do not establish hardware support or current holdings.",
-          "quantity": "Unknown; derivation pending",
-          "price": "Not priced",
-          "partner_slot": "Not specified",
-          "when": "First-step candidate",
-          "basis": "Owning-manager needs record, 13 October 2026; documentary statements carry their stated verification limits.",
-          "source_sha256": "1bc6c1f078560dde8eb9c0f77a599a0ac2770e797715ae7467744b7985c5549d",
-          "as_of": "2026-10-13",
-          "author": "SCPN-QUANTUM-COMPUTING-SYSTEMS manager",
-          "state": "Requirement in progress; acquisition and sizing remain open.",
-          "own_or_access": "access",
-          "preliminary_price_class": "S",
-          "class_basis": "Manager preliminary class only: A<€1k, B€1k–10k, C€10k–100k, D€100k–1M, E>€1M; S paid-use, P application. No quotation, price or programme terms checked."
-        }
-      ],
-      "partner_slots": [
-        {
-          "id": "quantum-partner:3",
-          "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-          "gap": "A reviewer of another vendor or a human expert for the witness tools. A tool that recomputes other people's claims and was reviewed only by its author's vendor is not a witness",
-          "project_scope": "QPU-RESULT-PACK, TRANSPILE-WITNESS, MITIGATION-WITNESS (in work): before any first release",
-          "project_ids": [
-            "MITIGATION-WITNESS",
-            "QPU-RESULT-PACK",
-            "TRANSPILE-WITNESS"
-          ],
-          "profile": "a metrology or verification group; a compiler team of a provider; an academic group in error mitigation",
-          "brings_gains": "brings: an adversarial reading of one tool's contract and one day of attempts to make it pass a wrong result. Gains: a neutral tool it can point its own claims at",
-          "first_step": "one tool, one contract document, a written list of the cases that should fail",
-          "author": "Quantum group manager",
-          "as_of": "2026-10-13",
-          "source_sha256": "68f96fb28f700e333b5e666b94c63c90c2cc678ff913b2cbcd5477f2ffb539cb",
-          "state": "Source-reported gap and preliminary collaboration proposal; no organisation approached or committed"
-        }
-      ],
-      "sources": [
-        "https://github.com/anulum/scpn-quantum-control/blob/main/docs/ecosystem.md"
-      ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "boundary": "Contents are not published.",
+      "sources": [],
+      "source_note": "Contents are not published.",
       "dossier": {
-        "review_state": "Architect-authored details requested",
-        "purpose": "Retain scoped observations about compilation semantics, layout, global phase and replay.",
+        "review_state": "Contents are not published.",
         "current_surfaces": [],
         "expected_outputs": [],
         "inputs": [],
         "outputs": [],
         "acceptance": [],
         "partner_needs": [],
-        "open_fields": [
-          "Detailed output specifications and interface acceptance are being consolidated by the owning group."
-        ]
+        "open_fields": []
       }
     },
     {
@@ -19568,270 +18751,24 @@
       ],
       "function": "Evaluate mitigation on declared measurement panels with retained inputs and uncertainty.",
       "kind": "tool",
-      "phase": "Implementation and integration",
       "work_status": "In progress",
-      "release": null,
-      "licence": "AGPL-3.0-or-later",
       "as_of": "2026-10-13",
+      "phase": "Contents are not published.",
+      "release": null,
+      "licence": "Not published",
       "url": null,
-      "packages": [],
-      "maturity": null,
-      "boundary": "",
-      "repository_record": {
-        "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
-        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
-      },
-      "resource_needs": [
-        {
-          "id": "SCPN-QUANTUM-COMPUTING-SYSTEMS:24",
-          "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-          "project": "QPU-RESULT-PACK,TRANSPILE-WITNESS,MITIGATION-WITNESS,NOISE-MODEL-WITNESS,DECODER-WITNESS,GRADIENT-WITNESS,CONFORMANCE-WITNESS,VENDOR-CLAIM-RECOMPUTER",
-          "project_ids": [
-            "QPU-RESULT-PACK",
-            "TRANSPILE-WITNESS",
-            "MITIGATION-WITNESS",
-            "NOISE-MODEL-WITNESS",
-            "DECODER-WITNESS",
-            "GRADIENT-WITNESS",
-            "CONFORMANCE-WITNESS",
-            "VENDOR-CLAIM-RECOMPUTER"
-          ],
-          "need": "Preliminary requirement · Accounts at several processor services and at a broker that reaches many",
-          "kind": "quantum resources",
-          "unlocks": "Proposed development or measurement scope: Result packs, transpilation and conformance witnesses checked against real provider output, not one provider's",
-          "today": "Manager’s dated report; not independently verified by this atlas: Manager needs record; no maker pages or complete adapter qualification were read for it. Intended tests do not establish hardware support or current holdings.",
-          "quantity": "Unknown; derivation pending",
-          "price": "Not priced",
-          "partner_slot": "Not specified",
-          "when": "First-step candidate",
-          "basis": "Owning-manager needs record, 13 October 2026; documentary statements carry their stated verification limits.",
-          "source_sha256": "1bc6c1f078560dde8eb9c0f77a599a0ac2770e797715ae7467744b7985c5549d",
-          "as_of": "2026-10-13",
-          "author": "SCPN-QUANTUM-COMPUTING-SYSTEMS manager",
-          "state": "Requirement in progress; acquisition and sizing remain open.",
-          "own_or_access": "access",
-          "preliminary_price_class": "S",
-          "class_basis": "Manager preliminary class only: A<€1k, B€1k–10k, C€10k–100k, D€100k–1M, E>€1M; S paid-use, P application. No quotation, price or programme terms checked."
-        },
-        {
-          "id": "SCPN-QUANTUM-COMPUTING-SYSTEMS:25",
-          "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-          "project": "QPU-RESULT-PACK,TRANSPILE-WITNESS,MITIGATION-WITNESS,NOISE-MODEL-WITNESS,DECODER-WITNESS,GRADIENT-WITNESS,CONFORMANCE-WITNESS,VENDOR-CLAIM-RECOMPUTER",
-          "project_ids": [
-            "QPU-RESULT-PACK",
-            "TRANSPILE-WITNESS",
-            "MITIGATION-WITNESS",
-            "NOISE-MODEL-WITNESS",
-            "DECODER-WITNESS",
-            "GRADIENT-WITNESS",
-            "CONFORMANCE-WITNESS",
-            "VENDOR-CLAIM-RECOMPUTER"
-          ],
-          "need": "Preliminary requirement · A signing key held in hardware and a trusted time source",
-          "kind": "quantum resources",
-          "unlocks": "Proposed development or measurement scope: Signed result packs and timestamps that a third party can verify; unsigned operation is the declared default until then",
-          "today": "Manager’s dated report; not independently verified by this atlas: Manager needs record; no maker pages or complete adapter qualification were read for it. Intended tests do not establish hardware support or current holdings.",
-          "quantity": "Unknown; derivation pending",
-          "price": "Not priced",
-          "partner_slot": "Not specified",
-          "when": "In progress; sequence being agreed",
-          "basis": "Owning-manager needs record, 13 October 2026; documentary statements carry their stated verification limits.",
-          "source_sha256": "1bc6c1f078560dde8eb9c0f77a599a0ac2770e797715ae7467744b7985c5549d",
-          "as_of": "2026-10-13",
-          "author": "SCPN-QUANTUM-COMPUTING-SYSTEMS manager",
-          "state": "Requirement in progress; acquisition and sizing remain open.",
-          "own_or_access": "own",
-          "preliminary_price_class": "A–B",
-          "class_basis": "Manager preliminary class only: A<€1k, B€1k–10k, C€10k–100k, D€100k–1M, E>€1M; S paid-use, P application. No quotation, price or programme terms checked."
-        },
-        {
-          "id": "SCPN-QUANTUM-COMPUTING-SYSTEMS:26",
-          "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-          "project": "QPU-RESULT-PACK,TRANSPILE-WITNESS,MITIGATION-WITNESS,NOISE-MODEL-WITNESS,DECODER-WITNESS,GRADIENT-WITNESS,CONFORMANCE-WITNESS,VENDOR-CLAIM-RECOMPUTER",
-          "project_ids": [
-            "QPU-RESULT-PACK",
-            "TRANSPILE-WITNESS",
-            "MITIGATION-WITNESS",
-            "NOISE-MODEL-WITNESS",
-            "DECODER-WITNESS",
-            "GRADIENT-WITNESS",
-            "CONFORMANCE-WITNESS",
-            "VENDOR-CLAIM-RECOMPUTER"
-          ],
-          "need": "Preliminary requirement · Evaluation licences of commercial compilation, error-suppression and decoding products",
-          "kind": "quantum resources",
-          "unlocks": "Proposed development or measurement scope: The tools exist to recompute such products' claims",
-          "today": "Manager’s dated report; not independently verified by this atlas: Manager needs record; no maker pages or complete adapter qualification were read for it. Intended tests do not establish hardware support or current holdings.",
-          "quantity": "Unknown; derivation pending",
-          "price": "Not priced",
-          "partner_slot": "Not specified",
-          "when": "In progress; sequence being agreed",
-          "basis": "Owning-manager needs record, 13 October 2026; documentary statements carry their stated verification limits.",
-          "source_sha256": "1bc6c1f078560dde8eb9c0f77a599a0ac2770e797715ae7467744b7985c5549d",
-          "as_of": "2026-10-13",
-          "author": "SCPN-QUANTUM-COMPUTING-SYSTEMS manager",
-          "state": "Requirement in progress; acquisition and sizing remain open.",
-          "own_or_access": "access",
-          "preliminary_price_class": "S",
-          "class_basis": "Manager preliminary class only: A<€1k, B€1k–10k, C€10k–100k, D€100k–1M, E>€1M; S paid-use, P application. No quotation, price or programme terms checked."
-        },
-        {
-          "id": "SCPN-QUANTUM-COMPUTING-SYSTEMS:27",
-          "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-          "project": "QPU-RESULT-PACK,TRANSPILE-WITNESS,MITIGATION-WITNESS,NOISE-MODEL-WITNESS,DECODER-WITNESS,GRADIENT-WITNESS,CONFORMANCE-WITNESS,VENDOR-CLAIM-RECOMPUTER",
-          "project_ids": [
-            "QPU-RESULT-PACK",
-            "TRANSPILE-WITNESS",
-            "MITIGATION-WITNESS",
-            "NOISE-MODEL-WITNESS",
-            "DECODER-WITNESS",
-            "GRADIENT-WITNESS",
-            "CONFORMANCE-WITNESS",
-            "VENDOR-CLAIM-RECOMPUTER"
-          ],
-          "need": "Preliminary requirement · Programmable-logic boards",
-          "kind": "quantum resources",
-          "unlocks": "Proposed development or measurement scope: Decoder latency measured on hardware (DECODER-WITNESS)",
-          "today": "Manager’s dated report; not independently verified by this atlas: Manager needs record; no maker pages or complete adapter qualification were read for it. Intended tests do not establish hardware support or current holdings.",
-          "quantity": "Unknown; derivation pending",
-          "price": "Not priced",
-          "partner_slot": "Not specified",
-          "when": "In progress; sequence being agreed",
-          "basis": "Owning-manager needs record, 13 October 2026; documentary statements carry their stated verification limits.",
-          "source_sha256": "1bc6c1f078560dde8eb9c0f77a599a0ac2770e797715ae7467744b7985c5549d",
-          "as_of": "2026-10-13",
-          "author": "SCPN-QUANTUM-COMPUTING-SYSTEMS manager",
-          "state": "Requirement in progress; acquisition and sizing remain open.",
-          "own_or_access": "own (shared with other groups)",
-          "preliminary_price_class": "B–C",
-          "class_basis": "Manager preliminary class only: A<€1k, B€1k–10k, C€10k–100k, D€100k–1M, E>€1M; S paid-use, P application. No quotation, price or programme terms checked."
-        },
-        {
-          "id": "SCPN-QUANTUM-COMPUTING-SYSTEMS:28",
-          "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-          "project": "QPU-RESULT-PACK,TRANSPILE-WITNESS,MITIGATION-WITNESS,NOISE-MODEL-WITNESS,DECODER-WITNESS,GRADIENT-WITNESS,CONFORMANCE-WITNESS,VENDOR-CLAIM-RECOMPUTER",
-          "project_ids": [
-            "QPU-RESULT-PACK",
-            "TRANSPILE-WITNESS",
-            "MITIGATION-WITNESS",
-            "NOISE-MODEL-WITNESS",
-            "DECODER-WITNESS",
-            "GRADIENT-WITNESS",
-            "CONFORMANCE-WITNESS",
-            "VENDOR-CLAIM-RECOMPUTER"
-          ],
-          "need": "Preliminary requirement · Calibration and noise data from several devices over time",
-          "kind": "quantum resources",
-          "unlocks": "Proposed development or measurement scope: NOISE-MODEL-WITNESS and the calibration-epoch method",
-          "today": "Manager’s dated report; not independently verified by this atlas: Manager needs record; no maker pages or complete adapter qualification were read for it. Intended tests do not establish hardware support or current holdings.",
-          "quantity": "Unknown; derivation pending",
-          "price": "Not priced",
-          "partner_slot": "Not specified",
-          "when": "In progress; sequence being agreed",
-          "basis": "Owning-manager needs record, 13 October 2026; documentary statements carry their stated verification limits.",
-          "source_sha256": "1bc6c1f078560dde8eb9c0f77a599a0ac2770e797715ae7467744b7985c5549d",
-          "as_of": "2026-10-13",
-          "author": "SCPN-QUANTUM-COMPUTING-SYSTEMS manager",
-          "state": "Requirement in progress; acquisition and sizing remain open.",
-          "own_or_access": "access",
-          "preliminary_price_class": "P / S",
-          "class_basis": "Manager preliminary class only: A<€1k, B€1k–10k, C€10k–100k, D€100k–1M, E>€1M; S paid-use, P application. No quotation, price or programme terms checked."
-        },
-        {
-          "id": "SCPN-QUANTUM-COMPUTING-SYSTEMS:29",
-          "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-          "project": "QPU-RESULT-PACK,TRANSPILE-WITNESS,MITIGATION-WITNESS,NOISE-MODEL-WITNESS,DECODER-WITNESS,GRADIENT-WITNESS,CONFORMANCE-WITNESS,VENDOR-CLAIM-RECOMPUTER",
-          "project_ids": [
-            "QPU-RESULT-PACK",
-            "TRANSPILE-WITNESS",
-            "MITIGATION-WITNESS",
-            "NOISE-MODEL-WITNESS",
-            "DECODER-WITNESS",
-            "GRADIENT-WITNESS",
-            "CONFORMANCE-WITNESS",
-            "VENDOR-CLAIM-RECOMPUTER"
-          ],
-          "need": "Preliminary requirement · An independent reviewer of another vendor or a human expert, per tool",
-          "kind": "quantum resources",
-          "unlocks": "Proposed development or measurement scope: A witness tool reviewed only by its author's vendor is not a witness",
-          "today": "Manager’s dated report; not independently verified by this atlas: Manager needs record; no maker pages or complete adapter qualification were read for it. Intended tests do not establish hardware support or current holdings.",
-          "quantity": "Unknown; derivation pending",
-          "price": "Not priced",
-          "partner_slot": "Not specified",
-          "when": "First-step candidate",
-          "basis": "Owning-manager needs record, 13 October 2026; documentary statements carry their stated verification limits.",
-          "source_sha256": "1bc6c1f078560dde8eb9c0f77a599a0ac2770e797715ae7467744b7985c5549d",
-          "as_of": "2026-10-13",
-          "author": "SCPN-QUANTUM-COMPUTING-SYSTEMS manager",
-          "state": "Requirement in progress; acquisition and sizing remain open.",
-          "own_or_access": "access",
-          "preliminary_price_class": "S",
-          "class_basis": "Manager preliminary class only: A<€1k, B€1k–10k, C€10k–100k, D€100k–1M, E>€1M; S paid-use, P application. No quotation, price or programme terms checked."
-        }
-      ],
-      "resource_candidates": [
-        {
-          "id": "preliminary:SCPN-QUANTUM-COMPUTING-SYSTEMS:40",
-          "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-          "item": "Commercial error-suppression, compilation and decoding products, for comparison",
-          "maker": "Q-CTRL, Classiq, Riverlane, Quantum Machines, Zurich Instruments software",
-          "project_ids": [
-            "MITIGATION-WITNESS",
-            "VENDOR-CLAIM-RECOMPUTER"
-          ],
-          "need": "VENDOR-CLAIM-RECOMPUTER and MITIGATION-WITNESS need the claims they recompute",
-          "catalogue_scope": "Preliminary group planning proposal; maker/product names not yet verified at the maker’s page.",
-          "source": "",
-          "source_read": false,
-          "as_of": "2026-10-13",
-          "author": "SCPN-QUANTUM-COMPUTING-SYSTEMS manager",
-          "own_or_access": "Own/access choice is a preliminary planning question",
-          "quantity": "Not fixed",
-          "price": "Preliminary price class S · author estimate, not a quotation",
-          "fit_state": "PRELIMINARY — intended use, product fit and acquisition/access need confirmation; no software support or ownership implied.",
-          "basis": "Owner-approved preliminary use of existing manager planning data, 13 October 2026.",
-          "source_sha256": "f75d9a40cc21967816143cce2f81c6aa2ebcb224030e3b7e3cbd84b122b1345b",
-          "verification_state": "preliminary-memory",
-          "section": "6. Software, data and licences"
-        }
-      ],
-      "partner_slots": [
-        {
-          "id": "quantum-partner:3",
-          "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-          "gap": "A reviewer of another vendor or a human expert for the witness tools. A tool that recomputes other people's claims and was reviewed only by its author's vendor is not a witness",
-          "project_scope": "QPU-RESULT-PACK, TRANSPILE-WITNESS, MITIGATION-WITNESS (in work): before any first release",
-          "project_ids": [
-            "MITIGATION-WITNESS",
-            "QPU-RESULT-PACK",
-            "TRANSPILE-WITNESS"
-          ],
-          "profile": "a metrology or verification group; a compiler team of a provider; an academic group in error mitigation",
-          "brings_gains": "brings: an adversarial reading of one tool's contract and one day of attempts to make it pass a wrong result. Gains: a neutral tool it can point its own claims at",
-          "first_step": "one tool, one contract document, a written list of the cases that should fail",
-          "author": "Quantum group manager",
-          "as_of": "2026-10-13",
-          "source_sha256": "68f96fb28f700e333b5e666b94c63c90c2cc678ff913b2cbcd5477f2ffb539cb",
-          "state": "Source-reported gap and preliminary collaboration proposal; no organisation approached or committed"
-        }
-      ],
-      "sources": [
-        "https://github.com/anulum/scpn-quantum-control/blob/main/docs/ecosystem.md"
-      ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "boundary": "Contents are not published.",
+      "sources": [],
+      "source_note": "Contents are not published.",
       "dossier": {
-        "review_state": "Architect-authored details requested",
-        "purpose": "Evaluate mitigation on declared measurement panels with retained inputs and uncertainty.",
+        "review_state": "Contents are not published.",
         "current_surfaces": [],
         "expected_outputs": [],
         "inputs": [],
         "outputs": [],
         "acceptance": [],
         "partner_needs": [],
-        "open_fields": [
-          "Detailed output specifications and interface acceptance are being consolidated by the owning group."
-        ]
+        "open_fields": []
       }
     },
     {
@@ -19843,34 +18780,24 @@
       ],
       "function": "Versioned parameter, result, semantic and evidence interface contracts shared by components.",
       "kind": "component",
-      "phase": "Workbench transition",
       "work_status": "In progress",
-      "release": null,
-      "licence": "Undecided for independent release",
       "as_of": "2026-10-13",
+      "phase": "Contents are not published.",
+      "release": null,
+      "licence": "Not published",
       "url": null,
-      "boundary": "",
-      "repository_record": {
-        "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
-        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
-      },
-      "sources": [
-        "https://github.com/anulum/scpn-quantum-control/blob/main/docs/ecosystem.md"
-      ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "boundary": "Contents are not published.",
+      "sources": [],
+      "source_note": "Contents are not published.",
       "dossier": {
-        "review_state": "Architect-authored details requested",
-        "purpose": "Versioned parameter, result, semantic and evidence interface contracts shared by components.",
+        "review_state": "Contents are not published.",
         "current_surfaces": [],
         "expected_outputs": [],
         "inputs": [],
         "outputs": [],
         "acceptance": [],
         "partner_needs": [],
-        "open_fields": [
-          "Detailed output specifications and interface acceptance are being consolidated by the owning group."
-        ]
+        "open_fields": []
       }
     },
     {

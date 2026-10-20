@@ -120,8 +120,8 @@ observations, independent of resource and budget data.
 | ---------------------------------------- | ------------------------------------------------------------------ | ---------------------: |
 | Profile images across all five languages | Four generated header/map SVGs, 91 badge SVGs and the footer image |                621,868 |
 | Dated catalogue provenance               | `assets/catalogue-source.json`, plus its ownership sidecar         | 114,267 before sidecar |
-| Interactive site snapshot                | 88 manifest-listed assets                                          |             37,833,947 |
-| Main interactive entry page              | `index.html`, including its eight embedded datasets                |             12,368,454 |
+| Interactive site snapshot                | 80 manifest-listed assets                                          |             34,783,656 |
+| Main interactive entry page              | `index.html`, including its eight embedded datasets                |             11,238,486 |
 
 The HTML, JavaScript modules, source-document JSON, illustrations and figure
 downloads belong to the separately hosted explorer. The full snapshot repeats
@@ -173,12 +173,6 @@ Fourier force-balance calculation retain distinct inputs, outputs and checks;
 case-level scientific evidence and downstream consumer admission remain separate.
 Earlier project links and captured sources keep their original dates.
 
-The QPU Result Pack explanation details seven required domain operations under
-construction: capture, import, derive, seal, verify, inspect and render. Its
-evidence representations, numerical bindings, trust/time contexts and passive
-reading views keep separate responsibilities. Developer checks do not establish
-standalone domain acceptance; earlier source captures retain their own dates.
-
 The MIF explanation follows typed merge decisions and the separately bound
 Fusion-to-Fire software chain. Stateless stochastic admission and the stateful
 exact-current AER diagnostic keep distinct model and authority scopes. Local RTL
@@ -198,26 +192,6 @@ source boundaries. Its fifteen-field report preserves Common, domain and current
 outcomes; scientific judgement remains separately owned. Earlier unchanged readings
 retain their dates, while new uncommitted code readings do not establish installed
 packaging, operational signer/clock qualification or a consumer adoption.
-
-The Transpile Witness explanation follows original circuit/compiler observations,
-explicit layout maps and two distinct replay questions: exact raw output bytes
-and independent native checker outcomes. Matching negative results stay negative.
-The source-level Common dependency, complete evaluator and certificate lifecycle
-retain their own qualification requirements; no checker, converter or QPU was run.
-Earlier source captures and all original profile/feed work remain unchanged.
-
-The Mitigation Witness explanation follows loss-preserving measurement accounting,
-exact quantities, native case observations and prescribed uncertainty. Selected
-retention root certificates remain distinct from sampling or scientific qualification.
-Actual Common report transport and source-level parent/Common dependencies do not
-complete native verification or consumer admission. Earlier source readings retain
-their own dates and fingerprints.
-
-The quantum contracts explanation distinguishes intended provider-neutral records
-from implemented repository inventory tooling. It follows upstream ownership,
-consumer-to-contract dependencies, full record and refusal meaning, qualified
-generation and actual installed-consumer/migration obligations. The current domain
-inventory remains empty; source-owner and independent acceptance remain open.
 
 Both resource views show coverage of the complete dated inventory before filters,
 including groups with no supplied detail and explicitly unresolved quantity fields.

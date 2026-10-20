@@ -6,7 +6,7 @@
   "source_date": "2026-10-13",
   "baseline_nodes": 196,
   "source_rows": 82,
-  "matched_rows": 80,
+  "matched_rows": 71,
   "projects": [
     {
       "project_id": "ATLAS-REACTORUM",
@@ -2409,77 +2409,6 @@
       "state": "Private source-update candidate; content and outward review pending"
     },
     {
-      "project_id": "SCPN-STUDIO-PLATFORM",
-      "record": {
-        "name": "SCPN-STUDIO-PLATFORM",
-        "kind": "package",
-        "function": "Domain-neutral SDK for studios: evidence bundles, capability manifests, bounded jobs and tenant-aware identity.",
-        "owning_groups": [
-          "SCPN-SYSTEMS-INTEGRATION-AND-CONTROL"
-        ],
-        "primary_group": "SCPN-SYSTEMS-INTEGRATION-AND-CONTROL",
-        "status": "released",
-        "status_source": {
-          "where": "Python index entry scpn-studio-platform 0.11.2; git tag v0.11.2",
-          "date": "2026-10-13"
-        },
-        "version": {
-          "value": "0.11.2",
-          "source": "Python index JSON, read by program 2026-10-13; pyproject.toml at head 117be34 carries 0.11.3.dev0, unreleased"
-        },
-        "maturity": {
-          "value": null,
-          "source": "no development-status classifier in packaging or on the index"
-        },
-        "packages": [
-          {
-            "index": "Python index: scpn-studio-platform",
-            "published": true
-          }
-        ],
-        "licence": "AGPL-3.0-or-later",
-        "commercial_licence_available": true,
-        "listed_by": "SCPN-SYSTEMS-INTEGRATION-AND-CONTROL"
-      },
-      "repository_visibility_reported": "private",
-      "source_reported_public_url": null,
-      "source_record_date": "2026-10-13",
-      "state": "Private source-update candidate; content and outward review pending"
-    },
-    {
-      "project_id": "SCPN-STUDIO",
-      "record": {
-        "name": "SCPN-STUDIO",
-        "kind": "service",
-        "function": "The hub that federates studios over the platform contract: registry, cross-studio evidence audit, rendering and federation gating.",
-        "owning_groups": [
-          "SCPN-SYSTEMS-INTEGRATION-AND-CONTROL"
-        ],
-        "primary_group": "SCPN-SYSTEMS-INTEGRATION-AND-CONTROL",
-        "status": "under development",
-        "status_source": {
-          "where": "pyproject.toml at head 974fa71 (0.1.0, never released); no tag; not on the Python index (HTTP 404, 2026-10-13)",
-          "date": "2026-10-13"
-        },
-        "version": {
-          "value": null,
-          "source": "no release; packaging carries 0.1.0"
-        },
-        "maturity": {
-          "value": "alpha",
-          "source": "packaging classifier 'Development Status :: 3 - Alpha' (pyproject.toml)"
-        },
-        "packages": [],
-        "licence": "AGPL-3.0-or-later",
-        "commercial_licence_available": true,
-        "listed_by": "SCPN-SYSTEMS-INTEGRATION-AND-CONTROL"
-      },
-      "repository_visibility_reported": "private",
-      "source_reported_public_url": null,
-      "source_record_date": "2026-10-13",
-      "state": "Private source-update candidate; content and outward review pending"
-    },
-    {
       "project_id": "SYNAPSE-CHANNEL",
       "record": {
         "name": "SYNAPSE-CHANNEL",
@@ -2518,39 +2447,6 @@
       },
       "repository_visibility_reported": "public",
       "source_reported_public_url": "https://github.com/anulum/synapse-channel",
-      "source_record_date": "2026-10-13",
-      "state": "Private source-update candidate; content and outward review pending"
-    },
-    {
-      "project_id": "SYNAPSE-CHANNEL-FLEET",
-      "record": {
-        "name": "SYNAPSE-CHANNEL-FLEET",
-        "kind": "package",
-        "function": "Multi-machine operation of the bus: durable follower daemon, per-peer trust and configuration, claim forwarding and diagnostics.",
-        "owning_groups": [
-          "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS"
-        ],
-        "primary_group": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS",
-        "status": "under development",
-        "status_source": {
-          "where": "group map, SYNAPSE-CHANNEL docs/ecosystem.md; status recorded 2026-10-11",
-          "date": "2026-10-11"
-        },
-        "version": {
-          "value": null,
-          "source": null
-        },
-        "maturity": {
-          "value": "alpha",
-          "source": "packaging classifier"
-        },
-        "packages": [],
-        "licence": "LicenseRef-SYNAPSE-Enterprise",
-        "commercial_licence_available": null,
-        "listed_by": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS"
-      },
-      "repository_visibility_reported": "private",
-      "source_reported_public_url": null,
       "source_record_date": "2026-10-13",
       "state": "Private source-update candidate; content and outward review pending"
     },
@@ -2634,72 +2530,6 @@
       "state": "Private source-update candidate; content and outward review pending"
     },
     {
-      "project_id": "DIRECTOR-CLASS-AI",
-      "record": {
-        "name": "DIRECTOR-CLASS-AI",
-        "kind": "package",
-        "function": "Action control between an autonomous agent and its effectors: action-policy checks, human approvals, gateway enforcement and tamper-evident action evidence.",
-        "owning_groups": [
-          "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS"
-        ],
-        "primary_group": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS",
-        "status": "under development",
-        "status_source": {
-          "where": "group map, SYNAPSE-CHANNEL docs/ecosystem.md; status recorded 2026-10-11",
-          "date": "2026-10-11"
-        },
-        "version": {
-          "value": null,
-          "source": null
-        },
-        "maturity": {
-          "value": "alpha",
-          "source": "packaging classifier"
-        },
-        "packages": [],
-        "licence": "BUSL-1.1",
-        "commercial_licence_available": null,
-        "listed_by": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS"
-      },
-      "repository_visibility_reported": "private",
-      "source_reported_public_url": null,
-      "source_record_date": "2026-10-13",
-      "state": "Private source-update candidate; content and outward review pending"
-    },
-    {
-      "project_id": "DIRECTOR-AI-CLOUD",
-      "record": {
-        "name": "DIRECTOR-AI-CLOUD",
-        "kind": "service",
-        "function": "Control plane for a hosted Director-AI API: accounts, API-key lifecycle, usage metering, plan quotas and operator exports.",
-        "owning_groups": [
-          "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS"
-        ],
-        "primary_group": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS",
-        "status": "under development",
-        "status_source": {
-          "where": "group map, SYNAPSE-CHANNEL docs/ecosystem.md; status recorded 2026-10-11",
-          "date": "2026-10-11"
-        },
-        "version": {
-          "value": null,
-          "source": null
-        },
-        "maturity": {
-          "value": null,
-          "source": null
-        },
-        "packages": [],
-        "licence": "BUSL-1.1",
-        "commercial_licence_available": null,
-        "listed_by": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS"
-      },
-      "repository_visibility_reported": "private",
-      "source_reported_public_url": null,
-      "source_record_date": "2026-10-13",
-      "state": "Private source-update candidate; content and outward review pending"
-    },
-    {
       "project_id": "RIGOR-FOUNDRY",
       "record": {
         "name": "RIGOR-FOUNDRY",
@@ -2772,39 +2602,6 @@
       },
       "repository_visibility_reported": "public",
       "source_reported_public_url": "https://github.com/anulum/remanentia",
-      "source_record_date": "2026-10-13",
-      "state": "Private source-update candidate; content and outward review pending"
-    },
-    {
-      "project_id": "REMANENTIA-PORTAL",
-      "record": {
-        "name": "REMANENTIA-PORTAL",
-        "kind": "service",
-        "function": "Account and billing or licence-request portal for the product family. It runs no customer workload.",
-        "owning_groups": [
-          "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS"
-        ],
-        "primary_group": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS",
-        "status": "under development",
-        "status_source": {
-          "where": "group map, SYNAPSE-CHANNEL docs/ecosystem.md; status recorded 2026-10-11",
-          "date": "2026-10-11"
-        },
-        "version": {
-          "value": null,
-          "source": null
-        },
-        "maturity": {
-          "value": null,
-          "source": null
-        },
-        "packages": [],
-        "licence": "AGPL-3.0-or-later",
-        "commercial_licence_available": null,
-        "listed_by": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS"
-      },
-      "repository_visibility_reported": "private",
-      "source_reported_public_url": null,
       "source_record_date": "2026-10-13",
       "state": "Private source-update candidate; content and outward review pending"
     },
@@ -3094,60 +2891,6 @@
       "source_reported_public_url": null,
       "source_record_date": "2026-10-13",
       "state": "Private source-update candidate; content and outward review pending"
-    },
-    {
-      "project_id": "QPU-RESULT-PACK",
-      "record": {
-        "name": "QPU-RESULT-PACK",
-        "kind": "tool",
-        "owning_groups": [
-          "SCPN-QUANTUM-COMPUTING-SYSTEMS"
-        ],
-        "primary_group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-        "status": "under development",
-        "licence": "not stated",
-        "listed_by": "master map v0.7 (group-level row; the group has not delivered a data file)"
-      },
-      "repository_visibility_reported": null,
-      "source_reported_public_url": null,
-      "source_record_date": "2026-10-13",
-      "state": "Private source-update candidate; content and outward review pending"
-    },
-    {
-      "project_id": "TRANSPILE-WITNESS",
-      "record": {
-        "name": "TRANSPILE-WITNESS",
-        "kind": "tool",
-        "owning_groups": [
-          "SCPN-QUANTUM-COMPUTING-SYSTEMS"
-        ],
-        "primary_group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-        "status": "under development",
-        "licence": "AGPL-3.0-or-later by file headers; no licence field in packaging",
-        "listed_by": "master map v0.7 (group-level row; the group has not delivered a data file)"
-      },
-      "repository_visibility_reported": null,
-      "source_reported_public_url": null,
-      "source_record_date": "2026-10-13",
-      "state": "Private source-update candidate; content and outward review pending"
-    },
-    {
-      "project_id": "MITIGATION-WITNESS",
-      "record": {
-        "name": "MITIGATION-WITNESS",
-        "kind": "tool",
-        "owning_groups": [
-          "SCPN-QUANTUM-COMPUTING-SYSTEMS"
-        ],
-        "primary_group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-        "status": "under development",
-        "licence": "AGPL-3.0-or-later",
-        "listed_by": "master map v0.7 (group-level row; the group has not delivered a data file)"
-      },
-      "repository_visibility_reported": null,
-      "source_reported_public_url": null,
-      "source_record_date": "2026-10-13",
-      "state": "Private source-update candidate; content and outward review pending"
     }
   ],
   "held_contexts": [
@@ -3162,5 +2905,6 @@
   ],
   "graph_change": false,
   "baseline_change": false,
-  "note": "Work status stays In progress. Dated source metadata and scientific/release evidence remain separate."
+  "note": "Work status stays In progress. Dated source metadata and scientific/release evidence remain separate.",
+  "public_projection_updated_at_utc": "2026-10-20T21:01:15.996660+00:00"
 }
