@@ -26,6 +26,74 @@ import checkResourceExplorer, {
 } from "./test_resource_explorer.mjs";
 
 test(
+  "native resource fragments and back/forward restore source rows and filter controls",
+  { timeout: 120000 },
+  async () => {
+    await withAtlasPage(async (page) => {
+      await navigate(page, baseUrl + "resources.html");
+      /** @type {import("../types/atlas.js").ResourceData} */
+      const data = JSON.parse(
+        await readFile("docs/atlas/public_resources_data.json", "utf8"),
+      );
+      const group = "SCPN-SYSTEMS-INTEGRATION-AND-CONTROL";
+      const expected = data.needs
+        .filter((row) => row.group === group)
+        .map((row) => row.id);
+      assert.ok(expected.length > 0);
+      await page.evaluate(
+        (hash) => {
+          location.hash = hash;
+        },
+        "#group=" + encodeURIComponent(group),
+      );
+      await page
+        .locator('#group option:checked[value="' + group + '"]')
+        .waitFor({ state: "attached" });
+      assert.deepEqual(
+        await page
+          .locator("#results article")
+          .evaluateAll((rows) =>
+            rows.map(
+              (row) => /** @type {HTMLElement} */ (row).dataset.recordId,
+            ),
+          ),
+        expected,
+      );
+      assert.equal(await page.locator("#download-selection").isEnabled(), true);
+      const selectionHref = await page
+        .locator("#selection-link")
+        .getAttribute("href");
+      assert.ok(selectionHref);
+      assert.equal(
+        new URL(selectionHref, baseUrl).hash,
+        "#group=" + encodeURIComponent(group),
+      );
+      await page.goBack();
+      await page
+        .locator('#group option:checked[value=""]')
+        .waitFor({ state: "attached" });
+      assert.equal(
+        await page.locator("#results article").count(),
+        data.needs.length,
+      );
+      await page.goForward();
+      await page
+        .locator('#group option:checked[value="' + group + '"]')
+        .waitFor({ state: "attached" });
+      assert.equal(
+        await page.locator("#results article").count(),
+        expected.length,
+      );
+      assert.equal(await page.locator("#search").inputValue(), "");
+      assert.equal(
+        await page.locator("#needs-tab").getAttribute("aria-pressed"),
+        "true",
+      );
+    });
+  },
+);
+
+test(
   "public DOM event boundary refuses an empty disabled CSV activation; not native pointer or AT proof",
   { timeout: 120000 },
   async () => {

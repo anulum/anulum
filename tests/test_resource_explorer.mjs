@@ -171,12 +171,7 @@ export default async function checkResourceExplorer(
     .waitFor();
   equal(await visibleIds(), ["control:SSAT"]);
   await page.goForward();
-  await page.waitForFunction(
-    () =>
-      /** @type {HTMLButtonElement} */ (
-        document.getElementById("needs-tab")
-      ).getAttribute("aria-pressed") === "true",
-  );
+  await page.locator('#needs-tab[aria-pressed="true"]').waitFor();
   equal(await page.locator("#needs-tab").getAttribute("aria-pressed"), "true");
   await page.goBack();
   await page
