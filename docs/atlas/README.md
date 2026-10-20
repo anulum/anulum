@@ -201,3 +201,10 @@ Project cards and reading views use each entry’s reported state. Funding-route
 labels distinguish identified opportunities, partner search, historical access
 and programme-specific categories. Research access is separated from a cash
 award, current quota and any new scientific validation.
+
+The repository-owned `tools/atlas_publication_policy.json` identifies cleared source
+owners, approved public identities and selected illustration bytes. Both the
+generator and importer refuse withheld document text, technical quotations,
+implementation dossiers, restored private images and stale map descriptions
+before writing output. Changing an input export cannot remove these checks.
+Approved SVG ownership-notice variants preserve the exact drawing contents.

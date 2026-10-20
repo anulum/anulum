@@ -1,0 +1,1492 @@
+{
+  "version": "1",
+  "public_sources": [
+    "ANULUM",
+    "ATLAS-REACTORUM",
+    "DIRECTOR-AI",
+    "HushLine",
+    "LOOP-TIMING-WITNESS",
+    "REMANENTIA",
+    "RIGOR-FOUNDRY",
+    "SC-NEUROCORE",
+    "SCPN-BEAM-TARGET-CORE",
+    "SCPN-CONTROL",
+    "SCPN-DENSE-PLASMA-FOCUS-CORE",
+    "SCPN-FRC-CORE",
+    "SCPN-FUSION-CORE",
+    "SCPN-FUSION-FISSION-HYBRID-CORE",
+    "SCPN-ICF-BEAM-CORE",
+    "SCPN-ICF-IMPACT-CORE",
+    "SCPN-ICF-LASER-CORE",
+    "SCPN-IEC-CORE",
+    "SCPN-LATTICE-FUSION-CORE",
+    "SCPN-LEVITATED-DIPOLE-CORE",
+    "SCPN-MAGNETIC-CUSP-CORE",
+    "SCPN-MIF-CORE",
+    "SCPN-MIF-LINER-CORE",
+    "SCPN-MIF-MAGLIF-CORE",
+    "SCPN-MIF-PLASMA-JET-CORE",
+    "SCPN-MIRROR-CORE",
+    "SCPN-MUON-FUSION-CORE",
+    "SCPN-PHASE-ORCHESTRATOR",
+    "SCPN-QUANTUM-CONTROL",
+    "SCPN-REACTOR-KERNELS",
+    "SCPN-RFP-CORE",
+    "SCPN-SPHEROMAK-CORE",
+    "SCPN-STELLARATOR-CORE",
+    "SCPN-THETA-PINCH-CORE",
+    "SCPN-TOKAMAK-CORE",
+    "SCPN-Z-PINCH-CORE",
+    "SYNAPSE-CHANNEL",
+    "SYNAPSE-POLICY-CHECK-ACTION",
+    "oscillatools",
+    "scpn-quantum-engine"
+  ],
+  "withheld_nodes": {
+    "SCPN-ADS-CORE": {
+      "id": "SCPN-ADS-CORE",
+      "name": "SCPN-ADS-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": ["SCPN-REACTOR-SYSTEMS"],
+      "function": "Subcritical blanket design and a typed beam-target interface; accelerator ownership remains separate.",
+      "kind": "component",
+      "work_status": "In progress",
+      "as_of": "2026-10-12",
+      "phase": "Architecture stage: a reviewed boundary and validation tooling, no model.",
+      "release": null,
+      "licence": "AGPL-3.0-or-later; commercial licence available",
+      "url": null,
+      "boundary": "Contents are not published.",
+      "sources": [],
+      "source_note": "Manager-approved architecture identity, dated 2026-10-12. Repository contents are not published.",
+      "dossier": {
+        "review_state": "Contents are not published.",
+        "current_surfaces": [],
+        "expected_outputs": [],
+        "inputs": [],
+        "outputs": [],
+        "acceptance": [],
+        "partner_needs": [],
+        "open_fields": []
+      },
+      "repository_record": {
+        "as_of": "2026-10-12",
+        "stage": "architecture stage",
+        "basis": "Family: fission_device. Not published."
+      }
+    },
+    "SCPN-BIOCHEM-CORE": {
+      "id": "SCPN-BIOCHEM-CORE",
+      "name": "SCPN-BIOCHEM-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": ["SCPN-REACTOR-SYSTEMS"],
+      "function": "Biochemical reaction engineering design, fermentation and enzymatic-kinetics boundaries.",
+      "kind": "component",
+      "work_status": "In progress",
+      "as_of": "2026-10-12",
+      "phase": "Architecture stage: a reviewed boundary and validation tooling, no model.",
+      "release": null,
+      "licence": "AGPL-3.0-or-later; commercial licence available",
+      "url": null,
+      "boundary": "Contents are not published.",
+      "sources": [],
+      "source_note": "Manager-approved architecture identity, dated 2026-10-12. Repository contents are not published.",
+      "dossier": {
+        "review_state": "Contents are not published.",
+        "current_surfaces": [],
+        "expected_outputs": [],
+        "inputs": [],
+        "outputs": [],
+        "acceptance": [],
+        "partner_needs": [],
+        "open_fields": []
+      },
+      "repository_record": {
+        "as_of": "2026-10-12",
+        "stage": "architecture stage",
+        "basis": "Family: chemical_device. Not published."
+      }
+    },
+    "SCPN-BREED-BURN-CORE": {
+      "id": "SCPN-BREED-BURN-CORE",
+      "name": "SCPN-BREED-BURN-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": ["SCPN-REACTOR-SYSTEMS"],
+      "function": "Breed-and-burn fuel-management concepts and evidence limitations; no moving burn-wave claim.",
+      "kind": "component",
+      "work_status": "In progress",
+      "as_of": "2026-10-12",
+      "phase": "Architecture stage: a reviewed boundary and validation tooling, no model.",
+      "release": null,
+      "licence": "AGPL-3.0-or-later; commercial licence available",
+      "url": null,
+      "boundary": "Contents are not published.",
+      "sources": [],
+      "source_note": "Manager-approved architecture identity, dated 2026-10-12. Repository contents are not published.",
+      "dossier": {
+        "review_state": "Contents are not published.",
+        "current_surfaces": [],
+        "expected_outputs": [],
+        "inputs": [],
+        "outputs": [],
+        "acceptance": [],
+        "partner_needs": [],
+        "open_fields": []
+      },
+      "repository_record": {
+        "as_of": "2026-10-12",
+        "stage": "architecture stage",
+        "basis": "Family: fission_device. Not published."
+      }
+    },
+    "SCPN-BWR-CORE": {
+      "id": "SCPN-BWR-CORE",
+      "name": "SCPN-BWR-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": ["SCPN-REACTOR-SYSTEMS"],
+      "function": "Boiling-channel fission design and void-feedback evidence; no two-phase solver is implemented.",
+      "kind": "component",
+      "work_status": "In progress",
+      "as_of": "2026-10-12",
+      "phase": "Architecture stage: a reviewed boundary and validation tooling, no model.",
+      "release": null,
+      "licence": "AGPL-3.0-or-later; commercial licence available",
+      "url": null,
+      "boundary": "Contents are not published.",
+      "sources": [],
+      "source_note": "Manager-approved architecture identity, dated 2026-10-12. Repository contents are not published.",
+      "dossier": {
+        "review_state": "Contents are not published.",
+        "current_surfaces": [],
+        "expected_outputs": [],
+        "inputs": [],
+        "outputs": [],
+        "acceptance": [],
+        "partner_needs": [],
+        "open_fields": []
+      },
+      "repository_record": {
+        "as_of": "2026-10-12",
+        "stage": "architecture stage",
+        "basis": "Family: fission_device. Not published."
+      }
+    },
+    "SCPN-CATALYTIC-BED-CORE": {
+      "id": "SCPN-CATALYTIC-BED-CORE",
+      "name": "SCPN-CATALYTIC-BED-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": ["SCPN-REACTOR-SYSTEMS"],
+      "function": "Fixed-bed catalysis design, effectiveness and pressure-drop interfaces.",
+      "kind": "component",
+      "work_status": "In progress",
+      "as_of": "2026-10-12",
+      "phase": "Architecture stage: a reviewed boundary and validation tooling, no model.",
+      "release": null,
+      "licence": "AGPL-3.0-or-later; commercial licence available",
+      "url": null,
+      "boundary": "Contents are not published.",
+      "sources": [],
+      "source_note": "Manager-approved architecture identity, dated 2026-10-12. Repository contents are not published.",
+      "dossier": {
+        "review_state": "Contents are not published.",
+        "current_surfaces": [],
+        "expected_outputs": [],
+        "inputs": [],
+        "outputs": [],
+        "acceptance": [],
+        "partner_needs": [],
+        "open_fields": []
+      },
+      "repository_record": {
+        "as_of": "2026-10-12",
+        "stage": "architecture stage",
+        "basis": "Family: chemical_device. Not published."
+      }
+    },
+    "SCPN-CHANNEL-CORE": {
+      "id": "SCPN-CHANNEL-CORE",
+      "name": "SCPN-CHANNEL-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": ["SCPN-REACTOR-SYSTEMS"],
+      "function": "Graphite-moderated channel reactor geometry and physics; SCPN-PHWR-CORE exclusively owns heavy-water pressure tubes.",
+      "kind": "component",
+      "work_status": "In progress",
+      "as_of": "2026-10-12",
+      "phase": "Architecture stage: a reviewed boundary and validation tooling, no model.",
+      "release": null,
+      "licence": "AGPL-3.0-or-later; commercial licence available",
+      "url": null,
+      "boundary": "Contents are not published.",
+      "sources": [],
+      "source_note": "Manager-approved architecture identity, dated 2026-10-12. Repository contents are not published.",
+      "dossier": {
+        "review_state": "Contents are not published.",
+        "current_surfaces": [],
+        "expected_outputs": [],
+        "inputs": [],
+        "outputs": [],
+        "acceptance": [],
+        "partner_needs": [],
+        "open_fields": []
+      },
+      "repository_record": {
+        "as_of": "2026-10-12",
+        "stage": "architecture stage",
+        "basis": "Family: fission_device. Not published."
+      }
+    },
+    "SCPN-CHEM-KINETICS-CORE": {
+      "id": "SCPN-CHEM-KINETICS-CORE",
+      "name": "SCPN-CHEM-KINETICS-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": ["SCPN-REACTOR-SYSTEMS"],
+      "function": "Ideal gas-phase reactor kinetics and CSTR/PFR design; shared kinetics belongs in the kernel library.",
+      "kind": "component",
+      "work_status": "In progress",
+      "as_of": "2026-10-12",
+      "phase": "Architecture stage: a reviewed boundary and validation tooling, no model.",
+      "release": null,
+      "licence": "AGPL-3.0-or-later; commercial licence available",
+      "url": null,
+      "boundary": "Contents are not published.",
+      "sources": [],
+      "source_note": "Manager-approved architecture identity, dated 2026-10-12. Repository contents are not published.",
+      "dossier": {
+        "review_state": "Contents are not published.",
+        "current_surfaces": [],
+        "expected_outputs": [],
+        "inputs": [],
+        "outputs": [],
+        "acceptance": [],
+        "partner_needs": [],
+        "open_fields": []
+      },
+      "repository_record": {
+        "as_of": "2026-10-12",
+        "stage": "architecture stage",
+        "basis": "Family: chemical_device. Not published."
+      }
+    },
+    "SCPN-CHEM-PROCESS-HYBRID-CORE": {
+      "id": "SCPN-CHEM-PROCESS-HYBRID-CORE",
+      "name": "SCPN-CHEM-PROCESS-HYBRID-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": ["SCPN-REACTOR-SYSTEMS"],
+      "function": "Typed composition of chemical process families and carbon-capture interfaces.",
+      "kind": "component",
+      "work_status": "In progress",
+      "as_of": "2026-10-12",
+      "phase": "Architecture stage: a reviewed boundary and validation tooling, no model.",
+      "release": null,
+      "licence": "AGPL-3.0-or-later; commercial licence available",
+      "url": null,
+      "boundary": "Contents are not published.",
+      "sources": [],
+      "source_note": "Manager-approved architecture identity, dated 2026-10-12. Repository contents are not published.",
+      "dossier": {
+        "review_state": "Contents are not published.",
+        "current_surfaces": [],
+        "expected_outputs": [],
+        "inputs": [],
+        "outputs": [],
+        "acceptance": [],
+        "partner_needs": [],
+        "open_fields": []
+      },
+      "repository_record": {
+        "as_of": "2026-10-12",
+        "stage": "architecture stage",
+        "basis": "Family: hybrid_composition. Not published."
+      }
+    },
+    "SCPN-ELECTROCHEM-CORE": {
+      "id": "SCPN-ELECTROCHEM-CORE",
+      "name": "SCPN-ELECTROCHEM-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": ["SCPN-REACTOR-SYSTEMS"],
+      "function": "Electrochemical reactor design for electrolyser and fuel-cell process boundaries.",
+      "kind": "component",
+      "work_status": "In progress",
+      "as_of": "2026-10-12",
+      "phase": "Architecture stage: a reviewed boundary and validation tooling, no model.",
+      "release": null,
+      "licence": "AGPL-3.0-or-later; commercial licence available",
+      "url": null,
+      "boundary": "Contents are not published.",
+      "sources": [],
+      "source_note": "Manager-approved architecture identity, dated 2026-10-12. Repository contents are not published.",
+      "dossier": {
+        "review_state": "Contents are not published.",
+        "current_surfaces": [],
+        "expected_outputs": [],
+        "inputs": [],
+        "outputs": [],
+        "acceptance": [],
+        "partner_needs": [],
+        "open_fields": []
+      },
+      "repository_record": {
+        "as_of": "2026-10-12",
+        "stage": "architecture stage",
+        "basis": "Family: chemical_device. Not published."
+      }
+    },
+    "SCPN-FUSION-PROCESS-HEAT-CORE": {
+      "id": "SCPN-FUSION-PROCESS-HEAT-CORE",
+      "name": "SCPN-FUSION-PROCESS-HEAT-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": ["SCPN-REACTOR-SYSTEMS"],
+      "function": "Typed fusion-to-chemical-process heat and material coupling records.",
+      "kind": "component",
+      "work_status": "In progress",
+      "as_of": "2026-10-12",
+      "phase": "Architecture stage: a reviewed boundary and validation tooling, no model.",
+      "release": null,
+      "licence": "AGPL-3.0-or-later; commercial licence available",
+      "url": null,
+      "boundary": "Contents are not published.",
+      "sources": [],
+      "source_note": "Manager-approved architecture identity, dated 2026-10-12. Repository contents are not published.",
+      "dossier": {
+        "review_state": "Contents are not published.",
+        "current_surfaces": [],
+        "expected_outputs": [],
+        "inputs": [],
+        "outputs": [],
+        "acceptance": [],
+        "partner_needs": [],
+        "open_fields": []
+      },
+      "repository_record": {
+        "as_of": "2026-10-12",
+        "stage": "architecture stage",
+        "basis": "Family: hybrid_composition. Not published."
+      }
+    },
+    "SCPN-GFR-CORE": {
+      "id": "SCPN-GFR-CORE",
+      "name": "SCPN-GFR-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": ["SCPN-REACTOR-SYSTEMS"],
+      "function": "Fast-spectrum gas-cooled reactor design and heat-removal boundaries.",
+      "kind": "component",
+      "work_status": "In progress",
+      "as_of": "2026-10-12",
+      "phase": "Architecture stage: a reviewed boundary and validation tooling, no model.",
+      "release": null,
+      "licence": "AGPL-3.0-or-later; commercial licence available",
+      "url": null,
+      "boundary": "Contents are not published.",
+      "sources": [],
+      "source_note": "Manager-approved architecture identity, dated 2026-10-12. Repository contents are not published.",
+      "dossier": {
+        "review_state": "Contents are not published.",
+        "current_surfaces": [],
+        "expected_outputs": [],
+        "inputs": [],
+        "outputs": [],
+        "acceptance": [],
+        "partner_needs": [],
+        "open_fields": []
+      },
+      "repository_record": {
+        "as_of": "2026-10-12",
+        "stage": "architecture stage",
+        "basis": "Family: fission_device. Not published."
+      }
+    },
+    "SCPN-HEAT-PIPE-CORE": {
+      "id": "SCPN-HEAT-PIPE-CORE",
+      "name": "SCPN-HEAT-PIPE-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": ["SCPN-REACTOR-SYSTEMS"],
+      "function": "Solid-core heat-pipe microreactor design and heat-transport interfaces.",
+      "kind": "component",
+      "work_status": "In progress",
+      "as_of": "2026-10-12",
+      "phase": "Architecture stage: a reviewed boundary and validation tooling, no model.",
+      "release": null,
+      "licence": "AGPL-3.0-or-later; commercial licence available",
+      "url": null,
+      "boundary": "Contents are not published.",
+      "sources": [],
+      "source_note": "Manager-approved architecture identity, dated 2026-10-12. Repository contents are not published.",
+      "dossier": {
+        "review_state": "Contents are not published.",
+        "current_surfaces": [],
+        "expected_outputs": [],
+        "inputs": [],
+        "outputs": [],
+        "acceptance": [],
+        "partner_needs": [],
+        "open_fields": []
+      },
+      "repository_record": {
+        "as_of": "2026-10-12",
+        "stage": "architecture stage",
+        "basis": "Family: fission_device. Not published."
+      }
+    },
+    "SCPN-HTGR-CORE": {
+      "id": "SCPN-HTGR-CORE",
+      "name": "SCPN-HTGR-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": ["SCPN-REACTOR-SYSTEMS"],
+      "function": "Graphite-moderated, gas-cooled and TRISO design evidence with a declared process-heat interface.",
+      "kind": "component",
+      "work_status": "In progress",
+      "as_of": "2026-10-12",
+      "phase": "Architecture stage: a reviewed boundary and validation tooling, no model.",
+      "release": null,
+      "licence": "AGPL-3.0-or-later; commercial licence available",
+      "url": null,
+      "boundary": "Contents are not published.",
+      "sources": [],
+      "source_note": "Manager-approved architecture identity, dated 2026-10-12. Repository contents are not published.",
+      "dossier": {
+        "review_state": "Contents are not published.",
+        "current_surfaces": [],
+        "expected_outputs": [],
+        "inputs": [],
+        "outputs": [],
+        "acceptance": [],
+        "partner_needs": [],
+        "open_fields": []
+      },
+      "repository_record": {
+        "as_of": "2026-10-12",
+        "stage": "architecture stage",
+        "basis": "Family: fission_device. Not published."
+      }
+    },
+    "SCPN-HYBRID-ENERGY-CORE": {
+      "id": "SCPN-HYBRID-ENERGY-CORE",
+      "name": "SCPN-HYBRID-ENERGY-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": ["SCPN-REACTOR-SYSTEMS"],
+      "function": "Typed fission, renewable and storage energy-flow coupling records.",
+      "kind": "component",
+      "work_status": "In progress",
+      "as_of": "2026-10-12",
+      "phase": "Architecture stage: a reviewed boundary and validation tooling, no model.",
+      "release": null,
+      "licence": "AGPL-3.0-or-later; commercial licence available",
+      "url": null,
+      "boundary": "Contents are not published.",
+      "sources": [],
+      "source_note": "Manager-approved architecture identity, dated 2026-10-12. Repository contents are not published.",
+      "dossier": {
+        "review_state": "Contents are not published.",
+        "current_surfaces": [],
+        "expected_outputs": [],
+        "inputs": [],
+        "outputs": [],
+        "acceptance": [],
+        "partner_needs": [],
+        "open_fields": []
+      },
+      "repository_record": {
+        "as_of": "2026-10-12",
+        "stage": "architecture stage",
+        "basis": "Family: hybrid_composition. Not published."
+      }
+    },
+    "SCPN-HYDROGEN-PROCESS-CORE": {
+      "id": "SCPN-HYDROGEN-PROCESS-CORE",
+      "name": "SCPN-HYDROGEN-PROCESS-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": ["SCPN-REACTOR-SYSTEMS"],
+      "function": "Hydrogen production process designs for thermal and electrical feed interfaces.",
+      "kind": "component",
+      "work_status": "In progress",
+      "as_of": "2026-10-12",
+      "phase": "Architecture stage: a reviewed boundary and validation tooling, no model.",
+      "release": null,
+      "licence": "AGPL-3.0-or-later; commercial licence available",
+      "url": null,
+      "boundary": "Contents are not published.",
+      "sources": [],
+      "source_note": "Manager-approved architecture identity, dated 2026-10-12. Repository contents are not published.",
+      "dossier": {
+        "review_state": "Contents are not published.",
+        "current_surfaces": [],
+        "expected_outputs": [],
+        "inputs": [],
+        "outputs": [],
+        "acceptance": [],
+        "partner_needs": [],
+        "open_fields": []
+      },
+      "repository_record": {
+        "as_of": "2026-10-12",
+        "stage": "architecture stage",
+        "basis": "Family: chemical_device. Not published."
+      }
+    },
+    "SCPN-LFR-CORE": {
+      "id": "SCPN-LFR-CORE",
+      "name": "SCPN-LFR-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": ["SCPN-REACTOR-SYSTEMS"],
+      "function": "Fast-spectrum lead or lead-bismuth cooled system design and corrosion boundary.",
+      "kind": "component",
+      "work_status": "In progress",
+      "as_of": "2026-10-12",
+      "phase": "Architecture stage: a reviewed boundary and validation tooling, no model.",
+      "release": null,
+      "licence": "AGPL-3.0-or-later; commercial licence available",
+      "url": null,
+      "boundary": "Contents are not published.",
+      "sources": [],
+      "source_note": "Manager-approved architecture identity, dated 2026-10-12. Repository contents are not published.",
+      "dossier": {
+        "review_state": "Contents are not published.",
+        "current_surfaces": [],
+        "expected_outputs": [],
+        "inputs": [],
+        "outputs": [],
+        "acceptance": [],
+        "partner_needs": [],
+        "open_fields": []
+      },
+      "repository_record": {
+        "as_of": "2026-10-12",
+        "stage": "architecture stage",
+        "basis": "Family: fission_device. Not published."
+      }
+    },
+    "SCPN-MEMBRANE-CORE": {
+      "id": "SCPN-MEMBRANE-CORE",
+      "name": "SCPN-MEMBRANE-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": ["SCPN-REACTOR-SYSTEMS"],
+      "function": "Coupled reaction-and-separation design and transport interfaces.",
+      "kind": "component",
+      "work_status": "In progress",
+      "as_of": "2026-10-12",
+      "phase": "Architecture stage: a reviewed boundary and validation tooling, no model.",
+      "release": null,
+      "licence": "AGPL-3.0-or-later; commercial licence available",
+      "url": null,
+      "boundary": "Contents are not published.",
+      "sources": [],
+      "source_note": "Manager-approved architecture identity, dated 2026-10-12. Repository contents are not published.",
+      "dossier": {
+        "review_state": "Contents are not published.",
+        "current_surfaces": [],
+        "expected_outputs": [],
+        "inputs": [],
+        "outputs": [],
+        "acceptance": [],
+        "partner_needs": [],
+        "open_fields": []
+      },
+      "repository_record": {
+        "as_of": "2026-10-12",
+        "stage": "architecture stage",
+        "basis": "Family: chemical_device. Not published."
+      }
+    },
+    "SCPN-METHANE-REFORMER-CORE": {
+      "id": "SCPN-METHANE-REFORMER-CORE",
+      "name": "SCPN-METHANE-REFORMER-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": ["SCPN-REACTOR-SYSTEMS"],
+      "function": "Steam-methane reforming process design and hydrogen stream interfaces.",
+      "kind": "component",
+      "work_status": "In progress",
+      "as_of": "2026-10-12",
+      "phase": "Architecture stage: a reviewed boundary and validation tooling, no model.",
+      "release": null,
+      "licence": "AGPL-3.0-or-later; commercial licence available",
+      "url": null,
+      "boundary": "Contents are not published.",
+      "sources": [],
+      "source_note": "Manager-approved architecture identity, dated 2026-10-12. Repository contents are not published.",
+      "dossier": {
+        "review_state": "Contents are not published.",
+        "current_surfaces": [],
+        "expected_outputs": [],
+        "inputs": [],
+        "outputs": [],
+        "acceptance": [],
+        "partner_needs": [],
+        "open_fields": []
+      },
+      "repository_record": {
+        "as_of": "2026-10-12",
+        "stage": "architecture stage",
+        "basis": "Family: chemical_device. Not published."
+      }
+    },
+    "SCPN-MSR-CORE": {
+      "id": "SCPN-MSR-CORE",
+      "name": "SCPN-MSR-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": ["SCPN-REACTOR-SYSTEMS"],
+      "function": "Liquid-fuel molten-salt design with chemistry and depletion interfaces; thermal and fast variants remain facets.",
+      "kind": "component",
+      "work_status": "In progress",
+      "as_of": "2026-10-12",
+      "phase": "Architecture stage: a reviewed boundary and validation tooling, no model.",
+      "release": null,
+      "licence": "AGPL-3.0-or-later; commercial licence available",
+      "url": null,
+      "boundary": "Contents are not published.",
+      "sources": [],
+      "source_note": "Manager-approved architecture identity, dated 2026-10-12. Repository contents are not published.",
+      "dossier": {
+        "review_state": "Contents are not published.",
+        "current_surfaces": [],
+        "expected_outputs": [],
+        "inputs": [],
+        "outputs": [],
+        "acceptance": [],
+        "partner_needs": [],
+        "open_fields": []
+      },
+      "repository_record": {
+        "as_of": "2026-10-12",
+        "stage": "architecture stage",
+        "basis": "Family: fission_device. Not published."
+      }
+    },
+    "SCPN-NTP-CORE": {
+      "id": "SCPN-NTP-CORE",
+      "name": "SCPN-NTP-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": ["SCPN-REACTOR-SYSTEMS"],
+      "function": "Reactor-side nuclear thermal propulsion design; no verified source anchor or thrust result yet.",
+      "kind": "component",
+      "work_status": "In progress",
+      "as_of": "2026-10-12",
+      "phase": "Architecture stage: a reviewed boundary and validation tooling, no model.",
+      "release": null,
+      "licence": "AGPL-3.0-or-later; commercial licence available",
+      "url": null,
+      "boundary": "Contents are not published.",
+      "sources": [],
+      "source_note": "Manager-approved architecture identity, dated 2026-10-12. Repository contents are not published.",
+      "dossier": {
+        "review_state": "Contents are not published.",
+        "current_surfaces": [],
+        "expected_outputs": [],
+        "inputs": [],
+        "outputs": [],
+        "acceptance": [],
+        "partner_needs": [],
+        "open_fields": []
+      },
+      "repository_record": {
+        "as_of": "2026-10-12",
+        "stage": "architecture stage",
+        "basis": "Family: fission_device. Not published."
+      }
+    },
+    "SCPN-NUCLEAR-DESALINATION-CORE": {
+      "id": "SCPN-NUCLEAR-DESALINATION-CORE",
+      "name": "SCPN-NUCLEAR-DESALINATION-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": ["SCPN-REACTOR-SYSTEMS"],
+      "function": "Typed fission-to-desalination thermal and material coupling records.",
+      "kind": "component",
+      "work_status": "In progress",
+      "as_of": "2026-10-12",
+      "phase": "Architecture stage: a reviewed boundary and validation tooling, no model.",
+      "release": null,
+      "licence": "AGPL-3.0-or-later; commercial licence available",
+      "url": null,
+      "boundary": "Contents are not published.",
+      "sources": [],
+      "source_note": "Manager-approved architecture identity, dated 2026-10-12. Repository contents are not published.",
+      "dossier": {
+        "review_state": "Contents are not published.",
+        "current_surfaces": [],
+        "expected_outputs": [],
+        "inputs": [],
+        "outputs": [],
+        "acceptance": [],
+        "partner_needs": [],
+        "open_fields": []
+      },
+      "repository_record": {
+        "as_of": "2026-10-12",
+        "stage": "architecture stage",
+        "basis": "Family: hybrid_composition. Not published."
+      }
+    },
+    "SCPN-NUCLEAR-HYDROGEN-CORE": {
+      "id": "SCPN-NUCLEAR-HYDROGEN-CORE",
+      "name": "SCPN-NUCLEAR-HYDROGEN-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": ["SCPN-REACTOR-SYSTEMS"],
+      "function": "Typed fission-to-hydrogen thermal, electrical and material coupling records.",
+      "kind": "component",
+      "work_status": "In progress",
+      "as_of": "2026-10-12",
+      "phase": "Architecture stage: a reviewed boundary and validation tooling, no model.",
+      "release": null,
+      "licence": "AGPL-3.0-or-later; commercial licence available",
+      "url": null,
+      "boundary": "Contents are not published.",
+      "sources": [],
+      "source_note": "Manager-approved architecture identity, dated 2026-10-12. Repository contents are not published.",
+      "dossier": {
+        "review_state": "Contents are not published.",
+        "current_surfaces": [],
+        "expected_outputs": [],
+        "inputs": [],
+        "outputs": [],
+        "acceptance": [],
+        "partner_needs": [],
+        "open_fields": []
+      },
+      "repository_record": {
+        "as_of": "2026-10-12",
+        "stage": "architecture stage",
+        "basis": "Family: hybrid_composition. Not published."
+      }
+    },
+    "SCPN-PHOTOCATALYTIC-CORE": {
+      "id": "SCPN-PHOTOCATALYTIC-CORE",
+      "name": "SCPN-PHOTOCATALYTIC-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": ["SCPN-REACTOR-SYSTEMS"],
+      "function": "Photon-driven chemical reaction design with source and optical-flux interfaces.",
+      "kind": "component",
+      "work_status": "In progress",
+      "as_of": "2026-10-12",
+      "phase": "Architecture stage: a reviewed boundary and validation tooling, no model.",
+      "release": null,
+      "licence": "AGPL-3.0-or-later; commercial licence available",
+      "url": null,
+      "boundary": "Contents are not published.",
+      "sources": [],
+      "source_note": "Manager-approved architecture identity, dated 2026-10-12. Repository contents are not published.",
+      "dossier": {
+        "review_state": "Contents are not published.",
+        "current_surfaces": [],
+        "expected_outputs": [],
+        "inputs": [],
+        "outputs": [],
+        "acceptance": [],
+        "partner_needs": [],
+        "open_fields": []
+      },
+      "repository_record": {
+        "as_of": "2026-10-12",
+        "stage": "architecture stage",
+        "basis": "Family: chemical_device. Not published."
+      }
+    },
+    "SCPN-PHWR-CORE": {
+      "id": "SCPN-PHWR-CORE",
+      "name": "SCPN-PHWR-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": ["SCPN-REACTOR-SYSTEMS"],
+      "function": "Heavy-water pressure-tube design and on-power refuelling interfaces; graphite channel physics belongs to SCPN-CHANNEL-CORE.",
+      "kind": "component",
+      "work_status": "In progress",
+      "as_of": "2026-10-12",
+      "phase": "Architecture stage: a reviewed boundary and validation tooling, no model.",
+      "release": null,
+      "licence": "AGPL-3.0-or-later; commercial licence available",
+      "url": null,
+      "boundary": "Contents are not published.",
+      "sources": [],
+      "source_note": "Manager-approved architecture identity, dated 2026-10-12. Repository contents are not published.",
+      "dossier": {
+        "review_state": "Contents are not published.",
+        "current_surfaces": [],
+        "expected_outputs": [],
+        "inputs": [],
+        "outputs": [],
+        "acceptance": [],
+        "partner_needs": [],
+        "open_fields": []
+      },
+      "repository_record": {
+        "as_of": "2026-10-12",
+        "stage": "architecture stage",
+        "basis": "Family: fission_device. Not published."
+      }
+    },
+    "SCPN-PWR-CORE": {
+      "id": "SCPN-PWR-CORE",
+      "name": "SCPN-PWR-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": ["SCPN-REACTOR-SYSTEMS"],
+      "function": "Light-water moderated and cooled fission-system design records; pressure vessel and primary circuit are in scope.",
+      "kind": "component",
+      "work_status": "In progress",
+      "as_of": "2026-10-12",
+      "phase": "Architecture stage: a reviewed boundary and validation tooling, no model.",
+      "release": null,
+      "licence": "AGPL-3.0-or-later; commercial licence available",
+      "url": null,
+      "boundary": "Contents are not published.",
+      "sources": [],
+      "source_note": "Manager-approved architecture identity, dated 2026-10-12. Repository contents are not published.",
+      "dossier": {
+        "review_state": "Contents are not published.",
+        "current_surfaces": [],
+        "expected_outputs": [],
+        "inputs": [],
+        "outputs": [],
+        "acceptance": [],
+        "partner_needs": [],
+        "open_fields": []
+      },
+      "repository_record": {
+        "as_of": "2026-10-12",
+        "stage": "architecture stage",
+        "basis": "Family: fission_device. Not published."
+      }
+    },
+    "SCPN-REACTOR-CATALOGUE": {
+      "id": "SCPN-REACTOR-CATALOGUE",
+      "name": "SCPN-REACTOR-CATALOGUE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": ["SCPN-REACTOR-SYSTEMS"],
+      "function": "Evidence-labelled catalogue of reactor-family records; inclusion does not validate a device or approve a candidate.",
+      "kind": "component",
+      "work_status": "In progress",
+      "as_of": "2026-10-12",
+      "phase": "Architecture stage: a reviewed boundary and validation tooling, no model.",
+      "release": null,
+      "licence": "AGPL-3.0-or-later; commercial licence available",
+      "url": null,
+      "boundary": "Contents are not published.",
+      "sources": [],
+      "source_note": "Manager-approved architecture identity, dated 2026-10-12. Repository contents are not published.",
+      "dossier": {
+        "review_state": "Contents are not published.",
+        "current_surfaces": [],
+        "expected_outputs": [],
+        "inputs": [],
+        "outputs": [],
+        "acceptance": [],
+        "partner_needs": [],
+        "open_fields": []
+      },
+      "repository_record": {
+        "as_of": "2026-10-12",
+        "stage": "architecture stage",
+        "basis": "Family: catalogue. Not published."
+      }
+    },
+    "SCPN-RESEARCH-REACTOR-CORE": {
+      "id": "SCPN-RESEARCH-REACTOR-CORE",
+      "name": "SCPN-RESEARCH-REACTOR-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": ["SCPN-REACTOR-SYSTEMS"],
+      "function": "Research and isotope-production reactor design, including pulse-operation boundaries.",
+      "kind": "component",
+      "work_status": "In progress",
+      "as_of": "2026-10-12",
+      "phase": "Architecture stage: a reviewed boundary and validation tooling, no model.",
+      "release": null,
+      "licence": "AGPL-3.0-or-later; commercial licence available",
+      "url": null,
+      "boundary": "Contents are not published.",
+      "sources": [],
+      "source_note": "Manager-approved architecture identity, dated 2026-10-12. Repository contents are not published.",
+      "dossier": {
+        "review_state": "Contents are not published.",
+        "current_surfaces": [],
+        "expected_outputs": [],
+        "inputs": [],
+        "outputs": [],
+        "acceptance": [],
+        "partner_needs": [],
+        "open_fields": []
+      },
+      "repository_record": {
+        "as_of": "2026-10-12",
+        "stage": "architecture stage",
+        "basis": "Family: fission_device. Not published."
+      }
+    },
+    "SCPN-SCWR-CORE": {
+      "id": "SCPN-SCWR-CORE",
+      "name": "SCPN-SCWR-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": ["SCPN-REACTOR-SYSTEMS"],
+      "function": "Supercritical-water reactor design and thermal-hydraulic applicability boundaries.",
+      "kind": "component",
+      "work_status": "In progress",
+      "as_of": "2026-10-12",
+      "phase": "Architecture stage: a reviewed boundary and validation tooling, no model.",
+      "release": null,
+      "licence": "AGPL-3.0-or-later; commercial licence available",
+      "url": null,
+      "boundary": "Contents are not published.",
+      "sources": [],
+      "source_note": "Manager-approved architecture identity, dated 2026-10-12. Repository contents are not published.",
+      "dossier": {
+        "review_state": "Contents are not published.",
+        "current_surfaces": [],
+        "expected_outputs": [],
+        "inputs": [],
+        "outputs": [],
+        "acceptance": [],
+        "partner_needs": [],
+        "open_fields": []
+      },
+      "repository_record": {
+        "as_of": "2026-10-12",
+        "stage": "architecture stage",
+        "basis": "Family: fission_device. Not published."
+      }
+    },
+    "SCPN-SFR-CORE": {
+      "id": "SCPN-SFR-CORE",
+      "name": "SCPN-SFR-CORE",
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "owning_groups": ["SCPN-REACTOR-SYSTEMS"],
+      "function": "Fast-spectrum sodium-cooled system design, coolant and materials boundaries.",
+      "kind": "component",
+      "work_status": "In progress",
+      "as_of": "2026-10-12",
+      "phase": "Architecture stage: a reviewed boundary and validation tooling, no model.",
+      "release": null,
+      "licence": "AGPL-3.0-or-later; commercial licence available",
+      "url": null,
+      "boundary": "Contents are not published.",
+      "sources": [],
+      "source_note": "Manager-approved architecture identity, dated 2026-10-12. Repository contents are not published.",
+      "dossier": {
+        "review_state": "Contents are not published.",
+        "current_surfaces": [],
+        "expected_outputs": [],
+        "inputs": [],
+        "outputs": [],
+        "acceptance": [],
+        "partner_needs": [],
+        "open_fields": []
+      },
+      "repository_record": {
+        "as_of": "2026-10-12",
+        "stage": "architecture stage",
+        "basis": "Family: fission_device. Not published."
+      }
+    },
+    "SCPN-STUDIO-PLATFORM": {
+      "id": "SCPN-STUDIO-PLATFORM",
+      "name": "SCPN-STUDIO-PLATFORM",
+      "group": "SCPN-SYSTEMS-INTEGRATION-AND-CONTROL",
+      "owning_groups": ["SCPN-SYSTEMS-INTEGRATION-AND-CONTROL"],
+      "function": "Domain-neutral SDK for studios: evidence bundles, capability manifests, bounded jobs and tenant-aware identity.",
+      "kind": "package",
+      "work_status": "In progress",
+      "as_of": "2026-10-13",
+      "phase": "Contents are not published.",
+      "release": null,
+      "licence": "Not published",
+      "url": null,
+      "boundary": "Contents are not published.",
+      "sources": [],
+      "source_note": "Contents are not published.",
+      "dossier": {
+        "review_state": "Contents are not published.",
+        "current_surfaces": [],
+        "expected_outputs": [],
+        "inputs": [],
+        "outputs": [],
+        "acceptance": [],
+        "partner_needs": [],
+        "open_fields": []
+      }
+    },
+    "SCPN-STUDIO": {
+      "id": "SCPN-STUDIO",
+      "name": "SCPN-STUDIO",
+      "group": "SCPN-SYSTEMS-INTEGRATION-AND-CONTROL",
+      "owning_groups": ["SCPN-SYSTEMS-INTEGRATION-AND-CONTROL"],
+      "function": "The hub that federates studios over the platform contract: registry, cross-studio evidence audit, rendering and federation gating.",
+      "kind": "service",
+      "work_status": "In progress",
+      "as_of": "2026-10-13",
+      "phase": "Contents are not published.",
+      "release": null,
+      "licence": "Not published",
+      "url": null,
+      "boundary": "Contents are not published.",
+      "sources": [],
+      "source_note": "Contents are not published.",
+      "dossier": {
+        "review_state": "Contents are not published.",
+        "current_surfaces": [],
+        "expected_outputs": [],
+        "inputs": [],
+        "outputs": [],
+        "acceptance": [],
+        "partner_needs": [],
+        "open_fields": []
+      }
+    },
+    "SYNAPSE-CHANNEL-FLEET": {
+      "id": "SYNAPSE-CHANNEL-FLEET",
+      "name": "SYNAPSE-CHANNEL-FLEET",
+      "group": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS",
+      "owning_groups": [
+        "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS"
+      ],
+      "function": "Multi-machine operation of the bus: durable follower daemon, per-peer trust and configuration, claim forwarding and diagnostics.",
+      "kind": "package",
+      "work_status": "In progress",
+      "as_of": "2026-10-11",
+      "phase": "Contents are not published.",
+      "release": null,
+      "licence": "Not published",
+      "url": null,
+      "boundary": "Contents are not published.",
+      "sources": [],
+      "source_note": "Contents are not published.",
+      "dossier": {
+        "review_state": "Contents are not published.",
+        "current_surfaces": [],
+        "expected_outputs": [],
+        "inputs": [],
+        "outputs": [],
+        "acceptance": [],
+        "partner_needs": [],
+        "open_fields": []
+      }
+    },
+    "DIRECTOR-CLASS-AI": {
+      "id": "DIRECTOR-CLASS-AI",
+      "name": "DIRECTOR-CLASS-AI",
+      "group": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS",
+      "owning_groups": [
+        "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS"
+      ],
+      "function": "Action control between an autonomous agent and its effectors: action-policy checks, human approvals, gateway enforcement and tamper-evident action evidence.",
+      "kind": "package",
+      "work_status": "In progress",
+      "as_of": "2026-10-11",
+      "phase": "Contents are not published.",
+      "release": null,
+      "licence": "Not published",
+      "url": null,
+      "boundary": "Contents are not published.",
+      "sources": [],
+      "source_note": "Contents are not published.",
+      "dossier": {
+        "review_state": "Contents are not published.",
+        "current_surfaces": [],
+        "expected_outputs": [],
+        "inputs": [],
+        "outputs": [],
+        "acceptance": [],
+        "partner_needs": [],
+        "open_fields": []
+      }
+    },
+    "DIRECTOR-AI-CLOUD": {
+      "id": "DIRECTOR-AI-CLOUD",
+      "name": "DIRECTOR-AI-CLOUD",
+      "group": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS",
+      "owning_groups": [
+        "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS"
+      ],
+      "function": "Control plane for a hosted Director-AI API: accounts, API-key lifecycle, usage metering, plan quotas and operator exports.",
+      "kind": "service",
+      "work_status": "In progress",
+      "as_of": "2026-10-11",
+      "phase": "Contents are not published.",
+      "release": null,
+      "licence": "Not published",
+      "url": null,
+      "boundary": "Contents are not published.",
+      "sources": [],
+      "source_note": "Contents are not published.",
+      "dossier": {
+        "review_state": "Contents are not published.",
+        "current_surfaces": [],
+        "expected_outputs": [],
+        "inputs": [],
+        "outputs": [],
+        "acceptance": [],
+        "partner_needs": [],
+        "open_fields": []
+      }
+    },
+    "REMANENTIA-PORTAL": {
+      "id": "REMANENTIA-PORTAL",
+      "name": "REMANENTIA-PORTAL",
+      "group": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS",
+      "owning_groups": [
+        "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS"
+      ],
+      "function": "Account and billing or licence-request portal for the product family. It runs no customer workload.",
+      "kind": "service",
+      "work_status": "In progress",
+      "as_of": "2026-10-11",
+      "phase": "Contents are not published.",
+      "release": null,
+      "licence": "Not published",
+      "url": null,
+      "boundary": "Contents are not published.",
+      "sources": [],
+      "source_note": "Contents are not published.",
+      "dossier": {
+        "review_state": "Contents are not published.",
+        "current_surfaces": [],
+        "expected_outputs": [],
+        "inputs": [],
+        "outputs": [],
+        "acceptance": [],
+        "partner_needs": [],
+        "open_fields": []
+      }
+    },
+    "EVIDENCE-MANIFEST-TOOLKIT": {
+      "id": "EVIDENCE-MANIFEST-TOOLKIT",
+      "name": "EVIDENCE-MANIFEST-TOOLKIT",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Intended purpose: canonicalises, references, seals and verifies evidence with explicit schemas, bounded sources and independently selected policy.",
+      "kind": "shared",
+      "work_status": "In progress",
+      "as_of": "2026-10-13",
+      "phase": "Contents are not published.",
+      "release": null,
+      "licence": "Not published",
+      "url": null,
+      "boundary": "Contents are not published.",
+      "sources": [],
+      "source_note": "Contents are not published.",
+      "dossier": {
+        "review_state": "Contents are not published.",
+        "current_surfaces": [],
+        "expected_outputs": [],
+        "inputs": [],
+        "outputs": [],
+        "acceptance": [],
+        "partner_needs": [],
+        "open_fields": []
+      }
+    },
+    "QPU-RESULT-PACK": {
+      "id": "QPU-RESULT-PACK",
+      "name": "QPU-RESULT-PACK",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": ["SCPN-QUANTUM-COMPUTING-SYSTEMS"],
+      "function": "Preserve raw results and their provenance, derivations and reviewable presentation.",
+      "kind": "tool",
+      "work_status": "In progress",
+      "as_of": "2026-10-13",
+      "phase": "Contents are not published.",
+      "release": null,
+      "licence": "Not published",
+      "url": null,
+      "boundary": "Contents are not published.",
+      "sources": [],
+      "source_note": "Contents are not published.",
+      "dossier": {
+        "review_state": "Contents are not published.",
+        "current_surfaces": [],
+        "expected_outputs": [],
+        "inputs": [],
+        "outputs": [],
+        "acceptance": [],
+        "partner_needs": [],
+        "open_fields": []
+      }
+    },
+    "TRANSPILE-WITNESS": {
+      "id": "TRANSPILE-WITNESS",
+      "name": "TRANSPILE-WITNESS",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": ["SCPN-QUANTUM-COMPUTING-SYSTEMS"],
+      "function": "Retain scoped observations about compilation semantics, layout, global phase and replay.",
+      "kind": "tool",
+      "work_status": "In progress",
+      "as_of": "2026-10-13",
+      "phase": "Contents are not published.",
+      "release": null,
+      "licence": "Not published",
+      "url": null,
+      "boundary": "Contents are not published.",
+      "sources": [],
+      "source_note": "Contents are not published.",
+      "dossier": {
+        "review_state": "Contents are not published.",
+        "current_surfaces": [],
+        "expected_outputs": [],
+        "inputs": [],
+        "outputs": [],
+        "acceptance": [],
+        "partner_needs": [],
+        "open_fields": []
+      }
+    },
+    "MITIGATION-WITNESS": {
+      "id": "MITIGATION-WITNESS",
+      "name": "MITIGATION-WITNESS",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": ["SCPN-QUANTUM-COMPUTING-SYSTEMS"],
+      "function": "Evaluate mitigation on declared measurement panels with retained inputs and uncertainty.",
+      "kind": "tool",
+      "work_status": "In progress",
+      "as_of": "2026-10-13",
+      "phase": "Contents are not published.",
+      "release": null,
+      "licence": "Not published",
+      "url": null,
+      "boundary": "Contents are not published.",
+      "sources": [],
+      "source_note": "Contents are not published.",
+      "dossier": {
+        "review_state": "Contents are not published.",
+        "current_surfaces": [],
+        "expected_outputs": [],
+        "inputs": [],
+        "outputs": [],
+        "acceptance": [],
+        "partner_needs": [],
+        "open_fields": []
+      }
+    },
+    "SCPN-QC-CONTRACTS": {
+      "id": "SCPN-QC-CONTRACTS",
+      "name": "SCPN-QC-CONTRACTS",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": ["SCPN-QUANTUM-COMPUTING-SYSTEMS"],
+      "function": "Versioned parameter, result, semantic and evidence interface contracts shared by components.",
+      "kind": "component",
+      "work_status": "In progress",
+      "as_of": "2026-10-13",
+      "phase": "Contents are not published.",
+      "release": null,
+      "licence": "Not published",
+      "url": null,
+      "boundary": "Contents are not published.",
+      "sources": [],
+      "source_note": "Contents are not published.",
+      "dossier": {
+        "review_state": "Contents are not published.",
+        "current_surfaces": [],
+        "expected_outputs": [],
+        "inputs": [],
+        "outputs": [],
+        "acceptance": [],
+        "partner_needs": [],
+        "open_fields": []
+      }
+    },
+    "SPIKE-LOG": {
+      "id": "SPIKE-LOG",
+      "name": "SPIKE-LOG",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": ["SC-NEUROMORPHIC-COMPUTING-SYSTEMS"],
+      "function": "Intended purpose: records, indexes, verifies, slices and replays event streams without losing their provenance or timebase identity.",
+      "kind": "tool",
+      "work_status": "In progress",
+      "as_of": "2026-10-13",
+      "phase": "Contents are not published.",
+      "release": null,
+      "licence": "Not published",
+      "url": null,
+      "boundary": "Contents are not published.",
+      "sources": [],
+      "source_note": "Contents are not published.",
+      "dossier": {
+        "review_state": "Contents are not published.",
+        "current_surfaces": [],
+        "expected_outputs": [],
+        "inputs": [],
+        "outputs": [],
+        "acceptance": [],
+        "partner_needs": [],
+        "open_fields": []
+      }
+    },
+    "ANULUM-CORRESPONDENCE": {
+      "id": "ANULUM-CORRESPONDENCE",
+      "name": "ANULUM-CORRESPONDENCE",
+      "group": "ANULUM-COMPANY-OPERATIONS",
+      "owning_groups": ["ANULUM-COMPANY-OPERATIONS"],
+      "function": "Internal repository. Contents are not published.",
+      "kind": "service",
+      "phase": "Internal development; implementation details withheld.",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-13",
+      "url": null,
+      "boundary": "Repository identity is shown in the ecosystem architecture; repository contents are strictly internal.",
+      "sources": [],
+      "source_note": "Repository contents withheld under the owner’s publication restriction.",
+      "dossier": {
+        "review_state": "Internal source contents withheld.",
+        "current_surfaces": [],
+        "expected_outputs": [],
+        "inputs": [],
+        "outputs": [],
+        "acceptance": [],
+        "partner_needs": [],
+        "open_fields": []
+      }
+    }
+  },
+  "withheld_assets": [
+    "visuals/QPU_RESULT_PACK_PROVENANCE_DESIGN_v0.1.png",
+    "visuals/QPU_RESULT_PACK_PROVENANCE_DESIGN_v0.1.svg",
+    "visuals/evidence-bytes-authority-and-domain-verdict.svg",
+    "visuals/mitigation-counts-uncertainty-and-verdicts.svg",
+    "visuals/phwr-current-and-target-architecture.svg",
+    "visuals/phwr-proposed-owned-architecture-flow.svg",
+    "visuals/qpu-result-evidence-workflow.svg",
+    "visuals/qpu-result-provenance_original_scope.json",
+    "visuals/qpu-result-provenance_original_scope.json.license",
+    "visuals/quantum-contracts-ownership-and-compatibility.svg",
+    "visuals/transpile-observations-layout-and-replay.svg"
+  ],
+  "approved_static_assets": {
+    "F1_detailed_system_in_progress_v0.3.pdf": [
+      "6eb181595a326fc76681de819689ffb3ed5b0c42b1722ee4162f5b1331b0e207"
+    ],
+    "F1_detailed_system_in_progress_v0.3.png": [
+      "5322d1a78397dc530e92bf36db1ecd9c3f2dddc1f9f32d75104a5a0aeb8956a1"
+    ],
+    "F1_detailed_system_in_progress_v0.3.svg": [
+      "de7364018d62f283242255f93013996e1a6ea73199a47516d14d52a7d1118494",
+      "6fa9177226910a3c0acee77336d1b98c51f68efb0a5ddfba970f16a4d7aa76ac",
+      "1c6ed456224c9572f1217d83f64a37dea4238963e4f172575d69608b0f254b65"
+    ],
+    "F2_complete_project_atlas_v0.6.pdf": [
+      "325c7e6cf713b3f7e1a9f942865934af2313df7014e35036e229b133a21247b4"
+    ],
+    "F2_complete_project_atlas_v0.6.png": [
+      "98c4f913f0ca3bc6a004d8b82739f4284658de69c74c0a84ff66ed4e58f7fd2b"
+    ],
+    "F2_complete_project_atlas_v0.6.svg": [
+      "8db1ec42ac501c81abf04c1c9e7c4e6375e904d72eda1b4322bf864db2a89e98",
+      "dd936be29f4cee89e82d86e410495e8f009e7aec9f9fa459cff6b1cd502de0b2",
+      "45a8131eb3907e8b06b1a53d5e49882bb3433dbffa97c32a1a80bf4456176dc0"
+    ],
+    "F3_detailed_discovery_cycle_in_progress_v0.3.pdf": [
+      "d8579ab4c61104a2bd6a9274fd42c11408df1e5e7ccb049d77f4ba0fcefd116a"
+    ],
+    "F3_detailed_discovery_cycle_in_progress_v0.3.png": [
+      "a75c7e88fb861e33b92fc423eda29ed6f822637841a31bae9a523c70442c9eec"
+    ],
+    "F3_detailed_discovery_cycle_in_progress_v0.3.svg": [
+      "934073cca6e42049a42466fb5c96680f32cd1503b3c6fdeb6f678041838d9369",
+      "be1a09dbf3c011ad9ab76b2ee019fa42077acfd996dd8a6cffc97586ffe50cfe",
+      "000367f988f498e05839269d4287ea688d730d38be8dde953df7e365bca2ce5f"
+    ],
+    "F4_funding_blocks_outcomes_v0.4.pdf": [
+      "2e3e98fbc0a92f23f0831712d4dd9084f0df9a821eb514df0bc6d469ad538a4e"
+    ],
+    "F4_funding_blocks_outcomes_v0.4.png": [
+      "be982dc8660b3fa112fdc24ad80053228c4ddcbadb540e72a2e3d27d3a4d0dba"
+    ],
+    "F4_funding_blocks_outcomes_v0.4.svg": [
+      "d044f6b193d98c89b35310a798a9174453a0ed7cf68f756810c7d68f8d69012c",
+      "666f2c7bd2edf17fb5b1903a8becae8114e45e005b7bfe78a32a7daf7d3807f3",
+      "1807bc1db3e9d681be43b7669af0500cb6e2908efd86e7fe29941a1ea58d49a9"
+    ],
+    "F5_conditional_timeline_v0.4.pdf": [
+      "e6619b3acce31463bd4f6eb6372ffbcc00afda7a80a3f55ac55464deda2bd0a0"
+    ],
+    "F5_conditional_timeline_v0.4.png": [
+      "743a80ca99aa3a2691893b804dafa14610e5e42a93898fb1bf746cf15b016c80"
+    ],
+    "F5_conditional_timeline_v0.4.svg": [
+      "8f570175c6716073850e1a6ab3a3937fcb8252459aa8447ec1f4cd98c2f0b54d",
+      "a262c4404e5936db0b56b0170fccc6c1899c9063ae8558f5cb2e197416b44008",
+      "40c2e3593b4aec4c668f42decab7831c41550e8b830169869354b73ecd10190d"
+    ],
+    "visuals/SC_NEUROCORE_LIF_RTL_DESIGN_v0.2.png": [
+      "d8094182f140471a02da10ea32ac24126ed73d1b038b3117deb8576db0be2b5f"
+    ],
+    "visuals/SC_NEUROCORE_LIF_RTL_DESIGN_v0.2.svg": [
+      "c61076aa16d740ade1254d5dc5eecaa30a603324a1377d2ad9b8e67fd84155e4",
+      "b08530064c47aecd27ca9bb1a1b26ec866766c1148252be11a6ccc3de0b127f3",
+      "0efb7aee2e74a1480f251368adfb582484b05dd6221cfc50e39a4f7ebff0bcfa"
+    ],
+    "visuals/control-logic-runtime-and-evidence.svg": [
+      "7783644760259e527816264feb23056aa2845646724d701815d6f453aece8ed2",
+      "4c75868ae1aaea9a950d3e9758b8d6ed229162866b4c1dc5d6f7321ba71962a8",
+      "7290a6a11dc88018f4555f7cebfabeb0aca1804c19b13554ef73c0ce82992bc2"
+    ],
+    "visuals/fusion-fields-profiles-and-3d-models.svg": [
+      "7d03ca48c945e0b40c315957273affc5d33979fa19576101da40b3fc5f8bdd35",
+      "f4302c36cba0afcfa47d9ea6eda1c2145a50bd277f1a0bb7550902d745a8e162",
+      "8b615aaa3fe1f71385a016a074ce1794d78783c179ea2f6ba8e9eb475f4c6738"
+    ],
+    "visuals/kernels-geometry-and-cad-workflows.svg": [
+      "68402abf4538747e1a50eec93637a9218af17498f6756272f66779124e9e82f4",
+      "c921f9289946f6cbf66b33212b21f562c11a76e2c6c89ba612b8c9c05f5683e6",
+      "17c703810daa50344d9b3f1de0c747c071e9ade64cd13f55c61d397b70aa2a54"
+    ],
+    "visuals/mif-kinematics-trigger-and-evidence.svg": [
+      "43c5ddf7f61b53e454b90be77c8601311cb9e0184d731c9897a54dea71818df9",
+      "2dca41c9318e06ad56271552a1bdbe3dd440c7fe0f213ad1f4ae2ed47cdfe272",
+      "7a7ade0a964975ff593e0aeedf53fa3a9064076c88cb3b6ea8d2dcd33afb6a29"
+    ],
+    "visuals/neurocore-supported-workflows.svg": [
+      "f876e28efaa7904297b09e9f22d4c3f2c94b4d25ee5b0349f6fe0d9f8464a796",
+      "e9d69e43dacb5a7a41b622243d003785df1c5536c535d53bd263617426c51858",
+      "c6af09c1c042e01f62489435025ebf874392742982fc0ed5736846989bded76f"
+    ],
+    "visuals/quantum-local-neural-bridge.svg": [
+      "72dc048c375afccca2b5882bfd8704c2d4ae8d163333ed9e980c2624cb59b0be",
+      "e26f12d414db960bef67d0c21b74edd9d776ce91cf1336ec416f6e4c73d69b1f",
+      "30e104f3c80f9910f1d839721a3dd2e163dd9b3e3fb654dc5860e36619ff762f"
+    ],
+    "visuals/repo_header.png": [
+      "a860d137da5461888eed4af8d5f43921464d5974b7e7b4cf9b209ee6a1bcf1ea"
+    ],
+    "visuals/repo_header_diagnostics.png": [
+      "7b92b0b4f277fb015bd841c33649f19faecc11139d7b03b13732884f0451e7a2"
+    ],
+    "visuals/repo_header_registry_split.png": [
+      "ac4e87e12e43349f4dfb2d8c20c79e1402a3e00e4f41815549efb67b0aeb0dfa"
+    ],
+    "visuals/spo-phase-models-and-semantic-review.svg": [
+      "577976cd730135bf3f1cb2eefc6110360ef312013eb304d8bcec571d41e54bd2",
+      "d9376d89b02c7fd85448cda311c3eb75e6496b843c679cdadd2b32818fb33634",
+      "f3464bd467a7085f36debbc6208a7cc61db6ec750a8000e8a25e051b2d6793f2"
+    ],
+    "visuals/timing-events-to-qualified-measurements.svg": [
+      "eb4c211d5042eefc34acbe79f5120f4672c7a9ea45061af2f68654be442fd63d",
+      "af12e18083547b77e319fdddd1b491c1cef854ac5b7b58f7b8dbd8311c44e2d2",
+      "71ebd17f49d3b13a17dd1b0c67df1602af6b19c9fbd86b1ccd61175b26d40bc4"
+    ]
+  },
+  "public_guides": [
+    "LOOP-TIMING-WITNESS",
+    "SC-NC-ANALYSIS",
+    "SC-NC-BENCH",
+    "SC-NC-BRIDGES",
+    "SC-NC-CATALOGUE",
+    "SC-NC-COMPILER",
+    "SC-NC-CORE",
+    "SC-NC-DATA",
+    "SC-NC-ENGINE",
+    "SC-NC-HARDWARE",
+    "SC-NC-LEARN",
+    "SC-NC-STUDIO",
+    "SC-NC-VERIFY",
+    "SC-NEUROCORE",
+    "SCPN-CONTROL",
+    "SCPN-FUSION-CORE",
+    "SCPN-ICF-LASER-CORE",
+    "SCPN-MIF-CORE",
+    "SCPN-PHASE-ORCHESTRATOR",
+    "SCPN-QC-AD",
+    "SCPN-QC-CORE",
+    "SCPN-QC-SIM",
+    "SCPN-QUANTUM-CONTROL",
+    "SCPN-REACTOR-KERNELS",
+    "SCPN-STELLARATOR-CORE",
+    "SCPN-TOKAMAK-CORE"
+  ]
+}

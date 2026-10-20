@@ -44,6 +44,119 @@ class AtlasSyncTests(unittest.TestCase):
                 sync_atlas.sync(ATLAS, manifest, pin, destination)
             self.assertEqual(member.read_bytes(), changed)
 
+    def test_source_publication_policy_refuses_before_destination_creation(self) -> None:
+        """Refuse every outward carrier with public donor content and preserve the real export."""
+        policy = json.loads((ATLAS.parents[1] / "tools/atlas_publication_policy.json").read_bytes())
+        cases: list[tuple[str, bytes]] = []
+        library_name = "document_library_candidate.json"
+        for owner in ["QPU-RESULT-PACK", "SC-NC-CORE"]:
+            data = json.loads((ATLAS / library_name).read_bytes())
+            donor = next(row for row in data["projects"] if row["documents"])
+            if owner == "QPU-RESULT-PACK":
+                hidden = next(row for row in data["projects"] if row["project_id"] == owner)
+                hidden["documents"] = donor["documents"]
+            else:
+                donor["project_id"] = owner
+            cases.append((library_name, json.dumps(data).encode()))
+        atlas = json.loads((ATLAS / "public_atlas_data.json").read_bytes())
+        published = next(row for row in atlas["nodes"] if row["id"] == "SC-NEUROCORE")
+        direct_name = "direct_repository_sources.json"
+        for key in [
+            "documents",
+            "declared_package_metadata",
+            "boundary_declarations",
+            "readme_excerpts",
+            "architecture_documents",
+        ]:
+            data = json.loads((ATLAS / direct_name).read_bytes())
+            hidden = next(row for row in data["projects"] if row["project_id"] == "QPU-RESULT-PACK")
+            if key == "boundary_declarations":
+                hidden[key] = {"boundary": published["boundary"]}
+            else:
+                donor = next(row for row in data["projects"] if row[key])
+                hidden[key] = donor[key]
+            cases.append((direct_name, json.dumps(data).encode()))
+        technical_name = "technical_explanations_candidate.json"
+        for key in ["documents", "references", "guides", "guide_source_captures"]:
+            data = json.loads((ATLAS / technical_name).read_bytes())
+            owner = "QPU-RESULT-PACK"
+            if key == "documents":
+                hidden = next(row for row in data["library"]["projects"] if row["project_id"] == owner)
+                donor = next(row for row in data["library"]["projects"] if row["documents"])
+                hidden["documents"] = donor["documents"]
+            elif key == "references":
+                data["references"][0]["project"] = owner
+            elif key == "guides":
+                data["guides"][0]["project_id"] = owner
+            else:
+                data["guide_source_captures"][owner] = data["captured_at_utc"]
+            cases.append((technical_name, json.dumps(data).encode()))
+        for owner in ["ANULUM-CORRESPONDENCE", "QPU-RESULT-PACK", "SCPN-PHWR-CORE"]:
+            data = json.loads((ATLAS / "public_atlas_data.json").read_bytes())
+            hidden = next(row for row in data["nodes"] if row["id"] == owner)
+            hidden["dossier"] = published["dossier"]
+            cases.append(("public_atlas_data.json", json.dumps(data).encode()))
+        edge = next(row for row in atlas["edges"] if row["from"] in policy["withheld_nodes"])
+        edge["payload"] = published["function"]
+        cases.append(("public_atlas_data.json", json.dumps(atlas).encode()))
+        data = json.loads((ATLAS / "visual_catalogue.json").read_bytes())
+        data["illustrations"][0]["project"] = "QPU-RESULT-PACK"
+        cases.append(("visual_catalogue.json", json.dumps(data).encode()))
+        data = json.loads((ATLAS / "source_update_candidate.json").read_bytes())
+        data["projects"][0]["project_id"] = "QPU-RESULT-PACK"
+        cases.append(("source_update_candidate.json", json.dumps(data).encode()))
+        drawing = (ATLAS / "F4_funding_blocks_outcomes_v0.4.svg").read_bytes()
+        for name in [*policy["withheld_assets"], "visuals/SC-NC-CORE.svg"]:
+            cases.append((name, drawing))
+        for extension in ["svg", "png", "pdf"]:
+            cases.append(
+                (
+                    "F2_complete_project_atlas_v0.6." + extension,
+                    (ATLAS / ("F4_funding_blocks_outcomes_v0.4." + extension)).read_bytes(),
+                )
+            )
+        static = (ATLAS / "atlas_full.html").read_text()
+        pattern = (
+            r'(<g\b(?=[^>]*data-id="QPU-RESULT-PACK")[^>]*>[\s\S]*?)'
+            r"<title[^>]*>[\s\S]*?</title>"
+        )
+        match = re.search(pattern, static)
+        assert match is not None
+        for replacement in ["<title>" + published["function"] + "</title>", ""]:
+            changed = static[: match.start()] + match[1] + replacement + static[match.end() :]
+            self.assertNotEqual(changed, static)
+            cases.append(("atlas_full.html", changed.encode()))
+        with tempfile.TemporaryDirectory(prefix="atlas-publication-") as directory:
+            source = Path(directory) / "source"
+            selected = source / "atlas-manifest.json"
+            original_manifest = ATLAS / "atlas-manifest.json"
+            sync_atlas.sync(
+                ATLAS, original_manifest, hashlib.sha256(original_manifest.read_bytes()).hexdigest(), source
+            )
+            for index, (name, content) in enumerate(cases):
+                with self.subTest(index=index, carrier=name):
+                    target = source / name
+                    original = target.read_bytes() if target.exists() else None
+                    before = selected.read_bytes()
+                    current = json.loads(before)
+                    current["files"][name] = hashlib.sha256(content).hexdigest()
+                    target.write_bytes(content)
+                    selected.write_text(json.dumps(current))
+                    destination = Path(directory) / "refused"
+                    try:
+                        with self.assertRaisesRegex(ValueError, "Repository-internal contents are not publishable"):
+                            sync_atlas.sync(
+                                source, selected, hashlib.sha256(selected.read_bytes()).hexdigest(), destination
+                            )
+                        self.assertFalse(destination.exists())
+                    finally:
+                        if original is None:
+                            target.unlink()
+                        else:
+                            target.write_bytes(original)
+                        selected.write_bytes(before)
+            self.assertEqual(sync_atlas.check(source), sync_atlas.check(ATLAS))
+
     def test_manifest_pin_refuses_before_destination_creation(self) -> None:
         """A mismatched selected manifest cannot create an integrated tree."""
         with tempfile.TemporaryDirectory(prefix="atlas-pin-") as directory:

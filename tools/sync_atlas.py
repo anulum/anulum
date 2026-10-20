@@ -19,6 +19,7 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import html
 import json
 import re
 import sys
@@ -103,7 +104,79 @@ def _read_members(root: Path, files: dict[str, str]) -> dict[str, bytes]:
     return result
 
 
+def _publication(members: dict[str, bytes]) -> None:
+    """Check source rights against repository-owned policy before importing output."""
+    policy = _object((ROOT / "tools/atlas_publication_policy.json").read_bytes())
+    public = set(cast(list[str], policy["public_sources"]))
+    public_guides = set(cast(list[str], policy["public_guides"]))
+    withheld = cast(dict[str, dict[str, object]], policy["withheld_nodes"])
+    denied = cast(list[str], policy["withheld_assets"])
+    approved = cast(dict[str, list[str]], policy["approved_static_assets"])
+    for name, raw in members.items():
+        if name in denied or (
+            PurePosixPath(name).suffix in {".svg", ".png", ".pdf"}
+            and (name not in approved or hashlib.sha256(raw).hexdigest() not in approved[name])
+        ):
+            raise ValueError("Repository-internal contents are not publishable.")
+    library = _object(members["document_library_candidate.json"])
+    technical = _object(members["technical_explanations_candidate.json"])
+    for corpus in [library, cast(dict[str, object], technical["library"])]:
+        for row in cast(list[dict[str, object]], corpus["projects"]):
+            if row["project_id"] not in public and row["documents"]:
+                raise ValueError("Repository-internal contents are not publishable.")
+    direct = _object(members["direct_repository_sources.json"])
+    for row in cast(list[dict[str, object]], direct["projects"]):
+        if row["project_id"] not in public and any(
+            row[key]
+            for key in (
+                "documents",
+                "declared_package_metadata",
+                "boundary_declarations",
+                "readme_excerpts",
+                "architecture_documents",
+            )
+        ):
+            raise ValueError("Repository-internal contents are not publishable.")
+    if (
+        any(row["project"] not in public for row in cast(list[dict[str, object]], technical["references"]))
+        or any(row["project_id"] not in public_guides for row in cast(list[dict[str, object]], technical["guides"]))
+        or any(key in withheld for key in cast(dict[str, object], technical["guide_source_captures"]))
+    ):
+        raise ValueError("Repository-internal contents are not publishable.")
+    visual = _object(members["visual_catalogue.json"])
+    updates = _object(members["source_update_candidate.json"])
+    if any(row["project"] in withheld for row in cast(list[dict[str, str]], visual["illustrations"])) or any(
+        row["project_id"] in withheld for row in cast(list[dict[str, str]], updates["projects"])
+    ):
+        raise ValueError("Repository-internal contents are not publishable.")
+    atlas = _object(members["public_atlas_data.json"])
+    for node in cast(list[dict[str, object]], atlas["nodes"]):
+        identity = cast(str, node["id"])
+        if identity in withheld and node != withheld[identity]:
+            raise ValueError("Repository-internal contents are not publishable.")
+    for edge in cast(list[dict[str, str]], atlas["edges"]):
+        if (edge["from"] in withheld or edge["to"] in withheld) and edge != {
+            "from": edge["from"],
+            "to": edge["to"],
+            "kind": edge["kind"],
+            "evidence": "Architecture relationship; repository contents are not published.",
+        }:
+            raise ValueError("Repository-internal contents are not publishable.")
+    pattern = r'<g\b(?=[^>]*\bclass="node")(?=[^>]*\bdata-id="([^"]+)")[^>]*>[\s\S]*?</g>'
+    for card in re.finditer(pattern, members["atlas_full.html"].decode()):
+        approved_node = withheld.get(card[1])
+        if approved_node is not None:
+            expected = html.escape(
+                f"{approved_node['name']}: {approved_node['function']}\n"
+                f"{approved_node['phase']}\nLicence: {approved_node['licence']}"
+            )
+            title = re.search(r"<title[^>]*>([\s\S]*?)</title>", card[0])
+            if title is None or " ".join(title[1].split()) != " ".join(expected.split()):
+                raise ValueError("Repository-internal contents are not publishable.")
+
+
 def _content(members: dict[str, bytes]) -> None:
+    _publication(members)
     html = members["index.html"].decode()
     for element, name in DATASETS.items():
         matches = re.findall(

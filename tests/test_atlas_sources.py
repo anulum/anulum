@@ -29,6 +29,9 @@ ROOT = Path(__file__).resolve().parents[1]
 class AtlasSourceTests(unittest.TestCase):
     def setUp(self) -> None:
         self.data: dict[str, Any] = json.loads((ROOT / "docs/atlas/technical_explanations_candidate.json").read_bytes())
+        self.document_project_index = next(
+            index for index, row in enumerate(self.data["library"]["projects"]) if row["documents"]
+        )
 
     def test_complete_corpus_and_cli_do_not_modify_the_source(self) -> None:
         path = ROOT / "docs/atlas/technical_explanations_candidate.json"
@@ -51,16 +54,22 @@ class AtlasSourceTests(unittest.TestCase):
             lambda d: d["library"].__setitem__("projects", [None]),
             lambda d: d["library"]["projects"][0].__setitem__("project_id", ""),
             lambda d: d["library"]["projects"].append(copy.deepcopy(d["library"]["projects"][0])),
-            lambda d: d["library"]["projects"][0]["documents"].append(
-                copy.deepcopy(d["library"]["projects"][0]["documents"][0])
+            lambda d: d["library"]["projects"][self.document_project_index]["documents"].append(
+                copy.deepcopy(d["library"]["projects"][self.document_project_index]["documents"][0])
             ),
-            lambda d: d["library"]["projects"][0]["documents"][0].__setitem__("label", None),
-            lambda d: d["library"]["projects"][0]["documents"][0].__setitem__("lines", None),
-            lambda d: d["library"]["projects"][0]["documents"][0].__setitem__("lines", []),
-            lambda d: d["library"]["projects"][0]["documents"][0]["lines"].append(12),
-            lambda d: d["library"]["projects"][0]["documents"][0].__setitem__("source_sha256", "changed"),
-            lambda d: d["library"]["projects"][0]["documents"][0].__setitem__("projection_sha256", "0" * 64),
-            lambda d: d["library"]["projects"][0]["documents"][0]["lines"].append("Unrecorded source edit"),
+            lambda d: d["library"]["projects"][self.document_project_index]["documents"][0].__setitem__("label", None),
+            lambda d: d["library"]["projects"][self.document_project_index]["documents"][0].__setitem__("lines", None),
+            lambda d: d["library"]["projects"][self.document_project_index]["documents"][0].__setitem__("lines", []),
+            lambda d: d["library"]["projects"][self.document_project_index]["documents"][0]["lines"].append(12),
+            lambda d: d["library"]["projects"][self.document_project_index]["documents"][0].__setitem__(
+                "source_sha256", "changed"
+            ),
+            lambda d: d["library"]["projects"][self.document_project_index]["documents"][0].__setitem__(
+                "projection_sha256", "0" * 64
+            ),
+            lambda d: d["library"]["projects"][self.document_project_index]["documents"][0]["lines"].append(
+                "Unrecorded source edit"
+            ),
         ]
         self.refuse_mutations(mutations)
         with self.assertRaises(ValueError):
