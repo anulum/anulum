@@ -194,6 +194,25 @@ export async function renderAtlas(directory, { write = false } = {}) {
       const title = card[0].match(/<title[^>]*>([\s\S]*?)<\/title>/);
       if (!title || title[1].replace(/\s+/g, " ").trim() !== expected)
         throw new Error("Repository-internal contents are not publishable.");
+      const expectedLabel = (
+        node.name +
+        " " +
+        node.work_status +
+        " · " +
+        (node.repository_record
+          ? "architecture stage; no model"
+          : "Contents are not published.") +
+        " Licence: " +
+        node.licence
+      )
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#x27;");
+      const label = card[0].match(/\baria-label="([^"]*)"/);
+      if (!label || label[1] !== expectedLabel)
+        throw new Error("Repository-internal contents are not publishable.");
     }
   }
   const javascript = names.filter((name) => name.endsWith(".js"));

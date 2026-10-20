@@ -20,8 +20,11 @@ test(
   "the public technical source route builder opens the exact whole document without inventing a line selection",
   { timeout: 120000 },
   async () => {
-    const source = technical.library.projects[0],
-      document = source.documents[0];
+    const source = technical.library.projects.find(
+      (row) => row.documents.length,
+    );
+    assert.ok(source);
+    const document = source.documents[0];
     await withAtlasPage(async (page) => {
       await openRoute(page, { view: "technical" });
       const target = await page.evaluate(

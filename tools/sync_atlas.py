@@ -173,6 +173,17 @@ def _publication(members: dict[str, bytes]) -> None:
             title = re.search(r"<title[^>]*>([\s\S]*?)</title>", card[0])
             if title is None or " ".join(title[1].split()) != " ".join(expected.split()):
                 raise ValueError("Repository-internal contents are not publishable.")
+            phase = (
+                "architecture stage; no model"
+                if approved_node.get("repository_record")
+                else "Contents are not published."
+            )
+            expected_label = html.escape(
+                f"{approved_node['name']} {approved_node['work_status']} · {phase} Licence: {approved_node['licence']}"
+            )
+            label = re.search(r'\baria-label="([^"]*)"', card[0])
+            if label is None or label[1] != expected_label:
+                raise ValueError("Repository-internal contents are not publishable.")
 
 
 def _content(members: dict[str, bytes]) -> None:

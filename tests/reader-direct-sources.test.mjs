@@ -76,3 +76,51 @@ test(
     );
   },
 );
+
+test(
+  "public project boundary metadata remains readable beside its captured documents",
+  { timeout: 120000 },
+  async () => {
+    let project = "",
+      boundary = "";
+    await withAtlasSourceVariant(
+      ({ atlas, direct }) => {
+        const row = direct.projects.find((item) => item.documents.length);
+        assert.ok(row);
+        const node = atlas.nodes.find((item) => item.id === row.project_id);
+        assert.ok(node);
+        project = node.id;
+        boundary = node.boundary;
+        row.boundary_declarations = { boundary, category: node.kind };
+      },
+      async (servedBase) => {
+        await withAtlasPage(
+          async (page) => {
+            await openRoute(page, { project, tab: "sources" });
+            const panel = page.locator(".direct-source-panel");
+            await panel
+              .getByText("Machine-readable boundary declarations", {
+                exact: true,
+              })
+              .click();
+            const declaration = panel.locator("details").filter({
+              has: page.getByText("Machine-readable boundary declarations", {
+                exact: true,
+              }),
+            });
+            assert.ok((await declaration.innerText()).includes(boundary));
+            const captured = directData.projects.find(
+              (row) => row.project_id === project,
+            );
+            assert.ok(captured);
+            assert.equal(
+              await panel.locator(".fingerprint").count(),
+              captured.documents.length,
+            );
+          },
+          { servedBase },
+        );
+      },
+    );
+  },
+);

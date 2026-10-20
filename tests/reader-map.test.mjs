@@ -111,8 +111,7 @@ test(
         );
         const edge = atlas.edges.find(
           (row) =>
-            row.from === "SCPN-REACTOR-CATALOGUE" &&
-            row.to === "ATLAS-REACTORUM",
+            row.from === "SC-NC-BENCH" && row.to === "NEURO-EVIDENCE-BENCH",
         );
         assert.ok(edge);
         const a = atlas.nodes.find((node) => node.id === edge.from),

@@ -126,6 +126,11 @@ class AtlasSyncTests(unittest.TestCase):
             changed = static[: match.start()] + match[1] + replacement + static[match.end() :]
             self.assertNotEqual(changed, static)
             cases.append(("atlas_full.html", changed.encode()))
+        label_pattern = r'(<g\b(?=[^>]*data-id="QPU-RESULT-PACK")[^>]*?)aria-label="[^"]*"'
+        for replacement in ['aria-label="unapproved contents"', ""]:
+            changed = re.sub(label_pattern, r"\g<1>" + replacement, static, count=1)
+            self.assertNotEqual(changed, static)
+            cases.append(("atlas_full.html", changed.encode()))
         with tempfile.TemporaryDirectory(prefix="atlas-publication-") as directory:
             source = Path(directory) / "source"
             selected = source / "atlas-manifest.json"

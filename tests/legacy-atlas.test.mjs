@@ -281,11 +281,18 @@ test(
       trackProject = "",
       trackName = "",
       trackLabel = "",
+      referenceTitle = "",
+      referenceUrl = "",
       candidateProject = "",
       candidateLabel = "",
       relationProject = "";
     await withAtlasSourceVariant(
-      ({ atlas }) => {
+      ({ atlas, technical, library }) => {
+        const publicOwners = new Set(
+          library.projects
+            .filter((row) => row.documents.length)
+            .map((row) => row.project_id),
+        );
         zeroGroup = atlas.groups[0].id;
         atlas.groups[0].x = 0;
         absentGeometry = atlas.groups[1].id;
@@ -297,12 +304,28 @@ test(
         sparse = node.id;
         sparseName = node.name;
         Reflect.deleteProperty(node, "dossier");
-        const tracked = atlas.nodes.find(
-          (row) => row.dossier?.references?.length,
+        const reference = technical.references.find((row) =>
+          publicOwners.has(row.project),
         );
-        assert.ok(tracked);
-        assert.ok(tracked.dossier);
-        assert.ok(tracked.dossier.references);
+        assert.ok(reference);
+        const tracked = atlas.nodes.find((row) => row.id === reference.project);
+        assert.ok(tracked?.dossier);
+        assert.ok(tracked.url);
+        tracked.dossier.references = [
+          {
+            id: reference.id,
+            title: reference.document,
+            source_revision: reference.source_sha256,
+            scope: tracked.boundary,
+            url: tracked.url,
+          },
+        ];
+        referenceTitle = reference.document;
+        referenceUrl = tracked.url;
+        tracked.dossier.references.push({
+          ...tracked.dossier.references[0],
+          id: reference.id + "-published",
+        });
         trackProject = tracked.id;
         trackName = tracked.name;
         trackLabel = '<img src=x onerror="window.atlasInjected=true">';
@@ -321,7 +344,12 @@ test(
         const acquisition = candidate.resource_candidates[0];
         acquisition.author = "";
         candidateLabel = acquisition.item + " · " + acquisition.maker;
-        const edge = atlas.edges.find((row) => row.to !== orphan);
+        const edge = atlas.edges.find(
+          (row) =>
+            row.to !== orphan &&
+            publicOwners.has(row.from) &&
+            publicOwners.has(row.to),
+        );
         assert.ok(edge);
         edge.from = "absent-source-position";
         edge.kind = "planned interface";
@@ -364,6 +392,12 @@ test(
             assert.ok(trackedText.includes(trackLabel));
             assert.ok(trackedText.includes("absent-source-owner"));
             assert.equal(await page.locator('#detail img[src="x"]').count(), 0);
+            assert.equal(
+              await page
+                .getByRole("link", { name: referenceTitle, exact: true })
+                .getAttribute("href"),
+              referenceUrl,
+            );
             assert.equal(
               await page.locator('#detail a[href^="javascript:"]').count(),
               0,

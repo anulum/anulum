@@ -244,6 +244,14 @@ test("the public generator refuses withheld repository contents before deriving 
       original: staticSource,
       corrupted: altered,
     });
+    for (const replacement of ['aria-label="unapproved contents"', ""]) {
+      const corrupted = staticSource.replace(
+        /(<g\b(?=[^>]*data-id="QPU-RESULT-PACK")[^>]*?)aria-label="[^"]*"/,
+        "$1" + replacement,
+      );
+      assert.notEqual(corrupted, staticSource);
+      faults.push({ file: staticFile, original: staticSource, corrupted });
+    }
     const entry = await readFile(join(directory, "index.html"), "utf8");
     const manifest = await readFile(
       join(directory, "atlas-manifest.json"),

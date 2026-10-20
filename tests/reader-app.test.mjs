@@ -63,7 +63,13 @@ test(
      * @returns {void} Route order stays deterministic for comparison artifacts.
      */
     const add = (params) => {
-      routes.set("#" + new URLSearchParams(params), params);
+      const address = "#" + new URLSearchParams(params);
+      assert.equal(
+        routes.has(address),
+        false,
+        "Source route identities are unique",
+      );
+      routes.set(address, params);
     };
     for (const view of [
       "overview",
@@ -126,7 +132,22 @@ test(
         });
       }
     });
-    assert.equal(observations.length, 1312);
+    const expected =
+      16 +
+      2 * atlas.groups.length +
+      3 * atlas.nodes.length +
+      library.projects.reduce((total, row) => total + row.documents.length, 0) +
+      technical.guides.length +
+      technical.library.projects.reduce(
+        (total, row) => total + row.documents.length,
+        0,
+      );
+    assert.equal(routes.size, expected);
+    assert.equal(observations.length, expected);
+    assert.deepEqual(
+      observations.map((row) => row.route),
+      [...routes.keys()],
+    );
     await mkdir("coverage/readback", { recursive: true });
     await writeFile(
       "coverage/readback/routes.json",

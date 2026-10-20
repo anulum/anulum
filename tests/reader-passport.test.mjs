@@ -100,15 +100,61 @@ test(
   async () => {
     let missing = "",
       tracked = "",
-      label = "";
+      label = "",
+      referenceTitle = "",
+      referenceUrl = "",
+      referenceRevision = "";
     await withAtlasSourceVariant(
-      ({ atlas }) => {
-        missing = atlas.nodes[0].id;
-        Reflect.deleteProperty(atlas.nodes[0], "dossier");
-        const node = atlas.nodes[1];
+      ({ atlas, library, technical }) => {
+        const publicOwners = new Set(
+          library.projects
+            .filter((row) => row.documents.length)
+            .map((row) => row.project_id),
+        );
+        const absent = atlas.nodes.find((row) => publicOwners.has(row.id));
+        assert.ok(absent);
+        missing = absent.id;
+        Reflect.deleteProperty(absent, "dossier");
+        const node = atlas.nodes.find(
+          (row) =>
+            row.id !== missing &&
+            publicOwners.has(row.id) &&
+            row.dossier?.expected_outputs?.length &&
+            technical.references.some(
+              (reference) => reference.project === row.id,
+            ),
+        );
+        assert.ok(node?.dossier);
+        assert.ok(node.dossier.expected_outputs);
         tracked = node.id;
         label = node.name + ' <img src=x onerror="window.atlasInjected=true">';
         node.dossier.programme_tracks = [{ name: label, scope: node.function }];
+        const source = technical.references.find(
+          (row) => row.project === node.id,
+        );
+        assert.ok(source);
+        assert.ok(node.url);
+        referenceTitle = source.document;
+        referenceUrl = node.url;
+        referenceRevision = source.source_sha256;
+        node.dossier.programme_basis = source.source_sha256;
+        node.dossier.references = [
+          {
+            id: source.id,
+            title: source.document,
+            source_revision: source.source_sha256,
+            scope: node.boundary,
+            url: node.url,
+          },
+          {
+            id: source.id + "-unsafe-url",
+            title: source.document + " unsafe URL",
+            source_revision: source.source_sha256,
+            scope: node.boundary,
+            // eslint-disable-next-line no-script-url -- The public source renderer must refuse hostile source URLs.
+            url: "javascript:alert(1)",
+          },
+        ];
         Reflect.deleteProperty(node.dossier, "current_surfaces");
         node.dossier.expected_outputs[0].basis = "";
         Reflect.deleteProperty(node, "sources");
@@ -141,6 +187,26 @@ test(
               (await page.locator("#content").innerText()).includes(label),
             );
             assert.equal(await page.locator('img[src="x"]').count(), 0);
+            assert.ok(
+              (await page.locator("#content").innerText()).includes(
+                "Basis: Source goal",
+              ),
+            );
+            assert.equal(
+              await page
+                .getByRole("link", { name: referenceTitle, exact: true })
+                .getAttribute("href"),
+              referenceUrl,
+            );
+            assert.ok(
+              (await page.locator("#content").innerText()).includes(
+                referenceRevision,
+              ),
+            );
+            assert.equal(
+              await page.locator('#content a[href^="javascript:"]').count(),
+              0,
+            );
           },
           { servedBase },
         );

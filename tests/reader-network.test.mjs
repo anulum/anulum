@@ -58,8 +58,16 @@ test(
       date = "",
       other = "";
     await withAtlasSourceVariant(
-      ({ atlas }) => {
-        const edge = atlas.edges[0];
+      ({ atlas, library }) => {
+        const publicOwners = new Set(
+          library.projects
+            .filter((row) => row.documents.length)
+            .map((row) => row.project_id),
+        );
+        const edge = atlas.edges.find(
+          (row) => publicOwners.has(row.from) && publicOwners.has(row.to),
+        );
+        assert.ok(edge);
         project = edge.from;
         other = edge.to;
         date = atlas.as_of;
