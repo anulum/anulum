@@ -1,4 +1,15 @@
-# Internal operational surfaces — NEVER commit, NEVER publish, FOREVER private
-# See agentic-shared/BROADCAST_2026-07-24_docs_internal_forever_private_all_projects.md
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# Commercial license available
+# © Concepts 1996–2026 Miroslav Šotek. All rights reserved.
+# © Code 2020–2026 Miroslav Šotek. All rights reserved.
+# ORCID: 0009-0009-3560-0851
+# Contact: www.anulum.li | protoscience@anulum.li
+# ANULUM — Local maintenance records and generated validation output
+
 docs/internal/
 docs/internal/**
+
+# Local validation dependencies and browser coverage
+node_modules/
+coverage/
+.nyc_output/

@@ -1183,8 +1183,8 @@
       }
     }
   },
-  "version": "0.13",
-  "content_state": "Working atlas; architect-authored dossiers and call details are being incorporated.",
+  "version": "0.13+funding-state.1",
+  "content_state": "Projects and programme construction in progress; funding-route application states are separately dated and qualified.",
   "groups": [
     {
       "id": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS",
@@ -38562,19 +38562,23 @@
       ],
       "function": "Grants, funding calls, credits and support programmes",
       "kind": "workstream",
-      "phase": "Operational work and system architecture",
+      "phase": "Programme mapping, selected applications and partner search",
       "work_status": "In progress",
       "release": null,
       "licence": "Not a software distribution",
-      "as_of": "2026-10-13",
+      "as_of": "2026-10-20",
       "url": null,
-      "boundary": "",
+      "boundary": "This workstream covers separate opportunities with different application states. There is no combined application, award, consortium or additive funding total.",
       "sources": [
-        "https://anulum.li/"
+        "https://anulum.li/research/programmes/kyma/",
+        "https://eic.ec.europa.eu/eic-funding-opportunities/eic-pathfinder/eic-pathfinder-challenges-2026_en",
+        "https://foresight.org/grants/ai-science-safety-nodes-rfp/",
+        "https://www.sprind.org/en/actions/challenges/ai-native-chip-design",
+        "https://eic.ec.europa.eu/eic-funding-opportunities/eic-accelerator_en"
       ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "source_note": "State reconciliation recorded by ANULUM on 20 October 2026. Linked official or applicant project pages describe separate opportunities; their terms and evidence remain separate.",
       "dossier": {
-        "review_state": "Architect-authored details requested",
+        "review_state": "Separate application states reconciled at 20 October 2026; complete call-specific work packages and acceptance remain open.",
         "purpose": "Grants, funding calls, credits and support programmes",
         "current_surfaces": [],
         "expected_outputs": [],
@@ -39466,22 +39470,24 @@
       "owning_groups": [
         "ANULUM-COMPANY-OPERATIONS"
       ],
-      "function": "Funding preparation. Work-package context: the reasoning substrate: parts of B, D, F. Partner profile: none required.",
+      "function": "Submitted on 11 October 2026 and resubmitted with corrections on 18 October 2026; only the latest submitted version is used during evaluation.",
       "kind": "funding route",
-      "phase": "Application and consortium preparation",
+      "phase": "Resubmitted 18 October 2026; awaiting evaluation",
       "work_status": "In progress",
       "release": null,
       "licence": "Not a software distribution",
-      "as_of": "2026-10-13",
-      "url": null,
-      "boundary": "A dated preparation route. Application eligibility, exact work packages and terms are being assembled in the call dossier; no award or partner commitment is asserted.",
+      "as_of": "2026-10-20",
+      "url": "https://anulum.li/research/programmes/kyma/",
+      "boundary": "ANULUM records an initial submission on 11 October and a corrected resubmission on 18 October 2026; only the latest submitted version is used during evaluation. No funding has been awarded. Submission, evaluation and an eventual grant agreement are separate states. The adopted work programme sets the call deadline at 28 October 2026, 17:00 Brussels local time, with evaluation results indicated by five months after that deadline; this is not a promised award date.",
       "sources": [
-        "https://anulum.li/"
+        "https://anulum.li/research/programmes/kyma/",
+        "https://eic.ec.europa.eu/eic-funding-opportunities/eic-pathfinder/eic-pathfinder-challenges-2026_en",
+        "https://eic.ec.europa.eu/document/download/52598755-1351-4b54-b46b-e2682d0a3aec_en?filename=EIC-Work-Programme-2026.pdf"
       ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "source_note": "Submission state recorded by ANULUM on 20 October 2026. The public KYMA page was read back by the website owner on 18 October; the official challenge page was read for this update on 20 October. No private proposal contents or requested amount are published here. The current adopted work programme, pages 34–35, was checked for deadline and indicative evaluation timing on 20 October 2026.",
       "dossier": {
-        "review_state": "Dated funding preparation context; complete call dossier pending.",
-        "purpose": "Programme preparation: sole applicant; one proposal submitted. Work blocks: the reasoning substrate: parts of B, D, F. Partner profile: none required.",
+        "review_state": "Resubmitted 18 October 2026; awaiting evaluation; ANULUM-recorded submission state, no award.",
+        "purpose": "One corrected resubmission on 18 October 2026, following the initial 11 October submission; awaiting evaluation, with no funding awarded.",
         "current_surfaces": [],
         "expected_outputs": [],
         "inputs": [],
@@ -39502,19 +39508,19 @@
       ],
       "function": "Funding preparation. Work-package context: A: metered operation, a metered compute node, an outside replication. Partner profile: none required.",
       "kind": "funding route",
-      "phase": "Application and consortium preparation",
+      "phase": "Application in preparation",
       "work_status": "In progress",
       "release": null,
       "licence": "Not a software distribution",
-      "as_of": "2026-10-13",
-      "url": null,
-      "boundary": "A dated preparation route. Application eligibility, exact work packages and terms are being assembled in the call dossier; no award or partner commitment is asserted.",
+      "as_of": "2026-10-20",
+      "url": "https://foresight.org/grants/ai-science-safety-nodes-rfp/",
+      "boundary": "Application preparation is in progress. The official deadline is 31 October 2026, 23:59 PDT. No award or partner commitment is asserted; the private draft and requested amount are not published.",
       "sources": [
-        "https://anulum.li/"
+        "https://foresight.org/grants/ai-science-safety-nodes-rfp/"
       ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "source_note": "Application state recorded by ANULUM on 20 October 2026. Deadline checked on the official RFP page, 20 October 2026.",
       "dossier": {
-        "review_state": "Dated funding preparation context; complete call dossier pending.",
+        "review_state": "Application in preparation; deadline 31 October 2026, 23:59 PDT.",
         "purpose": "Programme preparation: applicant. Work blocks: A: metered operation, a metered compute node, an outside replication. Partner profile: none required.",
         "current_surfaces": [],
         "expected_outputs": [],
@@ -39536,19 +39542,17 @@
       ],
       "function": "Funding preparation. Work-package context: A, part of F. Partner profile: none required.",
       "kind": "funding route",
-      "phase": "Application and consortium preparation",
-      "work_status": "In progress",
+      "phase": "Programme-specific application records under reconciliation",
+      "work_status": "Programme-specific",
       "release": null,
       "licence": "Not a software distribution",
-      "as_of": "2026-10-13",
+      "as_of": "2026-10-20",
       "url": null,
-      "boundary": "A dated preparation route. Application eligibility, exact work packages and terms are being assembled in the call dossier; no award or partner commitment is asserted.",
-      "sources": [
-        "https://anulum.li/"
-      ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "boundary": "This is a category spanning several programmes, not one application. Its aggregate label does not establish a submission, deadline or award for any individual programme. Individual application records and official terms require separate source-backed entries.",
+      "sources": [],
+      "source_note": "State reconciliation recorded by ANULUM on 20 October 2026. Programme-specific official terms and submission evidence are not sourced by this category entry.",
       "dossier": {
-        "review_state": "Dated funding preparation context; complete call dossier pending.",
+        "review_state": "Programme-specific state and official sources require separate entries; no aggregate submission or award is asserted.",
         "purpose": "Programme preparation: applicant. Work blocks: A, part of F. Partner profile: none required.",
         "current_surfaces": [],
         "expected_outputs": [],
@@ -39568,22 +39572,22 @@
       "owning_groups": [
         "ANULUM-COMPANY-OPERATIONS"
       ],
-      "function": "Funding preparation. Work-package context: A, training compute for C. Partner profile: providers of compute and model usage.",
+      "function": "Historical device research access and other model-usage or high-performance-computing support routes under assessment.",
       "kind": "funding route",
-      "phase": "Application and consortium preparation",
-      "work_status": "In progress",
+      "phase": "Device research access granted in July 2026; other support applications not verified",
+      "work_status": "Access reported",
       "release": null,
       "licence": "Not a software distribution",
-      "as_of": "2026-10-13",
-      "url": null,
-      "boundary": "A dated preparation route. Application eligibility, exact work packages and terms are being assembled in the call dossier; no award or partner commitment is asserted.",
+      "as_of": "2026-10-20",
+      "url": "https://doi.org/10.5281/zenodo.23298119",
+      "boundary": "ANULUM records research-access requests to quantum-computing providers on 16 July 2026 and extended device access granted by one provider on 20 July 2026 for the group’s device work. This is research access, not a cash funding award, proof of current remaining quota or new scientific validation. No verified application record for model-usage support or EuroHPC AI Factories access is included in this snapshot.",
       "sources": [
-        "https://anulum.li/"
+        "https://doi.org/10.5281/zenodo.23298119"
       ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "source_note": "Historical access state recorded by ANULUM on 20 October 2026 from the quantum programme’s 16 and 21 July records; the linked device preprint is dated 11 October 2026. Current access availability, official support terms and applications outside the quantum programme records require separate confirmation.",
       "dossier": {
-        "review_state": "Dated funding preparation context; complete call dossier pending.",
-        "purpose": "Programme preparation: applicant. Work blocks: A, training compute for C. Partner profile: providers of compute and model usage.",
+        "review_state": "Historical device access recorded by ANULUM and confirmed against the quantum programme records; no current quota or new eligibility clearance asserted.",
+        "purpose": "Distinguish historical granted quantum research access from model-usage and EuroHPC access opportunities with no verified application record in this snapshot.",
         "current_surfaces": [],
         "expected_outputs": [],
         "inputs": [],
@@ -39602,22 +39606,20 @@
       "owning_groups": [
         "ANULUM-COMPANY-OPERATIONS"
       ],
-      "function": "Funding preparation. Work-package context: C, G (grids): an open verification and replication work package. Partner profile: a consortium with grid data that lacks independent, open verification of its learned models.",
+      "function": "Identified funding route under assessment. Work-package context: C, G (grids): an open verification and replication work package. Partner profile: a consortium with grid data that lacks independent, open verification of its learned models.",
       "kind": "funding route",
-      "phase": "Application and consortium preparation",
-      "work_status": "In progress",
+      "phase": "Identified route; no consortium contacted; no application started",
+      "work_status": "Identified",
       "release": null,
       "licence": "Not a software distribution",
-      "as_of": "2026-10-13",
+      "as_of": "2026-10-20",
       "url": null,
-      "boundary": "A dated preparation route. Application eligibility, exact work packages and terms are being assembled in the call dossier; no award or partner commitment is asserted.",
-      "sources": [
-        "https://anulum.li/"
-      ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "boundary": "An identified opportunity only: no consortium has been contacted and no application has started, as recorded by ANULUM on 20 October 2026. No eligibility clearance, partner commitment or funding award is asserted.",
+      "sources": [],
+      "source_note": "Application-state update recorded by ANULUM on 20 October 2026. The broader programme-mapping work is in progress; this does not mean an application has started. Call-specific official terms are not yet sourced in this entry.",
       "dossier": {
-        "review_state": "Dated funding preparation context; complete call dossier pending.",
-        "purpose": "Programme preparation: partner of an existing consortium. Work blocks: C, G (grids): the open verification layer for learned grid models. Partner profile: a consortium already forming that lacks an independent, open verification and replication work package.",
+        "review_state": "Identified route; no consortium contacted; no application started. Call-specific official terms require source-backed qualification.",
+        "purpose": "Potential contribution or applicant role in the earlier planning synopsis: partner of an existing consortium. Work blocks: C, G (grids): the open verification layer for learned grid models. Partner profile: a consortium already forming that lacks an independent, open verification and replication work package.",
         "current_surfaces": [],
         "expected_outputs": [],
         "inputs": [],
@@ -39636,22 +39638,20 @@
       "owning_groups": [
         "ANULUM-COMPANY-OPERATIONS"
       ],
-      "function": "Funding preparation. Work-package context: B, D, E, G (chemistry and materials). Partner profile: an automated laboratory with a digital workflow; a coordinating institution in a Member State.",
+      "function": "Identified funding route under assessment. Work-package context: B, D, E, G (chemistry and materials). Partner profile: an automated laboratory with a digital workflow; a coordinating institution in a Member State.",
       "kind": "funding route",
-      "phase": "Application and consortium preparation",
-      "work_status": "In progress",
+      "phase": "Identified route; no consortium contacted; no application started",
+      "work_status": "Identified",
       "release": null,
       "licence": "Not a software distribution",
-      "as_of": "2026-10-13",
+      "as_of": "2026-10-20",
       "url": null,
-      "boundary": "A dated preparation route. Application eligibility, exact work packages and terms are being assembled in the call dossier; no award or partner commitment is asserted.",
-      "sources": [
-        "https://anulum.li/"
-      ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "boundary": "An identified opportunity only: no consortium has been contacted and no application has started, as recorded by ANULUM on 20 October 2026. No eligibility clearance, partner commitment or funding award is asserted. The identified topic concerns materials science; the owning programme synopsis records a weak fit, not a confirmed match.",
+      "sources": [],
+      "source_note": "Application-state update recorded by ANULUM on 20 October 2026. The broader programme-mapping work is in progress; this does not mean an application has started. Call-specific official terms are not yet sourced in this entry.",
       "dossier": {
-        "review_state": "Dated funding preparation context; complete call dossier pending.",
-        "purpose": "Programme preparation: partner: the planning, checking and recording layer of an automated laboratory. Work blocks: B, D, E, G (chemistry and materials). Partner profile: an automated materials or chemistry laboratory with a digital workflow, and a coordinating institution in a Member State.",
+        "review_state": "Identified route; no consortium contacted; no application started. Call-specific official terms require source-backed qualification.",
+        "purpose": "Potential contribution or applicant role in the earlier planning synopsis: partner: the planning, checking and recording layer of an automated laboratory. Work blocks: B, D, E, G (chemistry and materials). Partner profile: an automated materials or chemistry laboratory with a digital workflow, and a coordinating institution in a Member State.",
         "current_surfaces": [],
         "expected_outputs": [],
         "inputs": [],
@@ -39670,22 +39670,20 @@
       "owning_groups": [
         "ANULUM-COMPANY-OPERATIONS"
       ],
-      "function": "Funding preparation. Work-package context: A, D: the agent organisation as an auditable experiment layer. Partner profile: a consortium on model scaling that wants its experiments recorded and checked independently.",
+      "function": "Identified funding route under assessment. Work-package context: A, D: the agent organisation as an auditable experiment layer. Partner profile: a consortium on model scaling that wants its experiments recorded and checked independently.",
       "kind": "funding route",
-      "phase": "Application and consortium preparation",
-      "work_status": "In progress",
+      "phase": "Identified route; no consortium contacted; no application started",
+      "work_status": "Identified",
       "release": null,
       "licence": "Not a software distribution",
-      "as_of": "2026-10-13",
+      "as_of": "2026-10-20",
       "url": null,
-      "boundary": "A dated preparation route. Application eligibility, exact work packages and terms are being assembled in the call dossier; no award or partner commitment is asserted.",
-      "sources": [
-        "https://anulum.li/"
-      ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "boundary": "An identified opportunity only: no consortium has been contacted and no application has started, as recorded by ANULUM on 20 October 2026. No eligibility clearance, partner commitment or funding award is asserted.",
+      "sources": [],
+      "source_note": "Application-state update recorded by ANULUM on 20 October 2026. The broader programme-mapping work is in progress; this does not mean an application has started. Call-specific official terms are not yet sourced in this entry.",
       "dossier": {
-        "review_state": "Dated funding preparation context; complete call dossier pending.",
-        "purpose": "Programme preparation: minor partner. Work blocks: A, D: the agent architecture as a research instrument. Partner profile: a consortium on model scaling that wants an auditable multi-agent experiment layer.",
+        "review_state": "Identified route; no consortium contacted; no application started. Call-specific official terms require source-backed qualification.",
+        "purpose": "Potential contribution or applicant role in the earlier planning synopsis: minor partner. Work blocks: A, D: the agent architecture as a research instrument. Partner profile: a consortium on model scaling that wants an auditable multi-agent experiment layer.",
         "current_surfaces": [],
         "expected_outputs": [],
         "inputs": [],
@@ -39704,22 +39702,20 @@
       "owning_groups": [
         "ANULUM-COMPANY-OPERATIONS"
       ],
-      "function": "Funding preparation. Work-package context: B, C, D, F. Partner profile: two to four groups: learning of dynamical systems, verification of learned models, an experimental or high-fidelity simulation group, a Member State institution.",
+      "function": "Identified funding route under assessment. Work-package context: B, C, D, F. Partner profile: two to four groups: learning of dynamical systems, verification of learned models, an experimental or high-fidelity simulation group, a Member State institution.",
       "kind": "funding route",
-      "phase": "Application and consortium preparation",
-      "work_status": "In progress",
+      "phase": "Identified route; no consortium contacted; no application started",
+      "work_status": "Identified",
       "release": null,
       "licence": "Not a software distribution",
-      "as_of": "2026-10-13",
+      "as_of": "2026-10-20",
       "url": null,
-      "boundary": "A dated preparation route. Application eligibility, exact work packages and terms are being assembled in the call dossier; no award or partner commitment is asserted.",
-      "sources": [
-        "https://anulum.li/"
-      ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "boundary": "An identified opportunity only: no consortium has been contacted and no application has started, as recorded by ANULUM on 20 October 2026. No eligibility clearance, partner commitment or funding award is asserted. This route comes from a draft work-programme synopsis; the adopted 2027 programme, exact topic and terms have not been verified for this entry.",
+      "sources": [],
+      "source_note": "Application-state update recorded by ANULUM on 20 October 2026. The broader programme-mapping work is in progress; this does not mean an application has started. Call-specific official terms are not yet sourced in this entry.",
       "dossier": {
-        "review_state": "Dated funding preparation context; complete call dossier pending.",
-        "purpose": "Programme preparation: coordinator or partner of a small consortium. Work blocks: B, C, D, F. Partner profile: two to four groups: dynamical-systems learning, verification of learned models, one experimental or high-fidelity simulation group, one Member State institution.",
+        "review_state": "Identified route; no consortium contacted; no application started. Call-specific official terms require source-backed qualification.",
+        "purpose": "Potential contribution or applicant role in the earlier planning synopsis: coordinator or partner of a small consortium. Work blocks: B, C, D, F. Partner profile: two to four groups: dynamical-systems learning, verification of learned models, one experimental or high-fidelity simulation group, one Member State institution.",
         "current_surfaces": [],
         "expected_outputs": [],
         "inputs": [],
@@ -39738,22 +39734,20 @@
       "owning_groups": [
         "ANULUM-COMPANY-OPERATIONS"
       ],
-      "function": "Funding preparation. Work-package context: A, D: verification, evaluation by agents, measured efficiency. Partner profile: a consortium training a European frontier model that needs independent evaluation records.",
+      "function": "Identified funding route under assessment. Work-package context: A, D: verification, evaluation by agents, measured efficiency. Partner profile: a consortium training a European frontier model that needs independent evaluation records.",
       "kind": "funding route",
-      "phase": "Application and consortium preparation",
-      "work_status": "In progress",
+      "phase": "Identified route; no consortium contacted; no application started",
+      "work_status": "Identified",
       "release": null,
       "licence": "Not a software distribution",
-      "as_of": "2026-10-13",
+      "as_of": "2026-10-20",
       "url": null,
-      "boundary": "A dated preparation route. Application eligibility, exact work packages and terms are being assembled in the call dossier; no award or partner commitment is asserted.",
-      "sources": [
-        "https://anulum.li/"
-      ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "boundary": "An identified opportunity only: no consortium has been contacted and no application has started, as recorded by ANULUM on 20 October 2026. No eligibility clearance, partner commitment or funding award is asserted.",
+      "sources": [],
+      "source_note": "Application-state update recorded by ANULUM on 20 October 2026. The broader programme-mapping work is in progress; this does not mean an application has started. Call-specific official terms are not yet sourced in this entry.",
       "dossier": {
-        "review_state": "Dated funding preparation context; complete call dossier pending.",
-        "purpose": "Programme preparation: minor partner. Work blocks: A, D: verification, evaluation by agents, measured efficiency. Partner profile: a consortium training a European frontier model that needs independent evaluation records.",
+        "review_state": "Identified route; no consortium contacted; no application started. Call-specific official terms require source-backed qualification.",
+        "purpose": "Potential contribution or applicant role in the earlier planning synopsis: minor partner. Work blocks: A, D: verification, evaluation by agents, measured efficiency. Partner profile: a consortium training a European frontier model that needs independent evaluation records.",
         "current_surfaces": [],
         "expected_outputs": [],
         "inputs": [],
@@ -39772,22 +39766,20 @@
       "owning_groups": [
         "ANULUM-COMPANY-OPERATIONS"
       ],
-      "function": "Funding preparation. Work-package context: B, C. Partner profile: to be decided with partners.",
+      "function": "Identified funding route under assessment. Work-package context: B, C. Partner profile: to be decided with partners.",
       "kind": "funding route",
-      "phase": "Application and consortium preparation",
-      "work_status": "In progress",
+      "phase": "Identified route; no consortium contacted; no application started",
+      "work_status": "Identified",
       "release": null,
       "licence": "Not a software distribution",
-      "as_of": "2026-10-13",
+      "as_of": "2026-10-20",
       "url": null,
-      "boundary": "A dated preparation route. Application eligibility, exact work packages and terms are being assembled in the call dossier; no award or partner commitment is asserted.",
-      "sources": [
-        "https://anulum.li/"
-      ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "boundary": "An identified opportunity only: no consortium has been contacted and no application has started, as recorded by ANULUM on 20 October 2026. No eligibility clearance, partner commitment or funding award is asserted. This route comes from a draft work-programme synopsis; the adopted 2027 programme, exact topic and terms have not been verified for this entry.",
+      "sources": [],
+      "source_note": "Application-state update recorded by ANULUM on 20 October 2026. The broader programme-mapping work is in progress; this does not mean an application has started. Call-specific official terms are not yet sourced in this entry.",
       "dossier": {
-        "review_state": "Dated funding preparation context; complete call dossier pending.",
-        "purpose": "Programme preparation: sole applicant if single applicants remain eligible. Work blocks: B, C. Partner profile: to be decided with partners.",
+        "review_state": "Identified route; no consortium contacted; no application started. Call-specific official terms require source-backed qualification.",
+        "purpose": "Potential contribution or applicant role in the earlier planning synopsis: sole applicant if single applicants remain eligible. Work blocks: B, C. Partner profile: to be decided with partners.",
         "current_surfaces": [],
         "expected_outputs": [],
         "inputs": [],
@@ -39801,27 +39793,28 @@
     },
     {
       "id": "Funding / EIC Accelerator; EIC Advanced Innovation Challenge on physical AI (18 Jun 2027)",
-      "name": "Funding / EIC Accelerator; EIC Advanced Innovation Challenge on physical AI (18 Jun 2027)",
+      "name": "Funding / EIC Accelerator and Advanced Innovation Challenge",
       "group": "ANULUM-COMPANY-OPERATIONS",
       "owning_groups": [
         "ANULUM-COMPANY-OPERATIONS"
       ],
-      "function": "Funding preparation. Work-package context: product lines at high readiness. Partner profile: —.",
+      "function": "Partner search for a later eligible innovation route; the two instruments have separate terms and application processes.",
       "kind": "funding route",
-      "phase": "Application and consortium preparation",
-      "work_status": "In progress",
+      "phase": "Partner search; no November 2026 Accelerator short proposal",
+      "work_status": "Partner search",
       "release": null,
       "licence": "Not a software distribution",
-      "as_of": "2026-10-13",
-      "url": null,
-      "boundary": "A dated preparation route. Application eligibility, exact work packages and terms are being assembled in the call dossier; no award or partner commitment is asserted.",
+      "as_of": "2026-10-20",
+      "url": "https://eic.ec.europa.eu/eic-funding-opportunities/eic-accelerator_en",
+      "boundary": "ANULUM is not entering an Accelerator short proposal in November 2026 and is seeking a partner. Accelerator and Advanced Innovation Challenge are separate instruments. The latter’s 18 June 2027 date is an indicative restricted Stage 2 deadline, not a general entry opportunity. No Stage 1 participation or Stage 2 eligibility is asserted; applicant and company requirements need instrument-specific qualification.",
       "sources": [
-        "https://anulum.li/"
+        "https://eic.ec.europa.eu/eic-funding-opportunities/eic-accelerator_en",
+        "https://eic.ec.europa.eu/document/download/52598755-1351-4b54-b46b-e2682d0a3aec_en?filename=EIC-Work-Programme-2026.pdf"
       ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "source_note": "Application decision recorded by ANULUM on 20 October 2026. Official Accelerator guidance and the adopted 2026 work programme, page 62, were read on 20 October. The restricted second stage is not presented as an open first application.",
       "dossier": {
-        "review_state": "Dated funding preparation context; complete call dossier pending.",
-        "purpose": "Programme preparation: **needs a company**. Work blocks: product lines at high readiness, not research. Partner profile: —.",
+        "review_state": "ANULUM-recorded partner search, 20 October 2026; the two instruments need separate eligibility and application qualification.",
+        "purpose": "Explore an eligible later innovation route with an appropriate partner; no November Accelerator short proposal is being entered.",
         "current_surfaces": [],
         "expected_outputs": [],
         "inputs": [],
@@ -39840,22 +39833,20 @@
       "owning_groups": [
         "ANULUM-COMPANY-OPERATIONS"
       ],
-      "function": "Funding preparation. Work-package context: all blocks. Partner profile: investors who fund open research infrastructure.",
+      "function": "Identified funding route under assessment. Work-package context: all blocks. Partner profile: investors who fund open research infrastructure.",
       "kind": "funding route",
-      "phase": "Application and consortium preparation",
-      "work_status": "In progress",
+      "phase": "Identified route; no consortium contacted; no application started",
+      "work_status": "Identified",
       "release": null,
       "licence": "Not a software distribution",
-      "as_of": "2026-10-13",
+      "as_of": "2026-10-20",
       "url": null,
-      "boundary": "A dated preparation route. Application eligibility, exact work packages and terms are being assembled in the call dossier; no award or partner commitment is asserted.",
-      "sources": [
-        "https://anulum.li/"
-      ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "boundary": "An identified opportunity only: no consortium has been contacted and no application has started, as recorded by ANULUM on 20 October 2026. No eligibility clearance, partner commitment or funding award is asserted.",
+      "sources": [],
+      "source_note": "Application-state update recorded by ANULUM on 20 October 2026. The broader programme-mapping work is in progress; this does not mean an application has started. Call-specific official terms are not yet sourced in this entry.",
       "dossier": {
-        "review_state": "Dated funding preparation context; complete call dossier pending.",
-        "purpose": "Programme preparation: **needs a company**. Work blocks: all blocks. Partner profile: investors who fund open research infrastructure.",
+        "review_state": "Identified route; no consortium contacted; no application started. Call-specific official terms require source-backed qualification.",
+        "purpose": "Potential contribution or applicant role in the earlier planning synopsis: **needs a company**. Work blocks: all blocks. Partner profile: investors who fund open research infrastructure.",
         "current_surfaces": [],
         "expected_outputs": [],
         "inputs": [],
@@ -40641,24 +40632,24 @@
       ],
       "function": "AI-driven chip design and verification work-package preparation.",
       "kind": "funding route",
-      "phase": "Application, team and company preparation",
+      "phase": "Partner search and application preparation",
       "work_status": "In progress",
       "release": null,
       "licence": "Call-specific participation terms under review",
-      "as_of": "2026-10-13",
+      "as_of": "2026-10-20",
       "url": "https://www.sprind.org/en/actions/challenges/ai-native-chip-design",
-      "boundary": "A ten-field initial call dossier exists. Application readiness, legal interpretation, a team and a costed work plan remain open; no award or commitment is asserted.",
+      "boundary": "A public partner search has been active since 19 October 2026, as recorded by ANULUM on 20 October 2026. The official deadline is 30 November 2026, 11:00 CET. No partner agreement, founding roadmap, award or funded work package is asserted.",
       "sources": [
-        "https://anulum.li/"
+        "https://www.sprind.org/en/actions/challenges/ai-native-chip-design"
       ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "source_note": "Partner-search state recorded by ANULUM on 20 October 2026. Deadline checked on the official programme page, 20 October 2026. The initial 13 October dossier remains documentary preparation, not contractual or eligibility clearance.",
       "dossier": {
-        "review_state": "Initial ten-field call dossier delivered, 13 October 2026; application and contractual review in progress.",
+        "review_state": "Initial dossier and partner search in progress; deadline 30 November 2026, 11:00 CET; contractual and application readiness open.",
         "current_surfaces": [
           {
             "name": "Ten-field initial call dossier",
             "maturity": "Documentary preparation",
-            "evidence": "Dated funding-keeper dossier; no submission or eligibility/legal clearance."
+            "evidence": "ANULUM initial call dossier, 13 October 2026; no submission, contractual or eligibility clearance."
           }
         ],
         "expected_outputs": [
@@ -44668,5 +44659,10 @@
       "evidence": "Neuromorphic architect dossier revision 2, 13 October 2026; SHA-256 2f3e0e2e99f44f89dc06b645c80cf1c6385db212ef28cc4e7e8a618478bc427e",
       "caution": "Architect-defined dependency/contract; installed producer-consumer, native and physical qualification remain separate."
     }
-  ]
+  ],
+  "funding_update": {
+    "as_of": "2026-10-20",
+    "scope": "13 funding routes and one funding workstream; other source captures retain their own dates.",
+    "work_status_meaning": "Project and programme construction remains in progress. Funding badges distinguish identified opportunities, active preparation/evaluation, partner search, historical reported access and programme-specific categories; none is an award or eligibility clearance."
+  }
 }

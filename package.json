@@ -1,0 +1,21 @@
+{
+  "name": "anulum-atlas-validation",
+  "private": true,
+  "type": "module",
+  "license": "AGPL-3.0-or-later",
+  "engines": {
+    "node": ">=26.10.0 <27"
+  },
+  "devDependencies": {
+    "typescript": "6.0.3",
+    "eslint": "10.13.0",
+    "@eslint/js": "10.0.1",
+    "prettier": "3.9.10",
+    "eslint-plugin-jsdoc": "65.4.0",
+    "playwright": "1.64.1",
+    "c8": "12.0.0",
+    "@axe-core/playwright": "4.14.0",
+    "@types/node": "26.6.5",
+    "@types/punycode": "2.1.4"
+  }
+}

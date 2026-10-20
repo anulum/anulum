@@ -7,6 +7,7 @@ ORCID: 0009-0009-3560-0851
 Contact: www.anulum.li | protoscience@anulum.li
 ANULUM — Research atlas
 -->
+
 # Research atlas
 
 Explore the research programmes, project connections, expected outputs,
@@ -31,16 +32,16 @@ its assets and navigation use relative URLs.
 
 Useful entry points after serving the tree:
 
-| View | Relative address |
-|---|---|
-| Programme overview | `index.html#view=overview` |
-| Interactive map | `index.html#view=map` |
-| Technical explanations | `index.html#view=technical` |
-| Project detail | `index.html#project=SCPN-QC-SIM` |
-| Component comparison | `index.html#view=compare&entries=SCPN-QC-CORE,SCPN-QC-AD,SCPN-QC-SIM` |
-| Partner contributions | `index.html#view=partners` |
-| Material and resource needs | `index.html#view=resources` |
-| Source documents | `index.html#view=documents` |
+| View                        | Relative address                                                      |
+| --------------------------- | --------------------------------------------------------------------- |
+| Programme overview          | `index.html#view=overview`                                            |
+| Interactive map             | `index.html#view=map`                                                 |
+| Technical explanations      | `index.html#view=technical`                                           |
+| Project detail              | `index.html#project=SCPN-QC-SIM`                                      |
+| Component comparison        | `index.html#view=compare&entries=SCPN-QC-CORE,SCPN-QC-AD,SCPN-QC-SIM` |
+| Partner contributions       | `index.html#view=partners`                                            |
+| Material and resource needs | `index.html#view=resources`                                           |
+| Source documents            | `index.html#view=documents`                                           |
 
 The [equipment and resource inventory](resources.html) has separate views for
 needs, acquisition candidates, people and spaces. Its selection link retains
@@ -82,6 +83,18 @@ The resource-selection tests require Node.js as well as Python:
 python3 -m unittest discover -s tests -p test_resource_inventory.py -v
 ```
 
+The browser modules have no runtime package dependencies. The pinned development
+toolchain uses Node.js 26.10 and the repository's integrity-locked npm dependencies.
+After `npm ci --ignore-scripts`, `node tools/render_atlas.mjs --check` verifies the
+entry pages, module content versions and complete asset inventory. Use `--write`
+to regenerate derived files after an intentional source change.
+
+The Atlas validation workflow checks complete source types, lint, formatting,
+licences and dependency security. Its real-browser tests exercise reading routes,
+keyboard and pointer controls, native downloads, accessibility and deliberately
+damaged copies of the complete source artefact. Per-file statement and branch
+coverage is a blocking check; a source snapshot does not imply a passing run.
+
 The native tests use the actual inventory and Python's CSV reader.
 `tests/test_resource_explorer.mjs` supplies a real Playwright Page check for
 all four views, downloaded files, restored selections, browser history and
@@ -89,7 +102,6 @@ mobile layouts. Its `--browser-code` output supplies the Page callback; callers
 provide `baseUrl` and an owned `downloadDirectory`. After saving its returned
 report as JSON, `node tests/test_resource_explorer.mjs --verify REPORT.json`
 independently reads the downloaded CSV files and checks the original records.
-
 
 ## Profile and website assets
 
@@ -100,12 +112,12 @@ interactive HTML or the atlas datasets. Its dated catalogue provenance is
 projection of project identities, purposes, status, licences and repository
 observations, independent of resource and budget data.
 
-| Surface | Required local content | Uncompressed bytes |
-|---|---|---:|
-| Profile images across all five languages | Four generated header/map SVGs, 91 badge SVGs and the footer image | 621,868 |
-| Dated catalogue provenance | `assets/catalogue-source.json`, plus its ownership sidecar | 114,267 before sidecar |
-| Interactive site snapshot | 86 manifest-listed assets | 37,932,160 |
-| Main interactive entry page | `index.html`, including its eight embedded datasets | 12,557,711 |
+| Surface                                  | Required local content                                             |     Uncompressed bytes |
+| ---------------------------------------- | ------------------------------------------------------------------ | ---------------------: |
+| Profile images across all five languages | Four generated header/map SVGs, 91 badge SVGs and the footer image |                621,868 |
+| Dated catalogue provenance               | `assets/catalogue-source.json`, plus its ownership sidecar         | 114,267 before sidecar |
+| Interactive site snapshot                | 88 manifest-listed assets                                          |             38,291,985 |
+| Main interactive entry page              | `index.html`, including its eight embedded datasets                |             12,567,185 |
 
 The HTML, JavaScript modules, source-document JSON, illustrations and figure
 downloads belong to the separately hosted explorer. The full snapshot repeats
@@ -215,3 +227,16 @@ record correspondence and mobile layout. It uses the supplied local atlas data.
 Resource entrypoints and their shared component/style use content-bound asset
 URLs. Their real-browser check verifies those versions against served bytes,
 including the existing user browser after a source update.
+
+Funding routes now carry a separate 20 October application-state update.
+Submitted, preparing and identified opportunities remain distinct from the
+programme’s ongoing work. Official source links and checked deadlines are
+shown where available; unsourced terms and draft-programme assumptions remain
+explicit. The Advanced Innovation Challenge’s restricted second stage is
+distinguished from an open application opportunity. Other source capture dates,
+preliminary scenarios and project records retain their original scope.
+
+Project cards and reading views use each entry’s reported state. Funding-route
+labels distinguish identified opportunities, partner search, historical access
+and programme-specific categories. Research access is separated from a cash
+award, current quota and any new scientific validation.
