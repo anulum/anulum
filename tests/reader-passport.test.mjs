@@ -13,6 +13,36 @@ import { withAtlasPage, openRoute } from "./atlas-runtime.mjs";
 import { atlas } from "./atlas-data.mjs";
 
 test(
+  "public DOM event boundary ignores tablist keys outside its focused tabs; not native keyboard or AT proof",
+  { timeout: 120000 },
+  async () => {
+    await withAtlasPage(async (page) => {
+      await openRoute(page, { project: atlas.nodes[0].id });
+      const selected = await page
+        .getByRole("tab", { selected: true })
+        .getAttribute("id");
+      await page.locator("#main").focus();
+      await page
+        .getByRole("tablist")
+        .dispatchEvent("keydown", { key: "ArrowRight", bubbles: true });
+      assert.equal(
+        await page.getByRole("tab", { selected: true }).getAttribute("id"),
+        selected,
+      );
+      assert.equal(
+        await page
+          .locator("#main")
+          .evaluate(function outsidePassportTabsFocus(node) {
+            return node === document.activeElement;
+          }),
+        true,
+      );
+      assert.equal(await page.getByRole("tabpanel").count(), 1);
+    });
+  },
+);
+
+test(
   "every passport exposes six native panels and its original source state",
   { timeout: 600000 },
   async () => {

@@ -25,7 +25,7 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 40
     env:
-      ATLAS_BASE_URL: http://127.0.0.1:8765/atlas/
+      ATLAS_BASE_URL: http://127.0.0.1:34080/atlas/
       NODE_OPTIONS: --max-old-space-size=2048
     steps:
       - name: Check out the exact candidate
@@ -65,7 +65,7 @@ jobs:
         env:
           NODE_V8_COVERAGE: coverage/node
         run: |
-          python3 -m http.server 8765 --bind 127.0.0.1 --directory docs > coverage-server.log 2>&1 &
+          python3 -m http.server 34080 --bind 127.0.0.1 --directory docs > coverage-server.log 2>&1 &
           atlas_server_pid=$!
           trap 'kill "$atlas_server_pid"' EXIT
           for attempt in $(seq 1 30); do

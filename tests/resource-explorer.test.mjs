@@ -9,7 +9,7 @@
 import { withAtlasSourceVariant } from "./atlas-source-variant.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
-import { writeFile, mkdtemp, rm } from "node:fs/promises";
+import { readFile, writeFile, mkdtemp, rm } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { spawnSync } from "node:child_process";
@@ -19,10 +19,104 @@ import {
   baseUrl,
   navigate,
   checkpoint,
+  withAtlasArtifact,
 } from "./atlas-runtime.mjs";
 import checkResourceExplorer, {
   verifyDownloadedCsv,
 } from "./test_resource_explorer.mjs";
+
+test(
+  "public DOM event boundary refuses an empty disabled CSV activation; not native pointer or AT proof",
+  { timeout: 120000 },
+  async () => {
+    await withAtlasPage(async (page) => {
+      await navigate(page, baseUrl + "resources.html");
+      await page
+        .locator("#group")
+        .selectOption("SCIENTIFIC-DISCOVERY-AND-EXPERIMENTATION");
+      assert.equal(await page.locator("#results article").count(), 0);
+      const download = page.locator("#download-selection"),
+        before = page.url();
+      assert.equal(await download.isDisabled(), true);
+      await Promise.all([
+        assert.rejects(
+          page.waitForEvent("download", { timeout: 250 }),
+          /Timeout.*download/,
+        ),
+        download.dispatchEvent("click", { bubbles: true, cancelable: true }),
+      ]);
+      assert.equal(await page.locator("#results article").count(), 0);
+      assert.equal(await download.isDisabled(), true);
+      assert.equal(page.url(), before);
+    });
+  },
+);
+
+test(
+  "the exported inventory consumer rejects owned HTTP failures while preserving foreign origin scope",
+  { timeout: 120000 },
+  async () => {
+    const downloads = await mkdtemp(join(tmpdir(), "anulum-http-rejection-"));
+    try {
+      await withAtlasArtifact(
+        async () => {},
+        async (foreignBase) => {
+          await withAtlasArtifact(
+            async (directory) => {
+              const path = join(directory, "resources.html"),
+                html = await readFile(path, "utf8");
+              await writeFile(
+                path,
+                html.replace(
+                  "</body>",
+                  '<img alt="" src="owned-missing-evidence.svg"><iframe title="Foreign HTTP failure" src="' +
+                    foreignBase +
+                    'foreign-missing-evidence.svg"></iframe></body>',
+                ),
+              );
+            },
+            async (servedBase) => {
+              await withAtlasPage(
+                async (page) => {
+                  let foreignStatus = 0;
+                  page.on("response", (response) => {
+                    if (
+                      response.url() ===
+                      foreignBase + "foreign-missing-evidence.svg"
+                    )
+                      foreignStatus = response.status();
+                  });
+                  await assert.rejects(
+                    checkResourceExplorer(page, {
+                      baseUrl: servedBase.slice(0, -1),
+                      downloadDirectory: downloads,
+                      navigate: (url) => navigate(page, url),
+                      beforeNavigation: () => checkpoint(page),
+                    }),
+                    (error) => {
+                      assert.ok(error instanceof Error);
+                      assert.ok(
+                        error.message.includes(
+                          servedBase + "owned-missing-evidence.svg",
+                        ),
+                      );
+                      assert.ok(!error.message.includes(foreignBase));
+                      return true;
+                    },
+                  );
+                  assert.equal(foreignStatus, 404);
+                },
+                { servedBase },
+              );
+            },
+          );
+        },
+      );
+    } finally {
+      await rm(downloads, { recursive: true, force: true });
+    }
+  },
+);
 
 test(
   "all resource views export exactly the selected source rows",

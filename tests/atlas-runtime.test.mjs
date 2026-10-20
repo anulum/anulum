@@ -11,13 +11,53 @@ import assert from "node:assert/strict";
 import { mkdir, readFile, readdir } from "node:fs/promises";
 import { resolve } from "node:path";
 import { pathToFileURL } from "node:url";
+import { spawnSync } from "node:child_process";
 import {
   baseUrl,
   navigate,
   withAtlasArtifact,
   withAtlasPage,
 } from "./atlas-runtime.mjs";
-import { atlas } from "./atlas-data.mjs";
+import { atlas, budget } from "./atlas-data.mjs";
+
+test(
+  "the real browser runtime uses its documented default server when the base URL is unset",
+  { timeout: 120000 },
+  async () => {
+    const child = spawnSync(
+      process.execPath,
+      [
+        "--input-type=module",
+        "--eval",
+        `
+      import assert from 'node:assert/strict';
+      import {baseUrl,withAtlasPage,navigate} from './tests/atlas-runtime.mjs';
+      assert.equal(baseUrl,'http://127.0.0.1:34080/atlas/');
+      await withAtlasPage(async page => {
+        await navigate(page,baseUrl+'budget.html');
+        const scenario=await page.locator('#scenario').inputValue();
+        assert.ok(scenario);
+        console.log(JSON.stringify({baseUrl,scenario}));
+      });
+    `,
+      ],
+      {
+        encoding: "utf8",
+        env: { ...process.env, ATLAS_BASE_URL: "" },
+        timeout: 30000,
+      },
+    );
+    assert.equal(child.status, 0, child.stderr + child.stdout);
+    const defaultScenario = budget.scenarios.find(
+      (row) => row.id === "P_preseed_first_team_12_months",
+    );
+    assert.ok(defaultScenario);
+    assert.deepEqual(JSON.parse(child.stdout), {
+      baseUrl: "http://127.0.0.1:34080/atlas/",
+      scenario: defaultScenario.id,
+    });
+  },
+);
 
 test(
   "a foreign HTTP script executes but cannot become trusted local source coverage",
