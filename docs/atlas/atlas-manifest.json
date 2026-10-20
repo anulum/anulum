@@ -1,6 +1,6 @@
 {
   "schema": "anulum-atlas-snapshot/1",
-  "version": "0.31+resource-sharing.1+publication-review.1.2+phwr-source.1.3+computing-source.1.1+kernels-source.1+control-source.1+spo-source.1+fusion-source.1+qpu-workflow.1+mif-workflow.1+timing-workflow.1+emt-workflow.1+transpile-workflow.1+mitigation-workflow.1",
+  "version": "0.31+resource-sharing.1+publication-review.1.2+phwr-source.1.3+computing-source.1.1+kernels-source.1+control-source.1+spo-source.1+fusion-source.1+qpu-workflow.1+mif-workflow.1+timing-workflow.1+emt-workflow.1+transpile-workflow.1+mitigation-workflow.1+qc-contracts-workflow.1",
   "source_manifest_sha256": "e0d4fe31f7381834fdaf27c72a8ca41b9877568dc5b6d96dbfa3603a8267a56b",
   "qualification": "Development snapshot; source-content and scientific review remain open.",
   "ownership_projections": {
@@ -32,7 +32,7 @@
     "direct_repository_sources.json.license": "403944020b1fbec498605fa95262500cdd30471519e77972782259b5aa5f046c",
     "document_library_candidate.json": "25935b96d2cd18109fde23a26b5c44d985c9ff05a4ec0c9823461187cb868d56",
     "document_library_candidate.json.license": "bd03bae1187beddbae352ce768f6cb1106ccdadce17fcee3d56ca74d5bc5b6fb",
-    "index.html": "04fa2b3b00a666f2bf79be7533f360cfa217752c787b6831ec3dbb47abf89ae6",
+    "index.html": "bced118b70c353b0e967a05719c0c02ae0744266dbfa9bfbabc7187b292003e1",
     "public_atlas_data.json": "61eb80cb99b5455dc980a061fae060dae29685f911643a58c79ea5d2383122c5",
     "public_atlas_data.json.license": "e03cf60bbdf2792f14680a92d4f3b328629c31b9a4ec6bd49fa4f57f0c736cf0",
     "public_budget_data.json": "db67d69b5e94f866f19c4bef260206bca2d07160b0ebbaed73cd5961d17b3dd9",
@@ -64,9 +64,9 @@
     "resources.html": "a360228806cbd71a39bb05f230e9180c46016b02045cf4704516cc111cee9047",
     "source_update_candidate.json": "7ff81712668283961d269342ea7cca6c1273c24180d2ec6239872243d642c6d0",
     "source_update_candidate.json.license": "209226cfb5baf1cdf237f302a22477123588a93b153821bcdf748add4d3114b3",
-    "technical_explanations_candidate.json": "1c88a7e04d5efdcb251d3cd896ad47150e606d2932446bbf9fd7bee153d1e401",
+    "technical_explanations_candidate.json": "49755ad46f97ccbba907e3a6b2723155219b959feb52113ffde182f6d4dadbf1",
     "technical_explanations_candidate.json.license": "57ed96eb718cd2f364152768a3e9f19ccfab48c0dc9fc93708fc716db0418fc1",
-    "visual_catalogue.json": "d5d1db7485bfacb520e4502cf0d096707285257532a72c113fe9ea87d0bbf3b6",
+    "visual_catalogue.json": "54e2529271352ee64b2dadbbe5ba094bf5bcaddc1230b5e34f886b000c30d50b",
     "visual_catalogue.json.license": "e478a346290cfea6d91ada44b25e5895d981e204c363c32febfa9623d8935ff8",
     "visuals/QPU_RESULT_PACK_PROVENANCE_DESIGN_v0.1.png": "5c5c5c95d55f14675eed1ecd0f06031103286a1c8517ac66bcb142e7270c6737",
     "visuals/QPU_RESULT_PACK_PROVENANCE_DESIGN_v0.1.svg": "8ca905be8c39907aa1fd763cc0974548266d4d0de8d507a45360d50df7c38200",
@@ -92,7 +92,8 @@
     "visuals/timing-events-to-qualified-measurements.svg": "eb4c211d5042eefc34acbe79f5120f4672c7a9ea45061af2f68654be442fd63d",
     "visuals/evidence-bytes-authority-and-domain-verdict.svg": "65a8e136c57d17918053b437cff44c8d57bb26f46276757be18e287b07830c39",
     "visuals/transpile-observations-layout-and-replay.svg": "c3459de32eeac1fa5ef2ed355651339d8ba6aa94994f4036a1dfeb6bf3c3ecdd",
-    "visuals/mitigation-counts-uncertainty-and-verdicts.svg": "f43a9c14174bbaf55a19670610d625d5a0d23ce28619d25e44762e55e3e64023"
+    "visuals/mitigation-counts-uncertainty-and-verdicts.svg": "f43a9c14174bbaf55a19670610d625d5a0d23ce28619d25e44762e55e3e64023",
+    "visuals/quantum-contracts-ownership-and-compatibility.svg": "7d7b182f53b0a3e4550e637a91c230cbb1651ee62653b545ce2aa7e3559675e5"
   },
-  "editorial_base_manifest_sha256": "f4292e6c7b115aeee3bfdfcff5100a46145e3ee5c0ed34e8104b7bc0d842a056"
+  "editorial_base_manifest_sha256": "52c541683cf1d96c609cb90ddb2578f1dc483c434d9f50fae0337fa42e1cfeb1"
 }

@@ -1,5 +1,5 @@
 {
-  "version": "0.19.1+phwr.1+computing.1+kernels.1+control.1+spo.1+fusion.1+qpu-workflow.1+mif-workflow.1+timing-workflow.1+emt-workflow.1+transpile-workflow.1+mitigation-workflow.1",
+  "version": "0.19.1+phwr.1+computing.1+kernels.1+control.1+spo.1+fusion.1+qpu-workflow.1+mif-workflow.1+timing-workflow.1+emt-workflow.1+transpile-workflow.1+mitigation-workflow.1+qc-contracts-workflow.1",
   "state": "Private integrated visual candidate; presentation and publication reviews pending",
   "source_snapshot_date": "2026-10-13",
   "illustrations": [
@@ -519,10 +519,36 @@
         "fingerprint": "1c88a7e04d5efdcb251d3cd896ad47150e606d2932446bbf9fd7bee153d1e401",
         "independent": false
       }
+    },
+    {
+      "id": "quantum-contracts-ownership-and-compatibility",
+      "project": "SCPN-QC-CONTRACTS",
+      "title": "Quantum contracts: ownership and compatibility",
+      "description": "Intended contract ownership and dependency direction, complete record meaning, actual empty domain inventory and separate implemented inventory tooling.",
+      "representation": "design",
+      "representation_label": "Source-supported contract architecture and repository tooling",
+      "asset": "visuals/quantum-contracts-ownership-and-compatibility.svg",
+      "asset_sha256": "7d7b182f53b0a3e4550e637a91c230cbb1651ee62653b545ce2aa7e3559675e5",
+      "downloads": [],
+      "source_version": "Selected source observations 2026-10-20T11:16:20.988166+00:00; observed local HEAD e30fca7bd8f822765205f0e4c225c7b07ae3f989 with uncommitted infrastructure work",
+      "author": "Concepts and code: Miroslav Šotek. Illustration prepared by Arcane Sapience.",
+      "licence": "AGPL-3.0-or-later; commercial statement retained. Repository-native SVG.",
+      "limits": [
+        "Implemented domain schemas, a distributable quantum package or qualified installed consumers",
+        "Deployed numerical, hardware, evidence or Studio integration",
+        "Scientific correctness, acquired equipment, partner commitment or publication acceptance"
+      ],
+      "profile": "{\n  \"source_capture\": \"2026-10-20T11:16:20.988166+00:00\",\n  \"representation\": \"Intended domain architecture and separately inspected repository tooling; no source-project execution\"\n}",
+      "review": {
+        "summary": "Selected public sources and inventory implementation inspected; source-owner, consumer, scientific and publication review pending. No independent acceptance.",
+        "scope": "Ownership, dependency direction, full record semantics, actual domain inventory and current repository inventory code",
+        "fingerprint": "49755ad46f97ccbba907e3a6b2723155219b959feb52113ffde182f6d4dadbf1",
+        "independent": false
+      }
     }
   ],
   "source_reviews_independent": false,
   "project_nodes_added": false,
   "new_scientific_or_model_execution": false,
-  "updated_at_utc": "2026-10-20T10:26:37.408739+00:00"
+  "updated_at_utc": "2026-10-20T11:16:20.988166+00:00"
 }

@@ -104,8 +104,8 @@ observations, independent of resource and budget data.
 |---|---|---:|
 | Profile images across all five languages | Four generated header/map SVGs, 91 badge SVGs and the footer image | 621,868 |
 | Dated catalogue provenance | `assets/catalogue-source.json`, plus its ownership sidecar | 114,267 before sidecar |
-| Interactive site snapshot | 83 manifest-listed assets | 37,723,836 |
-| Main interactive entry page | `index.html`, including its eight embedded datasets | 12,470,975 |
+| Interactive site snapshot | 84 manifest-listed assets | 37,925,100 |
+| Main interactive entry page | `index.html`, including its eight embedded datasets | 12,557,402 |
 
 The HTML, JavaScript modules, source-document JSON, illustrations and figure
 downloads belong to the separately hosted explorer. The full snapshot repeats
@@ -196,3 +196,9 @@ retention root certificates remain distinct from sampling or scientific qualific
 Actual Common report transport and source-level parent/Common dependencies do not
 complete native verification or consumer admission. Earlier source readings retain
 their own dates and fingerprints.
+
+The quantum contracts explanation distinguishes intended provider-neutral records
+from implemented repository inventory tooling. It follows upstream ownership,
+consumer-to-contract dependencies, full record and refusal meaning, qualified
+generation and actual installed-consumer/migration obligations. The current domain
+inventory remains empty; source-owner and independent acceptance remain open.
