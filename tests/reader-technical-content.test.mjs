@@ -28,9 +28,9 @@ test(
         const paragraphs = [
           guide.purpose.text,
           guide.scope.text,
-          ...(guide.inputs || []).map((row) => row.text),
-          ...(guide.outputs || []).map((row) => row.text),
-          ...(guide.implementation || []).map((row) => row.text),
+          ...[guide.inputs, guide.outputs, guide.implementation].flatMap(
+            (section) => (section || []).map((row) => row.text),
+          ),
         ];
         for (const paragraph of paragraphs)
           assert.ok(

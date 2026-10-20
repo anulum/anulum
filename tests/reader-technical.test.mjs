@@ -8,8 +8,41 @@
 
 import test from "node:test";
 import assert from "node:assert/strict";
-import { withAtlasPage, openRoute } from "./atlas-runtime.mjs";
+import {
+  withAtlasPage,
+  openRoute,
+  navigate,
+  baseUrl,
+} from "./atlas-runtime.mjs";
 import { atlas, technical } from "./atlas-data.mjs";
+
+test(
+  "the public technical source route builder opens the exact whole document without inventing a line selection",
+  { timeout: 120000 },
+  async () => {
+    const source = technical.library.projects[0],
+      document = source.documents[0];
+    await withAtlasPage(async (page) => {
+      await openRoute(page, { view: "technical" });
+      const target = await page.evaluate(
+        async ([entry, label]) => {
+          const { technicalSourceHref } =
+            await import("@atlas/reader-technical");
+          return technicalSourceHref(entry, label);
+        },
+        [source.project_id, document.label],
+      );
+      assert.equal(new URLSearchParams(target.slice(1)).has("line"), false);
+      await navigate(page, baseUrl + "index.html" + target);
+      await page.locator(".document-line-text").first().waitFor();
+      assert.deepEqual(
+        await page.locator(".document-line-text").allTextContents(),
+        document.lines,
+      );
+      assert.equal(await page.locator(".selected-source-line").count(), 0);
+    });
+  },
+);
 
 test(
   "every technical guide retains its known project identity",
@@ -40,7 +73,12 @@ test(
         technical.guides.length,
       );
       await page.locator("#technical-query").fill("NO_MATCH_7a2b86c1");
+      await page.locator("#technical-query").press("Enter");
       assert.equal(await page.locator(".technical-guide-card").count(), 0);
+      assert.equal(
+        await page.locator("#technical-query").inputValue(),
+        "NO_MATCH_7a2b86c1",
+      );
       await page
         .getByRole("button", { name: "Clear filters", exact: true })
         .click();

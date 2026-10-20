@@ -13,6 +13,89 @@ import { atlas } from "./atlas-data.mjs";
 import { withAtlasSourceVariant } from "./atlas-source-variant.mjs";
 
 test(
+  "a retired map view stops redrawing after native navigation and viewport changes",
+  { timeout: 120000 },
+  async () => {
+    await withAtlasPage(async (page) => {
+      for (const width of [390, 1440]) {
+        await page.setViewportSize({ width, height: 1000 });
+        await openRoute(page, { view: "map" });
+        const retired = await page.locator("#semantic-canvas").elementHandle();
+        assert.ok(retired);
+        const drawing = await retired.innerHTML();
+        await page.locator('[data-view="overview"]').first().click();
+        await page.locator(".hero h1").waitFor();
+        await page.setViewportSize({ width: width + 20, height: 1000 });
+        await page.evaluate(
+          () =>
+            new Promise((resolve) =>
+              requestAnimationFrame(() => requestAnimationFrame(resolve)),
+            ),
+        );
+        assert.equal(await retired.evaluate((node) => node.isConnected), false);
+        assert.equal(
+          await retired.innerHTML(),
+          drawing,
+          "The retired view receives no further resize redraw",
+        );
+        assert.equal(await page.locator("#semantic-canvas").count(), 0);
+        assert.equal(
+          await page.locator(".hero h1").textContent(),
+          "Understand the whole. Explore your part.",
+        );
+        await retired.dispose();
+      }
+    });
+  },
+);
+
+test(
+  "project-level relation controls retain source identities when project display names are blank",
+  { timeout: 120000 },
+  async () => {
+    await withAtlasSourceVariant(
+      ({ atlas }) => {
+        for (const id of ["SC-NEUROCORE", "SC-COMPUTE-ADAPTERS"]) {
+          const node = atlas.nodes.find((row) => row.id === id);
+          assert.ok(node);
+          node.name = "";
+        }
+      },
+      async (servedBase) => {
+        await withAtlasPage(
+          async (page) => {
+            await openRoute(page, { view: "map", focus: "SC-NEUROCORE" });
+            await page.locator("#map-show-relations").check();
+            await page.locator("#map-show-proposals").check();
+            const control = page
+              .locator(".map-edge-buttons button")
+              .filter({ hasText: "SC-NEUROCORE → SC-COMPUTE-ADAPTERS:" });
+            assert.equal(await control.count(), 1);
+            assert.equal(
+              await page
+                .locator('.map-entry[data-entry="SC-NEUROCORE"]')
+                .getAttribute("aria-label"),
+              "",
+            );
+            await control.click();
+            assert.equal(
+              await page.locator(".map-relation-explanation").isVisible(),
+              true,
+            );
+            const text = await page
+              .locator(".map-relation-explanation")
+              .textContent();
+            assert.ok(text);
+            assert.ok(text.includes("SC-NEUROCORE"));
+          },
+          { servedBase },
+        );
+      },
+    );
+  },
+);
+
+test(
   "native SVG relation labels explain proposal-only source records without implying integration",
   { timeout: 120000 },
   async () => {

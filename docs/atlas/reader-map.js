@@ -7,6 +7,7 @@
 // ANULUM — Semantic map navigation and camera
 
 import {
+  requireRecord,
   atlas as R_atlas,
   badge as R_badge,
   button as R_button,
@@ -341,11 +342,14 @@ function semanticMap(params) {
     if (show.checked)
       for (const pair of drawing.pairs) {
         const sources = pair.edges.filter((e) => !R_isProposal(e)).length;
+        // relationPairs admits endpoints only from this scene's tile identities.
+        const from = requireRecord(scene.tiles.find((t) => t.id === pair.from)),
+          to = requireRecord(scene.tiles.find((t) => t.id === pair.to));
         edgeButtons.append(
           R_button(
-            (scene.tiles.find((t) => t.id === pair.from)?.title || pair.from) +
+            (from.title || pair.from) +
               " → " +
-              (scene.tiles.find((t) => t.id === pair.to)?.title || pair.to) +
+              (to.title || pair.to) +
               ": " +
               sources +
               " source / " +
@@ -444,7 +448,7 @@ function semanticMap(params) {
   draw();
   let previousWidth = viewport.clientWidth;
   const observer = new ResizeObserver(() => {
-    if (!viewport.isConnected) return;
+    // render() invokes mapLifecycle.cleanup before replacing this viewport.
     if (viewport.clientWidth !== previousWidth) {
       previousWidth = viewport.clientWidth;
       draw();

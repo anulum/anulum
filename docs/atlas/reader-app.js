@@ -82,8 +82,10 @@ function render(initial = false) {
       item.setAttribute("aria-current", "page");
     else item.removeAttribute("aria-current");
   }
+  // Every owned route, including unavailable views, constructs its main heading.
   const title =
-    document.querySelector("#content h1")?.textContent || "Research programme";
+    /** @type {HTMLHeadingElement} */ (document.querySelector("#content h1"))
+      .textContent || "Research programme";
   document.title = title + " · ANULUM";
   if (!initial) {
     /** @type {HTMLElement} */ (document.getElementById("main")).focus({

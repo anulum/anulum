@@ -37,6 +37,16 @@ test(
       assert.ok(query);
       await page.locator("#document-find").fill(query.trim().slice(0, 4));
       assert.ok((await page.locator(".document-text mark").count()) > 0);
+      await page.locator("#document-find").press("Enter");
+      assert.equal(await page.locator("mark.current-match").count(), 1);
+      const selectedClass = await page
+        .locator(".document-text mark")
+        .first()
+        .getAttribute("class");
+      assert.ok(selectedClass);
+      assert.match(selectedClass, /current-match/);
+      await page.locator("#document-find").fill("");
+      await page.locator("#document-find").fill(query.trim().slice(0, 4));
       await page
         .getByRole("button", { name: "Previous match", exact: true })
         .click();
@@ -46,6 +56,8 @@ test(
       await page.locator("#document-find").press("Enter");
       assert.equal(await page.locator("mark.current-match").count(), 1);
       await page.locator("#document-find").fill("NO_MATCH_7a2b86c1");
+      await page.locator("#document-find").press("Enter");
+      assert.equal(await page.locator("mark.current-match").count(), 0);
       assert.equal(
         await page
           .getByRole("button", { name: "Next match", exact: true })

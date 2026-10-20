@@ -66,7 +66,8 @@ function record(row) {
   if (row.project_id || row.title) {
     const heading = el("h4");
     if (row.project_id) heading.append(R_projectLink(row.project_id));
-    else heading.textContent = row.title || "";
+    // The enclosing condition guarantees a title when project_id is absent.
+    else heading.textContent = /** @type {string} */ (row.title);
     card.append(heading);
   }
   card.append(el("p", row.text), citations(row.references));

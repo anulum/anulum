@@ -10,8 +10,85 @@ import { withAtlasSourceVariant } from "./atlas-source-variant.mjs";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
 import assert from "node:assert/strict";
-import { withAtlasPage, openRoute } from "./atlas-runtime.mjs";
+import { withAtlasPage, openRoute, navigate } from "./atlas-runtime.mjs";
 import { atlas } from "./atlas-data.mjs";
+
+test(
+  "partial output and partner records preserve supplied limits and explicit missing fields",
+  { timeout: 120000 },
+  async () => {
+    let project = "",
+      partnerProject = "",
+      partnerId = "",
+      gap = "",
+      limit = "";
+    await withAtlasSourceVariant(
+      ({ atlas }) => {
+        const node = atlas.nodes.find(
+          (row) =>
+            row.dossier?.limitations?.length &&
+            row.dossier.expected_outputs?.length,
+        );
+        assert.ok(node);
+        const dossier = node.dossier;
+        assert.ok(dossier);
+        const limits = dossier.limitations,
+          outputs = dossier.expected_outputs;
+        assert.ok(limits);
+        assert.ok(outputs);
+        project = node.id;
+        limit = limits[0];
+        outputs[0].basis = "";
+        Reflect.deleteProperty(dossier, "acceptance");
+        Reflect.deleteProperty(dossier, "open_fields");
+        const partner = atlas.nodes.find((row) => row.partner_slots?.length);
+        assert.ok(partner);
+        partnerProject = partner.id;
+        const slots = partner.partner_slots;
+        assert.ok(slots);
+        const slot = slots[0];
+        partnerId = slot.id;
+        gap = slot.gap;
+        Reflect.deleteProperty(slot, "project_ids");
+        partner.name = "";
+      },
+      async (servedBase) => {
+        await withAtlasPage(
+          async (page) => {
+            await openRoute(page, { view: "support", entry: project });
+            assert.ok(
+              (await page.locator("#brief-outputs").innerText()).includes(
+                "Basis: Source goal",
+              ),
+            );
+            assert.ok(
+              (await page.locator("#brief-gates").innerText()).includes(limit),
+            );
+            assert.ok(
+              !(await page.locator("#brief-gates").innerText()).includes(
+                "No detailed acceptance or open-field record",
+              ),
+            );
+            await navigate(
+              page,
+              servedBase +
+                "index.html#" +
+                new URLSearchParams({ view: "support", entry: partnerProject }),
+            );
+            const card = page.locator('[data-partner="' + partnerId + '"]');
+            await card.waitFor();
+            assert.equal(await card.locator("summary").textContent(), gap);
+            await card.locator("summary").click();
+            assert.equal(await card.locator('a[href*="project="]').count(), 0);
+            assert.equal(await page.locator("#content h1").textContent(), "");
+            assert.equal(await page.title(), "Research programme · ANULUM");
+          },
+          { servedBase },
+        );
+      },
+    );
+  },
+);
 
 test(
   "every partnership brief retains its source identity and work state",
