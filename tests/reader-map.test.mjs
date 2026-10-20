@@ -13,14 +13,60 @@ import { atlas } from "./atlas-data.mjs";
 import { withAtlasSourceVariant } from "./atlas-source-variant.mjs";
 
 test(
-  "a retired map view stops redrawing after native navigation and viewport changes",
+  "live map resize refits the camera and retired views stop redrawing after navigation",
   { timeout: 120000 },
   async () => {
     await withAtlasPage(async (page) => {
       for (const width of [390, 1440]) {
         await page.setViewportSize({ width, height: 1000 });
         await openRoute(page, { view: "map" });
-        const retired = await page.locator("#semantic-canvas").elementHandle();
+        const canvas = page.locator("#semantic-canvas");
+        const originalSvg = await canvas.locator("svg").elementHandle();
+        assert.ok(originalSvg);
+        const fitted = await originalSvg.getAttribute("viewBox");
+        const route = page.url();
+        const sourceGroups = await page
+          .locator(".map-entry")
+          .evaluateAll(function mapTargetsBeforeResize(cards) {
+            return cards.map((card) => card.getAttribute("data-target"));
+          });
+        assert.equal(sourceGroups.length, atlas.groups.length);
+        await page.getByRole("button", { name: "＋", exact: true }).click();
+        const zoomed = await originalSvg.getAttribute("viewBox");
+        assert.notEqual(zoomed, fitted);
+        await page.setViewportSize({
+          width: width === 390 ? 1440 : 390,
+          height: 1000,
+        });
+        await page.evaluate(function liveMapLayoutFrames() {
+          return new Promise((resolve) =>
+            requestAnimationFrame(() => requestAnimationFrame(resolve)),
+          );
+        });
+        assert.equal(
+          await originalSvg.evaluate(
+            function originalMapDrawingConnected(node) {
+              return node.isConnected;
+            },
+          ),
+          false,
+          "Native live resize replaces the drawing",
+        );
+        assert.notEqual(
+          await canvas.locator("svg").getAttribute("viewBox"),
+          zoomed,
+        );
+        assert.equal(page.url(), route);
+        assert.deepEqual(
+          await page
+            .locator(".map-entry")
+            .evaluateAll(function mapTargetsAfterResize(cards) {
+              return cards.map((card) => card.getAttribute("data-target"));
+            }),
+          sourceGroups,
+        );
+        await originalSvg.dispose();
+        const retired = await canvas.elementHandle();
         assert.ok(retired);
         const drawing = await retired.innerHTML();
         await page.locator('[data-view="overview"]').first().click();
