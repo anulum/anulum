@@ -14,6 +14,23 @@
  */
 export default async function checkResourceCoverage(page, {baseUrl}) {
   const base = baseUrl.replace(/\/$/, '') + '/';
+  async function checkAssetVersions() {
+    return page.evaluate(async () => {
+      const assets = [...document.querySelectorAll('script[src],link[rel="stylesheet"]')]
+        .map(node => node.src || node.href)
+        .filter(url => /\/(?:resource-coverage\.(?:js|css)|reader-resources\.js|resource-explorer\.js)(?:\?|$)/.test(url));
+      if (assets.length !== 3) throw new Error('Missing content-bound resource entrypoints');
+      for (const url of assets) {
+        const response = await fetch(url, {cache:'no-store'});
+        if (!response.ok) throw new Error('Unavailable resource asset');
+        const digest = await crypto.subtle.digest('SHA-256', await response.arrayBuffer());
+        const hex = [...new Uint8Array(digest)].map(byte => byte.toString(16).padStart(2,'0')).join('');
+        if (new URL(url).searchParams.get('v') !== hex) throw new Error('Resource asset version differs from served bytes');
+      }
+      return assets.length;
+    });
+  }
+
   const check = (ok, message) => { if (!ok) throw new Error(message); };
   const errors = [], httpFailures = [], report = {groups: [], mobile: []};
   page.on('pageerror', error => errors.push(error.message));
@@ -23,6 +40,7 @@ export default async function checkResourceCoverage(page, {baseUrl}) {
   await page.goto(base + 'index.html#view=resources');
   const coverage = page.getByRole('region', {name: 'Resource inventory coverage and open quantities'});
   await coverage.waitFor();
+  await checkAssetVersions();
   const mainText = await coverage.innerText();
   check(mainText.includes('before filters') && mainText.includes('Source snapshot: 2026-10-13'), 'Snapshot scope and source date');
   check(mainText.includes('does not mean that the group has no resource needs'), 'Missing source is not zero need');
@@ -33,6 +51,7 @@ export default async function checkResourceCoverage(page, {baseUrl}) {
   await discovery.getByRole('link', {name: 'Needs', exact: true}).click();
   await page.waitForURL(url => url.pathname.endsWith('/resources.html'));
   await page.locator('#counter').filter({hasText: 'matching'}).waitFor();
+  await checkAssetVersions();
   check(await page.locator('#results article').count() === 0, 'Actual absent discovery population');
   check(await page.locator('#download-selection').isDisabled(), 'Missing source cannot download invented rows');
   const data = await page.locator('#resource-data').evaluate(node => JSON.parse(node.textContent));

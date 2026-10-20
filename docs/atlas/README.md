@@ -104,8 +104,8 @@ observations, independent of resource and budget data.
 |---|---|---:|
 | Profile images across all five languages | Four generated header/map SVGs, 91 badge SVGs and the footer image | 621,868 |
 | Dated catalogue provenance | `assets/catalogue-source.json`, plus its ownership sidecar | 114,267 before sidecar |
-| Interactive site snapshot | 86 manifest-listed assets | 37,931,758 |
-| Main interactive entry page | `index.html`, including its eight embedded datasets | 12,557,510 |
+| Interactive site snapshot | 86 manifest-listed assets | 37,932,160 |
+| Main interactive entry page | `index.html`, including its eight embedded datasets | 12,557,711 |
 
 The HTML, JavaScript modules, source-document JSON, illustrations and figure
 downloads belong to the separately hosted explorer. The full snapshot repeats
@@ -211,3 +211,7 @@ alternatives do not establish equipment counts, staffing, floor area or a budget
 The real-Page check in `tests/test_resource_coverage.mjs` exercises coverage on
 both resource routes, native group navigation, missing-source handling, filtered
 record correspondence and mobile layout. It uses the supplied local atlas data.
+
+Resource entrypoints and their shared component/style use content-bound asset
+URLs. Their real-browser check verifies those versions against served bytes,
+including the existing user browser after a source update.
