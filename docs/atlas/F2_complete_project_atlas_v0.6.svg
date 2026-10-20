@@ -86,33 +86,41 @@ ANULUM — Detailed ecosystem atlas
 <text x="106" y="697" font-size="14" fill="#536d5b" font-weight="400">Released 0.1.5 · in progress</text>
 <text x="106" y="717" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
 </g>
-<g class="node" data-id="DIRECTOR-CLASS-AI" data-group="AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS" tabindex="0" role="button" aria-label="DIRECTOR-CLASS-AI"><title>DIRECTOR-CLASS-AI: Action control between an autonomous agent and its effectors: action-policy checks, human approvals, gateway enforcement and tamper-evident action evidence.</title>
+<g class="node" data-id="DIRECTOR-CLASS-AI" data-group="AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS" tabindex="0" role="button" aria-label="DIRECTOR-CLASS-AI"><title>DIRECTOR-CLASS-AI: Action control between an autonomous agent and its effectors: action-policy checks, human approvals, gateway enforcement and tamper-evident action evidence.
+Contents are not published.
+Licence: Not published</title>
 <rect x="715" y="623" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
 <rect x="715" y="638" width="5" height="73" rx="2" fill="#315d4c"/>
 <text x="731" y="650" font-size="18" fill="#315d4c" font-weight="600">DIRECTOR-CLASS-AI</text>
-<text x="731" y="697" font-size="14" fill="#536d5b" font-weight="400">In progress · Implementation and integration</text>
-<text x="731" y="717" font-size="12" fill="#778478" font-weight="400">Licence: BUSL-1.1</text>
+<text x="731" y="697" font-size="14" fill="#536d5b" font-weight="400">In progress · Contents are not published.</text>
+<text x="731" y="717" font-size="12" fill="#778478" font-weight="400">Licence: Not published</text>
 </g>
-<g class="node" data-id="SYNAPSE-CHANNEL-FLEET" data-group="AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS" tabindex="0" role="button" aria-label="SYNAPSE-CHANNEL-FLEET"><title>SYNAPSE-CHANNEL-FLEET: Multi-machine operation of the bus: durable follower daemon, per-peer trust and configuration, claim forwarding and diagnostics.</title>
+<g class="node" data-id="SYNAPSE-CHANNEL-FLEET" data-group="AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS" tabindex="0" role="button" aria-label="SYNAPSE-CHANNEL-FLEET"><title>SYNAPSE-CHANNEL-FLEET: Multi-machine operation of the bus: durable follower daemon, per-peer trust and configuration, claim forwarding and diagnostics.
+Contents are not published.
+Licence: Not published</title>
 <rect x="90" y="741" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
 <rect x="90" y="756" width="5" height="73" rx="2" fill="#315d4c"/>
 <text x="106" y="768" font-size="18" fill="#315d4c" font-weight="600">SYNAPSE-CHANNEL-FLEET</text>
-<text x="106" y="815" font-size="14" fill="#536d5b" font-weight="400">In progress · Implementation and integration</text>
-<text x="106" y="835" font-size="12" fill="#778478" font-weight="400">Licence: LicenseRef-SYNAPSE-Enterprise</text>
+<text x="106" y="815" font-size="14" fill="#536d5b" font-weight="400">In progress · Contents are not published.</text>
+<text x="106" y="835" font-size="12" fill="#778478" font-weight="400">Licence: Not published</text>
 </g>
-<g class="node" data-id="DIRECTOR-AI-CLOUD" data-group="AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS" tabindex="0" role="button" aria-label="DIRECTOR-AI-CLOUD"><title>DIRECTOR-AI-CLOUD: Control plane for a hosted Director-AI API: accounts, API-key lifecycle, usage metering, plan quotas and operator exports.</title>
+<g class="node" data-id="DIRECTOR-AI-CLOUD" data-group="AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS" tabindex="0" role="button" aria-label="DIRECTOR-AI-CLOUD"><title>DIRECTOR-AI-CLOUD: Control plane for a hosted Director-AI API: accounts, API-key lifecycle, usage metering, plan quotas and operator exports.
+Contents are not published.
+Licence: Not published</title>
 <rect x="715" y="741" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
 <rect x="715" y="756" width="5" height="73" rx="2" fill="#315d4c"/>
 <text x="731" y="768" font-size="18" fill="#315d4c" font-weight="600">DIRECTOR-AI-CLOUD</text>
-<text x="731" y="815" font-size="14" fill="#536d5b" font-weight="400">In progress · Implementation and integration</text>
-<text x="731" y="835" font-size="12" fill="#778478" font-weight="400">Licence: BUSL-1.1</text>
+<text x="731" y="815" font-size="14" fill="#536d5b" font-weight="400">In progress · Contents are not published.</text>
+<text x="731" y="835" font-size="12" fill="#778478" font-weight="400">Licence: Not published</text>
 </g>
-<g class="node" data-id="REMANENTIA-PORTAL" data-group="AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS" tabindex="0" role="button" aria-label="REMANENTIA-PORTAL"><title>REMANENTIA-PORTAL: Account and billing or licence-request portal for the product family. It runs no customer workload.</title>
+<g class="node" data-id="REMANENTIA-PORTAL" data-group="AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS" tabindex="0" role="button" aria-label="REMANENTIA-PORTAL"><title>REMANENTIA-PORTAL: Account and billing or licence-request portal for the product family. It runs no customer workload.
+Contents are not published.
+Licence: Not published</title>
 <rect x="90" y="859" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
 <rect x="90" y="874" width="5" height="73" rx="2" fill="#315d4c"/>
 <text x="106" y="886" font-size="18" fill="#315d4c" font-weight="600">REMANENTIA-PORTAL</text>
-<text x="106" y="933" font-size="14" fill="#536d5b" font-weight="400">In progress · Implementation and integration</text>
-<text x="106" y="953" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+<text x="106" y="933" font-size="14" fill="#536d5b" font-weight="400">In progress · Contents are not published.</text>
+<text x="106" y="953" font-size="12" fill="#778478" font-weight="400">Licence: Not published</text>
 </g>
 <g class="node" data-id="SYNAPSE-POLICY-CHECK-ACTION" data-group="AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS" tabindex="0" role="button" aria-label="SYNAPSE-POLICY-CHECK-ACTION"><title>SYNAPSE-POLICY-CHECK-ACTION: GitHub Action that checks a SYNAPSE CHANNEL release receipt against a policy file in CI.</title>
 <rect x="715" y="859" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
@@ -177,12 +185,14 @@ ANULUM — Detailed ecosystem atlas
 <text x="2051" y="815" font-size="14" fill="#536d5b" font-weight="400">In progress · Workbench transition</text>
 <text x="2051" y="835" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
 </g>
-<g class="node" data-id="SCPN-QC-CONTRACTS" data-group="SCPN-QUANTUM-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-QC-CONTRACTS"><title>SCPN-QC-CONTRACTS: Versioned parameter, result, semantic and evidence interface contracts shared by components.</title>
+<g class="node" data-id="SCPN-QC-CONTRACTS" data-group="SCPN-QUANTUM-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-QC-CONTRACTS"><title>SCPN-QC-CONTRACTS: Versioned parameter, result, semantic and evidence interface contracts shared by components.
+Contents are not published.
+Licence: Not published</title>
 <rect x="1410" y="859" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
 <rect x="1410" y="874" width="5" height="73" rx="2" fill="#485a91"/>
 <text x="1426" y="886" font-size="18" fill="#485a91" font-weight="600">SCPN-QC-CONTRACTS</text>
-<text x="1426" y="933" font-size="14" fill="#536d5b" font-weight="400">In progress · Workbench transition</text>
-<text x="1426" y="953" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+<text x="1426" y="933" font-size="14" fill="#536d5b" font-weight="400">In progress · Contents are not published.</text>
+<text x="1426" y="953" font-size="12" fill="#778478" font-weight="400">Licence: Not published</text>
 </g>
 <g class="node" data-id="SCPN-QC-CONTROL" data-group="SCPN-QUANTUM-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-QC-CONTROL"><title>SCPN-QC-CONTROL: Feedback and co-design, chimera and topology-aware control, and DLA-constrained control paths.</title>
 <rect x="2035" y="859" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
@@ -282,12 +292,14 @@ ANULUM — Detailed ecosystem atlas
 <text x="1426" y="1759" font-size="14" fill="#536d5b" font-weight="400">In progress · Design and implementation</text>
 <text x="1426" y="1779" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
 </g>
-<g class="node" data-id="MITIGATION-WITNESS" data-group="SCPN-QUANTUM-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="MITIGATION-WITNESS"><title>MITIGATION-WITNESS: Evaluate mitigation on declared measurement panels with retained inputs and uncertainty.</title>
+<g class="node" data-id="MITIGATION-WITNESS" data-group="SCPN-QUANTUM-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="MITIGATION-WITNESS"><title>MITIGATION-WITNESS: Evaluate mitigation on declared measurement panels with retained inputs and uncertainty.
+Contents are not published.
+Licence: Not published</title>
 <rect x="2035" y="1685" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
 <rect x="2035" y="1700" width="5" height="73" rx="2" fill="#485a91"/>
 <text x="2051" y="1712" font-size="18" fill="#485a91" font-weight="600">MITIGATION-WITNESS</text>
-<text x="2051" y="1759" font-size="14" fill="#536d5b" font-weight="400">In progress · Implementation and integration</text>
-<text x="2051" y="1779" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+<text x="2051" y="1759" font-size="14" fill="#536d5b" font-weight="400">In progress · Contents are not published.</text>
+<text x="2051" y="1779" font-size="12" fill="#778478" font-weight="400">Licence: Not published</text>
 </g>
 <g class="node" data-id="NOISE-MODEL-WITNESS" data-group="SCPN-QUANTUM-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="NOISE-MODEL-WITNESS"><title>NOISE-MODEL-WITNESS: Compare model predictions and replay observations for the same circuit and shot identities, with uncertainty, shot floors, calibration epochs and declared tolerances.</title>
 <rect x="1410" y="1803" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
@@ -296,19 +308,23 @@ ANULUM — Detailed ecosystem atlas
 <text x="1426" y="1877" font-size="14" fill="#536d5b" font-weight="400">In progress · Design and implementation</text>
 <text x="1426" y="1897" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
 </g>
-<g class="node" data-id="QPU-RESULT-PACK" data-group="SCPN-QUANTUM-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="QPU-RESULT-PACK"><title>QPU-RESULT-PACK: Preserve raw results and their provenance, derivations and reviewable presentation.</title>
+<g class="node" data-id="QPU-RESULT-PACK" data-group="SCPN-QUANTUM-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="QPU-RESULT-PACK"><title>QPU-RESULT-PACK: Preserve raw results and their provenance, derivations and reviewable presentation.
+Contents are not published.
+Licence: Not published</title>
 <rect x="2035" y="1803" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
 <rect x="2035" y="1818" width="5" height="73" rx="2" fill="#485a91"/>
 <text x="2051" y="1830" font-size="18" fill="#485a91" font-weight="600">QPU-RESULT-PACK</text>
-<text x="2051" y="1877" font-size="14" fill="#536d5b" font-weight="400">In progress · Implementation and integration</text>
-<text x="2051" y="1897" font-size="12" fill="#778478" font-weight="400">Licence: not stated</text>
+<text x="2051" y="1877" font-size="14" fill="#536d5b" font-weight="400">In progress · Contents are not published.</text>
+<text x="2051" y="1897" font-size="12" fill="#778478" font-weight="400">Licence: Not published</text>
 </g>
-<g class="node" data-id="TRANSPILE-WITNESS" data-group="SCPN-QUANTUM-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="TRANSPILE-WITNESS"><title>TRANSPILE-WITNESS: Retain scoped observations about compilation semantics, layout, global phase and replay.</title>
+<g class="node" data-id="TRANSPILE-WITNESS" data-group="SCPN-QUANTUM-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="TRANSPILE-WITNESS"><title>TRANSPILE-WITNESS: Retain scoped observations about compilation semantics, layout, global phase and replay.
+Contents are not published.
+Licence: Not published</title>
 <rect x="1410" y="1921" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
 <rect x="1410" y="1936" width="5" height="73" rx="2" fill="#485a91"/>
 <text x="1426" y="1948" font-size="18" fill="#485a91" font-weight="600">TRANSPILE-WITNESS</text>
-<text x="1426" y="1995" font-size="14" fill="#536d5b" font-weight="400">In progress · Implementation and integration</text>
-<text x="1426" y="2015" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later by file headers; no licence field in packaging</text>
+<text x="1426" y="1995" font-size="14" fill="#536d5b" font-weight="400">In progress · Contents are not published.</text>
+<text x="1426" y="2015" font-size="12" fill="#778478" font-weight="400">Licence: Not published</text>
 </g>
 <g class="node" data-id="VENDOR-CLAIM-RECOMPUTER" data-group="SCPN-QUANTUM-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="VENDOR-CLAIM-RECOMPUTER"><title>VENDOR-CLAIM-RECOMPUTER: Recompute released-data quantum-volume, error-per-layer-gate and logical-error claims against fixed definitions, original inputs and declared computation budgets.</title>
 <rect x="2035" y="1921" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
@@ -443,12 +459,14 @@ ANULUM — Detailed ecosystem atlas
 <text x="2746" y="1405" font-size="14" fill="#536d5b" font-weight="400">In progress · Research and architecture development</text>
 <text x="2746" y="1425" font-size="12" fill="#778478" font-weight="400">Licence: Programme; terms to be settled</text>
 </g>
-<g class="node" data-id="EVIDENCE-MANIFEST-TOOLKIT" data-group="SC-NEUROMORPHIC-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="EVIDENCE-MANIFEST-TOOLKIT"><title>EVIDENCE-MANIFEST-TOOLKIT: Canonicalises, references, seals and verifies evidence with explicit schemas, bounded sources and independently selected policy.</title>
+<g class="node" data-id="EVIDENCE-MANIFEST-TOOLKIT" data-group="SC-NEUROMORPHIC-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="EVIDENCE-MANIFEST-TOOLKIT"><title>EVIDENCE-MANIFEST-TOOLKIT: Intended purpose: canonicalises, references, seals and verifies evidence with explicit schemas, bounded sources and independently selected policy.
+Contents are not published.
+Licence: Not published</title>
 <rect x="3355" y="1331" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
 <rect x="3355" y="1346" width="5" height="73" rx="2" fill="#7a5387"/>
 <text x="3371" y="1358" font-size="18" fill="#7a5387" font-weight="600">EVIDENCE-MANIFEST-TOOLKIT</text>
-<text x="3371" y="1405" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
-<text x="3371" y="1425" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+<text x="3371" y="1405" font-size="14" fill="#536d5b" font-weight="400">In progress · Contents are not published.</text>
+<text x="3371" y="1425" font-size="12" fill="#778478" font-weight="400">Licence: Not published</text>
 </g>
 <g class="node" data-id="EXPERIMENT-LEDGER" data-group="SC-NEUROMORPHIC-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="EXPERIMENT-LEDGER"><title>EXPERIMENT-LEDGER: Records experiment lineage across tools without owning their raw evidence or running their computations.</title>
 <rect x="2730" y="1449" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
@@ -611,12 +629,14 @@ ANULUM — Detailed ecosystem atlas
 <text x="2746" y="2821" font-size="14" fill="#536d5b" font-weight="400">In progress · Design and implementation</text>
 <text x="2746" y="2841" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
 </g>
-<g class="node" data-id="SPIKE-LOG" data-group="SC-NEUROMORPHIC-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="SPIKE-LOG"><title>SPIKE-LOG: Records, indexes, verifies, slices and replays event streams without losing their provenance or timebase identity.</title>
+<g class="node" data-id="SPIKE-LOG" data-group="SC-NEUROMORPHIC-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="SPIKE-LOG"><title>SPIKE-LOG: Intended purpose: records, indexes, verifies, slices and replays event streams without losing their provenance or timebase identity.
+Contents are not published.
+Licence: Not published</title>
 <rect x="3355" y="2747" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
 <rect x="3355" y="2762" width="5" height="73" rx="2" fill="#7a5387"/>
 <text x="3371" y="2774" font-size="18" fill="#7a5387" font-weight="600">SPIKE-LOG</text>
-<text x="3371" y="2821" font-size="14" fill="#536d5b" font-weight="400">In progress · Design and implementation</text>
-<text x="3371" y="2841" font-size="12" fill="#778478" font-weight="400">Licence: Undecided for independent release</text>
+<text x="3371" y="2821" font-size="14" fill="#536d5b" font-weight="400">In progress · Contents are not published.</text>
+<text x="3371" y="2841" font-size="12" fill="#778478" font-weight="400">Licence: Not published</text>
 </g>
 <g class="node" data-id="SPIKE-QUALITY-GATE" data-group="SC-NEUROMORPHIC-COMPUTING-SYSTEMS" tabindex="0" role="button" aria-label="SPIKE-QUALITY-GATE"><title>SPIKE-QUALITY-GATE: Checks event data against a named quality policy for timestamp, noise, sensor-health, rate, gap and spatial defects.</title>
 <rect x="2730" y="2865" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
@@ -646,12 +666,14 @@ ANULUM — Detailed ecosystem atlas
 <text x="731" y="1251" font-size="14" fill="#536d5b" font-weight="400">Released 0.1.1 · in progress</text>
 <text x="731" y="1271" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
 </g>
-<g class="node" data-id="SCPN-ADS-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-ADS-CORE"><title>SCPN-ADS-CORE: Subcritical blanket plus typed external source/beam-target interface.</title>
+<g class="node" data-id="SCPN-ADS-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-ADS-CORE"><title>SCPN-ADS-CORE: Subcritical blanket design and a typed beam-target interface; accelerator ownership remains separate.
+Architecture stage: a reviewed boundary and validation tooling, no model.
+Licence: AGPL-3.0-or-later; commercial licence available</title>
 <rect x="90" y="1295" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
 <rect x="90" y="1310" width="5" height="73" rx="2" fill="#925a34"/>
 <text x="106" y="1322" font-size="18" fill="#925a34" font-weight="600">SCPN-ADS-CORE</text>
-<text x="106" y="1369" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
-<text x="106" y="1389" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+<text x="106" y="1369" font-size="14" fill="#536d5b" font-weight="400">In progress · architecture stage; no model</text>
+<text x="106" y="1389" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later; commercial licence available</text>
 </g>
 <g class="node" data-id="SCPN-BEAM-TARGET-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-BEAM-TARGET-CORE"><title>SCPN-BEAM-TARGET-CORE: Beam/target design and source-scoped reaction/stopping/yield.</title>
 <rect x="715" y="1295" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
@@ -660,54 +682,68 @@ ANULUM — Detailed ecosystem atlas
 <text x="731" y="1369" font-size="14" fill="#536d5b" font-weight="400">In progress · Computational prototypes and continued development</text>
 <text x="731" y="1389" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
 </g>
-<g class="node" data-id="SCPN-BIOCHEM-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-BIOCHEM-CORE"><title>SCPN-BIOCHEM-CORE: Source-specific enzyme/fermentation kinetics and reactor transport.</title>
+<g class="node" data-id="SCPN-BIOCHEM-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-BIOCHEM-CORE"><title>SCPN-BIOCHEM-CORE: Biochemical reaction engineering design, fermentation and enzymatic-kinetics boundaries.
+Architecture stage: a reviewed boundary and validation tooling, no model.
+Licence: AGPL-3.0-or-later; commercial licence available</title>
 <rect x="90" y="1413" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
 <rect x="90" y="1428" width="5" height="73" rx="2" fill="#925a34"/>
 <text x="106" y="1440" font-size="18" fill="#925a34" font-weight="600">SCPN-BIOCHEM-CORE</text>
-<text x="106" y="1487" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
-<text x="106" y="1507" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+<text x="106" y="1487" font-size="14" fill="#536d5b" font-weight="400">In progress · architecture stage; no model</text>
+<text x="106" y="1507" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later; commercial licence available</text>
 </g>
-<g class="node" data-id="SCPN-BREED-BURN-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-BREED-BURN-CORE"><title>SCPN-BREED-BURN-CORE: Source-bounded breed-and-burn fuel-management concept.</title>
+<g class="node" data-id="SCPN-BREED-BURN-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-BREED-BURN-CORE"><title>SCPN-BREED-BURN-CORE: Breed-and-burn fuel-management concepts and evidence limitations; no moving burn-wave claim.
+Architecture stage: a reviewed boundary and validation tooling, no model.
+Licence: AGPL-3.0-or-later; commercial licence available</title>
 <rect x="715" y="1413" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
 <rect x="715" y="1428" width="5" height="73" rx="2" fill="#925a34"/>
 <text x="731" y="1440" font-size="18" fill="#925a34" font-weight="600">SCPN-BREED-BURN-CORE</text>
-<text x="731" y="1487" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
-<text x="731" y="1507" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+<text x="731" y="1487" font-size="14" fill="#536d5b" font-weight="400">In progress · architecture stage; no model</text>
+<text x="731" y="1507" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later; commercial licence available</text>
 </g>
-<g class="node" data-id="SCPN-BWR-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-BWR-CORE"><title>SCPN-BWR-CORE: Boiling-channel thermal-spectrum family and void-feedback boundary.</title>
+<g class="node" data-id="SCPN-BWR-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-BWR-CORE"><title>SCPN-BWR-CORE: Boiling-channel fission design and void-feedback evidence; no two-phase solver is implemented.
+Architecture stage: a reviewed boundary and validation tooling, no model.
+Licence: AGPL-3.0-or-later; commercial licence available</title>
 <rect x="90" y="1531" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
 <rect x="90" y="1546" width="5" height="73" rx="2" fill="#925a34"/>
 <text x="106" y="1558" font-size="18" fill="#925a34" font-weight="600">SCPN-BWR-CORE</text>
-<text x="106" y="1605" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
-<text x="106" y="1625" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+<text x="106" y="1605" font-size="14" fill="#536d5b" font-weight="400">In progress · architecture stage; no model</text>
+<text x="106" y="1625" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later; commercial licence available</text>
 </g>
-<g class="node" data-id="SCPN-CATALYTIC-BED-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-CATALYTIC-BED-CORE"><title>SCPN-CATALYTIC-BED-CORE: Fixed-bed catalyst/transport/pressure-drop coupling.</title>
+<g class="node" data-id="SCPN-CATALYTIC-BED-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-CATALYTIC-BED-CORE"><title>SCPN-CATALYTIC-BED-CORE: Fixed-bed catalysis design, effectiveness and pressure-drop interfaces.
+Architecture stage: a reviewed boundary and validation tooling, no model.
+Licence: AGPL-3.0-or-later; commercial licence available</title>
 <rect x="715" y="1531" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
 <rect x="715" y="1546" width="5" height="73" rx="2" fill="#925a34"/>
 <text x="731" y="1558" font-size="18" fill="#925a34" font-weight="600">SCPN-CATALYTIC-BED-CORE</text>
-<text x="731" y="1605" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
-<text x="731" y="1625" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+<text x="731" y="1605" font-size="14" fill="#536d5b" font-weight="400">In progress · architecture stage; no model</text>
+<text x="731" y="1625" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later; commercial licence available</text>
 </g>
-<g class="node" data-id="SCPN-CHANNEL-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-CHANNEL-CORE"><title>SCPN-CHANNEL-CORE: Graphite-moderated channel reactor only; exclusive from PHWR pressure tubes.</title>
+<g class="node" data-id="SCPN-CHANNEL-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-CHANNEL-CORE"><title>SCPN-CHANNEL-CORE: Graphite-moderated channel reactor geometry and physics; SCPN-PHWR-CORE exclusively owns heavy-water pressure tubes.
+Architecture stage: a reviewed boundary and validation tooling, no model.
+Licence: AGPL-3.0-or-later; commercial licence available</title>
 <rect x="90" y="1649" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
 <rect x="90" y="1664" width="5" height="73" rx="2" fill="#925a34"/>
 <text x="106" y="1676" font-size="18" fill="#925a34" font-weight="600">SCPN-CHANNEL-CORE</text>
-<text x="106" y="1723" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
-<text x="106" y="1743" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+<text x="106" y="1723" font-size="14" fill="#536d5b" font-weight="400">In progress · architecture stage; no model</text>
+<text x="106" y="1743" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later; commercial licence available</text>
 </g>
-<g class="node" data-id="SCPN-CHEM-KINETICS-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-CHEM-KINETICS-CORE"><title>SCPN-CHEM-KINETICS-CORE: Ideal gas batch/CSTR/PFR named kinetics and thermo models.</title>
+<g class="node" data-id="SCPN-CHEM-KINETICS-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-CHEM-KINETICS-CORE"><title>SCPN-CHEM-KINETICS-CORE: Ideal gas-phase reactor kinetics and CSTR/PFR design; shared kinetics belongs in the kernel library.
+Architecture stage: a reviewed boundary and validation tooling, no model.
+Licence: AGPL-3.0-or-later; commercial licence available</title>
 <rect x="715" y="1649" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
 <rect x="715" y="1664" width="5" height="73" rx="2" fill="#925a34"/>
 <text x="731" y="1676" font-size="18" fill="#925a34" font-weight="600">SCPN-CHEM-KINETICS-CORE</text>
-<text x="731" y="1723" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
-<text x="731" y="1743" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+<text x="731" y="1723" font-size="14" fill="#536d5b" font-weight="400">In progress · architecture stage; no model</text>
+<text x="731" y="1743" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later; commercial licence available</text>
 </g>
-<g class="node" data-id="SCPN-CHEM-PROCESS-HYBRID-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-CHEM-PROCESS-HYBRID-CORE"><title>SCPN-CHEM-PROCESS-HYBRID-CORE: Chemical process/recycle/separation and carbon-capture composition.</title>
+<g class="node" data-id="SCPN-CHEM-PROCESS-HYBRID-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-CHEM-PROCESS-HYBRID-CORE"><title>SCPN-CHEM-PROCESS-HYBRID-CORE: Typed composition of chemical process families and carbon-capture interfaces.
+Architecture stage: a reviewed boundary and validation tooling, no model.
+Licence: AGPL-3.0-or-later; commercial licence available</title>
 <rect x="90" y="1767" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
 <rect x="90" y="1782" width="5" height="73" rx="2" fill="#925a34"/>
 <text x="106" y="1794" font-size="18" fill="#925a34" font-weight="600">SCPN-CHEM-PROCESS-HYBRID-CORE</text>
-<text x="106" y="1841" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
-<text x="106" y="1861" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+<text x="106" y="1841" font-size="14" fill="#536d5b" font-weight="400">In progress · architecture stage; no model</text>
+<text x="106" y="1861" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later; commercial licence available</text>
 </g>
 <g class="node" data-id="SCPN-DENSE-PLASMA-FOCUS-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-DENSE-PLASMA-FOCUS-CORE"><title>SCPN-DENSE-PLASMA-FOCUS-CORE: Focus device/bank/axial/radial/pinch and source-scoped neutron estimates.</title>
 <rect x="715" y="1767" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
@@ -716,12 +752,14 @@ ANULUM — Detailed ecosystem atlas
 <text x="731" y="1841" font-size="14" fill="#536d5b" font-weight="400">In progress · Computational prototypes and continued development</text>
 <text x="731" y="1861" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
 </g>
-<g class="node" data-id="SCPN-ELECTROCHEM-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-ELECTROCHEM-CORE"><title>SCPN-ELECTROCHEM-CORE: Electrode/cell transport and charge/reaction interface.</title>
+<g class="node" data-id="SCPN-ELECTROCHEM-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-ELECTROCHEM-CORE"><title>SCPN-ELECTROCHEM-CORE: Electrochemical reactor design for electrolyser and fuel-cell process boundaries.
+Architecture stage: a reviewed boundary and validation tooling, no model.
+Licence: AGPL-3.0-or-later; commercial licence available</title>
 <rect x="90" y="1885" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
 <rect x="90" y="1900" width="5" height="73" rx="2" fill="#925a34"/>
 <text x="106" y="1912" font-size="18" fill="#925a34" font-weight="600">SCPN-ELECTROCHEM-CORE</text>
-<text x="106" y="1959" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
-<text x="106" y="1979" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+<text x="106" y="1959" font-size="14" fill="#536d5b" font-weight="400">In progress · architecture stage; no model</text>
+<text x="106" y="1979" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later; commercial licence available</text>
 </g>
 <g class="node" data-id="SCPN-FRC-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-FRC-CORE"><title>SCPN-FRC-CORE: Field-reversed configuration, radial pressure-balance and kinetic-scale model.</title>
 <rect x="715" y="1885" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
@@ -737,47 +775,59 @@ ANULUM — Detailed ecosystem atlas
 <text x="106" y="2077" font-size="14" fill="#536d5b" font-weight="400">In progress · Computational prototypes and continued development</text>
 <text x="106" y="2097" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
 </g>
-<g class="node" data-id="SCPN-FUSION-PROCESS-HEAT-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-FUSION-PROCESS-HEAT-CORE"><title>SCPN-FUSION-PROCESS-HEAT-CORE: Fusion-source to chemical-process heat/material composition.</title>
+<g class="node" data-id="SCPN-FUSION-PROCESS-HEAT-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-FUSION-PROCESS-HEAT-CORE"><title>SCPN-FUSION-PROCESS-HEAT-CORE: Typed fusion-to-chemical-process heat and material coupling records.
+Architecture stage: a reviewed boundary and validation tooling, no model.
+Licence: AGPL-3.0-or-later; commercial licence available</title>
 <rect x="715" y="2003" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
 <rect x="715" y="2018" width="5" height="73" rx="2" fill="#925a34"/>
 <text x="731" y="2030" font-size="18" fill="#925a34" font-weight="600">SCPN-FUSION-PROCESS-HEAT-CORE</text>
-<text x="731" y="2077" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
-<text x="731" y="2097" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+<text x="731" y="2077" font-size="14" fill="#536d5b" font-weight="400">In progress · architecture stage; no model</text>
+<text x="731" y="2097" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later; commercial licence available</text>
 </g>
-<g class="node" data-id="SCPN-GFR-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-GFR-CORE"><title>SCPN-GFR-CORE: Gas-cooled fast-spectrum family with high-temperature heat-removal boundary.</title>
+<g class="node" data-id="SCPN-GFR-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-GFR-CORE"><title>SCPN-GFR-CORE: Fast-spectrum gas-cooled reactor design and heat-removal boundaries.
+Architecture stage: a reviewed boundary and validation tooling, no model.
+Licence: AGPL-3.0-or-later; commercial licence available</title>
 <rect x="90" y="2121" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
 <rect x="90" y="2136" width="5" height="73" rx="2" fill="#925a34"/>
 <text x="106" y="2148" font-size="18" fill="#925a34" font-weight="600">SCPN-GFR-CORE</text>
-<text x="106" y="2195" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
-<text x="106" y="2215" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+<text x="106" y="2195" font-size="14" fill="#536d5b" font-weight="400">In progress · architecture stage; no model</text>
+<text x="106" y="2215" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later; commercial licence available</text>
 </g>
-<g class="node" data-id="SCPN-HEAT-PIPE-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-HEAT-PIPE-CORE"><title>SCPN-HEAT-PIPE-CORE: Solid-core heat-pipe microreactor and source-defined transport limits.</title>
+<g class="node" data-id="SCPN-HEAT-PIPE-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-HEAT-PIPE-CORE"><title>SCPN-HEAT-PIPE-CORE: Solid-core heat-pipe microreactor design and heat-transport interfaces.
+Architecture stage: a reviewed boundary and validation tooling, no model.
+Licence: AGPL-3.0-or-later; commercial licence available</title>
 <rect x="715" y="2121" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
 <rect x="715" y="2136" width="5" height="73" rx="2" fill="#925a34"/>
 <text x="731" y="2148" font-size="18" fill="#925a34" font-weight="600">SCPN-HEAT-PIPE-CORE</text>
-<text x="731" y="2195" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
-<text x="731" y="2215" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+<text x="731" y="2195" font-size="14" fill="#536d5b" font-weight="400">In progress · architecture stage; no model</text>
+<text x="731" y="2215" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later; commercial licence available</text>
 </g>
-<g class="node" data-id="SCPN-HTGR-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-HTGR-CORE"><title>SCPN-HTGR-CORE: Graphite/TRISO helium-cooled design and distinct process-heat interface.</title>
+<g class="node" data-id="SCPN-HTGR-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-HTGR-CORE"><title>SCPN-HTGR-CORE: Graphite-moderated, gas-cooled and TRISO design evidence with a declared process-heat interface.
+Architecture stage: a reviewed boundary and validation tooling, no model.
+Licence: AGPL-3.0-or-later; commercial licence available</title>
 <rect x="90" y="2239" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
 <rect x="90" y="2254" width="5" height="73" rx="2" fill="#925a34"/>
 <text x="106" y="2266" font-size="18" fill="#925a34" font-weight="600">SCPN-HTGR-CORE</text>
-<text x="106" y="2313" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
-<text x="106" y="2333" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+<text x="106" y="2313" font-size="14" fill="#536d5b" font-weight="400">In progress · architecture stage; no model</text>
+<text x="106" y="2333" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later; commercial licence available</text>
 </g>
-<g class="node" data-id="SCPN-HYBRID-ENERGY-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-HYBRID-ENERGY-CORE"><title>SCPN-HYBRID-ENERGY-CORE: Fission/renewable/storage electrical and thermal composition.</title>
+<g class="node" data-id="SCPN-HYBRID-ENERGY-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-HYBRID-ENERGY-CORE"><title>SCPN-HYBRID-ENERGY-CORE: Typed fission, renewable and storage energy-flow coupling records.
+Architecture stage: a reviewed boundary and validation tooling, no model.
+Licence: AGPL-3.0-or-later; commercial licence available</title>
 <rect x="715" y="2239" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
 <rect x="715" y="2254" width="5" height="73" rx="2" fill="#925a34"/>
 <text x="731" y="2266" font-size="18" fill="#925a34" font-weight="600">SCPN-HYBRID-ENERGY-CORE</text>
-<text x="731" y="2313" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
-<text x="731" y="2333" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+<text x="731" y="2313" font-size="14" fill="#536d5b" font-weight="400">In progress · architecture stage; no model</text>
+<text x="731" y="2333" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later; commercial licence available</text>
 </g>
-<g class="node" data-id="SCPN-HYDROGEN-PROCESS-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-HYDROGEN-PROCESS-CORE"><title>SCPN-HYDROGEN-PROCESS-CORE: HTSE and named thermochemical hydrogen process routes.</title>
+<g class="node" data-id="SCPN-HYDROGEN-PROCESS-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-HYDROGEN-PROCESS-CORE"><title>SCPN-HYDROGEN-PROCESS-CORE: Hydrogen production process designs for thermal and electrical feed interfaces.
+Architecture stage: a reviewed boundary and validation tooling, no model.
+Licence: AGPL-3.0-or-later; commercial licence available</title>
 <rect x="90" y="2357" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
 <rect x="90" y="2372" width="5" height="73" rx="2" fill="#925a34"/>
 <text x="106" y="2384" font-size="18" fill="#925a34" font-weight="600">SCPN-HYDROGEN-PROCESS-CORE</text>
-<text x="106" y="2431" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
-<text x="106" y="2451" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+<text x="106" y="2431" font-size="14" fill="#536d5b" font-weight="400">In progress · architecture stage; no model</text>
+<text x="106" y="2451" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later; commercial licence available</text>
 </g>
 <g class="node" data-id="SCPN-ICF-BEAM-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-ICF-BEAM-CORE"><title>SCPN-ICF-BEAM-CORE: Particle-beam illumination/capsule design with explicit coupling.</title>
 <rect x="715" y="2357" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
@@ -821,12 +871,14 @@ ANULUM — Detailed ecosystem atlas
 <text x="106" y="2785" font-size="14" fill="#536d5b" font-weight="400">In progress · Computational prototypes and continued development</text>
 <text x="106" y="2805" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
 </g>
-<g class="node" data-id="SCPN-LFR-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-LFR-CORE"><title>SCPN-LFR-CORE: Lead/LBE fast-spectrum family with materials/corrosion boundary.</title>
+<g class="node" data-id="SCPN-LFR-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-LFR-CORE"><title>SCPN-LFR-CORE: Fast-spectrum lead or lead-bismuth cooled system design and corrosion boundary.
+Architecture stage: a reviewed boundary and validation tooling, no model.
+Licence: AGPL-3.0-or-later; commercial licence available</title>
 <rect x="715" y="2711" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
 <rect x="715" y="2726" width="5" height="73" rx="2" fill="#925a34"/>
 <text x="731" y="2738" font-size="18" fill="#925a34" font-weight="600">SCPN-LFR-CORE</text>
-<text x="731" y="2785" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
-<text x="731" y="2805" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+<text x="731" y="2785" font-size="14" fill="#536d5b" font-weight="400">In progress · architecture stage; no model</text>
+<text x="731" y="2805" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later; commercial licence available</text>
 </g>
 <g class="node" data-id="SCPN-MAGNETIC-CUSP-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-MAGNETIC-CUSP-CORE"><title>SCPN-MAGNETIC-CUSP-CORE: Cusp coil/configuration ownership and source-specific field/particle-loss model proposal.</title>
 <rect x="90" y="2829" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
@@ -835,19 +887,23 @@ ANULUM — Detailed ecosystem atlas
 <text x="106" y="2903" font-size="14" fill="#536d5b" font-weight="400">In progress · Computational prototypes and continued development</text>
 <text x="106" y="2923" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
 </g>
-<g class="node" data-id="SCPN-MEMBRANE-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-MEMBRANE-CORE"><title>SCPN-MEMBRANE-CORE: Reaction-separation with explicit membrane transport.</title>
+<g class="node" data-id="SCPN-MEMBRANE-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-MEMBRANE-CORE"><title>SCPN-MEMBRANE-CORE: Coupled reaction-and-separation design and transport interfaces.
+Architecture stage: a reviewed boundary and validation tooling, no model.
+Licence: AGPL-3.0-or-later; commercial licence available</title>
 <rect x="715" y="2829" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
 <rect x="715" y="2844" width="5" height="73" rx="2" fill="#925a34"/>
 <text x="731" y="2856" font-size="18" fill="#925a34" font-weight="600">SCPN-MEMBRANE-CORE</text>
-<text x="731" y="2903" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
-<text x="731" y="2923" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+<text x="731" y="2903" font-size="14" fill="#536d5b" font-weight="400">In progress · architecture stage; no model</text>
+<text x="731" y="2923" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later; commercial licence available</text>
 </g>
-<g class="node" data-id="SCPN-METHANE-REFORMER-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-METHANE-REFORMER-CORE"><title>SCPN-METHANE-REFORMER-CORE: Steam-methane reforming kinetics and process train.</title>
+<g class="node" data-id="SCPN-METHANE-REFORMER-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-METHANE-REFORMER-CORE"><title>SCPN-METHANE-REFORMER-CORE: Steam-methane reforming process design and hydrogen stream interfaces.
+Architecture stage: a reviewed boundary and validation tooling, no model.
+Licence: AGPL-3.0-or-later; commercial licence available</title>
 <rect x="90" y="2947" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
 <rect x="90" y="2962" width="5" height="73" rx="2" fill="#925a34"/>
 <text x="106" y="2974" font-size="18" fill="#925a34" font-weight="600">SCPN-METHANE-REFORMER-CORE</text>
-<text x="106" y="3021" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
-<text x="106" y="3041" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+<text x="106" y="3021" font-size="14" fill="#536d5b" font-weight="400">In progress · architecture stage; no model</text>
+<text x="106" y="3041" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later; commercial licence available</text>
 </g>
 <g class="node" data-id="SCPN-MIF-LINER-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-MIF-LINER-CORE"><title>SCPN-MIF-LINER-CORE: Mechanical/magnetic liner compression and target-energy coupling.</title>
 <rect x="715" y="2947" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
@@ -877,12 +933,14 @@ ANULUM — Detailed ecosystem atlas
 <text x="106" y="3257" font-size="14" fill="#536d5b" font-weight="400">In progress · Computational prototypes and continued development</text>
 <text x="106" y="3277" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
 </g>
-<g class="node" data-id="SCPN-MSR-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-MSR-CORE"><title>SCPN-MSR-CORE: Liquid-fuel molten-salt family with chemistry, circulation and depletion.</title>
+<g class="node" data-id="SCPN-MSR-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-MSR-CORE"><title>SCPN-MSR-CORE: Liquid-fuel molten-salt design with chemistry and depletion interfaces; thermal and fast variants remain facets.
+Architecture stage: a reviewed boundary and validation tooling, no model.
+Licence: AGPL-3.0-or-later; commercial licence available</title>
 <rect x="715" y="3183" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
 <rect x="715" y="3198" width="5" height="73" rx="2" fill="#925a34"/>
 <text x="731" y="3210" font-size="18" fill="#925a34" font-weight="600">SCPN-MSR-CORE</text>
-<text x="731" y="3257" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
-<text x="731" y="3277" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+<text x="731" y="3257" font-size="14" fill="#536d5b" font-weight="400">In progress · architecture stage; no model</text>
+<text x="731" y="3277" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later; commercial licence available</text>
 </g>
 <g class="node" data-id="SCPN-MUON-FUSION-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-MUON-FUSION-CORE"><title>SCPN-MUON-FUSION-CORE: Muon-catalysed reaction models and complete energy accounting.</title>
 <rect x="90" y="3301" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
@@ -891,61 +949,77 @@ ANULUM — Detailed ecosystem atlas
 <text x="106" y="3375" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
 <text x="106" y="3395" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
 </g>
-<g class="node" data-id="SCPN-NTP-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-NTP-CORE"><title>SCPN-NTP-CORE: Reactor-side thermal propulsion and typed heat/flow interface.</title>
+<g class="node" data-id="SCPN-NTP-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-NTP-CORE"><title>SCPN-NTP-CORE: Reactor-side nuclear thermal propulsion design; no verified source anchor or thrust result yet.
+Architecture stage: a reviewed boundary and validation tooling, no model.
+Licence: AGPL-3.0-or-later; commercial licence available</title>
 <rect x="715" y="3301" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
 <rect x="715" y="3316" width="5" height="73" rx="2" fill="#925a34"/>
 <text x="731" y="3328" font-size="18" fill="#925a34" font-weight="600">SCPN-NTP-CORE</text>
-<text x="731" y="3375" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
-<text x="731" y="3395" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+<text x="731" y="3375" font-size="14" fill="#536d5b" font-weight="400">In progress · architecture stage; no model</text>
+<text x="731" y="3395" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later; commercial licence available</text>
 </g>
-<g class="node" data-id="SCPN-NUCLEAR-DESALINATION-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-NUCLEAR-DESALINATION-CORE"><title>SCPN-NUCLEAR-DESALINATION-CORE: Fission-to-desalination thermal/material composition.</title>
+<g class="node" data-id="SCPN-NUCLEAR-DESALINATION-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-NUCLEAR-DESALINATION-CORE"><title>SCPN-NUCLEAR-DESALINATION-CORE: Typed fission-to-desalination thermal and material coupling records.
+Architecture stage: a reviewed boundary and validation tooling, no model.
+Licence: AGPL-3.0-or-later; commercial licence available</title>
 <rect x="90" y="3419" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
 <rect x="90" y="3434" width="5" height="73" rx="2" fill="#925a34"/>
 <text x="106" y="3446" font-size="18" fill="#925a34" font-weight="600">SCPN-NUCLEAR-DESALINATION-CORE</text>
-<text x="106" y="3493" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
-<text x="106" y="3513" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+<text x="106" y="3493" font-size="14" fill="#536d5b" font-weight="400">In progress · architecture stage; no model</text>
+<text x="106" y="3513" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later; commercial licence available</text>
 </g>
-<g class="node" data-id="SCPN-NUCLEAR-HYDROGEN-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-NUCLEAR-HYDROGEN-CORE"><title>SCPN-NUCLEAR-HYDROGEN-CORE: Typed fission-to-hydrogen thermal/electrical/material composition.</title>
+<g class="node" data-id="SCPN-NUCLEAR-HYDROGEN-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-NUCLEAR-HYDROGEN-CORE"><title>SCPN-NUCLEAR-HYDROGEN-CORE: Typed fission-to-hydrogen thermal, electrical and material coupling records.
+Architecture stage: a reviewed boundary and validation tooling, no model.
+Licence: AGPL-3.0-or-later; commercial licence available</title>
 <rect x="715" y="3419" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
 <rect x="715" y="3434" width="5" height="73" rx="2" fill="#925a34"/>
 <text x="731" y="3446" font-size="18" fill="#925a34" font-weight="600">SCPN-NUCLEAR-HYDROGEN-CORE</text>
-<text x="731" y="3493" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
-<text x="731" y="3513" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+<text x="731" y="3493" font-size="14" fill="#536d5b" font-weight="400">In progress · architecture stage; no model</text>
+<text x="731" y="3513" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later; commercial licence available</text>
 </g>
-<g class="node" data-id="SCPN-PHOTOCATALYTIC-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-PHOTOCATALYTIC-CORE"><title>SCPN-PHOTOCATALYTIC-CORE: Photon-flux-driven reaction and optical/source coupling.</title>
+<g class="node" data-id="SCPN-PHOTOCATALYTIC-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-PHOTOCATALYTIC-CORE"><title>SCPN-PHOTOCATALYTIC-CORE: Photon-driven chemical reaction design with source and optical-flux interfaces.
+Architecture stage: a reviewed boundary and validation tooling, no model.
+Licence: AGPL-3.0-or-later; commercial licence available</title>
 <rect x="90" y="3537" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
 <rect x="90" y="3552" width="5" height="73" rx="2" fill="#925a34"/>
 <text x="106" y="3564" font-size="18" fill="#925a34" font-weight="600">SCPN-PHOTOCATALYTIC-CORE</text>
-<text x="106" y="3611" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
-<text x="106" y="3631" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+<text x="106" y="3611" font-size="14" fill="#536d5b" font-weight="400">In progress · architecture stage; no model</text>
+<text x="106" y="3631" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later; commercial licence available</text>
 </g>
-<g class="node" data-id="SCPN-PHWR-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-PHWR-CORE"><title>SCPN-PHWR-CORE: Heavy-water pressure-tube family with on-power fuel management.</title>
+<g class="node" data-id="SCPN-PHWR-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-PHWR-CORE"><title>SCPN-PHWR-CORE: Heavy-water pressure-tube design and on-power refuelling interfaces; graphite channel physics belongs to SCPN-CHANNEL-CORE.
+Architecture stage: a reviewed boundary and validation tooling, no model.
+Licence: AGPL-3.0-or-later; commercial licence available</title>
 <rect x="715" y="3537" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
 <rect x="715" y="3552" width="5" height="73" rx="2" fill="#925a34"/>
 <text x="731" y="3564" font-size="18" fill="#925a34" font-weight="600">SCPN-PHWR-CORE</text>
-<text x="731" y="3611" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
-<text x="731" y="3631" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+<text x="731" y="3611" font-size="14" fill="#536d5b" font-weight="400">In progress · architecture stage; no model</text>
+<text x="731" y="3631" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later; commercial licence available</text>
 </g>
-<g class="node" data-id="SCPN-PWR-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-PWR-CORE"><title>SCPN-PWR-CORE: Light-water moderated/cooled vessel and primary-circuit design.</title>
+<g class="node" data-id="SCPN-PWR-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-PWR-CORE"><title>SCPN-PWR-CORE: Light-water moderated and cooled fission-system design records; pressure vessel and primary circuit are in scope.
+Architecture stage: a reviewed boundary and validation tooling, no model.
+Licence: AGPL-3.0-or-later; commercial licence available</title>
 <rect x="90" y="3655" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
 <rect x="90" y="3670" width="5" height="73" rx="2" fill="#925a34"/>
 <text x="106" y="3682" font-size="18" fill="#925a34" font-weight="600">SCPN-PWR-CORE</text>
-<text x="106" y="3729" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
-<text x="106" y="3749" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+<text x="106" y="3729" font-size="14" fill="#536d5b" font-weight="400">In progress · architecture stage; no model</text>
+<text x="106" y="3749" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later; commercial licence available</text>
 </g>
-<g class="node" data-id="SCPN-REACTOR-CATALOGUE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-REACTOR-CATALOGUE"><title>SCPN-REACTOR-CATALOGUE: Evidence-labelled source-authority catalogue, candidate revision/history and vocabulary.</title>
+<g class="node" data-id="SCPN-REACTOR-CATALOGUE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-REACTOR-CATALOGUE"><title>SCPN-REACTOR-CATALOGUE: Evidence-labelled catalogue of reactor-family records; inclusion does not validate a device or approve a candidate.
+Architecture stage: a reviewed boundary and validation tooling, no model.
+Licence: AGPL-3.0-or-later; commercial licence available</title>
 <rect x="715" y="3655" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
 <rect x="715" y="3670" width="5" height="73" rx="2" fill="#925a34"/>
 <text x="731" y="3682" font-size="18" fill="#925a34" font-weight="600">SCPN-REACTOR-CATALOGUE</text>
-<text x="731" y="3729" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
-<text x="731" y="3749" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+<text x="731" y="3729" font-size="14" fill="#536d5b" font-weight="400">In progress · architecture stage; no model</text>
+<text x="731" y="3749" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later; commercial licence available</text>
 </g>
-<g class="node" data-id="SCPN-RESEARCH-REACTOR-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-RESEARCH-REACTOR-CORE"><title>SCPN-RESEARCH-REACTOR-CORE: Research/isotope-production core including separately supported pulse operation.</title>
+<g class="node" data-id="SCPN-RESEARCH-REACTOR-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-RESEARCH-REACTOR-CORE"><title>SCPN-RESEARCH-REACTOR-CORE: Research and isotope-production reactor design, including pulse-operation boundaries.
+Architecture stage: a reviewed boundary and validation tooling, no model.
+Licence: AGPL-3.0-or-later; commercial licence available</title>
 <rect x="90" y="3773" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
 <rect x="90" y="3788" width="5" height="73" rx="2" fill="#925a34"/>
 <text x="106" y="3800" font-size="18" fill="#925a34" font-weight="600">SCPN-RESEARCH-REACTOR-CORE</text>
-<text x="106" y="3847" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
-<text x="106" y="3867" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+<text x="106" y="3847" font-size="14" fill="#536d5b" font-weight="400">In progress · architecture stage; no model</text>
+<text x="106" y="3867" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later; commercial licence available</text>
 </g>
 <g class="node" data-id="SCPN-RFP-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-RFP-CORE"><title>SCPN-RFP-CORE: Reversed-field pinch relaxation/profile and toroidal device design.</title>
 <rect x="715" y="3773" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
@@ -954,19 +1028,23 @@ ANULUM — Detailed ecosystem atlas
 <text x="731" y="3847" font-size="14" fill="#536d5b" font-weight="400">In progress · Computational prototypes and continued development</text>
 <text x="731" y="3867" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
 </g>
-<g class="node" data-id="SCPN-SCWR-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-SCWR-CORE"><title>SCPN-SCWR-CORE: Supercritical-water family with explicit thermophysical transition support.</title>
+<g class="node" data-id="SCPN-SCWR-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-SCWR-CORE"><title>SCPN-SCWR-CORE: Supercritical-water reactor design and thermal-hydraulic applicability boundaries.
+Architecture stage: a reviewed boundary and validation tooling, no model.
+Licence: AGPL-3.0-or-later; commercial licence available</title>
 <rect x="90" y="3891" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
 <rect x="90" y="3906" width="5" height="73" rx="2" fill="#925a34"/>
 <text x="106" y="3918" font-size="18" fill="#925a34" font-weight="600">SCPN-SCWR-CORE</text>
-<text x="106" y="3965" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
-<text x="106" y="3985" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+<text x="106" y="3965" font-size="14" fill="#536d5b" font-weight="400">In progress · architecture stage; no model</text>
+<text x="106" y="3985" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later; commercial licence available</text>
 </g>
-<g class="node" data-id="SCPN-SFR-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-SFR-CORE"><title>SCPN-SFR-CORE: Sodium-cooled fast-spectrum family and fuel/material/heat-removal boundary.</title>
+<g class="node" data-id="SCPN-SFR-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-SFR-CORE"><title>SCPN-SFR-CORE: Fast-spectrum sodium-cooled system design, coolant and materials boundaries.
+Architecture stage: a reviewed boundary and validation tooling, no model.
+Licence: AGPL-3.0-or-later; commercial licence available</title>
 <rect x="715" y="3891" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
 <rect x="715" y="3906" width="5" height="73" rx="2" fill="#925a34"/>
 <text x="731" y="3918" font-size="18" fill="#925a34" font-weight="600">SCPN-SFR-CORE</text>
-<text x="731" y="3965" font-size="14" fill="#536d5b" font-weight="400">In progress · Architecture and qualification</text>
-<text x="731" y="3985" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+<text x="731" y="3965" font-size="14" fill="#536d5b" font-weight="400">In progress · architecture stage; no model</text>
+<text x="731" y="3985" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later; commercial licence available</text>
 </g>
 <g class="node" data-id="SCPN-SPHEROMAK-CORE" data-group="SCPN-REACTOR-SYSTEMS" tabindex="0" role="button" aria-label="SCPN-SPHEROMAK-CORE"><title>SCPN-SPHEROMAK-CORE: Relaxed compact-torus configuration, flux conserver and formation criteria.</title>
 <rect x="90" y="4009" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
@@ -1094,12 +1172,14 @@ ANULUM — Detailed ecosystem atlas
 <text x="2051" y="2431" font-size="14" fill="#536d5b" font-weight="400">Released 1.4.3 · in progress</text>
 <text x="2051" y="2451" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
 </g>
-<g class="node" data-id="SCPN-STUDIO-PLATFORM" data-group="SCPN-SYSTEMS-INTEGRATION-AND-CONTROL" tabindex="0" role="button" aria-label="SCPN-STUDIO-PLATFORM"><title>SCPN-STUDIO-PLATFORM: Domain-neutral SDK for studios: evidence bundles, capability manifests, bounded jobs and tenant-aware identity.</title>
+<g class="node" data-id="SCPN-STUDIO-PLATFORM" data-group="SCPN-SYSTEMS-INTEGRATION-AND-CONTROL" tabindex="0" role="button" aria-label="SCPN-STUDIO-PLATFORM"><title>SCPN-STUDIO-PLATFORM: Domain-neutral SDK for studios: evidence bundles, capability manifests, bounded jobs and tenant-aware identity.
+Contents are not published.
+Licence: Not published</title>
 <rect x="1410" y="2475" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
 <rect x="1410" y="2490" width="5" height="73" rx="2" fill="#286677"/>
 <text x="1426" y="2502" font-size="18" fill="#286677" font-weight="600">SCPN-STUDIO-PLATFORM</text>
-<text x="1426" y="2549" font-size="14" fill="#536d5b" font-weight="400">Released 0.11.2 · in progress</text>
-<text x="1426" y="2569" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+<text x="1426" y="2549" font-size="14" fill="#536d5b" font-weight="400">In progress · Contents are not published.</text>
+<text x="1426" y="2569" font-size="12" fill="#778478" font-weight="400">Licence: Not published</text>
 </g>
 <g class="node" data-id="World models / oscillators and grids" data-group="SCPN-SYSTEMS-INTEGRATION-AND-CONTROL" tabindex="0" role="button" aria-label="World models / oscillators and grids"><title>World models / oscillators and grids: First open model family: coupled-oscillator and synchronisation dynamics, prediction checks and reference solvers.</title>
 <rect x="2035" y="2475" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
@@ -1108,12 +1188,14 @@ ANULUM — Detailed ecosystem atlas
 <text x="2051" y="2549" font-size="14" fill="#536d5b" font-weight="400">In progress · Research and architecture development</text>
 <text x="2051" y="2569" font-size="12" fill="#778478" font-weight="400">Licence: Programme; terms to be settled</text>
 </g>
-<g class="node" data-id="SCPN-STUDIO" data-group="SCPN-SYSTEMS-INTEGRATION-AND-CONTROL" tabindex="0" role="button" aria-label="SCPN-STUDIO"><title>SCPN-STUDIO: The hub that federates studios over the platform contract: registry, cross-studio evidence audit, rendering and federation gating.</title>
+<g class="node" data-id="SCPN-STUDIO" data-group="SCPN-SYSTEMS-INTEGRATION-AND-CONTROL" tabindex="0" role="button" aria-label="SCPN-STUDIO"><title>SCPN-STUDIO: The hub that federates studios over the platform contract: registry, cross-studio evidence audit, rendering and federation gating.
+Contents are not published.
+Licence: Not published</title>
 <rect x="1410" y="2593" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
 <rect x="1410" y="2608" width="5" height="73" rx="2" fill="#286677"/>
 <text x="1426" y="2620" font-size="18" fill="#286677" font-weight="600">SCPN-STUDIO</text>
-<text x="1426" y="2667" font-size="14" fill="#536d5b" font-weight="400">In progress · Implementation and integration</text>
-<text x="1426" y="2687" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
+<text x="1426" y="2667" font-size="14" fill="#536d5b" font-weight="400">In progress · Contents are not published.</text>
+<text x="1426" y="2687" font-size="12" fill="#778478" font-weight="400">Licence: Not published</text>
 </g>
 <g class="node" data-id="Fixed grid-detector experiment" data-group="SCIENTIFIC-DISCOVERY-AND-EXPERIMENTATION" tabindex="0" role="button" aria-label="Fixed grid-detector experiment"><title>Fixed grid-detector experiment: Fixed-aggregation detector check on held-out simulated grids, validity filtering, independent review and replay.</title>
 <rect x="1410" y="2911" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
@@ -1273,11 +1355,13 @@ ANULUM — Detailed ecosystem atlas
 <text x="3371" y="4083" font-size="14" fill="#536d5b" font-weight="400">In progress · Implemented surfaces and continued integration</text>
 <text x="3371" y="4103" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
 </g>
-<g class="node" data-id="ANULUM-CORRESPONDENCE" data-group="ANULUM-COMPANY-OPERATIONS" tabindex="0" role="button" aria-label="ANULUM-CORRESPONDENCE"><title>ANULUM-CORRESPONDENCE: Read-only mailbox intake, pseudonymised metadata and local human-approved draft preparation.</title>
+<g class="node" data-id="ANULUM-CORRESPONDENCE" data-group="ANULUM-COMPANY-OPERATIONS" tabindex="0" role="button" aria-label="ANULUM-CORRESPONDENCE"><title>ANULUM-CORRESPONDENCE: Internal repository. Contents are not published.
+Internal development; implementation details withheld.
+Licence: AGPL-3.0-or-later</title>
 <rect x="2730" y="4127" width="605" height="104" rx="12" fill="#ffffff" stroke="#d4ded5" stroke-width="1.5"/>
 <rect x="2730" y="4142" width="5" height="73" rx="2" fill="#474c64"/>
 <text x="2746" y="4154" font-size="18" fill="#474c64" font-weight="600">ANULUM-CORRESPONDENCE</text>
-<text x="2746" y="4201" font-size="14" fill="#536d5b" font-weight="400">In progress · Implemented surfaces and continued integration</text>
+<text x="2746" y="4201" font-size="14" fill="#536d5b" font-weight="400">In progress · Contents are not published.</text>
 <text x="2746" y="4221" font-size="12" fill="#778478" font-weight="400">Licence: AGPL-3.0-or-later</text>
 </g>
 <g class="node" data-id="Company / business/" data-group="ANULUM-COMPANY-OPERATIONS" tabindex="0" role="button" aria-label="Company / business/"><title>Company / business/: Products and offers of the company, business plans, investor material and its reviews, market and pricing</title>
