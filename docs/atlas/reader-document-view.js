@@ -259,14 +259,17 @@ function documentView(
   layout.append(contents, text);
   root.append(layout);
   find();
-  if (requested !== null && validLine)
+  if (requested !== null && validLine) {
+    const row = /** @type {HTMLDivElement} */ (
+      text.querySelector("#source-line-" + requested)
+    );
     requestAnimationFrame(() => {
-      const row = document.getElementById("source-line-" + requested);
-      if (!row) return;
+      if (!row.isConnected) return;
       row.classList.add("selected-source-line");
       row.focus({ preventScroll: true });
       row.scrollIntoView({ block: "center" });
     });
+  }
 }
 
 export { documentView };

@@ -13,6 +13,120 @@ import { withAtlasPage, openRoute } from "./atlas-runtime.mjs";
 import { library, technical } from "./atlas-data.mjs";
 
 test(
+  "public DOM document replacement preserves the new document's own line selection; not native timing or AT proof",
+  { timeout: 120000 },
+  async () => {
+    const project = library.projects.find(
+      (row) => row.documents.filter((doc) => doc.lines.length > 2).length >= 2,
+    );
+    assert.ok(project);
+    const [first, second] = project.documents.filter(
+      (doc) => doc.lines.length > 2,
+    );
+    await withAtlasPage(async (page) => {
+      for (const selectedLine of ["", "2"]) {
+        const destination = {
+          view: "documents",
+          entry: project.project_id,
+          document: second.label,
+          ...(selectedLine ? { line: selectedLine } : {}),
+        };
+        await openRoute(page, destination);
+        const directSelection = await page
+          .locator(".selected-source-line")
+          .evaluateAll(function directlySelectedDocumentLines(rows) {
+            return rows.map((node) => node.id);
+          });
+        assert.deepEqual(
+          directSelection,
+          selectedLine ? ["source-line-2"] : [],
+        );
+        await openRoute(page, { view: "overview" });
+        /** @type {{retiredId:string,retiredConnected:boolean,replacementReusesId:boolean}} */
+        const transition = await page.evaluate(
+          function replaceDocumentAtPublicHashBoundary({
+            firstHash,
+            secondHash,
+          }) {
+            return new Promise((resolve) => {
+              window.addEventListener(
+                "hashchange",
+                function replaceRetiredDocument() {
+                  const retired = /** @type {HTMLElement} */ (
+                      document.getElementById("source-line-1")
+                    ),
+                    oldURL = location.href;
+                  location.hash = secondHash;
+                  window.dispatchEvent(
+                    new window.HashChangeEvent("hashchange", {
+                      oldURL,
+                      newURL: location.href,
+                    }),
+                  );
+                  resolve({
+                    retiredId: retired.id,
+                    retiredConnected: retired.isConnected,
+                    replacementReusesId:
+                      document.getElementById("source-line-1") !== null,
+                  });
+                },
+                { once: true },
+              );
+              location.hash = firstHash;
+            });
+          },
+          {
+            firstHash:
+              "#" +
+              new URLSearchParams({
+                view: "documents",
+                entry: project.project_id,
+                document: first.label,
+                line: "1",
+              }),
+            secondHash: "#" + new URLSearchParams(destination),
+          },
+        );
+        assert.deepEqual(transition, {
+          retiredId: "source-line-1",
+          retiredConnected: false,
+          replacementReusesId: true,
+        });
+        await page.evaluate(function afterDocumentReplacementFrames() {
+          return new Promise((resolve) =>
+            requestAnimationFrame(() => requestAnimationFrame(resolve)),
+          );
+        });
+        assert.deepEqual(
+          await page.locator(".document-line-text").allTextContents(),
+          second.lines,
+        );
+        assert.deepEqual(
+          await page
+            .locator(".selected-source-line")
+            .evaluateAll((rows) => rows.map((row) => row.id)),
+          selectedLine ? ["source-line-2"] : [],
+        );
+        assert.equal(
+          await page.locator("#content").getAttribute("data-document-label"),
+          second.label,
+        );
+        assert.equal(
+          new URLSearchParams(new URL(page.url()).hash.slice(1)).get("line"),
+          selectedLine || null,
+        );
+        assert.equal(
+          await page.evaluate(function replacementDocumentFocus() {
+            return /** @type {HTMLElement} */ (document.activeElement).id;
+          }),
+          selectedLine ? "source-line-2" : "main",
+        );
+      }
+    });
+  },
+);
+
+test(
   "public DOM hashchange event boundary retires document before line focus; not native timing or AT proof",
   { timeout: 120000 },
   async () => {
