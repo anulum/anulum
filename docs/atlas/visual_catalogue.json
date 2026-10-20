@@ -189,59 +189,6 @@
       }
     },
     {
-      "id": "phwr-current-and-target-architecture",
-      "project": "SCPN-PHWR-CORE",
-      "title": "PHWR current software and research system",
-      "description": "Implemented development validation beside the source-described coupled physical model, fuel history, separate prediction and qualified 3D/CAD consumers in progress.",
-      "representation": "design",
-      "representation_label": "Current tooling and target architecture",
-      "asset": "visuals/phwr-current-and-target-architecture.svg",
-      "asset_sha256": "c43c2e479bead22146421119665a0b19a796b3460c8bc630725cb175714db1c9",
-      "downloads": [],
-      "source_version": "Repository source capture 2026-10-15T17:12:12.636229+00:00",
-      "author": "Concepts and code: Miroslav Šotek. Illustration prepared by Arcane Sapience.",
-      "licence": "AGPL-3.0-or-later; commercial statement retained. Repository-native SVG.",
-      "limits": [
-        "Independent execution or whole-project qualification",
-        "Implemented physical solver, calibrated forecast or solved geometry",
-        "Accepted CAD, active registry, control, safety or deployment capability"
-      ],
-      "profile": "{\n  \"source_capture\": \"2026-10-15T17:12:12.636229+00:00\",\n  \"representation\": \"Dated source-supported architecture diagram; no numerical profile\"\n}",
-      "review": {
-        "summary": "Repository source inspected directly; source-owner content and publication review pending. No current-tool execution performed by this atlas refresh.",
-        "scope": "One PHWR technical explanation and separate architecture illustration",
-        "fingerprint": "a0e3dad9238fadd294e5a224edfdaaa8c0f35f8be3cd14388440d3f248881f5a",
-        "independent": false
-      }
-    },
-    {
-      "id": "phwr-proposed-owned-architecture-flow",
-      "project": "SCPN-PHWR-CORE",
-      "title": "PHWR proposed system architecture",
-      "description": "Proposed owned coupled spatial neutron/poison/solid/network solver, physical fuel history/refuelling, separate prediction question, source-bound state/world model and qualified 3D/CAD/inspection/teaching consumers",
-      "representation": "design",
-      "representation_label": "Proposed architecture design",
-      "asset": "visuals/phwr-proposed-owned-architecture-flow.svg",
-      "asset_sha256": "7832efcc3309d91c79f35d1aa7198e113b26bec332f166641a6dbd77e8937d3b",
-      "downloads": [],
-      "source_version": "Reactor cards in gallery v0.2; original illustration unchanged",
-      "author": "Concepts and code: Miroslav Šotek. Illustration prepared by Arcane Sapience.",
-      "licence": "Underlying repository text AGPL-3.0-or-later with commercial statement; Mermaid 12.1.0 renderer upstream MIT licence retained separately. No publication permission inferred.",
-      "limits": [
-        "Implemented domain API or solver",
-        "Calculated geometry, physical simulation, measured or calibrated prediction",
-        "Accepted CAD or consumer/runtime/worker readiness",
-        "Whole flagship preparation completion"
-      ],
-      "profile": "{\n  \"subject\": \"Proposed owned coupled spatial neutron/poison/solid/network solver, physical fuel history/refuelling, separate prediction question, source-bound state/world model and qualified 3D/CAD/inspection/teaching consumers\",\n  \"numerical_profile\": \"none; design graph only\",\n  \"renderer\": \"Existing native Mermaid 12.1.0 / sandboxed Chrome 154.0.8037.57 render, predating request\"\n}",
-      "review": {
-        "summary": "Source-owner review covers the exact four-card correction in gallery v0.2; this original image and its profile are unchanged.",
-        "scope": "Exact four-card negative-predicate source-content correction accepted for private gallery v0.2 only",
-        "fingerprint": "c96ba482b0c8b2717e43b34839dbf77a5b9607cad576d4b8a0cc784a6d6c202c",
-        "independent": false
-      }
-    },
-    {
       "id": "neurocore-supported-workflows",
       "project": "SC-NEUROCORE",
       "title": "NeuroCore supported workflows and hardware evidence",
@@ -379,37 +326,11 @@
         "fingerprint": "21e533cd46055dea25f997560d4b0cc89532d6bf6176ce7cb476c288664f2f88",
         "independent": false
       }
-    },
-    {
-      "id": "evidence-bytes-authority-and-domain-verdict",
-      "project": "EVIDENCE-MANIFEST-TOOLKIT",
-      "title": "Evidence toolkit: bytes, authority and domain judgement",
-      "description": "Explicit raw/canonical byte identity, finite reference closure, caller-selected sealing/verification and separate Common, domain and current outcomes.",
-      "representation": "design",
-      "representation_label": "Source-supported evidence workflow and responsibility boundaries",
-      "asset": "visuals/evidence-bytes-authority-and-domain-verdict.svg",
-      "asset_sha256": "65a8e136c57d17918053b437cff44c8d57bb26f46276757be18e287b07830c39",
-      "downloads": [],
-      "source_version": "Selected source reading 2026-10-18T18:01:59.844238+00:00; unchanged README/architecture/API retain earlier capture dates",
-      "author": "Concepts and code: Miroslav Šotek. Illustration prepared by Arcane Sapience.",
-      "licence": "AGPL-3.0-or-later; commercial statement retained. Repository-native SVG.",
-      "limits": [
-        "A new successful API/CLI run, installed package or accepted consumer binding",
-        "Operational trust, signer, clock, successor-path or storage-platform qualification",
-        "Scientific domain acceptance, agreed partner or provisioned service"
-      ],
-      "profile": "{\n  \"source_capture\": \"2026-10-18T18:01:59.844238+00:00\",\n  \"representation\": \"Source-supported architecture; new code readings are uncommitted; no evidence runtime executed\"\n}",
-      "review": {
-        "summary": "Selected documentary and source flow inspected; source-owner content, scientific, consumer and publication review pending. No domain execution performed.",
-        "scope": "Byte identity, explicit caller context, construction/verification report and domain responsibility",
-        "fingerprint": "b743a0aa3460c8b362f9346c275f66b6e3634f425c94e9a8b98645e906022747",
-        "independent": false
-      }
     }
   ],
   "source_reviews_independent": false,
   "project_nodes_added": false,
   "new_scientific_or_model_execution": false,
   "updated_at_utc": "2026-10-20T11:16:20.988166+00:00",
-  "public_projection_updated_at_utc": "2026-10-20T21:01:15.996660+00:00"
+  "public_projection_updated_at_utc": "2026-10-20T21:19:24.360861+00:00"
 }

@@ -77,10 +77,6 @@ deploy a website or change source-content, scientific or release qualification.
 The explorer and its original assets retain their copyright and licence statements.
 The [AGPL-3.0-or-later licence text](LICENSE) is included; source documents retain their own notices.
 
-Ownership sidecars accompany JSON files. The PHWR illustration receives an ownership
-comment; its original and projected fingerprints are retained in the manifest.
-Its geometry is unchanged. Illustration credits use the public project identity.
-
 The resource-selection tests require Node.js as well as Python:
 
 ```sh
@@ -120,8 +116,8 @@ observations, independent of resource and budget data.
 | ---------------------------------------- | ------------------------------------------------------------------ | ---------------------: |
 | Profile images across all five languages | Four generated header/map SVGs, 91 badge SVGs and the footer image |                621,868 |
 | Dated catalogue provenance               | `assets/catalogue-source.json`, plus its ownership sidecar         | 114,267 before sidecar |
-| Interactive site snapshot                | 80 manifest-listed assets                                          |             34,783,656 |
-| Main interactive entry page              | `index.html`, including its eight embedded datasets                |             11,238,486 |
+| Interactive site snapshot                | 77 manifest-listed assets                                          |             32,154,223 |
+| Main interactive entry page              | `index.html`, including its eight embedded datasets                |             10,197,274 |
 
 The HTML, JavaScript modules, source-document JSON, illustrations and figure
 downloads belong to the separately hosted explorer. The full snapshot repeats
@@ -136,12 +132,6 @@ documents retain their technical meaning. The internal proposal budget history
 is excluded. Scenario amounts remain preliminary, separately sourced estimates.
 Experiment labels in the map and SVG/PDF/PNG figures use outward descriptions.
 These presentation changes do not refresh the underlying source capture dates.
-
-The PHWR explanation now distinguishes implemented development-validation tooling
-from its research model and intended physical outputs. Its refreshed source links
-use versioned document labels; earlier captures keep their original dates and
-fingerprints. The normal importer also verifies reading-view hashes, reference
-intervals, exact excerpts and resolved narrative citations before an update.
 
 The NeuroCore and Quantum Control guides include source-inspected implementation
 workflows and diagrams. Their shared local neural bridge explicitly returns
@@ -185,13 +175,6 @@ Power windows, emulated plant/controller models and physical instrument acceptan
 retain separate meanings. Current fabric documentation includes unfinished neural
 work; reused architecture references preserve their earlier source date. Concrete
 board, integration and instrumentation roles are requirements, not acquisitions.
-
-The Evidence Manifest Toolkit explanation follows explicit byte identity, bounded
-reference acquisition and caller-selected sealing/verification through their actual
-source boundaries. Its fifteen-field report preserves Common, domain and current
-outcomes; scientific judgement remains separately owned. Earlier unchanged readings
-retain their dates, while new uncommitted code readings do not establish installed
-packaging, operational signer/clock qualification or a consumer adoption.
 
 Both resource views show coverage of the complete dated inventory before filters,
 including groups with no supplied detail and explicitly unresolved quantity fields.

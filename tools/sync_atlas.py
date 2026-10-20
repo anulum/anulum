@@ -80,7 +80,7 @@ def _files(manifest: dict[str, object]) -> dict[str, str]:
         if not re.fullmatch(r"[0-9a-f]{64}", digest):
             raise ValueError("Invalid asset fingerprint")
         result[name] = digest
-    if not {"index.html", "visuals/phwr-proposed-owned-architecture-flow.svg", *DATASETS.values()} <= result.keys():
+    if not {"index.html", *DATASETS.values()} <= result.keys():
         raise ValueError("Atlas entry page or required dataset missing")
     return result
 
@@ -130,22 +130,22 @@ def _ownership(label: str) -> str:
 
 def _project(members: dict[str, bytes]) -> dict[str, dict[str, str]]:
     changes: dict[str, dict[str, str]] = {}
-    drawing = "visuals/phwr-proposed-owned-architecture-flow.svg"
-    original = members[drawing]
-    if b"SPDX-License-Identifier:" not in original[:1000]:
-        header = "<!--\n" + _ownership("PHWR architecture illustration") + "-->\n"
-        members[drawing] = header.encode() + original
-        changes[drawing] = {
-            "source_sha256": hashlib.sha256(original).hexdigest(),
-            "projection_sha256": hashlib.sha256(members[drawing]).hexdigest(),
-        }
+    for name, original in list(members.items()):
+        if name.endswith(".svg") and b"SPDX-License-Identifier:" not in original[:1000]:
+            header = "<!--\n" + _ownership("Architecture illustration") + "-->\n"
+            members[name] = header.encode() + original
+            changes[name] = {
+                "source_sha256": hashlib.sha256(original).hexdigest(),
+                "projection_sha256": hashlib.sha256(members[name]).hexdigest(),
+            }
     visual = _object(members["visual_catalogue.json"])
     illustrations = visual.get("illustrations")
     if not isinstance(illustrations, list) or any(not isinstance(row, dict) for row in illustrations):
         raise ValueError("Illustration catalogue must contain object records")
     for value in illustrations:
         row = cast(dict[str, object], value)
-        if row.get("asset") == drawing:
+        drawing = row.get("asset")
+        if isinstance(drawing, str) and drawing in changes:
             row["asset_sha256"] = hashlib.sha256(members[drawing]).hexdigest()
             row["author"] = "Concepts and code: Miroslav Šotek. Illustration prepared by Arcane Sapience."
     members["visual_catalogue.json"] = (json.dumps(visual, ensure_ascii=False, indent=2) + "\n").encode()

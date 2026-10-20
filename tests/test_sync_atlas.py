@@ -204,7 +204,8 @@ class AtlasSyncTests(unittest.TestCase):
             sync_atlas.sync(ATLAS, manifest, hashlib.sha256(manifest.read_bytes()).hexdigest(), source)
             selected = source / "atlas-manifest.json"
             metadata = json.loads(selected.read_text())
-            drawing = "visuals/phwr-proposed-owned-architecture-flow.svg"
+            catalogue = json.loads((source / "visual_catalogue.json").read_text())
+            drawing = next(row["asset"] for row in catalogue["illustrations"] if row["asset"].endswith(".svg"))
             annotated = (source / drawing).read_bytes()
             geometry = annotated[annotated.index(b"<svg") :]
             old = hashlib.sha256(annotated).hexdigest()
