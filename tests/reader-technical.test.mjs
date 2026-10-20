@@ -60,3 +60,28 @@ test(
     });
   },
 );
+
+test("technical index distinguishes unknown programmes and unguided real entries", async () => {
+  await withAtlasPage(async (page) => {
+    await openRoute(page, { view: "technical", programme: "absent-source-id" });
+    assert.match(
+      await page.locator("#content").innerText(),
+      /owning programme is not present/,
+    );
+    const unguided = atlas.nodes.find(
+      (node) => !technical.guides.some((guide) => guide.project_id === node.id),
+    );
+    assert.ok(unguided);
+    await openRoute(page, { view: "technical", entry: unguided.id });
+    assert.match(
+      await page.locator("#content").innerText(),
+      /explanation for this entry is being prepared/,
+    );
+    assert.equal(
+      await page
+        .getByRole("link", { name: unguided.name, exact: true })
+        .count(),
+      1,
+    );
+  });
+});

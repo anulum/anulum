@@ -6,6 +6,7 @@
 // Contact: www.anulum.li | protoscience@anulum.li
 // ANULUM — reader-direct-sources public behaviour contracts
 
+import { withAtlasSourceVariant } from "./atlas-source-variant.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { withAtlasPage, openRoute } from "./atlas-runtime.mjs";
@@ -39,5 +40,39 @@ test(
         }
       }
     });
+  },
+);
+
+test(
+  "a supplied source parse warning remains literal text beside its fingerprint",
+  { timeout: 120000 },
+  async () => {
+    let project = "",
+      warning = "";
+    await withAtlasSourceVariant(
+      ({ direct }) => {
+        const row = direct.projects.find((item) => item.documents.length);
+        assert.ok(row);
+        project = row.project_id;
+        warning =
+          row.lookup_state + ' <img src=x onerror="window.atlasInjected=true">';
+        row.documents[0].static_parse_state = warning;
+      },
+      async (servedBase) => {
+        await withAtlasPage(
+          async (page) => {
+            await openRoute(page, { project, tab: "sources" });
+            const panel = page.locator(".direct-source-panel");
+            for (const summary of await panel
+              .locator("details > summary")
+              .all())
+              if (await summary.isVisible()) await summary.click();
+            assert.ok((await panel.innerText()).includes(warning));
+            assert.equal(await panel.locator('img[src="x"]').count(), 0);
+          },
+          { servedBase },
+        );
+      },
+    );
   },
 );

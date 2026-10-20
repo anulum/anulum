@@ -31,3 +31,17 @@ test(
     });
   },
 );
+
+test("phone map tiles preserve source identity in a single-column scene", async () => {
+  await withAtlasPage(async (page) => {
+    await page.setViewportSize({ width: 390, height: 1000 });
+    await openRoute(page, { view: "map", group: atlas.groups[0].id });
+    assert.ok((await page.locator(".map-entry").count()) > 0);
+    const positions = await page
+      .locator(".map-entry rect")
+      .evaluateAll(function phoneTileHorizontalPositions(rectangles) {
+        return rectangles.map((element) => element.getAttribute("x"));
+      });
+    assert.equal(new Set(positions).size, 1);
+  });
+});

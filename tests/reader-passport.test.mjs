@@ -6,6 +6,7 @@
 // Contact: www.anulum.li | protoscience@anulum.li
 // ANULUM — reader-passport public behaviour contracts
 
+import { withAtlasSourceVariant } from "./atlas-source-variant.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { withAtlasPage, openRoute } from "./atlas-runtime.mjs";
@@ -60,5 +61,60 @@ test(
         }
       }
     });
+  },
+);
+
+test(
+  "incomplete dossiers and hostile track labels remain readable plain text",
+  { timeout: 120000 },
+  async () => {
+    let missing = "",
+      tracked = "",
+      label = "";
+    await withAtlasSourceVariant(
+      ({ atlas }) => {
+        missing = atlas.nodes[0].id;
+        Reflect.deleteProperty(atlas.nodes[0], "dossier");
+        const node = atlas.nodes[1];
+        tracked = node.id;
+        label = node.name + ' <img src=x onerror="window.atlasInjected=true">';
+        node.dossier.programme_tracks = [{ name: label, scope: node.function }];
+        Reflect.deleteProperty(node.dossier, "current_surfaces");
+        node.dossier.expected_outputs[0].basis = "";
+        Reflect.deleteProperty(node, "sources");
+        node.group = "absent-source-group";
+      },
+      async (servedBase) => {
+        await withAtlasPage(
+          async (page) => {
+            for (const project of [missing, tracked]) {
+              for (const [tab, index] of /** @type {[string,number][]} */ ([
+                ["overview", 0],
+                ["outputs", 1],
+                ["interfaces", 2],
+                ["resources", 3],
+                ["sources", 4],
+                ["visuals", 5],
+              ])) {
+                await openRoute(page, { project, tab });
+                assert.equal(await page.locator("#content h1").count(), 1);
+                assert.equal(
+                  await page
+                    .locator("#passport-tab-" + index)
+                    .getAttribute("aria-selected"),
+                  "true",
+                );
+              }
+            }
+            await openRoute(page, { project: tracked, tab: "outputs" });
+            assert.ok(
+              (await page.locator("#content").innerText()).includes(label),
+            );
+            assert.equal(await page.locator('img[src="x"]').count(), 0);
+          },
+          { servedBase },
+        );
+      },
+    );
   },
 );

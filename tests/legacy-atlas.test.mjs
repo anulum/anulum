@@ -112,11 +112,18 @@ test(
         await page.locator("#group-filter").inputValue(),
         options[1],
       );
+      const retainedSelection = await page
+        .locator(".node.selected")
+        .getAttribute("data-id");
       await navigate(
         page,
         baseUrl + "atlas_full.html#project=absent-source-id",
       );
-      assert.equal(await page.locator(".node.selected").count(), 0);
+      assert.equal(await page.locator(".node.selected").count(), 1);
+      assert.equal(
+        await page.locator(".node.selected").getAttribute("data-id"),
+        retainedSelection,
+      );
     });
   },
 );

@@ -278,3 +278,36 @@ test("an empty selection produces only the documented CSV header", () => {
     0,
   );
 });
+
+test("incomplete real inventory records retain explicit empty CSV cells and unresolved groups", () => {
+  const incomplete = globalThis.structuredClone(data),
+    row = incomplete.needs[0];
+  row.group = "absent-source-owner";
+  row.need = "";
+  row.quantity = "";
+  row.state = "";
+  row.author = "";
+  row.basis = "";
+  row.kind = "";
+  const selection = readSelection(
+    new URLSearchParams({
+      view: "needs",
+      q: '"id":' + JSON.stringify(row.id),
+    }).toString(),
+    incomplete,
+  );
+  const decoded = parseCsv(
+    selectionCsv(incomplete, selection, "http://127.0.0.1/resources.html"),
+  );
+  assert.equal(decoded.length, 1);
+  assert.equal(decoded[0].group_name, row.group);
+  assert.equal(decoded[0].title, "");
+  assert.equal(decoded[0].state, "");
+  assert.equal(decoded[0].author, "");
+  assert.equal(decoded[0].source_basis, "");
+  assert.deepEqual(JSON.parse(decoded[0].source_record_json), row);
+  const nonempty = incomplete.needs.find((item) => item.kind);
+  assert.ok(nonempty);
+  selection.kind = nonempty.kind.split(";")[0].trim();
+  assert.equal(selectedRecords(incomplete, selection).length, 0);
+});

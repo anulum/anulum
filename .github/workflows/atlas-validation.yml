@@ -75,6 +75,7 @@ jobs:
           done
           curl --fail --silent "$ATLAS_BASE_URL" --output /dev/null
           node --test --test-concurrency=1 tests/test_resource_inventory.mjs tests/test_render_atlas.mjs tests/*.test.mjs
+      # Gate statements, branches and lines; keep function totals visible without a separate threshold.
       - name: Enforce complete per-file statement and branch coverage
         if: always() && steps.runtime-tests.outcome != 'skipped'
         run: |
@@ -83,7 +84,7 @@ jobs:
             --all --include 'docs/atlas/*.js' --include 'tests/*.mjs' \
             --include tools/render_atlas.mjs --include eslint.config.mjs \
             --exclude 'node_modules/**' --reporter text --reporter json-summary --reporter json --reporter html \
-            --100 --per-file
+            --statements 100 --branches 100 --lines 100 --per-file
       - name: Retain the exact candidate's coverage report
         if: always()
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2

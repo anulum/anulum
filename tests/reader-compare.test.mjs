@@ -16,7 +16,7 @@ test(
   { timeout: 120000 },
   async () => {
     await withAtlasPage(async (page) => {
-      await openRoute(page, { view: "compare" });
+      await openRoute(page, { view: "compare", entries: "" });
       const inputs = page.locator('input[name="systems"]');
       assert.equal(await inputs.count(), technical.guides.length);
       for (let i = 0; i < 3; i++) await inputs.nth(i).check();

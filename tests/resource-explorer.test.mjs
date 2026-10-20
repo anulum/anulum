@@ -6,6 +6,7 @@
 // Contact: www.anulum.li | protoscience@anulum.li
 // ANULUM — resource-explorer public behaviour contracts
 
+import { withAtlasSourceVariant } from "./atlas-source-variant.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { writeFile, mkdtemp, rm } from "node:fs/promises";
@@ -89,5 +90,39 @@ test(
     } finally {
       await rm(directory, { recursive: true, force: true });
     }
+  },
+);
+
+test(
+  "sparse inventory source cards retain unknown ownership and missing planning fields",
+  { timeout: 120000 },
+  async () => {
+    let id = "",
+      title = "";
+    await withAtlasSourceVariant(
+      ({ resources }) => {
+        const estimate = resources.planning_estimates.find(
+          (row) => row.kind === "people",
+        );
+        assert.ok(estimate);
+        id = estimate.id;
+        title = estimate.title;
+        Reflect.deleteProperty(estimate, "values");
+        estimate.group = "absent-source-owner";
+        estimate.author = "";
+      },
+      async (servedBase) => {
+        await withAtlasPage(
+          async (page) => {
+            await navigate(page, servedBase + "resources.html#view=people");
+            const card = page.locator('[data-record-id="' + id + '"]');
+            assert.equal(await card.locator("h3").textContent(), title);
+            assert.ok((await card.innerText()).includes("absent-source-owner"));
+            assert.ok((await card.innerText()).includes("Owning group"));
+          },
+          { servedBase },
+        );
+      },
+    );
   },
 );

@@ -46,3 +46,30 @@ test(
     });
   },
 );
+
+test("project illustration filters survive a form submission and clear explicitly", async () => {
+  await withAtlasPage(async (page) => {
+    await openRoute(page, { view: "visuals" });
+    const project = await page
+      .locator(".visual-card")
+      .first()
+      .getAttribute("data-project");
+    assert.ok(project);
+    await openRoute(page, { view: "visuals", projectFilter: project });
+    const visible = page.locator(".visual-card:visible");
+    assert.ok((await visible.count()) > 0);
+    for (const card of await visible.all())
+      assert.equal(await card.getAttribute("data-project"), project);
+    await page.locator("#visual-search").press("Enter");
+    assert.ok(new URL(page.url()).hash.includes("projectFilter="));
+    await page
+      .getByRole("button", { name: "Clear filters", exact: true })
+      .click();
+    assert.equal(
+      new URLSearchParams(new URL(page.url()).hash.slice(1)).has(
+        "projectFilter",
+      ),
+      false,
+    );
+  });
+});

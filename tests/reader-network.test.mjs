@@ -6,6 +6,7 @@
 // Contact: www.anulum.li | protoscience@anulum.li
 // ANULUM — reader-network public behaviour contracts
 
+import { withAtlasSourceVariant } from "./atlas-source-variant.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { withAtlasPage, openRoute } from "./atlas-runtime.mjs";
@@ -46,5 +47,45 @@ test(
         );
       }
     });
+  },
+);
+
+test(
+  "incomplete interface evidence retains its declared date and explicit source gaps",
+  { timeout: 120000 },
+  async () => {
+    let project = "",
+      date = "",
+      other = "";
+    await withAtlasSourceVariant(
+      ({ atlas }) => {
+        const edge = atlas.edges[0];
+        project = edge.from;
+        other = edge.to;
+        date = atlas.as_of;
+        edge.evidence = "";
+        edge.as_of = date;
+        const target = atlas.nodes.find((row) => row.id === other);
+        assert.ok(target);
+        target.function = "";
+        const selected = atlas.nodes.find((row) => row.id === project);
+        assert.ok(selected);
+        Reflect.deleteProperty(selected, "dossier");
+      },
+      async (servedBase) => {
+        await withAtlasPage(
+          async (page) => {
+            await openRoute(page, { project, tab: "interfaces" });
+            const text = await page.locator(".interface-list").innerText();
+            assert.ok(text.includes("Source date: " + date));
+            assert.ok(
+              text.includes("No additional source statement supplied."),
+            );
+            assert.ok(text.includes(other));
+          },
+          { servedBase },
+        );
+      },
+    );
   },
 );

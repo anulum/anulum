@@ -134,3 +134,28 @@ test(
     );
   },
 );
+
+test("skip navigation and figure fragments preserve native focus", async () => {
+  await withAtlasPage(async (page) => {
+    await openRoute(page, { project: "" });
+    await openRoute(page, { group: "" });
+    await openRoute(page, { view: "overview" });
+    await page.locator(".skip-link").focus();
+    await page.locator(".skip-link").press("Enter");
+    assert.equal(
+      await page
+        .locator("#main")
+        .evaluate(function skipTargetIsFocused(element) {
+          return element === document.activeElement;
+        }),
+      true,
+    );
+    await openRoute(page, {
+      view: "guides",
+      section: "figures",
+    });
+    assert.equal(await page.locator("#figures").count(), 1);
+    await openRoute(page, { view: "overview", section: "figures" });
+    assert.equal(await page.locator("#content h1").count(), 1);
+  });
+});

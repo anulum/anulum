@@ -6,12 +6,14 @@
 // Contact: www.anulum.li | protoscience@anulum.li
 // ANULUM — reader-core public behaviour contracts
 
+import { withAtlasSourceVariant } from "./atlas-source-variant.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import {
   withAtlasPage,
+  openRoute,
   navigate,
   withAtlasArtifact,
 } from "./atlas-runtime.mjs";
@@ -50,6 +52,67 @@ test(
             assert.match((await rejected).message, expected);
           },
           { servedBase, expectedErrors: expected },
+        );
+      },
+    );
+  },
+);
+
+test(
+  "omitted source fields and unresolved associations retain explicit reading fallbacks",
+  { timeout: 120000 },
+  async () => {
+    let selected = "",
+      linked = "",
+      name = "";
+    await withAtlasSourceVariant(
+      ({ atlas }) => {
+        const node = atlas.nodes[0];
+        selected = node.id;
+        name = node.name;
+        Reflect.deleteProperty(node, "dossier");
+        node.owning_groups.push("absent-source-owner");
+        const group = atlas.groups.find((row) => row.id === node.group);
+        assert.ok(group);
+        group.color = "";
+        const withSlot = atlas.nodes.find((row) => row.partner_slots?.length);
+        assert.ok(withSlot);
+        linked = withSlot.id;
+        assert.ok(withSlot.partner_slots);
+        withSlot.partner_slots[0].project_ids.push("absent-source-project");
+      },
+      async (servedBase) => {
+        await withAtlasPage(
+          async (page) => {
+            await openRoute(page, { view: "search", q: selected });
+            const card = page
+              .locator(".project-card")
+              .filter({ has: page.getByRole("link", { name, exact: true }) });
+            assert.equal(await card.count(), 1);
+            assert.equal(
+              await card.evaluate(function sourceCardFallbackColour(element) {
+                return element.style.getPropertyValue("--group-color");
+              }),
+              "#315d4c",
+            );
+            await openRoute(page, { project: selected });
+            assert.match(
+              await page.locator(".passport-heading").innerText(),
+              /absent-source-owner/,
+            );
+            await openRoute(page, { view: "support", entry: linked });
+            await page.locator("[data-partner] > summary").first().click();
+            assert.equal(
+              await page
+                .getByRole("link", {
+                  name: "absent-source-project",
+                  exact: true,
+                })
+                .count(),
+              1,
+            );
+          },
+          { servedBase },
         );
       },
     );

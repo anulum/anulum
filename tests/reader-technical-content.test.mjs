@@ -6,6 +6,7 @@
 // Contact: www.anulum.li | protoscience@anulum.li
 // ANULUM — reader-technical-content public behaviour contracts
 
+import { withAtlasSourceVariant } from "./atlas-source-variant.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { withAtlasPage, openRoute } from "./atlas-runtime.mjs";
@@ -45,5 +46,49 @@ test(
       await openRoute(page, { project: without.id, tab: "outputs" });
       assert.equal(await page.locator(".technical-panel").count(), 0);
     });
+  },
+);
+
+test(
+  "technical text omissions retain capture dates and escape supplied titles",
+  { timeout: 120000 },
+  async () => {
+    let project = "",
+      capture = "",
+      label = "";
+    await withAtlasSourceVariant(
+      ({ technical }) => {
+        const guide = technical.guides[0];
+        project = guide.project_id;
+        capture = technical.captured_at_utc;
+        delete technical.guide_source_captures[project];
+        Reflect.deleteProperty(guide, "inputs");
+        Reflect.deleteProperty(guide, "outputs");
+        label =
+          guide.components[0].title +
+          ' <img src=x onerror="window.atlasInjected=true">';
+        guide.components[0].title = label;
+      },
+      async (servedBase) => {
+        await withAtlasPage(
+          async (page) => {
+            await openRoute(page, { project, tab: "outputs" });
+            const panel = page.locator(".technical-panel");
+            assert.ok((await panel.innerText()).includes(capture));
+            const sourceText = await panel.textContent();
+            assert.ok(sourceText);
+            assert.ok(sourceText.includes(label));
+            assert.equal(await panel.locator('img[src="x"]').count(), 0);
+            assert.equal(
+              await panel
+                .locator('[data-guide-section="inputs"] .technical-record')
+                .count(),
+              0,
+            );
+          },
+          { servedBase },
+        );
+      },
+    );
   },
 );

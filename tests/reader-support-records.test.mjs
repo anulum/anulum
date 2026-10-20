@@ -16,26 +16,37 @@ test(
   { timeout: 600000 },
   async () => {
     await withAtlasPage(async (page) => {
+      /** @type {Set<string>} Unique source records whose complete public cards were checked. */
+      const seen = new Set();
       let observedNeeds = 0,
         observedCandidates = 0;
+      /**
+       * Open the actual containing disclosures in document order through native summaries.
+       * @param {import('playwright').Locator} card - Source-backed public record card.
+       * @returns {Promise<void>} Every ancestor permits a user to read the card.
+       */
+      async function reveal(card) {
+        for (const disclosure of await card
+          .locator("xpath=ancestor-or-self::details")
+          .all()) {
+          if ((await disclosure.getAttribute("open")) === null)
+            await disclosure.locator(":scope > summary").click();
+        }
+      }
       for (const node of atlas.nodes) {
         await openRoute(page, { view: "support", entry: node.id });
-        const summaries = page.locator(".support-brief details > summary");
-        for (let i = 0; i < (await summaries.count()); i++) {
-          const summary = summaries.nth(i);
-          if (
-            (await summary.isVisible()) &&
-            (await summary.locator("..").getAttribute("open")) === null
-          )
-            await summary.click();
-        }
         const needCards = page.locator("[data-need]");
         for (const card of await needCards.all()) {
           const id = await card.getAttribute("data-need"),
             row = resources.needs.find((item) => item.id === id);
           assert.ok(row);
-          assert.equal(await card.locator("h3").innerText(), row.need);
-          assert.ok((await card.innerText()).includes(row.unlocks));
+          if (seen.has("need:" + row.id)) continue;
+          seen.add("need:" + row.id);
+          await reveal(card);
+          assert.equal(await card.locator("h3").textContent(), row.need);
+          const text = await card.textContent();
+          assert.ok(text);
+          assert.ok(text.includes(row.unlocks));
           observedNeeds++;
         }
         const candidates = page.locator("[data-acquisition]");
@@ -43,8 +54,15 @@ test(
           const id = await card.getAttribute("data-acquisition"),
             row = resources.candidates.find((item) => item.id === id);
           assert.ok(row);
-          const text = await card.innerText();
-          assert.ok(text.includes(row.item));
+          if (seen.has("candidate:" + row.id)) continue;
+          seen.add("candidate:" + row.id);
+          await reveal(card);
+          const text = await card.textContent();
+          assert.ok(text);
+          assert.equal(
+            await card.locator(":scope > summary").textContent(),
+            row.item,
+          );
           if (row.as_of) assert.ok(text.includes(row.as_of));
           if (row.source_sha256) assert.ok(text.includes(row.source_sha256));
           observedCandidates++;
@@ -53,7 +71,11 @@ test(
           const id = await card.getAttribute("data-partner"),
             row = budget.partner_slots.find((item) => item.id === id);
           assert.ok(row);
-          const text = await card.innerText();
+          if (seen.has("partner:" + row.id)) continue;
+          seen.add("partner:" + row.id);
+          await reveal(card);
+          const text = await card.textContent();
+          assert.ok(text);
           assert.ok(text.includes(row.gap));
           assert.ok(text.includes(row.profile));
         }
@@ -61,7 +83,11 @@ test(
           const id = await card.getAttribute("data-estimate"),
             row = resources.planning_estimates.find((item) => item.id === id);
           assert.ok(row);
-          const text = await card.innerText();
+          if (seen.has("estimate:" + row.id)) continue;
+          seen.add("estimate:" + row.id);
+          await reveal(card);
+          const text = await card.textContent();
+          assert.ok(text);
           assert.ok(text.includes(row.title));
           for (const value of Object.values(row.values))
             assert.ok(text.includes(String(value)));

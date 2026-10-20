@@ -84,12 +84,14 @@ export async function withAtlasPage(
  * @returns {Promise<void>} The route has a rendered main heading.
  */
 export async function openRoute(page, parameters) {
+  const servedBase = servedBases.get(page);
+  assert.ok(servedBase, "Route page belongs to this runner");
   const fragment = "#" + new URLSearchParams(parameters);
-  if (page.url().split("#")[0] === baseUrl + "index.html")
+  if (page.url().split("#")[0] === servedBase + "index.html")
     await page.evaluate((hash) => {
       location.hash = hash;
     }, fragment);
-  else await navigate(page, baseUrl + "index.html" + fragment);
+  else await navigate(page, servedBase + "index.html" + fragment);
   await page.locator("#content h1").waitFor();
   await page.evaluate(
     () =>

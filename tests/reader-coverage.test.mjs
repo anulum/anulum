@@ -6,6 +6,7 @@
 // Contact: www.anulum.li | protoscience@anulum.li
 // ANULUM — reader-coverage public behaviour contracts
 
+import { withAtlasSourceVariant } from "./atlas-source-variant.mjs";
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
@@ -68,5 +69,45 @@ test(
       for (const node of atlas.nodes)
         assert.ok(csv.includes('"' + node.id.replaceAll('"', '""') + '"'));
     });
+  },
+);
+
+test(
+  "coverage exports escape spreadsheet markers while retaining source gaps",
+  { timeout: 120000 },
+  async () => {
+    let title = "";
+    await withAtlasSourceVariant(
+      ({ atlas }) => {
+        const node = atlas.nodes[0];
+        title = "=" + node.name;
+        node.name = title;
+        node.as_of = "";
+        Reflect.deleteProperty(node.dossier, "expected_outputs");
+      },
+      async (servedBase) => {
+        await withAtlasPage(
+          async (page) => {
+            await openRoute(page, { view: "coverage" });
+            const downloading = page.waitForEvent("download");
+            await page
+              .getByRole("button", {
+                name: "Export displayed rows (.csv)",
+                exact: true,
+              })
+              .click();
+            const path = await (await downloading).path();
+            assert.ok(path);
+            const csv = await readFile(path, "utf8");
+            assert.ok(csv.includes("\"'" + title.replaceAll('"', '""') + '"'));
+            assert.equal(
+              await page.locator("[data-coverage-project]").count(),
+              atlas.nodes.length,
+            );
+          },
+          { servedBase },
+        );
+      },
+    );
   },
 );

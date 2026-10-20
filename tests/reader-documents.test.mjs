@@ -9,7 +9,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { withAtlasPage, openRoute } from "./atlas-runtime.mjs";
-import { atlas } from "./atlas-data.mjs";
+import { atlas, library } from "./atlas-data.mjs";
 
 test(
   "documents filters preserve the complete source population when cleared",
@@ -37,3 +37,39 @@ test(
     });
   },
 );
+
+test("project document catalogues keep entry scope and explicit empty captures", async () => {
+  await withAtlasPage(async (page) => {
+    const known = library.projects.find((row) => row.documents.length);
+    assert.ok(known);
+    await openRoute(page, { view: "documents", entry: known.project_id });
+    assert.equal(
+      await page.locator(".document-catalogue article").count(),
+      known.documents.length,
+    );
+    await page.locator("#document-library-query").fill("NO_MATCH_7a2b86c1");
+    assert.match(
+      await page.locator("#content").innerText(),
+      /No captured documentation matches/,
+    );
+    await page
+      .getByRole("button", { name: "Clear filters", exact: true })
+      .click();
+    assert.equal(
+      await page.locator(".document-catalogue article").count(),
+      known.documents.length,
+    );
+    const empty = atlas.nodes.find(
+      (node) =>
+        !library.projects.some(
+          (row) => row.project_id === node.id && row.documents.length,
+        ),
+    );
+    assert.ok(empty);
+    await openRoute(page, { view: "documents", entry: empty.id });
+    assert.match(
+      await page.locator("#content").innerText(),
+      /no selected documentation file/,
+    );
+  });
+});

@@ -31,14 +31,17 @@ const el = (tag, text, cls) => {
 /**
  * Format a source euro amount, including decimal strings retained by the source capture.
  * @param {number|string} n - Original amount in euros.
- * @returns {string} British-English currency presentation rounded only for display.
+ * @returns {string} British-English currency presentation, or an explicit missing-value statement.
  */
-const euro = (n) =>
-  new Intl.NumberFormat("en-GB", {
+const euro = (n) => {
+  const value = typeof n === "number" ? n : Number(n.trim() || Number.NaN);
+  if (!Number.isFinite(value)) return "Not supplied";
+  return new Intl.NumberFormat("en-GB", {
     style: "currency",
     currency: "EUR",
     maximumFractionDigits: 2,
-  }).format(Number(n));
+  }).format(value);
+};
 const scenario = /** @type {HTMLSelectElement} */ (
     document.getElementById("scenario")
   ),
