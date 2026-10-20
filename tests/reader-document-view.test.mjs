@@ -13,6 +13,78 @@ import { withAtlasPage, openRoute } from "./atlas-runtime.mjs";
 import { library, technical } from "./atlas-data.mjs";
 
 test(
+  "public DOM hashchange event boundary retires document before line focus; not native timing or AT proof",
+  { timeout: 120000 },
+  async () => {
+    const project = library.projects[0],
+      doc = project.documents[0];
+    await withAtlasPage(async (page) => {
+      await openRoute(page, { view: "overview" });
+      const fragment =
+        "#" +
+        new URLSearchParams({
+          view: "documents",
+          entry: project.project_id,
+          document: doc.label,
+          line: "1",
+        });
+      const observed = await page.evaluate(
+        function retireDocumentThroughPublicHashEvent(fragment) {
+          return new Promise((resolve) => {
+            window.addEventListener(
+              "hashchange",
+              function leaveSourceBeforeItsFrame() {
+                const sourcePresent =
+                    document.getElementById("source-line-1") !== null,
+                  oldURL = location.href;
+                /** @type {HTMLAnchorElement} */ (
+                  document.querySelector('[data-view="overview"]')
+                ).click();
+                window.dispatchEvent(
+                  new window.HashChangeEvent("hashchange", {
+                    oldURL,
+                    newURL: location.href,
+                  }),
+                );
+                resolve({
+                  sourcePresent,
+                  sourceRetired:
+                    document.getElementById("source-line-1") === null,
+                });
+              },
+              { once: true },
+            );
+            location.hash = fragment;
+          });
+        },
+        fragment,
+      );
+      assert.deepEqual(observed, { sourcePresent: true, sourceRetired: true });
+      await page.locator(".hero h1").waitFor();
+      await page.evaluate(function afterRetiredSourceFrame() {
+        return new Promise((resolve) =>
+          requestAnimationFrame(() => requestAnimationFrame(resolve)),
+        );
+      });
+      assert.equal(await page.locator(".selected-source-line").count(), 0);
+      assert.equal(await page.locator(".document-text").count(), 0);
+      assert.equal(
+        new URLSearchParams(new URL(page.url()).hash.slice(1)).get("view"),
+        "overview",
+      );
+      assert.equal(
+        await page
+          .locator("#main")
+          .evaluate(function focusAfterPublicHashRetirement(node) {
+            return node === document.activeElement;
+          }),
+        true,
+      );
+    });
+  },
+);
+
+test(
   "document search, line links and native text download preserve exact captured content",
   { timeout: 120000 },
   async () => {
