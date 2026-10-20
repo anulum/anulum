@@ -71,6 +71,10 @@ test(
         const selected = atlas.nodes.find((row) => row.id === project);
         assert.ok(selected);
         Reflect.deleteProperty(selected, "dossier");
+        selected.name += ' <img src=x onerror="window.atlasInjected=true">';
+        const group = atlas.groups.find((row) => row.id === selected.group);
+        assert.ok(group);
+        group.color = "";
       },
       async (servedBase) => {
         await withAtlasPage(
@@ -82,6 +86,14 @@ test(
               text.includes("No additional source statement supplied."),
             );
             assert.ok(text.includes(other));
+            const diagram = page.locator(".network-wrap");
+            assert.equal(await diagram.locator('img[src="x"]').count(), 0);
+            const labels = await diagram.textContent();
+            assert.ok(labels);
+            assert.ok(labels.includes("…"));
+            assert.ok(
+              (await diagram.locator('rect[stroke="#315d4c"]').count()) > 0,
+            );
           },
           { servedBase },
         );

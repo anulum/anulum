@@ -10,6 +10,149 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { withAtlasPage, openRoute } from "./atlas-runtime.mjs";
 import { atlas } from "./atlas-data.mjs";
+import { withAtlasSourceVariant } from "./atlas-source-variant.mjs";
+
+test(
+  "native SVG relation labels explain proposal-only source records without implying integration",
+  { timeout: 120000 },
+  async () => {
+    let from = "",
+      to = "",
+      group = "",
+      kind = "",
+      evidence = "";
+    await withAtlasSourceVariant(
+      ({ atlas }) => {
+        atlas.edges = atlas.edges.filter((edge) =>
+          ["architect proposal", "architect design"].includes(edge.layer || ""),
+        );
+        const edge = atlas.edges.find(
+          (row) =>
+            row.from === "SCPN-REACTOR-CATALOGUE" &&
+            row.to === "ATLAS-REACTORUM",
+        );
+        assert.ok(edge);
+        const a = atlas.nodes.find((node) => node.id === edge.from),
+          b = atlas.nodes.find((node) => node.id === edge.to);
+        assert.ok(a && b);
+        assert.equal(a.kind, "component");
+        assert.equal(b.kind, "tool");
+        group = a.group;
+        from = "Components in development";
+        to = "Tools and research instruments";
+        kind = edge.kind;
+        evidence = edge.evidence;
+        edge.payload = "";
+        edge.state = "";
+        edge.caution = "";
+      },
+      async (servedBase) => {
+        await withAtlasPage(
+          async (page) => {
+            await openRoute(page, { view: "map", group });
+            await page.locator("#map-show-relations").check();
+            assert.equal(await page.locator(".map-relation-label").count(), 0);
+            await page.locator("#map-show-proposals").check();
+            const label = page.getByRole("button", {
+              name: "Explain relations: " + from + " to " + to,
+              exact: true,
+            });
+            await label.click();
+            const explanation = page.locator(".map-relation-explanation");
+            assert.equal(await explanation.isVisible(), true);
+            assert.ok(
+              (await explanation.innerText()).includes(
+                "does not establish exercised integration",
+              ),
+            );
+            assert.ok(
+              (await explanation.innerText()).includes(
+                kind + " · architecture proposal",
+              ),
+            );
+            const details = explanation
+              .locator("details")
+              .filter({ hasText: kind });
+            await details.first().locator("summary").click();
+            assert.ok((await explanation.innerText()).includes(evidence));
+            assert.ok(
+              (await explanation.innerText()).includes(
+                "Payload specification not supplied.",
+              ),
+            );
+            assert.ok(
+              (await explanation.innerText()).includes(
+                "Declaration, not an integration verdict.",
+              ),
+            );
+            await label.focus();
+            await page.keyboard.press("ArrowRight");
+            assert.equal(await explanation.isVisible(), true);
+            for (const key of ["Enter", "Space"]) {
+              await page.locator("#map-show-proposals").uncheck();
+              assert.equal(await explanation.isVisible(), false);
+              await page.locator("#map-show-proposals").check();
+              await label.focus();
+              await page.keyboard.press(key);
+              assert.equal(await explanation.isVisible(), true);
+              assert.ok(
+                (await explanation.innerText()).includes(
+                  kind + " · architecture proposal",
+                ),
+              );
+            }
+          },
+          { servedBase },
+        );
+      },
+    );
+  },
+);
+
+test(
+  "native touch cancellation leaves the semantic map camera and route stable on late release",
+  { timeout: 120000 },
+  async () => {
+    await withAtlasPage(async (page) => {
+      await openRoute(page, { view: "map" });
+      const viewport = page.locator("#semantic-canvas"),
+        view = await viewport.locator("svg").getAttribute("viewBox"),
+        route = page.url(),
+        box = await viewport.boundingBox();
+      assert.ok(box);
+      const x = box.x + 6,
+        y = box.y + 6;
+      await page.mouse.move(x, y);
+      await page.mouse.down();
+      const protocol = await page.context().newCDPSession(page);
+      await protocol.send("Emulation.setTouchEmulationEnabled", {
+        enabled: true,
+        maxTouchPoints: 1,
+      });
+      await protocol.send("Input.dispatchTouchEvent", {
+        type: "touchStart",
+        touchPoints: [{ x, y }],
+      });
+      await protocol.send("Input.dispatchTouchEvent", {
+        type: "touchCancel",
+        touchPoints: [],
+      });
+      await protocol.send("Emulation.setTouchEmulationEnabled", {
+        enabled: false,
+      });
+      await protocol.detach();
+      await page.mouse.up();
+      await page.mouse.move(x + 40, y + 40);
+      assert.equal(await viewport.locator("svg").getAttribute("viewBox"), view);
+      assert.equal(page.url(), route);
+      await page.getByRole("button", { name: "＋", exact: true }).click();
+      assert.notEqual(
+        await viewport.locator("svg").getAttribute("viewBox"),
+        view,
+      );
+    });
+  },
+);
 
 test(
   "native map controls preserve navigation, layer scope and camera behaviour",

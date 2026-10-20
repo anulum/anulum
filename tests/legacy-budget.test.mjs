@@ -18,6 +18,51 @@ import {
 import { budget } from "./atlas-data.mjs";
 
 test(
+  "a shared resource candidate link selects its actual budget scenario without assigning funding",
+  { timeout: 120000 },
+  async () => {
+    const resource = budget.shared.find(
+      (row) => row.candidate_budget_lines.length,
+    );
+    assert.ok(resource);
+    const line =
+        resource.candidate_budget_lines[
+          resource.candidate_budget_lines.length - 1
+        ],
+      scenario = budget.scenarios.find((row) => row.id === line.scenario_id);
+    assert.ok(scenario);
+    await withAtlasPage(async (page) => {
+      await navigate(page, baseUrl + "budget.html");
+      const card = page.locator("#shared > article").filter({
+        has: page.getByRole("heading", { name: resource.name, exact: true }),
+      });
+      await card
+        .getByText("Related needs and candidate budget lines", { exact: true })
+        .click();
+      await card
+        .locator(
+          'a[href="#scenario=' + encodeURIComponent(line.scenario_id) + '"]',
+        )
+        .first()
+        .click();
+      assert.equal(await page.locator("#scenario").inputValue(), scenario.id);
+      assert.equal(await page.locator("#family").inputValue(), "Institute");
+      assert.ok(
+        (await page.locator("#scenario-view").innerText()).includes(
+          scenario.state,
+        ),
+      );
+      assert.ok((await card.innerText()).includes(resource.state));
+      assert.equal(
+        new URL(page.url()).hash,
+        "#scenario=" + encodeURIComponent(scenario.id),
+        "The candidate keeps its actual scenario identity in the shared link",
+      );
+    });
+  },
+);
+
+test(
   "preliminary budget scenarios retain their source identity and separate totals",
   { timeout: 120000 },
   async () => {
