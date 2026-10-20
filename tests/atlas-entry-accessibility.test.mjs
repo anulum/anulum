@@ -41,11 +41,7 @@ test(
             JSON.stringify(result, null, 2),
           );
           assert.deepEqual(
-            result.violations.map((row) => ({
-              id: row.id,
-              count: row.nodes.length,
-              targets: row.nodes.slice(0, 3).map((node) => node.target),
-            })),
+            result.violations,
             [],
             name + " at " + width + " CSS pixels",
           );

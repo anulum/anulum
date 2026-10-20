@@ -43,8 +43,9 @@ test("project document catalogues keep entry scope and explicit empty captures",
     const known = library.projects.find((row) => row.documents.length);
     assert.ok(known);
     await openRoute(page, { view: "documents", entry: known.project_id });
+    assert.equal(await page.locator(".document-catalogue article").count(), 1);
     assert.equal(
-      await page.locator(".document-catalogue article").count(),
+      await page.locator(".document-project li").count(),
       known.documents.length,
     );
     await page.locator("#document-library-query").fill("NO_MATCH_7a2b86c1");
@@ -55,8 +56,9 @@ test("project document catalogues keep entry scope and explicit empty captures",
     await page
       .getByRole("button", { name: "Clear filters", exact: true })
       .click();
+    assert.equal(await page.locator(".document-catalogue article").count(), 1);
     assert.equal(
-      await page.locator(".document-catalogue article").count(),
+      await page.locator(".document-project li").count(),
       known.documents.length,
     );
     const empty = atlas.nodes.find(

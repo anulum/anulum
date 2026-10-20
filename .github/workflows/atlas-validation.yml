@@ -75,16 +75,27 @@ jobs:
           done
           curl --fail --silent "$ATLAS_BASE_URL" --output /dev/null
           node --test --test-concurrency=1 tests/test_resource_inventory.mjs tests/test_render_atlas.mjs tests/*.test.mjs
-      # Gate statements, branches and lines; keep function totals visible without a separate threshold.
+      # Functions stay reported at a zero threshold; statements, branches and lines are enforced.
       - name: Enforce complete per-file statement and branch coverage
         if: always() && steps.runtime-tests.outcome != 'skipped'
         run: |
+          atlas_thresholds=(--check-coverage --statements 100 --branches 100 --lines 100 --functions 0 --per-file)
+          mkdir -p coverage/unexecuted coverage/gate-negative
+          if node_modules/.bin/c8 report --temp-directory coverage/unexecuted --reports-dir coverage/gate-negative \
+            --all --include 'docs/atlas/reader-core.js' --exclude 'node_modules/**' \
+            --reporter json-summary "${atlas_thresholds[@]}" > coverage/gate-negative/check.log 2>&1; then
+            echo 'Coverage gate accepted an actual unexecuted production file'
+            exit 1
+          fi
+          for metric in statements branches lines; do
+            grep -F "ERROR: Coverage for $metric (0%) does not meet threshold (100%) for docs/atlas/reader-core.js" coverage/gate-negative/check.log
+          done
           cp coverage/browser/*.json coverage/node/
           node_modules/.bin/c8 report --temp-directory coverage/node --reports-dir coverage/report \
             --all --include 'docs/atlas/*.js' --include 'tests/*.mjs' \
             --include tools/render_atlas.mjs --include eslint.config.mjs \
             --exclude 'node_modules/**' --reporter text --reporter json-summary --reporter json --reporter html \
-            --statements 100 --branches 100 --lines 100 --per-file
+            "${atlas_thresholds[@]}"
       - name: Retain the exact candidate's coverage report
         if: always()
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
@@ -94,5 +105,6 @@ jobs:
             coverage/report/
             coverage/readback/
             coverage/accessibility/
+            coverage/gate-negative/
           if-no-files-found: warn
           retention-days: 14
