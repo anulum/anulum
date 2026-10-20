@@ -37,6 +37,111 @@ async function withAtlasCopy(run) {
   }
 }
 
+test("the public generator refuses withheld repository contents before deriving output", async () => {
+  await withAtlasCopy(async (directory) => {
+    /** @type {{file:string,original:string,corrupted:string}[]} */
+    const faults = [];
+    const libraryFile = "document_library_candidate.json";
+    const librarySource = await readFile(join(directory, libraryFile), "utf8");
+    for (const owner of [
+      "ANULUM-CORRESPONDENCE",
+      "DIRECTOR-CLASS-AI",
+      "DIRECTOR-AI-CLOUD",
+      "REMANENTIA-PORTAL",
+      "SCPN-STUDIO",
+      "SCPN-STUDIO-PLATFORM",
+      "SYNAPSE-CHANNEL-FLEET",
+    ]) {
+      /** @type {import('../types/atlas.js').DocumentData} */
+      const data = JSON.parse(librarySource);
+      const hidden = data.projects.find((row) => row.project_id === owner);
+      const donor = data.projects.find((row) => row.documents.length);
+      assert.ok(hidden);
+      assert.ok(donor);
+      hidden.documents = [donor.documents[0]];
+      Reflect.deleteProperty(data, "publication_exclusions");
+      faults.push({
+        file: libraryFile,
+        original: librarySource,
+        corrupted: JSON.stringify(data),
+      });
+    }
+    const directFile = "direct_repository_sources.json";
+    const directSource = await readFile(join(directory, directFile), "utf8");
+    for (const field of /** @type {const} */ ([
+      "documents",
+      "declared_package_metadata",
+      "boundary_declarations",
+      "readme_excerpts",
+      "architecture_documents",
+    ])) {
+      /** @type {import('../types/atlas.js').DirectData} */
+      const data = JSON.parse(directSource);
+      const hidden = data.projects.find(
+        (row) => row.project_id === "ANULUM-CORRESPONDENCE",
+      );
+      const donor = data.projects.find((row) => Object.keys(row[field]).length);
+      assert.ok(hidden);
+      assert.ok(donor);
+      Reflect.set(hidden, field, donor[field]);
+      faults.push({
+        file: directFile,
+        original: directSource,
+        corrupted: JSON.stringify(data),
+      });
+    }
+    const atlasFile = "public_atlas_data.json";
+    const atlasSource = await readFile(join(directory, atlasFile), "utf8");
+    for (const field of /** @type {const} */ ([
+      "function",
+      "phase",
+      "boundary",
+      "source_note",
+      "sources",
+      "dossier",
+    ])) {
+      /** @type {import('../types/atlas.js').AtlasData} */
+      const data = JSON.parse(atlasSource);
+      const hidden = data.nodes.find(
+        (row) => row.id === "ANULUM-CORRESPONDENCE",
+      );
+      const donor = data.nodes.find((row) => row.id === "SC-NEUROCORE");
+      assert.ok(hidden);
+      assert.ok(donor);
+      assert.notDeepEqual(hidden[field], donor[field]);
+      Reflect.set(hidden, field, donor[field]);
+      faults.push({
+        file: atlasFile,
+        original: atlasSource,
+        corrupted: JSON.stringify(data),
+      });
+    }
+    const entry = await readFile(join(directory, "index.html"), "utf8");
+    const manifest = await readFile(
+      join(directory, "atlas-manifest.json"),
+      "utf8",
+    );
+    // Only published donor text enters these faults; private source never belongs in committed fixtures.
+    for (const fault of faults) {
+      const path = join(directory, fault.file);
+      await writeFile(path, fault.corrupted);
+      await assert.rejects(
+        renderAtlas(directory, { write: true }),
+        /Repository-internal contents are not publishable/,
+      );
+      assert.equal(
+        await readFile(join(directory, "index.html"), "utf8"),
+        entry,
+      );
+      assert.equal(
+        await readFile(join(directory, "atlas-manifest.json"), "utf8"),
+        manifest,
+      );
+      await writeFile(path, fault.original);
+    }
+  });
+});
+
 test("canonical atlas passes the public generator without rewriting source bytes", async () => {
   const result = await renderAtlas(resolve("docs/atlas"));
   assert.equal(result.assets, 88);

@@ -19,6 +19,10 @@ The version and exact asset fingerprints are in [atlas-manifest.json](atlas-mani
 Individual source documents retain their own capture dates and fingerprints.
 A newer atlas snapshot does not make an older source document current.
 
+Repository documents marked as withheld are excluded from the public reading
+view. Their project identities may remain in the map. The generator rejects
+restored source text, excerpts and declarations for these restricted entries.
+
 GitHub displays HTML files as source. To use the interactive explorer locally,
 run this from the repository root:
 

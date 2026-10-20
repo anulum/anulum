@@ -82,6 +82,73 @@ export async function renderAtlas(directory, { write = false } = {}) {
       throw new Error("Required atlas asset is missing: " + name);
     return raw;
   }
+  const withheld = new Set([
+    "ANULUM-CORRESPONDENCE",
+    "DIRECTOR-CLASS-AI",
+    "DIRECTOR-AI-CLOUD",
+    "REMANENTIA-PORTAL",
+    "SCPN-STUDIO",
+    "SCPN-STUDIO-PLATFORM",
+    "SYNAPSE-CHANNEL-FLEET",
+  ]);
+  /** @type {import('../types/atlas.js').DocumentData} */
+  const library = JSON.parse(
+    asset("document_library_candidate.json").toString("utf8"),
+  );
+  for (const project of library.projects)
+    if (withheld.has(project.project_id) && project.documents.length)
+      throw new Error("Repository-internal contents are not publishable.");
+  /** @type {import('../types/atlas.js').DirectData} */
+  const direct = JSON.parse(
+    asset("direct_repository_sources.json").toString("utf8"),
+  );
+  for (const project of direct.projects)
+    if (withheld.has(project.project_id)) {
+      if (
+        project.documents.length ||
+        Object.keys(project.declared_package_metadata).length ||
+        Object.keys(project.boundary_declarations).length ||
+        project.readme_excerpts.length ||
+        project.architecture_documents.length
+      )
+        throw new Error("Repository-internal contents are not publishable.");
+    }
+  /** @type {import('../types/atlas.js').AtlasData} */
+  const atlas = JSON.parse(asset("public_atlas_data.json").toString("utf8"));
+  for (const node of atlas.nodes)
+    if (
+      node.id === "ANULUM-CORRESPONDENCE" &&
+      !isDeepStrictEqual(
+        {
+          function: node.function,
+          phase: node.phase,
+          boundary: node.boundary,
+          source_note: node.source_note,
+          sources: node.sources,
+          dossier: node.dossier,
+        },
+        {
+          function: "Internal repository. Contents are not published.",
+          phase: "Internal development; implementation details withheld.",
+          boundary:
+            "Repository identity is shown in the ecosystem architecture; repository contents are strictly internal.",
+          source_note:
+            "Repository contents withheld under the owner’s publication restriction.",
+          sources: [],
+          dossier: {
+            review_state: "Internal source contents withheld.",
+            current_surfaces: [],
+            expected_outputs: [],
+            inputs: [],
+            outputs: [],
+            acceptance: [],
+            partner_needs: [],
+            open_fields: [],
+          },
+        },
+      )
+    )
+      throw new Error("Repository-internal contents are not publishable.");
   const javascript = names.filter((name) => name.endsWith(".js"));
   const imports = Object.fromEntries(
     javascript.map((name) => [
