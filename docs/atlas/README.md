@@ -19,6 +19,19 @@ The version and exact asset fingerprints are in [atlas-manifest.json](atlas-mani
 Individual source documents retain their own capture dates and fingerprints.
 A newer atlas snapshot does not make an older source document current.
 
+The 23 October portfolio refresh checks the published main revisions of the
+35 registered public repositories. Refreshed reading documents carry their
+own capture dates and fingerprints; independently cited technical documents
+retain their earlier captures. Local changes and unpublished experiments
+are separate from these published-source observations.
+
+The Control and Phase Orchestrator passports now reuse their existing cited
+technical explanations. Other updated passports distinguish source-described
+inputs, results and acceptance requirements from completed qualification.
+Director-AI's bounded Core wording has source-owner approval. Quantum Control
+links to its public repository and documentation; its detailed passport and
+later local research remain separately qualified.
+
 Repository documents marked as withheld are excluded from the public reading
 view. Their project identities may remain in the map. The generator rejects
 restored source text, excerpts and declarations for these restricted entries.
@@ -116,8 +129,8 @@ observations, independent of resource and budget data.
 | ---------------------------------------- | ------------------------------------------------------------------ | ---------------------: |
 | Profile images across all five languages | Four generated header/map SVGs, 91 badge SVGs and the footer image |                621,868 |
 | Dated catalogue provenance               | `assets/catalogue-source.json`, plus its ownership sidecar         | 114,267 before sidecar |
-| Interactive site snapshot                | 77 manifest-listed assets                                          |             33,029,740 |
-| Main interactive entry page              | `index.html`, including its eight embedded datasets                |             10,197,562 |
+| Interactive site snapshot                | 77 manifest-listed assets                                          |             32,956,709 |
+| Main interactive entry page              | `index.html`, including its eight embedded datasets                |             10,158,793 |
 
 The HTML, JavaScript modules, source-document JSON, illustrations and figure
 downloads belong to the separately hosted explorer. The full snapshot repeats

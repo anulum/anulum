@@ -1183,7 +1183,7 @@
       }
     }
   },
-  "version": "0.13+funding-state.1",
+  "version": "0.13+funding-state.1+portfolio-refresh.1",
   "content_state": "Projects and programme construction in progress; funding-route application states are separately dated and qualified.",
   "groups": [
     {
@@ -7464,16 +7464,89 @@
       "sources": [],
       "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
       "dossier": {
-        "review_state": "Architect-authored details requested",
+        "review_state": "Editorial passport reconciled with its existing cited technical guide; owner-specific acceptance and partner specifications remain open.",
         "purpose": "Synchronisation analysis and evaluation of early-warning detectors on coupled phase-oscillator dynamics, with a Rust kernel.",
         "current_surfaces": [],
-        "expected_outputs": [],
-        "inputs": [],
-        "outputs": [],
-        "acceptance": [],
+        "expected_outputs": [
+          {
+            "deliverable": "Phase trajectories and observer results",
+            "basis": "Dated source-supported technical explanation; not a completed acceptance result.",
+            "acceptance": "The documented step loop produces model state and synchrony/observer values under the selected binding and integration method."
+          },
+          {
+            "deliverable": "Bounded proposals and model updates",
+            "basis": "Dated source-supported technical explanation; not a completed acceptance result.",
+            "acceptance": "Regime and supervisor decisions map into constrained model-knob updates. External hardware admission remains separate."
+          },
+          {
+            "deliverable": "Replayable audit trail",
+            "basis": "Dated source-supported technical explanation; not a completed acceptance result.",
+            "acceptance": "SHA-256-chained JSONL records preserve what the model observed, proposed and replayed for review."
+          },
+          {
+            "deliverable": "Model results, audit records and semantic handoffs",
+            "basis": "Dated source-supported technical explanation; not a completed acceptance result.",
+            "acceptance": "Final model state/coherence histories, projected model proposals, optional audit streams and separately typed reactor-semantic review records are different outputs. Each keeps its source, representation and evidence boundary; a hash-valid result does not collapse them into physical measurement or an actuator command."
+          }
+        ],
+        "inputs": [
+          "A validated domainpack defines the binding, coupling matrix, geometry constraints and imprint model before simulation.",
+          "Waveforms, discrete events and state sequences use different phase extractors. Domain aliases are resolved explicitly rather than making these channel meanings interchangeable.",
+          "Monitor outputs and boundary/regime state feed the selected rules and bounded knob projection inside the model."
+        ],
+        "outputs": [
+          "The documented step loop produces model state and synchrony/observer values under the selected binding and integration method.",
+          "Regime and supervisor decisions map into constrained model-knob updates. External hardware admission remains separate.",
+          "SHA-256-chained JSONL records preserve what the model observed, proposed and replayed for review.",
+          "Final model state/coherence histories, projected model proposals, optional audit streams and separately typed reactor-semantic review records are different outputs. Each keeps its source, representation and evidence boundary; a hash-valid result does not collapse them into physical measurement or an actuator command."
+        ],
+        "acceptance": [
+          "A reusable cycle description does not make SPO a universal controller. Embedding requires domain and adapter evidence.",
+          "Quantum and neuromorphic compiler outputs remain handoff artefacts until a verified external hardware execution pipeline is attached.",
+          "The source's review-only proposal boundary must survive the monitor/supervisor/mapper data flow.",
+          "The generic research CLI starts the seeded model and rejects non-research safety tiers. Its simulation core leaves safety-tier enforcement to callers. Signal extraction, optional observed-twin confidence, hardware/runtime qualification and producer-specific reactor ingress require their own selected source and evidence. Backend presence or a declared domain does not settle those requirements."
+        ],
         "partner_needs": [],
         "open_fields": [
-          "Detailed output specifications and interface acceptance are being consolidated by the owning group."
+          "Owning-group confirmation of interface acceptance, current resource sizing and project-specific partner contributions remains open."
+        ],
+        "acceptance_basis": "Source-described qualification boundaries, not an independently accepted interface specification or evidence that these gates have passed.",
+        "limitations": [
+          "A reusable cycle description does not make SPO a universal controller. Embedding requires domain and adapter evidence.",
+          "Quantum and neuromorphic compiler outputs remain handoff artefacts until a verified external hardware execution pipeline is attached.",
+          "The source's review-only proposal boundary must survive the monitor/supervisor/mapper data flow.",
+          "The generic research CLI starts the seeded model and rejects non-research safety tiers. Its simulation core leaves safety-tier enforcement to callers. Signal extraction, optional observed-twin confidence, hardware/runtime qualification and producer-specific reactor ingress require their own selected source and evidence. Backend presence or a declared domain does not settle those requirements."
+        ],
+        "as_of": "2026-10-23",
+        "source_records": [
+          {
+            "document": "ARCHITECTURE.md",
+            "sha256": "106eeafed6b8e7d0bb7d9f41663948b4e48bb41a4cd43357c64142ece2de7eb6"
+          },
+          {
+            "document": "README.md",
+            "sha256": "d8c48d9aec142fdceba2ca77817cd92152aafa78d8c0d0e99276fa5a35fdb318"
+          },
+          {
+            "document": "docs/architecture/subsystems/upde.md @ 2026-10-18T02:36:01.372344+00:00",
+            "sha256": "5c2ca2708e57ea7c88f709c3f49a67fa3232bf3e0cbd191630cf906302414cd8"
+          },
+          {
+            "document": "docs/reference/api/reactor_semantics.md @ 2026-10-18T02:36:01.372344+00:00",
+            "sha256": "cde4644adc1a1976a1e32e250c9bf23b42b5c009937a2e330c01d3142f1f4bc6"
+          },
+          {
+            "document": "src/scpn_phase_orchestrator/runtime/audit_logger.py @ 2026-10-18T02:36:01.372344+00:00",
+            "sha256": "e4f73b0d9423278a62db29df8958cde22203f77d8eac1d253f177a5dc41c7bbc"
+          },
+          {
+            "document": "src/scpn_phase_orchestrator/runtime/cli/run.py @ 2026-10-18T02:36:01.372344+00:00",
+            "sha256": "eb26ec3fc88964bfbd41782f8acafe5c48dc435c353f26a03e1b50b423f57716"
+          },
+          {
+            "document": "src/scpn_phase_orchestrator/runtime/simulation.py @ 2026-10-18T02:36:01.372344+00:00",
+            "sha256": "f215134303bc25c8d9b9a0ee25e121618bcaedffb1d26eef429ea568a2465df1"
+          }
         ]
       }
     },
@@ -7717,16 +7790,89 @@
       "sources": [],
       "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
       "dossier": {
-        "review_state": "Architect-authored details requested",
+        "review_state": "Editorial passport reconciled with its existing cited technical guide; owner-specific acceptance and partner specifications remain open.",
         "purpose": "Compiler from stochastic Petri nets to controllers with runtime contracts, and plasma-control research paths.",
         "current_surfaces": [],
-        "expected_outputs": [],
-        "inputs": [],
-        "outputs": [],
-        "acceptance": [],
+        "expected_outputs": [
+          {
+            "deliverable": "Compiled and runtime controller artefacts",
+            "basis": "Dated source-supported technical explanation; not a completed acceptance result.",
+            "acceptance": "The source describes SNN/control artefacts, control actions and bounded marking, transition and temporal-logic evidence."
+          },
+          {
+            "deliverable": "Replay and validation reports",
+            "basis": "Dated source-supported technical explanation; not a completed acceptance result.",
+            "acceptance": "Checksum-bound JSON/Markdown records capture the selected control and validation experiment rather than substituting a prose claim for observed output."
+          },
+          {
+            "deliverable": "Facility-review preparation",
+            "basis": "Dated source-supported technical explanation; not a completed acceptance result.",
+            "acceptance": "The intended value is evidence for reviewing a controller before hardware promotion. Adapter descriptions do not turn those records into a fielded PCS."
+          },
+          {
+            "deliverable": "Mode-specific commands and replay records",
+            "basis": "Dated source-supported technical explanation; not a completed acceptance result.",
+            "acceptance": "A controller tick returns configured bounded action channels. Optional controller logs, exact-current execution packets/checkpoints and runtime-bound formal certificates are separate records with distinct identities and prerequisites. Their presence does not merge software replay, timing, physical evidence and facility approval into one result."
+          }
+        ],
+        "inputs": [
+          "Petri-net structure, compiled network state and explicit observation/action/target records define the controller problem.",
+          "The documented flow consumes diagnostics and ControlObservation records through control-facing equilibrium/transport and replay surfaces.",
+          "Regime-assessment and downstream evidence pass separate digest-bound gates. The documented MIF assessment remains abstaining/non-actionable rather than an actuation permission."
+        ],
+        "outputs": [
+          "The source describes SNN/control artefacts, control actions and bounded marking, transition and temporal-logic evidence.",
+          "Checksum-bound JSON/Markdown records capture the selected control and validation experiment rather than substituting a prose claim for observed output.",
+          "The intended value is evidence for reviewing a controller before hardware promotion. Adapter descriptions do not turn those records into a fielded PCS.",
+          "A controller tick returns configured bounded action channels. Optional controller logs, exact-current execution packets/checkpoints and runtime-bound formal certificates are separate records with distinct identities and prerequisites. Their presence does not merge software replay, timing, physical evidence and facility approval into one result."
+        ],
+        "acceptance": [
+          "The source identifies immutable synthetic fixtures as data/control-path evidence, not measured DIII-D replay or real-world physics validation.",
+          "Petri-net/logic/formal-model results and runtime assertions do not certify controller code, plant physics or facility safety.",
+          "A loopback software timing figure cannot be compared as if it included a field plant's diagnostic, I/O and actuator path.",
+          "Inhibitor-net export, persistent neuron profiles, runtime certificates and strict host admission each have explicit compatibility requirements. A successful source reader or a bounded software proof cannot substitute for current installed-profile verification, live host evidence or independent facility acceptance."
+        ],
         "partner_needs": [],
         "open_fields": [
-          "Detailed output specifications and interface acceptance are being consolidated by the owning group."
+          "Owning-group confirmation of interface acceptance, current resource sizing and project-specific partner contributions remains open."
+        ],
+        "acceptance_basis": "Source-described qualification boundaries, not an independently accepted interface specification or evidence that these gates have passed.",
+        "limitations": [
+          "The source identifies immutable synthetic fixtures as data/control-path evidence, not measured DIII-D replay or real-world physics validation.",
+          "Petri-net/logic/formal-model results and runtime assertions do not certify controller code, plant physics or facility safety.",
+          "A loopback software timing figure cannot be compared as if it included a field plant's diagnostic, I/O and actuator path.",
+          "Inhibitor-net export, persistent neuron profiles, runtime certificates and strict host admission each have explicit compatibility requirements. A successful source reader or a bounded software proof cannot substitute for current installed-profile verification, live host evidence or independent facility acceptance."
+        ],
+        "as_of": "2026-10-23",
+        "source_records": [
+          {
+            "document": "ARCHITECTURE.md",
+            "sha256": "5fdc57b52b1c985b75e281d3c543d909dc8828777b2839b69a1ee045098f9f20"
+          },
+          {
+            "document": "README.md",
+            "sha256": "74a62716e688b8a54c2801fd9dc029974d9296e428be996aa42f03885db9b8b9"
+          },
+          {
+            "document": "docs/control/runtime_admission.md @ 2026-10-18T01:37:59.965155+00:00",
+            "sha256": "eb05f60f19ea8f7107f554877586e53fb8e2b9ab797ee254a624f69756ac9dfb"
+          },
+          {
+            "document": "docs/guides/exact_current_lif_runtime.md @ 2026-10-18T01:37:59.965155+00:00",
+            "sha256": "c38f0fdb12558a8052180c460e4599b29c4460035ac9293ccae970022705e2ee"
+          },
+          {
+            "document": "docs/scpn/runtime_safety_certificate.md @ 2026-10-18T01:37:59.965155+00:00",
+            "sha256": "3f81387933715541231f68f8a15c56053c1af82d307812f9e41cecc91b71344e"
+          },
+          {
+            "document": "src/scpn_control/scpn/compiler.py @ 2026-10-18T01:37:59.965155+00:00",
+            "sha256": "de95728f7b25d7a61ed9b9fb169babace13d8ad447d0219a6c9d070048722e86"
+          },
+          {
+            "document": "src/scpn_control/scpn/controller.py @ 2026-10-18T01:37:59.965155+00:00",
+            "sha256": "0316ba5ba55e8b0e3006a0b4ceb0382ac2e894db080a0fc6f7725cb167035fcf"
+          }
         ]
       }
     },
@@ -7888,16 +8034,55 @@
       ],
       "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
       "dossier": {
-        "review_state": "Architect-authored details requested",
+        "review_state": "Bounded public-product purpose, inputs and scoped outcome semantics confirmed by the source owner. Current installed runtime, release and external effects require their own evidence.",
         "purpose": "Local-first coordination bus for AI agents: presence, file-scope work claims, messages, task status, receipts and an audit journal on one hub.",
         "current_surfaces": [],
-        "expected_outputs": [],
-        "inputs": [],
-        "outputs": [],
-        "acceptance": [],
-        "partner_needs": [],
+        "expected_outputs": [
+          {
+            "deliverable": "Durable coordination messages, task and claim state, delivery observations and replayable event records.",
+            "basis": "Editorial description of the public repository documentation; no new runtime or release verdict.",
+            "acceptance": "Use the documented host, transport and version profile. A connected host is not proof of current hub readiness."
+          },
+          {
+            "deliverable": "Operation-specific receipts describe their recorded coordination boundary; external business effects need independent outcome evidence.",
+            "basis": "Editorial description of the public repository documentation; no new runtime or release verdict.",
+            "acceptance": "A delivery receipt does not prove that the recipient model read the message or that an external action completed."
+          }
+        ],
+        "inputs": [
+          "Named project and seat identities, directed messages, declared task and file scopes, and the selected hub configuration.",
+          "Operation-specific identifiers, lease epochs and retained source events where the documented operation requires them."
+        ],
+        "outputs": [
+          "Durable coordination messages, task and claim state, delivery observations and replayable event records.",
+          "Operation-specific receipts describe their recorded coordination boundary; external business effects need independent outcome evidence."
+        ],
+        "acceptance": [
+          "Use the documented host, transport and version profile. A connected host is not proof of current hub readiness.",
+          "A delivery receipt does not prove that the recipient model read the message or that an external action completed."
+        ],
+        "partner_needs": [
+          "Startup funding, strategic collaborators and aligned co-owners are sought in the source. No named partner, accepted delivery or commercial commitment is established by this record."
+        ],
         "open_fields": [
-          "Detailed output specifications and interface acceptance are being consolidated by the owning group."
+          "Current source-owner confirmation does not supply agreed partner deliverables, equipment quantities, deployment acceptance or a complete current runtime verdict."
+        ],
+        "acceptance_basis": "Source-described requirements and interpretation boundaries; independent owner acceptance remains open.",
+        "as_of": "2026-10-23",
+        "source_records": [
+          {
+            "document": "README.md",
+            "sha256": "e6b6498bb499a568c6a785e08d5449d20fdc79bbede1398b1a9ee99e0b9a70c9"
+          }
+        ],
+        "references": [
+          {
+            "id": "synapse-channel-public-readme",
+            "title": "Dated public repository README",
+            "url": "https://github.com/anulum/synapse-channel/blob/99ece6efe4f157aed092df4a47a780029160331f/README.md",
+            "source_revision": "99ece6efe4f157aed092df4a47a780029160331f / SHA-256 e6b6498bb499a568c6a785e08d5449d20fdc79bbede1398b1a9ee99e0b9a70c9",
+            "scope": "Public documentation observed on 2026-10-23; source description is distinct from measured qualification."
+          }
         ]
       }
     },
@@ -8158,16 +8343,40 @@
       ],
       "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
       "dossier": {
-        "review_state": "Architect-authored details requested",
-        "purpose": "Response-level guardrail for LLM output: NLI and retrieval grounding, sealed evidence packets and an optional streaming contradiction halt.",
+        "review_state": "Bounded Core source wording approved by the owning source seat; release, live deployment, security qualification and whole-workflow acceptance are separate.",
+        "purpose": "Response-level factual-coherence checks against governed facts, with NLI/RAG scoring and optional model backends. A guardrail component is not proof that an answer is true or an execution-authority service.",
         "current_surfaces": [],
-        "expected_outputs": [],
-        "inputs": [],
-        "outputs": [],
-        "acceptance": [],
+        "expected_outputs": [
+          {
+            "deliverable": "Response-level decision and evidence records",
+            "basis": "Bounded public Core source wording approved by its owning source seat on 2026-10-23.",
+            "acceptance": "Relevant real API/CLI/runtime-boundary tests, exact source/model/data/environment identity, independent packet-integrity checks and deployment-scoped operating-point measurements."
+          }
+        ],
+        "inputs": [
+          "Application prompt and candidate response, governed facts or retrieval context, and operator-selected configuration and thresholds; optionally completed streamed claims."
+        ],
+        "outputs": [
+          "Approval/refusal and coherence/evidence metadata; optionally a halted stream, supported API/SDK/CLI output and a sealed evidence packet."
+        ],
+        "acceptance": [
+          "Applications retain responsibility for source quality and deployment-specific operating-point qualification.",
+          "An event-feedback acknowledgement concerns its recall event. Complete action approval, execution, independent verification and full-result retention require their own qualification."
+        ],
         "partner_needs": [],
         "open_fields": [
-          "Detailed output specifications and interface acceptance are being consolidated by the owning group."
+          "Current partner commitments, customer deployment and complete-result acceptance have not been established by this source check."
+        ],
+        "as_of": "2026-10-23",
+        "source_records": [
+          {
+            "document": "README.md",
+            "sha256": "782fa7deb65f445762dcc460c2f71a4c196002182a0ff3a924b55ea1d1a249dc"
+          },
+          {
+            "document": "docs/ROADMAP_STATUS.md",
+            "sha256": "ef8e32e463ac0d1e78b4692535f63ca8a51e27a384745b80fd1935aa9ea35083"
+          }
         ]
       }
     },
@@ -8385,16 +8594,54 @@
       ],
       "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
       "dossier": {
-        "review_state": "Architect-authored details requested",
+        "review_state": "Descriptive public source wording approved by the product author. Source version, detection-rule maturity, independent product acceptance and published-release evidence remain separate.",
         "purpose": "Evidence-bound repository auditing: inventories Git-tracked content, emits reproducible audit candidates, binds review decisions to exact evidence and prepares remediation inputs.",
         "current_surfaces": [],
-        "expected_outputs": [],
-        "inputs": [],
-        "outputs": [],
-        "acceptance": [],
+        "expected_outputs": [
+          {
+            "deliverable": "Reproducible audit candidates, source-bound reports and reviewable remediation inputs.",
+            "basis": "Editorial description of the public repository documentation; no new runtime or release verdict.",
+            "acceptance": "Static candidates need their own adjudication and rule-maturity evidence; a zero-candidate report is not a safety or compliance verdict."
+          }
+        ],
+        "inputs": [
+          "A selected repository revision, tracked source inventory, configured rules and source-bound review or evidence records."
+        ],
+        "outputs": [
+          "Reproducible audit candidates, source-bound reports and reviewable remediation inputs."
+        ],
+        "acceptance": [
+          "Static candidates need their own adjudication and rule-maturity evidence; a zero-candidate report is not a safety or compliance verdict.",
+          "Source package version, protected release admission and installable distribution status retain separate evidence.",
+          "Missing evidence does not pass: exact source, policy, repository provenance and compatibility gates require production-surface review."
+        ],
         "partner_needs": [],
         "open_fields": [
-          "Detailed output specifications and interface acceptance are being consolidated by the owning group."
+          "Owning-source confirmation of detailed acceptance, material sizing and project-specific partner contributions remains open."
+        ],
+        "acceptance_basis": "Product-author-approved source requirements; this record does not assert that the product or any particular candidate has passed these gates.",
+        "as_of": "2026-10-23",
+        "source_records": [
+          {
+            "document": "README.md",
+            "sha256": "eab40efdd677b6a37ff6bed96d58e3fe8eb36e7edab324e5ce6756b86da6b037"
+          }
+        ],
+        "references": [
+          {
+            "id": "rigor-foundry-public-readme",
+            "title": "Dated public repository README",
+            "url": "https://github.com/anulum/rigor-foundry/blob/19148d03430786e209f12288a397f47cdaa1b02e/README.md",
+            "source_revision": "19148d03430786e209f12288a397f47cdaa1b02e / SHA-256 eab40efdd677b6a37ff6bed96d58e3fe8eb36e7edab324e5ce6756b86da6b037",
+            "scope": "Public documentation observed on 2026-10-23; source description is distinct from measured qualification."
+          },
+          {
+            "id": "rigor-foundry-release-1.0.0",
+            "title": "Published GitHub release v1.0.0",
+            "url": "https://github.com/anulum/rigor-foundry/releases/tag/v1.0.0",
+            "source_revision": "v1.0.0; published 2026-07-21T06:18:23Z",
+            "scope": "GitHub release metadata verified on 2026-10-23. Later local source changes, registry installation and whole-product qualification have separate evidence."
+          }
         ]
       }
     },
@@ -8617,16 +8864,46 @@
       ],
       "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
       "dossier": {
-        "review_state": "Architect-authored details requested",
+        "review_state": "Public-source editorial passport; current owner review and project-specific partner confirmation remain open.",
         "purpose": "Local-first, auditable memory for AI agents and knowledge-intensive software: project-file indexing, hybrid retrieval, consolidation and an entity graph, through a CLI, an MCP server and an HTTP API.",
         "current_surfaces": [],
-        "expected_outputs": [],
-        "inputs": [],
-        "outputs": [],
-        "acceptance": [],
+        "expected_outputs": [
+          {
+            "deliverable": "Source-linked retrieval results, retained memory records and the documented consolidation or entity-graph records.",
+            "basis": "Editorial description of the public repository documentation; no new runtime or release verdict.",
+            "acceptance": "Keep retrieval quality, optional native acceleration and model availability within the selected documented path and its evidence."
+          }
+        ],
+        "inputs": [
+          "Project documents and memory records with their source identity; retrieval queries and the selected indexing configuration."
+        ],
+        "outputs": [
+          "Source-linked retrieval results, retained memory records and the documented consolidation or entity-graph records."
+        ],
+        "acceptance": [
+          "Keep retrieval quality, optional native acceleration and model availability within the selected documented path and its evidence.",
+          "Memory or feedback acknowledgements do not establish autonomous action permission or a completed external effect."
+        ],
         "partner_needs": [],
         "open_fields": [
-          "Detailed output specifications and interface acceptance are being consolidated by the owning group."
+          "Owning-source confirmation of detailed acceptance, material sizing and project-specific partner contributions remains open."
+        ],
+        "acceptance_basis": "Source-described requirements and interpretation boundaries; independent owner acceptance remains open.",
+        "as_of": "2026-10-23",
+        "source_records": [
+          {
+            "document": "README.md",
+            "sha256": "00196802efb9575ed44e226c2a98e7f95935c93bf2258473c7516facd5c3c080"
+          }
+        ],
+        "references": [
+          {
+            "id": "remanentia-public-readme",
+            "title": "Dated public repository README",
+            "url": "https://github.com/anulum/remanentia/blob/98eb9bf7a4e8c822292a7b574252960171924a94/README.md",
+            "source_revision": "98eb9bf7a4e8c822292a7b574252960171924a94 / SHA-256 00196802efb9575ed44e226c2a98e7f95935c93bf2258473c7516facd5c3c080",
+            "scope": "Public documentation observed on 2026-10-23; source description is distinct from measured qualification."
+          }
         ]
       }
     },
@@ -8724,7 +9001,7 @@
       "work_status": "In progress",
       "release": "3.16.0",
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-13",
+      "as_of": "2026-10-23",
       "url": "https://github.com/anulum/sc-neurocore",
       "packages": [
         {
@@ -8740,7 +9017,7 @@
         "value": "beta",
         "source": "pyproject.toml classifier 'Development Status :: 4 - Beta'"
       },
-      "boundary": "Capability-specific maturity; no certification or field approval claim. Main CI on the head of 2026-10-13 (0dab0464c) had not finished when this file was written.",
+      "boundary": "Capability-specific maturity; no certification or field approval claim. On 23 October 2026 the observed public main was c35da586f6ee650f2a2b339c3c3da69d308b51e6 and its main CI run 39225326920 had completed with failure. Release 3.16.0 and later local development are separate records.",
       "repository_record": {
         "stage": "Local repository initialized",
         "as_of": "2026-10-13T16:13:52.413927+00:00",
@@ -12239,7 +12516,7 @@
       "sources": [
         "https://github.com/anulum/sc-neurocore/blob/main/docs/ecosystem.md"
       ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "source_note": "Public revision and main CI independently read on 23 October 2026; source version and release remain separate from local unpublished work. Earlier technical source captures retain their original dates.",
       "dossier": {
         "review_state": "Architect dossier revision 2: initial complete inventory; group content confirmation pending.",
         "purpose": "Permanent public development, composition and integration workbench for stochastic and spiking neural modelling, encoding, learning, simulation, selected hardware compilation and evidence inspection.",
@@ -12298,6 +12575,15 @@
         "limitations": [
           "The parent remains a permanent public development, composition and integration workbench.",
           "Model-source fidelity, cross-runtime parity and physical acceptance are distinct qualifications."
+        ],
+        "references": [
+          {
+            "id": "neurocore-public-main-ci-20261023",
+            "title": "Main CI for the observed public revision",
+            "url": "https://github.com/anulum/sc-neurocore/actions/runs/39225326920",
+            "source_revision": "c35da586f6ee650f2a2b339c3c3da69d308b51e6",
+            "scope": "Observed completed failure on 23 October 2026; not a statement about later local fixes or a complete scientific qualification."
+          }
         ]
       }
     },
@@ -12310,11 +12596,11 @@
       ],
       "function": "Fabric-clock instrument for complete control-loop and selected accelerator timing, with simulation/host analysis separated from eventual board timing, fault response and rail-energy evidence.",
       "kind": "tool",
-      "phase": "Architecture and qualification",
+      "phase": "Released software · physical qualification pending",
       "work_status": "In progress",
-      "release": null,
+      "release": "0.1.0",
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-13",
+      "as_of": "2026-10-23",
       "url": "https://github.com/anulum/loop-timing-witness",
       "packages": [
         {
@@ -12326,7 +12612,7 @@
         "value": "alpha",
         "source": "pyproject.toml classifier 'Development Status :: 3 - Alpha'"
       },
-      "boundary": "A package 0.1.0 is on the index; 'released' is not inferred from that. Physical board qualification is pending; no board is available.",
+      "boundary": "GitHub release v0.1.0 was published on 2 October 2026. Physical board qualification is pending; no board is available. Software and simulation records are separate from physical instrument acceptance.",
       "repository_record": {
         "stage": "Local repository initialized",
         "as_of": "2026-10-13T16:13:52.413927+00:00",
@@ -14412,7 +14698,7 @@
       "sources": [
         "https://github.com/anulum/sc-neurocore/blob/main/docs/ecosystem.md"
       ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "source_note": "Release metadata independently checked on 23 October 2026; the owning manager reconfirmed the physical qualification boundary. Earlier technical source captures retain their original dates.",
       "dossier": {
         "review_state": "Architect dossier revision 2: initial complete inventory; group content confirmation pending.",
         "purpose": "Fabric-clock instrument for complete control-loop and selected accelerator timing, with simulation/host analysis separated from eventual board timing, fault response and rail-energy evidence.",
@@ -14455,7 +14741,6 @@
           "Actual board/accessories/licensed build/readout and independently agreed SC wrapper; first fit is maintained reference/RTL/runtime conformance before known-input board acceptance. (existing hardware-access direction; no kit receipt, partner response or procurement assumed)"
         ],
         "open_fields": [
-          "Group confirmation of reader synopsis and current public-source scope.",
           "Exact source/runtime/physical qualification for the stated programme and consumer."
         ],
         "scope": [
@@ -14466,6 +14751,15 @@
           {
             "document": "Neuromorphic architect dossier revision 2",
             "sha256": "2f3e0e2e99f44f89dc06b645c80cf1c6385db212ef28cc4e7e8a618478bc427e"
+          }
+        ],
+        "references": [
+          {
+            "id": "timing-witness-release-0.1.0",
+            "title": "Published GitHub release v0.1.0",
+            "url": "https://github.com/anulum/loop-timing-witness/releases/tag/v0.1.0",
+            "source_revision": "v0.1.0; published 2026-10-02T02:18:15Z",
+            "scope": "Software release metadata; no board or physical timing qualification is implied."
           }
         ]
       }
@@ -14676,10 +14970,10 @@
       "release": "1.2.0",
       "licence": "AGPL-3.0-or-later",
       "as_of": "2026-10-13",
-      "url": null,
+      "url": "https://github.com/anulum/scpn-quantum-control",
       "packages": [],
       "maturity": "beta",
-      "boundary": "",
+      "boundary": "Released software is version 1.2.0. Later local work and split-repository development are separate; no new campaign, quantum-advantage or hardware-result qualification is asserted.",
       "repository_record": {
         "stage": "Local repository initialized",
         "as_of": "2026-10-13T16:13:52.413927+00:00",
@@ -15116,7 +15410,7 @@
       ],
       "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
       "dossier": {
-        "review_state": "Architect-authored details requested",
+        "review_state": "Public README and documentation may be cited. An outward-approved detailed passport remains unavailable, as reported by the owning manager on 2026-10-23.",
         "purpose": "Integrated modelling, simulation, compilation, gradients, control, provider workflows, analysis and Quantum Studio.",
         "current_surfaces": [],
         "expected_outputs": [],
@@ -15125,8 +15419,13 @@
         "acceptance": [],
         "partner_needs": [],
         "open_fields": [
-          "Detailed output specifications and interface acceptance are being consolidated by the owning group."
-        ]
+          "Owner-approved inputs, expected outputs and interface acceptance remain open; current technical explanations retain their original cited source dates."
+        ],
+        "public_sources": [
+          "https://github.com/anulum/scpn-quantum-control",
+          "https://anulum.github.io/scpn-quantum-control/"
+        ],
+        "as_of": "2026-10-23"
       }
     },
     {
@@ -33906,16 +34205,37 @@
       ],
       "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
       "dossier": {
-        "review_state": "Architect-authored details requested",
+        "review_state": "Public-source editorial passport; current owner review and project-specific partner confirmation remain open.",
         "purpose": "Public profile, research portfolio and evidence navigation.",
         "current_surfaces": [],
-        "expected_outputs": [],
-        "inputs": [],
-        "outputs": [],
-        "acceptance": [],
+        "expected_outputs": [
+          {
+            "deliverable": "A dated source-linked portfolio and a complete manifest-bound interactive atlas snapshot.",
+            "basis": "Editorial description of the public repository documentation; no new runtime or release verdict.",
+            "acceptance": "Generated pages and downloads must agree with the selected datasets and manifest; source dates and withheld-content policy remain explicit."
+          }
+        ],
+        "inputs": [
+          "Approved project and programme descriptions, dated public source records, and separately qualified resource and funding information."
+        ],
+        "outputs": [
+          "A dated source-linked portfolio and a complete manifest-bound interactive atlas snapshot."
+        ],
+        "acceptance": [
+          "Generated pages and downloads must agree with the selected datasets and manifest; source dates and withheld-content policy remain explicit.",
+          "Website adoption, rendering checks and deployment require their own exact-source evidence."
+        ],
         "partner_needs": [],
         "open_fields": [
-          "Detailed output specifications and interface acceptance are being consolidated by the owning group."
+          "Owning-source confirmation of detailed acceptance, material sizing and project-specific partner contributions remains open."
+        ],
+        "acceptance_basis": "Source-described requirements and interpretation boundaries; independent owner acceptance remains open.",
+        "as_of": "2026-10-23",
+        "source_records": [
+          {
+            "document": "README.md",
+            "sha256": "a7a2f397eefce726ba1043d5b0f44596a91816c79baf6fbe07fa42c69d823099"
+          }
         ]
       }
     },

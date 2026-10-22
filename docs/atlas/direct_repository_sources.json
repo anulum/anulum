@@ -2,7 +2,7 @@
   "version": "0.2",
   "captured_at_utc": "2026-10-13T23:51:08.190562+00:00",
   "state": "Private direct repository source candidate; content reconciliation and publication review pending",
-  "read_scope": "Complete selected document and entry-source bytes read and retained. Selected prose, architecture sections, structured declarations and static top-level Python declarations projected; no source execution or whole scientific/implementation validation. Repository-internal documents, excerpts and declarations are withheld from the public projection.",
+  "read_scope": "Complete selected document and entry-source bytes read and retained. Selected prose, architecture sections, structured declarations and static top-level Python declarations projected; no source execution or whole scientific/implementation validation. Repository-internal documents, excerpts and declarations are withheld from the public projection. Selected documentation rows were refreshed from verified public main commits on 2026-10-23; other declarations and excerpts retain their earlier capture. This is documentary correspondence, not runtime or scientific qualification.",
   "project_entries": 196,
   "entries_with_documents": 40,
   "source_documents_captured": 285,
@@ -334,8 +334,8 @@
       "documents": [
         {
           "label": "README.md",
-          "sha256": "57b61dd823ff061ca96bcce8a033bd30ae226285e23815b5563f923ca360415b",
-          "bytes": 7550
+          "sha256": "2dc01b8e559e5baaa37830c05a38c2372f0d440dbe8b3656b3376d726f2d2e1d",
+          "bytes": 7486
         },
         {
           "label": "ARCHITECTURE.md",
@@ -354,8 +354,8 @@
         },
         {
           "label": "VALIDATION.md",
-          "sha256": "6b79946fc2e69f61da36ced5a6e6c6612504477660a9ecca7eaf0368c12a9f8c",
-          "bytes": 29987
+          "sha256": "a58fea12caeeaaef5d4b8aca6595746cb057f3458cecdc5cec490608d4bfe9d8",
+          "bytes": 28162
         },
         {
           "label": "pyproject.toml",
@@ -471,13 +471,13 @@
         },
         {
           "label": "VALIDATION.md",
-          "sha256": "b2ee9359edfa9775a92121e7a57729732ff0c0b2ff45eec2cd9f3628bcb7270a",
-          "bytes": 21095
+          "sha256": "2286fb0a2b9903f1f16b9e84e0a788f34438fd230eedd636e11e5adf60916f2c",
+          "bytes": 20074
         },
         {
           "label": "pyproject.toml",
-          "sha256": "6c2abf2419840b364586ef53ebb29e71178755f97b734fb0623f1871909d0fd7",
-          "bytes": 7499
+          "sha256": "773f88f9757e13637c96c32a0c4e9cd3db520616e7e001bcbd34064f5e581dbd",
+          "bytes": 6888
         },
         {
           "label": "src/scpn_frc_core/__init__.py",
@@ -2202,8 +2202,8 @@
       "documents": [
         {
           "label": "README.md",
-          "sha256": "1d424a5d35740f8b3455080959eddf127b9c10e71c83ecae7055421c0ed2b460",
-          "bytes": 7408
+          "sha256": "3176e91d764e14eadfe2361043c7e8dd33463cd9063afc3a60188d69c8117d7f",
+          "bytes": 7152
         },
         {
           "label": "ARCHITECTURE.md",
@@ -2222,12 +2222,12 @@
         },
         {
           "label": "VALIDATION.md",
-          "sha256": "503e34e22836cbe95fcf292e75c55d8b30ec5e6eb312035e279c1a26525289cb",
-          "bytes": 31819
+          "sha256": "cd7313af643cb023899990c113a0919a5baa0d3029a73efec0c983981b20d10f",
+          "bytes": 29883
         },
         {
           "label": "pyproject.toml",
-          "sha256": "69fc7447d2dd93119981738046e319c1441dfe52d902fb62f44469c4ef266176",
+          "sha256": "969ba0d72ac826fe7d5d7a2c6cc65ec178dbcdcd4ed0804a87c8a4a8b6b7332d",
           "bytes": 7082
         },
         {
@@ -2490,8 +2490,8 @@
       "documents": [
         {
           "label": "README.md",
-          "sha256": "fe7096ef12960921dc446e49cda0a91c0bbc86a79f9d60913fe7087e987de1c8",
-          "bytes": 17235
+          "sha256": "6b569b4352d6be5481b5c7dfeffb46e164dd15f7ed8cd758cf6b996f667b4ac6",
+          "bytes": 16515
         },
         {
           "label": "ARCHITECTURE.md",
@@ -2500,8 +2500,8 @@
         },
         {
           "label": "docs/ARCHITECTURE.md",
-          "sha256": "2e0a691ef4be34a035a4ead5cbe98044d70d299dc8da38af2673cdb413631691",
-          "bytes": 6233
+          "sha256": "4f951ba182a9a56009c0bb2d604b918f77f460d0d7cb424aa70d337f877fc75f",
+          "bytes": 5733
         },
         {
           "label": "ROADMAP.md",
@@ -2510,8 +2510,8 @@
         },
         {
           "label": "VALIDATION.md",
-          "sha256": "29601e2867aeef8239d2602d3416a8521ff74927d7935bd20527895b7c67e15b",
-          "bytes": 63071
+          "sha256": "e2d8ea46ca69676bc3c1a08b7e8ea6a640eac336db8e8acb50b75ceda4af19f9",
+          "bytes": 61506
         },
         {
           "label": "pyproject.toml",
@@ -3078,8 +3078,8 @@
         },
         {
           "label": "VALIDATION.md",
-          "sha256": "805a382b39a4b5145aecca75ddef7d5ebe50ecefb96df5f342f4a6cf8f137fb5",
-          "bytes": 18694
+          "sha256": "d84c31eea2ca6a3539f2f9a43cf445bb26c37fbd244dc7b2a5a368b783ce7cc8",
+          "bytes": 18489
         },
         {
           "label": "pyproject.toml",
@@ -3594,13 +3594,13 @@
       "documents": [
         {
           "label": "README.md",
-          "sha256": "6f2238f81dc4fe759d3174abbeaf75728e990ebb97a2ba5ed700877968bbf041",
-          "bytes": 133056
+          "sha256": "e6b6498bb499a568c6a785e08d5449d20fdc79bbede1398b1a9ee99e0b9a70c9",
+          "bytes": 135297
         },
         {
           "label": "ARCHITECTURE.md",
-          "sha256": "7096fec69240ba013fe0971a8074726ef4a0fd994ed42c25a4fd94b0dd6340ef",
-          "bytes": 20081
+          "sha256": "487263d2a3900ad6f6570505b1aadf43b6c3b4c957615b8b5a06f78e81e7f239",
+          "bytes": 20458
         },
         {
           "label": "ROADMAP.md",
@@ -4071,13 +4071,13 @@
       "documents": [
         {
           "label": "README.md",
-          "sha256": "9b07046c7f140e64dba2be20ec71ec0d6fa3b81d3fbf6e9feec5ba88300764c8",
-          "bytes": 21060
+          "sha256": "eab40efdd677b6a37ff6bed96d58e3fe8eb36e7edab324e5ce6756b86da6b037",
+          "bytes": 19144
         },
         {
           "label": "ARCHITECTURE.md",
-          "sha256": "e4526f8dd9c9f9804612e04f9a08581067b3e08c20b5a6478897f416eb8480e8",
-          "bytes": 27560
+          "sha256": "a89815f345037e117f4596f0fb646b659ce6520b4e67877ade3feb0e0a71ad31",
+          "bytes": 24645
         },
         {
           "label": "ROADMAP.md",
@@ -4237,28 +4237,28 @@
       "documents": [
         {
           "label": "README.md",
-          "sha256": "54384d4c815e9ecadc0401a6b5faf9168191be898b76b1064ac6212194a105f4",
-          "bytes": 26242
+          "sha256": "00196802efb9575ed44e226c2a98e7f95935c93bf2258473c7516facd5c3c080",
+          "bytes": 26042
         },
         {
           "label": "ARCHITECTURE.md",
-          "sha256": "9dc5e7f55d2d65240cceaa0f43dbce6b16b0319e60a3a4f880d50f576a29a0d9",
-          "bytes": 11955
+          "sha256": "5c67aed3565c7c2ff8241a3dcf20c361ad9fda6619fec3d20e8dbd9bd1c00346",
+          "bytes": 11864
         },
         {
           "label": "ROADMAP.md",
-          "sha256": "20f14a95a4eac84ad15d7a5c6aa3aad5b3b7b12b315a24a89bf3c39ff220bd1c",
-          "bytes": 3622
+          "sha256": "0443b5466c8d77da5e403e14e381bce7dbcb68469f354fa08215a09a007c4448",
+          "bytes": 3389
         },
         {
           "label": "VALIDATION.md",
-          "sha256": "9a79d6baad8009fc3e4394abd24c5a9585a1afa0d8ee79f6511e063738b446d6",
-          "bytes": 3224
+          "sha256": "e4fdfa8a9a394c638451ca0e90508d412880f7db92a1d8e74096f1f237e843bb",
+          "bytes": 3263
         },
         {
           "label": "pyproject.toml",
-          "sha256": "2280cccc913cab0460b071d796235286fbd0e5ed9071bc6a740d7d841d00ffa8",
-          "bytes": 13872
+          "sha256": "ccf06097ed36a5a42f5c10e7678265b4ca26eacedd2e94d8af030873dcaa46f3",
+          "bytes": 11851
         },
         {
           "label": "cli.py",
@@ -5122,7 +5122,7 @@
       "documents": [
         {
           "label": "README.md",
-          "sha256": "c595b0bce36fade9e5dc4491d731438cdb0acc0347c3c13ee489f385334451ab",
+          "sha256": "3d1fbb26512e5dd3dc1d92db2af0c6ea9f52f7a7ff957a59f1b4f5adf2ea54fc",
           "bytes": 46356
         },
         {
@@ -5137,13 +5137,13 @@
         },
         {
           "label": "VALIDATION.md",
-          "sha256": "578ab4caff2e9a094f2fe261c45f38e6a91a6ab527ca77778ca4c60a7917e016",
-          "bytes": 6374
+          "sha256": "cd7c0c2b51d20ae9c53d34e509a5f12f94254d4f1898f0fe405fd410db037a03",
+          "bytes": 6952
         },
         {
           "label": "pyproject.toml",
-          "sha256": "9680cd842d5066a88fc5d6624699a2e8a78f684dfedffead4929ddd4cee3301e",
-          "bytes": 17991
+          "sha256": "720ccade5bd74e07a6243e8a02f7fc759963170d4855b11bf794447874bdf441",
+          "bytes": 18054
         },
         {
           "label": "Cargo.toml",
@@ -5492,13 +5492,13 @@
       "documents": [
         {
           "label": "README.md",
-          "sha256": "f35736c32907d96e87c8b1bf683320431c748fbe8b95da794372f0b3933f69b2",
-          "bytes": 67495
+          "sha256": "9cd333a45f04a0c3af144a59420132b3fa8c26863a5bbd0f8cbb623eb70ce139",
+          "bytes": 69178
         },
         {
           "label": "ARCHITECTURE.md",
-          "sha256": "5aef9b6b10e3ae3d0eb345ac8271a3c2afc49d691324bf1611589d4fd66f5053",
-          "bytes": 78683
+          "sha256": "140eef3ba41bdcf401d507408084181f2c0ac627532b61e0f7906ea7cc926782",
+          "bytes": 20
         },
         {
           "label": "ROADMAP.md",
@@ -5512,8 +5512,8 @@
         },
         {
           "label": "pyproject.toml",
-          "sha256": "9548e33187f19bdb739808cabb47cecd4f1ae053b0406ed8cd6db66ad2742b70",
-          "bytes": 22983
+          "sha256": "f4be8f59adf971790fa70c1fe75797aacc6aca2f133cfdcfb67305375765cf3c",
+          "bytes": 23016
         },
         {
           "label": "src/scpn/__init__.py",
@@ -6833,8 +6833,8 @@
       "documents": [
         {
           "label": "README.md",
-          "sha256": "b1193e7ff64c8e5b257614e05f0f115e33f2258cbcf1e10f793e32e8c2e758de",
-          "bytes": 46866
+          "sha256": "a7a2f397eefce726ba1043d5b0f44596a91816c79baf6fbe07fa42c69d823099",
+          "bytes": 77187
         },
         {
           "label": "pyproject.toml",
