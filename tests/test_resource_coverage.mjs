@@ -106,16 +106,31 @@ export default async function checkResourceCoverage(
   });
   await coverage.waitFor();
   await checkAssetVersions();
+  /** @type {import('../types/atlas.js').ResourceData} */
+  const data = await page.locator("#resource-data").evaluate((node) =>
+    JSON.parse(/** @type {string} */ (node.textContent)),
+  );
   const mainText = await coverage.innerText();
   check(
     mainText.includes("before filters") &&
       mainText.includes("Source snapshot: 2026-10-13"),
     "Snapshot scope and source date",
   );
-  check(
-    mainText.includes("does not mean that the group has no resource needs"),
-    "Missing source is not zero need",
+  const missing = data.groups.filter(
+    (group) => !data.needs.some((row) => row.group === group.id),
   );
+  if (missing.length) {
+    check(
+      mainText.includes("does not mean that the group has no resource needs") &&
+        missing.every((group) => mainText.includes(group.name)),
+      "Missing source is not zero need",
+    );
+  } else {
+    check(
+      (await coverage.locator(".coverage-gap").count()) === 0,
+      "Complete source population has no stale missing-group notice",
+    );
+  }
   check(
     mainText.includes("not equipment counts, hires, floor-area totals"),
     "No additive procurement or institute totals",
@@ -130,21 +145,18 @@ export default async function checkResourceCoverage(
   await page.waitForURL((url) => url.pathname.endsWith("/resources.html"));
   await page.locator("#counter").filter({ hasText: "matching" }).waitFor();
   await checkAssetVersions();
-  check(
-    (await page.locator("#results article").count()) === 0,
-    "Actual absent discovery population",
+  const discoveryNeeds = data.needs.filter(
+    (row) => row.group === "SCIENTIFIC-DISCOVERY-AND-EXPERIMENTATION",
   );
   check(
-    await page.locator("#download-selection").isDisabled(),
-    "Missing source cannot download invented rows",
+    (await page.locator("#results article").count()) === discoveryNeeds.length,
+    "Actual source-bound Discovery population",
   );
-  /** @type {import('../types/atlas.js').ResourceData} */
-  const data = await page
-    .locator("#resource-data")
-    .evaluate(function capturedCoverageResources(node) {
-      // This locator supplies an Element, whose textContent is a string.
-      return JSON.parse(/** @type {string} */ (node.textContent));
-    });
+  check(
+    (await page.locator("#download-selection").isDisabled()) ===
+      (discoveryNeeds.length === 0),
+    "Download availability follows actual source rows",
+  );
   const explorer = page.getByRole("region", {
     name: "Resource inventory coverage and open quantities",
   });
@@ -193,7 +205,9 @@ export default async function checkResourceCoverage(
     "Existing filtered acquisition search retained",
   );
   check(
-    (await explorer.innerText()).includes("694 acquisition alternatives"),
+    (await explorer.innerText()).includes(
+      data.candidates.length + " acquisition alternatives",
+    ),
     "Portfolio coverage survives selection filters",
   );
   await page.setViewportSize({ width: 390, height: 844 });

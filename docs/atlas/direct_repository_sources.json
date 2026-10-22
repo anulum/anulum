@@ -1,8 +1,8 @@
 {
   "version": "0.2",
   "captured_at_utc": "2026-10-13T23:51:08.190562+00:00",
-  "state": "Private direct repository source candidate; content reconciliation and publication review pending",
-  "read_scope": "Complete selected document and entry-source bytes read and retained. Selected prose, architecture sections, structured declarations and static top-level Python declarations projected; no source execution or whole scientific/implementation validation. Repository-internal documents, excerpts and declarations are withheld from the public projection. Selected documentation rows were refreshed from verified public main commits on 2026-10-23; other declarations and excerpts retain their earlier capture. This is documentary correspondence, not runtime or scientific qualification.",
+  "state": "Public documentation projection; selected source records retain their capture dates and qualification limits.",
+  "read_scope": "Complete selected document and entry-source bytes read and retained. Selected prose, architecture sections, structured declarations and static top-level Python declarations projected; no source execution or whole scientific/implementation validation. Repository-internal documents, excerpts and declarations are withheld from the public projection. Selected documentation rows were refreshed from verified public main commits on 2026-10-23; other declarations and excerpts retain their earlier capture. This is documentary correspondence, not runtime or scientific qualification. Four additional repository/component entries were checked against exact published main objects on 23 October 2026; component source labels preserve their parent paths. Earlier excerpts and static declarations retain their original capture scope.",
   "project_entries": 196,
   "entries_with_documents": 40,
   "source_documents_captured": 285,
@@ -6136,7 +6136,7 @@
         },
         {
           "label": "Cargo.toml",
-          "sha256": "a97e8efa36eef9b32e0c63996f56653074226c61a6cb62b5c3bfde616afd5c84",
+          "sha256": "4c62703ba3a51abc0abd6506c75c5005ef9c85165cc7ee5effc9f037a36b2dfd",
           "bytes": 2790
         },
         {

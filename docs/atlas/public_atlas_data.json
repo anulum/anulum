@@ -1183,7 +1183,7 @@
       }
     }
   },
-  "version": "0.13+funding-state.1+portfolio-refresh.1",
+  "version": "0.13+funding-state.1+portfolio-refresh.1+owner-source.1+discovery-resources.1",
   "content_state": "Projects and programme construction in progress; funding-route application states are separately dated and qualified.",
   "groups": [
     {
@@ -8059,7 +8059,8 @@
         ],
         "acceptance": [
           "Use the documented host, transport and version profile. A connected host is not proof of current hub readiness.",
-          "A delivery receipt does not prove that the recipient model read the message or that an external action completed."
+          "A delivery receipt does not prove that the recipient model read the message or that an external action completed.",
+          "Scoped execution outcomes are documented in source since 19 October 2026 for the next release; they are not in released 0.99.38. An outcome observation is separate from an execution grant, lease or independent attestation."
         ],
         "partner_needs": [
           "Startup funding, strategic collaborators and aligned co-owners are sought in the source. No named partner, accepted delivery or commercial commitment is established by this record."
@@ -8073,6 +8074,10 @@
           {
             "document": "README.md",
             "sha256": "e6b6498bb499a568c6a785e08d5449d20fdc79bbede1398b1a9ee99e0b9a70c9"
+          },
+          {
+            "document": "docs/execution-outcomes.md (published source 99ece6efe4f157aed092df4a47a780029160331f; absent at release0.99.38)",
+            "sha256": "ff15d242058848706c6d87c850c217181889671a104cdcc812bd31b7e627ba5c"
           }
         ],
         "references": [
@@ -8613,7 +8618,8 @@
         "acceptance": [
           "Static candidates need their own adjudication and rule-maturity evidence; a zero-candidate report is not a safety or compliance verdict.",
           "Source package version, protected release admission and installable distribution status retain separate evidence.",
-          "Missing evidence does not pass: exact source, policy, repository provenance and compatibility gates require production-surface review."
+          "Missing evidence does not pass: exact source, policy, repository provenance and compatibility gates require production-surface review.",
+          "Version 1.0.0 was released 21 July 2026 with the defined CLI/API/schema compatibility contract; later source changes remain unreleased, even where the source version string is unchanged."
         ],
         "partner_needs": [],
         "open_fields": [
@@ -8864,36 +8870,54 @@
       ],
       "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
       "dossier": {
-        "review_state": "Public-source editorial passport; current owner review and project-specific partner confirmation remain open.",
-        "purpose": "Local-first, auditable memory for AI agents and knowledge-intensive software: project-file indexing, hybrid retrieval, consolidation and an entity graph, through a CLI, an MCP server and an HTTP API.",
+        "review_state": "Bounded metadata has source-owner approval; detailed acceptance, partner requirements and release/runtime qualification remain open.",
+        "purpose": "Local-first memory software for source-bound recall over project notes, code, research documents and structured findings, exposed through Python, CLI, MCP and HTTP surfaces.",
         "current_surfaces": [],
         "expected_outputs": [
           {
-            "deliverable": "Source-linked retrieval results, retained memory records and the documented consolidation or entity-graph records.",
-            "basis": "Editorial description of the public repository documentation; no new runtime or release verdict.",
+            "deliverable": "Ranked source-bound recall and context through the documented Python, CLI, MCP and HTTP surfaces.",
+            "basis": "Bounded descriptive wording approved by the existing source owner on 23 October 2026; local documentation is distinct from released functionality.",
             "acceptance": "Keep retrieval quality, optional native acceleration and model availability within the selected documented path and its evidence."
+          },
+          {
+            "deliverable": "The locally documented whole-result custody contract exposes authorised original-byte readback; this is a source description, with release and runtime qualification still open.",
+            "basis": "Bounded descriptive wording approved by the existing source owner on 23 October 2026; local documentation is distinct from released functionality.",
+            "acceptance": "whole_result_custody_ack assures custody_only: complete retained bytes under the current grant. It does not independently validate admission, semantic truth, executor effect or workflow success."
           }
         ],
         "inputs": [
-          "Project documents and memory records with their source identity; retrieval queries and the selected indexing configuration."
+          "Queries and selected source records for source-bound recall and context.",
+          "Separately configured whole-result custody accepts complete original result packets under the current grant, as described by the source owner in local committed documentation."
         ],
         "outputs": [
-          "Source-linked retrieval results, retained memory records and the documented consolidation or entity-graph records."
+          "Ranked source-bound recall and context through the documented Python, CLI, MCP and HTTP surfaces.",
+          "The locally documented whole-result custody contract exposes authorised original-byte readback; this is a source description, with release and runtime qualification still open."
         ],
         "acceptance": [
+          "whole_result_custody_ack assures custody_only: complete retained bytes under the current grant. It does not independently validate admission, semantic truth, executor effect or workflow success.",
           "Keep retrieval quality, optional native acceleration and model availability within the selected documented path and its evidence.",
-          "Memory or feedback acknowledgements do not establish autonomous action permission or a completed external effect."
+          "Local source revision be06321f94ebbafcbe5c64e2cfbc4da004f9ac13 is separate from the dated published README capture. Source-owner metadata approval supplies no hosted, release, deployment or whole-product acceptance.",
+          "Whole-result custody is implemented in source (20 October 2026), unreleased; custody-only assurance. It is absent from the released 0.5.0 source tag and was not pushed in this dated owner report."
         ],
         "partner_needs": [],
         "open_fields": [
-          "Owning-source confirmation of detailed acceptance, material sizing and project-specific partner contributions remains open."
+          "Detailed interface acceptance and project-specific partner requirements have not been supplied or certified by the source owner.",
+          "Material sizing, current release/deployment evidence and demonstrated pilot outcomes remain open."
         ],
-        "acceptance_basis": "Source-described requirements and interpretation boundaries; independent owner acceptance remains open.",
+        "acceptance_basis": "Approval covers bounded descriptive metadata, not a certified detailed passport, measured result or whole-product qualification.",
         "as_of": "2026-10-23",
         "source_records": [
           {
             "document": "README.md",
             "sha256": "00196802efb9575ed44e226c2a98e7f95935c93bf2258473c7516facd5c3c080"
+          },
+          {
+            "document": "README.md (local committed source be06321f94ebbafcbe5c64e2cfbc4da004f9ac13; separately qualified)",
+            "sha256": "e036d65365d1076dde51b4395b15efc28eb9d4553573c94baef93551ae22b0b6"
+          },
+          {
+            "document": "docs/guides/RESULT_CUSTODY.md (local committed source be06321f94ebbafcbe5c64e2cfbc4da004f9ac13; separately qualified)",
+            "sha256": "180d7db956cebe4abbfe0245c2cb2ff3f2e79a7f98bd18049d7a16834513ac57"
           }
         ],
         "references": [
@@ -8904,7 +8928,9 @@
             "source_revision": "98eb9bf7a4e8c822292a7b574252960171924a94 / SHA-256 00196802efb9575ed44e226c2a98e7f95935c93bf2258473c7516facd5c3c080",
             "scope": "Public documentation observed on 2026-10-23; source description is distinct from measured qualification."
           }
-        ]
+        ],
+        "inputs_basis": "Source-owner-approved descriptive metadata from exact locally committed documentation; no working-buffer or private Portal body imported.",
+        "outputs_basis": "Whole-result custody remains a locally documented contract; its acknowledgement establishes custody only, with admission, semantic truth, executor effects and workflow success assessed separately."
       }
     },
     {
@@ -15442,7 +15468,7 @@
       "release": "0.1.0",
       "licence": "AGPL-3.0-or-later",
       "as_of": "2026-10-13",
-      "url": null,
+      "url": "https://github.com/anulum/scpn-quantum-control/tree/5180cc8eef1747cf0d29ecba4a7ba7e84ba561e1/oscillatools",
       "packages": [],
       "maturity": "beta",
       "boundary": "",
@@ -15614,7 +15640,7 @@
       "sources": [
         "https://github.com/anulum/scpn-quantum-control/blob/main/docs/ecosystem.md"
       ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "source_note": "Dated group source and research programme synopsis, 13 October 2026. Parent-component path independently verified against the published Quantum Control source object on 23 October 2026; this does not establish a newer package release.",
       "dossier": {
         "review_state": "Architect-authored details requested",
         "purpose": "Classical coupled-phase-oscillator dynamics, observables, sensitivities and control-oriented numerical tools.",
@@ -15643,7 +15669,7 @@
       "release": "0.2.0",
       "licence": "AGPL-3.0-or-later",
       "as_of": "2026-10-13",
-      "url": null,
+      "url": "https://github.com/anulum/scpn-quantum-control/tree/5180cc8eef1747cf0d29ecba4a7ba7e84ba561e1/scpn_quantum_engine",
       "packages": [],
       "maturity": null,
       "boundary": "",
@@ -15724,7 +15750,7 @@
       "sources": [
         "https://github.com/anulum/scpn-quantum-control/blob/main/docs/ecosystem.md"
       ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "source_note": "Dated group source and research programme synopsis, 13 October 2026. Parent-component path independently verified against the published Quantum Control source object on 23 October 2026; this does not establish a newer package release.",
       "dossier": {
         "review_state": "Architect-authored details requested",
         "purpose": "Optional Rust/PyO3 numerical acceleration and native computation used by supported workbench paths.",

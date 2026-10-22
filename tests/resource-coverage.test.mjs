@@ -164,7 +164,7 @@ test(
 );
 
 test(
-  "resource source coverage retains missing groups and content-bound assets",
+  "resource source coverage follows current groups and content-bound assets",
   { timeout: 120000 },
   async () => {
     await withAtlasPage(async (page) => {
@@ -176,6 +176,40 @@ test(
       assert.deepEqual(report.errors, []);
       assert.deepEqual(report.httpFailures, []);
     });
+  },
+);
+
+test(
+  "resource source coverage preserves explicit absence after a real group source omission",
+  { timeout: 120000 },
+  async () => {
+    await withAtlasSourceVariant(
+      ({ resources }) => {
+        resources.needs = resources.needs.filter(
+          (row) => row.group !== "SCIENTIFIC-DISCOVERY-AND-EXPERIMENTATION",
+        );
+      },
+      async (servedBase) => {
+        await withAtlasPage(
+          async (page) => {
+            const report = await checkResourceCoverage(page, {
+              baseUrl: servedBase,
+              navigate: (url) => navigate(page, url),
+              beforeNavigation: () => checkpoint(page),
+            });
+            assert.equal(
+              report.groups.find(
+                (row) =>
+                  row.group === "SCIENTIFIC-DISCOVERY-AND-EXPERIMENTATION" &&
+                  row.view === "needs",
+              )?.count,
+              0,
+            );
+          },
+          { servedBase },
+        );
+      },
+    );
   },
 );
 

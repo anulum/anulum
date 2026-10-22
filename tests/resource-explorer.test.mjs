@@ -102,6 +102,7 @@ test(
       await page
         .locator("#group")
         .selectOption("SCIENTIFIC-DISCOVERY-AND-EXPERIMENTATION");
+      await page.locator("#search").fill("NO_MATCH_7a2b86c1");
       assert.equal(await page.locator("#results article").count(), 0);
       const download = page.locator("#download-selection"),
         before = page.url();

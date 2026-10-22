@@ -1,7 +1,7 @@
 {
   "version": "0.1",
   "captured_at_utc": "2026-10-13T23:51:08.190562+00:00",
-  "source_index_sha256": "b25d78a94968d9a33464580303002bafe08885dae0b7d66c2b9153534e688d99",
+  "source_index_sha256": "3eb4825f1f7571e6e9679705c7d53882918273823cc3f861d3d31a4273a250e5",
   "state": "Mixed-date public documentation captures; refreshed documents carry their own capture dates. Source-content and scientific qualification remain separate.",
   "scope": "Dated full-text captures of public repositories and public parent components only; unpublished repository contents are withheld.",
   "documentation_bindings": 209,
@@ -296,7 +296,10 @@
               "level": 2,
               "title": "Support the project"
             }
-          ]
+          ],
+          "captured_at_utc": "2026-10-22T23:35:58.056776+00:00",
+          "source_label": "README.md",
+          "source_state": "Published repository source: https://github.com/anulum/atlas-reactorum at 3ff48f7c83f551d0c10a659e49540ffb6353f451. Documentary capture; runtime, release and scientific qualification remain separate."
         },
         {
           "label": "ARCHITECTURE.md",
@@ -430,7 +433,10 @@
               "level": 2,
               "title": "Verification"
             }
-          ]
+          ],
+          "captured_at_utc": "2026-10-22T23:35:58.056776+00:00",
+          "source_label": "ARCHITECTURE.md",
+          "source_state": "Published repository source: https://github.com/anulum/atlas-reactorum at 3ff48f7c83f551d0c10a659e49540ffb6353f451. Documentary capture; runtime, release and scientific qualification remain separate."
         },
         {
           "label": "docs/ARCHITECTURE.md",
@@ -567,7 +573,10 @@
               "level": 2,
               "title": "Verification"
             }
-          ]
+          ],
+          "captured_at_utc": "2026-10-22T23:35:58.056776+00:00",
+          "source_label": "docs/ARCHITECTURE.md",
+          "source_state": "Published repository source: https://github.com/anulum/atlas-reactorum at 3ff48f7c83f551d0c10a659e49540ffb6353f451. Documentary capture; runtime, release and scientific qualification remain separate."
         },
         {
           "label": "ROADMAP.md",
@@ -692,7 +701,10 @@
               "level": 2,
               "title": "Explicitly not planned"
             }
-          ]
+          ],
+          "captured_at_utc": "2026-10-22T23:35:58.056776+00:00",
+          "source_label": "ROADMAP.md",
+          "source_state": "Published repository source: https://github.com/anulum/atlas-reactorum at 3ff48f7c83f551d0c10a659e49540ffb6353f451. Documentary capture; runtime, release and scientific qualification remain separate."
         },
         {
           "label": "VALIDATION.md",
@@ -1208,7 +1220,10 @@
               "level": 2,
               "title": "Research comparison restoration"
             }
-          ]
+          ],
+          "captured_at_utc": "2026-10-22T23:35:58.056776+00:00",
+          "source_label": "VALIDATION.md",
+          "source_state": "Published repository source: https://github.com/anulum/atlas-reactorum at 3ff48f7c83f551d0c10a659e49540ffb6353f451. Documentary capture; runtime, release and scientific qualification remain separate."
         },
         {
           "label": "pyproject.toml",
@@ -1418,7 +1433,10 @@
             "exclude_lines = []",
             ""
           ],
-          "chapters": []
+          "chapters": [],
+          "captured_at_utc": "2026-10-22T23:35:58.056776+00:00",
+          "source_label": "pyproject.toml",
+          "source_state": "Published repository source: https://github.com/anulum/atlas-reactorum at 3ff48f7c83f551d0c10a659e49540ffb6353f451. Documentary capture; runtime, release and scientific qualification remain separate."
         }
       ]
     },
@@ -42638,7 +42656,10 @@
               "level": 2,
               "title": "Licence"
             }
-          ]
+          ],
+          "captured_at_utc": "2026-10-22T23:35:58.056776+00:00",
+          "source_label": "README.md",
+          "source_state": "Published repository source: https://github.com/anulum/synapse-policy-check-action at dccd67c1e45dc3a328b3700df7d1acfd117792af. Documentary capture; runtime, release and scientific qualification remain separate."
         },
         {
           "label": "pyproject.toml",
@@ -42679,7 +42700,10 @@
             "files = [\"tests\"]",
             ""
           ],
-          "chapters": []
+          "chapters": [],
+          "captured_at_utc": "2026-10-22T23:35:58.056776+00:00",
+          "source_label": "pyproject.toml",
+          "source_state": "Published repository source: https://github.com/anulum/synapse-policy-check-action at dccd67c1e45dc3a328b3700df7d1acfd117792af. Documentary capture; runtime, release and scientific qualification remain separate."
         }
       ]
     },
@@ -58755,7 +58779,10 @@
               "level": 2,
               "title": "Citation"
             }
-          ]
+          ],
+          "captured_at_utc": "2026-10-22T23:35:58.056776+00:00",
+          "source_label": "oscillatools/README.md",
+          "source_state": "Published repository source: https://github.com/anulum/scpn-quantum-control at 5180cc8eef1747cf0d29ecba4a7ba7e84ba561e1. Documentary capture; runtime, release and scientific qualification remain separate."
         },
         {
           "label": "pyproject.toml",
@@ -59006,7 +59033,10 @@
             "exclude_also = [\"if TYPE_CHECKING:\"]",
             ""
           ],
-          "chapters": []
+          "chapters": [],
+          "captured_at_utc": "2026-10-22T23:35:58.056776+00:00",
+          "source_label": "oscillatools/pyproject.toml",
+          "source_state": "Published repository source: https://github.com/anulum/scpn-quantum-control at 5180cc8eef1747cf0d29ecba4a7ba7e84ba561e1. Documentary capture; runtime, release and scientific qualification remain separate."
         }
       ]
     },
@@ -59144,7 +59174,10 @@
               "level": 2,
               "title": "Licence"
             }
-          ]
+          ],
+          "captured_at_utc": "2026-10-22T23:35:58.056776+00:00",
+          "source_label": "scpn_quantum_engine/README.md",
+          "source_state": "Published repository source: https://github.com/anulum/scpn-quantum-control at 5180cc8eef1747cf0d29ecba4a7ba7e84ba561e1. Documentary capture; runtime, release and scientific qualification remain separate."
         },
         {
           "label": "pyproject.toml",
@@ -59197,14 +59230,17 @@
             "features = [\"pyo3/extension-module\"]",
             ""
           ],
-          "chapters": []
+          "chapters": [],
+          "captured_at_utc": "2026-10-22T23:35:58.056776+00:00",
+          "source_label": "scpn_quantum_engine/pyproject.toml",
+          "source_state": "Published repository source: https://github.com/anulum/scpn-quantum-control at 5180cc8eef1747cf0d29ecba4a7ba7e84ba561e1. Documentary capture; runtime, release and scientific qualification remain separate."
         },
         {
           "label": "Cargo.toml",
           "format": "toml",
-          "source_sha256": "a97e8efa36eef9b32e0c63996f56653074226c61a6cb62b5c3bfde616afd5c84",
+          "source_sha256": "4c62703ba3a51abc0abd6506c75c5005ef9c85165cc7ee5effc9f037a36b2dfd",
           "source_bytes": 2790,
-          "projection_sha256": "a97e8efa36eef9b32e0c63996f56653074226c61a6cb62b5c3bfde616afd5c84",
+          "projection_sha256": "4c62703ba3a51abc0abd6506c75c5005ef9c85165cc7ee5effc9f037a36b2dfd",
           "private_references_withheld": 0,
           "lines": [
             "# SPDX-License-Identifier: AGPL-3.0-or-later",
@@ -59248,9 +59284,9 @@
             "latency-runner = [\"dep:reqwest\"]",
             "",
             "[dependencies]",
-            "pyo3 = { version = \"0.29\", default-features = false, features = [\"macros\"] }",
+            "pyo3 = { version = \"0.30\", default-features = false, features = [\"macros\"] }",
             "ndarray = \"0.16\"",
-            "numpy = \"0.29\"",
+            "numpy = \"0.30\"",
             "num-complex = \"0.4\"",
             "rand = \"0.10\"",
             "rayon = \"1.10\"",
@@ -59285,7 +59321,10 @@
             "all = { level = \"deny\", priority = -1 }",
             ""
           ],
-          "chapters": []
+          "chapters": [],
+          "captured_at_utc": "2026-10-22T23:35:58.056776+00:00",
+          "source_label": "scpn_quantum_engine/Cargo.toml",
+          "source_state": "Published repository source: https://github.com/anulum/scpn-quantum-control at 5180cc8eef1747cf0d29ecba4a7ba7e84ba561e1. Documentary capture; runtime, release and scientific qualification remain separate."
         }
       ]
     },

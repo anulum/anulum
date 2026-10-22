@@ -32,6 +32,20 @@ Director-AI's bounded Core wording has source-owner approval. Quantum Control
 links to its public repository and documentation; its detailed passport and
 later local research remain separately qualified.
 
+The component-source reconciliation also checks Atlas Reactorum, the Synapse
+Policy Check Action and two packages within Quantum Control against published
+source revisions. Their reading views show the original parent paths and exact
+revision scope. Remanentia has source-owner-approved descriptive metadata for
+its locally documented result-custody contract; custody acknowledgement,
+release evidence and complete workflow success remain separately qualified.
+
+All six groups now have detailed resource records. Discovery adds 28 dated
+preliminary needs, 25 acquisition categories and 17 role/space records from its
+content-approved projection. These are requirements and alternative scenarios,
+not equipment purchases, staff appointments or leased premises. Its 13 October
+source assumptions retain their date; the 22 October content review supplies no
+measured workload, current holdings or scientific qualification.
+
 Repository documents marked as withheld are excluded from the public reading
 view. Their project identities may remain in the map. The generator rejects
 restored source text, excerpts and declarations for these restricted entries.
@@ -129,8 +143,8 @@ observations, independent of resource and budget data.
 | ---------------------------------------- | ------------------------------------------------------------------ | ---------------------: |
 | Profile images across all five languages | Four generated header/map SVGs, 91 badge SVGs and the footer image |                621,868 |
 | Dated catalogue provenance               | `assets/catalogue-source.json`, plus its ownership sidecar         | 114,267 before sidecar |
-| Interactive site snapshot                | 77 manifest-listed assets                                          |             32,956,709 |
-| Main interactive entry page              | `index.html`, including its eight embedded datasets                |             10,158,793 |
+| Interactive site snapshot                | 77 manifest-listed assets                                          |             33,223,387 |
+| Main interactive entry page              | `index.html`, including its eight embedded datasets                |             10,245,338 |
 
 The HTML, JavaScript modules, source-document JSON, illustrations and figure
 downloads belong to the separately hosted explorer. The full snapshot repeats
