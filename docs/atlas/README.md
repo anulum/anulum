@@ -60,6 +60,12 @@ does not establish delivered hosting behaviour. Static illustrations retain
 their dated inventories. New registry entries and passport details are
 available through the interactive data and project views.
 
+The CONTROL and Phase Orchestrator passports incorporate their project
+source owners’ dated published-source responses. Pinned revisions and file
+fingerprints distinguish software interfaces and review artefacts from physical
+acceptance. Missing hardware sizing, facilities, partner agreements and delivery
+commitments remain explicit.
+
 Repository documents marked as withheld are excluded from the public reading
 view. Their project identities may remain in the map. The generator rejects
 restored source text, excerpts and declarations for these restricted entries.
@@ -157,8 +163,8 @@ observations, independent of resource and budget data.
 | ---------------------------------------- | ------------------------------------------------------------------ | ---------------------: |
 | Profile images across all five languages | Four generated header/map SVGs, 91 badge SVGs and the footer image |                621,868 |
 | Dated catalogue provenance               | `assets/catalogue-source.json`, plus its ownership sidecar         | 114,267 before sidecar |
-| Interactive site snapshot                | 77 manifest-listed assets                                          |             33,472,254 |
-| Main interactive entry page              | `index.html`, including its eight embedded datasets                |             10,325,289 |
+| Interactive site snapshot                | 77 manifest-listed assets                                          |             33,508,072 |
+| Main interactive entry page              | `index.html`, including its eight embedded datasets                |             10,336,860 |
 
 The HTML, JavaScript modules, source-document JSON, illustrations and figure
 downloads belong to the separately hosted explorer. The full snapshot repeats

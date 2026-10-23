@@ -1189,7 +1189,7 @@
       }
     }
   },
-  "version": "0.13+funding-state.1+portfolio-refresh.1+owner-source.1+discovery-resources.1+passport-coherence.1+registry-reconciliation.1+hushline-source.1",
+  "version": "0.13+funding-state.1+portfolio-refresh.1+owner-source.1+discovery-resources.1+passport-coherence.1+registry-reconciliation.1+hushline-source.1+control-spo-owner.1",
   "content_state": "Projects and programme construction in progress; funding-route application states are separately dated and qualified.",
   "groups": [
     {
@@ -7668,7 +7668,7 @@
       "sources": [],
       "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
       "dossier": {
-        "review_state": "Editorial passport reconciled with its existing cited technical guide; owner-specific acceptance and partner specifications remain open.",
+        "review_state": "Dated public-source response from the project source owner incorporated; interface qualification, quantified resources, partner agreements and physical acceptance remain open.",
         "purpose": "Synchronisation analysis and evaluation of early-warning detectors on coupled phase-oscillator dynamics, with a Rust kernel.",
         "current_surfaces": [],
         "expected_outputs": [
@@ -7696,30 +7696,39 @@
         "inputs": [
           "A validated domainpack defines the binding, coupling matrix, geometry constraints and imprint model before simulation.",
           "Waveforms, discrete events and state sequences use different phase extractors. Domain aliases are resolved explicitly rather than making these channel meanings interchangeable.",
-          "Monitor outputs and boundary/regime state feed the selected rules and bounded knob projection inside the model."
+          "Monitor outputs and boundary/regime state feed the selected rules and bounded knob projection inside the model.",
+          "A domain binding YAML is validated as BindingSpec with identity/version, safety tier, sample and control periods, layers, coupling, drivers, objectives, boundaries and actuator mappings; optional channel/group and amplitude metadata remain explicit. The validation tier defaults to scaffold.",
+          "Physical producer data needs its own acquisition, calibration, clock, validity, uncertainty and validation contract. A domainpack template supplies neither an externally validated detector nor a licensed partner dataset."
         ],
         "outputs": [
           "The documented step loop produces model state and synchrony/observer values under the selected binding and integration method.",
           "Regime and supervisor decisions map into constrained model-knob updates. External hardware admission remains separate.",
           "SHA-256-chained JSONL records preserve what the model observed, proposed and replayed for review.",
-          "Final model state/coherence histories, projected model proposals, optional audit streams and separately typed reactor-semantic review records are different outputs. Each keeps its source, representation and evidence boundary; a hash-valid result does not collapse them into physical measurement or an actuator command."
+          "Final model state/coherence histories, projected model proposals, optional audit streams and separately typed reactor-semantic review records are different outputs. Each keeps its source, representation and evidence boundary; a hash-valid result does not collapse them into physical measurement or an actuator command.",
+          "The published runtime exposes state, configuration, health, metrics and studio-feed observations plus a WebSocket stream. Step and reset are separate mutations. Runtime summaries, SHA-256-chained JSONL audit, optional protobuf records and deterministic replay/report artefacts retain their individual contracts."
         ],
         "acceptance": [
           "A reusable cycle description does not make SPO a universal controller. Embedding requires domain and adapter evidence.",
           "Quantum and neuromorphic compiler outputs remain handoff artefacts until a verified external hardware execution pipeline is attached.",
           "The source's review-only proposal boundary must survive the monitor/supervisor/mapper data flow.",
-          "The generic research CLI starts the seeded model and rejects non-research safety tiers. Its simulation core leaves safety-tier enforcement to callers. Signal extraction, optional observed-twin confidence, hardware/runtime qualification and producer-specific reactor ingress require their own selected source and evidence. Backend presence or a declared domain does not settle those requirements."
+          "The generic research CLI starts the seeded model and rejects non-research safety tiers. Its simulation core leaves safety-tier enforcement to callers. Signal extraction, optional observed-twin confidence, hardware/runtime qualification and producer-specific reactor ingress require their own selected source and evidence. Backend presence or a declared domain does not settle those requirements.",
+          "The research quickstart is separate from production power_grid execution, which requires its formal-export/certified-controller pipeline. Native admission for spo serve requires actual phase/amplitude public-engine analytical checks and an identifiable, versioned, hashable native library; explicit Python-only operation is a separate option.",
+          "The selected deployment backend/profile, dependency/image identity, health behaviour and deterministic audit/replay need evidence and an explicit actuator approval policy. Documentary obligations do not establish physical deployment, live control, partner acceptance or independent scientific validation."
         ],
         "partner_needs": [],
         "open_fields": [
-          "Owning-group confirmation of interface acceptance, current resource sizing and project-specific partner contributions remains open."
+          "A named contracted integration partner, approved project-specific sensors/devices/materials or bill of materials, dataset rights and field-instrument contracts are not supplied by the reviewed source set.",
+          "Accepted CPU/RAM/GPU/storage/network and concurrency sizing requires domain/oscillator counts, cadence/latency, ingest/retention and backend/profile assumptions. One stateful server worker and one SPO instance per domain are topology constraints, not host sizing or a reservation.",
+          "Room/rack/power/cooling/noise/location allocations, contracted deliverable quantities, outward delivery dates and a stakeholder acceptance owner remain missing."
         ],
-        "acceptance_basis": "Source-described qualification boundaries, not an independently accepted interface specification or evidence that these gates have passed.",
+        "acceptance_basis": "Source-described qualification boundaries, not an independently accepted interface specification or evidence that these gates have passed. Source-owner documentary response dated 23 October 2026, independently checked against pinned published revision e58f64439936f54ad87140842011550c47e523b7. Original programme deliverables and earlier source records are retained. No runtime job, new review approval or physical acceptance is supplied.",
         "limitations": [
           "A reusable cycle description does not make SPO a universal controller. Embedding requires domain and adapter evidence.",
           "Quantum and neuromorphic compiler outputs remain handoff artefacts until a verified external hardware execution pipeline is attached.",
           "The source's review-only proposal boundary must survive the monitor/supervisor/mapper data flow.",
-          "The generic research CLI starts the seeded model and rejects non-research safety tiers. Its simulation core leaves safety-tier enforcement to callers. Signal extraction, optional observed-twin confidence, hardware/runtime qualification and producer-specific reactor ingress require their own selected source and evidence. Backend presence or a declared domain does not settle those requirements."
+          "The generic research CLI starts the seeded model and rejects non-research safety tiers. Its simulation core leaves safety-tier enforcement to callers. Signal extraction, optional observed-twin confidence, hardware/runtime qualification and producer-specific reactor ingress require their own selected source and evidence. Backend presence or a declared domain does not settle those requirements.",
+          "The research quickstart is separate from production power_grid execution, which requires its formal-export/certified-controller pipeline. Native admission for spo serve requires actual phase/amplitude public-engine analytical checks and an identifiable, versioned, hashable native library; explicit Python-only operation is a separate option.",
+          "The selected deployment backend/profile, dependency/image identity, health behaviour and deterministic audit/replay need evidence and an explicit actuator approval policy. Documentary obligations do not establish physical deployment, live control, partner acceptance or independent scientific validation."
         ],
         "as_of": "2026-10-23",
         "source_records": [
@@ -7750,8 +7759,42 @@
           {
             "document": "src/scpn_phase_orchestrator/runtime/simulation.py @ 2026-10-18T02:36:01.372344+00:00",
             "sha256": "f215134303bc25c8d9b9a0ee25e121618bcaedffb1d26eef429ea568a2465df1"
+          },
+          {
+            "document": "SCPN-PHASE-ORCHESTRATOR / README.md (published revision e58f64439936f54ad87140842011550c47e523b7; checked 2026-10-23; last path change efeb0b9b51a1772ea1423191d25cc67fd5e4f63c 2026-10-12T21:08:26+02:00)",
+            "sha256": "d8c48d9aec142fdceba2ca77817cd92152aafa78d8c0d0e99276fa5a35fdb318"
+          },
+          {
+            "document": "SCPN-PHASE-ORCHESTRATOR / docs/getting-started/quickstart.md (published revision e58f64439936f54ad87140842011550c47e523b7; checked 2026-10-23; last path change 6eff66b0add44d8f2c0c042a086193d13ecab876 2026-07-26T02:41:52+02:00)",
+            "sha256": "2528236e90aef18df5f957848a23a42c8b3616b2b856f8fd0afc37da6d549f32"
+          },
+          {
+            "document": "SCPN-PHASE-ORCHESTRATOR / docs/reference/api/binding.md (published revision e58f64439936f54ad87140842011550c47e523b7; checked 2026-10-23; last path change 51aa08d14bd4e6336cc42d7d14f869ae58b4180b 2026-09-30T03:45:28+02:00)",
+            "sha256": "2c5be80e1aaad00178782b1faa841fff5439eea5ff8251f0835eb3a1b3be9964"
+          },
+          {
+            "document": "SCPN-PHASE-ORCHESTRATOR / src/scpn_phase_orchestrator/binding/types.py (published revision e58f64439936f54ad87140842011550c47e523b7; checked 2026-10-23; last path change 91fcdc613bf293dc80add688a6301d89ffbaf163 2026-07-11T02:53:46+02:00)",
+            "sha256": "4575954d9196307bd2868e752922a40af8553c929f4d29ed735eb6b4f7dcc0c3"
+          },
+          {
+            "document": "SCPN-PHASE-ORCHESTRATOR / docs/specs/binding_spec.schema.json (published revision e58f64439936f54ad87140842011550c47e523b7; checked 2026-10-23; last path change 664c8ea1fc15558b9da57088329a99c630be803f 2026-07-02T01:35:44+02:00)",
+            "sha256": "a8700c1268d9ff699a2b619c0a0a50f30d81a0f1c4c837896a8f646dbd25cf0a"
+          },
+          {
+            "document": "SCPN-PHASE-ORCHESTRATOR / docs/reference/api/runtime.md (published revision e58f64439936f54ad87140842011550c47e523b7; checked 2026-10-23; last path change b9740d416fdea962ab2b26a846a8fda6da87d4bb 2026-10-04T13:13:55+02:00)",
+            "sha256": "06ca0f6eae2b4a14cc067026594dbf53b16146c2bc5097afba3fb98f80ae6f2a"
+          },
+          {
+            "document": "SCPN-PHASE-ORCHESTRATOR / docs/guide/production.md (published revision e58f64439936f54ad87140842011550c47e523b7; checked 2026-10-23; last path change 6ac356735cdd065ae44e4a825724c385c95f8995 2026-10-04T03:48:34+02:00)",
+            "sha256": "e918733f7e3bf9025eef94d16a1737d89e7969e1d33a3c8c8f1f953adb40fcaf"
+          },
+          {
+            "document": "SCPN-PHASE-ORCHESTRATOR / docs/guide/hardware_deployment.md (published revision e58f64439936f54ad87140842011550c47e523b7; checked 2026-10-23; last path change deeea22e552bf9550812536e8423d290a282f031 2026-09-30T10:44:11+02:00)",
+            "sha256": "69b6e15ced913a313b1b0e8f20e9e56d4907ae55c64a06fc0d26427f4e74c9e5"
           }
-        ]
+        ],
+        "inputs_basis": "Source-owner documentary response dated 23 October 2026, independently checked against pinned published revision e58f64439936f54ad87140842011550c47e523b7. Original programme deliverables and earlier source records are retained. No runtime job, new review approval or physical acceptance is supplied.",
+        "outputs_basis": "Source-owner documentary response dated 23 October 2026, independently checked against pinned published revision e58f64439936f54ad87140842011550c47e523b7. Original programme deliverables and earlier source records are retained. No runtime job, new review approval or physical acceptance is supplied."
       }
     },
     {
@@ -7994,7 +8037,7 @@
       "sources": [],
       "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
       "dossier": {
-        "review_state": "Editorial passport reconciled with its existing cited technical guide; owner-specific acceptance and partner specifications remain open.",
+        "review_state": "Dated public-source response from the project source owner incorporated; interface qualification, quantified resources, partner agreements and physical acceptance remain open.",
         "purpose": "Compiler from stochastic Petri nets to controllers with runtime contracts, and plasma-control research paths.",
         "current_surfaces": [],
         "expected_outputs": [
@@ -8022,30 +8065,36 @@
         "inputs": [
           "Petri-net structure, compiled network state and explicit observation/action/target records define the controller problem.",
           "The documented flow consumes diagnostics and ControlObservation records through control-facing equilibrium/transport and replay surfaces.",
-          "Regime-assessment and downstream evidence pass separate digest-bound gates. The documented MIF assessment remains abstaining/non-actionable rather than an actuation permission."
+          "Regime-assessment and downstream evidence pass separate digest-bound gates. The documented MIF assessment remains abstaining/non-actionable rather than an actuation permission.",
+          "The published semantic-admission interface takes canonical SPO handoff bytes, expected digests and source revision, with explicit clock, freshness and calibration policy. Petri-net compilation and the pulsed scheduler use their own net structures or measurement/guard values; these interfaces do not define one universal plant model."
         ],
         "outputs": [
           "The source describes SNN/control artefacts, control actions and bounded marking, transition and temporal-logic evidence.",
           "Checksum-bound JSON/Markdown records capture the selected control and validation experiment rather than substituting a prose claim for observed output.",
           "The intended value is evidence for reviewing a controller before hardware promotion. Adapter descriptions do not turn those records into a fielded PCS.",
-          "A controller tick returns configured bounded action channels. Optional controller logs, exact-current execution packets/checkpoints and runtime-bound formal certificates are separate records with distinct identities and prerequisites. Their presence does not merge software replay, timing, physical evidence and facility approval into one result."
+          "A controller tick returns configured bounded action channels. Optional controller logs, exact-current execution packets/checkpoints and runtime-bound formal certificates are separate records with distinct identities and prerequisites. Their presence does not merge software replay, timing, physical evidence and facility approval into one result.",
+          "Semantic admission emits a sealed scpn-control.reactor-semantic-admission.v1 review decision with review_only=true, actionable=false, refusal codes and digests. The pulsed scheduler separately returns an adjacent lifecycle transition or a hold reason. Neither record grants physical actuator authority."
         ],
         "acceptance": [
           "The source identifies immutable synthetic fixtures as data/control-path evidence, not measured DIII-D replay or real-world physics validation.",
           "Petri-net/logic/formal-model results and runtime assertions do not certify controller code, plant physics or facility safety.",
           "A loopback software timing figure cannot be compared as if it included a field plant's diagnostic, I/O and actuator path.",
-          "Inhibitor-net export, persistent neuron profiles, runtime certificates and strict host admission each have explicit compatibility requirements. A successful source reader or a bounded software proof cannot substitute for current installed-profile verification, live host evidence or independent facility acceptance."
+          "Inhibitor-net export, persistent neuron profiles, runtime certificates and strict host admission each have explicit compatibility requirements. A successful source reader or a bounded software proof cannot substitute for current installed-profile verification, live host evidence or independent facility acceptance.",
+          "For the selected component and claim level, retain exact traceability, matching validators, source units, tolerances and validity domain. Claims about external codes, measured shots or a target host require the corresponding evidence; software admission does not establish plant, PCS, protection or safety certification."
         ],
         "partner_needs": [],
         "open_fields": [
-          "Owning-group confirmation of interface acceptance, current resource sizing and project-specific partner contributions remains open."
+          "Workload-specific CPU/GPU-hours, peak RAM/VRAM, concurrency, retained storage/backup/egress and accepted target-hardware timing remain unsized. Published dataset payload sizes and deployment examples are not project allocations.",
+          "Project-specific rooms, rack count, electrical power, cooling, network and physical-safety requirements remain unallocated.",
+          "No signed partner, committed facility slot, equipment agreement, delivery schedule or material procurement is established by the bounded published-source review. Dataset, target-host timing, authorised replay and independent-review contributions require their own rights and acceptance agreements."
         ],
-        "acceptance_basis": "Source-described qualification boundaries, not an independently accepted interface specification or evidence that these gates have passed.",
+        "acceptance_basis": "Source-described qualification boundaries, not an independently accepted interface specification or evidence that these gates have passed. Source-owner documentary response dated 23 October 2026, independently checked against pinned published revision 288243a09ec557147f0b917590238a7f62fbefbb. Original programme deliverables and earlier source records are retained. No runtime job, new review approval or physical acceptance is supplied.",
         "limitations": [
           "The source identifies immutable synthetic fixtures as data/control-path evidence, not measured DIII-D replay or real-world physics validation.",
           "Petri-net/logic/formal-model results and runtime assertions do not certify controller code, plant physics or facility safety.",
           "A loopback software timing figure cannot be compared as if it included a field plant's diagnostic, I/O and actuator path.",
-          "Inhibitor-net export, persistent neuron profiles, runtime certificates and strict host admission each have explicit compatibility requirements. A successful source reader or a bounded software proof cannot substitute for current installed-profile verification, live host evidence or independent facility acceptance."
+          "Inhibitor-net export, persistent neuron profiles, runtime certificates and strict host admission each have explicit compatibility requirements. A successful source reader or a bounded software proof cannot substitute for current installed-profile verification, live host evidence or independent facility acceptance.",
+          "For the selected component and claim level, retain exact traceability, matching validators, source units, tolerances and validity domain. Claims about external codes, measured shots or a target host require the corresponding evidence; software admission does not establish plant, PCS, protection or safety certification."
         ],
         "as_of": "2026-10-23",
         "source_records": [
@@ -8076,8 +8125,50 @@
           {
             "document": "src/scpn_control/scpn/controller.py @ 2026-10-18T01:37:59.965155+00:00",
             "sha256": "0316ba5ba55e8b0e3006a0b4ceb0382ac2e894db080a0fc6f7725cb167035fcf"
+          },
+          {
+            "document": "SCPN-CONTROL / README.md (published revision 288243a09ec557147f0b917590238a7f62fbefbb; checked 2026-10-23; last path change 2026-10-12T00:20:45+02:00)",
+            "sha256": "74a62716e688b8a54c2801fd9dc029974d9296e428be996aa42f03885db9b8b9"
+          },
+          {
+            "document": "SCPN-CONTROL / docs/architecture.md (published revision 288243a09ec557147f0b917590238a7f62fbefbb; checked 2026-10-23; last path change 2026-09-19T13:31:11+02:00)",
+            "sha256": "d5846d0cba2c46878ebc1565155cf022820af1b6e2939d85a433f4674cae5f06"
+          },
+          {
+            "document": "SCPN-CONTROL / docs/production_readiness.md (published revision 288243a09ec557147f0b917590238a7f62fbefbb; checked 2026-10-23; last path change 2026-07-09T18:07:23+02:00)",
+            "sha256": "e8a1b76854be695c3b4fb040a0754bf9d8c2c77c0ac53c347aea16546ce98930"
+          },
+          {
+            "document": "SCPN-CONTROL / docs/known_limitations.md (published revision 288243a09ec557147f0b917590238a7f62fbefbb; checked 2026-10-23; last path change 2026-09-19T13:31:11+02:00)",
+            "sha256": "26e663b0a6becedaeb9f0f6b55a44b032adc555ae037ec98a0291213561110d0"
+          },
+          {
+            "document": "SCPN-CONTROL / docs/compute_validation_financing.md (published revision 288243a09ec557147f0b917590238a7f62fbefbb; checked 2026-10-23; last path change 2026-08-27T22:24:27+02:00)",
+            "sha256": "706fe9006c2489183a4571679bf5bd02931df005bf350723d059b8a6d0b6dd10"
+          },
+          {
+            "document": "SCPN-CONTROL / docs/control/reactor_semantic_admission.md (published revision 288243a09ec557147f0b917590238a7f62fbefbb; checked 2026-10-23; last path change 2026-09-19T13:31:11+02:00)",
+            "sha256": "ee2634de9e7e883aa69a03c6d364843f00bf8a423404431dd058f4ba8813a747"
+          },
+          {
+            "document": "SCPN-CONTROL / docs/control/runtime_admission.md (published revision 288243a09ec557147f0b917590238a7f62fbefbb; checked 2026-10-23; last path change 2026-10-05T15:41:48+02:00)",
+            "sha256": "eb05f60f19ea8f7107f554877586e53fb8e2b9ab797ee254a624f69756ac9dfb"
+          },
+          {
+            "document": "SCPN-CONTROL / docs/control/pulsed_scenario_scheduler.md (published revision 288243a09ec557147f0b917590238a7f62fbefbb; checked 2026-10-23; last path change 2026-07-09T18:07:23+02:00)",
+            "sha256": "16dee0e7b282677abf31415886ad3df4df3b46edb853a1437f23c425477ffefc"
+          },
+          {
+            "document": "SCPN-CONTROL / docs/deployment.md (published revision 288243a09ec557147f0b917590238a7f62fbefbb; checked 2026-10-23; last path change 2026-08-29T23:52:28+02:00)",
+            "sha256": "58161029050a975048d1028d13460da0b3b249cee993cb7630a560cb6fd2aa5b"
+          },
+          {
+            "document": "SCPN-CONTROL / docs/_generated/capability_manifest.json (published revision 288243a09ec557147f0b917590238a7f62fbefbb; checked 2026-10-23; last path change 2026-10-12T00:05:25+02:00)",
+            "sha256": "cdb3bec34dd330e6dc8167035fa80e0cff82e198004e8b7866d67025c348d510"
           }
-        ]
+        ],
+        "inputs_basis": "Source-owner documentary response dated 23 October 2026, independently checked against pinned published revision 288243a09ec557147f0b917590238a7f62fbefbb. Original programme deliverables and earlier source records are retained. No runtime job, new review approval or physical acceptance is supplied.",
+        "outputs_basis": "Source-owner documentary response dated 23 October 2026, independently checked against pinned published revision 288243a09ec557147f0b917590238a7f62fbefbb. Original programme deliverables and earlier source records are retained. No runtime job, new review approval or physical acceptance is supplied."
       }
     },
     {
