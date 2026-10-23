@@ -370,6 +370,14 @@ function guidedPaths() {
   const figures = el("section");
   figures.id = "figures";
   figures.append(el("h2", "Systems, funding and conditional outputs"));
+  figures.append(
+    el(
+      "p",
+      "These illustrations retain their 13 October 2026 source scope. The interactive map and project passports include later dated updates. Staffing, funding and schedule drawings remain conditional scenarios.",
+      "caption",
+    ),
+    link("Explore the current inventory", href({ view: "map" })),
+  );
   const grid = el("div", undefined, "figure-grid");
   for (const [file, title, note] of [
     [
@@ -419,6 +427,10 @@ function history() {
   const timeline = el("ol", undefined, "update-list");
   for (const [title, description] of [
     [
+      "23 October 2026 · portfolio and resource-source refresh",
+      "Updated published-source captures and project interface descriptions, incorporated the approved Discovery resource projection, and added official references for existing funding routes. Original source dates, preliminary estimates and publication exclusions remain explicit. These changes establish no new scientific result, resource acquisition or funding award.",
+    ],
+    [
       "13 October 2026 · reader v0.17",
       "Added an interactive map with programme, entry-family and project levels; project lookup, pan/zoom, keyboard navigation and separately selectable source/proposal relation layers. Source snapshot remains v0.13.",
     ],
@@ -428,11 +440,11 @@ function history() {
     ],
     [
       "13 October 2026 · source snapshot v0.13",
-      "142 source requirements, 24 owner feedback panels, nine Quantum partner profiles and current F4/F5 source figures. Estimates retain their own scope; separate budget scenarios are not combined.",
+      "142 source requirements, 24 owner feedback panels, nine Quantum partner profiles and dated F4/F5 source figures. Estimates retain their own scope; separate budget scenarios are not combined.",
     ],
     [
-      "Discovery resource input · dedicated review pending",
-      "28 additional group-wide needs and associated categories/people/space scenarios remain in the private review draft. They are not incorporated into the released source projection here.",
+      "13 October 2026 · Discovery input before content review",
+      "The additional Discovery needs and acquisition/people/space scenarios were initially awaiting content review. Their approved dated projection is now included. The original preliminary estimates have not become measured capacity, equipment holdings or staff appointments.",
     ],
   ]) {
     const item = el("li");

@@ -19,11 +19,12 @@ The version and exact asset fingerprints are in [atlas-manifest.json](atlas-mani
 Individual source documents retain their own capture dates and fingerprints.
 A newer atlas snapshot does not make an older source document current.
 
-The 23 October portfolio refresh checks the published main revisions of the
-35 registered public repositories. Refreshed reading documents carry their
-own capture dates and fingerprints; independently cited technical documents
-retain their earlier captures. Local changes and unpublished experiments
-are separate from these published-source observations.
+The 23 October portfolio refresh checks published revisions across the
+registry's 38 public repositories and the separately verified public HushLine
+repository. Refreshed reading documents carry their own capture dates and
+fingerprints; independently cited technical documents retain their earlier
+captures. Local changes and unpublished experiments are separate from these
+published-source observations.
 
 The Control and Phase Orchestrator passports now reuse their existing cited
 technical explanations. Other updated passports distinguish source-described
@@ -112,8 +113,10 @@ the original source record is also retained in a JSON column. Staffing and room
 estimates keep their original values and units. These are source records and
 acquisition alternatives, not a reconciled purchase total.
 
-For a static reading view, open the [complete SVG map](F2_complete_project_atlas_v0.6.svg)
-or [technical atlas](atlas_full.html). JSON downloads are linked in the explorer.
+The [technical atlas](atlas_full.html) uses the current project inventory.
+The [13 October 2026 SVG poster](F2_complete_project_atlas_v0.6.svg) retains its
+dated source scope, as do the systems, funding and timeline illustrations.
+JSON downloads are linked in the explorer.
 
 Verify the integrated snapshot from the repository root:
 
@@ -169,7 +172,7 @@ observations, independent of resource and budget data.
 | ---------------------------------------- | ------------------------------------------------------------------ | ---------------------: |
 | Profile images across all five languages | Four generated header/map SVGs, 91 badge SVGs and the footer image |                621,868 |
 | Dated catalogue provenance               | `assets/catalogue-source.json`, plus its ownership sidecar         | 114,267 before sidecar |
-| Interactive site snapshot                | 77 manifest-listed assets                                          |             33,526,750 |
+| Interactive site snapshot                | 77 manifest-listed assets                                          |             33,529,868 |
 | Main interactive entry page              | `index.html`, including its eight embedded datasets                |             10,342,851 |
 
 The HTML, JavaScript modules, source-document JSON, illustrations and figure
@@ -230,7 +233,7 @@ work; reused architecture references preserve their earlier source date. Concret
 board, integration and instrumentation roles are requirements, not acquisitions.
 
 Both resource views show coverage of the complete dated inventory before filters,
-including groups with no supplied detail and explicitly unresolved quantity fields.
+including each group's supplied detail and explicitly unresolved quantity fields.
 Their links open each group and inventory view. Record counts and acquisition
 alternatives do not establish equipment counts, staffing, floor area or a budget.
 
