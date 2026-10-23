@@ -66,6 +66,12 @@ fingerprints distinguish software interfaces and review artefacts from physical
 acceptance. Missing hardware sizing, facilities, partner agreements and delivery
 commitments remain explicit.
 
+Funding-route passports distinguish published programme schedules from our
+dated application records. Official work-programme references identify the
+energy, materials-discovery and frontier-AI topics; the Foresight RFP retains
+its stated deadline and time zone. Programme dates and support types do not
+establish eligibility, a submission or an award.
+
 Repository documents marked as withheld are excluded from the public reading
 view. Their project identities may remain in the map. The generator rejects
 restored source text, excerpts and declarations for these restricted entries.
@@ -163,8 +169,8 @@ observations, independent of resource and budget data.
 | ---------------------------------------- | ------------------------------------------------------------------ | ---------------------: |
 | Profile images across all five languages | Four generated header/map SVGs, 91 badge SVGs and the footer image |                621,868 |
 | Dated catalogue provenance               | `assets/catalogue-source.json`, plus its ownership sidecar         | 114,267 before sidecar |
-| Interactive site snapshot                | 77 manifest-listed assets                                          |             33,508,072 |
-| Main interactive entry page              | `index.html`, including its eight embedded datasets                |             10,336,860 |
+| Interactive site snapshot                | 77 manifest-listed assets                                          |             33,526,750 |
+| Main interactive entry page              | `index.html`, including its eight embedded datasets                |             10,342,851 |
 
 The HTML, JavaScript modules, source-document JSON, illustrations and figure
 downloads belong to the separately hosted explorer. The full snapshot repeats

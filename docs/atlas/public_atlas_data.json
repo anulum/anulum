@@ -1189,7 +1189,7 @@
       }
     }
   },
-  "version": "0.13+funding-state.1+portfolio-refresh.1+owner-source.1+discovery-resources.1+passport-coherence.1+registry-reconciliation.1+hushline-source.1+control-spo-owner.1",
+  "version": "0.13+funding-state.1+portfolio-refresh.1+owner-source.1+discovery-resources.1+passport-coherence.1+registry-reconciliation.1+hushline-source.1+control-spo-owner.1+funding-programme-sources.1",
   "content_state": "Projects and programme construction in progress; funding-route application states are separately dated and qualified.",
   "groups": [
     {
@@ -36252,18 +36252,24 @@
       "sources": [
         "https://foresight.org/grants/ai-science-safety-nodes-rfp/"
       ],
-      "source_note": "Application state recorded by ANULUM on 20 October 2026. Deadline checked on the official RFP page, 20 October 2026.",
+      "source_note": "Application state recorded by ANULUM on 20 October 2026. Deadline checked on the official RFP page, 20 October 2026. Official RFP deadline and support categories rechecked 23 October 2026 on the linked programme page. ANULUM application state remains the dated 20 October record.",
       "dossier": {
-        "review_state": "Application in preparation; deadline 31 October 2026, 23:59 PDT.",
+        "review_state": "Application in preparation; deadline 31 October 2026, 23:59 PDT. Official RFP deadline checked 23 October 2026; submission and acceptance remain unconfirmed.",
         "purpose": "Programme preparation: applicant. Work blocks: A: metered operation, a metered compute node, an outside replication. Partner profile: none required.",
-        "current_surfaces": [],
+        "current_surfaces": [
+          {
+            "name": "AI for Science & Safety Nodes RFP deadline",
+            "maturity": "Official programme timetable",
+            "evidence": "The official RFP states an application deadline of 31 October 2026, 23:59 PDT. Its support categories are grants, compute and workspace; participation at its San Francisco or Berlin hubs is prioritised. The dated ANULUM application-preparation record does not confirm submission, acceptance or support allocation."
+          }
+        ],
         "expected_outputs": [],
         "inputs": [],
         "outputs": [],
         "acceptance": [],
         "partner_needs": [],
         "open_fields": [
-          "Detailed output specifications and interface acceptance are being consolidated by the owning group."
+          "Current submission confirmation, the selected support categories and programme-specific participation and eligibility terms remain for the applicant and funding owner to confirm."
         ]
       }
     },
@@ -36347,21 +36353,35 @@
       "release": null,
       "licence": "Not a software distribution",
       "as_of": "2026-10-20",
-      "url": null,
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-8-climate-energy-and-mobility_horizon-2026-2027_en.pdf",
       "boundary": "An identified opportunity only: no consortium has been contacted and no application has started, as recorded by ANULUM on 20 October 2026. No eligibility clearance, partner commitment or funding award is asserted.",
-      "sources": [],
-      "source_note": "Application-state update recorded by ANULUM on 20 October 2026. The broader programme-mapping work is in progress; this does not mean an application has started. Call-specific official terms are not yet sourced in this entry.",
+      "sources": [
+        "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-8-climate-energy-and-mobility_horizon-2026-2027_en.pdf"
+      ],
+      "source_note": "Application-state update recorded by ANULUM on 20 October 2026; that source date and status are retained. Official programme/topic metadata checked 23 October 2026 in the linked 2026–2027 work programme, pages 35–36 and 170. The published timetable may be amended; this source check supplies no applicant, consortium, eligibility or award confirmation.",
       "dossier": {
-        "review_state": "Identified route; no consortium contacted; no application started. Call-specific official terms require source-backed qualification.",
+        "review_state": "Identified route; no consortium contacted; no application started. Call-specific official terms require source-backed qualification. Official programme identity and published timetable checked 23 October 2026; applicant and consortium qualification remain open.",
         "purpose": "Potential contribution or applicant role in the earlier planning synopsis: partner of an existing consortium. Work blocks: C, G (grids): the open verification layer for learned grid models. Partner profile: a consortium already forming that lacks an independent, open verification and replication work package.",
-        "current_surfaces": [],
+        "current_surfaces": [
+          {
+            "name": "HORIZON-CL5-2026-11-D3-23",
+            "maturity": "Official programme timetable",
+            "evidence": "The official 2026–2027 work programme identifies the energy-sector data and AI foundation-model topic as an Innovation Action. Published schedule: opening 4 August 2026; deadline 1 December 2026. This timetable does not confirm an application or consortium."
+          }
+        ],
         "expected_outputs": [],
         "inputs": [],
         "outputs": [],
         "acceptance": [],
         "partner_needs": [],
         "open_fields": [
-          "Detailed output specifications and interface acceptance are being consolidated by the owning group."
+          "Current submission-system dates and call-specific admissibility/eligibility, consortium participation, agreed contribution and cost/duplicate-funding boundaries require confirmation. The owner-recorded application state remains dated 20 October 2026."
+        ],
+        "source_records": [
+          {
+            "document": "Official Horizon Europe 2026–2027 work programme / cl5, pages 35–36 and 170 (checked 2026-10-23)",
+            "sha256": "603ce61234481c5fc7f778d14c59cc74b17895431e0fb5422c97d8f84bf864b9"
+          }
         ]
       }
     },
@@ -36379,21 +36399,35 @@
       "release": null,
       "licence": "Not a software distribution",
       "as_of": "2026-10-20",
-      "url": null,
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-14-horizontal-activities_horizon-2026-2027_en.pdf",
       "boundary": "An identified opportunity only: no consortium has been contacted and no application has started, as recorded by ANULUM on 20 October 2026. No eligibility clearance, partner commitment or funding award is asserted. The identified topic concerns materials science; the owning programme synopsis records a weak fit, not a confirmed match.",
-      "sources": [],
-      "source_note": "Application-state update recorded by ANULUM on 20 October 2026. The broader programme-mapping work is in progress; this does not mean an application has started. Call-specific official terms are not yet sourced in this entry.",
+      "sources": [
+        "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-14-horizontal-activities_horizon-2026-2027_en.pdf"
+      ],
+      "source_note": "Application-state update recorded by ANULUM on 20 October 2026; that source date and status are retained. Official programme/topic metadata checked 23 October 2026 in the linked 2026–2027 work programme, pages 10 and 48. The published timetable may be amended; this source check supplies no applicant, consortium, eligibility or award confirmation.",
       "dossier": {
-        "review_state": "Identified route; no consortium contacted; no application started. Call-specific official terms require source-backed qualification.",
+        "review_state": "Identified route; no consortium contacted; no application started. Call-specific official terms require source-backed qualification. Official programme identity and published timetable checked 23 October 2026; applicant and consortium qualification remain open.",
         "purpose": "Potential contribution or applicant role in the earlier planning synopsis: partner: the planning, checking and recording layer of an automated laboratory. Work blocks: B, D, E, G (chemistry and materials). Partner profile: an automated materials or chemistry laboratory with a digital workflow, and a coordinating institution in a Member State.",
-        "current_surfaces": [],
+        "current_surfaces": [
+          {
+            "name": "HORIZON-RAISE-2027-01-01",
+            "maturity": "Official programme timetable",
+            "evidence": "The official materials-science automated-discovery topic is a Research and Innovation Action. Published schedule: opening 13 October 2026; deadline 2 February 2027. The earlier programme synopsis records a weak fit; identifying the call does not establish fit, partners or a submission."
+          }
+        ],
         "expected_outputs": [],
         "inputs": [],
         "outputs": [],
         "acceptance": [],
         "partner_needs": [],
         "open_fields": [
-          "Detailed output specifications and interface acceptance are being consolidated by the owning group."
+          "Current submission-system dates and call-specific admissibility/eligibility, consortium participation, agreed contribution and cost/duplicate-funding boundaries require confirmation. The owner-recorded application state remains dated 20 October 2026."
+        ],
+        "source_records": [
+          {
+            "document": "Official Horizon Europe 2026–2027 work programme / horizontal, pages 10 and 48 (checked 2026-10-23)",
+            "sha256": "7c582d8f3ac719f7a7ed8909f86c19126011e5810d3c65ed44156c7ea4c7edde"
+          }
         ]
       }
     },
@@ -36411,21 +36445,35 @@
       "release": null,
       "licence": "Not a software distribution",
       "as_of": "2026-10-20",
-      "url": null,
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-14-horizontal-activities_horizon-2026-2027_en.pdf",
       "boundary": "An identified opportunity only: no consortium has been contacted and no application has started, as recorded by ANULUM on 20 October 2026. No eligibility clearance, partner commitment or funding award is asserted.",
-      "sources": [],
-      "source_note": "Application-state update recorded by ANULUM on 20 October 2026. The broader programme-mapping work is in progress; this does not mean an application has started. Call-specific official terms are not yet sourced in this entry.",
+      "sources": [
+        "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-14-horizontal-activities_horizon-2026-2027_en.pdf"
+      ],
+      "source_note": "Application-state update recorded by ANULUM on 20 October 2026; that source date and status are retained. Official programme/topic metadata checked 23 October 2026 in the linked 2026–2027 work programme, pages 18–19 and 101. The published timetable may be amended; this source check supplies no applicant, consortium, eligibility or award confirmation.",
       "dossier": {
-        "review_state": "Identified route; no consortium contacted; no application started. Call-specific official terms require source-backed qualification.",
+        "review_state": "Identified route; no consortium contacted; no application started. Call-specific official terms require source-backed qualification. Official programme identity and published timetable checked 23 October 2026; applicant and consortium qualification remain open.",
         "purpose": "Potential contribution or applicant role in the earlier planning synopsis: minor partner. Work blocks: A, D: the agent architecture as a research instrument. Partner profile: a consortium on model scaling that wants an auditable multi-agent experiment layer.",
-        "current_surfaces": [],
+        "current_surfaces": [
+          {
+            "name": "HORIZON-BRIDGING-2027-01-13",
+            "maturity": "Official programme timetable",
+            "evidence": "The official Advanced Scaling Frameworks for High-Performance AI Models topic is a Research and Innovation Action in Bridging actions 2027. Published schedule: opening 20 October 2026; deadline 16 February 2027. The live submission system and any subsequent timetable amendment require confirmation."
+          }
+        ],
         "expected_outputs": [],
         "inputs": [],
         "outputs": [],
         "acceptance": [],
         "partner_needs": [],
         "open_fields": [
-          "Detailed output specifications and interface acceptance are being consolidated by the owning group."
+          "Current submission-system dates and call-specific admissibility/eligibility, consortium participation, agreed contribution and cost/duplicate-funding boundaries require confirmation. The owner-recorded application state remains dated 20 October 2026."
+        ],
+        "source_records": [
+          {
+            "document": "Official Horizon Europe 2026–2027 work programme / horizontal, pages 18–19 and 101 (checked 2026-10-23)",
+            "sha256": "7c582d8f3ac719f7a7ed8909f86c19126011e5810d3c65ed44156c7ea4c7edde"
+          }
         ]
       }
     },
@@ -36475,21 +36523,35 @@
       "release": null,
       "licence": "Not a software distribution",
       "as_of": "2026-10-20",
-      "url": null,
+      "url": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-7-digital-industry-and-space_horizon-2026-2027_en.pdf",
       "boundary": "An identified opportunity only: no consortium has been contacted and no application has started, as recorded by ANULUM on 20 October 2026. No eligibility clearance, partner commitment or funding award is asserted.",
-      "sources": [],
-      "source_note": "Application-state update recorded by ANULUM on 20 October 2026. The broader programme-mapping work is in progress; this does not mean an application has started. Call-specific official terms are not yet sourced in this entry.",
+      "sources": [
+        "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-7-digital-industry-and-space_horizon-2026-2027_en.pdf"
+      ],
+      "source_note": "Application-state update recorded by ANULUM on 20 October 2026; that source date and status are retained. Official programme/topic metadata checked 23 October 2026 in the linked 2026–2027 work programme, pages 30–31 and 130. The published timetable may be amended; this source check supplies no applicant, consortium, eligibility or award confirmation.",
       "dossier": {
-        "review_state": "Identified route; no consortium contacted; no application started. Call-specific official terms require source-backed qualification.",
+        "review_state": "Identified route; no consortium contacted; no application started. Call-specific official terms require source-backed qualification. Official programme identity and published timetable checked 23 October 2026; applicant and consortium qualification remain open.",
         "purpose": "Potential contribution or applicant role in the earlier planning synopsis: minor partner. Work blocks: A, D: verification, evaluation by agents, measured efficiency. Partner profile: a consortium training a European frontier model that needs independent evaluation records.",
-        "current_surfaces": [],
+        "current_surfaces": [
+          {
+            "name": "HORIZON-CL4-2027-04-DIGITAL-EMERGING-11",
+            "maturity": "Official programme timetable",
+            "evidence": "The official safe and computationally efficient frontier-AI topic is a Research and Innovation Action. Published schedule: opening 17 November 2026; deadline 18 March 2027. Programme information does not confirm an eligible consortium, an application or an accepted work package."
+          }
+        ],
         "expected_outputs": [],
         "inputs": [],
         "outputs": [],
         "acceptance": [],
         "partner_needs": [],
         "open_fields": [
-          "Detailed output specifications and interface acceptance are being consolidated by the owning group."
+          "Current submission-system dates and call-specific admissibility/eligibility, consortium participation, agreed contribution and cost/duplicate-funding boundaries require confirmation. The owner-recorded application state remains dated 20 October 2026."
+        ],
+        "source_records": [
+          {
+            "document": "Official Horizon Europe 2026–2027 work programme / cl4, pages 30–31 and 130 (checked 2026-10-23)",
+            "sha256": "731430be0448261aa1fa0bd4e5b8d4978e51006733046cc4f5059528a3dbd50d"
+          }
         ]
       }
     },
