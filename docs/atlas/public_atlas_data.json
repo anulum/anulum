@@ -1180,10 +1180,16 @@
         "y": 4173,
         "width": 605,
         "height": 104
+      },
+      "anulum.github.io": {
+        "x": 3355,
+        "y": 4599,
+        "width": 605,
+        "height": 104
       }
     }
   },
-  "version": "0.13+funding-state.1+portfolio-refresh.1+owner-source.1+discovery-resources.1",
+  "version": "0.13+funding-state.1+portfolio-refresh.1+owner-source.1+discovery-resources.1+passport-coherence.1+registry-reconciliation.1+hushline-source.1",
   "content_state": "Projects and programme construction in progress; funding-route application states are separately dated and qualified.",
   "groups": [
     {
@@ -2441,7 +2447,21 @@
       "dossier": {
         "review_state": "Source-author editorial review incorporated; publication and scientific/runtime qualification remain separate.",
         "purpose": "Canonical plasma solver mathematics, transport/equilibrium and existing research pipeline.",
-        "current_surfaces": [],
+        "current_surfaces": [
+          {
+            "name": "Historical implementation milestones in the 4 September 2026 roadmap",
+            "maturity": "Dated source declaration, not freshly requalified implementation or physical acceptance",
+            "description": [
+              "[x] Phase 5 physics port (8 modules): impurity transport, momentum transport, runaway electrons, Alfven eigenmodes, ELM model, pellet injection, plasma-wall interaction, kinetic EFIT",
+              "[x] Phase 5 control port (5 modules): free-boundary tracking, state estimator (EKF), volt-second manager, RWM feedback, mu-synthesis",
+              "[x] Phase 6 physics port (10 modules): disruption sequence, locked mode, plasma startup, L-H transition, MARFE, neural turbulence, orbit following, tearing mode coupling, VMEC-lite, blob transport",
+              "[x] Phase 6 control port (2 modules): detachment controller, density controller",
+              "[x] GK three-path (18 modules): native linear eigenvalue solver, quasilinear flux model, 5 external GK interfaces (TGLF, GENE, GS2, CGYRO, QuaLiKiz), OOD detection, correction, scheduling, online learning, verification reporting"
+            ],
+            "evidence": "ROADMAP.md at a831d02a566f2ce57590303b0e75475d7108f358 / SHA-256 49dd4a7bd0f874d3f09085b428eaa4e06c4be797fb855e15e2890cfce2d4adc7; historical Shipped / v3.9.6 section.",
+            "verification_basis": "The source owner identifies these as shipped implementation/port milestones at that date. They are neither new open gates nor current release, numerical, runtime or physical acceptance."
+          }
+        ],
         "expected_outputs": [
           {
             "deliverable": "Source-qualified solver results and diagnostics, real native/replay outputs and bounded consumer seams.",
@@ -2451,17 +2471,24 @@
           }
         ],
         "inputs": [
-          "Coils/profiles/mesh/boundary and field convention, plasma/material/source data, model/operator/solver/stopping identities."
+          "Coils/profiles/mesh/boundary and field convention, plasma/material/source data, model/operator/solver/stopping identities.",
+          "Grid, coils, pressure/current profiles and boundary information define an equilibrium problem. GEQDSK carries poloidal flux, profiles and boundary/limiter data; JSON configuration supplies solver settings.",
+          "Electron/ion temperature and density profiles plus geometry feed transport. Documented ingest routes include IMAS structures, bounded NPZ series, optional facility interfaces and complete source-bound MAST archive records.",
+          "Controller studies consume the selected plant/model state and their replay or safety policy. Solver outputs alone do not determine downstream actuation permissions."
         ],
         "outputs": [
-          "Source-qualified solver results and diagnostics, real native/replay outputs and bounded consumer seams."
+          "Source-qualified solver results and diagnostics, real native/replay outputs and bounded consumer seams.",
+          "Documented equilibrium results include flux, magnetic axis, X-point and magnetic field. Transport produces evolved profiles, transport coefficients and bootstrap current within its selected model.",
+          "The source lists GEQDSK and IMAS outputs, source-bound magnetic envelopes, compiled .scpnctl.json controller artefacts, and selected NPZ weights/datasets.",
+          "Figures, structured physics logs and JSON/Markdown evidence report the selected calculation and its scope. Source/archive qualification envelopes preserve unresolved fields and review-only authority.",
+          "A flux field, time-evolved profiles, virtual/reconstructed diagnostic data, triangle mesh/OBJ and reduced-force result describe different representations and calculations. Export or discovery success does not combine them into one accepted full-fidelity plant model; each retains its own inputs, source, numerical resolution and review evidence."
         ],
         "acceptance": [
-          "[x] Phase 5 physics port (8 modules): impurity transport, momentum transport, runaway electrons, Alfven eigenmodes, ELM model, pellet injection, plasma-wall interaction, kinetic EFIT",
-          "[x] Phase 5 control port (5 modules): free-boundary tracking, state estimator (EKF), volt-second manager, RWM feedback, mu-synthesis",
-          "[x] Phase 6 physics port (10 modules): disruption sequence, locked mode, plasma startup, L-H transition, MARFE, neural turbulence, orbit following, tearing mode coupling, VMEC-lite, blob transport",
-          "[x] Phase 6 control port (2 modules): detachment controller, density controller",
-          "[x] GK three-path (18 modules): native linear eigenvalue solver, quasilinear flux model, 5 external GK interfaces (TGLF, GENE, GS2, CGYRO, QuaLiKiz), OOD detection, correction, scheduling, online learning, verification reporting"
+          "Original source-owned manufactured/reference/shot fixtures, actual installed maintained backend chain, independent residual/derivative/consumer evidence.",
+          "The validation notes identify bundled disruption profiles as generated DIII-D-like references, not raw EFIT/MDSplus downloads. Their labels must not turn into a real-shot claim.",
+          "The source distinguishes toroidal geometry, reduced spectral/3D paths and a post-solve balancing utility. It also marks patch AMR as an offline/validation utility until its production parity lane exists.",
+          "Unreconciled consumer contracts remain blocked or diagnostic in the source. TORAX runtime outcomes are provenance, not actuation commands.",
+          "This refresh inspects the clean canonical source and selected public contracts only. It does not run the JAX solver, transport, tomography, 3D force calculation, export or external-code comparison; it does not qualify convergence, hardware rate, full-fidelity parity, downstream actuation or a complete reactor design. Those remain exact-case/consumer decisions."
         ],
         "partner_needs": [
           "Independent numerical/API/source-rights expertise, with the first fit checked on one source-supported case."
@@ -2485,19 +2512,51 @@
           {
             "document": "Reactor architect programme synopsis",
             "sha256": "88c00ac2a2b71ab12314c11b3c905df16d79567e96c842073947eeb215795d22"
+          },
+          {
+            "document": "SCPN-FUSION-CORE / docs/ARCHITECTURE.md (technical source capture 2026-10-14T01:13:13.396533+00:00)",
+            "sha256": "ddab9d629ce66e383b66f5190d732660fedc87ab28d949b6555940f6c81b2603"
+          },
+          {
+            "document": "SCPN-FUSION-CORE / docs/ARCHITECTURE.md @ 2026-10-18T03:42:40.675813+00:00 (technical source capture 2026-10-18T03:42:40.675813+00:00)",
+            "sha256": "ddab9d629ce66e383b66f5190d732660fedc87ab28d949b6555940f6c81b2603"
+          },
+          {
+            "document": "SCPN-FUSION-CORE / docs/sphinx/userguide/diagnostics.rst @ 2026-10-18T03:42:40.675813+00:00 (technical source capture 2026-10-18T03:42:40.675813+00:00)",
+            "sha256": "5e5e1c4ded651b7213619b9146005dfd83847fad6c4b2ab098403779c9fd217b"
+          },
+          {
+            "document": "SCPN-FUSION-CORE / src/scpn_fusion/core/equilibrium_3d.py @ 2026-10-18T03:42:40.675813+00:00 (technical source capture 2026-10-18T03:42:40.675813+00:00)",
+            "sha256": "e8406b31153b33a69432cc4be6f8612c59574c7b597d85db8b2a900336e81ef0"
+          },
+          {
+            "document": "SCPN-FUSION-CORE / src/scpn_fusion/core/geometry_3d.py @ 2026-10-18T03:42:40.675813+00:00 (technical source capture 2026-10-18T03:42:40.675813+00:00)",
+            "sha256": "e6d93e50f553feb4fbd8c63ce7bd8281bcc57499e1132eeb3a277a25ad27438f"
+          },
+          {
+            "document": "SCPN-FUSION-CORE / ROADMAP.md (historical 4 September 2026 source at a831d02a566f2ce57590303b0e75475d7108f358)",
+            "sha256": "49dd4a7bd0f874d3f09085b428eaa4e06c4be797fb855e15e2890cfce2d4adc7"
           }
         ],
-        "acceptance_basis": "Next gates stated in the project roadmap; these are not completed checks.",
+        "acceptance_basis": "Retained architect qualification requirements and the existing cited technical-guide boundaries. Historical checked implementation milestones are shown separately as dated source provenance; this update passes no numerical, runtime or physical acceptance gate.",
         "evidence_state": "See project-specific qualification records",
         "as_of": "2026-10-13",
         "intended_role": "Canonical plasma solver mathematics, transport/equilibrium and existing research pipeline.",
         "critical_boundary": "Positive software completion is not physical/export admission; beta/source/axis/mask/current closure and exact pipeline budgets remain source-owner gates.",
         "connection_needs": [],
-        "inputs_basis": "Architect-defined model/interface inputs; exact supported runtime contracts remain subject to qualification.",
-        "outputs_basis": "Expected result artifacts, separate from the current capabilities above.",
+        "inputs_basis": "Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-18T03:42:40.675813+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance.",
+        "outputs_basis": "Programme deliverables remain architect-owned targets. The interface list also retains source-described result representations from the dated technical guide; this atlas update executes none of those workflows.",
         "programme_tracks": [],
         "acceptance_note": "The summary does not replace source-specific model, reference, numerical/native and consumer requirements; detailed qualifications remain requirements, not passed tests.",
-        "references": []
+        "references": [
+          {
+            "id": "fusion-historical-milestones-20260904",
+            "title": "Historical tracked roadmap: shipped source milestones",
+            "url": "https://github.com/anulum/scpn-fusion-core/blob/a831d02a566f2ce57590303b0e75475d7108f358/ROADMAP.md",
+            "source_revision": "a831d02a566f2ce57590303b0e75475d7108f358 / SHA-256 49dd4a7bd0f874d3f09085b428eaa4e06c4be797fb855e15e2890cfce2d4adc7",
+            "scope": "Dated source-declared implementation milestones, not open next gates or newly qualified physical/runtime results."
+          }
+        ]
       }
     },
     {
@@ -3450,17 +3509,27 @@
           }
         ],
         "inputs": [
-          "Capsule/fuel/ablator dimensions/masses, laser/absorbed energy J, adiabat, convergence and hydrodynamic inputs."
+          "Capsule/fuel/ablator dimensions/masses, laser/absorbed energy J, adiabat, convergence and hydrodynamic inputs.",
+          "The device configuration owns laser energy/pulse/wavelength and outer capsule radius; a separate capsule declaration owns layer thicknesses and fuel inventory. Micrometre input lengths convert once to metre geometry.",
+          "In-flight shell state, burnup fraction and other implosion quantities are supplied inputs to algebraic definitions. The package does not calculate the implosion that would produce them.",
+          "An enclosure is mandatory for indirect drive and refused for the two directly driven identifiers. Case dimensions and independent segment/ring resolutions belong to the selected geometry scope."
         ],
         "outputs": [
-          "Source-specific capsule/implosion/ignition/gain quantities and chamber geometry."
+          "Source-specific capsule/implosion/ignition/gain quantities and chamber geometry.",
+          "Configuration, shot-relative timing and observation declarations retain registry-bound device semantics without becoming measured diagnostics or a protection path.",
+          "The record evaluates necessary ignition conditions, implosion definitions, fuel inventory and declared-input yield/gain. It reports source-prescribed conditions and discrepancies rather than forecasting a successful shot.",
+          "The record contains three ordered concentric capsule bodies; indirect drive adds a fourth hohlraum-wall body. Exact input/digest/units and profile/resolution meaning remain part of the result.",
+          "The selected backend supplies B-rep bodies, assembly manifest, analytic/faceted/G1 comparisons and normalised STEP bytes with backend/version/digest identity. These remain pre-drive simplified bodies."
         ],
         "acceptance": [
           "Domain manifest (reactor-domain.json) with validator.",
           "Derived Studio portfolio descriptor (not_federated) with drift check.",
           "Generated capability inventory (truthfully empty) with drift check.",
           "CONTROL adapter specification (contract only, no implementation).",
-          "Local and workflow gate definitions (lint, typing, tests, coverage, REUSE, security audit, SBOM, documentation checks)."
+          "Local and workflow gate definitions (lint, typing, tests, coverage, REUSE, security audit, SBOM, documentation checks).",
+          "Yield/gain follow a supplied fuel inventory and burn fraction. Printed source values that do not reconstruct from the stated inputs remain discrepancies, not values repaired by tuning an input.",
+          "Uniform concentric layers and a plain enclosure omit fill tube, stalk, roughness, layer variation and engineering features. No dimension describes or validates an actual shot.",
+          "The source retains measured mixed ring-count regimes and the cause of parity remains unknown. The conservative default, radius-dependent refusal boundary and pinned backend scope cannot become universal CAD settings."
         ],
         "partner_needs": [
           "Independent domain/reference-data or experiment expertise, with the first fit checked on one source-supported case."
@@ -3496,9 +3565,25 @@
           {
             "document": "Reactor architect programme synopsis",
             "sha256": "88c00ac2a2b71ab12314c11b3c905df16d79567e96c842073947eeb215795d22"
+          },
+          {
+            "document": "SCPN-ICF-LASER-CORE / docs/ARCHITECTURE.md (technical source capture 2026-10-14T02:36:18.551029+00:00)",
+            "sha256": "e3c271a759ee70790d46d6048e9cfefd46634c9134bc158716c38900912c622f"
+          },
+          {
+            "document": "SCPN-ICF-LASER-CORE / docs/DEVICE_3D_MODEL_CONTRACT.md (technical source capture 2026-10-14T02:36:18.551029+00:00)",
+            "sha256": "ddff29f90819e5b529fc8fac4a7bd87643cf608de0f17a9cc8108588a7f3ef97"
+          },
+          {
+            "document": "SCPN-ICF-LASER-CORE / docs/adr/0005-level0-device-physics.md (technical source capture 2026-10-14T02:36:18.551029+00:00)",
+            "sha256": "b39356901d4a94cf2082a72f33c370f3417e4dfa015bbb5999a80f774ac724f1"
+          },
+          {
+            "document": "SCPN-ICF-LASER-CORE / docs/adr/0006-device-3d-and-cad-models.md (technical source capture 2026-10-14T02:36:18.551029+00:00)",
+            "sha256": "ca6c46c1d431379064f84790767416dbdac5327d94fa8d41ad7530f222675f40"
           }
         ],
-        "acceptance_basis": "Next gates stated in the project roadmap; these are not completed checks.",
+        "acceptance_basis": "Next gates stated in the project roadmap; these are not completed checks. Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-14T02:36:18.551029+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance.",
         "configurations": [
           "laser_icf_direct_drive",
           "laser_icf_fast_or_shock_ignition",
@@ -3529,8 +3614,8 @@
         "intended_role": "Laser-driven capsule/implosion design and source-scoped ignition/gain criteria.",
         "critical_boundary": "Laser/absorbed/fuel energies cannot be conflated; an ignition criterion is not simulated ignition or reproduced NIF shot.",
         "connection_needs": [],
-        "inputs_basis": "Architect-defined model/interface inputs; exact supported runtime contracts remain subject to qualification.",
-        "outputs_basis": "Expected result artifacts, separate from the current capabilities above.",
+        "inputs_basis": "Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-14T02:36:18.551029+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance.",
+        "outputs_basis": "Programme deliverables remain architect-owned targets. The interface list also retains source-described result representations from the dated technical guide; this atlas update executes none of those workflows.",
         "acceptance_note": "The summary does not replace source-specific model, reference, numerical/native and consumer requirements; detailed qualifications remain requirements, not passed tests.",
         "references": []
       }
@@ -4457,12 +4542,25 @@
           }
         ],
         "inputs": [
-          "Pulse timing/clock, FRC/liner inputs, triggering/state/drive variables, reset and quantisation contracts."
+          "Pulse timing/clock, FRC/liner inputs, triggering/state/drive variables, reset and quantisation contracts.",
+          "Initial phases in radians, axial positions in metres, velocities in metres per second, integration step/time horizon, phase/spatial lock tolerances and the sampled safety envelope accompany the bank specification, initial voltage and requested compression pulse.",
+          "Recovery requires both its coil/load specification and an expansion trajectory: time, radius, radial velocity, magnetic field and field rate. The simple MIF decision consumes those supplied channels; it does not evolve the self-consistent compression physics itself.",
+          "The inspected full-chain diagnostic generates a deterministic ADC-reference stream, preserves address/polarity/clock/sequence meaning and projects admitted events into a separately bound CONTROL exact-current path. Its calibration statement is a normalised simulation profile, not a calibrated facility measurement.",
+          "The full-chain entry point selects actual MIF/CONTROL/FUSION/NeuroCore source checkouts, requires the selected Rust stochastic backend and builds the tracked trigger fabric with Verilator. Source availability and installed dependency/tool compatibility must be checked in the actual run."
         ],
         "outputs": [
-          "Qualified model trajectories, trigger/runtime records and actual maintained counterpart outputs."
+          "Qualified model trajectories, trigger/runtime records and actual maintained counterpart outputs.",
+          "The simple entry point returns fire, abort unsafe, hold no lock or abort bank infeasible, plus reasons, lock time, kinematic/merge traces, a sampled safety certificate, bank feasibility/energy and optional prescribed-trajectory recovery. These are model outputs, not a physical trigger or measured energy recovery.",
+          "When run successfully, the full-chain demonstration records MIF decisions, the CONTROL permit and scheduler, diagnostic event provenance and actual local RTL cycles. It requires exactly one nominal RTL pulse before calling the FUSION model; the injected unsafe case must suppress the pulse and avoid that model call.",
+          "The admitted model call produces radius, radial velocity, magnetic-field and time channels. The field-rate channel is explicitly derived with numpy.gradient, then used for Faraday recovery; the runtime checks flux-budget diagnostics. This remains a source-described software-model output with its own physics evidence requirements.",
+          "A stateful diagnostic result carries canonical event/address-map/projection/control-execution identities and ingress telemetry. Its actuation_authority field is false; it does not replace the stateless permit, scheduler or independent veto.",
+          "The documented bundle contains nominal.json, safety_veto.json, fusion_trajectory.npz, summary.md and chain_manifest.json. The runtime reruns both cases and compares canonical payloads and trajectory channels before writing provenance/artifact digests. A separate timing package keeps cycle proofs, post-route reports and calibrated end-to-end measurements in distinct classes."
         ],
-        "acceptance": [],
+        "acceptance": [
+          "A sampled envelope certificate, literature-described merge kinematics or supplied expansion is not a full plant safety case, experimentally calibrated phase law or complete three-dimensional reactor design.",
+          "The described causal chain runs software and local RTL simulation. Hardware waveform equivalence, post-route timing, calibrated end-to-end operation and a physical trigger path retain separate requirements.",
+          "This explanation inspects selected committed source and documentation. It supplies no new nominal/veto run, formal proof, bit-true trace, scientific reference comparison or current sibling/deployment acceptance."
+        ],
         "partner_needs": [
           "Independent numerical/API/source-rights expertise, with the first fit checked on one source-supported case."
         ],
@@ -4481,6 +4579,34 @@
           {
             "document": "Reactor architect programme synopsis",
             "sha256": "88c00ac2a2b71ab12314c11b3c905df16d79567e96c842073947eeb215795d22"
+          },
+          {
+            "document": "SCPN-MIF-CORE / docs/api/fpga/timing_evidence_package.md (source 2026-10-18T13:03:55.198854+00:00) (technical source capture 2026-10-18T13:03:55.198854+00:00)",
+            "sha256": "426e0b749a52c1d3349d6acf73fd5dd9bc997aaf196f0f7e2ba43fe3f3fd1a7e"
+          },
+          {
+            "document": "SCPN-MIF-CORE / docs/api/merge_trigger.md (source 2026-10-18T13:03:55.198854+00:00) (technical source capture 2026-10-18T13:03:55.198854+00:00)",
+            "sha256": "04f0c21a9fe480d2d0d1313c2ee37745b462a4da3fef07ee1c0887ecf7153008"
+          },
+          {
+            "document": "SCPN-MIF-CORE / docs/api/physics/fusion_frc_contract.md (source 2026-10-18T13:03:55.198854+00:00) (technical source capture 2026-10-18T13:03:55.198854+00:00)",
+            "sha256": "a34f923b020540f6f5df307dbfb76ae7ceb6fcdd7acfee94f24db47b2c415e50"
+          },
+          {
+            "document": "SCPN-MIF-CORE / docs/architecture/system_map.md (source 2026-10-18T13:03:55.198854+00:00) (technical source capture 2026-10-18T13:03:55.198854+00:00)",
+            "sha256": "ded73f7fc4102a08b5e7c0e16a843098d6483deb0722d0655b62c73f844d8498"
+          },
+          {
+            "document": "SCPN-MIF-CORE / docs/guides/fusion_to_fire_full_chain.md (source 2026-10-18T13:03:55.198854+00:00) (technical source capture 2026-10-18T13:03:55.198854+00:00)",
+            "sha256": "aed747479579358316c714638d20096a6d3c677d75ef61381e92c4207e5b6c0d"
+          },
+          {
+            "document": "SCPN-MIF-CORE / src/scpn_mif_core/full_chain/runtime.py (source 2026-10-18T13:03:55.198854+00:00) (technical source capture 2026-10-18T13:03:55.198854+00:00)",
+            "sha256": "7a66f4ae8a8a9e16341fb4870253317337383b3ffaa9bbeb229dcc1da0262f1b"
+          },
+          {
+            "document": "SCPN-MIF-CORE / src/scpn_mif_core/merge_trigger.py (source 2026-10-18T13:03:55.198854+00:00) (technical source capture 2026-10-18T13:03:55.198854+00:00)",
+            "sha256": "7424c611343523b443adf6ee9e296edd6f475134ed6dfcff758203f27804493d"
           }
         ],
         "evidence_state": "See project-specific qualification records",
@@ -4488,11 +4614,12 @@
         "intended_role": "Existing magneto-inertial dynamics/runtime with maintained multi-language/RTL chain.",
         "critical_boundary": "Simulation timing/state semantics cannot be inferred from a static device card; no fake hardware/RTL/formal evidence.",
         "connection_needs": [],
-        "inputs_basis": "Architect-defined model/interface inputs; exact supported runtime contracts remain subject to qualification.",
-        "outputs_basis": "Expected result artifacts, separate from the current capabilities above.",
+        "inputs_basis": "Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-18T13:03:55.198854+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance.",
+        "outputs_basis": "Programme deliverables remain architect-owned targets. The interface list also retains source-described result representations from the dated technical guide; this atlas update executes none of those workflows.",
         "programme_tracks": [],
         "acceptance_note": "The summary does not replace source-specific model, reference, numerical/native and consumer requirements; detailed qualifications remain requirements, not passed tests.",
-        "references": []
+        "references": [],
+        "acceptance_basis": "Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-18T13:03:55.198854+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance."
       }
     },
     {
@@ -5780,17 +5907,27 @@
           }
         ],
         "inputs": [
-          "Complete published kernel source, representation/domain, deterministic operation graph, shape/units and precision."
+          "Complete published kernel source, representation/domain, deterministic operation graph, shape/units and precision.",
+          "A kernel needs finite, in-range values under its cited equation or standard method and validity domain. Refusal preserves unsupported input rather than clamping it into a result.",
+          "Selected geometry/CAD operations retain their own units and analytic references. The source distinguishes metre-based STEP/B-rep data and explicit unit conversion before volume meshing.",
+          "Consumer manifests must identify distribution, version and inventory digest. A family name alone cannot select a reproducible kernel implementation."
         ],
         "outputs": [
-          "Versioned public kernels, exact inventory/build identities, native counterparts and consumer pin proofs."
+          "Versioned public kernels, exact inventory/build identities, native counterparts and consumer pin proofs.",
+          "The source requires Python-floor and selected Rust operation-order/bit-pattern correspondence for mathematical kernels, with separate evidence per kernel.",
+          "The source supplies distinct representations: a canonical closed triangle mesh and digest, binary STL, glTF 2.0 binary with metadata, optional B-rep/STEP and a tetrahedral MSH volume mesh. Native units, placement, precision and backend identity stay explicit. Export bytes and canonical mesh identity are different records; none supplies an accepted reactor-physics result.",
+          "Inventory entries retain identifiers, module/source, maturity, parity and benchmark/evidence pointers. Consumer pins remain independent records."
         ],
         "acceptance": [
           "Kernel manifest (kernels-domain.json) with validator; generated kernel inventory with drift check; workflow modularity guard; preflight.",
           "Geometry kernels (landed 2026-09-02) — vendored deterministic unit circle (polynomial sine and cosine with exact octant symmetry), the closed-mesh contract (TriangleMesh: closure and orientation validation, signed volume, surface area, canonical bytes, SHA-256), solid-cylinder and annular-tube tessellation, binary STL and glTF 2.0 binary exports of any body list, native kernels bit-exact with the Python floor, and a standard-conformant benchmark; computational_prototype (ADR 0002, VALIDATION.md#geometry-kernels). Origin: moved from SCPN-Z-PINCH-CORE (its copies are retired once it pins this library).",
           "Placement kernel (landed 2026-09-03) — exact translation of a vertex stream, the centres of identical bodies equally spaced on a circle around the axis, and their neighbour separation, so a device can carry a part that is not axisymmetric (a squirrel-cage cathode, a ring of feed conductors) without re-implementing geometry; the unit circle is generalised to any point count of at least three while keeping the tessellation counts bit-identical, and both are mirrored natively and measured in the geometry benchmark; computational_prototype (ADR 0007, VALIDATION.md#geometry-kernels).",
           "Axial profile kernel (landed 2026-09-03) — bodies whose radius varies along the axis: a closed solid and a closed tube through a sampled (z, radius) profile, linear between samples and interpolating nothing beyond that, with the exact frustum-stack volume and lateral area. A constant-radius profile reproduces the existing primitives vertex for vertex, so the generalisation moves no pinned digest; the tessellation deficit against the closed form is exactly the polygon deficit of the segment count. Mirrored natively with bit-pattern parity and measured in the geometry benchmark; computational_prototype (ADR 0010, VALIDATION.md#geometry-kernels). Consumers: any family with a part whose radius is a function of the axis, first the mirror flux tube.",
-          "Numerics kernels (landed 2026-09-02) — vendored deterministic natural logarithm (exact binary decomposition and the odd series of atanh), exponential (Cody–Waite reduction and Taylor series) and real power, with refused rather than clamped domains, native kernels bit-exact with the Python floor, measured accuracy bounds against the platform math module, and a standard-conformant benchmark; computational_prototype (ADR 0003, VALIDATION.md#numerics-kernels). The physics kernel groups below consume this group instead of libm."
+          "Numerics kernels (landed 2026-09-02) — vendored deterministic natural logarithm (exact binary decomposition and the odd series of atanh), exponential (Cody–Waite reduction and Taylor series) and real power, with refused rather than clamped domains, native kernels bit-exact with the Python floor, measured accuracy bounds against the platform math module, and a standard-conformant benchmark; computational_prototype (ADR 0003, VALIDATION.md#numerics-kernels). The physics kernel groups below consume this group instead of libm.",
+          "Kernel results remain numbers under declared arguments; downstream device equations and supported physical cases need their own evidence.",
+          "The CAD adapter group explicitly uses a third-party backend and analytic measures rather than the mathematical kernels' independent Rust floor.",
+          "The library architecture declares no path to CONTROL, Studio, machine protection or an actuator.",
+          "Provenance text cannot repair native STEP scale. The cited unit correction changes exported-byte identity; consumer re-pinning and adoption remain separate. CAD/meshing byte determinism is scoped to one backend environment, not all library versions or installed toolchains."
         ],
         "partner_needs": [
           "Independent numerical/API/source-rights expertise, with the first fit checked on one source-supported case."
@@ -5819,16 +5956,44 @@
           {
             "document": "Reactor architect programme synopsis",
             "sha256": "88c00ac2a2b71ab12314c11b3c905df16d79567e96c842073947eeb215795d22"
+          },
+          {
+            "document": "SCPN-REACTOR-KERNELS / docs/ARCHITECTURE.md (technical source capture 2026-10-14T01:50:52.154839+00:00)",
+            "sha256": "2e0a691ef4be34a035a4ead5cbe98044d70d299dc8da38af2673cdb413631691"
+          },
+          {
+            "document": "SCPN-REACTOR-KERNELS / README.md @ 2026-10-18T00:36:33.580466+00:00 (technical source capture 2026-10-18T00:36:33.580466+00:00)",
+            "sha256": "fe7096ef12960921dc446e49cda0a91c0bbc86a79f9d60913fe7087e987de1c8"
+          },
+          {
+            "document": "SCPN-REACTOR-KERNELS / docs/adr/0006-cad-kernels.md @ 2026-10-18T00:36:33.580466+00:00 (technical source capture 2026-10-18T00:36:33.580466+00:00)",
+            "sha256": "3cee22fffeddaa1680dd0d3ab3652a57bace038cd19d7ce85b211a4fcf30359d"
+          },
+          {
+            "document": "SCPN-REACTOR-KERNELS / src/scpn_reactor_kernels/cad/step.py @ 2026-10-18T00:36:33.580466+00:00 (technical source capture 2026-10-18T00:36:33.580466+00:00)",
+            "sha256": "b7c13d06054bd652e5f2750c8a1b86eaab16d9f7463696baabe4c29241f1eefb"
+          },
+          {
+            "document": "SCPN-REACTOR-KERNELS / src/scpn_reactor_kernels/cad/volume_mesh.py @ 2026-10-18T00:36:33.580466+00:00 (technical source capture 2026-10-18T00:36:33.580466+00:00)",
+            "sha256": "12b95aa1eae0d5d979d9ddeb2fb66c7f8ec7f16123c157e918f641e4f7139249"
+          },
+          {
+            "document": "SCPN-REACTOR-KERNELS / src/scpn_reactor_kernels/geometry/export.py @ 2026-10-18T00:36:33.580466+00:00 (technical source capture 2026-10-18T00:36:33.580466+00:00)",
+            "sha256": "452ed39c7509a44455c719a3f13b6502594426e396f50d710d22431a4295a361"
+          },
+          {
+            "document": "SCPN-REACTOR-KERNELS / src/scpn_reactor_kernels/geometry/mesh.py @ 2026-10-18T00:36:33.580466+00:00 (technical source capture 2026-10-18T00:36:33.580466+00:00)",
+            "sha256": "8cd537203787bbb23d31d17e55d01b7954253048808adcc225f22f336187d28f"
           }
         ],
-        "acceptance_basis": "Next gates stated in the project roadmap; these are not completed checks.",
+        "acceptance_basis": "Next gates stated in the project roadmap; these are not completed checks. Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-18T00:36:33.580466+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance.",
         "evidence_state": "computational prototype",
         "as_of": "2026-10-13",
         "intended_role": "Shared equations, numerical primitives and geometry/CAD/export substrate.",
         "critical_boundary": "Native parity cannot be weakened to tolerance where exact bytes are contractual; optional CAD/backend failure cannot change core semantics.",
         "connection_needs": [],
-        "inputs_basis": "Architect-defined model/interface inputs; exact supported runtime contracts remain subject to qualification.",
-        "outputs_basis": "Expected result artifacts, separate from the current capabilities above.",
+        "inputs_basis": "Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-18T00:36:33.580466+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance.",
+        "outputs_basis": "Programme deliverables remain architect-owned targets. The interface list also retains source-described result representations from the dated technical guide; this atlas update executes none of those workflows.",
         "programme_tracks": [],
         "acceptance_note": "The summary does not replace source-specific model, reference, numerical/native and consumer requirements; detailed qualifications remain requirements, not passed tests.",
         "references": []
@@ -6448,17 +6613,26 @@
           }
         ],
         "inputs": [
-          "Three-dimensional coil/field/flux surfaces, currents A, geometry m, symmetry and coordinate/frame identity."
+          "Three-dimensional coil/field/flux surfaces, currents A, geometry m, symmetry and coordinate/frame identity.",
+          "Declared geometry, rotational-transform and operational-limit parameters select modular non-planar coils for stellarator or continuous helical windings for heliotron/torsatron. Synthetic fixtures retain their own origin.",
+          "Flux loops, interferometry, Thomson profiles, Mirnov arrays and model-owned oscillator declarations bind selected observability candidates to frames and clock domains. They are declared channels, not acquired measurements.",
+          "Signal quantities/units, frame-transformation declarations, acquisition windows and clock relations carry explicit meanings and registry/manifest pins. Unsupported versions and fields are refused rather than guessed."
         ],
         "outputs": [
-          "Device design and supported3D field/equilibrium outputs with explicit source and support."
+          "Device design and supported3D field/equilibrium outputs with explicit source and support.",
+          "Validated parameter objects and advisory consistency findings retain canonical bytes/digest and the data-only SPO registry binding. Advisory regime checks are not equilibrium or stability results.",
+          "The envelope binds producer/project/configuration identity, synthetic/review-only/non-actuating scope, registry pins, manifest and plan digests. Current version meaning remains distinct from historical envelope versions.",
+          "Frame links and clock-domain relations describe how future consumers should interpret observations. The transformation methods claim no numerical evidence and physical clocks remain unmapped."
         ],
         "acceptance": [
           "Domain manifest (reactor-domain.json) with validator.",
           "Derived Studio portfolio descriptor (not_federated) with drift check.",
           "Generated capability inventory (truthfully empty) with drift check.",
           "CONTROL adapter specification (contract only, no implementation).",
-          "Local and workflow gate definitions (lint, typing, tests, coverage, REUSE, security audit, SBOM, documentation checks)."
+          "Local and workflow gate definitions (lint, typing, tests, coverage, REUSE, security audit, SBOM, documentation checks).",
+          "No diagnostic channel describes a real facility; hard synthetic scope survives envelopes, typed frames and clock relations.",
+          "Methods/quantity-unit tokens and connected graphs do not prove SI/UCUM validation, numerical frame correspondence or mapping to physical wall time.",
+          "The two-capability inventory and solver-owner seam keep configuration/observation declarations separate from evaluated field/transport/stability or engineering CAD results."
         ],
         "partner_needs": [
           "Independent domain/reference-data or experiment expertise, with the first fit checked on one source-supported case."
@@ -6493,9 +6667,17 @@
           {
             "document": "Reactor architect programme synopsis",
             "sha256": "88c00ac2a2b71ab12314c11b3c905df16d79567e96c842073947eeb215795d22"
+          },
+          {
+            "document": "SCPN-STELLARATOR-CORE / capability-inventory.json (technical source capture 2026-10-14T02:36:18.551029+00:00)",
+            "sha256": "79e9462a8430829f093fd3852552513f3f962ef7246281cd795f7747da240e4e"
+          },
+          {
+            "document": "SCPN-STELLARATOR-CORE / docs/ARCHITECTURE.md (technical source capture 2026-10-14T02:36:18.551029+00:00)",
+            "sha256": "c5ca3a296ea4cce15bbd0099e9905e60ada591155cf26dea180dfbb82723b696"
           }
         ],
-        "acceptance_basis": "Next gates stated in the project roadmap; these are not completed checks.",
+        "acceptance_basis": "Next gates stated in the project roadmap; these are not completed checks. Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-14T02:36:18.551029+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance.",
         "configurations": [
           "heliotron",
           "stellarator",
@@ -6526,8 +6708,8 @@
         "intended_role": "Three-dimensional magnetic-confinement configuration and coil/design ownership.",
         "critical_boundary": "Axisymmetric Grad-Shafranov or a Fourier surrogate must not impersonate a3D MHD equilibrium; topology/periodicity require explicit support.",
         "connection_needs": [],
-        "inputs_basis": "Architect-defined model/interface inputs; exact supported runtime contracts remain subject to qualification.",
-        "outputs_basis": "Expected result artifacts, separate from the current capabilities above.",
+        "inputs_basis": "Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-14T02:36:18.551029+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance.",
+        "outputs_basis": "Programme deliverables remain architect-owned targets. The interface list also retains source-described result representations from the dated technical guide; this atlas update executes none of those workflows.",
         "acceptance_note": "The summary does not replace source-specific model, reference, numerical/native and consumer requirements; detailed qualifications remain requirements, not passed tests.",
         "references": []
       }
@@ -6866,17 +7048,27 @@
           }
         ],
         "inputs": [
-          "Major/minor radii m, elongation, plasma current A, field T, profile/flux and coordinate conventions."
+          "Major/minor radii m, elongation, plasma current A, field T, profile/flux and coordinate conventions.",
+          "Conventional or spherical identifiers, major/minor radii, elongation, triangularity, field/current and declared operational limits retain their validated configuration meaning. Synthetic fixtures are not facility parameter sets.",
+          "A declared plan carries synthetic channels, typed reference frames, signal inventories and clock topology, with explicit registry pins and no claim that clocks are mapped to physical wall time.",
+          "The configuration owns plasma dimensions; the envelope owns vessel thickness, winding gap and winding thickness. Geometry construction checks their radial relationship instead of duplicating the same dimension in two records."
         ],
         "outputs": [
-          "Named analytic design quantities, design/CAD/mesh records and qualified solver-source joins."
+          "Named analytic design quantities, design/CAD/mesh records and qualified solver-source joins.",
+          "Canonical bytes and digests identify the declared configuration/plan and their registry-bound meaning. These records describe the experiment boundary, not a measured experiment.",
+          "The record combines elliptic plasma volume, vacuum toroidal-field variation, normalised current and existing density-limit/safety-factor methods. It reports declared margins rather than admitting a controller or predicting a disruption.",
+          "The three ordered bodies represent a straight cylindrical periodic equivalent of the tokamak: plasma column, vacuum vessel and toroidal-field winding. Mesh/configuration/envelope identity remains explicit.",
+          "The same reduced bodies are built as B-rep solids through the shared CAD backend, with analytic/mesh comparisons, normalised STEP bytes, separate byte digest and backend versions. STEP determinism is scoped to one pinned environment."
         ],
         "acceptance": [
           "Domain manifest (reactor-domain.json) with validator.",
           "Derived Studio portfolio descriptor (not_federated) with drift check.",
           "Generated capability inventory (truthfully empty) with drift check.",
           "CONTROL adapter specification (contract only, no implementation).",
-          "Local and workflow gate definitions (lint, typing, tests, coverage, REUSE, security audit, SBOM, documentation checks)."
+          "Local and workflow gate definitions (lint, typing, tests, coverage, REUSE, security audit, SBOM, documentation checks).",
+          "No equilibrium, stability, transport or current-drive equation is solved by the level-0 record. The geometry does not evolve a discharge or qualify a real machine.",
+          "The source reports metre-scale CAD faceting governed by angular deflection. Tightening the linear bound without changing faceting can cause refusal; backend-specific settings need their own evidence.",
+          "Synthetic declarations, algebraic anchors and reduced geometry stay separate from measured facilities, controller admission and machine-protection authority."
         ],
         "partner_needs": [
           "Independent domain/reference-data or experiment expertise, with the first fit checked on one source-supported case."
@@ -6911,9 +7103,21 @@
           {
             "document": "Reactor architect programme synopsis",
             "sha256": "88c00ac2a2b71ab12314c11b3c905df16d79567e96c842073947eeb215795d22"
+          },
+          {
+            "document": "SCPN-TOKAMAK-CORE / docs/ARCHITECTURE.md (technical source capture 2026-10-14T02:36:18.551029+00:00)",
+            "sha256": "0c7261373510bb334562bce52ac01ad657536027992445f094cc2eec33133599"
+          },
+          {
+            "document": "SCPN-TOKAMAK-CORE / docs/DEVICE_3D_MODEL_CONTRACT.md (technical source capture 2026-10-14T02:36:18.551029+00:00)",
+            "sha256": "b0990245694a6e1b2c307e5afd2ad1bb4747f46c93235a33a676c887e535ff73"
+          },
+          {
+            "document": "SCPN-TOKAMAK-CORE / docs/adr/0005-level0-device-physics.md (technical source capture 2026-10-14T02:36:18.551029+00:00)",
+            "sha256": "a9cabe3a445d33ad752346300555cea71c648b43796d7bb0da0dbe1fa4b97d5a"
           }
         ],
-        "acceptance_basis": "Next gates stated in the project roadmap; these are not completed checks.",
+        "acceptance_basis": "Next gates stated in the project roadmap; these are not completed checks. Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-14T02:36:18.551029+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance.",
         "configurations": [
           "conventional_tokamak",
           "spherical_tokamak"
@@ -6943,8 +7147,8 @@
         "intended_role": "Own tokamak physical modelling and reactor-design geometry, with explicitly qualified canonical plasma-solver dependencies.",
         "critical_boundary": "A cylindrical q/current proxy is not a solved equilibrium safety factor; field source and total/vacuum decomposition must be explicit.",
         "connection_needs": [],
-        "inputs_basis": "Architect-defined model/interface inputs; exact supported runtime contracts remain subject to qualification.",
-        "outputs_basis": "Expected result artifacts, separate from the current capabilities above.",
+        "inputs_basis": "Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-14T02:36:18.551029+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance.",
+        "outputs_basis": "Programme deliverables remain architect-owned targets. The interface list also retains source-described result representations from the dated technical guide; this atlas update executes none of those workflows.",
         "acceptance_note": "The summary does not replace source-specific model, reference, numerical/native and consumer requirements; detailed qualifications remain requirements, not passed tests.",
         "references": []
       }
@@ -8995,23 +9199,55 @@
         "value": null,
         "source": null
       },
-      "boundary": "Works on its own; it has no interface to the other projects. The hosting service's latest release is v0.1.7; the three registry packages are at the packaging version.",
+      "boundary": "Standalone command-output wrapper. Published GitHub release v0.1.7 and the PyPI, npm and crates.io packages at0.1.5 are separate publisher observations; cross-core behaviour and operational integration require their own evidence.",
       "sources": [
         "https://github.com/anulum/synapse-channel/blob/main/docs/ecosystem.md"
       ],
       "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
       "dossier": {
-        "review_state": "Architect-authored details requested",
+        "review_state": "Public-source documentary synopsis; detailed owner acceptance and per-core runtime/security qualification remain open.",
         "purpose": "Local command-output filter: runs a command, then limits, shapes and redacts its output before it reaches a caller. Four independent cores: Go, Rust, Python and Node.",
         "current_surfaces": [],
-        "expected_outputs": [],
-        "inputs": [],
-        "outputs": [],
-        "acceptance": [],
+        "expected_outputs": [
+          {
+            "deliverable": "A source-described command-output transformation under the selected profile.",
+            "basis": "Published README contract, not an independently exercised child-process or secret-redaction result.",
+            "acceptance": "Exercise the selected core and its command, stream, profile, timeout, error and permit behaviour in the actual intended environment."
+          }
+        ],
+        "inputs": [
+          "A selected child command, its arguments, working directory and stdout/stderr.",
+          "Built-in, global and local profiles, with the selected line/output limits, regular-expression rules and optional permit settings."
+        ],
+        "outputs": [
+          "Source-described filtered and shaped command output, with selected raw/error/width/line policies.",
+          "The documented manifest/permit commands describe profile locations and optional local permit-marker state."
+        ],
+        "acceptance": [
+          "Regular-expression redaction is an optional configured transformation; this documentary synopsis supplies no exhaustive secret-detection or security guarantee.",
+          "The four-core contract in the README is a source declaration. Cross-core parity and platform behaviour need actual supported-workload evidence.",
+          "Optional local permit checks and output filtering do not supply independent authority for an external action."
+        ],
         "partner_needs": [],
         "open_fields": [
-          "Detailed output specifications and interface acceptance are being consolidated by the owning group."
-        ]
+          "Owner-approved detailed interface acceptance, current cross-core/runtime qualification and project-specific partner/material requirements remain open."
+        ],
+        "source_records": [
+          {
+            "document": "HushLine / README.md at e1f8c479e23e1c56786f09895e4246b39507d732",
+            "sha256": "ff8422a83da10e65b2a9c025554261b1936c05003b930b8d09f1ff3a1bf7ba76"
+          }
+        ],
+        "references": [
+          {
+            "id": "hushline-published-readme-20261023",
+            "title": "Published HushLine README",
+            "url": "https://github.com/anulum/HushLine/blob/e1f8c479e23e1c56786f09895e4246b39507d732/README.md",
+            "source_revision": "e1f8c479e23e1c56786f09895e4246b39507d732 / SHA-256 ff8422a83da10e65b2a9c025554261b1936c05003b930b8d09f1ff3a1bf7ba76",
+            "scope": "Public source observed on 23 October 2026; source declarations, package versions and measured runtime/security/parity remain distinct."
+          }
+        ],
+        "as_of": "2026-10-23"
       }
     },
     {
@@ -12573,13 +12809,23 @@
           }
         ],
         "inputs": [
-          "Model equations and parameters with model-specific units; input signals/event streams; topology/state/seed/time-step; explicit runtime/compile/target profile."
+          "Model equations and parameters with model-specific units; input signals/event streams; topology/state/seed/time-step; explicit runtime/compile/target profile.",
+          "Input values can enter an encoder as probabilities and become binary or packed bitstreams. The model must preserve the chosen unipolar/bipolar arithmetic and encoding meaning.",
+          "The documented network path combines populations, projection weights, stimuli and per-timestep neuron state. Learning and optional synchronisation have their own execution-path scope.",
+          "Selected hardware workflows start from equations or an imported network and retain weights, delays, thresholds, hierarchy and precision through graph lowering and emission."
         ],
         "outputs": [
-          "Spike/state simulations, bitstream computations, selected generated fixed-point Verilog, composed workflow/evidence views and scoped source-bound benchmark artefacts."
+          "Spike/state simulations, bitstream computations, selected generated fixed-point Verilog, composed workflow/evidence views and scoped source-bound benchmark artefacts.",
+          "The documented simulation spine produces spikes, membrane voltages, firing rates and packed bitstreams, followed by analysis, decoding or export.",
+          "NIR graph interchange and selected .v/.sv generation connect software models to compilation. HDL bundles, formal collateral, synthesis/placement records and target decks retain the selected workflow’s scope.",
+          "The permanent parent workbench brings model, data, learning, silicon and evidence responsibilities together. The named focused repositories are a roadmap of responsibilities, not independent release proof."
         ],
         "acceptance": [
-          "Original roadmap whole gates, model source fidelity separate from cross-runtime parity, installed consumer/native/RTL and physical evidence within their respective exact scopes."
+          "Original roadmap whole gates, model source fidelity separate from cross-runtime parity, installed consumer/native/RTL and physical evidence within their respective exact scopes.",
+          "The canonical map keeps source-only research and non-package contributed work outside its supported binary surface. They must not become production capabilities through the portfolio map.",
+          "The document distinguishes Python network features from Rust/MPI subsets and canonical SC dispatch from independent polyglot kernels. Broad backend lists cannot establish full feature parity.",
+          "The hardware pipeline describes traceability, formal and caller-supplied safety evidence. Its library tooling does not provide certification or approval of a deployed product.",
+          "Software-runtime parity, scientific source-model fidelity, Python/RTL agreement, synthesis/timing and measured hardware behaviour need their own evidence. Base-package generated RTL and a complete polyglot row cannot stand in for all of those results."
         ],
         "partner_needs": [
           "Independent model/source reviewers, workload integrators and later physical target access; first fit is one full model equation/initialisation/trace through real public API and exact reference/RTL path. (architect proposal)"
@@ -12596,6 +12842,18 @@
           {
             "document": "Neuromorphic architect dossier revision 2",
             "sha256": "2f3e0e2e99f44f89dc06b645c80cf1c6385db212ef28cc4e7e8a618478bc427e"
+          },
+          {
+            "document": "SC-NEUROCORE / README.md (technical source capture 2026-10-14T01:13:13.396533+00:00)",
+            "sha256": "c595b0bce36fade9e5dc4491d731438cdb0acc0347c3c13ee489f385334451ab"
+          },
+          {
+            "document": "SC-NEUROCORE / docs/architecture/SYSTEM_MAP.md (technical source capture 2026-10-14T01:13:13.396533+00:00)",
+            "sha256": "67a02b61c3ae61aa0f767ef15bb1ba517b83ec495bbd517bf8e2eed340b8f38f"
+          },
+          {
+            "document": "SC-NEUROCORE / docs/guides/supported_workflows.md @ 2026-10-15T20:45:20.185924+00:00 (technical source capture 2026-10-15T20:45:20.185924+00:00)",
+            "sha256": "7e193c0c3d59b93c9d14b11339e10d3e2e31fbe544ea4854e33c23475fe08ef6"
           }
         ],
         "limitations": [
@@ -12610,7 +12868,10 @@
             "source_revision": "c35da586f6ee650f2a2b339c3c3da69d308b51e6",
             "scope": "Observed completed failure on 23 October 2026; not a statement about later local fixes or a complete scientific qualification."
           }
-        ]
+        ],
+        "inputs_basis": "Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-15T20:45:20.185924+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance.",
+        "outputs_basis": "Programme deliverables remain architect-owned targets. The interface list also retains source-described result representations from the dated technical guide; this atlas update executes none of those workflows.",
+        "acceptance_basis": "Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-15T20:45:20.185924+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance."
       }
     },
     {
@@ -14755,13 +15016,26 @@
           }
         ],
         "inputs": [
-          "Hash-bound run manifests and raw event/cycle data; selected plant/controller/load/fault/profile inputs; for neural use, independently owned wrapper, identified stimuli and bounded step/state/service mapping."
+          "Hash-bound run manifests and raw event/cycle data; selected plant/controller/load/fault/profile inputs; for neural use, independently owned wrapper, identified stimuli and bounded step/state/service mapping.",
+          "CONTROL records sample readiness/read, timely and late actuator commands, deadlines, safe state and faults. COMPUTE has input/start/done/output/interrupt events. Each run binds the actual event-domain snapshot, profile and cycle identity; a timestamp is meaningful within that declared timebase.",
+          "Placement, controller coefficients, mechanical/thermal fixed-point plant, sample period, warm-up, load and fault schedule belong to the run. Native or ISA execution in simulated transactions still declares rtl_simulation; host monotonic timestamps do not become fabric ticks.",
+          "The host needs complete 16-byte little-endian records, source/build artefacts, manifest hashes and final coherent loss/status information before reset. A completion receipt cannot fill missing events or repair an invalid run.",
+          "Driver/BSP revision, rail/shunt mappings, units, sample configuration and per-read host/fabric brackets accompany PAC1934 acquisition. Its raw journal is distinct from a qualified power series; no physical acquisition or aligned energy result is established here."
         ],
         "outputs": [
-          "Simulation-provenance reports and raw timing/coverage/gap observations; target future board latency/jitter/deadline/fault and rail-energy distributions with admitted instrument/uncertainty."
+          "Simulation-provenance reports and raw timing/coverage/gap observations; target future board latency/jitter/deadline/fault and rail-energy distributions with admitted instrument/uncertainty.",
+          "Event bytes, optional tracking/power series and a versioned manifest retain the exact run-domain, configuration and referenced artefacts. Actual native source/context bindings belong to the original acquisition. This explanation creates no new run package.",
+          "Scheduling is SAMPLE_READ minus SAMPLE_READY; compute is ACT_WRITE minus SAMPLE_READ; loop latency is ACT_WRITE minus SAMPLE_READY. Reports retain sample counts, duration, distributions and deadline/fault response. Missing observations remain visible.",
+          "Adjacent-cycle jitter uses the absolute change in the same complete post-warm-up interval, without bridging gaps; peak-to-peak spread is separate. Tracking RMS/peak describes observed samples when declared, with expected/observed/missing coverage and an invalid partial run.",
+          "Energy is averaged over many cycles and reported per rail and together, not per core or as an atomic per-cycle rail snapshot. JSON/CSV/SVG reports retain simulation or unverified board-declaration scope; a valid file structure cannot supply independent board acceptance.",
+          "Overflow remains invalid even if capture later recovers. Saturated drop counters are lower bounds; missing records cannot establish an absent actuator write or reconstruct an interval. Reset flushes the run, so status custody precedes reset."
         ],
         "acceptance": [
-          "Actual licensed target build/CDC/timing, known-period/delay/overflow/instrument acceptance, complete source-bound repeated board runs; simulated ticks remain simulation."
+          "Actual licensed target build/CDC/timing, known-period/delay/overflow/instrument acceptance, complete source-bound repeated board runs; simulated ticks remain simulation.",
+          "Implemented source and described simulations do not qualify physical clocks, CDC, processor placements, I/O, control quality or power. architecture_only is the source qualification state, while development is actively in progress.",
+          "Nonzero overflow invalidates the run; saturating counts are lower bounds and drain frequency alone cannot establish throughput. Completion receipts do not reconstruct missing event pairs.",
+          "Sequential rail reads do not share an exact instant, and the core rail supplies both processors and fabric. Power units, window timing and calibration need qualification; energy per cycle is a window mean rather than an atomic per-cycle/per-core observation.",
+          "The cited architecture reading retains its earlier date; newly selected document/code readings carry current byte fingerprints. The evolving neural document is an uncommitted source observation pending owner acceptance. No instrument, neural experiment, benchmark, proof or hardware run was executed for this update."
         ],
         "partner_needs": [
           "Actual board/accessories/licensed build/readout and independently agreed SC wrapper; first fit is maintained reference/RTL/runtime conformance before known-input board acceptance. (existing hardware-access direction; no kit receipt, partner response or procurement assumed)"
@@ -14777,6 +15051,18 @@
           {
             "document": "Neuromorphic architect dossier revision 2",
             "sha256": "2f3e0e2e99f44f89dc06b645c80cf1c6385db212ef28cc4e7e8a618478bc427e"
+          },
+          {
+            "document": "LOOP-TIMING-WITNESS / docs/ARCHITECTURE.md (technical source capture 2026-10-14T01:50:52.154839+00:00)",
+            "sha256": "45bbd562307e1465e4f5ec7bbec89e94b33c0d9bc101555cb6fecc17d6da86c6"
+          },
+          {
+            "document": "LOOP-TIMING-WITNESS / docs/FABRIC_WITNESS.md (source 2026-10-18T14:50:15.082871+00:00) (technical source capture 2026-10-18T14:50:15.082871+00:00)",
+            "sha256": "e4fae2a930bd61f630c6bf640d8f64dde06afc3c3e92aec71e266670e47026cc"
+          },
+          {
+            "document": "LOOP-TIMING-WITNESS / docs/MEASUREMENT_PROTOCOL.md (source 2026-10-18T14:50:15.082871+00:00) (technical source capture 2026-10-18T14:50:15.082871+00:00)",
+            "sha256": "48066f760fc251371b9ab64187352909c5c2faf3f7bb88568c3edd5031835f70"
           }
         ],
         "references": [
@@ -14787,7 +15073,10 @@
             "source_revision": "v0.1.0; published 2026-10-02T02:18:15Z",
             "scope": "Software release metadata; no board or physical timing qualification is implied."
           }
-        ]
+        ],
+        "inputs_basis": "Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-18T14:50:15.082871+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance.",
+        "outputs_basis": "Programme deliverables remain architect-owned targets. The interface list also retains source-described result representations from the dated technical guide; this atlas update executes none of those workflows.",
+        "acceptance_basis": "Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-18T14:50:15.082871+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance."
       }
     },
     {
@@ -18072,13 +18361,22 @@
           }
         ],
         "inputs": [
-          "Whole classified parent source and existing consumers, explicit supported numerical/data/resource contracts; final per-component units and stable version matrix require owner freeze."
+          "Whole classified parent source and existing consumers, explicit supported numerical/data/resource contracts; final per-component units and stable version matrix require owner freeze.",
+          "A population supplies a model class or registered name, neuron count and explicit parameters. Distinct population objects retain distinct state even when their configurations match.",
+          "Projection CSR arrays, source/target populations, weights and delays determine how events become currents. Uniform and per-synapse delay storage are different contracts.",
+          "Duration, timestep, stimuli, monitors and optional plasticity determine the reference simulation. Backend selection must preserve those semantics and the population configuration."
         ],
         "outputs": [
-          "Versioned numerical kernel API and a coherent base simulation profile."
+          "Versioned numerical kernel API and a coherent base simulation profile.",
+          "Spike monitors retain neuron/timestep events; state and rate monitors provide selected traces and binned firing rates. These observations describe the configured simulation.",
+          "Population stepping, readable state, reset and externally supplied voltages have explicit roles. Matching a class name does not establish that a backend transports every configured or already-evolved state.",
+          "Fixed-point widths, fractional scaling, thresholds, reset and refractory conventions must be selected together when comparing Python, native and RTL forms."
         ],
         "acceptance": [
-          "Whole parent STABLE incl entire catalogue/Studio/retained components; reversible history/state/resource custody, installed genuine producer-consumer tests, missing-package recovery and complete component lifecycle gates."
+          "Whole parent STABLE incl entire catalogue/Studio/retained components; reversible history/state/resource custody, installed genuine producer-consumer tests, missing-package recovery and complete component lifecycle gates.",
+          "Current Rust admission accounts for Python-only dynamics and population construction/state divergences. Forced Rust refuses incompatible semantics; automatic selection uses the Python path when the Rust admission conditions fail.",
+          "The documented native FixedPointLif accepts signed int16 state with data_width 1–16 and a valid fractional range. A wider Python configuration does not establish native support.",
+          "The documented LIF exporter produces arrays and fixed-point parameters, omits connectivity, and retains its own coverage limitations. Read the separate compiler path for a different emission scope."
         ],
         "partner_needs": [
           "Independent integrator for Versioned numerical kernel API and a coherent base simulation profile. First fit: a genuine separately installed consumer of the agreed component contract, with missing/dependency/version-refusal and recovery evidence. (architect proposal; no extraction or external commitment authorised)"
@@ -18095,8 +18393,23 @@
           {
             "document": "Neuromorphic architect dossier revision 2",
             "sha256": "2f3e0e2e99f44f89dc06b645c80cf1c6385db212ef28cc4e7e8a618478bc427e"
+          },
+          {
+            "document": "SC-NEUROCORE / docs/api/network.md (technical source capture 2026-10-14T04:52:33.602163+00:00)",
+            "sha256": "7739fdeec6a00bd7715ed567d22f6590a3d21e9986ed65390762d88034aafdc9"
+          },
+          {
+            "document": "SC-NEUROCORE / docs/guides/engine_bridge_contracts.md (technical source capture 2026-10-14T04:52:33.602163+00:00)",
+            "sha256": "0693e4f4c68e92c81ad13b4f2888e319e4e3be0aa499ca4c50760e64c97293be"
+          },
+          {
+            "document": "SC-NEUROCORE / src/sc_neurocore/network/network.py (technical source capture 2026-10-14T04:52:33.602163+00:00)",
+            "sha256": "fecc83f4a9a709dcc2a98d3365f32144918f574e92a750c1a20438c4107c43c4"
           }
-        ]
+        ],
+        "inputs_basis": "Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-14T04:52:33.602163+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance.",
+        "outputs_basis": "Programme deliverables remain architect-owned targets. The interface list also retains source-described result representations from the dated technical guide; this atlas update executes none of those workflows.",
+        "acceptance_basis": "Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-14T04:52:33.602163+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance."
       }
     },
     {
@@ -18146,13 +18459,23 @@
           }
         ],
         "inputs": [
-          "Whole classified parent source and existing consumers, explicit supported numerical/data/resource contracts; final per-component units and stable version matrix require owner freeze."
+          "Whole classified parent source and existing consumers, explicit supported numerical/data/resource contracts; final per-component units and stable version matrix require owner freeze.",
+          "The source distinguishes literature models, project-original designs, retained SC compatibility identities and aliases. These identities do not all increment the source-model count.",
+          "Model descriptors carry parameter/state/backend/reproducibility information together with science and silicon tier declarations, validation metrics and integration methods.",
+          "Verified query floors require receipts whose subjects still match the repository; a declared tier alone does not satisfy a higher verified floor."
         ],
         "outputs": [
-          "Model definitions with cited equations, parameter/unit conventions and per-model source/runtime/RTL fidelity evidence."
+          "Model definitions with cited equations, parameter/unit conventions and per-model source/runtime/RTL fidelity evidence.",
+          "Every registered model remains visible, including unreadable metadata. Available, unavailable and invalid states distinguish committed descriptors, inferred entries and faults.",
+          "The shared descriptor surface supplies browse/detail information and explicit curation fields. Missing legacy schemas and malformed curated schemas have different handling.",
+          "The documented query result supplies matching identities, totals, facets and corpus revision. Identity, family, behaviour, metadata and verified-tier filters retain their stated scope.",
+          "Topology generators return CSR tuples for selected network structures. A synthetic graph generator is not an experimentally reconstructed biological connectome."
         ],
         "acceptance": [
-          "Whole parent STABLE incl entire catalogue/Studio/retained components; reversible history/state/resource custody, installed genuine producer-consumer tests, missing-package recovery and complete component lifecycle gates."
+          "Whole parent STABLE incl entire catalogue/Studio/retained components; reversible history/state/resource custody, installed genuine producer-consumer tests, missing-package recovery and complete component lifecycle gates.",
+          "Registered identities, scientific/source catalogue models, static source classes and optional engine wrappers are different populations. Avoid using any one as a universal model or fidelity total.",
+          "Declared descriptor tiers and still-fresh evidence-backed tiers are distinct. A stale or absent receipt cannot be replaced by a catalogue label.",
+          "The descriptor’s golden-trace variants form a finite measured allowlist with a retained numerical envelope; this is not an unrestricted approximate golden comparison."
         ],
         "partner_needs": [
           "Independent integrator for Model definitions with cited equations, parameter/unit conventions and per-model source/runtime/RTL fidelity evidence. First fit: a genuine separately installed consumer of the agreed component contract, with missing/dependency/version-refusal and recovery evidence. (architect proposal; no extraction or external commitment authorised)"
@@ -18169,8 +18492,27 @@
           {
             "document": "Neuromorphic architect dossier revision 2",
             "sha256": "2f3e0e2e99f44f89dc06b645c80cf1c6385db212ef28cc4e7e8a618478bc427e"
+          },
+          {
+            "document": "SC-NEUROCORE / docs/api/model_fidelity_status.md (technical source capture 2026-10-14T04:52:33.602163+00:00)",
+            "sha256": "6d8997beceddac7dcad3f61471079450405cabf8d0572b7a3f69a9f121ab880e"
+          },
+          {
+            "document": "SC-NEUROCORE / docs/api/network.md (technical source capture 2026-10-14T04:52:33.602163+00:00)",
+            "sha256": "7739fdeec6a00bd7715ed567d22f6590a3d21e9986ed65390762d88034aafdc9"
+          },
+          {
+            "document": "SC-NEUROCORE / docs/api/neuron_models.md (technical source capture 2026-10-14T04:52:33.602163+00:00)",
+            "sha256": "5ab6062581a8509d119a804ad93aa0af014ecfcbc01067f9ab6778ba403087be"
+          },
+          {
+            "document": "SC-NEUROCORE / docs/studio/catalogue-health.md (technical source capture 2026-10-14T04:52:33.602163+00:00)",
+            "sha256": "fa217a33f1dc442ad332e5eb0f9a65ecaa000c9f1d47718af67299c6b7a43f9e"
           }
-        ]
+        ],
+        "inputs_basis": "Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-14T04:52:33.602163+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance.",
+        "outputs_basis": "Programme deliverables remain architect-owned targets. The interface list also retains source-described result representations from the dated technical guide; this atlas update executes none of those workflows.",
+        "acceptance_basis": "Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-14T04:52:33.602163+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance."
       }
     },
     {
@@ -18220,13 +18562,23 @@
           }
         ],
         "inputs": [
-          "Whole classified parent source and existing consumers, explicit supported numerical/data/resource contracts; final per-component units and stable version matrix require owner freeze."
+          "Whole classified parent source and existing consumers, explicit supported numerical/data/resource contracts; final per-component units and stable version matrix require owner freeze.",
+          "Packed bitstreams, model/current arrays, dense weights or network populations enter their own selected kernel and wrapper boundary. A common exported name does not establish complete configured model support.",
+          "The packed NumPy path admits contiguous one-dimensional uint8 input and returns owning uint64 words; fixed-point native models retain their separate width, fraction and refractory conventions.",
+          "Python/NumPy versions, engine features, actual extension origin and available worker/device/storage resources define the installation being used."
         ],
         "outputs": [
-          "Optional Rust/PyO3 engine, selected SIMD/MPI execution and parity records for exact supported profiles."
+          "Optional Rust/PyO3 engine, selected SIMD/MPI execution and parity records for exact supported profiles.",
+          "Selected kernels produce packed words, dense results or events/state through documented owning or caller-buffer contracts. Output publication and recoverable refusal remain specific to each binding.",
+          "A retained inventory records both facade and compiled-module names, aliases, signatures, identities and code hashes. Equal metadata still needs separate behavioural and numerical checks.",
+          "The benchmark component retains workload/environment-specific results. SIMD/native presence or an API list does not supply a universal speedup or production throughput claim."
         ],
         "acceptance": [
-          "Whole parent STABLE incl entire catalogue/Studio/retained components; reversible history/state/resource custody, installed genuine producer-consumer tests, missing-package recovery and complete component lifecycle gates."
+          "Whole parent STABLE incl entire catalogue/Studio/retained components; reversible history/state/resource custody, installed genuine producer-consumer tests, missing-package recovery and complete component lifecycle gates.",
+          "The binding map explicitly includes Python-only models and expected divergence, while stochastic models without shared RNG stay outside exact spike-train parity.",
+          "The documented GPU shader uses Philox inputs distinct from CPU encoder streams. Equal seeds across those implementations are not an exact-output parity oracle.",
+          "Installed interface baselines qualify their stated platform/profile only; resource-refusal observations and optional exports do not transfer automatically across operating systems or feature sets.",
+          "The captured network page records mocked MPI coverage and an open real multi-rank requirement. Current MPI entry code refuses selected unsupported dynamics; no distributed execution was performed for this map."
         ],
         "partner_needs": [
           "Independent integrator for Optional Rust/PyO3 engine, selected SIMD/MPI execution and parity records for exact supported profiles. First fit: a genuine separately installed consumer of the agreed component contract, with missing/dependency/version-refusal and recovery evidence. (architect proposal; no extraction or external commitment authorised)"
@@ -18243,8 +18595,35 @@
           {
             "document": "Neuromorphic architect dossier revision 2",
             "sha256": "2f3e0e2e99f44f89dc06b645c80cf1c6385db212ef28cc4e7e8a618478bc427e"
+          },
+          {
+            "document": "SC-NEUROCORE / docs/benchmarks/BENCHMARKS.md (technical source capture 2026-10-14T04:06:50.720510+00:00)",
+            "sha256": "ebdd11683a838a98f227cc4d71aeafde7627cafc0e3c616ffacb61d753f331c2"
+          },
+          {
+            "document": "SC-NEUROCORE / docs/api/network.md (technical source capture 2026-10-14T04:52:33.602163+00:00)",
+            "sha256": "7739fdeec6a00bd7715ed567d22f6590a3d21e9986ed65390762d88034aafdc9"
+          },
+          {
+            "document": "SC-NEUROCORE / docs/api/neuron_models.md (technical source capture 2026-10-14T04:52:33.602163+00:00)",
+            "sha256": "5ab6062581a8509d119a804ad93aa0af014ecfcbc01067f9ab6778ba403087be"
+          },
+          {
+            "document": "SC-NEUROCORE / docs/api/rust-engine.md (technical source capture 2026-10-14T04:52:33.602163+00:00)",
+            "sha256": "524d62d0ae8a48c152ecbe5414b0be0e891044d7e2b9f80d1da313a20fb672f6"
+          },
+          {
+            "document": "SC-NEUROCORE / docs/guides/engine_bridge_contracts.md (technical source capture 2026-10-14T04:52:33.602163+00:00)",
+            "sha256": "0693e4f4c68e92c81ad13b4f2888e319e4e3be0aa499ca4c50760e64c97293be"
+          },
+          {
+            "document": "SC-NEUROCORE / src/sc_neurocore/network/network.py (technical source capture 2026-10-14T04:52:33.602163+00:00)",
+            "sha256": "fecc83f4a9a709dcc2a98d3365f32144918f574e92a750c1a20438c4107c43c4"
           }
-        ]
+        ],
+        "inputs_basis": "Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-14T04:52:33.602163+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance.",
+        "outputs_basis": "Programme deliverables remain architect-owned targets. The interface list also retains source-described result representations from the dated technical guide; this atlas update executes none of those workflows.",
+        "acceptance_basis": "Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-14T04:52:33.602163+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance."
       }
     },
     {
@@ -18705,13 +19084,25 @@
           }
         ],
         "inputs": [
-          "Whole classified parent source and existing consumers, explicit supported numerical/data/resource contracts; final per-component units and stable version matrix require owner freeze."
+          "Whole classified parent source and existing consumers, explicit supported numerical/data/resource contracts; final per-component units and stable version matrix require owner freeze.",
+          "NIR graphs or files supply node/edge structure and parameters; the importer still needs explicit timestep and reset conventions matched to the source framework.",
+          "The Torch bridge takes a supported population/projection network and a time-by-batch-by-input current tensor. An input-facing population must provide a deterministic entry.",
+          "Selected parser graphs become NeuronGraph records with explicit scales, delays, thresholds, widths and hierarchy provenance before compiler consumption."
         ],
         "outputs": [
-          "Supported versioned mapping APIs with complete conversion/semantic limitations."
+          "Supported versioned mapping APIs with complete conversion/semantic limitations.",
+          "The importer returns a network together with assumed/approximated/not-carried notes and file NIR version when present. Unsupported node types are refused.",
+          "NIR export retains its own omission notes for timestep, subtract-reset, dynamic node state and pooling input shapes. NeuroML and SONATA are documented as import-only on this surface.",
+          "The selected Torch module produces output-population spike counts and can write learned projection values back into the existing CSR connections.",
+          "The lowering/compiler path emits top interconnect, per-type neuron modules and weight ROM representation. These are compiler artefacts requiring target-specific validation.",
+          "The group also assigns quantum, hyperdimensional and neuro-symbolic bridges here. The selected NIR/Torch passages do not establish all of those families’ complete interfaces or independent results."
         ],
         "acceptance": [
-          "Whole parent STABLE incl entire catalogue/Studio/retained components; reversible history/state/resource custody, installed genuine producer-consumer tests, missing-package recovery and complete component lifecycle gates."
+          "Whole parent STABLE incl entire catalogue/Studio/retained components; reversible history/state/resource custody, installed genuine producer-consumer tests, missing-package recovery and complete component lifecycle gates.",
+          "A list of supported NIR primitives and parameter-roundtrip wording does not remove the importer’s documented assumptions, approximations and export omissions.",
+          "The guide admits selected Lapicque and constrained StochasticLIF profiles and refuses embedded stimuli, plastic/delayed projections and unmappable models. Closed graphs require an input-facing population.",
+          "Timestep, some reset/state/shape information and graph metadata have explicitly recorded carriage limits; preserve notes rather than treating the exchange file as full runtime state.",
+          "Selected graph/RTL generation needs target validation, and naming additional quantum-related programme bridges supplies no measured device or computational-advantage result."
         ],
         "partner_needs": [
           "Independent integrator for Supported versioned mapping APIs with complete conversion/semantic limitations. First fit: a genuine separately installed consumer of the agreed component contract, with missing/dependency/version-refusal and recovery evidence. (architect proposal; no extraction or external commitment authorised)"
@@ -18728,8 +19119,27 @@
           {
             "document": "Neuromorphic architect dossier revision 2",
             "sha256": "2f3e0e2e99f44f89dc06b645c80cf1c6385db212ef28cc4e7e8a618478bc427e"
+          },
+          {
+            "document": "SC-NEUROCORE / docs/ecosystem.md (technical source capture 2026-10-14T04:06:50.720510+00:00)",
+            "sha256": "43e143f93860f1e5826bb1f88f3167d5677c59c437d20935db7837b971d3f25e"
+          },
+          {
+            "document": "SC-NEUROCORE / docs/api/nir_bridge.md (technical source capture 2026-10-15T09:25:52.259412+00:00)",
+            "sha256": "3a70bfdfc599081e4ba8ab666a314a072ccf957a553bf2cac189d0367cc3b20c"
+          },
+          {
+            "document": "SC-NEUROCORE / docs/guides/network_to_torch_bridge.md (technical source capture 2026-10-15T09:25:52.259412+00:00)",
+            "sha256": "b2aefd873e97d34fb84f4b35f5d3605f1801acc527fa5cabcdb1ad432e82e82d"
+          },
+          {
+            "document": "SC-NEUROCORE / docs/guides/nir_integration.md (technical source capture 2026-10-15T09:25:52.259412+00:00)",
+            "sha256": "2afbb3eecfc685e470a51d02fd71d2d3e4d47d10ae69184d6a81af25b8e531a1"
           }
-        ]
+        ],
+        "inputs_basis": "Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-15T09:25:52.259412+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance.",
+        "outputs_basis": "Programme deliverables remain architect-owned targets. The interface list also retains source-described result representations from the dated technical guide; this atlas update executes none of those workflows.",
+        "acceptance_basis": "Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-15T09:25:52.259412+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance."
       }
     },
     {
@@ -18779,13 +19189,24 @@
           }
         ],
         "inputs": [
-          "Whole classified parent source and existing consumers, explicit supported numerical/data/resource contracts; final per-component units and stable version matrix require owner freeze."
+          "Whole classified parent source and existing consumers, explicit supported numerical/data/resource contracts; final per-component units and stable version matrix require owner freeze.",
+          "The experiment selects manifest-bound groups, encoding, network tensors and labels before fitting/evaluation. The data and split contract accompanies any reported result.",
+          "Choose a surrogate-gradient/Torch model, separate equilibrium-propagation research path or explicit local plasticity rule. Forward dynamics, gradient approximation and update state are different contracts.",
+          "Supported installed Torch/device features, fixed-point field widths, reward/decay parameters and actual native owners determine the selected numerical path."
         ],
         "outputs": [
-          "Training APIs, declared learning-state/checkpoint contracts and evidence for supported learning workflows."
+          "Training APIs, declared learning-state/checkpoint contracts and evidence for supported learning workflows.",
+          "Training returns its documented loss/accuracy observations; evaluation uses eval mode and no gradient. Report the exact data, model, timestep and device profile rather than inferring external generalisation.",
+          "The hardware-facing reward-STDP contract retains weight, pre/post and eligibility traces plus exact field widths/saturation; selected Python/native/RTL forms require their own correspondence.",
+          "Selected trained weights are normalised per layer for SC probabilities, with optional declared export noise. Joint stochastic-backprop reports retain relaxed objective/design choices and export metadata.",
+          "The group also assigns quantisation-aware training and distillation to this component. These are component objectives; the selected passages here do not establish their complete independent interfaces or delivered results."
         ],
         "acceptance": [
-          "Whole parent STABLE incl entire catalogue/Studio/retained components; reversible history/state/resource custody, installed genuine producer-consumer tests, missing-package recovery and complete component lifecycle gates."
+          "Whole parent STABLE incl entire catalogue/Studio/retained components; reversible history/state/resource custody, installed genuine producer-consumer tests, missing-package recovery and complete component lifecycle gates.",
+          "The bounded state proof concerns four fields per synapse independent of sequence length. It does not assert constant total network, dataset, reporting or training-history memory.",
+          "The selector checks the installed Torch build’s GPU capability; an explicit CUDA request bypasses it. Installed hardware/feature support needs the selected runtime profile.",
+          "Per-layer min-max normalised probabilities and finite-bitstream noise are selected export semantics. Their source description does not establish unchanged trained-model accuracy after hardware conversion.",
+          "EP is documented as a research NumPy path; local adaptation/RTL handoff and stochastic-backprop parity exclude physical board measurement and timing/power qualification."
         ],
         "partner_needs": [
           "Independent integrator for Training APIs, declared learning-state/checkpoint contracts and evidence for supported learning workflows. First fit: a genuine separately installed consumer of the agreed component contract, with missing/dependency/version-refusal and recovery evidence. (architect proposal; no extraction or external commitment authorised)"
@@ -18802,8 +19223,27 @@
           {
             "document": "Neuromorphic architect dossier revision 2",
             "sha256": "2f3e0e2e99f44f89dc06b645c80cf1c6385db212ef28cc4e7e8a618478bc427e"
+          },
+          {
+            "document": "SC-NEUROCORE / docs/ecosystem.md (technical source capture 2026-10-14T04:06:50.720510+00:00)",
+            "sha256": "43e143f93860f1e5826bb1f88f3167d5677c59c437d20935db7837b971d3f25e"
+          },
+          {
+            "document": "SC-NEUROCORE / docs/api/datasets.md (technical source capture 2026-10-14T14:27:54.802214+00:00)",
+            "sha256": "6f9edd8c25c31333f0f7244a5e9c2f5d6988fce1732c66f18184b24b572669d6"
+          },
+          {
+            "document": "SC-NEUROCORE / docs/api/learning.md (technical source capture 2026-10-14T14:27:54.802214+00:00)",
+            "sha256": "ff74bb2910b0277b2822c0963d226b2e6b3ac6a39269deb82443f7007b7d4bc3"
+          },
+          {
+            "document": "SC-NEUROCORE / docs/api/training.md (technical source capture 2026-10-14T14:27:54.802214+00:00)",
+            "sha256": "332f817b674959546a29343c6587ff9cc78112a9b02c692d41aafe6a0fb7679e"
           }
-        ]
+        ],
+        "inputs_basis": "Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-14T14:27:54.802214+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance.",
+        "outputs_basis": "Programme deliverables remain architect-owned targets. The interface list also retains source-described result representations from the dated technical guide; this atlas update executes none of those workflows.",
+        "acceptance_basis": "Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-14T14:27:54.802214+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance."
       }
     },
     {
@@ -20810,13 +21250,24 @@
           }
         ],
         "inputs": [
-          "Whole classified parent source and existing consumers, explicit supported numerical/data/resource contracts; final per-component units and stable version matrix require owner freeze."
+          "Whole classified parent source and existing consumers, explicit supported numerical/data/resource contracts; final per-component units and stable version matrix require owner freeze.",
+          "Selected files, labels, sensor geometry, source time units and published split are recorded with provenance. Real archives and deliberately selected synthetic fixtures are different input populations.",
+          "Timestep, observation window, polarity rule, dimensions, random seed and first-spike latency settings determine the tensor consumed by a network.",
+          "Binary rasters, event streams and electrode waveforms have different representations. Selected codecs require their dimensions/state; the waveform interface validates a finite nonempty time-by-channel matrix."
         ],
         "outputs": [
-          "Dataset/encoding/codec APIs with explicit timebase, loss and provenance, linked to independent stream tools."
+          "Dataset/encoding/codec APIs with explicit timebase, loss and provenance, linked to independent stream tools.",
+          "The dataset manifest binds file size/SHA, samples, labels/groups/splits and publisher metadata. Verification reports missing, altered and unlisted files; the manifest digest identifies the exact declared input.",
+          "The split plan binds its originating manifest and keeps complete groups on one side. Separate checks expose user-plan leakage and groups shared by the publisher’s original splits.",
+          "Frozen encoder declarations and digests retain exact binning/late-event/polarity/seed/latency rules; unknown schemas or changed rules are refused rather than reconstructed approximately.",
+          "Selected recorder rasters and codec bytes/results retain their specific read/shape/state contracts. A stored representation does not itself establish link timing, physical telemetry or empirical compression benefit."
         ],
         "acceptance": [
-          "Whole parent STABLE incl entire catalogue/Studio/retained components; reversible history/state/resource custody, installed genuine producer-consumer tests, missing-package recovery and complete component lifecycle gates."
+          "Whole parent STABLE incl entire catalogue/Studio/retained components; reversible history/state/resource custody, installed genuine producer-consumer tests, missing-package recovery and complete component lifecycle gates.",
+          "Current loader code and common contracts select synthetic generation only through the explicit flag; missing requested real data refuses. A test fixture is not the real corpus.",
+          "The documented poisson_encode path is one Bernoulli event per timestep, so it cannot emit multiple same-step events as a genuine Poisson count could.",
+          "SHD uses speaker groups; the event datasets identify recordings. Group checks do not invent an unavailable subject identity or a publisher train/test split for user-converted CIFAR data.",
+          "Header/input constraints and compression interfaces are source contracts; advertised ratios, Bluetooth feasibility and real-time latency need separate measured workload/device evidence."
         ],
         "partner_needs": [
           "Independent integrator for Dataset/encoding/codec APIs with explicit timebase, loss and provenance, linked to independent stream tools. First fit: a genuine separately installed consumer of the agreed component contract, with missing/dependency/version-refusal and recovery evidence. (architect proposal; no extraction or external commitment authorised)"
@@ -20833,8 +21284,31 @@
           {
             "document": "Neuromorphic architect dossier revision 2",
             "sha256": "2f3e0e2e99f44f89dc06b645c80cf1c6385db212ef28cc4e7e8a618478bc427e"
+          },
+          {
+            "document": "SC-NEUROCORE / docs/ecosystem.md (technical source capture 2026-10-14T04:06:50.720510+00:00)",
+            "sha256": "43e143f93860f1e5826bb1f88f3167d5677c59c437d20935db7837b971d3f25e"
+          },
+          {
+            "document": "SC-NEUROCORE / docs/api/datasets.md (technical source capture 2026-10-14T14:27:54.802214+00:00)",
+            "sha256": "6f9edd8c25c31333f0f7244a5e9c2f5d6988fce1732c66f18184b24b572669d6"
+          },
+          {
+            "document": "SC-NEUROCORE / docs/api/recorders.md (technical source capture 2026-10-14T14:27:54.802214+00:00)",
+            "sha256": "60c86bb0b1eeb6d685140106c76a0101c79336fabef1492f17b316722e0a0b74"
+          },
+          {
+            "document": "SC-NEUROCORE / docs/api/spike_codec.md (technical source capture 2026-10-14T14:27:54.802214+00:00)",
+            "sha256": "f0abd10dcbb02ce31075ce7b6659dc5947fcf9b228fa6d7174f4066f56076d7a"
+          },
+          {
+            "document": "SC-NEUROCORE / src/sc_neurocore/datasets/loaders.py (technical source capture 2026-10-14T14:27:54.802214+00:00)",
+            "sha256": "e45562dbde25cca71da7de2cd1e1cebdcc78b37e1441a2f7afc34ed23d3e5b5a"
           }
-        ]
+        ],
+        "inputs_basis": "Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-14T14:27:54.802214+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance.",
+        "outputs_basis": "Programme deliverables remain architect-owned targets. The interface list also retains source-described result representations from the dated technical guide; this atlas update executes none of those workflows.",
+        "acceptance_basis": "Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-14T14:27:54.802214+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance."
       }
     },
     {
@@ -20915,13 +21389,24 @@
           }
         ],
         "inputs": [
-          "Whole classified parent source and existing consumers, explicit supported numerical/data/resource contracts; final per-component units and stable version matrix require owner freeze."
+          "Whole classified parent source and existing consumers, explicit supported numerical/data/resource contracts; final per-component units and stable version matrix require owner freeze.",
+          "Binary timestep trains, continuous spike times, trial populations, waveforms or field signals are different inputs. Each metric’s timestep/bin/window and units are declared.",
+          "Select metric, bins/lags/model order, surrogate null, trial/group population and any conditioning signals before interpreting a result.",
+          "GPFA receives binned population counts and explicit latent/bin/iteration settings; deterministic initialisation and the selected available backend define that estimator."
         ],
         "outputs": [
-          "Observable definitions, analysis/plot APIs and provenance-preserving representations of scoped results."
+          "Observable definitions, analysis/plot APIs and provenance-preserving representations of scoped results.",
+          "Rate/interval/variability, spike-train distances, correlation and significance/pattern outputs report the selected observable rather than a universal neural-system score.",
+          "The documented EM contract returns trajectories, loading matrix, offset, diagonal noise and likelihood history; fixed timescales and consistent kernel jitter are retained estimator choices.",
+          "Selected Granger/VAR, PDC and DTF outputs retain their input validation, short-history and singular-frequency fallback conventions; the maintained dispatched path here is Python.",
+          "Phi* compares Gaussian past/future mutual information against contiguous bipartitions and returns a nonnegative reducibility estimate in nats. It is not a consciousness verdict or complete IIT partition search."
         ],
         "acceptance": [
-          "Whole parent STABLE incl entire catalogue/Studio/retained components; reversible history/state/resource custody, installed genuine producer-consumer tests, missing-package recovery and complete component lifecycle gates."
+          "Whole parent STABLE incl entire catalogue/Studio/retained components; reversible history/state/resource custody, installed genuine producer-consumer tests, missing-package recovery and complete component lifecycle gates.",
+          "GPFA reports measured absolute differences and conditional tests for built backends. Missing-backend skips and tight roundoff agreement do not establish universal or bit-exact parity.",
+          "The source explicitly keeps generated safety-note surfaces outside dispatched causality execution and owns the maintained estimator with Python/NumPy.",
+          "Selected callback/closure-based functions remain Rust-only or need Python wrappers. A module list cannot establish that every metric has the same PyO3 contract.",
+          "Small-window/coarse-grained Gaussian reducibility and contiguous partition comparison are diagnostic scope, not intrinsic causal power, consciousness or full IIT minimisation."
         ],
         "partner_needs": [
           "Independent integrator for Observable definitions, analysis/plot APIs and provenance-preserving representations of scoped results. First fit: a genuine separately installed consumer of the agreed component contract, with missing/dependency/version-refusal and recovery evidence. (architect proposal; no extraction or external commitment authorised)"
@@ -20938,8 +21423,31 @@
           {
             "document": "Neuromorphic architect dossier revision 2",
             "sha256": "2f3e0e2e99f44f89dc06b645c80cf1c6385db212ef28cc4e7e8a618478bc427e"
+          },
+          {
+            "document": "SC-NEUROCORE / docs/api/analysis.md (technical source capture 2026-10-14T14:27:54.802214+00:00)",
+            "sha256": "4952143ad8af84b399c055b7b4af93edb9fbd99a753d3603a1e3bc12895256b8"
+          },
+          {
+            "document": "SC-NEUROCORE / docs/api/datasets.md (technical source capture 2026-10-14T14:27:54.802214+00:00)",
+            "sha256": "6f9edd8c25c31333f0f7244a5e9c2f5d6988fce1732c66f18184b24b572669d6"
+          },
+          {
+            "document": "SC-NEUROCORE / docs/api/gpfa.md (technical source capture 2026-10-14T14:27:54.802214+00:00)",
+            "sha256": "a23f68b7328b82a7ae1f0170f983dda7a064f52f998024cfa11629620ca84647"
+          },
+          {
+            "document": "SC-NEUROCORE / docs/api/recorders.md (technical source capture 2026-10-14T14:27:54.802214+00:00)",
+            "sha256": "60c86bb0b1eeb6d685140106c76a0101c79336fabef1492f17b316722e0a0b74"
+          },
+          {
+            "document": "SC-NEUROCORE / docs/api/rust-analysis-engine.md (technical source capture 2026-10-14T14:27:54.802214+00:00)",
+            "sha256": "e51ebe4eeb12d7e67f532d53aadf26daf24f148b8a44d9f4d5f10523eae6e2b1"
           }
-        ]
+        ],
+        "inputs_basis": "Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-14T14:27:54.802214+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance.",
+        "outputs_basis": "Programme deliverables remain architect-owned targets. The interface list also retains source-described result representations from the dated technical guide; this atlas update executes none of those workflows.",
+        "acceptance_basis": "Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-14T14:27:54.802214+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance."
       }
     },
     {
@@ -23390,13 +23898,22 @@
           }
         ],
         "inputs": [
-          "Whole classified parent source and existing consumers, explicit supported numerical/data/resource contracts; final per-component units and stable version matrix require owner freeze."
+          "Whole classified parent source and existing consumers, explicit supported numerical/data/resource contracts; final per-component units and stable version matrix require owner freeze.",
+          "A validated EquationNeuron or supported NIR/SCNetwork graph supplies equations, committed state, weights, delays, thresholds and network structure. The selected integration method retains its own recurrence semantics.",
+          "Q-format widths, fractional bits, product rounding, overflow and LUT domains are selected contracts. Stochastic threshold sampling does not provide an implicit random source for product rounding.",
+          "Profile settings, work directory and actual external tools define the selected flow. Compiler metadata alone cannot establish a target’s physical behaviour."
         ],
         "outputs": [
-          "Versioned IR/compiler API, generated Verilog/SystemVerilog and supported MLIR/CIRCT/formal/co-simulation collateral."
+          "Versioned IR/compiler API, generated Verilog/SystemVerilog and supported MLIR/CIRCT/formal/co-simulation collateral.",
+          "The source describes registered or folded Verilog, SC-NIR bundles, MLIR lowering and top-level assembly. These are distinct selected paths rather than a guarantee that every model completes every stage.",
+          "Precision planning, fixed-point lowering, formal/testbench and hardware numerical contracts retain their selected model and state/event scope. A LUT size is not a global accuracy percentage.",
+          "Synthesis/P&R/ASIC paths require actual tool results. Generated paths or source-line counts do not supply area, timing, power or energy evidence."
         ],
         "acceptance": [
-          "Whole parent STABLE incl entire catalogue/Studio/retained components; reversible history/state/resource custody, installed genuine producer-consumer tests, missing-package recovery and complete component lifecycle gates."
+          "Whole parent STABLE incl entire catalogue/Studio/retained components; reversible history/state/resource custody, installed genuine producer-consumer tests, missing-package recovery and complete component lifecycle gates.",
+          "The source lists multiple frontends, representations and external tools. Installed availability, supported model semantics and completed artefacts need exact per-flow evidence.",
+          "The compiler timing record comes from a loaded, unreserved workstation. The source expressly keeps it as local regression context and reports no maintained cross-language compiler timing comparison.",
+          "Independent packaging, migration and commercial boundaries remain separately decided. Parent implementation facts cannot become a standalone component release claim."
         ],
         "partner_needs": [
           "Independent integrator for Versioned IR/compiler API, generated Verilog/SystemVerilog and supported MLIR/CIRCT/formal/co-simulation collateral. First fit: a genuine separately installed consumer of the agreed component contract, with missing/dependency/version-refusal and recovery evidence. (architect proposal; no extraction or external commitment authorised)"
@@ -23413,8 +23930,23 @@
           {
             "document": "Neuromorphic architect dossier revision 2",
             "sha256": "2f3e0e2e99f44f89dc06b645c80cf1c6385db212ef28cc4e7e8a618478bc427e"
+          },
+          {
+            "document": "SC-NEUROCORE / docs/architecture/SYSTEM_MAP.md (technical source capture 2026-10-14T01:13:13.396533+00:00)",
+            "sha256": "67a02b61c3ae61aa0f767ef15bb1ba517b83ec495bbd517bf8e2eed340b8f38f"
+          },
+          {
+            "document": "SC-NEUROCORE / docs/api/compiler.md (technical source capture 2026-10-14T04:06:50.720510+00:00)",
+            "sha256": "15dd02e5dc6c8342c8645f2d82005d80280bf30d1d162f3ced70861584bfc40a"
+          },
+          {
+            "document": "SC-NEUROCORE / docs/ecosystem.md (technical source capture 2026-10-14T04:06:50.720510+00:00)",
+            "sha256": "43e143f93860f1e5826bb1f88f3167d5677c59c437d20935db7837b971d3f25e"
           }
-        ]
+        ],
+        "inputs_basis": "Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-14T04:06:50.720510+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance.",
+        "outputs_basis": "Programme deliverables remain architect-owned targets. The interface list also retains source-described result representations from the dated technical guide; this atlas update executes none of those workflows.",
+        "acceptance_basis": "Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-14T04:06:50.720510+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance."
       }
     },
     {
@@ -26008,13 +26540,22 @@
           }
         ],
         "inputs": [
-          "Whole classified parent source and existing consumers, explicit supported numerical/data/resource contracts; final per-component units and stable version matrix require owner freeze."
+          "Whole classified parent source and existing consumers, explicit supported numerical/data/resource contracts; final per-component units and stable version matrix require owner freeze.",
+          "The profile supplies identity, platform class, signed width/fraction, rounding/overflow and DSP constraints. Selection is configuration metadata with its own supported consumer path.",
+          "Supported compiler/HDL outputs, wrappers and driver contracts must match the selected model and target. A profile name does not resolve an arbitrary hardware instruction path.",
+          "Tool versions, constraints, physical flow and matching raw/report artefacts define what hardware claim can be made for the selected deployment."
         ],
         "outputs": [
-          "Target adapters, constraints/readout/driver interfaces and qualified target-specific deployment profiles."
+          "Target adapters, constraints/readout/driver interfaces and qualified target-specific deployment profiles.",
+          "Public profile lookup/listing exposes the selected target’s metadata through the established compiler.platforms API without importing private registration internals.",
+          "The parent describes HDL assembly, target-oriented drivers and deployment/ASIC collateral. Their existence is separate from installing and exercising a genuine device consumer.",
+          "Matching synthesis/placement/timing/power and physical-device records support their own selected claims. Configuration/emulation cannot replace those records."
         ],
         "acceptance": [
-          "Whole parent STABLE incl entire catalogue/Studio/retained components; reversible history/state/resource custody, installed genuine producer-consumer tests, missing-package recovery and complete component lifecycle gates."
+          "Whole parent STABLE incl entire catalogue/Studio/retained components; reversible history/state/resource custody, installed genuine producer-consumer tests, missing-package recovery and complete component lifecycle gates.",
+          "The documented trap assertion is guarded by synthesis translate_off and stripped for synthesis. It does not become a runtime hardware protection mechanism merely because the profile selects trap.",
+          "Profiles describe target settings; emulators describe selected dynamics. Genuine installed target/driver/measurement paths still need their own evidence.",
+          "Source evidence organisation and formal collateral do not certify a device or convert generated line counts into timing/power/energy."
         ],
         "partner_needs": [
           "Independent integrator for Target adapters, constraints/readout/driver interfaces and qualified target-specific deployment profiles. First fit: a genuine separately installed consumer of the agreed component contract, with missing/dependency/version-refusal and recovery evidence. (architect proposal; no extraction or external commitment authorised)"
@@ -26031,8 +26572,35 @@
           {
             "document": "Neuromorphic architect dossier revision 2",
             "sha256": "2f3e0e2e99f44f89dc06b645c80cf1c6385db212ef28cc4e7e8a618478bc427e"
+          },
+          {
+            "document": "SC-NEUROCORE / README.md (technical source capture 2026-10-14T01:13:13.396533+00:00)",
+            "sha256": "c595b0bce36fade9e5dc4491d731438cdb0acc0347c3c13ee489f385334451ab"
+          },
+          {
+            "document": "SC-NEUROCORE / docs/architecture/SYSTEM_MAP.md (technical source capture 2026-10-14T01:13:13.396533+00:00)",
+            "sha256": "67a02b61c3ae61aa0f767ef15bb1ba517b83ec495bbd517bf8e2eed340b8f38f"
+          },
+          {
+            "document": "SC-NEUROCORE / docs/api/compiler.md (technical source capture 2026-10-14T04:06:50.720510+00:00)",
+            "sha256": "15dd02e5dc6c8342c8645f2d82005d80280bf30d1d162f3ced70861584bfc40a"
+          },
+          {
+            "document": "SC-NEUROCORE / docs/api/hardware.md (technical source capture 2026-10-14T04:06:50.720510+00:00)",
+            "sha256": "b144db1b028cb33faf9df3b882faf676f908bbb5aea1122a5a913ca0942624d4"
+          },
+          {
+            "document": "SC-NEUROCORE / docs/ecosystem.md (technical source capture 2026-10-14T04:06:50.720510+00:00)",
+            "sha256": "43e143f93860f1e5826bb1f88f3167d5677c59c437d20935db7837b971d3f25e"
+          },
+          {
+            "document": "SC-NEUROCORE / docs/guides/hardware_profiles.md (technical source capture 2026-10-14T04:06:50.720510+00:00)",
+            "sha256": "b28d831faed4fe2f1525e5d1efb1696a386c77fb2a0512aa65172a30b04d067d"
           }
-        ]
+        ],
+        "inputs_basis": "Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-14T04:06:50.720510+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance.",
+        "outputs_basis": "Programme deliverables remain architect-owned targets. The interface list also retains source-described result representations from the dated technical guide; this atlas update executes none of those workflows.",
+        "acceptance_basis": "Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-14T04:06:50.720510+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance."
       }
     },
     {
@@ -28106,13 +28674,26 @@
           }
         ],
         "inputs": [
-          "Whole classified parent source and existing consumers, explicit supported numerical/data/resource contracts; final per-component units and stable version matrix require owner freeze."
+          "Whole classified parent source and existing consumers, explicit supported numerical/data/resource contracts; final per-component units and stable version matrix require owner freeze.",
+          "Descriptors, model/schema/compiler/validator source, committed RTL/reports and required native source/binary subjects define the facet being evaluated.",
+          "DUT/reference interfaces, reset, observed/coupled state, proof mode, depth, assumptions and actual toolchain define a formal question.",
+          "Declared state layouts/lane packets and real event-response signals identify what crosses a runtime boundary or satisfies a cycle-level obligation."
         ],
         "outputs": [
-          "Versioned verification APIs, proof/refusal records and fault-analysis evidence; no automatic physical or safety certification."
+          "Versioned verification APIs, proof/refusal records and fault-analysis evidence; no automatic physical or safety certification.",
+          "State conformance identifies carried, dropped and unnameable fields. Correct trajectories, supported installation and numerical parity remain separately exercised evidence.",
+          "Selected runners return verdict, mode/depth/engine and counterexample information; setup failure or unavailable tools are distinct from a proven property.",
+          "A creditable receipt identifies actually executed checks and source subjects, including native binaries when required, and retains the selected class/facet/profile scope.",
+          "The ledger distinguishes not-declared/declared/unavailable/located/bound/stale/invalid. Verified tiers climb only through declared facets with current bound evidence.",
+          "The group also names fault injection and resilience here; selected formal/state/receipt source passages do not establish complete fault campaigns or a safety certification."
         ],
         "acceptance": [
-          "Whole parent STABLE incl entire catalogue/Studio/retained components; reversible history/state/resource custody, installed genuine producer-consumer tests, missing-package recovery and complete component lifecycle gates."
+          "Whole parent STABLE incl entire catalogue/Studio/retained components; reversible history/state/resource custody, installed genuine producer-consumer tests, missing-package recovery and complete component lifecycle gates.",
+          "A bounded proof covers its depth from reset. An unbounded result needs the appropriate invariant over every coupled state; UNKNOWN is inconclusive.",
+          "Shared free-product lifting is an opt-in over-approximation with a sound PASS argument in the described construction; FAIL can be spurious and does not automatically disprove the real design.",
+          "SHA seals detect content changes but are not signatures, recorder authentication or independent review. A receipt covers selected inputs/domain rather than arbitrary dependencies or operating points.",
+          "Bounded safety belongs to its own facet and cannot credit formal equivalence. Likewise state-field carriage does not establish numerical correctness or installed support.",
+          "Cycle obligations and structural CDC checks do not provide post-route nanoseconds or physical metastability resolution. Missing proof executables never count as a pass."
         ],
         "partner_needs": [
           "Independent integrator for Versioned verification APIs, proof/refusal records and fault-analysis evidence; no automatic physical or safety certification. First fit: a genuine separately installed consumer of the agreed component contract, with missing/dependency/version-refusal and recovery evidence. (architect proposal; no extraction or external commitment authorised)"
@@ -28129,8 +28710,31 @@
           {
             "document": "Neuromorphic architect dossier revision 2",
             "sha256": "2f3e0e2e99f44f89dc06b645c80cf1c6385db212ef28cc4e7e8a618478bc427e"
+          },
+          {
+            "document": "SC-NEUROCORE / docs/ecosystem.md (technical source capture 2026-10-14T04:06:50.720510+00:00)",
+            "sha256": "43e143f93860f1e5826bb1f88f3167d5677c59c437d20935db7837b971d3f25e"
+          },
+          {
+            "document": "SC-NEUROCORE / docs/api/formal_equivalence.md (technical source capture 2026-10-15T09:25:52.259412+00:00)",
+            "sha256": "6ebb894538dec60dd99b4cb3946f103363c65b5d4be25d4268f9d5d965bf90ce"
+          },
+          {
+            "document": "SC-NEUROCORE / docs/api/readiness_evidence.md (technical source capture 2026-10-15T09:25:52.259412+00:00)",
+            "sha256": "688924ea83aec14f19c037818924d0dce2481ab164c82ffe3855ce49b64cff77"
+          },
+          {
+            "document": "SC-NEUROCORE / docs/formal/timing_aware_properties.md (technical source capture 2026-10-15T09:25:52.259412+00:00)",
+            "sha256": "cac22a56eb42a5064b14859f076a2beb8809e69661385bf347b6e92bd873bd07"
+          },
+          {
+            "document": "SC-NEUROCORE / docs/validation/runtime_state_conformance.md (technical source capture 2026-10-15T09:25:52.259412+00:00)",
+            "sha256": "f5205ace2e5565598aebcfea2a7d509ea3f27c39203de207eca949aba75adcce"
           }
-        ]
+        ],
+        "inputs_basis": "Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-15T09:25:52.259412+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance.",
+        "outputs_basis": "Programme deliverables remain architect-owned targets. The interface list also retains source-described result representations from the dated technical guide; this atlas update executes none of those workflows.",
+        "acceptance_basis": "Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-15T09:25:52.259412+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance."
       }
     },
     {
@@ -28180,13 +28784,26 @@
           }
         ],
         "inputs": [
-          "Whole classified parent source and existing consumers, explicit supported numerical/data/resource contracts; final per-component units and stable version matrix require owner freeze."
+          "Whole classified parent source and existing consumers, explicit supported numerical/data/resource contracts; final per-component units and stable version matrix require owner freeze.",
+          "Model/profile, timestep, protocol, parameters, initial state and randomness travel with the resolved experiment rather than being reconstructed from a display plot.",
+          "Selected model/ODE inputs, supported backend and currently available prerequisites determine which workflow step is ready, failed, unsupported or complete.",
+          "Requested parameter/step/integrator/Q-format values and source/RTL digests define the selected compilation and evidence context."
         ],
         "outputs": [
-          "A visual IDE with model/network/compiler/training/analysis/evidence views composed through supported domain interfaces."
+          "A visual IDE with model/network/compiler/training/analysis/evidence views composed through supported domain interfaces.",
+          "Simulation/analysis payloads retain raw traces and snapshots when supplied, display projections and omission markers. Historical visible results do not certify the latest requested run.",
+          "Selected IR/RTL views expose structural checks, source/RTL traceability, representability and accepted/refused Q-formats; these are distinct from synthesis or board evidence.",
+          "The standalone script guards the resolved experiment digest; a replay pack also carries events/state expectations and reports exact or allowed-tolerance reproduction and admitted runtime drift.",
+          "Receipts bind payload scope/dependencies and distinguish producer-written from exporter-assembled evidence. Chain verification and completeness remain separate outcomes.",
+          "Saving appends a revision and stale saves refuse; prior immutable state, conflict handling and restoration remain part of workspace custody."
         ],
         "acceptance": [
-          "Whole parent STABLE incl entire catalogue/Studio/retained components; reversible history/state/resource custody, installed genuine producer-consumer tests, missing-package recovery and complete component lifecycle gates."
+          "Whole parent STABLE incl entire catalogue/Studio/retained components; reversible history/state/resource custody, installed genuine producer-consumer tests, missing-package recovery and complete component lifecycle gates.",
+          "Selected workflows are available for evaluation while API/UI and production hardening continue; a visual workflow is not a stable release or physical deployment guarantee.",
+          "The numeric contract does not establish reached-state range, LUT approximation error, timing closure, place/route or board behaviour.",
+          "Catalogue RTL-versus-bittrue comparison excludes the float model, model-specific exact-threshold stimuli and untested schedules; supported integrators and RNG/substep paths remain limited.",
+          "The documented exclusion applies to writers sharing appropriate single-host filesystem locking. It does not promise two-host consistency over a network share.",
+          "A producer-written receipt and an exporter-assembled one attest different things; internal seals do not sign identity or validate the underlying scientific result."
         ],
         "partner_needs": [
           "Independent integrator for A visual IDE with model/network/compiler/training/analysis/evidence views composed through supported domain interfaces. First fit: a genuine separately installed consumer of the agreed component contract, with missing/dependency/version-refusal and recovery evidence. (architect proposal; no extraction or external commitment authorised)"
@@ -28203,8 +28820,35 @@
           {
             "document": "Neuromorphic architect dossier revision 2",
             "sha256": "2f3e0e2e99f44f89dc06b645c80cf1c6385db212ef28cc4e7e8a618478bc427e"
+          },
+          {
+            "document": "SC-NEUROCORE / docs/studio/compiler-inspector.md (technical source capture 2026-10-15T09:25:52.259412+00:00)",
+            "sha256": "5f154724dd1863e36a2810e463784ef7191af9c9f45261d1efea14f5fc0ed8f3"
+          },
+          {
+            "document": "SC-NEUROCORE / docs/studio/evidence-verification.md (technical source capture 2026-10-15T09:25:52.259412+00:00)",
+            "sha256": "e431b9147d27027473c266983e997450884a655f900aa63a420bc19ed19f5a1a"
+          },
+          {
+            "document": "SC-NEUROCORE / docs/studio/index.md (technical source capture 2026-10-15T09:25:52.259412+00:00)",
+            "sha256": "39938726dc671a66c8c64546e5b4ab59a9124223266e7eec65441ab231ba71e8"
+          },
+          {
+            "document": "SC-NEUROCORE / docs/studio/numeric-contract.md (technical source capture 2026-10-15T09:25:52.259412+00:00)",
+            "sha256": "e0d6d8212f71475caeecccecc79c4b3bad04fa7f56827ebeadd7139604f60c9e"
+          },
+          {
+            "document": "SC-NEUROCORE / docs/studio/replay-and-export.md (technical source capture 2026-10-15T09:25:52.259412+00:00)",
+            "sha256": "ab400b0a484df6d9cfe23ff2e2221d3c50bfde455f8ec51afb2771769c2cce0e"
+          },
+          {
+            "document": "SC-NEUROCORE / docs/studio/workspaces.md (technical source capture 2026-10-15T09:25:52.259412+00:00)",
+            "sha256": "ef8537cdd1e42b08b2ab3080f2cd0a4f1fde18f411ea71998f9d1c173e2f4e1d"
           }
-        ]
+        ],
+        "inputs_basis": "Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-15T09:25:52.259412+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance.",
+        "outputs_basis": "Programme deliverables remain architect-owned targets. The interface list also retains source-described result representations from the dated technical guide; this atlas update executes none of those workflows.",
+        "acceptance_basis": "Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-15T09:25:52.259412+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance."
       }
     },
     {
@@ -28474,13 +29118,22 @@
           }
         ],
         "inputs": [
-          "Whole classified parent source and existing consumers, explicit supported numerical/data/resource contracts; final per-component units and stable version matrix require owner freeze."
+          "Whole classified parent source and existing consumers, explicit supported numerical/data/resource contracts; final per-component units and stable version matrix require owner freeze.",
+          "Selected neuron/network/codec/RTL workloads retain their actual precision, input size and comparison scope. Broad package names do not identify a reproducible experiment.",
+          "Source/release, Python/Rust/SIMD/backend, affinity, host load, governor and frequency context define the measurement. Historical GPU rows retain the named wheel/device environment.",
+          "Committed JSON/CSV and named tool reports support public numbers. Local uncommitted observations remain exploratory and missing/skipped tool results remain explicit."
         ],
         "outputs": [
-          "Defined benchmark workloads and raw/analysed results with source, environment, hardware and equivalence scope."
+          "Defined benchmark workloads and raw/analysed results with source, environment, hardware and equivalence scope.",
+          "Raw measurements and environment/provenance records preserve the actual run, rather than an unattributed headline speedup.",
+          "Loaded-host medians and affinity-pinned runs remain under their documented qualification. Production claims require the stronger isolated-core and recorded-context boundary.",
+          "Formal proof/model-emitter observations, RTL synthesis and physical timing have different meanings. A timeout skip or unavailable runtime is retained rather than converted to a success or board measurement."
         ],
         "acceptance": [
-          "Whole parent STABLE incl entire catalogue/Studio/retained components; reversible history/state/resource custody, installed genuine producer-consumer tests, missing-package recovery and complete component lifecycle gates."
+          "Whole parent STABLE incl entire catalogue/Studio/retained components; reversible history/state/resource custody, installed genuine producer-consumer tests, missing-package recovery and complete component lifecycle gates.",
+          "Different wheels, CPUs, SIMD, workloads, precision or load/affinity conditions require explicit comparison evidence. Historical rows remain historical.",
+          "Synthesis success, timeout-limited skip, unavailable proof runtime and board measurements retain separate outcomes.",
+          "This component identity does not imply an installed benchmark package, accepted independent consumer or settled commercial licence."
         ],
         "partner_needs": [
           "Independent integrator for Defined benchmark workloads and raw/analysed results with source, environment, hardware and equivalence scope. First fit: a genuine separately installed consumer of the agreed component contract, with missing/dependency/version-refusal and recovery evidence. (architect proposal; no extraction or external commitment authorised)"
@@ -28497,8 +29150,19 @@
           {
             "document": "Neuromorphic architect dossier revision 2",
             "sha256": "2f3e0e2e99f44f89dc06b645c80cf1c6385db212ef28cc4e7e8a618478bc427e"
+          },
+          {
+            "document": "SC-NEUROCORE / docs/benchmarks/BENCHMARKS.md (technical source capture 2026-10-14T04:06:50.720510+00:00)",
+            "sha256": "ebdd11683a838a98f227cc4d71aeafde7627cafc0e3c616ffacb61d753f331c2"
+          },
+          {
+            "document": "SC-NEUROCORE / docs/ecosystem.md (technical source capture 2026-10-14T04:06:50.720510+00:00)",
+            "sha256": "43e143f93860f1e5826bb1f88f3167d5677c59c437d20935db7837b971d3f25e"
           }
-        ]
+        ],
+        "inputs_basis": "Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-14T04:06:50.720510+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance.",
+        "outputs_basis": "Programme deliverables remain architect-owned targets. The interface list also retains source-described result representations from the dated technical guide; this atlas update executes none of those workflows.",
+        "acceptance_basis": "Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-14T04:06:50.720510+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance."
       }
     },
     {
@@ -36657,6 +37321,74 @@
           }
         ]
       }
+    },
+    {
+      "id": "anulum.github.io",
+      "name": "anulum.github.io",
+      "group": "ANULUM-COMPANY-OPERATIONS",
+      "owning_groups": [
+        "ANULUM-COMPANY-OPERATIONS"
+      ],
+      "function": "Public source for the account Pages root: host-wide web policy files and a redirect to anulum.li.",
+      "kind": "website",
+      "phase": "Public source and continued maintenance",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-10-23",
+      "url": "https://github.com/anulum/anulum.github.io",
+      "packages": [],
+      "boundary": "Published source describes the account-level host. Project documentation remains owned by its separate repositories; delivered hosting behaviour needs its own readback.",
+      "repository_record": {
+        "stage": "Registered active public source repository",
+        "as_of": "2026-10-23",
+        "basis": "Current owner-approved registry and independently observed published main revision; no deployment or complete host-policy acceptance inferred."
+      },
+      "sources": [
+        "https://github.com/anulum/anulum.github.io/blob/83f5a36aa91aa6c41974a9db918061d025129445/README.md"
+      ],
+      "source_note": "Published README observed at exact source revision 83f5a36aa91aa6c41974a9db918061d025129445 on 2026-10-23.",
+      "dossier": {
+        "review_state": "Documentary public-source synopsis; deployment and delivered host behaviour remain separately verified.",
+        "purpose": "Maintain the account-level Pages root while leaving project documentation sites in their own repositories.",
+        "current_surfaces": [],
+        "inputs": [
+          "Host-wide web policy files and the declared redirect destination."
+        ],
+        "outputs": [
+          "The published source describes robots.txt, /.well-known/tdmrep.json and a redirect to anulum.li; project documentation remains beneath the shared host in separate repositories."
+        ],
+        "expected_outputs": [
+          {
+            "deliverable": "A versioned source for the root policy files and redirect declaration.",
+            "basis": "Published source description; no deployment result supplied by this atlas entry.",
+            "acceptance": "Independently read the delivered files, response headers and redirect chain before making claims about actual host behaviour."
+          }
+        ],
+        "acceptance": [
+          "Source presence and a public repository are separate from deployed redirect, crawler and host-policy behaviour."
+        ],
+        "partner_needs": [],
+        "open_fields": [
+          "Current deployment, delivered-file/header behaviour and any operational partner requirement are not qualified by this source synopsis."
+        ],
+        "source_records": [
+          {
+            "document": "README.md",
+            "sha256": "f57203c8c21ee9a35db0b96e8b52f28bc0241176415bbdee49924e74e9e0306c"
+          }
+        ],
+        "references": [
+          {
+            "id": "account-pages-root-readme",
+            "title": "Published account Pages README",
+            "url": "https://github.com/anulum/anulum.github.io/blob/83f5a36aa91aa6c41974a9db918061d025129445/README.md",
+            "source_revision": "83f5a36aa91aa6c41974a9db918061d025129445 / SHA-256 f57203c8c21ee9a35db0b96e8b52f28bc0241176415bbdee49924e74e9e0306c",
+            "scope": "Published documentary source observed on 2026-10-23; source version, host behaviour and project documentation deployments remain distinct."
+          }
+        ],
+        "as_of": "2026-10-23"
+      }
     }
   ],
   "edges": [
@@ -40163,6 +40895,12 @@
       "state": "Interface in progress; no installed/native/physical integration claimed by dossier",
       "evidence": "Neuromorphic architect dossier revision 2, 13 October 2026; SHA-256 2f3e0e2e99f44f89dc06b645c80cf1c6385db212ef28cc4e7e8a618478bc427e",
       "caution": "Architect-defined dependency/contract; installed producer-consumer, native and physical qualification remain separate."
+    },
+    {
+      "from": "anulum.github.io",
+      "to": "ANULUM-LI",
+      "kind": "documented web redirect",
+      "evidence": "https://github.com/anulum/anulum.github.io/blob/83f5a36aa91aa6c41974a9db918061d025129445/README.md"
     }
   ],
   "funding_update": {

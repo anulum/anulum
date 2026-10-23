@@ -46,6 +46,20 @@ not equipment purchases, staff appointments or leased premises. Its 13 October
 source assumptions retain their date; the 22 October content review supplies no
 measured workload, current holdings or scientific qualification.
 
+Structured project passports also retain the concrete inputs, result
+representations and qualification boundaries from their existing cited
+technical explanations. Original programme deliverables, partner requirements
+and source-owner review states remain visible. Technical guide captures retain
+their dates; documentary reconciliation supplies no new execution result or
+completed acceptance. Quantum passport fields awaiting owner approval remain
+open.
+
+The current registry also identifies the account Pages root. Its public
+source synopsis is included with its exact revision; a public repository
+does not establish delivered hosting behaviour. Static illustrations retain
+their dated inventories. New registry entries and passport details are
+available through the interactive data and project views.
+
 Repository documents marked as withheld are excluded from the public reading
 view. Their project identities may remain in the map. The generator rejects
 restored source text, excerpts and declarations for these restricted entries.
@@ -143,8 +157,8 @@ observations, independent of resource and budget data.
 | ---------------------------------------- | ------------------------------------------------------------------ | ---------------------: |
 | Profile images across all five languages | Four generated header/map SVGs, 91 badge SVGs and the footer image |                621,868 |
 | Dated catalogue provenance               | `assets/catalogue-source.json`, plus its ownership sidecar         | 114,267 before sidecar |
-| Interactive site snapshot                | 77 manifest-listed assets                                          |             33,223,387 |
-| Main interactive entry page              | `index.html`, including its eight embedded datasets                |             10,245,338 |
+| Interactive site snapshot                | 77 manifest-listed assets                                          |             33,472,254 |
+| Main interactive entry page              | `index.html`, including its eight embedded datasets                |             10,325,289 |
 
 The HTML, JavaScript modules, source-document JSON, illustrations and figure
 downloads belong to the separately hosted explorer. The full snapshot repeats

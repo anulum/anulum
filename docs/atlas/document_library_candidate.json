@@ -1,7 +1,7 @@
 {
   "version": "0.1",
   "captured_at_utc": "2026-10-13T23:51:08.190562+00:00",
-  "source_index_sha256": "3eb4825f1f7571e6e9679705c7d53882918273823cc3f861d3d31a4273a250e5",
+  "source_index_sha256": "f39a2a63ce4c11c44020d9fc6d9e3afb246968ab95d0ed502a188f30cbad715b",
   "state": "Mixed-date public documentation captures; refreshed documents carry their own capture dates. Source-content and scientific qualification remain separate.",
   "scope": "Dated full-text captures of public repositories and public parent components only; unpublished repository contents are withheld.",
   "documentation_bindings": 209,
@@ -49348,9 +49348,9 @@
         {
           "label": "README.md",
           "format": "md",
-          "source_sha256": "4027b84b53d15b1ca4afd7cc68227a4f7778d56f32c724c818430755e0a99392",
-          "source_bytes": 8135,
-          "projection_sha256": "4027b84b53d15b1ca4afd7cc68227a4f7778d56f32c724c818430755e0a99392",
+          "source_sha256": "ff8422a83da10e65b2a9c025554261b1936c05003b930b8d09f1ff3a1bf7ba76",
+          "source_bytes": 7055,
+          "projection_sha256": "ff8422a83da10e65b2a9c025554261b1936c05003b930b8d09f1ff3a1bf7ba76",
           "private_references_withheld": 0,
           "lines": [
             "<!-- SPDX-License-Identifier: AGPL-3.0-or-later -->",
@@ -49372,20 +49372,12 @@
             "  <a href=\"https://securityscorecards.dev/viewer/?uri=github.com/anulum/HushLine\"><img src=\"https://api.securityscorecards.dev/projects/github.com/anulum/HushLine/badge\" alt=\"OpenSSF Scorecard\"></a>",
             "  <a href=\"https://www.bestpractices.dev/projects/13319\"><img src=\"https://www.bestpractices.dev/projects/13319/badge\" alt=\"OpenSSF Best Practices\"></a>",
             "  <a href=\"https://github.com/marketplace/actions/hushline-output-muting\"><img src=\"https://img.shields.io/badge/Marketplace-Hushline-2ea44f?logo=github\" alt=\"GitHub Marketplace\"></a>",
-            "  <a href=\"https://github.com/anulum/HushLine/releases/latest\"><img src=\"https://img.shields.io/github/v/release/anulum/HushLine.svg\" alt=\"GitHub release\"></a>",
             "  <a href=\"https://pypi.org/project/hushline/\"><img src=\"https://img.shields.io/pypi/v/hushline.svg\" alt=\"PyPI\"></a>",
-            "  <a href=\"https://pypi.org/project/hushline/\"><img src=\"https://img.shields.io/pypi/dm/hushline.svg\" alt=\"PyPI downloads\"></a>",
-            "  <a href=\"https://pepy.tech/project/hushline\"><img src=\"https://img.shields.io/pepy/dt/hushline.svg\" alt=\"Total downloads\"></a>",
-            "  <a href=\"https://crates.io/crates/hushline\"><img src=\"https://img.shields.io/crates/v/hushline.svg\" alt=\"crates.io\"></a>",
-            "  <a href=\"https://crates.io/crates/hushline\"><img src=\"https://img.shields.io/crates/d/hushline.svg\" alt=\"crates.io downloads\"></a>",
-            "  <a href=\"https://www.npmjs.com/package/hushline\"><img src=\"https://img.shields.io/npm/v/hushline.svg\" alt=\"npm\"></a>",
-            "  <a href=\"https://www.npmjs.com/package/hushline\"><img src=\"https://img.shields.io/npm/dm/hushline.svg\" alt=\"npm downloads\"></a>",
             "  <a href=\"https://pypi.org/project/hushline/\"><img src=\"https://img.shields.io/pypi/pyversions/hushline.svg\" alt=\"Python\"></a>",
             "  <a href=\"https://codecov.io/gh/anulum/HushLine\"><img src=\"https://codecov.io/gh/anulum/HushLine/branch/main/graph/badge.svg\" alt=\"Coverage\"></a>",
             "  <a href=\"https://doi.org/10.5281/zenodo.20775432\"><img src=\"https://zenodo.org/badge/DOI/10.5281/zenodo.20775432.svg\" alt=\"DOI\"></a>",
             "  <a href=\"https://www.gnu.org/licenses/agpl-3.0\"><img src=\"https://img.shields.io/badge/license-AGPL_3.0-blue.svg\" alt=\"License: AGPL v3\"></a>",
             "  <a href=\"https://api.reuse.software/info/github.com/anulum/HushLine\"><img src=\"https://api.reuse.software/badge/github.com/anulum/HushLine\" alt=\"REUSE\"></a>",
-            "  <a href=\"https://github.com/sponsors/anulum\"><img src=\"https://img.shields.io/badge/Sponsor-GitHub-EA4AAA?logo=githubsponsors\" alt=\"Sponsor on GitHub\"></a>",
             "  <img src=\"https://img.shields.io/badge/cores-Go_·_Rust_·_Python_·_Node-orange\" alt=\"Cores\">",
             "</p>",
             "",
@@ -49559,51 +49551,54 @@
           ],
           "chapters": [
             {
-              "line": 37,
+              "line": 29,
               "level": 2,
               "title": "Local command output muting for prompt chains"
             },
             {
-              "line": 44,
+              "line": 36,
               "level": 2,
               "title": "What Hushline gives you"
             },
             {
-              "line": 52,
+              "line": 44,
               "level": 2,
               "title": "Quick start"
             },
             {
-              "line": 86,
+              "line": 78,
               "level": 2,
               "title": "Command surface"
             },
             {
-              "line": 100,
+              "line": 92,
               "level": 2,
               "title": "Configuration"
             },
             {
-              "line": 139,
+              "line": 131,
               "level": 2,
               "title": "Notes for integration"
             },
             {
-              "line": 147,
+              "line": 139,
               "level": 2,
               "title": "Use as a GitHub Action"
             },
             {
-              "line": 166,
+              "line": 158,
               "level": 2,
               "title": "Polyglot cores"
             },
             {
-              "line": 190,
+              "line": 182,
               "level": 2,
               "title": "Support"
             }
-          ]
+          ],
+          "captured_at_utc": "2026-10-23T01:24:03.458103+00:00",
+          "source_label": "README.md",
+          "source_state": "Public GitHub source independently observed at e1f8c479e23e1c56786f09895e4246b39507d732; the central registry still records visibility as unverified. This publisher observation does not amend the registry or qualify runtime/parity/security."
         }
       ]
     },
@@ -60632,6 +60627,10 @@
     },
     {
       "project_id": "funding:sprind-ai-native-chip-design-2026",
+      "documents": []
+    },
+    {
+      "project_id": "anulum.github.io",
       "documents": []
     }
   ],

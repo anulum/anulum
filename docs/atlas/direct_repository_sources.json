@@ -2,8 +2,8 @@
   "version": "0.2",
   "captured_at_utc": "2026-10-13T23:51:08.190562+00:00",
   "state": "Public documentation projection; selected source records retain their capture dates and qualification limits.",
-  "read_scope": "Complete selected document and entry-source bytes read and retained. Selected prose, architecture sections, structured declarations and static top-level Python declarations projected; no source execution or whole scientific/implementation validation. Repository-internal documents, excerpts and declarations are withheld from the public projection. Selected documentation rows were refreshed from verified public main commits on 2026-10-23; other declarations and excerpts retain their earlier capture. This is documentary correspondence, not runtime or scientific qualification. Four additional repository/component entries were checked against exact published main objects on 23 October 2026; component source labels preserve their parent paths. Earlier excerpts and static declarations retain their original capture scope.",
-  "project_entries": 196,
+  "read_scope": "Complete selected document and entry-source bytes read and retained. Selected prose, architecture sections, structured declarations and static top-level Python declarations projected; no source execution or whole scientific/implementation validation. Repository-internal documents, excerpts and declarations are withheld from the public projection. Selected documentation rows were refreshed from verified public main commits on 2026-10-23; other declarations and excerpts retain their earlier capture. This is documentary correspondence, not runtime or scientific qualification. Four additional repository/component entries were checked against exact published main objects on 23 October 2026; component source labels preserve their parent paths. Earlier excerpts and static declarations retain their original capture scope. The HushLine README was additionally refreshed from its independently verified public main source; earlier declarations/excerpts retain their prior capture scope.",
+  "project_entries": 197,
   "entries_with_documents": 40,
   "source_documents_captured": 285,
   "changed_after_read": [],
@@ -5101,8 +5101,8 @@
       "documents": [
         {
           "label": "README.md",
-          "sha256": "4027b84b53d15b1ca4afd7cc68227a4f7778d56f32c724c818430755e0a99392",
-          "bytes": 8135
+          "sha256": "ff8422a83da10e65b2a9c025554261b1936c05003b930b8d09f1ff3a1bf7ba76",
+          "bytes": 7055
         }
       ],
       "git_marker_present": true,
@@ -7486,6 +7486,17 @@
       "documents": [],
       "git_marker_present": false,
       "identity_basis": "Exact id/name directory match or explicit package path; no whole canonical/source acceptance inferred",
+      "declared_package_metadata": {},
+      "boundary_declarations": {},
+      "readme_excerpts": [],
+      "architecture_documents": []
+    },
+    {
+      "project_id": "anulum.github.io",
+      "lookup_state": "Published repository identity; full-text reading capture not selected.",
+      "documents": [],
+      "git_marker_present": true,
+      "identity_basis": "Current registry identity and exact independently observed public main source; no site/runtime acceptance inferred.",
       "declared_package_metadata": {},
       "boundary_declarations": {},
       "readme_excerpts": [],
