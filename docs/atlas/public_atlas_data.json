@@ -1189,7 +1189,7 @@
       }
     }
   },
-  "version": "0.13+funding-state.1+portfolio-refresh.1+owner-source.1+discovery-resources.1+passport-coherence.1+registry-reconciliation.1+hushline-source.1+control-spo-owner.1+funding-programme-sources.1",
+  "version": "0.13+funding-state.1+portfolio-refresh.1+owner-source.1+discovery-resources.1+passport-coherence.1+registry-reconciliation.1+hushline-source.1+control-spo-owner.1+funding-programme-sources.1+published-source-delta.1",
   "content_state": "Projects and programme construction in progress; funding-route application states are separately dated and qualified.",
   "groups": [
     {
@@ -9370,7 +9370,7 @@
         "value": "beta",
         "source": "pyproject.toml classifier 'Development Status :: 4 - Beta'"
       },
-      "boundary": "Capability-specific maturity; no certification or field approval claim. On 23 October 2026 the observed public main was c35da586f6ee650f2a2b339c3c3da69d308b51e6 and its main CI run 39225326920 had completed with failure. Release 3.16.0 and later local development are separate records.",
+      "boundary": "Capability-specific maturity; no certification or field approval claim. Public main observed on 23 October 2026 is c56e6a8104597fa4c85b4315f79d3c2e689eef40; its SC-NeuroCore CI run 39941686104 completed with failure. Package release 3.16.0 and later published-source changes remain separate. The documented typed scalar graph IR does not provide arbitrary equation-to-native-IR lowering.",
       "repository_record": {
         "stage": "Local repository initialized",
         "as_of": "2026-10-13T16:13:52.413927+00:00",
@@ -12869,7 +12869,7 @@
       "sources": [
         "https://github.com/anulum/sc-neurocore/blob/main/docs/ecosystem.md"
       ],
-      "source_note": "Public revision and main CI independently read on 23 October 2026; source version and release remain separate from local unpublished work. Earlier technical source captures retain their original dates.",
+      "source_note": "Published main, selected documentation and exact-head CI independently checked on 23 October 2026. The published README separates typed scalar graph operations from the equation compiler; source or CI metadata does not qualify the whole compiler, a desktop installation or a physical board. Earlier technical-guide source captures retain their dates.",
       "dossier": {
         "review_state": "Architect dossier revision 2: initial complete inventory; group content confirmation pending.",
         "purpose": "Permanent public development, composition and integration workbench for stochastic and spiking neural modelling, encoding, learning, simulation, selected hardware compilation and evidence inspection.",
@@ -12916,7 +12916,8 @@
           "The canonical map keeps source-only research and non-package contributed work outside its supported binary surface. They must not become production capabilities through the portfolio map.",
           "The document distinguishes Python network features from Rust/MPI subsets and canonical SC dispatch from independent polyglot kernels. Broad backend lists cannot establish full feature parity.",
           "The hardware pipeline describes traceability, formal and caller-supplied safety evidence. Its library tooling does not provide certification or approval of a deployed product.",
-          "Software-runtime parity, scientific source-model fidelity, Python/RTL agreement, synthesis/timing and measured hardware behaviour need their own evidence. Base-package generated RTL and a complete polyglot row cannot stand in for all of those results."
+          "Software-runtime parity, scientific source-model fidelity, Python/RTL agreement, synthesis/timing and measured hardware behaviour need their own evidence. Base-package generated RTL and a complete polyglot row cannot stand in for all of those results.",
+          "At the published source revision checked on 23 October 2026, typed integer graph builders provide explicit casts, rounding/saturation, text round trips and HDL/CIRCT emission. Arbitrary equation-to-native-IR lowering is not provided by those graph operations. Scalar-graph evidence, equation/state/integrator lowering, full compiler acceptance and physical measurements have separate scopes."
         ],
         "partner_needs": [
           "Independent model/source reviewers, workload integrators and later physical target access; first fit is one full model equation/initialisation/trace through real public API and exact reference/RTL path. (architect proposal)"
@@ -12945,11 +12946,24 @@
           {
             "document": "SC-NEUROCORE / docs/guides/supported_workflows.md @ 2026-10-15T20:45:20.185924+00:00 (technical source capture 2026-10-15T20:45:20.185924+00:00)",
             "sha256": "7e193c0c3d59b93c9d14b11339e10d3e2e31fbe544ea4854e33c23475fe08ef6"
+          },
+          {
+            "document": "SC-NEUROCORE / README.md (published c56e6a8104597fa4c85b4315f79d3c2e689eef40; checked 2026-10-23T14:44:06.614632+00:00)",
+            "sha256": "8468c29407ebde3d4c6efd001d85136a0c5f704e2f17c851cef7a5409cf88510"
+          },
+          {
+            "document": "SC-NEUROCORE / VALIDATION.md (published c56e6a8104597fa4c85b4315f79d3c2e689eef40; checked 2026-10-23T14:44:06.614632+00:00)",
+            "sha256": "68344aa02aaa2b5d897bf74818b24d84a4129d8aab8b191552780c57a2776bea"
+          },
+          {
+            "document": "SC-NEUROCORE / pyproject.toml (published c56e6a8104597fa4c85b4315f79d3c2e689eef40; checked 2026-10-23T14:44:06.614632+00:00)",
+            "sha256": "93b4f8fa1e9ea16ceeb6df72877cf0cee5f779f1a03ad7e542353fb38c5fc64d"
           }
         ],
         "limitations": [
           "The parent remains a permanent public development, composition and integration workbench.",
-          "Model-source fidelity, cross-runtime parity and physical acceptance are distinct qualifications."
+          "Model-source fidelity, cross-runtime parity and physical acceptance are distinct qualifications.",
+          "At the published source revision checked on 23 October 2026, typed integer graph builders provide explicit casts, rounding/saturation, text round trips and HDL/CIRCT emission. Arbitrary equation-to-native-IR lowering is not provided by those graph operations. Scalar-graph evidence, equation/state/integrator lowering, full compiler acceptance and physical measurements have separate scopes."
         ],
         "references": [
           {
@@ -12958,6 +12972,20 @@
             "url": "https://github.com/anulum/sc-neurocore/actions/runs/39225326920",
             "source_revision": "c35da586f6ee650f2a2b339c3c3da69d308b51e6",
             "scope": "Observed completed failure on 23 October 2026; not a statement about later local fixes or a complete scientific qualification."
+          },
+          {
+            "id": "sc-neurocore-published-source-20261023",
+            "title": "Published source observed 23 October 2026",
+            "url": "https://github.com/anulum/sc-neurocore/commit/c56e6a8104597fa4c85b4315f79d3c2e689eef40",
+            "source_revision": "c56e6a8104597fa4c85b4315f79d3c2e689eef40",
+            "scope": "Source-head observation at 2026-10-23T14:34:05.613701+00:00; document refresh at 2026-10-23T14:44:06.614632+00:00. Package/release, exact-head CI, interface admission and physical/scientific acceptance retain separate evidence."
+          },
+          {
+            "id": "sc-neurocore-exact-ci-20261023",
+            "title": "Exact-source CI observation",
+            "url": "https://github.com/anulum/sc-neurocore/actions/runs/39941686104",
+            "source_revision": "c56e6a8104597fa4c85b4315f79d3c2e689eef40 / run 39941686104",
+            "scope": "Hosted workflow metadata observed at 2026-10-23T14:36:42.870811+00:00: completed / failure. This is not independent installed, scientific or physical acceptance."
           }
         ],
         "inputs_basis": "Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-15T20:45:20.185924+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance.",
@@ -15076,7 +15104,7 @@
       "sources": [
         "https://github.com/anulum/sc-neurocore/blob/main/docs/ecosystem.md"
       ],
-      "source_note": "Release metadata independently checked on 23 October 2026; the owning manager reconfirmed the physical qualification boundary. Earlier technical source captures retain their original dates.",
+      "source_note": "Release metadata independently checked on 23 October 2026; the owning manager reconfirmed the physical qualification boundary. Earlier technical source captures retain their original dates. Published main 1eba54132622425949f68acdb3db12121a6f6f46 was independently checked on 23 October 2026; all nine previously selected documentation/source byte bindings were unchanged and exact-head CI run 39886632657 completed with success. This source/CI observation supplies no board or physical instrument acceptance.",
       "dossier": {
         "review_state": "Architect dossier revision 2: initial complete inventory; group content confirmation pending.",
         "purpose": "Fabric-clock instrument for complete control-loop and selected accelerator timing, with simulation/host analysis separated from eventual board timing, fault response and rail-energy evidence.",
@@ -15163,6 +15191,20 @@
             "url": "https://github.com/anulum/loop-timing-witness/releases/tag/v0.1.0",
             "source_revision": "v0.1.0; published 2026-10-02T02:18:15Z",
             "scope": "Software release metadata; no board or physical timing qualification is implied."
+          },
+          {
+            "id": "loop-timing-witness-published-source-20261023",
+            "title": "Published source observed 23 October 2026",
+            "url": "https://github.com/anulum/loop-timing-witness/commit/1eba54132622425949f68acdb3db12121a6f6f46",
+            "source_revision": "1eba54132622425949f68acdb3db12121a6f6f46",
+            "scope": "Source-head observation at 2026-10-23T14:34:05.613701+00:00; document refresh at 2026-10-23T14:44:06.614632+00:00. Package/release, exact-head CI, interface admission and physical/scientific acceptance retain separate evidence."
+          },
+          {
+            "id": "loop-timing-witness-exact-ci-20261023",
+            "title": "Exact-source CI observation",
+            "url": "https://github.com/anulum/loop-timing-witness/actions/runs/39886632657",
+            "source_revision": "1eba54132622425949f68acdb3db12121a6f6f46 / run 39886632657",
+            "scope": "Hosted workflow metadata observed at 2026-10-23T14:36:41.911139+00:00: completed / success. This is not independent installed, scientific or physical acceptance."
           }
         ],
         "inputs_basis": "Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-18T14:50:15.082871+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance.",
@@ -15379,7 +15421,7 @@
       "url": "https://github.com/anulum/scpn-quantum-control",
       "packages": [],
       "maturity": "beta",
-      "boundary": "Released software is version 1.2.0. Later local work and split-repository development are separate; no new campaign, quantum-advantage or hardware-result qualification is asserted.",
+      "boundary": "Released software is version 1.2.0. Published source observed on 23 October 2026 is 9e316d4a999275d873543d28aa7ee640175ff0db; its CI run 39938297231 completed with failure. Source publication does not approve split-repository readiness, a new campaign, quantum advantage or hardware-result qualification.",
       "repository_record": {
         "stage": "Local repository initialized",
         "as_of": "2026-10-13T16:13:52.413927+00:00",
@@ -15814,7 +15856,7 @@
       "sources": [
         "https://github.com/anulum/scpn-quantum-control/blob/main/docs/ecosystem.md"
       ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "source_note": "The already-selected public README and roadmap were refreshed on 23 October 2026 from the exact observed published revision. The roadmap distinguishes historical targets from current source/evidence contracts. Detailed outward passport approval remains unavailable; earlier technical and scientific source reports retain their dates and limits.",
       "dossier": {
         "review_state": "Public README and documentation may be cited. An outward-approved detailed passport remains unavailable, as reported by the owning manager on 2026-10-23.",
         "purpose": "Integrated modelling, simulation, compilation, gradients, control, provider workflows, analysis and Quantum Studio.",
@@ -15831,7 +15873,33 @@
           "https://github.com/anulum/scpn-quantum-control",
           "https://anulum.github.io/scpn-quantum-control/"
         ],
-        "as_of": "2026-10-23"
+        "as_of": "2026-10-23",
+        "references": [
+          {
+            "id": "scpn-quantum-control-published-source-20261023",
+            "title": "Published source observed 23 October 2026",
+            "url": "https://github.com/anulum/scpn-quantum-control/commit/9e316d4a999275d873543d28aa7ee640175ff0db",
+            "source_revision": "9e316d4a999275d873543d28aa7ee640175ff0db",
+            "scope": "Source-head observation at 2026-10-23T14:34:05.613701+00:00; document refresh at 2026-10-23T14:44:06.614632+00:00. Package/release, exact-head CI, interface admission and physical/scientific acceptance retain separate evidence."
+          },
+          {
+            "id": "scpn-quantum-control-exact-ci-20261023",
+            "title": "Exact-source CI observation",
+            "url": "https://github.com/anulum/scpn-quantum-control/actions/runs/39938297231",
+            "source_revision": "9e316d4a999275d873543d28aa7ee640175ff0db / run 39938297231",
+            "scope": "Hosted workflow metadata observed at 2026-10-23T14:36:43.758187+00:00: completed / failure. This is not independent installed, scientific or physical acceptance."
+          }
+        ],
+        "source_records": [
+          {
+            "document": "SCPN-QUANTUM-CONTROL / README.md (published 9e316d4a999275d873543d28aa7ee640175ff0db; checked 2026-10-23T14:44:06.614632+00:00)",
+            "sha256": "ca633d0e4d5eb5c1691fcde88adbabae75159f00af4b751513191f76c7e4dd85"
+          },
+          {
+            "document": "SCPN-QUANTUM-CONTROL / ROADMAP.md (published 9e316d4a999275d873543d28aa7ee640175ff0db; checked 2026-10-23T14:44:06.614632+00:00)",
+            "sha256": "b4da5331cd52da432bde5c04981ef0d52798b284df8d9550c0a098736a86b82d"
+          }
+        ]
       }
     },
     {

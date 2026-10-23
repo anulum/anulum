@@ -2,7 +2,7 @@
   "version": "0.2",
   "captured_at_utc": "2026-10-13T23:51:08.190562+00:00",
   "state": "Public documentation projection; selected source records retain their capture dates and qualification limits.",
-  "read_scope": "Complete selected document and entry-source bytes read and retained. Selected prose, architecture sections, structured declarations and static top-level Python declarations projected; no source execution or whole scientific/implementation validation. Repository-internal documents, excerpts and declarations are withheld from the public projection. Selected documentation rows were refreshed from verified public main commits on 2026-10-23; other declarations and excerpts retain their earlier capture. This is documentary correspondence, not runtime or scientific qualification. Four additional repository/component entries were checked against exact published main objects on 23 October 2026; component source labels preserve their parent paths. Earlier excerpts and static declarations retain their original capture scope. The HushLine README was additionally refreshed from its independently verified public main source; earlier declarations/excerpts retain their prior capture scope.",
+  "read_scope": "Complete selected document and entry-source bytes read and retained. Selected prose, architecture sections, structured declarations and static top-level Python declarations projected; no source execution or whole scientific/implementation validation. Repository-internal documents, excerpts and declarations are withheld from the public projection. Selected documentation rows were refreshed from verified public main commits on 2026-10-23; other declarations and excerpts retain their earlier capture. This is documentary correspondence, not runtime or scientific qualification. Four additional repository/component entries were checked against exact published main objects on 23 October 2026; component source labels preserve their parent paths. Earlier excerpts and static declarations retain their original capture scope. The HushLine README was additionally refreshed from its independently verified public main source; earlier declarations/excerpts retain their prior capture scope. Five selected documentation records were refreshed on 23 October 2026 from exact observed public SC-NeuroCore and Quantum Control revisions. Timing Witness selected source bytes were independently unchanged at its newer public revision. Other metadata, excerpts and technical captures retain their earlier source scope; source inspection executes no numerical, hardware or scientific workflow.",
   "project_entries": 197,
   "entries_with_documents": 40,
   "source_documents_captured": 285,
@@ -5122,8 +5122,8 @@
       "documents": [
         {
           "label": "README.md",
-          "sha256": "3d1fbb26512e5dd3dc1d92db2af0c6ea9f52f7a7ff957a59f1b4f5adf2ea54fc",
-          "bytes": 46356
+          "sha256": "8468c29407ebde3d4c6efd001d85136a0c5f704e2f17c851cef7a5409cf88510",
+          "bytes": 47606
         },
         {
           "label": "ARCHITECTURE.md",
@@ -5137,13 +5137,13 @@
         },
         {
           "label": "VALIDATION.md",
-          "sha256": "cd7c0c2b51d20ae9c53d34e509a5f12f94254d4f1898f0fe405fd410db037a03",
-          "bytes": 6952
+          "sha256": "68344aa02aaa2b5d897bf74818b24d84a4129d8aab8b191552780c57a2776bea",
+          "bytes": 9405
         },
         {
           "label": "pyproject.toml",
-          "sha256": "720ccade5bd74e07a6243e8a02f7fc759963170d4855b11bf794447874bdf441",
-          "bytes": 18054
+          "sha256": "93b4f8fa1e9ea16ceeb6df72877cf0cee5f779f1a03ad7e542353fb38c5fc64d",
+          "bytes": 18178
         },
         {
           "label": "Cargo.toml",
@@ -5492,8 +5492,8 @@
       "documents": [
         {
           "label": "README.md",
-          "sha256": "9cd333a45f04a0c3af144a59420132b3fa8c26863a5bbd0f8cbb623eb70ce139",
-          "bytes": 69178
+          "sha256": "ca633d0e4d5eb5c1691fcde88adbabae75159f00af4b751513191f76c7e4dd85",
+          "bytes": 69188
         },
         {
           "label": "ARCHITECTURE.md",
@@ -5502,8 +5502,8 @@
         },
         {
           "label": "ROADMAP.md",
-          "sha256": "40ef3d98659ee884031c980cae13d1ae0e1b3f912cccc787eb1f0db5d52fb6fb",
-          "bytes": 128531
+          "sha256": "b4da5331cd52da432bde5c04981ef0d52798b284df8d9550c0a098736a86b82d",
+          "bytes": 129092
         },
         {
           "label": "VALIDATION.md",
@@ -7503,5 +7503,5 @@
       "architecture_documents": []
     }
   ],
-  "public_projection_updated_at_utc": "2026-10-20T21:19:24.360861+00:00"
+  "public_projection_updated_at_utc": "2026-10-23T14:44:06.614632+00:00"
 }

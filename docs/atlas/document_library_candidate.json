@@ -1,8 +1,8 @@
 {
   "version": "0.1",
   "captured_at_utc": "2026-10-13T23:51:08.190562+00:00",
-  "source_index_sha256": "f39a2a63ce4c11c44020d9fc6d9e3afb246968ab95d0ed502a188f30cbad715b",
-  "state": "Mixed-date public documentation captures; refreshed documents carry their own capture dates. Source-content and scientific qualification remain separate.",
+  "source_index_sha256": "42132a486991a0d8b51765da7b0c50e55299e8855b07a9e281cfd6c920cf28df",
+  "state": "Mixed-date public documentation captures; refreshed documents carry their own source and projected-text hashes and capture dates. Source publication, package release, CI and scientific/physical acceptance remain separate.",
   "scope": "Dated full-text captures of public repositories and public parent components only; unpublished repository contents are withheld.",
   "documentation_bindings": 209,
   "entries_with_documents": 40,
@@ -49608,9 +49608,9 @@
         {
           "label": "README.md",
           "format": "md",
-          "source_sha256": "3d1fbb26512e5dd3dc1d92db2af0c6ea9f52f7a7ff957a59f1b4f5adf2ea54fc",
-          "source_bytes": 46356,
-          "projection_sha256": "55c9543992a58b45d777352acea04007d0f37f5f7b10d129d9c48b1557ba74f4",
+          "source_sha256": "8468c29407ebde3d4c6efd001d85136a0c5f704e2f17c851cef7a5409cf88510",
+          "source_bytes": 47606,
+          "projection_sha256": "87919849db287ce5c30d48e7e7051d04f25ae325618c47574699e58dde4a79e1",
           "private_references_withheld": 1,
           "lines": [
             "<!-- SPDX-License-Identifier: AGPL-3.0-or-later -->",
@@ -49790,10 +49790,10 @@
             "| Python model classes | 183 |",
             "| Studio catalogue models | 185 |",
             "| Model documentation pages | 200 |",
-            "| Rust PyO3 model wrappers | 208 |",
-            "| Optional extras | 31 |",
-            "| Python test files | 5340 |",
-            "| Public documentation pages | 645 |",
+            "| Rust PyO3 model wrappers | 212 |",
+            "| Optional extras | 32 |",
+            "| Python test files | 5405 |",
+            "| Public documentation pages | 655 |",
             "| GitHub Actions workflows | 23 |",
             "",
             "Evidence boundary: this snapshot is a static inventory. Performance, coverage, hardware, and scientific-fidelity claims require their own committed evidence artefacts.",
@@ -49995,7 +49995,7 @@
             "|---------|-------------|",
             "| **160-entry Model Browser** | Browse every registered catalogue entry by category, simulate with parameter sliders |",
             "| **18+ Analysis Views** | Trace, phase portrait, ISI, f-I curve, bifurcation, heatmap, STA, frequency response, characterisation dashboard |",
-            "| **Compiler Inspector** | Build SC IR from equations, verify, emit SystemVerilog |",
+            "| **Compiler Inspector** | Verify SC IR and emit SystemVerilog |",
             "| **Synthesis Dashboard** | One-click Yosys synthesis to ice40/ECP5/Gowin/Xilinx, multi-target comparison, resource bars |",
             "| **Training Monitor** | Live loss/accuracy curves via SSE, 6 surrogate gradients, per-layer spike rates |",
             "| **Network Canvas** | Drag-and-drop populations and projections (React Flow), NIR export/import |",
@@ -50005,7 +50005,8 @@
             "For measured comparisons and their evidence limits, see",
             "[Cross-Framework Evidence](docs/benchmarks/cross_framework.md).",
             "",
-            "Full documentation: [Studio Guide](https://anulum.github.io/sc-neurocore/studio/)",
+            "User manual: [SNN Studio](docs/studio/manual/index.md).",
+            "Technical overview: [Studio Guide](https://anulum.github.io/sc-neurocore/studio/)",
             "",
             "## Docker",
             "",
@@ -50233,6 +50234,14 @@
             "- **Fixed-point**: Q8.8 (DATA_WIDTH=16, FRACTION=8), signed two's complement",
             "- **Overflow**: Explicit bit-width masking via `_mask()` function",
             "",
+            "## Native compute graph IR",
+            "",
+            "The Rust and Python graph builders provide typed integer circuits with explicit",
+            "casts, rounding and saturation, text round trips, and SystemVerilog/CIRCT",
+            "emission. See the [scalar word and naming contract](docs/api/sc-ir.md).",
+            "Equation export uses the separate equation compiler; arbitrary equation-to-native-IR",
+            "lowering is not provided by these graph operations.",
+            "",
             "## Examples",
             "",
             "Runnable scripts in `examples/`:",
@@ -50293,7 +50302,7 @@
             "| **dependency-audit.yml** | Complete audit of every committed dependency lock, per ecosystem |",
             "| **hdc-reference.yml** | Hyperdimensional-computing reference comparison |",
             "| **fuzz.yml** | Rust engine fuzzing with nightly cargo-fuzz targets |",
-            "| **mlir-circt.yml** | MLIR/CIRCT canary for compiler lowering paths |",
+            "| **mlir-circt.yml** | Python MLIR round-trip and native IR numerical CIRCT/RTL comparisons |",
             "| **nir-canary.yml** | Latest NIR compatibility canary |",
             "| **scorecard.yml** | OpenSSF Scorecard |",
             "| **security-scanners.yml** | pip-audit, cargo-audit, Semgrep, and release security scans |",
@@ -50484,6 +50493,22 @@
             "  <br>",
             "  <em>Developed by <a href=\"https://www.anulum.li\">ANULUM</a> / Fortis Studio</em>",
             "</p>",
+            "",
+            "## Text and data mining reservation",
+            "",
+            "The rightsholder, Miroslav Šotek (ANULUM), expressly reserves the use of the",
+            "works in this repository for text and data mining, including the collection of",
+            "this content for, and its use in, training, fine-tuning or evaluating machine",
+            "learning and artificial intelligence models, in accordance with Article 4(3) of",
+            "Directive (EU) 2019/790 and the national provisions transposing it.",
+            "",
+            "No permission for such use has been granted beyond what the licence in",
+            "`LICENSE` grants. This reservation does not change that licence: uses the",
+            "licence permits remain permitted on its terms, including its attribution and",
+            "share-alike conditions.",
+            "",
+            "Reservation made on 2026-10-19. Requests for permission: contact the",
+            "rightsholder through the contact listed in this repository.",
             ""
           ],
           "chapters": [
@@ -50563,107 +50588,117 @@
               "title": "Visual SNN Design Studio (Experimental)"
             },
             {
-              "line": 395,
+              "line": 396,
               "level": 2,
               "title": "Docker"
             },
             {
-              "line": 425,
+              "line": 426,
               "level": 2,
               "title": "Architecture"
             },
             {
-              "line": 427,
+              "line": 428,
               "level": 3,
               "title": "Module Tiers"
             },
             {
-              "line": 452,
+              "line": 453,
               "level": 3,
               "title": "Architecture Diagram"
             },
             {
-              "line": 497,
+              "line": 498,
               "level": 3,
               "title": "Core API subset (28 of 45 public exports)"
             },
             {
-              "line": 521,
+              "line": 522,
               "level": 3,
               "title": "Hardware (Verilog RTL)"
             },
             {
-              "line": 553,
+              "line": 554,
               "level": 3,
               "title": "GPU Acceleration"
             },
             {
-              "line": 564,
+              "line": 565,
               "level": 2,
               "title": "Hardware-Software Co-Simulation"
             },
             {
-              "line": 594,
+              "line": 595,
               "level": 3,
               "title": "Reproducibility"
             },
             {
-              "line": 614,
+              "line": 615,
               "level": 3,
               "title": "Key Technical Details"
             },
             {
-              "line": 621,
+              "line": 622,
+              "level": 2,
+              "title": "Native compute graph IR"
+            },
+            {
+              "line": 630,
               "level": 2,
               "title": "Examples"
             },
             {
-              "line": 659,
+              "line": 668,
               "level": 2,
               "title": "CI/CD"
             },
             {
-              "line": 689,
+              "line": 698,
               "level": 2,
               "title": "Benchmarks"
             },
             {
-              "line": 709,
+              "line": 718,
               "level": 2,
               "title": "Documentation"
             },
             {
-              "line": 731,
+              "line": 740,
               "level": 2,
               "title": "Install Extras"
             },
             {
-              "line": 781,
+              "line": 790,
               "level": 2,
               "title": "Rust Engine (208 PyO3 Wrappers, 180-Model NetworkRunner)"
             },
             {
-              "line": 818,
+              "line": 827,
               "level": 2,
               "title": "Community"
             },
             {
-              "line": 824,
+              "line": 833,
               "level": 2,
               "title": "Citation"
             },
             {
-              "line": 844,
+              "line": 853,
               "level": 2,
               "title": "AI Disclosure"
             },
             {
-              "line": 850,
+              "line": 859,
               "level": 2,
               "title": "License"
+            },
+            {
+              "line": 882,
+              "level": 2,
+              "title": "Text and data mining reservation"
             }
           ],
-          "captured_at_utc": "2026-10-22T22:58:34.638885+00:00"
+          "captured_at_utc": "2026-10-23T14:44:06.614632+00:00"
         },
         {
           "label": "ARCHITECTURE.md",
@@ -51856,9 +51891,9 @@
         {
           "label": "VALIDATION.md",
           "format": "md",
-          "source_sha256": "cd7c0c2b51d20ae9c53d34e509a5f12f94254d4f1898f0fe405fd410db037a03",
-          "source_bytes": 6952,
-          "projection_sha256": "cd7c0c2b51d20ae9c53d34e509a5f12f94254d4f1898f0fe405fd410db037a03",
+          "source_sha256": "68344aa02aaa2b5d897bf74818b24d84a4129d8aab8b191552780c57a2776bea",
+          "source_bytes": 9405,
+          "projection_sha256": "68344aa02aaa2b5d897bf74818b24d84a4129d8aab8b191552780c57a2776bea",
           "private_references_withheld": 0,
           "lines": [
             "# Validation",
@@ -51898,6 +51933,14 @@
             "| scorecard | `scorecard.yml` | OpenSSF Scorecard supply-chain audit |",
             "| docs | `docs.yml` | MkDocs build verification |",
             "",
+            "## Studio optional engine typing",
+            "",
+            "The E-I and model simulator getter annotations match the native bridge callable",
+            "contract in both dependency profiles. Focused HTTP tests exercise model and",
+            "network requests; a separate isolated interpreter without the engine SDK verifies",
+            "health, real NumPy E-I simulation and adaptive-threshold model simulation.",
+            "The annotation change preserves simulation bodies and numerical behavior.",
+            "",
             "## Studio input identity",
             "",
             "Model-run contracts check exact Python and NumPy constructor integers,",
@@ -51909,6 +51952,19 @@
             "a separate replay interpreter. See the [installed browser gate](CONTRIBUTING.md#installed-studio-browser-acceptance).",
             "",
             "## Coverage Policy",
+            "",
+            "The desktop configuration checks also exercise an actual reader-only FIFO in",
+            "a separate interpreter and retain regular-file symlink compatibility. Profile",
+            "coverage includes that child through the configured subprocess and immediate-exit",
+            "patches; these checks do not qualify the full desktop installation.",
+            "",
+            "`tests/test_studio_desktop_paths.py` and",
+            "`tests/test_studio_desktop_configuration.py` exercise the desktop profile",
+            "contract on real filesystems: XDG defaults and overrides, private new",
+            "directories, legacy project preservation, symlink cycles, bounded schema",
+            "refusal and atomic configuration replacement. These focused checks cover",
+            "the profile modules; desktop window, installer and lifecycle qualification",
+            "remain separate.",
             "",
             "Engine interface capture and comparison have dedicated tests under",
             "`tests/test_tools/test_engine_abi_inventory*.py` and",
@@ -51931,9 +51987,9 @@
             "",
             "<!-- coverage-scope:begin (generated by tools/coverage_scope.py; do not edit) -->",
             "",
-            "The coverage threshold applies to 1,160 of 1,762 Python files under",
-            "`src/sc_neurocore` (204,253 of 337,509 source lines, 60.5 %). The remaining",
-            "602 files (133,256 lines) are omitted by the patterns below and are not part of",
+            "The coverage threshold applies to 1,166 of 1,780 Python files under",
+            "`src/sc_neurocore` (209,327 of 345,028 source lines, 60.7 %). The remaining",
+            "614 files (135,701 lines) are omitted by the patterns below and are not part of",
             "the percentage. An omitted file may still have tests; the gate does not measure them.",
             "",
             "| Omission pattern | Files | Source lines |",
@@ -51941,14 +51997,14 @@
             "| `*/quantum/hardware_bridge.py` | 1 | 135 |",
             "| `*/quantum_cognition/bridge_adapter.py` | 1 | 551 |",
             "| `*/integrations/lava_bridge.py` | 1 | 164 |",
-            "| `*/training/*` | 14 | 4,028 |",
+            "| `*/training/*` | 14 | 4,117 |",
             "| `*/conversion/*` | 31 | 4,786 |",
             "| `*/qat/torch_qat.py` | 1 | 367 |",
             "| `*/qat/lsq.py` | 1 | 298 |",
             "| `*/qat/pact.py` | 1 | 123 |",
             "| `*/qat/observers.py` | 1 | 349 |",
             "| `*/adapters/sonata.py` | 1 | 375 |",
-            "| `*/nir_bridge/*` | 28 | 7,817 |",
+            "| `*/nir_bridge/*` | 29 | 8,594 |",
             "| `*/accel/jax_backend.py` | 1 | 663 |",
             "| `*/layers/jax_dense_layer.py` | 1 | 240 |",
             "| `*/accel/julia/neurons/__init__.py` | 1 | 643 |",
@@ -51964,8 +52020,8 @@
             "| `*/accel/mojo/dcls_tent/__init__.py` | 1 | 136 |",
             "| `*/accel/mojo/mixed_dense/__init__.py` | 1 | 118 |",
             "| `*/accel/mojo/adc_to_spike/__init__.py` | 1 | 124 |",
-            "| `*/neurons/models/*` | 177 | 38,145 |",
-            "| `*/network/mpi_runner.py` | 1 | 280 |",
+            "| `*/neurons/models/*` | 177 | 38,195 |",
+            "| `*/network/mpi_runner.py` | 1 | 293 |",
             "| `*/neurons/__main__.py` | 1 | 16 |",
             "| `*/neurons/dsl_cli.py` | 1 | 383 |",
             "| `*/quantum_cognition/__main__.py` | 1 | 463 |",
@@ -51973,8 +52029,8 @@
             "| `*/quantum_cognition/fs_watcher.py` | 1 | 264 |",
             "| `*/quantum_cognition/tests/*` | 16 | 1,269 |",
             "| `*/viz/plots.py` | 1 | 285 |",
-            "| `*/studio/*` | 275 | 66,009 |",
-            "| `*/federation/*` | 5 | 1,096 |",
+            "| `*/studio/*` | 286 | 67,514 |",
+            "| `*/federation/*` | 5 | 1,107 |",
             "",
             "<!-- coverage-scope:end -->",
             "",
@@ -52006,6 +52062,27 @@
             "- Formal assertions (SystemVerilog `assert property`)",
             "- Testbenches in `tb/` with golden-vector comparison",
             "- Co-simulation parity checks against Python reference",
+            "",
+            "",
+            "## Typed scalar native IR",
+            "",
+            "Local Linux qualification exercises the default-feature Rust graph API, normal",
+            "release-wheel Python calls, persisted text, direct RTL and pinned CIRCT 1.152.0.",
+            "The focused native regression cohort has 69 passing tests. The installed graph",
+            "and tool cohort has 113 passing tests, and the retained CPU codec cohort has 67.",
+            "The numerical CIRCT corpus contains 94 circuits and 9,095 exact observations.",
+            "Direct RTL and CIRCT are each compared with independent encoded-integer references.",
+            "Signed/unsigned widths through 128 bits, division by zero, signed minimum,",
+            "oversized shifts, rounding ties, casts and saturation bounds are included.",
+            "Unused malformed declarations, bounded vector nesting and parser ID exhaustion",
+            "are refused before hardware dimensions or wrapped identifiers can be emitted.",
+            "Six seeded arithmetic/type/admission faults are caught by public numerical or refusal",
+            "gates. Source-leaf instrumentation is separate from default-crate execution;",
+            "LLVM branch counts of zero are not branch coverage evidence.",
+            "",
+            "The public API and dedicated tests are documented in [the native IR contract](docs/api/sc-ir.md).",
+            "These results cover scalar graph circuits. Equation/state/integrator lowering,",
+            "full compiler acceptance and physical board measurements have separate evidence.",
             ""
           ],
           "chapters": [
@@ -52027,37 +52104,47 @@
             {
               "line": 38,
               "level": 2,
+              "title": "Studio optional engine typing"
+            },
+            {
+              "line": 46,
+              "level": 2,
               "title": "Studio input identity"
             },
             {
-              "line": 48,
+              "line": 56,
               "level": 2,
               "title": "Coverage Policy"
             },
             {
-              "line": 121,
+              "line": 142,
               "level": 2,
               "title": "Kuramoto Coupling Correctness"
             },
             {
-              "line": 130,
+              "line": 151,
               "level": 2,
               "title": "Holonomic Layer Adapters (L1–L16)"
             },
             {
-              "line": 139,
+              "line": 160,
               "level": 2,
               "title": "HDL Verification"
+            },
+            {
+              "line": 169,
+              "level": 2,
+              "title": "Typed scalar native IR"
             }
           ],
-          "captured_at_utc": "2026-10-22T22:58:34.638885+00:00"
+          "captured_at_utc": "2026-10-23T14:44:06.614632+00:00"
         },
         {
           "label": "pyproject.toml",
           "format": "toml",
-          "source_sha256": "720ccade5bd74e07a6243e8a02f7fc759963170d4855b11bf794447874bdf441",
-          "source_bytes": 18054,
-          "projection_sha256": "7bcb2650240922abea28a7c35956bfff3dbab2e8f59821a4c75b61ea4af100f9",
+          "source_sha256": "93b4f8fa1e9ea16ceeb6df72877cf0cee5f779f1a03ad7e542353fb38c5fc64d",
+          "source_bytes": 18178,
+          "projection_sha256": "11f49fce5815d0b75dfc83f8896ab7a26c9a40822dcb9820abc2684224c8a0a1",
           "private_references_withheld": 1,
           "lines": [
             "# SPDX-License-Identifier: AGPL-3.0-or-later",
@@ -52128,6 +52215,9 @@
             "sc-neurocore = \"sc_neurocore.cli:main\"",
             "sc-neurocore-if-benchmark = \"sc_neurocore.conversion.if_benchmark_cli:main\"",
             "",
+            "[project.gui-scripts]",
+            "snn-studio = \"sc_neurocore.studio.desktop.__main__:main\"",
+            "",
             "[project.entry-points.\"sc_neurocore.adapters\"]",
             "neuroml = \"sc_neurocore.adapters.importers:NeuroMLImporter\"",
             "sonata = \"sc_neurocore.adapters.importers:SONATAImporter\"",
@@ -52193,6 +52283,7 @@
             "mpi = [\"mpi4py>=3.0\"]",
             "lava = [\"lava-nc; python_version < '3.11'\"]",
             "studio = [\"fastapi>=0.100\", \"uvicorn[standard]>=0.20\", \"httpx>=0.27\", \"httpx2>=2.5,<3\", \"nir>=1.0,<1.0.9\", \"pint>=0.23\", \"sympy>=1.12\"]  # nir: the canvas exports and imports NIR files; pint and sympy: candidate units and equation diffs",
+            "desktop = [\"PySide6-WebEngine==6.12.0.140\"]",
             "federation = [\"scpn-studio-platform>=0.11,<0.12\"]  # Hub federation vertical (sc_neurocore.federation)",
             "docs = [",
             "  \"mkdocs>=1.6\",",
@@ -52465,7 +52556,7 @@
             ""
           ],
           "chapters": [],
-          "captured_at_utc": "2026-10-22T22:58:34.638885+00:00"
+          "captured_at_utc": "2026-10-23T14:44:06.614632+00:00"
         },
         {
           "label": "Cargo.toml",
@@ -54204,9 +54295,9 @@
         {
           "label": "README.md",
           "format": "md",
-          "source_sha256": "9cd333a45f04a0c3af144a59420132b3fa8c26863a5bbd0f8cbb623eb70ce139",
-          "source_bytes": 69178,
-          "projection_sha256": "9cd333a45f04a0c3af144a59420132b3fa8c26863a5bbd0f8cbb623eb70ce139",
+          "source_sha256": "ca633d0e4d5eb5c1691fcde88adbabae75159f00af4b751513191f76c7e4dd85",
+          "source_bytes": 69188,
+          "projection_sha256": "ca633d0e4d5eb5c1691fcde88adbabae75159f00af4b751513191f76c7e4dd85",
           "private_references_withheld": 0,
           "lines": [
             "# scpn-quantum-control",
@@ -54366,16 +54457,16 @@
             "|---|---:|",
             "| Package version | 1.2.0 |",
             "| Public API exports | 851 |",
-            "| Python source modules | 800 |",
-            "| Public Python classes | 1533 |",
+            "| Python source modules | 823 |",
+            "| Public Python classes | 1557 |",
             "| Domain package families | 40 |",
             "| API documentation pages | 14 |",
             "| Rust PyO3 function bindings | 177 |",
             "| Rust source modules | 53 |",
             "| Notebook files | 109 |",
-            "| Example files | 40 |",
+            "| Example files | 42 |",
             "| Optional extras | 43 |",
-            "| Python test files | 1545 |",
+            "| Python test files | 1572 |",
             "| Public documentation pages | 385 |",
             "| GitHub Actions workflows | 44 |",
             "",
@@ -55171,7 +55262,7 @@
             "- [Differentiable Support Matrix](docs/differentiable_support_matrix.md) — generated registry and planner support evidence",
             "- [Differentiable Reviewer Evidence](docs/differentiable_reviewer_evidence.md) — generated criticism-to-command and open-gap evidence index",
             "- [Quantum Gradients](docs/quantum_gradients.md) — parameter-shift and gradient-evidence route for VQE and quantum-control objectives",
-            "- [JAX NQS Baseline](docs/jax_nqs_baseline.md) — bounded exact-reference RBM evidence with environment provenance and no performance or hardware claim",
+            "- [JAX NQS Baseline](docs/jax_nqs_baseline.md) — bounded exact-reference RBM evidence, seeded replay, independent state checks and frozen Hamiltonian evaluation",
             "- [Entangled Initial-State Coherence Study](docs/entanglement_initial_state_study.md) — visibility-aware phase order, dephased controls, deterministic evidence, and no entanglement-specific or shifted-critical-coupling claim",
             "- [Differentiable API](docs/differentiable_api.md) — public differentiable namespace and support matrix",
             "- [QNN, QGNN, and QSNN Convergence Examples](docs/ml_convergence_examples.md) — frozen local training tasks, framework rows, and digest-bound evidence",
@@ -55485,7 +55576,7 @@
               "title": "Text and data mining reservation"
             }
           ],
-          "captured_at_utc": "2026-10-22T22:58:34.638885+00:00"
+          "captured_at_utc": "2026-10-23T14:44:06.614632+00:00"
         },
         {
           "label": "ARCHITECTURE.md",
@@ -55503,19 +55594,19 @@
         {
           "label": "ROADMAP.md",
           "format": "md",
-          "source_sha256": "40ef3d98659ee884031c980cae13d1ae0e1b3f912cccc787eb1f0db5d52fb6fb",
-          "source_bytes": 128531,
-          "projection_sha256": "38c01f7fb4eb308686ce8f4e3db1d0c314747f37c223d9096a4b04a0f14cf02f",
+          "source_sha256": "b4da5331cd52da432bde5c04981ef0d52798b284df8d9550c0a098736a86b82d",
+          "source_bytes": 129092,
+          "projection_sha256": "be725cae18af9ce870a85bf1da6b0086de78cbb3d0fa5ecf07a7da12b9961d2c",
           "private_references_withheld": 2,
           "lines": [
             "# Roadmap",
             "",
             "## Canonical work queue",
             "",
-            "This file is the single source of truth for active roadmap and TODO",
-            "selection. Older planning files under `private local workspace/` and",
-            "`private internal records/` are retained as historical context only unless an item",
-            "is copied here.",
+            "This is the public capability and research roadmap. Status entries are dated;",
+            "current source contracts and their evidence define supported behaviour.",
+            "Maintainers reconcile implementation priorities in the private work queue.",
+            "Historical targets below do not authorise publication, provider execution or spending.",
             "",
             "### Current platform programme: reproducible evidence and benchmark infrastructure",
             "",
@@ -57427,15 +57518,21 @@
             "",
             "## v1.0.0 (Target: Q3 2026)",
             "",
-            "Remaining items:",
+            "Historical target ledger, reconciled 2026-10-20: v1.0.0 is an ancestor of",
+            "current source version 1.2.0. Research and evidence items below retain their",
+            "own acceptance conditions; they are not outstanding version-bump work.",
             "",
             "- [x] IBM Heron r2 hardware evidence ledgered; promoted claims narrowed to",
             "  raw-count-backed or artifact-named rows",
-            "- [ ] Coverage push to 100% (tracked in the internal coverage queue; latest documented baseline is ~97.6%, 315 uncovered lines)",
+            "- [ ] Coverage qualification: require 100% for changed owners and preserve the",
+            "  whole-package coverage policy. Each measurement belongs to its exact source",
+            "  SHA and runtime; older baseline counts are historical, not a current census.",
             "- [ ] arXiv preprint: \"Quantum simulation of coupled-oscillator synchronization on a 156-qubit superconducting processor\"",
             "- [ ] Quantum advantage figure: exact-simulation crossover and hardware-budget boundary; no broad hardware-advantage claim until a preregistered raw-count campaign passes the validation gate",
-            "- [ ] IBM Quantum Credits campaign (applied 2026-03-29, pending review)",
-            "- [ ] Version bump to 1.0.0",
+            "- [ ] IBM Quantum Credits campaign: application recorded 2026-03-29. The old",
+            "  pending-review note is historical; any next campaign needs current account,",
+            "  target, budget and approval evidence.",
+            "- [x] Version bump to 1.0.0: released tag retained; current source is 1.2.0.",
             "",
             "## Future",
             "",
@@ -57698,21 +57795,22 @@
               "title": "v1.0.0 (Target: Q3 2026)"
             },
             {
-              "line": 1930,
+              "line": 1936,
               "level": 2,
               "title": "Future"
             },
             {
-              "line": 1975,
+              "line": 1981,
               "level": 2,
               "title": "Strategic Differentiation (post-v1.0)"
             },
             {
-              "line": 2061,
+              "line": 2067,
               "level": 3,
               "title": "Paper 0 downstream replay extraction"
             }
-          ]
+          ],
+          "captured_at_utc": "2026-10-23T14:44:06.614632+00:00"
         },
         {
           "label": "VALIDATION.md",
@@ -60678,5 +60776,5 @@
     "SYNAPSE-CHANNEL-FLEET",
     "TRANSPILE-WITNESS"
   ],
-  "public_projection_updated_at_utc": "2026-10-20T21:19:24.360861+00:00"
+  "public_projection_updated_at_utc": "2026-10-23T14:44:06.614632+00:00"
 }

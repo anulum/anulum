@@ -73,6 +73,13 @@ energy, materials-discovery and frontier-AI topics; the Foresight RFP retains
 its stated deadline and time zone. Programme dates and support types do not
 establish eligibility, a submission or an award.
 
+Later 23 October source checks refresh five selected NeuroCore and Quantum
+Control documents. Their published source revisions, unchanged package versions
+and exact-head CI observations remain distinct. NeuroCore’s typed scalar graph
+IR does not provide arbitrary equation-to-native-IR lowering. Timing Witness’s
+selected source bytes are unchanged at its newer public revision; physical
+qualification remains open. Older technical captures retain their dates.
+
 Repository documents marked as withheld are excluded from the public reading
 view. Their project identities may remain in the map. The generator rejects
 restored source text, excerpts and declarations for these restricted entries.
@@ -172,8 +179,8 @@ observations, independent of resource and budget data.
 | ---------------------------------------- | ------------------------------------------------------------------ | ---------------------: |
 | Profile images across all five languages | Four generated header/map SVGs, 91 badge SVGs and the footer image |                621,868 |
 | Dated catalogue provenance               | `assets/catalogue-source.json`, plus its ownership sidecar         | 114,267 before sidecar |
-| Interactive site snapshot                | 77 manifest-listed assets                                          |             33,529,868 |
-| Main interactive entry page              | `index.html`, including its eight embedded datasets                |             10,342,851 |
+| Interactive site snapshot                | 77 manifest-listed assets                                          |             33,559,592 |
+| Main interactive entry page              | `index.html`, including its eight embedded datasets                |             10,353,806 |
 
 The HTML, JavaScript modules, source-document JSON, illustrations and figure
 downloads belong to the separately hosted explorer. The full snapshot repeats
