@@ -107,9 +107,9 @@ export default async function checkResourceCoverage(
   await coverage.waitFor();
   await checkAssetVersions();
   /** @type {import('../types/atlas.js').ResourceData} */
-  const data = await page.locator("#resource-data").evaluate((node) =>
-    JSON.parse(/** @type {string} */ (node.textContent)),
-  );
+  const data = await page
+    .locator("#resource-data")
+    .evaluate((node) => JSON.parse(/** @type {string} */ (node.textContent)));
   const mainText = await coverage.innerText();
   check(
     mainText.includes("before filters") &&
