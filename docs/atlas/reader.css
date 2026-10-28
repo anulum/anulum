@@ -86,6 +86,7 @@ p { margin: 12px 0; overflow-wrap: anywhere; }
 .quick-card { padding: 22px; background: #fff; border: 1px solid var(--line); border-radius: 10px; min-width: 0; }
 .quick-card h2 { font-size: 18px; margin-top: 0; }
 .passport-section { margin: 25px 0; }
+.passport-section li { overflow-wrap: anywhere; }
 .disclosure { border: 1px solid var(--line); border-radius: 8px; padding: 14px 18px; margin: 10px 0; background: #fff; }
 .disclosure summary { cursor: pointer; font-weight: 600; font-size: 14px; overflow-wrap: anywhere; }
 .disclosure[open] summary { margin-bottom: 16px; }

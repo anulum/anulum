@@ -19,7 +19,7 @@ The version and exact asset fingerprints are in [atlas-manifest.json](atlas-mani
 Individual source documents retain their own capture dates and fingerprints.
 A newer atlas snapshot does not make an older source document current.
 
-The 23 October portfolio refresh checks published revisions across the
+The 28 October source checkpoint checks published revisions across the
 registry's 38 public repositories and the separately verified public HushLine
 repository. Refreshed reading documents carry their own capture dates and
 fingerprints; independently cited technical documents retain their earlier
@@ -73,12 +73,13 @@ energy, materials-discovery and frontier-AI topics; the Foresight RFP retains
 its stated deadline and time zone. Programme dates and support types do not
 establish eligibility, a submission or an award.
 
-Later 23 October source checks refresh five selected NeuroCore and Quantum
-Control documents. Their published source revisions, unchanged package versions
-and exact-head CI observations remain distinct. NeuroCore’s typed scalar graph
-IR does not provide arbitrary equation-to-native-IR lowering. Timing Witness’s
-selected source bytes are unchanged at its newer public revision; physical
-qualification remains open. Older technical captures retain their dates.
+The 28 October refresh reconciles 64 reading documents and 75 source-file
+records with independently checked public revisions; all 14 checked package
+versions are unchanged. NeuroCore now documents supported equation-to-native-IR
+compilation and source replay, with a matching engine requirement and explicit
+unsupported modes. The Reactor Kernels sources state native STEP units in
+metres and a separate third-party CAD evidence boundary. Source checkpoints do
+not refresh hosted CI, older technical captures or physical qualification.
 
 Repository documents marked as withheld are excluded from the public reading
 view. Their project identities may remain in the map. The generator rejects
@@ -179,8 +180,8 @@ observations, independent of resource and budget data.
 | ---------------------------------------- | ------------------------------------------------------------------ | ---------------------: |
 | Profile images across all five languages | Four generated header/map SVGs, 91 badge SVGs and the footer image |                621,868 |
 | Dated catalogue provenance               | `assets/catalogue-source.json`, plus its ownership sidecar         | 114,267 before sidecar |
-| Interactive site snapshot                | 77 manifest-listed assets                                          |             33,559,592 |
-| Main interactive entry page              | `index.html`, including its eight embedded datasets                |             10,353,806 |
+| Interactive site snapshot                | 77 manifest-listed assets                                          |             33,578,631 |
+| Main interactive entry page              | `index.html`, including its eight embedded datasets                |             10,347,073 |
 
 The HTML, JavaScript modules, source-document JSON, illustrations and figure
 downloads belong to the separately hosted explorer. The full snapshot repeats

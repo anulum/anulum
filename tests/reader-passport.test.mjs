@@ -13,6 +13,41 @@ import { withAtlasPage, openRoute } from "./atlas-runtime.mjs";
 import { atlas } from "./atlas-data.mjs";
 
 test(
+  "published revision identifiers wrap inside native mobile passport lists",
+  { timeout: 120000 },
+  async () => {
+    const node = atlas.nodes.find((item) => item.id === "REMANENTIA");
+    assert.ok(node);
+    assert.ok(node.dossier.acceptance);
+    const limitation = node.dossier.acceptance.find((item) =>
+      /^Local source revision [a-f0-9]{40}/.test(item),
+    );
+    assert.ok(limitation);
+    await withAtlasPage(async (page) => {
+      await openRoute(page, { project: node.id });
+      await page
+        .getByRole("tab", { name: "Outputs & evidence", exact: true })
+        .click();
+      for (const width of [390, 320]) {
+        await page.setViewportSize({ width, height: 844 });
+        const source = page
+          .getByRole("listitem")
+          .filter({ hasText: limitation });
+        await source.waitFor();
+        assert.equal(await source.innerText(), limitation);
+        assert.equal(
+          await page.evaluate(function mobilePassportFitsViewport() {
+            return document.documentElement.scrollWidth <= innerWidth;
+          }),
+          true,
+          "The complete source revision remains readable without page overflow",
+        );
+      }
+    });
+  },
+);
+
+test(
   "public DOM event boundary ignores tablist keys outside its focused tabs; not native keyboard or AT proof",
   { timeout: 120000 },
   async () => {

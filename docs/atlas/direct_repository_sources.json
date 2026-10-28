@@ -1,21 +1,21 @@
 {
-  "version": "0.2",
+  "version": "0.2+published-source-refresh.2",
   "captured_at_utc": "2026-10-13T23:51:08.190562+00:00",
-  "state": "Public documentation projection; selected source records retain their capture dates and qualification limits.",
-  "read_scope": "Complete selected document and entry-source bytes read and retained. Selected prose, architecture sections, structured declarations and static top-level Python declarations projected; no source execution or whole scientific/implementation validation. Repository-internal documents, excerpts and declarations are withheld from the public projection. Selected documentation rows were refreshed from verified public main commits on 2026-10-23; other declarations and excerpts retain their earlier capture. This is documentary correspondence, not runtime or scientific qualification. Four additional repository/component entries were checked against exact published main objects on 23 October 2026; component source labels preserve their parent paths. Earlier excerpts and static declarations retain their original capture scope. The HushLine README was additionally refreshed from its independently verified public main source; earlier declarations/excerpts retain their prior capture scope. Five selected documentation records were refreshed on 23 October 2026 from exact observed public SC-NeuroCore and Quantum Control revisions. Timing Witness selected source bytes were independently unchanged at its newer public revision. Other metadata, excerpts and technical captures retain their earlier source scope; source inspection executes no numerical, hardware or scientific workflow.",
+  "state": "Mixed-date public repository source captures; selected published file fingerprints checked on 28 October 2026. Source presence and declarations are not runtime acceptance.",
+  "read_scope": "Complete selected document and entry-source bytes read and retained. Selected prose, architecture sections, structured declarations and static top-level Python declarations projected; no source execution or whole scientific/implementation validation. Repository-internal documents, excerpts and declarations are withheld from the public projection. Selected documentation rows were refreshed from verified public main commits on 2026-10-23; other declarations and excerpts retain their earlier capture. This is documentary correspondence, not runtime or scientific qualification. Four additional repository/component entries were checked against exact published main objects on 23 October 2026; component source labels preserve their parent paths. Earlier excerpts and static declarations retain their original capture scope. The HushLine README was additionally refreshed from its independently verified public main source; earlier declarations/excerpts retain their prior capture scope. Five selected documentation records were refreshed on 23 October 2026 from exact observed public SC-NeuroCore and Quantum Control revisions. Timing Witness selected source bytes were independently unchanged at its newer public revision. Other metadata, excerpts and technical captures retain their earlier source scope; source inspection executes no numerical, hardware or scientific workflow. On 28 October 2026, all 39 admitted public repository roots were observed and 284 available selected files were independently read at their immutable published revisions, including two nested Quantum packages. Seventy-five file records changed; 64 reading views were refreshed. Static declarations, changed README excerpts and changed architecture/package declarations follow those same bytes. The historical local-only Remanentia public_projection.py record is omitted from the current published-file inventory. Unchanged reading documents and separately cited technical captures retain their dates; no numerical, hardware or scientific workflow was executed.",
   "project_entries": 197,
   "entries_with_documents": 40,
-  "source_documents_captured": 285,
+  "source_documents_captured": 284,
   "changed_after_read": [],
   "projects": [
     {
       "project_id": "ATLAS-REACTORUM",
-      "lookup_state": "Selected repository documents captured",
+      "lookup_state": "Selected published source files checked on 28 October 2026 at a0338892e9bf1a7518d185f508318cff837f85d8; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
-          "sha256": "01b12730a3189337b0edf733d4790e7721383cb2b4111e24930d1e132d1a39c7",
-          "bytes": 13738
+          "sha256": "66aea8edc3591ae2f91ab23f6e11699b089c28fb0c812fe5186b79d398a20645",
+          "bytes": 14536
         },
         {
           "label": "ARCHITECTURE.md",
@@ -29,8 +29,8 @@
         },
         {
           "label": "ROADMAP.md",
-          "sha256": "07e25b92e2d192cf38691d7ea2e78a278a2dbc3f78392f7ac24c81800f4fbab4",
-          "bytes": 5207
+          "sha256": "de782c04fd9a4cd56e86b561f861ac227a0caad8959833b22ae0b250d3769ea5",
+          "bytes": 688
         },
         {
           "label": "VALIDATION.md",
@@ -147,12 +147,12 @@
     },
     {
       "project_id": "SCPN-BEAM-TARGET-CORE",
-      "lookup_state": "Selected repository documents captured",
+      "lookup_state": "Selected published source files checked on 28 October 2026 at 061d62785e38ca11c135f92ae62a15f857ba57fd; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
-          "sha256": "0d7a33aca294c328ac842d44c1acd154b743c96eeb1e24f99169d0263196bf65",
-          "bytes": 6337
+          "sha256": "bb16d9ae736dc7b6b9656737c45fc29e4af4f20940a0fbd11ad6a8195ab240ad",
+          "bytes": 7135
         },
         {
           "label": "ARCHITECTURE.md",
@@ -166,8 +166,8 @@
         },
         {
           "label": "ROADMAP.md",
-          "sha256": "b8c1a865675c3d0d041a61d61ea6c2bd81b33b4c4f28214550bea8cdea06e6ad",
-          "bytes": 3300
+          "sha256": "112d024c2140e39b47907694bf8bc69e14e2dd139aadb177799143abe6b403a4",
+          "bytes": 752
         },
         {
           "label": "VALIDATION.md",
@@ -330,12 +330,12 @@
     },
     {
       "project_id": "SCPN-DENSE-PLASMA-FOCUS-CORE",
-      "lookup_state": "Selected repository documents captured",
+      "lookup_state": "Selected published source files checked on 28 October 2026 at e083b5684e7f762dc81687767bf7b125a558bf6f; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
-          "sha256": "2dc01b8e559e5baaa37830c05a38c2372f0d440dbe8b3656b3376d726f2d2e1d",
-          "bytes": 7486
+          "sha256": "a2befed7c3b244371935f9a152a3eb3e2b1e48ebdfe17e757ee4b7e260e41370",
+          "bytes": 8348
         },
         {
           "label": "ARCHITECTURE.md",
@@ -349,13 +349,13 @@
         },
         {
           "label": "ROADMAP.md",
-          "sha256": "c736fc05667201634705412151f78fda9d2e47db649dd6e681c11c6120c805c4",
-          "bytes": 5851
+          "sha256": "f8b7dbadf1beb3a20958105947197c43b53f0b0b31b9c03ec6b6885900ca66d0",
+          "bytes": 764
         },
         {
           "label": "VALIDATION.md",
-          "sha256": "a58fea12caeeaaef5d4b8aca6595746cb057f3458cecdc5cec490608d4bfe9d8",
-          "bytes": 28162
+          "sha256": "6b79946fc2e69f61da36ced5a6e6c6612504477660a9ecca7eaf0368c12a9f8c",
+          "bytes": 29987
         },
         {
           "label": "pyproject.toml",
@@ -447,12 +447,12 @@
     },
     {
       "project_id": "SCPN-FRC-CORE",
-      "lookup_state": "Selected repository documents captured",
+      "lookup_state": "Selected published source files checked on 28 October 2026 at fac867651f98e3aec81a7d2a895d96f88e118224; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
-          "sha256": "abefad1a68800bc5394f497d6f3701edb012b81fbf9f0ff286389772a6788888",
-          "bytes": 6691
+          "sha256": "4f61298faf8c4ef4c3a6705bfac00204f611afd020a12db2511271115be192fd",
+          "bytes": 7489
         },
         {
           "label": "ARCHITECTURE.md",
@@ -466,18 +466,18 @@
         },
         {
           "label": "ROADMAP.md",
-          "sha256": "cb9c8b08ebe2a625a961885adaa34d0e997b921ecde8192e48c55e0e8a19ed45",
-          "bytes": 3524
+          "sha256": "739525649521044b00835a7e18b67a25a7d7e5b288792550c0e0c67297d5ecd9",
+          "bytes": 738
         },
         {
           "label": "VALIDATION.md",
-          "sha256": "2286fb0a2b9903f1f16b9e84e0a788f34438fd230eedd636e11e5adf60916f2c",
-          "bytes": 20074
+          "sha256": "b2ee9359edfa9775a92121e7a57729732ff0c0b2ff45eec2cd9f3628bcb7270a",
+          "bytes": 21095
         },
         {
           "label": "pyproject.toml",
-          "sha256": "773f88f9757e13637c96c32a0c4e9cd3db520616e7e001bcbd34064f5e581dbd",
-          "bytes": 6888
+          "sha256": "6c2abf2419840b364586ef53ebb29e71178755f97b734fb0623f1871909d0fd7",
+          "bytes": 7499
         },
         {
           "label": "src/scpn_frc_core/__init__.py",
@@ -553,11 +553,11 @@
     },
     {
       "project_id": "SCPN-FUSION-CORE",
-      "lookup_state": "Selected repository documents captured",
+      "lookup_state": "Selected published source files checked on 28 October 2026 at 5edd51799a535617d0f3a860b900773ac94c1d4b; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
-          "sha256": "46effd36696831dffbac7d093644df9faef917d4a60ff8d5ffb5992ef2dd0e6d",
+          "sha256": "ad176b95a59c9dffc3ef1acd2855e6b9b5b4682276610c61d6271520803e7a23",
           "bytes": 64250
         },
         {
@@ -572,8 +572,8 @@
         },
         {
           "label": "ROADMAP.md",
-          "sha256": "49dd4a7bd0f874d3f09085b428eaa4e06c4be797fb855e15e2890cfce2d4adc7",
-          "bytes": 12216
+          "sha256": "850ecae8a7b34975b287845b3bb3078d5f78ffa210bbd9d7d576b47423980988",
+          "bytes": 806
         },
         {
           "label": "VALIDATION.md",
@@ -582,8 +582,8 @@
         },
         {
           "label": "pyproject.toml",
-          "sha256": "e2a1442587f6aa9eef26ea3c568a9cb75718f56452f91b264d208e92d0f70b8d",
-          "bytes": 53549
+          "sha256": "33aa1a82961bb994b08aea632602fe87dbb2990b2af961a889490a42133f60de",
+          "bytes": 53513
         },
         {
           "label": "src/scpn_fusion/__init__.py",
@@ -665,7 +665,7 @@
           "name": "scpn-fusion",
           "version": "4.0.0",
           "description": "SCPN Fusion Core - Advanced Plasma Physics & Control Suite",
-          "requires-python": ">=3.10",
+          "requires-python": ">=3.11",
           "declared_scripts": {
             "scpn-fusion": "scpn_fusion.cli:main",
             "scpn-dashboard": "scpn_fusion.ui.dashboard_launcher:main",
@@ -876,7 +876,7 @@
     },
     {
       "project_id": "SCPN-FUSION-FISSION-HYBRID-CORE",
-      "lookup_state": "Selected repository documents captured",
+      "lookup_state": "Selected published source files checked on 28 October 2026 at b868a66c9358ff187a3f5e5414f5a9c14bd6762d; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
@@ -1048,12 +1048,12 @@
     },
     {
       "project_id": "SCPN-ICF-BEAM-CORE",
-      "lookup_state": "Selected repository documents captured",
+      "lookup_state": "Selected published source files checked on 28 October 2026 at 7a275869efac44f6a3e08a4618b23e9b7eebad0c; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
-          "sha256": "1a090657d356a9f39d2635e644db4e0b3e47697d656c57b1da2e013706383da9",
-          "bytes": 6438
+          "sha256": "452910ab261cc1dc80a9e63cb9af06e78fe9b0b16a0fa103cb571fb1d82ebf63",
+          "bytes": 7236
         },
         {
           "label": "ARCHITECTURE.md",
@@ -1067,8 +1067,8 @@
         },
         {
           "label": "ROADMAP.md",
-          "sha256": "9bc3d7e3349cb6c5de8d52aa8def7807dcd2f1bf58a1ff31adf2b14ecd5603d2",
-          "bytes": 3343
+          "sha256": "d92a6878af541f2be9f7a14901f0b47479a7c65035b3abd3f12b1fd0fa05c506",
+          "bytes": 757
         },
         {
           "label": "VALIDATION.md",
@@ -1154,12 +1154,12 @@
     },
     {
       "project_id": "SCPN-ICF-IMPACT-CORE",
-      "lookup_state": "Selected repository documents captured",
+      "lookup_state": "Selected published source files checked on 28 October 2026 at 36bc492e52b9c70b01003c8877a76948d895e1cd; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
-          "sha256": "21b71d7784aaaa1fa5bbcd49fa8b1aaf64e44243c7c9f8d99ee347f05db7c88d",
-          "bytes": 5958
+          "sha256": "41f49a4351aa3070896a789406c308ab5d921f6ba273892cd89d54f4bd639e2b",
+          "bytes": 6756
         },
         {
           "label": "ARCHITECTURE.md",
@@ -1173,8 +1173,8 @@
         },
         {
           "label": "ROADMAP.md",
-          "sha256": "8564a48dcfe5eb355e7817bb69a271a21a344c10fc5326781cfaf7d015bb55da",
-          "bytes": 3253
+          "sha256": "fc4f3e7509d999cf5627da7197d39cd565e79358e8db434e31a0a052f79b8dfa",
+          "bytes": 753
         },
         {
           "label": "VALIDATION.md",
@@ -1260,12 +1260,12 @@
     },
     {
       "project_id": "SCPN-ICF-LASER-CORE",
-      "lookup_state": "Selected repository documents captured",
+      "lookup_state": "Selected published source files checked on 28 October 2026 at a4a0bfa1cf3cd9e411ce65e0592fbb0621af5b83; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
-          "sha256": "a52f841991447e6b2574b65600663d12c7dbe99367e0c785665c4768566aa940",
-          "bytes": 6321
+          "sha256": "fc1901ce7b8e7b1bf88481c661140c6cc65c2dc9f33b9ebe6e7f8ed12eeacc66",
+          "bytes": 7119
         },
         {
           "label": "ARCHITECTURE.md",
@@ -1279,8 +1279,8 @@
         },
         {
           "label": "ROADMAP.md",
-          "sha256": "d21dcdecebf3b6f1d8111b574812ac8e26ff1fe7323525ad18567041e78f1aa6",
-          "bytes": 3409
+          "sha256": "8ca94cbe5f3dbc665a223dae8b59ea9bdf561e9e2488dd450511af7f106359aa",
+          "bytes": 756
         },
         {
           "label": "VALIDATION.md",
@@ -1366,12 +1366,12 @@
     },
     {
       "project_id": "SCPN-IEC-CORE",
-      "lookup_state": "Selected repository documents captured",
+      "lookup_state": "Selected published source files checked on 28 October 2026 at 7afcb6d3a81a23319fc88282143ef1f7b9d1001c; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
-          "sha256": "feecfb52ae74311b5d69842ea9c2263b02257f1e6ffa33164aa8c74fe9048cd4",
-          "bytes": 6393
+          "sha256": "9fdc5dc2e933d645a3e18c970a342e98778973b81bf3dd9cb0a751f1354a205b",
+          "bytes": 7191
         },
         {
           "label": "ARCHITECTURE.md",
@@ -1385,8 +1385,8 @@
         },
         {
           "label": "ROADMAP.md",
-          "sha256": "4a528bad15bb20fd957d535eeca8c4a13f2f4a321aa25bc832f360519e1f79b7",
-          "bytes": 3416
+          "sha256": "2092ab0b166c84d0c6339ef708c9f543e63dbf318634d63598d1c5ab4d4fa8df",
+          "bytes": 754
         },
         {
           "label": "VALIDATION.md",
@@ -1472,12 +1472,12 @@
     },
     {
       "project_id": "SCPN-LATTICE-FUSION-CORE",
-      "lookup_state": "Selected repository documents captured",
+      "lookup_state": "Selected published source files checked on 28 October 2026 at dbb25a284c9d733bad900c02d3275f03de4778c0; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
-          "sha256": "a88481282b6e9e1765b253f6cbdefa47ec5436f59851168111724e081a091328",
-          "bytes": 6076
+          "sha256": "00b9cd102610bb83c01cf1a8af4c823bf9ae161584ad7f0c1d919a6911eb274d",
+          "bytes": 6874
         },
         {
           "label": "ARCHITECTURE.md",
@@ -1491,8 +1491,8 @@
         },
         {
           "label": "ROADMAP.md",
-          "sha256": "a4ff399b97dad226953b676d3377cab2a5baf3fb2036d623c2763ec656d8724b",
-          "bytes": 3098
+          "sha256": "9adea81059a253fa2f4ebd8a88544407568b3b6bc337ec5d31dd3cd26321e6ba",
+          "bytes": 757
         },
         {
           "label": "VALIDATION.md",
@@ -1566,12 +1566,12 @@
     },
     {
       "project_id": "SCPN-LEVITATED-DIPOLE-CORE",
-      "lookup_state": "Selected repository documents captured",
+      "lookup_state": "Selected published source files checked on 28 October 2026 at 77d824076d7cdd27ac96e616212b450d74203436; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
-          "sha256": "77a9346837ba311dfeb182d839d51e93fd5ccc9d5147fb5e9947964027e6e269",
-          "bytes": 6029
+          "sha256": "26a2e07fce5fc1e25ad99264eb5d11ca0968498be5bc528719b0f8c802d76212",
+          "bytes": 6827
         },
         {
           "label": "ARCHITECTURE.md",
@@ -1585,8 +1585,8 @@
         },
         {
           "label": "ROADMAP.md",
-          "sha256": "090420d57c3e01838d32fb8c143b673c528f29e52a61df359a77223b1e6bd979",
-          "bytes": 3352
+          "sha256": "942221509d6b599cd2ef3de3b7da61ab6490e92731cb9bb1481664780e871b92",
+          "bytes": 755
         },
         {
           "label": "VALIDATION.md",
@@ -1683,12 +1683,12 @@
     },
     {
       "project_id": "SCPN-MAGNETIC-CUSP-CORE",
-      "lookup_state": "Selected repository documents captured",
+      "lookup_state": "Selected published source files checked on 28 October 2026 at fb0e0dfc61d16c091ecc5c6d8645a4be11e08a5f; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
-          "sha256": "a0c8eb03d807a3ff991752b0b6dddd9b05df0a2c5871c243aa5d1a3679e0aedf",
-          "bytes": 5602
+          "sha256": "c1415f8192f4974bfba31f2d1371e2b7c10fa5e78d845ecd730b9cf6f6e3f01e",
+          "bytes": 6400
         },
         {
           "label": "ARCHITECTURE.md",
@@ -1702,8 +1702,8 @@
         },
         {
           "label": "ROADMAP.md",
-          "sha256": "ab7b07d1638619f860a120aba25452f686fafac9e492a557ad7d280cb0fb4e2e",
-          "bytes": 3321
+          "sha256": "52a9938ac9697bd839c01c9762ea68841b5092a08033997fc742029f50475a39",
+          "bytes": 754
         },
         {
           "label": "VALIDATION.md",
@@ -1816,7 +1816,7 @@
     },
     {
       "project_id": "SCPN-MIF-CORE",
-      "lookup_state": "Selected repository documents captured",
+      "lookup_state": "Selected published source files checked on 28 October 2026 at b44f33e2a082ca6b34f22cd587c5c4f0e8cb2c89; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
@@ -1825,7 +1825,7 @@
         },
         {
           "label": "pyproject.toml",
-          "sha256": "dd2532165af8fa5c73d0a916714da55db91458e4a4fff4ce3a52c0b702df5c85",
+          "sha256": "c644f2663e0dc72e89b75d7943d1f0ead4b70873d0d6a2ae994f5f6def602912",
           "bytes": 12040
         },
         {
@@ -1880,12 +1880,12 @@
     },
     {
       "project_id": "SCPN-MIF-LINER-CORE",
-      "lookup_state": "Selected repository documents captured",
+      "lookup_state": "Selected published source files checked on 28 October 2026 at 9fc5c27b8de133b719eb834a5cc8ef6ac7e4ca15; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
-          "sha256": "f9038ffaea853f8b1992c5d848d6d27141fa2e9b65d60d32d30d2ebba6e832f4",
-          "bytes": 6301
+          "sha256": "31bcde57f21d52855c84676251c4c10198ed30ebedf3a55111d37b644de22143",
+          "bytes": 7099
         },
         {
           "label": "ARCHITECTURE.md",
@@ -1899,8 +1899,8 @@
         },
         {
           "label": "ROADMAP.md",
-          "sha256": "780e0bfd403e0397744caf9eaaefb1aea135b73731e646cd9abe4d81b92864b1",
-          "bytes": 3373
+          "sha256": "4fec070fb80ca83cf15aef6d3b5a758a6f0f892403cb0922184c4a539ac52d0d",
+          "bytes": 759
         },
         {
           "label": "VALIDATION.md",
@@ -1986,12 +1986,12 @@
     },
     {
       "project_id": "SCPN-MIF-MAGLIF-CORE",
-      "lookup_state": "Selected repository documents captured",
+      "lookup_state": "Selected published source files checked on 28 October 2026 at 04d9eb1c72deade4045e6c0ea097a486e24a437b; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
-          "sha256": "18a4ef61e99363cda933f70e8d2307764de7ab1254a6894959c3dbd49d393ca4",
-          "bytes": 6052
+          "sha256": "529673272d6081a7a9823dfdaa3f6a50f6bd2bd576d5260b4352b9128e748d31",
+          "bytes": 6850
         },
         {
           "label": "ARCHITECTURE.md",
@@ -2005,8 +2005,8 @@
         },
         {
           "label": "ROADMAP.md",
-          "sha256": "6922713bb10fde7e18e5c62156eda8c9bf122c53f2297add1c59704ba5282b17",
-          "bytes": 3326
+          "sha256": "9503b5652a478e72a7e95aa3b5b3ab1f9e37c06736608039eb8fe6eb6ddeb959",
+          "bytes": 745
         },
         {
           "label": "VALIDATION.md",
@@ -2092,12 +2092,12 @@
     },
     {
       "project_id": "SCPN-MIF-PLASMA-JET-CORE",
-      "lookup_state": "Selected repository documents captured",
+      "lookup_state": "Selected published source files checked on 28 October 2026 at d56bb598992260020492389a24d21e260f22ff62; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
-          "sha256": "b3818b3d890d3bace92f616f6247706935fdb330b332074678e1f33674d844ae",
-          "bytes": 5790
+          "sha256": "740fcc92f5d312026fbbdb94805d65dccf9cd363ef7b0c3c6fa576da09bba25d",
+          "bytes": 6588
         },
         {
           "label": "ARCHITECTURE.md",
@@ -2111,8 +2111,8 @@
         },
         {
           "label": "ROADMAP.md",
-          "sha256": "c21d11f7b25705f29f7e98f7a564f713a56bea70be79d6afa655f91180a8e93c",
-          "bytes": 3327
+          "sha256": "b5e1b40abde933d667a04810f1d6bbabe29fa93fd5f6013ccd556fd4969a47dc",
+          "bytes": 751
         },
         {
           "label": "VALIDATION.md",
@@ -2198,7 +2198,7 @@
     },
     {
       "project_id": "SCPN-MIRROR-CORE",
-      "lookup_state": "Selected repository documents captured",
+      "lookup_state": "Selected published source files checked on 28 October 2026 at 2ce0260b953c0b2a649a74fda8fa0fad55e9d062; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
@@ -2217,8 +2217,8 @@
         },
         {
           "label": "ROADMAP.md",
-          "sha256": "d6eb872c75ccfa6bcee53ee4e027abb3fc6417755996728d2f70a1221b03e6de",
-          "bytes": 5634
+          "sha256": "cb94764344e6e70925511ed95d1e1ce5d5a1b34480b9a5ed8eaf592451d148c6",
+          "bytes": 747
         },
         {
           "label": "VALIDATION.md",
@@ -2315,12 +2315,12 @@
     },
     {
       "project_id": "SCPN-MUON-FUSION-CORE",
-      "lookup_state": "Selected repository documents captured",
+      "lookup_state": "Selected published source files checked on 28 October 2026 at 5a09a0e8b647513308138201778b9636081b6d99; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
-          "sha256": "dab1d27011b80f0281c556d81d2c91688c535f819a2b66bfbf0b9345df1e6bd1",
-          "bytes": 6220
+          "sha256": "154cab1dabe85dfa5e103b6698ba0c75cb81738effd2c46f152c5e875a867f78",
+          "bytes": 7018
         },
         {
           "label": "ARCHITECTURE.md",
@@ -2334,8 +2334,8 @@
         },
         {
           "label": "ROADMAP.md",
-          "sha256": "8d8693260a1cd3e97363a99fcd4d891130e96910181c3a4eb2f6a967dc2b6b64",
-          "bytes": 3281
+          "sha256": "b5fcb5f7d1a5a3dc8ff1c53a9031e752032858e703c5269cc3acf9fbabd5aebc",
+          "bytes": 738
         },
         {
           "label": "VALIDATION.md",
@@ -2486,12 +2486,12 @@
     },
     {
       "project_id": "SCPN-REACTOR-KERNELS",
-      "lookup_state": "Selected repository documents captured",
+      "lookup_state": "Selected published source files checked on 28 October 2026 at bf717c720595cf801559a9932676552505104674; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
-          "sha256": "6b569b4352d6be5481b5c7dfeffb46e164dd15f7ed8cd758cf6b996f667b4ac6",
-          "bytes": 16515
+          "sha256": "7bd187333710d1f8c00cc4028e034dd67a589e9d25a56c6b00dfa31392edd122",
+          "bytes": 18040
         },
         {
           "label": "ARCHITECTURE.md",
@@ -2500,23 +2500,23 @@
         },
         {
           "label": "docs/ARCHITECTURE.md",
-          "sha256": "4f951ba182a9a56009c0bb2d604b918f77f460d0d7cb424aa70d337f877fc75f",
-          "bytes": 5733
+          "sha256": "963e75435513a8ad364bedc8a16f648dd5d05d869b4d2cf5df924d0c65a17a37",
+          "bytes": 6241
         },
         {
           "label": "ROADMAP.md",
-          "sha256": "83e168e893687582435b995f46e01107c552839ba5f24ae18b77dc25f8cefdf6",
-          "bytes": 7584
+          "sha256": "6d1d95a8cc87d223995563a4d4c9b32485a5e8a8ee32b19b196b3101d7ec899c",
+          "bytes": 722
         },
         {
           "label": "VALIDATION.md",
-          "sha256": "e2d8ea46ca69676bc3c1a08b7e8ea6a640eac336db8e8acb50b75ceda4af19f9",
-          "bytes": 61506
+          "sha256": "4e5ea3a207d0c0bbe13e7cdd9d51381f449ac6c9744d47994ae13f5e20e17814",
+          "bytes": 63193
         },
         {
           "label": "pyproject.toml",
-          "sha256": "011ca18713ec1febe5eea18297c8f4fb92552e3e89425bba7a07490d02bf32da",
-          "bytes": 6491
+          "sha256": "92c5358896ad6c536b4f254daa48f5822adcefb9c004667e04d5bd73c2cef870",
+          "bytes": 6481
         },
         {
           "label": "src/scpn_reactor_kernels/__init__.py",
@@ -2554,11 +2554,11 @@
         },
         {
           "document": "docs/ARCHITECTURE.md",
-          "sha256": "2e0a691ef4be34a035a4ead5cbe98044d70d299dc8da38af2673cdb413631691",
+          "sha256": "963e75435513a8ad364bedc8a16f648dd5d05d869b4d2cf5df924d0c65a17a37",
           "sections": [
             {
               "heading": "Purpose and evidence state",
-              "excerpt": "`SCPN-REACTOR-KERNELS` is the shared kernel library of the SCPN Reactor\nSystems Research Group. It owns three implemented kernel groups at\n`computational_prototype` in `src/scpn_reactor_kernels/`: the geometry\nkernels (design records ADR 0002 and ADR 0007, evidence record\n`VALIDATION.md#geometry-kernels`; owned domain `shared_geometry_kernels`)\nand the numerics kernels (design record ADR 0003, evidence record\n`VALIDATION.md#numerics-kernels`; the numerical substrate of the owned\ndomain `shared_physics_kernels`) and the optional CAD adapters on pinned\nthird-party C++ kernels (ADR 0006, `VALIDATION.md#cad-kernels`, owned domain\n`shared_cad_and_meshing_adapters`).\nEvery other section below describes boundaries and contracts. The claim\ninventory is empty; the kernel inventory is generated and drift-checked.",
+              "excerpt": "`SCPN-REACTOR-KERNELS` is the shared kernel library of the SCPN Reactor\nSystems Research Group. It owns three implemented kernel groups at\n`computational_prototype` in `src/scpn_reactor_kernels/`: the geometry\nkernels (design records ADR 0002 and ADR 0007, evidence record\n`VALIDATION.md#geometry-kernels`; owned domain `shared_geometry_kernels`)\nand the numerics kernels (design record ADR 0003, evidence record\n`VALIDATION.md#numerics-kernels`; the numerical substrate of the owned\ndomain `shared_physics_kernels`) and the optional B-rep CAD adapters on pinned\nthird-party C++ kernels (ADR 0006, `VALIDATION.md#cad-kernels`, owned domain\n`shared_cad_and_meshing_adapters`).\nEvery other section below describes boundaries and contracts. The claim\ninventory is empty; the kernel inventory is generated and drift-checked.",
               "excerpt_truncated": false
             },
             {
@@ -2578,7 +2578,7 @@
             },
             {
               "heading": "Repository layout",
-              "excerpt": "| Path | Role |\n|---|---|\n| `kernels-domain.json` | portable source of library identity, kernel inventory and consumers |\n| `kernel-inventory.json` | generated inventory of the implemented kernels (drift-checked) |\n| `src/scpn_reactor_kernels/geometry/` | deterministic circle points, mesh contract, primitives, axial profiles, off-axis placement, STL/GLB exports |\n| `src/scpn_reactor_kernels/numerics/` | deterministic natural logarithm, exponential, real power and the Bessel functions |\n| `src/scpn_reactor_kernels/cad/` | tier-G2 adapters on pinned third-party kernels (optional extra `cad`): B-rep solids, assembly manifest, deterministic STEP, faceting, axial profiles, placement off the axis, fail-closed body evidence, gmsh volume mesh |\n| `src/scpn_reactor_kernels/validation.py` | shared fail-closed input validation |\n| `rust/` | native kernels (`scpn-reactor-kernels-rs`), bit-exact with the Python floor |\n| `benchmarks/` | standard-conformant benchmarks and committed local artefacts |\n| `docs/THREAT_MODEL.md` | assets, trust boundaries, misuse paths |\n| `docs/adr/` | decision records |\n| `tools/` | manifest validator, inventory generator, workflow guard, preflight |\n| `tests/` | statement- and branch-complete tests for `src/` and `tools/`, native parity tests |\n| `.github/workflows/` | read-only CI definitions (no publication) |",
+              "excerpt": "| Path | Role |\n|---|---|\n| `kernels-domain.json` | portable source of library identity, kernel inventory and consumers |\n| `kernel-inventory.json` | generated inventory of the implemented kernels (drift-checked) |\n| `src/scpn_reactor_kernels/geometry/` | deterministic circle points, mesh contract, primitives, axial profiles, off-axis placement, STL/GLB exports |\n| `src/scpn_reactor_kernels/numerics/` | deterministic natural logarithm, exponential, real power and the Bessel functions |\n| `src/scpn_reactor_kernels/cad/` | B-rep CAD adapters on pinned third-party kernels (optional extra `cad`): B-rep solids, assembly manifest, deterministic STEP, faceting, axial profiles, placement off the axis, fail-closed body evidence, gmsh volume mesh |\n| `src/scpn_reactor_kernels/validation.py` | shared fail-closed input validation |\n| `rust/` | native kernels (`scpn-reactor-kernels-rs`), bit-exact with the Python floor |\n| `benchmarks/` | standard-conformant benchmarks and committed local artefacts |\n| `docs/THREAT_MODEL.md` | assets, trust boundaries, misuse paths |\n| `docs/adr/` | decision records |\n| `tools/` | manifest validator, inventory generator, workflow guard, preflight |\n| `tests/` | statement- and branch-complete tests for `src/` and `tools/`, native parity tests |\n| `.github/workflows/` | read-only CI definitions (no publication) |",
               "excerpt_truncated": false
             },
             {
@@ -2608,12 +2608,12 @@
     },
     {
       "project_id": "SCPN-RFP-CORE",
-      "lookup_state": "Selected repository documents captured",
+      "lookup_state": "Selected published source files checked on 28 October 2026 at 84d3a25592e63d06e7a5ab52c47267c72a80d666; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
-          "sha256": "f4354f6c41dd1f4429e1b0f59fd8e797dd76b41047cceb3e23890cb00c2738e5",
-          "bytes": 6575
+          "sha256": "2573322f07e9d7952186b8cb024d6a76ac2ccff1c99bac7b07854827051bfdf9",
+          "bytes": 7373
         },
         {
           "label": "ARCHITECTURE.md",
@@ -2627,8 +2627,8 @@
         },
         {
           "label": "ROADMAP.md",
-          "sha256": "9b3ae7ff6df37a0549c2f242173e0c54a6dc31811b7a45ea3cf55b57a36d0e07",
-          "bytes": 4398
+          "sha256": "26b6fb6b6bf87421afdd7a84af576007bdc5c8192599a02f92b9f2765b271ac8",
+          "bytes": 737
         },
         {
           "label": "VALIDATION.md",
@@ -2736,12 +2736,12 @@
     },
     {
       "project_id": "SCPN-SPHEROMAK-CORE",
-      "lookup_state": "Selected repository documents captured",
+      "lookup_state": "Selected published source files checked on 28 October 2026 at ced6905499f3018356b6e28a3b1b6ca73854f72e; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
-          "sha256": "019d6ccfda55c08630b0045b93616d4f51981c4ee7bd331d97caa471154ee4de",
-          "bytes": 7516
+          "sha256": "d6675db4c0f99be0b701e109230fe2911122701be771e3ed0cde74be3402c092",
+          "bytes": 8314
         },
         {
           "label": "ARCHITECTURE.md",
@@ -2755,8 +2755,8 @@
         },
         {
           "label": "ROADMAP.md",
-          "sha256": "d17a4dceb7e939aaa45defdea9abfe6979e4de61ad78534b182576a86edb833c",
-          "bytes": 5141
+          "sha256": "f3449a23b3200ae7986ba87824a10ed71fe88cf3538051cb0b84953f537460f5",
+          "bytes": 747
         },
         {
           "label": "VALIDATION.md",
@@ -2842,12 +2842,12 @@
     },
     {
       "project_id": "SCPN-STELLARATOR-CORE",
-      "lookup_state": "Selected repository documents captured",
+      "lookup_state": "Selected published source files checked on 28 October 2026 at 7c43fe0a648842fa2ddc0ad1a16c2e47a5fb484e; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
-          "sha256": "a71b7cac9abd80b22178b38b07fe9cd0567ed253dbf601088d37412c4ecb8fbd",
-          "bytes": 5765
+          "sha256": "ba3a8e913ccb4c04d788c9080acde4941509dfddff935260109d7df0c8af5c62",
+          "bytes": 6803
         },
         {
           "label": "ARCHITECTURE.md",
@@ -2861,13 +2861,13 @@
         },
         {
           "label": "ROADMAP.md",
-          "sha256": "f1ced77cba92e2bf83f5a5e828cc5693ebf90eac6c23deb3209bc9f309e71a4b",
-          "bytes": 3337
+          "sha256": "65ddb78d7e11c53fece4033082e85dc4e3ddff20eb366f45547173b935dca94a",
+          "bytes": 746
         },
         {
           "label": "VALIDATION.md",
-          "sha256": "6f7ea5e519b84e85b08132daa04d4be69db2568c3d1dd5906b4b7c0d5ff3b466",
-          "bytes": 11515
+          "sha256": "9ac4a6fead7a0888aa7973c6627eadac58574767b60a8d76af6ede9f92a95b7f",
+          "bytes": 11847
         },
         {
           "label": "pyproject.toml",
@@ -2948,12 +2948,12 @@
     },
     {
       "project_id": "SCPN-THETA-PINCH-CORE",
-      "lookup_state": "Selected repository documents captured",
+      "lookup_state": "Selected published source files checked on 28 October 2026 at 50732f22cdfbf9cc2cba6ca577fd86a134c12b86; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
-          "sha256": "304d3ec7480928af8f3a43b5f4e1001613ff0836a60c311245b82265dc17dfab",
-          "bytes": 6908
+          "sha256": "0bde6b48c238988d98de3d33a23c8aa114f785f228c53fd9c20b4327249be19f",
+          "bytes": 8067
         },
         {
           "label": "ARCHITECTURE.md",
@@ -2967,13 +2967,13 @@
         },
         {
           "label": "ROADMAP.md",
-          "sha256": "10ed9dcadf6a3beb6b6a853be378e577780f6b8ce77b90ec18e72053041ef0b7",
-          "bytes": 5555
+          "sha256": "991988fec47f55589907a56a24f9d64ced6b7d99a6e457f4a3cccd2c4798c998",
+          "bytes": 741
         },
         {
           "label": "VALIDATION.md",
-          "sha256": "0b749749b8b0c903661c57b66a05105b4cf24555378db94ca1b9a49006ce99a9",
-          "bytes": 27202
+          "sha256": "5af4247837a6037301a3766ff1813db1d00f10d53b146d977ab0d400fddcd2ce",
+          "bytes": 27093
         },
         {
           "label": "pyproject.toml",
@@ -3054,12 +3054,12 @@
     },
     {
       "project_id": "SCPN-TOKAMAK-CORE",
-      "lookup_state": "Selected repository documents captured",
+      "lookup_state": "Selected published source files checked on 28 October 2026 at ba8d94726f3a10c867d1bbc90890cc51d5993d81; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
-          "sha256": "719c035485cde75ca3207f061a5eb93b75331abae34a7865c6a4a73b433902a2",
-          "bytes": 6069
+          "sha256": "becc63a41085264b663114c27aa534113a04871ff20c973767361ebbbf7392bd",
+          "bytes": 6867
         },
         {
           "label": "ARCHITECTURE.md",
@@ -3073,8 +3073,8 @@
         },
         {
           "label": "ROADMAP.md",
-          "sha256": "26e299ed6e02b0b3f670c2af84e31deba214384fc70c199919d448ef94a14607",
-          "bytes": 3099
+          "sha256": "f537b4376323607f21a4056f1f02ab6b980eb2a909b0822529cd6f54d46c2820",
+          "bytes": 749
         },
         {
           "label": "VALIDATION.md",
@@ -3160,12 +3160,12 @@
     },
     {
       "project_id": "SCPN-Z-PINCH-CORE",
-      "lookup_state": "Selected repository documents captured",
+      "lookup_state": "Selected published source files checked on 28 October 2026 at da956bc74775e2b5aea418f53668e367cba83570; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
-          "sha256": "bbc00fa3f7a65c1f077f6c6c5ad697fb6356b68eb60dad1f5a971e43eba73bf5",
-          "bytes": 7735
+          "sha256": "30b10bbb55253cabea31b2383fc45259a4abf7984e1278b7e2077a424cce62e3",
+          "bytes": 8847
         },
         {
           "label": "ARCHITECTURE.md",
@@ -3179,13 +3179,13 @@
         },
         {
           "label": "ROADMAP.md",
-          "sha256": "9c382a6e973927d7ec8f8dda7ea851077e3e0d863c76003050ce78875e37946a",
-          "bytes": 5592
+          "sha256": "8d4dab19f176ef00a18a3548da3019e54cded25afbc5cc5adf25717dbf2e2475",
+          "bytes": 744
         },
         {
           "label": "VALIDATION.md",
-          "sha256": "55f1569d02ba79d827ba5f40d44690293c0a4a9932a0937fe63483c9ebd7effc",
-          "bytes": 23101
+          "sha256": "524f6a17780d1f4b7d5ce73f0e122b7483ffadcbb40ef3dd53d51132726244d6",
+          "bytes": 23210
         },
         {
           "label": "pyproject.toml",
@@ -3194,8 +3194,8 @@
         },
         {
           "label": "src/scpn_z_pinch_core/__init__.py",
-          "sha256": "7370cbc9cc509bd7cbf4d21ef33faf241b7ce9eed4b24a57c0301f9c2480054a",
-          "bytes": 5692,
+          "sha256": "88575a76bb43265f63741f725abde2ed713d5ee0622e4ba8beed94ed104bfa70",
+          "bytes": 5696,
           "static_top_level_declarations": []
         }
       ],
@@ -3266,7 +3266,7 @@
     },
     {
       "project_id": "SCPN-PHASE-ORCHESTRATOR",
-      "lookup_state": "Selected repository documents captured",
+      "lookup_state": "Selected published source files checked on 28 October 2026 at e58f64439936f54ad87140842011550c47e523b7; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
@@ -3437,7 +3437,7 @@
     },
     {
       "project_id": "SCPN-CONTROL",
-      "lookup_state": "Selected repository documents captured",
+      "lookup_state": "Selected published source files checked on 28 October 2026 at 288243a09ec557147f0b917590238a7f62fbefbb; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
@@ -3590,7 +3590,7 @@
     },
     {
       "project_id": "SYNAPSE-CHANNEL",
-      "lookup_state": "Selected repository documents captured",
+      "lookup_state": "Selected published source files checked on 28 October 2026 at 99ece6efe4f157aed092df4a47a780029160331f; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
@@ -3625,18 +3625,18 @@
         },
         {
           "label": "src/synapse_channel/cli.py",
-          "sha256": "f5d20fc7d8ced5eed6f1fdf62cdff2987fef2013562f0e6ef82c4455e3509064",
-          "bytes": 21778,
+          "sha256": "e527836a6e041d921b4de1954a6084d5337bb7612ae555b47d7282201f96cf11",
+          "bytes": 21989,
           "static_top_level_declarations": [
             {
               "name": "build_parser",
               "kind": "FunctionDef",
-              "line": 284
+              "line": 287
             },
             {
               "name": "main",
               "kind": "FunctionDef",
-              "line": 386
+              "line": 389
             }
           ]
         },
@@ -3888,7 +3888,7 @@
     },
     {
       "project_id": "SYNAPSE-POLICY-CHECK-ACTION",
-      "lookup_state": "Selected repository documents captured",
+      "lookup_state": "Selected published source files checked on 28 October 2026 at dccd67c1e45dc3a328b3700df7d1acfd117792af; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
@@ -3914,7 +3914,7 @@
     },
     {
       "project_id": "DIRECTOR-AI",
-      "lookup_state": "Selected repository documents captured",
+      "lookup_state": "Selected published source files checked on 28 October 2026 at 1378e512f6dfeddad0826cea50738019445451c7; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
@@ -3949,8 +3949,8 @@
         },
         {
           "label": "src/director_ai/cli.py",
-          "sha256": "744df7870621ede99a8bde196e58114abd667c87ad6fd0c5e77d7bd35bd8b1de",
-          "bytes": 23503,
+          "sha256": "1004cfef175246db40bbaa7bf7c31aaa1600dfff5e86b7d693f806baac5ddd40",
+          "bytes": 23298,
           "static_top_level_declarations": [
             {
               "name": "main",
@@ -4067,7 +4067,7 @@
     },
     {
       "project_id": "RIGOR-FOUNDRY",
-      "lookup_state": "Selected repository documents captured",
+      "lookup_state": "Selected published source files checked on 28 October 2026 at 19148d03430786e209f12288a397f47cdaa1b02e; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
@@ -4233,7 +4233,7 @@
     },
     {
       "project_id": "REMANENTIA",
-      "lookup_state": "Selected repository documents captured",
+      "lookup_state": "Selected published source files checked on 28 October 2026 at 98eb9bf7a4e8c822292a7b574252960171924a94; reading and technical captures retain their individual dates. The historical local public_projection.py fingerprint is omitted because that path is absent from this published revision.",
       "documents": [
         {
           "label": "README.md",
@@ -4262,98 +4262,98 @@
         },
         {
           "label": "cli.py",
-          "sha256": "ec86403d5a8ac0b7011054fc6eac6bacfe2e53e6770a62a9fda4d8bdc99ae7a9",
-          "bytes": 31005,
+          "sha256": "9def847a9123e190542d728172f109cdcae68bba1fab702b0d023c900f233d07",
+          "bytes": 26311,
           "static_top_level_declarations": [
             {
               "name": "cmd_recall",
               "kind": "FunctionDef",
-              "line": 98
+              "line": 92
             },
             {
               "name": "cmd_consolidate",
               "kind": "FunctionDef",
-              "line": 111
+              "line": 99
             },
             {
               "name": "cmd_status",
               "kind": "FunctionDef",
-              "line": 129
+              "line": 111
             },
             {
               "name": "cmd_store_manifest",
               "kind": "FunctionDef",
-              "line": 261
+              "line": 224
             },
             {
               "name": "cmd_store_sources",
               "kind": "FunctionDef",
-              "line": 280
+              "line": 237
             },
             {
               "name": "cmd_openapi",
               "kind": "FunctionDef",
-              "line": 303
+              "line": 254
             },
             {
               "name": "cmd_claim_schema",
               "kind": "FunctionDef",
-              "line": 318
+              "line": 263
             },
             {
               "name": "cmd_graph",
               "kind": "FunctionDef",
-              "line": 336
+              "line": 275
             },
             {
               "name": "cmd_entities",
               "kind": "FunctionDef",
-              "line": 359
+              "line": 291
             },
             {
               "name": "cmd_init",
               "kind": "FunctionDef",
-              "line": 379
+              "line": 304
             },
             {
               "name": "cmd_daemon",
               "kind": "FunctionDef",
-              "line": 408
+              "line": 327
             },
             {
               "name": "cmd_observe",
               "kind": "FunctionDef",
-              "line": 541
+              "line": 425
             },
             {
               "name": "cmd_reflect",
               "kind": "FunctionDef",
-              "line": 563
+              "line": 441
             },
             {
               "name": "cmd_setup_llm",
               "kind": "FunctionDef",
-              "line": 596
+              "line": 456
             },
             {
               "name": "cmd_serve",
               "kind": "FunctionDef",
-              "line": 609
+              "line": 463
             },
             {
               "name": "cmd_serve_llm",
               "kind": "FunctionDef",
-              "line": 644
+              "line": 492
             },
             {
               "name": "cmd_notes",
               "kind": "FunctionDef",
-              "line": 657
+              "line": 499
             },
             {
               "name": "main",
               "kind": "FunctionDef",
-              "line": 694
+              "line": 526
             }
           ]
         },
@@ -4391,23 +4391,23 @@
         },
         {
           "label": "benchmark_manifest.py",
-          "sha256": "72eb5ac04e9a45a8971076f7ceca21228b632b56c3e00e27f0e9383e2bf4d14d",
-          "bytes": 23261,
+          "sha256": "0347397332b8c06a867fdde3be960e648a74e917ac7f5ed125cc79002246f369",
+          "bytes": 16184,
           "static_top_level_declarations": [
             {
               "name": "build_benchmark_manifest",
               "kind": "FunctionDef",
-              "line": 35
+              "line": 37
             },
             {
               "name": "write_benchmark_manifest",
               "kind": "FunctionDef",
-              "line": 94
+              "line": 93
             },
             {
               "name": "main",
               "kind": "FunctionDef",
-              "line": 658
+              "line": 410
             }
           ]
         },
@@ -4457,196 +4457,174 @@
         },
         {
           "label": "feed_ingest.py",
-          "sha256": "a5778f6c850468d4fc4c46fa53de72c2a209ce360d30b6cdd3dc031b984f2683",
-          "bytes": 23566,
+          "sha256": "c524d2dd83f1125a0cbd56fbd88313f3a085351b859149d75e7c4717d88310c4",
+          "bytes": 16728,
           "static_top_level_declarations": [
-            {
-              "name": "FeedAdmission",
-              "kind": "ClassDef",
-              "line": 108
-            },
             {
               "name": "FeedIngestReport",
               "kind": "ClassDef",
-              "line": 125
+              "line": 94
             },
             {
               "name": "feed_record_to_finding",
               "kind": "FunctionDef",
-              "line": 168
+              "line": 137
             },
             {
               "name": "ingest_feed",
               "kind": "FunctionDef",
-              "line": 241
+              "line": 183
             },
             {
               "name": "ingest_from_feed",
               "kind": "FunctionDef",
-              "line": 365
+              "line": 270
             },
             {
               "name": "default_feed_cursor",
               "kind": "FunctionDef",
-              "line": 453
+              "line": 308
             },
             {
               "name": "main",
               "kind": "FunctionDef",
-              "line": 469
+              "line": 313
             }
           ]
         },
         {
           "label": "write_discipline.py",
-          "sha256": "2576444405de07265188ccff7476eca310867e422fb12d7d624c1dba25c9369e",
-          "bytes": 22629,
+          "sha256": "89ed620fc32c5206c6280b54c872e8ce2277a47ab0f571ff53b13825ef6fc99a",
+          "bytes": 15520,
           "static_top_level_declarations": [
             {
               "name": "FieldMap",
               "kind": "ClassDef",
-              "line": 54
+              "line": 57
             },
             {
               "name": "WriteContract",
               "kind": "ClassDef",
-              "line": 89
+              "line": 78
             },
             {
               "name": "DisciplineVerdict",
               "kind": "ClassDef",
-              "line": 133
+              "line": 96
             },
             {
               "name": "producer_label",
               "kind": "FunctionDef",
-              "line": 194
+              "line": 137
             },
             {
               "name": "resolve_content",
               "kind": "FunctionDef",
-              "line": 215
+              "line": 144
             },
             {
               "name": "inspect_write",
               "kind": "FunctionDef",
-              "line": 238
+              "line": 155
             },
             {
               "name": "ProducerRecord",
               "kind": "ClassDef",
-              "line": 316
+              "line": 214
             },
             {
               "name": "DisciplineLedger",
               "kind": "ClassDef",
-              "line": 371
+              "line": 241
             },
             {
               "name": "audit_records",
               "kind": "FunctionDef",
-              "line": 464
+              "line": 296
             },
             {
               "name": "build_memory_record",
               "kind": "FunctionDef",
-              "line": 494
+              "line": 308
             },
             {
               "name": "load_stimulus_records",
               "kind": "FunctionDef",
-              "line": 570
+              "line": 355
             },
             {
               "name": "main",
               "kind": "FunctionDef",
-              "line": 607
+              "line": 378
             }
           ]
         },
         {
           "label": "scorecard_report.py",
-          "sha256": "e53ab72f90ed9b8d197763b63ae50c06ca7800cc13287eaed55f9972a91794fb",
-          "bytes": 17799,
+          "sha256": "1de0181c6d921e5786b9e2eff6052fcc04c2d91c199289176f1412a1e4b3705a",
+          "bytes": 12903,
           "static_top_level_declarations": [
             {
               "name": "ResultSummary",
               "kind": "ClassDef",
-              "line": 41
+              "line": 49
             },
             {
               "name": "parse_results",
               "kind": "FunctionDef",
-              "line": 91
+              "line": 69
             },
             {
               "name": "load_provenance_store",
               "kind": "FunctionDef",
-              "line": 171
+              "line": 127
             },
             {
               "name": "RunReport",
               "kind": "ClassDef",
-              "line": 225
+              "line": 155
             },
             {
               "name": "build_run_report",
               "kind": "FunctionDef",
-              "line": 318
+              "line": 199
             },
             {
               "name": "main",
               "kind": "FunctionDef",
-              "line": 419
+              "line": 271
             }
           ]
         },
         {
           "label": "provenance_export.py",
-          "sha256": "d9827c4618a3a57ab32d9a0cf597f3d7d30254926bb8c08f364f467bd663980d",
-          "bytes": 8788,
+          "sha256": "d8d39b9dbc2378683b3ec8de6264e948efc0eabc734f40d9d4cf768dd31630f0",
+          "bytes": 6402,
           "static_top_level_declarations": [
             {
               "name": "provenance_node_from_note",
               "kind": "FunctionDef",
-              "line": 65
+              "line": 67
             },
             {
               "name": "build_provenance_store",
               "kind": "FunctionDef",
-              "line": 98
+              "line": 83
             },
             {
               "name": "render_provenance_jsonl",
               "kind": "FunctionDef",
-              "line": 131
+              "line": 98
             },
             {
               "name": "export_knowledge_store",
               "kind": "FunctionDef",
-              "line": 160
+              "line": 112
             },
             {
               "name": "main",
               "kind": "FunctionDef",
-              "line": 209
-            }
-          ]
-        },
-        {
-          "label": "public_projection.py",
-          "sha256": "d096378eb22f43fc792c5ab1f1b03ba0733e5e88ac79cb6ee00ca90e0f713a6d",
-          "bytes": 4065,
-          "static_top_level_declarations": [
-            {
-              "name": "parser",
-              "kind": "FunctionDef",
-              "line": 25
-            },
-            {
-              "name": "main",
-              "kind": "FunctionDef",
-              "line": 61
+              "line": 133
             }
           ]
         },
@@ -4756,85 +4734,85 @@
         },
         {
           "label": "store_manifest.py",
-          "sha256": "388f03db59b876b6bd32642b079d6b4909986cfb95085be36b4019e67b86592b",
-          "bytes": 7750,
+          "sha256": "1151d737c102988050ba0b54b371bc0a4a51b00b88aaa81d9cbeb62b451f465f",
+          "bytes": 7384,
           "static_top_level_declarations": [
             {
               "name": "ArtifactReading",
               "kind": "ClassDef",
-              "line": 39
+              "line": 34
             },
             {
               "name": "StoreSelectionManifest",
               "kind": "ClassDef",
-              "line": 60
+              "line": 55
             },
             {
               "name": "build_store_manifest",
               "kind": "FunctionDef",
-              "line": 112
+              "line": 107
             },
             {
               "name": "default_manifest_path",
               "kind": "FunctionDef",
-              "line": 137
+              "line": 132
             },
             {
               "name": "write_store_manifest",
               "kind": "FunctionDef",
-              "line": 142
+              "line": 137
             },
             {
               "name": "render_store_manifest",
               "kind": "FunctionDef",
-              "line": 157
+              "line": 152
             },
             {
               "name": "main",
               "kind": "FunctionDef",
-              "line": 173
+              "line": 168
             }
           ]
         },
         {
           "label": "store_sources.py",
-          "sha256": "051c081bbecb3acfd9249c1ebf522bcbd886cda61dcc0544cca7871ff833ce24",
-          "bytes": 5286,
+          "sha256": "f1a5f5d8bdfe8039a27c5cb2378e077313d6238d8e0af1e71a39098e02855207",
+          "bytes": 4789,
           "static_top_level_declarations": [
             {
               "name": "SourceSpec",
               "kind": "ClassDef",
-              "line": 38
+              "line": 31
             },
             {
               "name": "StoreSourceConfig",
               "kind": "ClassDef",
-              "line": 45
+              "line": 38
             },
             {
               "name": "build_store_source_config",
               "kind": "FunctionDef",
-              "line": 52
+              "line": 45
             },
             {
               "name": "default_source_config_path",
               "kind": "FunctionDef",
-              "line": 73
+              "line": 66
             },
             {
               "name": "write_store_source_config",
               "kind": "FunctionDef",
-              "line": 78
+              "line": 71
             },
             {
               "name": "render_store_source_config",
               "kind": "FunctionDef",
-              "line": 95
+              "line": 88
             },
             {
               "name": "main",
               "kind": "FunctionDef",
-              "line": 104
+              "line": 97
             }
           ]
         },
@@ -5097,7 +5075,7 @@
     },
     {
       "project_id": "HushLine",
-      "lookup_state": "Selected repository documents captured",
+      "lookup_state": "Selected published source files checked on 28 October 2026 at e1f8c479e23e1c56786f09895e4246b39507d732; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
@@ -5118,12 +5096,12 @@
     },
     {
       "project_id": "SC-NEUROCORE",
-      "lookup_state": "Selected repository documents captured",
+      "lookup_state": "Selected published source files checked on 28 October 2026 at efacfde75a56cd3dbbd8e2746e43f45d3981fe4c; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
-          "sha256": "8468c29407ebde3d4c6efd001d85136a0c5f704e2f17c851cef7a5409cf88510",
-          "bytes": 47606
+          "sha256": "6edf6e287822b5a5f20f469d5be3e4fc7e64e637b7587511535814ba84b2ee15",
+          "bytes": 48014
         },
         {
           "label": "ARCHITECTURE.md",
@@ -5137,13 +5115,13 @@
         },
         {
           "label": "VALIDATION.md",
-          "sha256": "68344aa02aaa2b5d897bf74818b24d84a4129d8aab8b191552780c57a2776bea",
-          "bytes": 9405
+          "sha256": "f13b7547f924a079fefa7dac068e1536670fc2fa68e7fb6f7f26433ab05cd3bd",
+          "bytes": 9399
         },
         {
           "label": "pyproject.toml",
-          "sha256": "93b4f8fa1e9ea16ceeb6df72877cf0cee5f779f1a03ad7e542353fb38c5fc64d",
-          "bytes": 18178
+          "sha256": "85c569c6064bdf3406f473d9467b817b0ff1d9ab5e9311b61dc9e1d18efae9bb",
+          "bytes": 18088
         },
         {
           "label": "Cargo.toml",
@@ -5182,7 +5160,7 @@
           "name": "sc-neurocore",
           "version": "3.16.0",
           "description": "Stochastic Computing SNN framework: NumPy + Rust SIMD + FPGA RTL.",
-          "requires-python": ">=3.10",
+          "requires-python": ">=3.11",
           "declared_scripts": {
             "sc-neurocore": "sc_neurocore.cli:main",
             "sc-neurocore-if-benchmark": "sc_neurocore.conversion.if_benchmark_cli:main"
@@ -5236,7 +5214,7 @@
     },
     {
       "project_id": "LOOP-TIMING-WITNESS",
-      "lookup_state": "Selected repository documents captured",
+      "lookup_state": "Selected published source files checked on 28 October 2026 at 2ece51ab0780fae865b8b2e27ae4c9b77203bde6; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
@@ -5488,12 +5466,12 @@
     },
     {
       "project_id": "SCPN-QUANTUM-CONTROL",
-      "lookup_state": "Selected repository documents captured",
+      "lookup_state": "Selected published source files checked on 28 October 2026 at e9c06c1ed7e39e257812558db313a79fe0ce8f92; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
-          "sha256": "ca633d0e4d5eb5c1691fcde88adbabae75159f00af4b751513191f76c7e4dd85",
-          "bytes": 69188
+          "sha256": "fd5f93ae81d6e3594d84b64bb09111f5ac7529c2183c00a9a53870c5ec87e5db",
+          "bytes": 69198
         },
         {
           "label": "ARCHITECTURE.md",
@@ -5507,13 +5485,13 @@
         },
         {
           "label": "VALIDATION.md",
-          "sha256": "f642feeaf6040594fb07134d0c9a0550dcfb0114119d351ac24d40a051537637",
-          "bytes": 14888
+          "sha256": "3f5d766f306c9406fd1a36ccbe1b7ba22d14ddabc02ff0cd32d0ea82a3133452",
+          "bytes": 14892
         },
         {
           "label": "pyproject.toml",
-          "sha256": "f4be8f59adf971790fa70c1fe75797aacc6aca2f133cfdcfb67305375765cf3c",
-          "bytes": 23016
+          "sha256": "9061e4e82a589157587a725aa57007092307ab833c5500f0efead6763ebf5754",
+          "bytes": 23009
         },
         {
           "label": "src/scpn/__init__.py",
@@ -6072,7 +6050,7 @@
     },
     {
       "project_id": "oscillatools",
-      "lookup_state": "Selected repository documents captured",
+      "lookup_state": "Selected published source files checked on 28 October 2026 at e9c06c1ed7e39e257812558db313a79fe0ce8f92; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
@@ -6122,7 +6100,7 @@
     },
     {
       "project_id": "scpn-quantum-engine",
-      "lookup_state": "Selected repository documents captured",
+      "lookup_state": "Selected published source files checked on 28 October 2026 at e9c06c1ed7e39e257812558db313a79fe0ce8f92; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
@@ -6829,7 +6807,7 @@
     },
     {
       "project_id": "ANULUM",
-      "lookup_state": "Selected repository documents captured",
+      "lookup_state": "Selected published source files checked on 28 October 2026 at 9aeb2ef7edca90dc5f260bf93fae536f32f501f4; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
@@ -7503,5 +7481,5 @@
       "architecture_documents": []
     }
   ],
-  "public_projection_updated_at_utc": "2026-10-23T14:44:06.614632+00:00"
+  "public_projection_updated_at_utc": "2026-10-28T21:02:44.463650+00:00"
 }

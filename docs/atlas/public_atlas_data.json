@@ -1189,7 +1189,7 @@
       }
     }
   },
-  "version": "0.13+funding-state.1+portfolio-refresh.1+owner-source.1+discovery-resources.1+passport-coherence.1+registry-reconciliation.1+hushline-source.1+control-spo-owner.1+funding-programme-sources.1+published-source-delta.1",
+  "version": "0.13+funding-state.1+portfolio-refresh.1+owner-source.1+discovery-resources.1+passport-coherence.1+registry-reconciliation.1+hushline-source.1+control-spo-owner.1+funding-programme-sources.1+published-source-delta.1+published-source-refresh.2",
   "content_state": "Projects and programme construction in progress; funding-route application states are separately dated and qualified.",
   "groups": [
     {
@@ -1328,7 +1328,7 @@
       "sources": [
         "https://github.com/anulum/atlas-reactorum/blob/main/docs/ecosystem.md"
       ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "source_note": "Dated group source and research programme synopsis, 13 October 2026. Published source checkpoint on 28 October 2026: a0338892e9bf1a7518d185f508318cff837f85d8. Selected source fingerprints and available reading documents were reconciled to this public revision; older technical captures retain their dates. No new runtime, scientific or physical acceptance is inferred.",
       "dossier": {
         "review_state": "Source-author editorial review incorporated; publication and scientific/runtime qualification remain separate.",
         "purpose": "Source and rights library with historical reactor taxonomy and interactive citation views.",
@@ -1376,6 +1376,14 @@
           {
             "document": "Reactor architect programme synopsis",
             "sha256": "88c00ac2a2b71ab12314c11b3c905df16d79567e96c842073947eeb215795d22"
+          },
+          {
+            "document": "ATLAS-REACTORUM / README.md (published a0338892e9bf1a7518d185f508318cff837f85d8; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "66aea8edc3591ae2f91ab23f6e11699b089c28fb0c812fe5186b79d398a20645"
+          },
+          {
+            "document": "ATLAS-REACTORUM / ROADMAP.md (published a0338892e9bf1a7518d185f508318cff837f85d8; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "de782c04fd9a4cd56e86b561f861ac227a0caad8959833b22ae0b250d3769ea5"
           }
         ],
         "acceptance_basis": "Next gates stated in the project roadmap; these are not completed checks.",
@@ -1388,7 +1396,15 @@
         "outputs_basis": "Expected result artifacts, separate from the current capabilities above.",
         "programme_tracks": [],
         "acceptance_note": "The summary does not replace source-specific model, reference, numerical/native and consumer requirements; detailed qualifications remain requirements, not passed tests.",
-        "references": []
+        "references": [
+          {
+            "id": "atlas-reactorum-published-source-20261028",
+            "title": "Published source checked 28 October 2026",
+            "url": "https://github.com/anulum/atlas-reactorum/commit/a0338892e9bf1a7518d185f508318cff837f85d8",
+            "source_revision": "a0338892e9bf1a7518d185f508318cff837f85d8",
+            "scope": "Published branch and selected source files observed at 2026-10-28T21:02:44.463650+00:00. Package versions were checked separately; hosted CI and installed/physical qualification were not reassessed by this documentary refresh."
+          }
+        ]
       }
     },
     {
@@ -1454,7 +1470,7 @@
       "sources": [
         "https://github.com/anulum/atlas-reactorum/blob/main/docs/ecosystem.md"
       ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "source_note": "Dated group source and research programme synopsis, 13 October 2026. Published source checkpoint on 28 October 2026: 061d62785e38ca11c135f92ae62a15f857ba57fd. Selected source fingerprints and available reading documents were reconciled to this public revision; older technical captures retain their dates. No new runtime, scientific or physical acceptance is inferred.",
       "dossier": {
         "review_state": "Source-author editorial review incorporated; publication and scientific/runtime qualification remain separate.",
         "purpose": "Beam/target design and source-scoped reaction/stopping/yield.",
@@ -1595,6 +1611,14 @@
           {
             "document": "Reactor architect programme synopsis",
             "sha256": "88c00ac2a2b71ab12314c11b3c905df16d79567e96c842073947eeb215795d22"
+          },
+          {
+            "document": "SCPN-BEAM-TARGET-CORE / README.md (published 061d62785e38ca11c135f92ae62a15f857ba57fd; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "bb16d9ae736dc7b6b9656737c45fc29e4af4f20940a0fbd11ad6a8195ab240ad"
+          },
+          {
+            "document": "SCPN-BEAM-TARGET-CORE / ROADMAP.md (published 061d62785e38ca11c135f92ae62a15f857ba57fd; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "112d024c2140e39b47907694bf8bc69e14e2dd139aadb177799143abe6b403a4"
           }
         ],
         "acceptance_basis": "Next gates stated in the project roadmap; these are not completed checks.",
@@ -1630,7 +1654,15 @@
         "inputs_basis": "Architect-defined model/interface inputs; exact supported runtime contracts remain subject to qualification.",
         "outputs_basis": "Expected result artifacts, separate from the current capabilities above.",
         "acceptance_note": "The summary does not replace source-specific model, reference, numerical/native and consumer requirements; detailed qualifications remain requirements, not passed tests.",
-        "references": []
+        "references": [
+          {
+            "id": "scpn-beam-target-core-published-source-20261028",
+            "title": "Published source checked 28 October 2026",
+            "url": "https://github.com/anulum/scpn-beam-target-core/commit/061d62785e38ca11c135f92ae62a15f857ba57fd",
+            "source_revision": "061d62785e38ca11c135f92ae62a15f857ba57fd",
+            "scope": "Published branch and selected source files observed at 2026-10-28T21:02:44.463650+00:00. Package versions were checked separately; hosted CI and installed/physical qualification were not reassessed by this documentary refresh."
+          }
+        ]
       }
     },
     {
@@ -1900,7 +1932,7 @@
       "sources": [
         "https://github.com/anulum/atlas-reactorum/blob/main/docs/ecosystem.md"
       ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "source_note": "Dated group source and research programme synopsis, 13 October 2026. Published source checkpoint on 28 October 2026: e083b5684e7f762dc81687767bf7b125a558bf6f. Selected source fingerprints and available reading documents were reconciled to this public revision; older technical captures retain their dates. No new runtime, scientific or physical acceptance is inferred.",
       "dossier": {
         "review_state": "Source-author editorial review incorporated; publication and scientific/runtime qualification remain separate.",
         "purpose": "Focus device/bank/axial/radial/pinch and source-scoped neutron estimates.",
@@ -2042,6 +2074,18 @@
           {
             "document": "Reactor architect programme synopsis",
             "sha256": "88c00ac2a2b71ab12314c11b3c905df16d79567e96c842073947eeb215795d22"
+          },
+          {
+            "document": "SCPN-DENSE-PLASMA-FOCUS-CORE / README.md (published e083b5684e7f762dc81687767bf7b125a558bf6f; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "a2befed7c3b244371935f9a152a3eb3e2b1e48ebdfe17e757ee4b7e260e41370"
+          },
+          {
+            "document": "SCPN-DENSE-PLASMA-FOCUS-CORE / ROADMAP.md (published e083b5684e7f762dc81687767bf7b125a558bf6f; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "f8b7dbadf1beb3a20958105947197c43b53f0b0b31b9c03ec6b6885900ca66d0"
+          },
+          {
+            "document": "SCPN-DENSE-PLASMA-FOCUS-CORE / VALIDATION.md (published e083b5684e7f762dc81687767bf7b125a558bf6f; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "6b79946fc2e69f61da36ced5a6e6c6612504477660a9ecca7eaf0368c12a9f8c"
           }
         ],
         "acceptance_basis": "Next gates stated in the project roadmap; these are not completed checks.",
@@ -2078,7 +2122,15 @@
         "inputs_basis": "Architect-defined model/interface inputs; exact supported runtime contracts remain subject to qualification.",
         "outputs_basis": "Expected result artifacts, separate from the current capabilities above.",
         "acceptance_note": "The summary does not replace source-specific model, reference, numerical/native and consumer requirements; detailed qualifications remain requirements, not passed tests.",
-        "references": []
+        "references": [
+          {
+            "id": "scpn-dense-plasma-focus-core-published-source-20261028",
+            "title": "Published source checked 28 October 2026",
+            "url": "https://github.com/anulum/scpn-dense-plasma-focus-core/commit/e083b5684e7f762dc81687767bf7b125a558bf6f",
+            "source_revision": "e083b5684e7f762dc81687767bf7b125a558bf6f",
+            "scope": "Published branch and selected source files observed at 2026-10-28T21:02:44.463650+00:00. Package versions were checked separately; hosted CI and installed/physical qualification were not reassessed by this documentary refresh."
+          }
+        ]
       }
     },
     {
@@ -2144,7 +2196,7 @@
       "sources": [
         "https://github.com/anulum/atlas-reactorum/blob/main/docs/ecosystem.md"
       ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "source_note": "Dated group source and research programme synopsis, 13 October 2026. Published source checkpoint on 28 October 2026: fac867651f98e3aec81a7d2a895d96f88e118224. Selected source fingerprints and available reading documents were reconciled to this public revision; older technical captures retain their dates. No new runtime, scientific or physical acceptance is inferred.",
       "dossier": {
         "review_state": "Source-author editorial review incorporated; publication and scientific/runtime qualification remain separate.",
         "purpose": "Field-reversed configuration, radial pressure-balance and kinetic-scale model.",
@@ -2286,6 +2338,22 @@
           {
             "document": "Reactor architect programme synopsis",
             "sha256": "88c00ac2a2b71ab12314c11b3c905df16d79567e96c842073947eeb215795d22"
+          },
+          {
+            "document": "SCPN-FRC-CORE / README.md (published fac867651f98e3aec81a7d2a895d96f88e118224; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "4f61298faf8c4ef4c3a6705bfac00204f611afd020a12db2511271115be192fd"
+          },
+          {
+            "document": "SCPN-FRC-CORE / ROADMAP.md (published fac867651f98e3aec81a7d2a895d96f88e118224; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "739525649521044b00835a7e18b67a25a7d7e5b288792550c0e0c67297d5ecd9"
+          },
+          {
+            "document": "SCPN-FRC-CORE / VALIDATION.md (published fac867651f98e3aec81a7d2a895d96f88e118224; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "b2ee9359edfa9775a92121e7a57729732ff0c0b2ff45eec2cd9f3628bcb7270a"
+          },
+          {
+            "document": "SCPN-FRC-CORE / pyproject.toml (published fac867651f98e3aec81a7d2a895d96f88e118224; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "6c2abf2419840b364586ef53ebb29e71178755f97b734fb0623f1871909d0fd7"
           }
         ],
         "acceptance_basis": "Next gates stated in the project roadmap; these are not completed checks.",
@@ -2320,7 +2388,15 @@
         "inputs_basis": "Architect-defined model/interface inputs; exact supported runtime contracts remain subject to qualification.",
         "outputs_basis": "Expected result artifacts, separate from the current capabilities above.",
         "acceptance_note": "The summary does not replace source-specific model, reference, numerical/native and consumer requirements; detailed qualifications remain requirements, not passed tests.",
-        "references": []
+        "references": [
+          {
+            "id": "scpn-frc-core-published-source-20261028",
+            "title": "Published source checked 28 October 2026",
+            "url": "https://github.com/anulum/scpn-frc-core/commit/fac867651f98e3aec81a7d2a895d96f88e118224",
+            "source_revision": "fac867651f98e3aec81a7d2a895d96f88e118224",
+            "scope": "Published branch and selected source files observed at 2026-10-28T21:02:44.463650+00:00. Package versions were checked separately; hosted CI and installed/physical qualification were not reassessed by this documentary refresh."
+          }
+        ]
       }
     },
     {
@@ -2443,7 +2519,7 @@
       "sources": [
         "https://github.com/anulum/atlas-reactorum/blob/main/docs/ecosystem.md"
       ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "source_note": "Dated group source and research programme synopsis, 13 October 2026. Published source checkpoint on 28 October 2026: 5edd51799a535617d0f3a860b900773ac94c1d4b. Selected source fingerprints and available reading documents were reconciled to this public revision; older technical captures retain their dates. No new runtime, scientific or physical acceptance is inferred.",
       "dossier": {
         "review_state": "Source-author editorial review incorporated; publication and scientific/runtime qualification remain separate.",
         "purpose": "Canonical plasma solver mathematics, transport/equilibrium and existing research pipeline.",
@@ -2536,6 +2612,18 @@
           {
             "document": "SCPN-FUSION-CORE / ROADMAP.md (historical 4 September 2026 source at a831d02a566f2ce57590303b0e75475d7108f358)",
             "sha256": "49dd4a7bd0f874d3f09085b428eaa4e06c4be797fb855e15e2890cfce2d4adc7"
+          },
+          {
+            "document": "SCPN-FUSION-CORE / README.md (published 5edd51799a535617d0f3a860b900773ac94c1d4b; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "ad176b95a59c9dffc3ef1acd2855e6b9b5b4682276610c61d6271520803e7a23"
+          },
+          {
+            "document": "SCPN-FUSION-CORE / ROADMAP.md (published 5edd51799a535617d0f3a860b900773ac94c1d4b; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "850ecae8a7b34975b287845b3bb3078d5f78ffa210bbd9d7d576b47423980988"
+          },
+          {
+            "document": "SCPN-FUSION-CORE / pyproject.toml (published 5edd51799a535617d0f3a860b900773ac94c1d4b; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "33aa1a82961bb994b08aea632602fe87dbb2990b2af961a889490a42133f60de"
           }
         ],
         "acceptance_basis": "Retained architect qualification requirements and the existing cited technical-guide boundaries. Historical checked implementation milestones are shown separately as dated source provenance; this update passes no numerical, runtime or physical acceptance gate.",
@@ -2555,6 +2643,13 @@
             "url": "https://github.com/anulum/scpn-fusion-core/blob/a831d02a566f2ce57590303b0e75475d7108f358/ROADMAP.md",
             "source_revision": "a831d02a566f2ce57590303b0e75475d7108f358 / SHA-256 49dd4a7bd0f874d3f09085b428eaa4e06c4be797fb855e15e2890cfce2d4adc7",
             "scope": "Dated source-declared implementation milestones, not open next gates or newly qualified physical/runtime results."
+          },
+          {
+            "id": "scpn-fusion-core-published-source-20261028",
+            "title": "Published source checked 28 October 2026",
+            "url": "https://github.com/anulum/scpn-fusion-core/commit/5edd51799a535617d0f3a860b900773ac94c1d4b",
+            "source_revision": "5edd51799a535617d0f3a860b900773ac94c1d4b",
+            "scope": "Published branch and selected source files observed at 2026-10-28T21:02:44.463650+00:00. Package versions were checked separately; hosted CI and installed/physical qualification were not reassessed by this documentary refresh."
           }
         ]
       }
@@ -2999,7 +3094,7 @@
       "sources": [
         "https://github.com/anulum/atlas-reactorum/blob/main/docs/ecosystem.md"
       ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "source_note": "Dated group source and research programme synopsis, 13 October 2026. Published source checkpoint on 28 October 2026: 7a275869efac44f6a3e08a4618b23e9b7eebad0c. Selected source fingerprints and available reading documents were reconciled to this public revision; older technical captures retain their dates. No new runtime, scientific or physical acceptance is inferred.",
       "dossier": {
         "review_state": "Source-author editorial review incorporated; publication and scientific/runtime qualification remain separate.",
         "purpose": "Particle-beam illumination/capsule design with explicit coupling.",
@@ -3140,6 +3235,14 @@
           {
             "document": "Reactor architect programme synopsis",
             "sha256": "88c00ac2a2b71ab12314c11b3c905df16d79567e96c842073947eeb215795d22"
+          },
+          {
+            "document": "SCPN-ICF-BEAM-CORE / README.md (published 7a275869efac44f6a3e08a4618b23e9b7eebad0c; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "452910ab261cc1dc80a9e63cb9af06e78fe9b0b16a0fa103cb571fb1d82ebf63"
+          },
+          {
+            "document": "SCPN-ICF-BEAM-CORE / ROADMAP.md (published 7a275869efac44f6a3e08a4618b23e9b7eebad0c; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "d92a6878af541f2be9f7a14901f0b47479a7c65035b3abd3f12b1fd0fa05c506"
           }
         ],
         "acceptance_basis": "Next gates stated in the project roadmap; these are not completed checks.",
@@ -3175,7 +3278,15 @@
         "inputs_basis": "Architect-defined model/interface inputs; exact supported runtime contracts remain subject to qualification.",
         "outputs_basis": "Expected result artifacts, separate from the current capabilities above.",
         "acceptance_note": "The summary does not replace source-specific model, reference, numerical/native and consumer requirements; detailed qualifications remain requirements, not passed tests.",
-        "references": []
+        "references": [
+          {
+            "id": "scpn-icf-beam-core-published-source-20261028",
+            "title": "Published source checked 28 October 2026",
+            "url": "https://github.com/anulum/scpn-icf-beam-core/commit/7a275869efac44f6a3e08a4618b23e9b7eebad0c",
+            "source_revision": "7a275869efac44f6a3e08a4618b23e9b7eebad0c",
+            "scope": "Published branch and selected source files observed at 2026-10-28T21:02:44.463650+00:00. Package versions were checked separately; hosted CI and installed/physical qualification were not reassessed by this documentary refresh."
+          }
+        ]
       }
     },
     {
@@ -3207,7 +3318,7 @@
       "sources": [
         "https://github.com/anulum/atlas-reactorum/blob/main/docs/ecosystem.md"
       ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "source_note": "Dated group source and research programme synopsis, 13 October 2026. Published source checkpoint on 28 October 2026: 36bc492e52b9c70b01003c8877a76948d895e1cd. Selected source fingerprints and available reading documents were reconciled to this public revision; older technical captures retain their dates. No new runtime, scientific or physical acceptance is inferred.",
       "dossier": {
         "review_state": "Source-author editorial review incorporated; publication and scientific/runtime qualification remain separate.",
         "purpose": "Impact/projectile/fuel/compression design and source-limited energy relations.",
@@ -3348,6 +3459,14 @@
           {
             "document": "Reactor architect programme synopsis",
             "sha256": "88c00ac2a2b71ab12314c11b3c905df16d79567e96c842073947eeb215795d22"
+          },
+          {
+            "document": "SCPN-ICF-IMPACT-CORE / README.md (published 36bc492e52b9c70b01003c8877a76948d895e1cd; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "41f49a4351aa3070896a789406c308ab5d921f6ba273892cd89d54f4bd639e2b"
+          },
+          {
+            "document": "SCPN-ICF-IMPACT-CORE / ROADMAP.md (published 36bc492e52b9c70b01003c8877a76948d895e1cd; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "fc4f3e7509d999cf5627da7197d39cd565e79358e8db434e31a0a052f79b8dfa"
           }
         ],
         "acceptance_basis": "Next gates stated in the project roadmap; these are not completed checks.",
@@ -3382,7 +3501,15 @@
         "inputs_basis": "Architect-defined model/interface inputs; exact supported runtime contracts remain subject to qualification.",
         "outputs_basis": "Expected result artifacts, separate from the current capabilities above.",
         "acceptance_note": "The summary does not replace source-specific model, reference, numerical/native and consumer requirements; detailed qualifications remain requirements, not passed tests.",
-        "references": []
+        "references": [
+          {
+            "id": "scpn-icf-impact-core-published-source-20261028",
+            "title": "Published source checked 28 October 2026",
+            "url": "https://github.com/anulum/scpn-icf-impact-core/commit/36bc492e52b9c70b01003c8877a76948d895e1cd",
+            "source_revision": "36bc492e52b9c70b01003c8877a76948d895e1cd",
+            "scope": "Published branch and selected source files observed at 2026-10-28T21:02:44.463650+00:00. Package versions were checked separately; hosted CI and installed/physical qualification were not reassessed by this documentary refresh."
+          }
+        ]
       }
     },
     {
@@ -3414,7 +3541,7 @@
       "sources": [
         "https://github.com/anulum/atlas-reactorum/blob/main/docs/ecosystem.md"
       ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "source_note": "Dated group source and research programme synopsis, 13 October 2026. Published source checkpoint on 28 October 2026: a4a0bfa1cf3cd9e411ce65e0592fbb0621af5b83. Selected source fingerprints and available reading documents were reconciled to this public revision; older technical captures retain their dates. No new runtime, scientific or physical acceptance is inferred.",
       "dossier": {
         "review_state": "Source-author editorial review incorporated; publication and scientific/runtime qualification remain separate.",
         "purpose": "Laser-driven capsule/implosion design and source-scoped ignition/gain criteria.",
@@ -3581,6 +3708,14 @@
           {
             "document": "SCPN-ICF-LASER-CORE / docs/adr/0006-device-3d-and-cad-models.md (technical source capture 2026-10-14T02:36:18.551029+00:00)",
             "sha256": "ca6c46c1d431379064f84790767416dbdac5327d94fa8d41ad7530f222675f40"
+          },
+          {
+            "document": "SCPN-ICF-LASER-CORE / README.md (published a4a0bfa1cf3cd9e411ce65e0592fbb0621af5b83; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "fc1901ce7b8e7b1bf88481c661140c6cc65c2dc9f33b9ebe6e7f8ed12eeacc66"
+          },
+          {
+            "document": "SCPN-ICF-LASER-CORE / ROADMAP.md (published a4a0bfa1cf3cd9e411ce65e0592fbb0621af5b83; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "8ca94cbe5f3dbc665a223dae8b59ea9bdf561e9e2488dd450511af7f106359aa"
           }
         ],
         "acceptance_basis": "Next gates stated in the project roadmap; these are not completed checks. Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-14T02:36:18.551029+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance.",
@@ -3617,7 +3752,15 @@
         "inputs_basis": "Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-14T02:36:18.551029+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance.",
         "outputs_basis": "Programme deliverables remain architect-owned targets. The interface list also retains source-described result representations from the dated technical guide; this atlas update executes none of those workflows.",
         "acceptance_note": "The summary does not replace source-specific model, reference, numerical/native and consumer requirements; detailed qualifications remain requirements, not passed tests.",
-        "references": []
+        "references": [
+          {
+            "id": "scpn-icf-laser-core-published-source-20261028",
+            "title": "Published source checked 28 October 2026",
+            "url": "https://github.com/anulum/scpn-icf-laser-core/commit/a4a0bfa1cf3cd9e411ce65e0592fbb0621af5b83",
+            "source_revision": "a4a0bfa1cf3cd9e411ce65e0592fbb0621af5b83",
+            "scope": "Published branch and selected source files observed at 2026-10-28T21:02:44.463650+00:00. Package versions were checked separately; hosted CI and installed/physical qualification were not reassessed by this documentary refresh."
+          }
+        ]
       }
     },
     {
@@ -3649,7 +3792,7 @@
       "sources": [
         "https://github.com/anulum/atlas-reactorum/blob/main/docs/ecosystem.md"
       ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "source_note": "Dated group source and research programme synopsis, 13 October 2026. Published source checkpoint on 28 October 2026: 7afcb6d3a81a23319fc88282143ef1f7b9d1001c. Selected source fingerprints and available reading documents were reconciled to this public revision; older technical captures retain their dates. No new runtime, scientific or physical acceptance is inferred.",
       "dossier": {
         "review_state": "Source-author editorial review incorporated; publication and scientific/runtime qualification remain separate.",
         "purpose": "Gridded electrostatic device and distinct nonthermal loss/recirculation models.",
@@ -3770,6 +3913,14 @@
           {
             "document": "Reactor architect programme synopsis",
             "sha256": "88c00ac2a2b71ab12314c11b3c905df16d79567e96c842073947eeb215795d22"
+          },
+          {
+            "document": "SCPN-IEC-CORE / README.md (published 7afcb6d3a81a23319fc88282143ef1f7b9d1001c; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "9fdc5dc2e933d645a3e18c970a342e98778973b81bf3dd9cb0a751f1354a205b"
+          },
+          {
+            "document": "SCPN-IEC-CORE / ROADMAP.md (published 7afcb6d3a81a23319fc88282143ef1f7b9d1001c; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "2092ab0b166c84d0c6339ef708c9f543e63dbf318634d63598d1c5ab4d4fa8df"
           }
         ],
         "acceptance_basis": "Next gates stated in the project roadmap; these are not completed checks.",
@@ -3805,7 +3956,15 @@
         "inputs_basis": "Architect-defined model/interface inputs; exact supported runtime contracts remain subject to qualification.",
         "outputs_basis": "Expected result artifacts, separate from the current capabilities above.",
         "acceptance_note": "The summary does not replace source-specific model, reference, numerical/native and consumer requirements; detailed qualifications remain requirements, not passed tests.",
-        "references": []
+        "references": [
+          {
+            "id": "scpn-iec-core-published-source-20261028",
+            "title": "Published source checked 28 October 2026",
+            "url": "https://github.com/anulum/scpn-iec-core/commit/7afcb6d3a81a23319fc88282143ef1f7b9d1001c",
+            "source_revision": "7afcb6d3a81a23319fc88282143ef1f7b9d1001c",
+            "scope": "Published branch and selected source files observed at 2026-10-28T21:02:44.463650+00:00. Package versions were checked separately; hosted CI and installed/physical qualification were not reassessed by this documentary refresh."
+          }
+        ]
       }
     },
     {
@@ -3837,7 +3996,7 @@
       "sources": [
         "https://github.com/anulum/atlas-reactorum/blob/main/docs/ecosystem.md"
       ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "source_note": "Dated group source and research programme synopsis, 13 October 2026. Published source checkpoint on 28 October 2026: dbb25a284c9d733bad900c02d3275f03de4778c0. Selected source fingerprints and available reading documents were reconciled to this public revision; older technical captures retain their dates. No new runtime, scientific or physical acceptance is inferred.",
       "dossier": {
         "review_state": "Source-author editorial review incorporated; publication and scientific/runtime qualification remain separate.",
         "purpose": "Source-bounded lattice-confinement fusion research and modelling.",
@@ -3927,6 +4086,14 @@
           {
             "document": "Reactor architect programme synopsis",
             "sha256": "88c00ac2a2b71ab12314c11b3c905df16d79567e96c842073947eeb215795d22"
+          },
+          {
+            "document": "SCPN-LATTICE-FUSION-CORE / README.md (published dbb25a284c9d733bad900c02d3275f03de4778c0; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "00b9cd102610bb83c01cf1a8af4c823bf9ae161584ad7f0c1d919a6911eb274d"
+          },
+          {
+            "document": "SCPN-LATTICE-FUSION-CORE / ROADMAP.md (published dbb25a284c9d733bad900c02d3275f03de4778c0; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "9adea81059a253fa2f4ebd8a88544407568b3b6bc337ec5d31dd3cd26321e6ba"
           }
         ],
         "acceptance_basis": "Next gates stated in the project roadmap; these are not completed checks.",
@@ -3961,7 +4128,15 @@
         "inputs_basis": "Architect-defined model/interface inputs; exact supported runtime contracts remain subject to qualification.",
         "outputs_basis": "Expected result artifacts, separate from the current capabilities above.",
         "acceptance_note": "The summary does not replace source-specific model, reference, numerical/native and consumer requirements; detailed qualifications remain requirements, not passed tests.",
-        "references": []
+        "references": [
+          {
+            "id": "scpn-lattice-fusion-core-published-source-20261028",
+            "title": "Published source checked 28 October 2026",
+            "url": "https://github.com/anulum/scpn-lattice-fusion-core/commit/dbb25a284c9d733bad900c02d3275f03de4778c0",
+            "source_revision": "dbb25a284c9d733bad900c02d3275f03de4778c0",
+            "scope": "Published branch and selected source files observed at 2026-10-28T21:02:44.463650+00:00. Package versions were checked separately; hosted CI and installed/physical qualification were not reassessed by this documentary refresh."
+          }
+        ]
       }
     },
     {
@@ -3993,7 +4168,7 @@
       "sources": [
         "https://github.com/anulum/atlas-reactorum/blob/main/docs/ecosystem.md"
       ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "source_note": "Dated group source and research programme synopsis, 13 October 2026. Published source checkpoint on 28 October 2026: 77d824076d7cdd27ac96e616212b450d74203436. Selected source fingerprints and available reading documents were reconciled to this public revision; older technical captures retain their dates. No new runtime, scientific or physical acceptance is inferred.",
       "dossier": {
         "review_state": "Source-author editorial review incorporated; publication and scientific/runtime qualification remain separate.",
         "purpose": "Dipole coil/levitation/charging and anisotropic plasma model.",
@@ -4134,6 +4309,14 @@
           {
             "document": "Reactor architect programme synopsis",
             "sha256": "88c00ac2a2b71ab12314c11b3c905df16d79567e96c842073947eeb215795d22"
+          },
+          {
+            "document": "SCPN-LEVITATED-DIPOLE-CORE / README.md (published 77d824076d7cdd27ac96e616212b450d74203436; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "26a2e07fce5fc1e25ad99264eb5d11ca0968498be5bc528719b0f8c802d76212"
+          },
+          {
+            "document": "SCPN-LEVITATED-DIPOLE-CORE / ROADMAP.md (published 77d824076d7cdd27ac96e616212b450d74203436; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "942221509d6b599cd2ef3de3b7da61ab6490e92731cb9bb1481664780e871b92"
           }
         ],
         "acceptance_basis": "Next gates stated in the project roadmap; these are not completed checks.",
@@ -4168,7 +4351,15 @@
         "inputs_basis": "Architect-defined model/interface inputs; exact supported runtime contracts remain subject to qualification.",
         "outputs_basis": "Expected result artifacts, separate from the current capabilities above.",
         "acceptance_note": "The summary does not replace source-specific model, reference, numerical/native and consumer requirements; detailed qualifications remain requirements, not passed tests.",
-        "references": []
+        "references": [
+          {
+            "id": "scpn-levitated-dipole-core-published-source-20261028",
+            "title": "Published source checked 28 October 2026",
+            "url": "https://github.com/anulum/scpn-levitated-dipole-core/commit/77d824076d7cdd27ac96e616212b450d74203436",
+            "source_revision": "77d824076d7cdd27ac96e616212b450d74203436",
+            "scope": "Published branch and selected source files observed at 2026-10-28T21:02:44.463650+00:00. Package versions were checked separately; hosted CI and installed/physical qualification were not reassessed by this documentary refresh."
+          }
+        ]
       }
     },
     {
@@ -4234,7 +4425,7 @@
       "sources": [
         "https://github.com/anulum/atlas-reactorum/blob/main/docs/ecosystem.md"
       ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "source_note": "Dated group source and research programme synopsis, 13 October 2026. Published source checkpoint on 28 October 2026: fb0e0dfc61d16c091ecc5c6d8645a4be11e08a5f. Selected source fingerprints and available reading documents were reconciled to this public revision; older technical captures retain their dates. No new runtime, scientific or physical acceptance is inferred.",
       "dossier": {
         "review_state": "Source-author editorial review incorporated; publication and scientific/runtime qualification remain separate.",
         "purpose": "Cusp coil/configuration ownership and source-specific field/particle-loss model proposal.",
@@ -4345,6 +4536,14 @@
           {
             "document": "Reactor architect programme synopsis",
             "sha256": "88c00ac2a2b71ab12314c11b3c905df16d79567e96c842073947eeb215795d22"
+          },
+          {
+            "document": "SCPN-MAGNETIC-CUSP-CORE / README.md (published fb0e0dfc61d16c091ecc5c6d8645a4be11e08a5f; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "c1415f8192f4974bfba31f2d1371e2b7c10fa5e78d845ecd730b9cf6f6e3f01e"
+          },
+          {
+            "document": "SCPN-MAGNETIC-CUSP-CORE / ROADMAP.md (published fb0e0dfc61d16c091ecc5c6d8645a4be11e08a5f; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "52a9938ac9697bd839c01c9762ea68841b5092a08033997fc742029f50475a39"
           }
         ],
         "acceptance_basis": "Next gates stated in the project roadmap; these are not completed checks.",
@@ -4379,7 +4578,15 @@
         "inputs_basis": "Architect-defined model/interface inputs; exact supported runtime contracts remain subject to qualification.",
         "outputs_basis": "Expected result artifacts, separate from the current capabilities above.",
         "acceptance_note": "The summary does not replace source-specific model, reference, numerical/native and consumer requirements; detailed qualifications remain requirements, not passed tests.",
-        "references": []
+        "references": [
+          {
+            "id": "scpn-magnetic-cusp-core-published-source-20261028",
+            "title": "Published source checked 28 October 2026",
+            "url": "https://github.com/anulum/scpn-magnetic-cusp-core/commit/fb0e0dfc61d16c091ecc5c6d8645a4be11e08a5f",
+            "source_revision": "fb0e0dfc61d16c091ecc5c6d8645a4be11e08a5f",
+            "scope": "Published branch and selected source files observed at 2026-10-28T21:02:44.463650+00:00. Package versions were checked separately; hosted CI and installed/physical qualification were not reassessed by this documentary refresh."
+          }
+        ]
       }
     },
     {
@@ -4528,7 +4735,7 @@
       "sources": [
         "https://github.com/anulum/atlas-reactorum/blob/main/docs/ecosystem.md"
       ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "source_note": "Dated group source and research programme synopsis, 13 October 2026. Published source checkpoint on 28 October 2026: b44f33e2a082ca6b34f22cd587c5c4f0e8cb2c89. Selected source fingerprints and available reading documents were reconciled to this public revision; older technical captures retain their dates. No new runtime, scientific or physical acceptance is inferred.",
       "dossier": {
         "review_state": "Source-author editorial review incorporated; publication and scientific/runtime qualification remain separate.",
         "purpose": "Existing magneto-inertial dynamics/runtime with maintained multi-language/RTL chain.",
@@ -4607,6 +4814,10 @@
           {
             "document": "SCPN-MIF-CORE / src/scpn_mif_core/merge_trigger.py (source 2026-10-18T13:03:55.198854+00:00) (technical source capture 2026-10-18T13:03:55.198854+00:00)",
             "sha256": "7424c611343523b443adf6ee9e296edd6f475134ed6dfcff758203f27804493d"
+          },
+          {
+            "document": "SCPN-MIF-CORE / pyproject.toml (published b44f33e2a082ca6b34f22cd587c5c4f0e8cb2c89; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "c644f2663e0dc72e89b75d7943d1f0ead4b70873d0d6a2ae994f5f6def602912"
           }
         ],
         "evidence_state": "See project-specific qualification records",
@@ -4618,7 +4829,15 @@
         "outputs_basis": "Programme deliverables remain architect-owned targets. The interface list also retains source-described result representations from the dated technical guide; this atlas update executes none of those workflows.",
         "programme_tracks": [],
         "acceptance_note": "The summary does not replace source-specific model, reference, numerical/native and consumer requirements; detailed qualifications remain requirements, not passed tests.",
-        "references": [],
+        "references": [
+          {
+            "id": "scpn-mif-core-published-source-20261028",
+            "title": "Published source checked 28 October 2026",
+            "url": "https://github.com/anulum/scpn-mif-core/commit/b44f33e2a082ca6b34f22cd587c5c4f0e8cb2c89",
+            "source_revision": "b44f33e2a082ca6b34f22cd587c5c4f0e8cb2c89",
+            "scope": "Published branch and selected source files observed at 2026-10-28T21:02:44.463650+00:00. Package versions were checked separately; hosted CI and installed/physical qualification were not reassessed by this documentary refresh."
+          }
+        ],
         "acceptance_basis": "Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-18T13:03:55.198854+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance."
       }
     },
@@ -4651,7 +4870,7 @@
       "sources": [
         "https://github.com/anulum/atlas-reactorum/blob/main/docs/ecosystem.md"
       ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "source_note": "Dated group source and research programme synopsis, 13 October 2026. Published source checkpoint on 28 October 2026: 9fc5c27b8de133b719eb834a5cc8ef6ac7e4ca15. Selected source fingerprints and available reading documents were reconciled to this public revision; older technical captures retain their dates. No new runtime, scientific or physical acceptance is inferred.",
       "dossier": {
         "review_state": "Source-author editorial review incorporated; publication and scientific/runtime qualification remain separate.",
         "purpose": "Mechanical/magnetic liner compression and target-energy coupling.",
@@ -4792,6 +5011,14 @@
           {
             "document": "Reactor architect programme synopsis",
             "sha256": "88c00ac2a2b71ab12314c11b3c905df16d79567e96c842073947eeb215795d22"
+          },
+          {
+            "document": "SCPN-MIF-LINER-CORE / README.md (published 9fc5c27b8de133b719eb834a5cc8ef6ac7e4ca15; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "31bcde57f21d52855c84676251c4c10198ed30ebedf3a55111d37b644de22143"
+          },
+          {
+            "document": "SCPN-MIF-LINER-CORE / ROADMAP.md (published 9fc5c27b8de133b719eb834a5cc8ef6ac7e4ca15; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "4fec070fb80ca83cf15aef6d3b5a758a6f0f892403cb0922184c4a539ac52d0d"
           }
         ],
         "acceptance_basis": "Next gates stated in the project roadmap; these are not completed checks.",
@@ -4826,7 +5053,15 @@
         "inputs_basis": "Architect-defined model/interface inputs; exact supported runtime contracts remain subject to qualification.",
         "outputs_basis": "Expected result artifacts, separate from the current capabilities above.",
         "acceptance_note": "The summary does not replace source-specific model, reference, numerical/native and consumer requirements; detailed qualifications remain requirements, not passed tests.",
-        "references": []
+        "references": [
+          {
+            "id": "scpn-mif-liner-core-published-source-20261028",
+            "title": "Published source checked 28 October 2026",
+            "url": "https://github.com/anulum/scpn-mif-liner-core/commit/9fc5c27b8de133b719eb834a5cc8ef6ac7e4ca15",
+            "source_revision": "9fc5c27b8de133b719eb834a5cc8ef6ac7e4ca15",
+            "scope": "Published branch and selected source files observed at 2026-10-28T21:02:44.463650+00:00. Package versions were checked separately; hosted CI and installed/physical qualification were not reassessed by this documentary refresh."
+          }
+        ]
       }
     },
     {
@@ -4858,7 +5093,7 @@
       "sources": [
         "https://github.com/anulum/atlas-reactorum/blob/main/docs/ecosystem.md"
       ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "source_note": "Dated group source and research programme synopsis, 13 October 2026. Published source checkpoint on 28 October 2026: 04d9eb1c72deade4045e6c0ea097a486e24a437b. Selected source fingerprints and available reading documents were reconciled to this public revision; older technical captures retain their dates. No new runtime, scientific or physical acceptance is inferred.",
       "dossier": {
         "review_state": "Source-author editorial review incorporated; publication and scientific/runtime qualification remain separate.",
         "purpose": "Magnetised liner drive/preheat/compression family.",
@@ -4999,6 +5234,14 @@
           {
             "document": "Reactor architect programme synopsis",
             "sha256": "88c00ac2a2b71ab12314c11b3c905df16d79567e96c842073947eeb215795d22"
+          },
+          {
+            "document": "SCPN-MIF-MAGLIF-CORE / README.md (published 04d9eb1c72deade4045e6c0ea097a486e24a437b; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "529673272d6081a7a9823dfdaa3f6a50f6bd2bd576d5260b4352b9128e748d31"
+          },
+          {
+            "document": "SCPN-MIF-MAGLIF-CORE / ROADMAP.md (published 04d9eb1c72deade4045e6c0ea097a486e24a437b; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "9503b5652a478e72a7e95aa3b5b3ab1f9e37c06736608039eb8fe6eb6ddeb959"
           }
         ],
         "acceptance_basis": "Next gates stated in the project roadmap; these are not completed checks.",
@@ -5033,7 +5276,15 @@
         "inputs_basis": "Architect-defined model/interface inputs; exact supported runtime contracts remain subject to qualification.",
         "outputs_basis": "Expected result artifacts, separate from the current capabilities above.",
         "acceptance_note": "The summary does not replace source-specific model, reference, numerical/native and consumer requirements; detailed qualifications remain requirements, not passed tests.",
-        "references": []
+        "references": [
+          {
+            "id": "scpn-mif-maglif-core-published-source-20261028",
+            "title": "Published source checked 28 October 2026",
+            "url": "https://github.com/anulum/scpn-mif-maglif-core/commit/04d9eb1c72deade4045e6c0ea097a486e24a437b",
+            "source_revision": "04d9eb1c72deade4045e6c0ea097a486e24a437b",
+            "scope": "Published branch and selected source files observed at 2026-10-28T21:02:44.463650+00:00. Package versions were checked separately; hosted CI and installed/physical qualification were not reassessed by this documentary refresh."
+          }
+        ]
       }
     },
     {
@@ -5065,7 +5316,7 @@
       "sources": [
         "https://github.com/anulum/atlas-reactorum/blob/main/docs/ecosystem.md"
       ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "source_note": "Dated group source and research programme synopsis, 13 October 2026. Published source checkpoint on 28 October 2026: d56bb598992260020492389a24d21e260f22ff62. Selected source fingerprints and available reading documents were reconciled to this public revision; older technical captures retain their dates. No new runtime, scientific or physical acceptance is inferred.",
       "dossier": {
         "review_state": "Source-author editorial review incorporated; publication and scientific/runtime qualification remain separate.",
         "purpose": "Discrete plasma-jet array and spherical liner convergence.",
@@ -5186,6 +5437,14 @@
           {
             "document": "Reactor architect programme synopsis",
             "sha256": "88c00ac2a2b71ab12314c11b3c905df16d79567e96c842073947eeb215795d22"
+          },
+          {
+            "document": "SCPN-MIF-PLASMA-JET-CORE / README.md (published d56bb598992260020492389a24d21e260f22ff62; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "740fcc92f5d312026fbbdb94805d65dccf9cd363ef7b0c3c6fa576da09bba25d"
+          },
+          {
+            "document": "SCPN-MIF-PLASMA-JET-CORE / ROADMAP.md (published d56bb598992260020492389a24d21e260f22ff62; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "b5e1b40abde933d667a04810f1d6bbabe29fa93fd5f6013ccd556fd4969a47dc"
           }
         ],
         "acceptance_basis": "Next gates stated in the project roadmap; these are not completed checks.",
@@ -5220,7 +5479,15 @@
         "inputs_basis": "Architect-defined model/interface inputs; exact supported runtime contracts remain subject to qualification.",
         "outputs_basis": "Expected result artifacts, separate from the current capabilities above.",
         "acceptance_note": "The summary does not replace source-specific model, reference, numerical/native and consumer requirements; detailed qualifications remain requirements, not passed tests.",
-        "references": []
+        "references": [
+          {
+            "id": "scpn-mif-plasma-jet-core-published-source-20261028",
+            "title": "Published source checked 28 October 2026",
+            "url": "https://github.com/anulum/scpn-mif-plasma-jet-core/commit/d56bb598992260020492389a24d21e260f22ff62",
+            "source_revision": "d56bb598992260020492389a24d21e260f22ff62",
+            "scope": "Published branch and selected source files observed at 2026-10-28T21:02:44.463650+00:00. Package versions were checked separately; hosted CI and installed/physical qualification were not reassessed by this documentary refresh."
+          }
+        ]
       }
     },
     {
@@ -5252,7 +5519,7 @@
       "sources": [
         "https://github.com/anulum/atlas-reactorum/blob/main/docs/ecosystem.md"
       ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "source_note": "Dated group source and research programme synopsis, 13 October 2026. Published source checkpoint on 28 October 2026: 2ce0260b953c0b2a649a74fda8fa0fad55e9d062. Selected source fingerprints and available reading documents were reconciled to this public revision; older technical captures retain their dates. No new runtime, scientific or physical acceptance is inferred.",
       "dossier": {
         "review_state": "Source-author editorial review incorporated; publication and scientific/runtime qualification remain separate.",
         "purpose": "Mirror/tandem confinement and source-specific flux-tube geometry.",
@@ -5395,6 +5662,10 @@
           {
             "document": "Reactor architect programme synopsis",
             "sha256": "88c00ac2a2b71ab12314c11b3c905df16d79567e96c842073947eeb215795d22"
+          },
+          {
+            "document": "SCPN-MIRROR-CORE / ROADMAP.md (published 2ce0260b953c0b2a649a74fda8fa0fad55e9d062; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "cb94764344e6e70925511ed95d1e1ce5d5a1b34480b9a5ed8eaf592451d148c6"
           }
         ],
         "acceptance_basis": "Next gates stated in the project roadmap; these are not completed checks.",
@@ -5433,7 +5704,15 @@
         "inputs_basis": "Architect-defined model/interface inputs; exact supported runtime contracts remain subject to qualification.",
         "outputs_basis": "Expected result artifacts, separate from the current capabilities above.",
         "acceptance_note": "The summary does not replace source-specific model, reference, numerical/native and consumer requirements; detailed qualifications remain requirements, not passed tests.",
-        "references": []
+        "references": [
+          {
+            "id": "scpn-mirror-core-published-source-20261028",
+            "title": "Published source checked 28 October 2026",
+            "url": "https://github.com/anulum/scpn-mirror-core/commit/2ce0260b953c0b2a649a74fda8fa0fad55e9d062",
+            "source_revision": "2ce0260b953c0b2a649a74fda8fa0fad55e9d062",
+            "scope": "Published branch and selected source files observed at 2026-10-28T21:02:44.463650+00:00. Package versions were checked separately; hosted CI and installed/physical qualification were not reassessed by this documentary refresh."
+          }
+        ]
       }
     },
     {
@@ -5499,7 +5778,7 @@
       "sources": [
         "https://github.com/anulum/atlas-reactorum/blob/main/docs/ecosystem.md"
       ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "source_note": "Dated group source and research programme synopsis, 13 October 2026. Published source checkpoint on 28 October 2026: 5a09a0e8b647513308138201778b9636081b6d99. Selected source fingerprints and available reading documents were reconciled to this public revision; older technical captures retain their dates. No new runtime, scientific or physical acceptance is inferred.",
       "dossier": {
         "review_state": "Source-author editorial review incorporated; publication and scientific/runtime qualification remain separate.",
         "purpose": "Muon-catalysed reaction models and complete energy accounting.",
@@ -5589,6 +5868,14 @@
           {
             "document": "Reactor architect programme synopsis",
             "sha256": "88c00ac2a2b71ab12314c11b3c905df16d79567e96c842073947eeb215795d22"
+          },
+          {
+            "document": "SCPN-MUON-FUSION-CORE / README.md (published 5a09a0e8b647513308138201778b9636081b6d99; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "154cab1dabe85dfa5e103b6698ba0c75cb81738effd2c46f152c5e875a867f78"
+          },
+          {
+            "document": "SCPN-MUON-FUSION-CORE / ROADMAP.md (published 5a09a0e8b647513308138201778b9636081b6d99; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "b5fcb5f7d1a5a3dc8ff1c53a9031e752032858e703c5269cc3acf9fbabd5aebc"
           }
         ],
         "acceptance_basis": "Next gates stated in the project roadmap; these are not completed checks.",
@@ -5623,7 +5910,15 @@
         "inputs_basis": "Architect-defined model/interface inputs; exact supported runtime contracts remain subject to qualification.",
         "outputs_basis": "Expected result artifacts, separate from the current capabilities above.",
         "acceptance_note": "The summary does not replace source-specific model, reference, numerical/native and consumer requirements; detailed qualifications remain requirements, not passed tests.",
-        "references": []
+        "references": [
+          {
+            "id": "scpn-muon-fusion-core-published-source-20261028",
+            "title": "Published source checked 28 October 2026",
+            "url": "https://github.com/anulum/scpn-muon-fusion-core/commit/5a09a0e8b647513308138201778b9636081b6d99",
+            "source_revision": "5a09a0e8b647513308138201778b9636081b6d99",
+            "scope": "Published branch and selected source files observed at 2026-10-28T21:02:44.463650+00:00. Package versions were checked separately; hosted CI and installed/physical qualification were not reassessed by this documentary refresh."
+          }
+        ]
       }
     },
     {
@@ -5893,7 +6188,7 @@
       "sources": [
         "https://github.com/anulum/atlas-reactorum/blob/main/docs/ecosystem.md"
       ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "source_note": "Dated group source and research programme synopsis, 13 October 2026. Published source checkpoint on 28 October 2026: bf717c720595cf801559a9932676552505104674. Selected source fingerprints and available reading documents were reconciled to this public revision; older technical captures retain their dates. No new runtime, scientific or physical acceptance is inferred. The current public README and architecture explicitly use metre-valued native STEP/B-rep contexts and unit conversion before volume meshing. CAD adapters retain native_parity=false and separate third-party backend evidence; source-checkout versions are not package releases.",
       "dossier": {
         "review_state": "Source-author editorial review incorporated; publication and scientific/runtime qualification remain separate.",
         "purpose": "Shared equations, numerical primitives and geometry/CAD/export substrate.",
@@ -5984,6 +6279,26 @@
           {
             "document": "SCPN-REACTOR-KERNELS / src/scpn_reactor_kernels/geometry/mesh.py @ 2026-10-18T00:36:33.580466+00:00 (technical source capture 2026-10-18T00:36:33.580466+00:00)",
             "sha256": "8cd537203787bbb23d31d17e55d01b7954253048808adcc225f22f336187d28f"
+          },
+          {
+            "document": "SCPN-REACTOR-KERNELS / README.md (published bf717c720595cf801559a9932676552505104674; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "7bd187333710d1f8c00cc4028e034dd67a589e9d25a56c6b00dfa31392edd122"
+          },
+          {
+            "document": "SCPN-REACTOR-KERNELS / docs/ARCHITECTURE.md (published bf717c720595cf801559a9932676552505104674; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "963e75435513a8ad364bedc8a16f648dd5d05d869b4d2cf5df924d0c65a17a37"
+          },
+          {
+            "document": "SCPN-REACTOR-KERNELS / ROADMAP.md (published bf717c720595cf801559a9932676552505104674; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "6d1d95a8cc87d223995563a4d4c9b32485a5e8a8ee32b19b196b3101d7ec899c"
+          },
+          {
+            "document": "SCPN-REACTOR-KERNELS / VALIDATION.md (published bf717c720595cf801559a9932676552505104674; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "4e5ea3a207d0c0bbe13e7cdd9d51381f449ac6c9744d47994ae13f5e20e17814"
+          },
+          {
+            "document": "SCPN-REACTOR-KERNELS / pyproject.toml (published bf717c720595cf801559a9932676552505104674; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "92c5358896ad6c536b4f254daa48f5822adcefb9c004667e04d5bd73c2cef870"
           }
         ],
         "acceptance_basis": "Next gates stated in the project roadmap; these are not completed checks. Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-18T00:36:33.580466+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance.",
@@ -5996,7 +6311,15 @@
         "outputs_basis": "Programme deliverables remain architect-owned targets. The interface list also retains source-described result representations from the dated technical guide; this atlas update executes none of those workflows.",
         "programme_tracks": [],
         "acceptance_note": "The summary does not replace source-specific model, reference, numerical/native and consumer requirements; detailed qualifications remain requirements, not passed tests.",
-        "references": []
+        "references": [
+          {
+            "id": "scpn-reactor-kernels-published-source-20261028",
+            "title": "Published source checked 28 October 2026",
+            "url": "https://github.com/anulum/scpn-reactor-kernels/commit/bf717c720595cf801559a9932676552505104674",
+            "source_revision": "bf717c720595cf801559a9932676552505104674",
+            "scope": "Published branch and selected source files observed at 2026-10-28T21:02:44.463650+00:00. Package versions were checked separately; hosted CI and installed/physical qualification were not reassessed by this documentary refresh."
+          }
+        ]
       }
     },
     {
@@ -6062,7 +6385,7 @@
       "sources": [
         "https://github.com/anulum/atlas-reactorum/blob/main/docs/ecosystem.md"
       ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "source_note": "Dated group source and research programme synopsis, 13 October 2026. Published source checkpoint on 28 October 2026: 84d3a25592e63d06e7a5ab52c47267c72a80d666. Selected source fingerprints and available reading documents were reconciled to this public revision; older technical captures retain their dates. No new runtime, scientific or physical acceptance is inferred.",
       "dossier": {
         "review_state": "Source-author editorial review incorporated; publication and scientific/runtime qualification remain separate.",
         "purpose": "Reversed-field pinch relaxation/profile and toroidal device design.",
@@ -6203,6 +6526,14 @@
           {
             "document": "Reactor architect programme synopsis",
             "sha256": "88c00ac2a2b71ab12314c11b3c905df16d79567e96c842073947eeb215795d22"
+          },
+          {
+            "document": "SCPN-RFP-CORE / README.md (published 84d3a25592e63d06e7a5ab52c47267c72a80d666; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "2573322f07e9d7952186b8cb024d6a76ac2ccff1c99bac7b07854827051bfdf9"
+          },
+          {
+            "document": "SCPN-RFP-CORE / ROADMAP.md (published 84d3a25592e63d06e7a5ab52c47267c72a80d666; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "26b6fb6b6bf87421afdd7a84af576007bdc5c8192599a02f92b9f2765b271ac8"
           }
         ],
         "acceptance_basis": "Next gates stated in the project roadmap; these are not completed checks.",
@@ -6238,7 +6569,15 @@
         "inputs_basis": "Architect-defined model/interface inputs; exact supported runtime contracts remain subject to qualification.",
         "outputs_basis": "Expected result artifacts, separate from the current capabilities above.",
         "acceptance_note": "The summary does not replace source-specific model, reference, numerical/native and consumer requirements; detailed qualifications remain requirements, not passed tests.",
-        "references": []
+        "references": [
+          {
+            "id": "scpn-rfp-core-published-source-20261028",
+            "title": "Published source checked 28 October 2026",
+            "url": "https://github.com/anulum/scpn-rfp-core/commit/84d3a25592e63d06e7a5ab52c47267c72a80d666",
+            "source_revision": "84d3a25592e63d06e7a5ab52c47267c72a80d666",
+            "scope": "Published branch and selected source files observed at 2026-10-28T21:02:44.463650+00:00. Package versions were checked separately; hosted CI and installed/physical qualification were not reassessed by this documentary refresh."
+          }
+        ]
       }
     },
     {
@@ -6338,7 +6677,7 @@
       "sources": [
         "https://github.com/anulum/atlas-reactorum/blob/main/docs/ecosystem.md"
       ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "source_note": "Dated group source and research programme synopsis, 13 October 2026. Published source checkpoint on 28 October 2026: ced6905499f3018356b6e28a3b1b6ca73854f72e. Selected source fingerprints and available reading documents were reconciled to this public revision; older technical captures retain their dates. No new runtime, scientific or physical acceptance is inferred.",
       "dossier": {
         "review_state": "Source-author editorial review incorporated; publication and scientific/runtime qualification remain separate.",
         "purpose": "Relaxed compact-torus configuration, flux conserver and formation criteria.",
@@ -6481,6 +6820,14 @@
           {
             "document": "Reactor architect programme synopsis",
             "sha256": "88c00ac2a2b71ab12314c11b3c905df16d79567e96c842073947eeb215795d22"
+          },
+          {
+            "document": "SCPN-SPHEROMAK-CORE / README.md (published ced6905499f3018356b6e28a3b1b6ca73854f72e; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "d6675db4c0f99be0b701e109230fe2911122701be771e3ed0cde74be3402c092"
+          },
+          {
+            "document": "SCPN-SPHEROMAK-CORE / ROADMAP.md (published ced6905499f3018356b6e28a3b1b6ca73854f72e; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "f3449a23b3200ae7986ba87824a10ed71fe88cf3538051cb0b84953f537460f5"
           }
         ],
         "acceptance_basis": "Next gates stated in the project roadmap; these are not completed checks.",
@@ -6516,7 +6863,15 @@
         "inputs_basis": "Architect-defined model/interface inputs; exact supported runtime contracts remain subject to qualification.",
         "outputs_basis": "Expected result artifacts, separate from the current capabilities above.",
         "acceptance_note": "The summary does not replace source-specific model, reference, numerical/native and consumer requirements; detailed qualifications remain requirements, not passed tests.",
-        "references": []
+        "references": [
+          {
+            "id": "scpn-spheromak-core-published-source-20261028",
+            "title": "Published source checked 28 October 2026",
+            "url": "https://github.com/anulum/scpn-spheromak-core/commit/ced6905499f3018356b6e28a3b1b6ca73854f72e",
+            "source_revision": "ced6905499f3018356b6e28a3b1b6ca73854f72e",
+            "scope": "Published branch and selected source files observed at 2026-10-28T21:02:44.463650+00:00. Package versions were checked separately; hosted CI and installed/physical qualification were not reassessed by this documentary refresh."
+          }
+        ]
       }
     },
     {
@@ -6548,7 +6903,7 @@
       "sources": [
         "https://github.com/anulum/atlas-reactorum/blob/main/docs/ecosystem.md"
       ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "source_note": "Dated group source and research programme synopsis, 13 October 2026. Published source checkpoint on 28 October 2026: 7c43fe0a648842fa2ddc0ad1a16c2e47a5fb484e. Selected source fingerprints and available reading documents were reconciled to this public revision; older technical captures retain their dates. No new runtime, scientific or physical acceptance is inferred.",
       "dossier": {
         "review_state": "Source-author editorial review incorporated; publication and scientific/runtime qualification remain separate.",
         "purpose": "Three-dimensional magnetic-confinement configuration and coil/design ownership.",
@@ -6675,6 +7030,18 @@
           {
             "document": "SCPN-STELLARATOR-CORE / docs/ARCHITECTURE.md (technical source capture 2026-10-14T02:36:18.551029+00:00)",
             "sha256": "c5ca3a296ea4cce15bbd0099e9905e60ada591155cf26dea180dfbb82723b696"
+          },
+          {
+            "document": "SCPN-STELLARATOR-CORE / README.md (published 7c43fe0a648842fa2ddc0ad1a16c2e47a5fb484e; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "ba3a8e913ccb4c04d788c9080acde4941509dfddff935260109d7df0c8af5c62"
+          },
+          {
+            "document": "SCPN-STELLARATOR-CORE / ROADMAP.md (published 7c43fe0a648842fa2ddc0ad1a16c2e47a5fb484e; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "65ddb78d7e11c53fece4033082e85dc4e3ddff20eb366f45547173b935dca94a"
+          },
+          {
+            "document": "SCPN-STELLARATOR-CORE / VALIDATION.md (published 7c43fe0a648842fa2ddc0ad1a16c2e47a5fb484e; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "9ac4a6fead7a0888aa7973c6627eadac58574767b60a8d76af6ede9f92a95b7f"
           }
         ],
         "acceptance_basis": "Next gates stated in the project roadmap; these are not completed checks. Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-14T02:36:18.551029+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance.",
@@ -6711,7 +7078,15 @@
         "inputs_basis": "Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-14T02:36:18.551029+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance.",
         "outputs_basis": "Programme deliverables remain architect-owned targets. The interface list also retains source-described result representations from the dated technical guide; this atlas update executes none of those workflows.",
         "acceptance_note": "The summary does not replace source-specific model, reference, numerical/native and consumer requirements; detailed qualifications remain requirements, not passed tests.",
-        "references": []
+        "references": [
+          {
+            "id": "scpn-stellarator-core-published-source-20261028",
+            "title": "Published source checked 28 October 2026",
+            "url": "https://github.com/anulum/scpn-stellarator-core/commit/7c43fe0a648842fa2ddc0ad1a16c2e47a5fb484e",
+            "source_revision": "7c43fe0a648842fa2ddc0ad1a16c2e47a5fb484e",
+            "scope": "Published branch and selected source files observed at 2026-10-28T21:02:44.463650+00:00. Package versions were checked separately; hosted CI and installed/physical qualification were not reassessed by this documentary refresh."
+          }
+        ]
       }
     },
     {
@@ -6743,7 +7118,7 @@
       "sources": [
         "https://github.com/anulum/atlas-reactorum/blob/main/docs/ecosystem.md"
       ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "source_note": "Dated group source and research programme synopsis, 13 October 2026. Published source checkpoint on 28 October 2026: 50732f22cdfbf9cc2cba6ca577fd86a134c12b86. Selected source fingerprints and available reading documents were reconciled to this public revision; older technical captures retain their dates. No new runtime, scientific or physical acceptance is inferred.",
       "dossier": {
         "review_state": "Source-author editorial review incorporated; publication and scientific/runtime qualification remain separate.",
         "purpose": "Axial-field compression and pinch configuration with sharp-boundary model.",
@@ -6885,6 +7260,18 @@
           {
             "document": "Reactor architect programme synopsis",
             "sha256": "88c00ac2a2b71ab12314c11b3c905df16d79567e96c842073947eeb215795d22"
+          },
+          {
+            "document": "SCPN-THETA-PINCH-CORE / README.md (published 50732f22cdfbf9cc2cba6ca577fd86a134c12b86; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "0bde6b48c238988d98de3d33a23c8aa114f785f228c53fd9c20b4327249be19f"
+          },
+          {
+            "document": "SCPN-THETA-PINCH-CORE / ROADMAP.md (published 50732f22cdfbf9cc2cba6ca577fd86a134c12b86; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "991988fec47f55589907a56a24f9d64ced6b7d99a6e457f4a3cccd2c4798c998"
+          },
+          {
+            "document": "SCPN-THETA-PINCH-CORE / VALIDATION.md (published 50732f22cdfbf9cc2cba6ca577fd86a134c12b86; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "5af4247837a6037301a3766ff1813db1d00f10d53b146d977ab0d400fddcd2ce"
           }
         ],
         "acceptance_basis": "Next gates stated in the project roadmap; these are not completed checks.",
@@ -6921,7 +7308,15 @@
         "inputs_basis": "Architect-defined model/interface inputs; exact supported runtime contracts remain subject to qualification.",
         "outputs_basis": "Expected result artifacts, separate from the current capabilities above.",
         "acceptance_note": "The summary does not replace source-specific model, reference, numerical/native and consumer requirements; detailed qualifications remain requirements, not passed tests.",
-        "references": []
+        "references": [
+          {
+            "id": "scpn-theta-pinch-core-published-source-20261028",
+            "title": "Published source checked 28 October 2026",
+            "url": "https://github.com/anulum/scpn-theta-pinch-core/commit/50732f22cdfbf9cc2cba6ca577fd86a134c12b86",
+            "source_revision": "50732f22cdfbf9cc2cba6ca577fd86a134c12b86",
+            "scope": "Published branch and selected source files observed at 2026-10-28T21:02:44.463650+00:00. Package versions were checked separately; hosted CI and installed/physical qualification were not reassessed by this documentary refresh."
+          }
+        ]
       }
     },
     {
@@ -6953,7 +7348,7 @@
       "sources": [
         "https://github.com/anulum/atlas-reactorum/blob/main/docs/ecosystem.md"
       ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "source_note": "Dated group source and research programme synopsis, 13 October 2026. Published source checkpoint on 28 October 2026: ba8d94726f3a10c867d1bbc90890cc51d5993d81. Selected source fingerprints and available reading documents were reconciled to this public revision; older technical captures retain their dates. No new runtime, scientific or physical acceptance is inferred.",
       "dossier": {
         "review_state": "Source-author editorial review incorporated; publication and scientific/runtime qualification remain separate.",
         "purpose": "Own tokamak physical modelling and reactor-design geometry, with explicitly qualified canonical plasma-solver dependencies.",
@@ -7115,6 +7510,14 @@
           {
             "document": "SCPN-TOKAMAK-CORE / docs/adr/0005-level0-device-physics.md (technical source capture 2026-10-14T02:36:18.551029+00:00)",
             "sha256": "a9cabe3a445d33ad752346300555cea71c648b43796d7bb0da0dbe1fa4b97d5a"
+          },
+          {
+            "document": "SCPN-TOKAMAK-CORE / README.md (published ba8d94726f3a10c867d1bbc90890cc51d5993d81; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "becc63a41085264b663114c27aa534113a04871ff20c973767361ebbbf7392bd"
+          },
+          {
+            "document": "SCPN-TOKAMAK-CORE / ROADMAP.md (published ba8d94726f3a10c867d1bbc90890cc51d5993d81; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "f537b4376323607f21a4056f1f02ab6b980eb2a909b0822529cd6f54d46c2820"
           }
         ],
         "acceptance_basis": "Next gates stated in the project roadmap; these are not completed checks. Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-14T02:36:18.551029+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance.",
@@ -7150,7 +7553,15 @@
         "inputs_basis": "Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-14T02:36:18.551029+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance.",
         "outputs_basis": "Programme deliverables remain architect-owned targets. The interface list also retains source-described result representations from the dated technical guide; this atlas update executes none of those workflows.",
         "acceptance_note": "The summary does not replace source-specific model, reference, numerical/native and consumer requirements; detailed qualifications remain requirements, not passed tests.",
-        "references": []
+        "references": [
+          {
+            "id": "scpn-tokamak-core-published-source-20261028",
+            "title": "Published source checked 28 October 2026",
+            "url": "https://github.com/anulum/scpn-tokamak-core/commit/ba8d94726f3a10c867d1bbc90890cc51d5993d81",
+            "source_revision": "ba8d94726f3a10c867d1bbc90890cc51d5993d81",
+            "scope": "Published branch and selected source files observed at 2026-10-28T21:02:44.463650+00:00. Package versions were checked separately; hosted CI and installed/physical qualification were not reassessed by this documentary refresh."
+          }
+        ]
       }
     },
     {
@@ -7182,7 +7593,7 @@
       "sources": [
         "https://github.com/anulum/atlas-reactorum/blob/main/docs/ecosystem.md"
       ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "source_note": "Dated group source and research programme synopsis, 13 October 2026. Published source checkpoint on 28 October 2026: da956bc74775e2b5aea418f53668e367cba83570. Selected source fingerprints and available reading documents were reconciled to this public revision; older technical captures retain their dates. No new runtime, scientific or physical acceptance is inferred.",
       "dossier": {
         "review_state": "Source-author editorial review incorporated; publication and scientific/runtime qualification remain separate.",
         "purpose": "Current-driven pinch, sheared-flow model and pulsed device design.",
@@ -7325,6 +7736,22 @@
           {
             "document": "Reactor architect programme synopsis",
             "sha256": "88c00ac2a2b71ab12314c11b3c905df16d79567e96c842073947eeb215795d22"
+          },
+          {
+            "document": "SCPN-Z-PINCH-CORE / README.md (published da956bc74775e2b5aea418f53668e367cba83570; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "30b10bbb55253cabea31b2383fc45259a4abf7984e1278b7e2077a424cce62e3"
+          },
+          {
+            "document": "SCPN-Z-PINCH-CORE / ROADMAP.md (published da956bc74775e2b5aea418f53668e367cba83570; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "8d4dab19f176ef00a18a3548da3019e54cded25afbc5cc5adf25717dbf2e2475"
+          },
+          {
+            "document": "SCPN-Z-PINCH-CORE / VALIDATION.md (published da956bc74775e2b5aea418f53668e367cba83570; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "524f6a17780d1f4b7d5ce73f0e122b7483ffadcbb40ef3dd53d51132726244d6"
+          },
+          {
+            "document": "SCPN-Z-PINCH-CORE / src/scpn_z_pinch_core/__init__.py (published da956bc74775e2b5aea418f53668e367cba83570; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "88575a76bb43265f63741f725abde2ed713d5ee0622e4ba8beed94ed104bfa70"
           }
         ],
         "acceptance_basis": "Next gates stated in the project roadmap; these are not completed checks.",
@@ -7362,7 +7789,15 @@
         "inputs_basis": "Architect-defined model/interface inputs; exact supported runtime contracts remain subject to qualification.",
         "outputs_basis": "Expected result artifacts, separate from the current capabilities above.",
         "acceptance_note": "The summary does not replace source-specific model, reference, numerical/native and consumer requirements; detailed qualifications remain requirements, not passed tests.",
-        "references": []
+        "references": [
+          {
+            "id": "scpn-z-pinch-core-published-source-20261028",
+            "title": "Published source checked 28 October 2026",
+            "url": "https://github.com/anulum/scpn-z-pinch-core/commit/da956bc74775e2b5aea418f53668e367cba83570",
+            "source_revision": "da956bc74775e2b5aea418f53668e367cba83570",
+            "scope": "Published branch and selected source files observed at 2026-10-28T21:02:44.463650+00:00. Package versions were checked separately; hosted CI and installed/physical qualification were not reassessed by this documentary refresh."
+          }
+        ]
       }
     },
     {
@@ -8327,7 +8762,7 @@
       "sources": [
         "https://github.com/anulum/synapse-channel/blob/main/docs/ecosystem.md"
       ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "source_note": "Dated group source and research programme synopsis, 13 October 2026. Published source checkpoint on 28 October 2026: 99ece6efe4f157aed092df4a47a780029160331f. Selected source fingerprints and available reading documents were reconciled to this public revision; older technical captures retain their dates. No new runtime, scientific or physical acceptance is inferred.",
       "dossier": {
         "review_state": "Bounded public-product purpose, inputs and scoped outcome semantics confirmed by the source owner. Current installed runtime, release and external effects require their own evidence.",
         "purpose": "Local-first coordination bus for AI agents: presence, file-scope work claims, messages, task status, receipts and an audit journal on one hub.",
@@ -8373,6 +8808,10 @@
           {
             "document": "docs/execution-outcomes.md (published source 99ece6efe4f157aed092df4a47a780029160331f; absent at release0.99.38)",
             "sha256": "ff15d242058848706c6d87c850c217181889671a104cdcc812bd31b7e627ba5c"
+          },
+          {
+            "document": "SYNAPSE-CHANNEL / src/synapse_channel/cli.py (published 99ece6efe4f157aed092df4a47a780029160331f; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "e527836a6e041d921b4de1954a6084d5337bb7612ae555b47d7282201f96cf11"
           }
         ],
         "references": [
@@ -8382,6 +8821,13 @@
             "url": "https://github.com/anulum/synapse-channel/blob/99ece6efe4f157aed092df4a47a780029160331f/README.md",
             "source_revision": "99ece6efe4f157aed092df4a47a780029160331f / SHA-256 e6b6498bb499a568c6a785e08d5449d20fdc79bbede1398b1a9ee99e0b9a70c9",
             "scope": "Public documentation observed on 2026-10-23; source description is distinct from measured qualification."
+          },
+          {
+            "id": "synapse-channel-published-source-20261028",
+            "title": "Published source checked 28 October 2026",
+            "url": "https://github.com/anulum/synapse-channel/commit/99ece6efe4f157aed092df4a47a780029160331f",
+            "source_revision": "99ece6efe4f157aed092df4a47a780029160331f",
+            "scope": "Published branch and selected source files observed at 2026-10-28T21:02:44.463650+00:00. Package versions were checked separately; hosted CI and installed/physical qualification were not reassessed by this documentary refresh."
           }
         ]
       }
@@ -8641,7 +9087,7 @@
       "sources": [
         "https://github.com/anulum/synapse-channel/blob/main/docs/ecosystem.md"
       ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "source_note": "Dated group source and research programme synopsis, 13 October 2026. Published source checkpoint on 28 October 2026: 1378e512f6dfeddad0826cea50738019445451c7. Selected source fingerprints and available reading documents were reconciled to this public revision; older technical captures retain their dates. No new runtime, scientific or physical acceptance is inferred.",
       "dossier": {
         "review_state": "Bounded Core source wording approved by the owning source seat; release, live deployment, security qualification and whole-workflow acceptance are separate.",
         "purpose": "Response-level factual-coherence checks against governed facts, with NLI/RAG scoring and optional model backends. A guardrail component is not proof that an answer is true or an execution-authority service.",
@@ -8676,6 +9122,19 @@
           {
             "document": "docs/ROADMAP_STATUS.md",
             "sha256": "ef8e32e463ac0d1e78b4692535f63ca8a51e27a384745b80fd1935aa9ea35083"
+          },
+          {
+            "document": "DIRECTOR-AI / src/director_ai/cli.py (published 1378e512f6dfeddad0826cea50738019445451c7; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "1004cfef175246db40bbaa7bf7c31aaa1600dfff5e86b7d693f806baac5ddd40"
+          }
+        ],
+        "references": [
+          {
+            "id": "director-ai-published-source-20261028",
+            "title": "Published source checked 28 October 2026",
+            "url": "https://github.com/anulum/director-ai/commit/1378e512f6dfeddad0826cea50738019445451c7",
+            "source_revision": "1378e512f6dfeddad0826cea50738019445451c7",
+            "scope": "Published branch and selected source files observed at 2026-10-28T21:02:44.463650+00:00. Package versions were checked separately; hosted CI and installed/physical qualification were not reassessed by this documentary refresh."
           }
         ]
       }
@@ -9163,7 +9622,7 @@
       "sources": [
         "https://github.com/anulum/synapse-channel/blob/main/docs/ecosystem.md"
       ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "source_note": "Dated group source and research programme synopsis, 13 October 2026. Published source checkpoint on 28 October 2026: 98eb9bf7a4e8c822292a7b574252960171924a94. Selected source fingerprints and available reading documents were reconciled to this public revision; older technical captures retain their dates. No new runtime, scientific or physical acceptance is inferred.",
       "dossier": {
         "review_state": "Bounded metadata has source-owner approval; detailed acceptance, partner requirements and release/runtime qualification remain open.",
         "purpose": "Local-first memory software for source-bound recall over project notes, code, research documents and structured findings, exposed through Python, CLI, MCP and HTTP surfaces.",
@@ -9213,6 +9672,38 @@
           {
             "document": "docs/guides/RESULT_CUSTODY.md (local committed source be06321f94ebbafcbe5c64e2cfbc4da004f9ac13; separately qualified)",
             "sha256": "180d7db956cebe4abbfe0245c2cb2ff3f2e79a7f98bd18049d7a16834513ac57"
+          },
+          {
+            "document": "REMANENTIA / cli.py (published 98eb9bf7a4e8c822292a7b574252960171924a94; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "9def847a9123e190542d728172f109cdcae68bba1fab702b0d023c900f233d07"
+          },
+          {
+            "document": "REMANENTIA / benchmark_manifest.py (published 98eb9bf7a4e8c822292a7b574252960171924a94; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "0347397332b8c06a867fdde3be960e648a74e917ac7f5ed125cc79002246f369"
+          },
+          {
+            "document": "REMANENTIA / feed_ingest.py (published 98eb9bf7a4e8c822292a7b574252960171924a94; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "c524d2dd83f1125a0cbd56fbd88313f3a085351b859149d75e7c4717d88310c4"
+          },
+          {
+            "document": "REMANENTIA / write_discipline.py (published 98eb9bf7a4e8c822292a7b574252960171924a94; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "89ed620fc32c5206c6280b54c872e8ce2277a47ab0f571ff53b13825ef6fc99a"
+          },
+          {
+            "document": "REMANENTIA / scorecard_report.py (published 98eb9bf7a4e8c822292a7b574252960171924a94; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "1de0181c6d921e5786b9e2eff6052fcc04c2d91c199289176f1412a1e4b3705a"
+          },
+          {
+            "document": "REMANENTIA / provenance_export.py (published 98eb9bf7a4e8c822292a7b574252960171924a94; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "d8d39b9dbc2378683b3ec8de6264e948efc0eabc734f40d9d4cf768dd31630f0"
+          },
+          {
+            "document": "REMANENTIA / store_manifest.py (published 98eb9bf7a4e8c822292a7b574252960171924a94; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "1151d737c102988050ba0b54b371bc0a4a51b00b88aaa81d9cbeb62b451f465f"
+          },
+          {
+            "document": "REMANENTIA / store_sources.py (published 98eb9bf7a4e8c822292a7b574252960171924a94; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "f1a5f5d8bdfe8039a27c5cb2378e077313d6238d8e0af1e71a39098e02855207"
           }
         ],
         "references": [
@@ -9222,6 +9713,13 @@
             "url": "https://github.com/anulum/remanentia/blob/98eb9bf7a4e8c822292a7b574252960171924a94/README.md",
             "source_revision": "98eb9bf7a4e8c822292a7b574252960171924a94 / SHA-256 00196802efb9575ed44e226c2a98e7f95935c93bf2258473c7516facd5c3c080",
             "scope": "Public documentation observed on 2026-10-23; source description is distinct from measured qualification."
+          },
+          {
+            "id": "remanentia-published-source-20261028",
+            "title": "Published source checked 28 October 2026",
+            "url": "https://github.com/anulum/remanentia/commit/98eb9bf7a4e8c822292a7b574252960171924a94",
+            "source_revision": "98eb9bf7a4e8c822292a7b574252960171924a94",
+            "scope": "Published branch and selected source files observed at 2026-10-28T21:02:44.463650+00:00. Package versions were checked separately; hosted CI and installed/physical qualification were not reassessed by this documentary refresh."
           }
         ],
         "inputs_basis": "Source-owner-approved descriptive metadata from exact locally committed documentation; no working-buffer or private Portal body imported.",
@@ -9370,7 +9868,7 @@
         "value": "beta",
         "source": "pyproject.toml classifier 'Development Status :: 4 - Beta'"
       },
-      "boundary": "Capability-specific maturity; no certification or field approval claim. Public main observed on 23 October 2026 is c56e6a8104597fa4c85b4315f79d3c2e689eef40; its SC-NeuroCore CI run 39941686104 completed with failure. Package release 3.16.0 and later published-source changes remain separate. The documented typed scalar graph IR does not provide arbitrary equation-to-native-IR lowering.",
+      "boundary": "Capability-specific maturity; no certification or field approval claim. Published source checked on 28 October 2026 is efacfde75a56cd3dbbd8e2746e43f45d3981fe4c. Its documented compile_to_ir frontend lowers supported EquationNeuron models into native IR, and recompile_ir checks source replay. Matching engine instructions are required; published source, package release 3.16.0, hosted CI, desktop installation and physical FPGA qualification remain separate.",
       "repository_record": {
         "stage": "Local repository initialized",
         "as_of": "2026-10-13T16:13:52.413927+00:00",
@@ -12869,7 +13367,7 @@
       "sources": [
         "https://github.com/anulum/sc-neurocore/blob/main/docs/ecosystem.md"
       ],
-      "source_note": "Published main, selected documentation and exact-head CI independently checked on 23 October 2026. The published README separates typed scalar graph operations from the equation compiler; source or CI metadata does not qualify the whole compiler, a desktop installation or a physical board. Earlier technical-guide source captures retain their dates.",
+      "source_note": "Published README, validation notes and package declaration refreshed on 28 October 2026; source now requires Python 3.11 or later. The equation-native-IR API documents supported integration/word/state/source contracts and replay refusal, rather than arbitrary unsupported equation inference. No exact-head CI query or domain execution was performed in this documentary refresh; the 23 October CI observation remains a dated historical reference. Earlier technical-guide captures retain their dates.",
       "dossier": {
         "review_state": "Architect dossier revision 2: initial complete inventory; group content confirmation pending.",
         "purpose": "Permanent public development, composition and integration workbench for stochastic and spiking neural modelling, encoding, learning, simulation, selected hardware compilation and evidence inspection.",
@@ -12917,7 +13415,7 @@
           "The document distinguishes Python network features from Rust/MPI subsets and canonical SC dispatch from independent polyglot kernels. Broad backend lists cannot establish full feature parity.",
           "The hardware pipeline describes traceability, formal and caller-supplied safety evidence. Its library tooling does not provide certification or approval of a deployed product.",
           "Software-runtime parity, scientific source-model fidelity, Python/RTL agreement, synthesis/timing and measured hardware behaviour need their own evidence. Base-package generated RTL and a complete polyglot row cannot stand in for all of those results.",
-          "At the published source revision checked on 23 October 2026, typed integer graph builders provide explicit casts, rounding/saturation, text round trips and HDL/CIRCT emission. Arbitrary equation-to-native-IR lowering is not provided by those graph operations. Scalar-graph evidence, equation/state/integrator lowering, full compiler acceptance and physical measurements have separate scopes."
+          "The published equation-native-IR documentation checked on 28 October 2026 describes compile_to_ir for supported EquationNeuron models and recompile_ir for exact canonical graph replay. It requires a matching engine build; supported source guards, word widths, integration/pipeline modes and simulation-only trap checks retain explicit limits. Unsupported models are not arbitrary equation inference, and source checksums do not authenticate an author or qualify installed software or physical hardware."
         ],
         "partner_needs": [
           "Independent model/source reviewers, workload integrators and later physical target access; first fit is one full model equation/initialisation/trace through real public API and exact reference/RTL path. (architect proposal)"
@@ -12958,12 +13456,24 @@
           {
             "document": "SC-NEUROCORE / pyproject.toml (published c56e6a8104597fa4c85b4315f79d3c2e689eef40; checked 2026-10-23T14:44:06.614632+00:00)",
             "sha256": "93b4f8fa1e9ea16ceeb6df72877cf0cee5f779f1a03ad7e542353fb38c5fc64d"
+          },
+          {
+            "document": "SC-NEUROCORE / README.md (published efacfde75a56cd3dbbd8e2746e43f45d3981fe4c; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "6edf6e287822b5a5f20f469d5be3e4fc7e64e637b7587511535814ba84b2ee15"
+          },
+          {
+            "document": "SC-NEUROCORE / VALIDATION.md (published efacfde75a56cd3dbbd8e2746e43f45d3981fe4c; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "f13b7547f924a079fefa7dac068e1536670fc2fa68e7fb6f7f26433ab05cd3bd"
+          },
+          {
+            "document": "SC-NEUROCORE / pyproject.toml (published efacfde75a56cd3dbbd8e2746e43f45d3981fe4c; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "85c569c6064bdf3406f473d9467b817b0ff1d9ab5e9311b61dc9e1d18efae9bb"
           }
         ],
         "limitations": [
           "The parent remains a permanent public development, composition and integration workbench.",
           "Model-source fidelity, cross-runtime parity and physical acceptance are distinct qualifications.",
-          "At the published source revision checked on 23 October 2026, typed integer graph builders provide explicit casts, rounding/saturation, text round trips and HDL/CIRCT emission. Arbitrary equation-to-native-IR lowering is not provided by those graph operations. Scalar-graph evidence, equation/state/integrator lowering, full compiler acceptance and physical measurements have separate scopes."
+          "The published equation-native-IR documentation checked on 28 October 2026 describes compile_to_ir for supported EquationNeuron models and recompile_ir for exact canonical graph replay. It requires a matching engine build; supported source guards, word widths, integration/pipeline modes and simulation-only trap checks retain explicit limits. Unsupported models are not arbitrary equation inference, and source checksums do not authenticate an author or qualify installed software or physical hardware."
         ],
         "references": [
           {
@@ -12986,6 +13496,20 @@
             "url": "https://github.com/anulum/sc-neurocore/actions/runs/39941686104",
             "source_revision": "c56e6a8104597fa4c85b4315f79d3c2e689eef40 / run 39941686104",
             "scope": "Hosted workflow metadata observed at 2026-10-23T14:36:42.870811+00:00: completed / failure. This is not independent installed, scientific or physical acceptance."
+          },
+          {
+            "id": "sc-neurocore-published-source-20261028",
+            "title": "Published source checked 28 October 2026",
+            "url": "https://github.com/anulum/sc-neurocore/commit/efacfde75a56cd3dbbd8e2746e43f45d3981fe4c",
+            "source_revision": "efacfde75a56cd3dbbd8e2746e43f45d3981fe4c",
+            "scope": "Published branch and selected source files observed at 2026-10-28T21:02:44.463650+00:00. Package versions were checked separately; hosted CI and installed/physical qualification were not reassessed by this documentary refresh."
+          },
+          {
+            "id": "sc-neurocore-equation-native-ir-20261028",
+            "title": "Published equation model compilation and source replay contract",
+            "url": "https://github.com/anulum/sc-neurocore/blob/efacfde75a56cd3dbbd8e2746e43f45d3981fe4c/docs/api/equation-native-ir.md",
+            "source_revision": "efacfde75a56cd3dbbd8e2746e43f45d3981fe4c",
+            "scope": "Complete published API document read on 28 October 2026; source declaration, not a new native execution or physical acceptance."
           }
         ],
         "inputs_basis": "Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-15T20:45:20.185924+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance.",
@@ -15104,7 +15628,7 @@
       "sources": [
         "https://github.com/anulum/sc-neurocore/blob/main/docs/ecosystem.md"
       ],
-      "source_note": "Release metadata independently checked on 23 October 2026; the owning manager reconfirmed the physical qualification boundary. Earlier technical source captures retain their original dates. Published main 1eba54132622425949f68acdb3db12121a6f6f46 was independently checked on 23 October 2026; all nine previously selected documentation/source byte bindings were unchanged and exact-head CI run 39886632657 completed with success. This source/CI observation supplies no board or physical instrument acceptance.",
+      "source_note": "Release metadata independently checked on 23 October 2026; the owning manager reconfirmed the physical qualification boundary. Earlier technical source captures retain their original dates. Published main 1eba54132622425949f68acdb3db12121a6f6f46 was independently checked on 23 October 2026; all nine previously selected documentation/source byte bindings were unchanged and exact-head CI run 39886632657 completed with success. This source/CI observation supplies no board or physical instrument acceptance. Published source checkpoint on 28 October 2026: 2ece51ab0780fae865b8b2e27ae4c9b77203bde6. Selected source fingerprints and available reading documents were reconciled to this public revision; older technical captures retain their dates. No new runtime, scientific or physical acceptance is inferred.",
       "dossier": {
         "review_state": "Architect dossier revision 2: initial complete inventory; group content confirmation pending.",
         "purpose": "Fabric-clock instrument for complete control-loop and selected accelerator timing, with simulation/host analysis separated from eventual board timing, fault response and rail-energy evidence.",
@@ -15205,6 +15729,13 @@
             "url": "https://github.com/anulum/loop-timing-witness/actions/runs/39886632657",
             "source_revision": "1eba54132622425949f68acdb3db12121a6f6f46 / run 39886632657",
             "scope": "Hosted workflow metadata observed at 2026-10-23T14:36:41.911139+00:00: completed / success. This is not independent installed, scientific or physical acceptance."
+          },
+          {
+            "id": "loop-timing-witness-published-source-20261028",
+            "title": "Published source checked 28 October 2026",
+            "url": "https://github.com/anulum/loop-timing-witness/commit/2ece51ab0780fae865b8b2e27ae4c9b77203bde6",
+            "source_revision": "2ece51ab0780fae865b8b2e27ae4c9b77203bde6",
+            "scope": "Published branch and selected source files observed at 2026-10-28T21:02:44.463650+00:00. Package versions were checked separately; hosted CI and installed/physical qualification were not reassessed by this documentary refresh."
           }
         ],
         "inputs_basis": "Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-18T14:50:15.082871+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance.",
@@ -15421,7 +15952,7 @@
       "url": "https://github.com/anulum/scpn-quantum-control",
       "packages": [],
       "maturity": "beta",
-      "boundary": "Released software is version 1.2.0. Published source observed on 23 October 2026 is 9e316d4a999275d873543d28aa7ee640175ff0db; its CI run 39938297231 completed with failure. Source publication does not approve split-repository readiness, a new campaign, quantum advantage or hardware-result qualification.",
+      "boundary": "Released software is version 1.2.0. Published source checked on 28 October 2026 is e9c06c1ed7e39e257812558db313a79fe0ce8f92. Selected README, validation and package declarations were refreshed; the earlier 23 October failed CI observation is historical, not a verdict on this head. Source publication does not approve split-repository readiness, a new campaign, quantum advantage or hardware-result qualification.",
       "repository_record": {
         "stage": "Local repository initialized",
         "as_of": "2026-10-13T16:13:52.413927+00:00",
@@ -15856,7 +16387,7 @@
       "sources": [
         "https://github.com/anulum/scpn-quantum-control/blob/main/docs/ecosystem.md"
       ],
-      "source_note": "The already-selected public README and roadmap were refreshed on 23 October 2026 from the exact observed published revision. The roadmap distinguishes historical targets from current source/evidence contracts. Detailed outward passport approval remains unavailable; earlier technical and scientific source reports retain their dates and limits.",
+      "source_note": "The already-selected public README and roadmap were refreshed on 23 October 2026 from the exact observed published revision. The roadmap distinguishes historical targets from current source/evidence contracts. Detailed outward passport approval remains unavailable; earlier technical and scientific source reports retain their dates and limits. Published source checkpoint on 28 October 2026: e9c06c1ed7e39e257812558db313a79fe0ce8f92. Selected source fingerprints and available reading documents were reconciled to this public revision; older technical captures retain their dates. No new runtime, scientific or physical acceptance is inferred.",
       "dossier": {
         "review_state": "Public README and documentation may be cited. An outward-approved detailed passport remains unavailable, as reported by the owning manager on 2026-10-23.",
         "purpose": "Integrated modelling, simulation, compilation, gradients, control, provider workflows, analysis and Quantum Studio.",
@@ -15888,6 +16419,13 @@
             "url": "https://github.com/anulum/scpn-quantum-control/actions/runs/39938297231",
             "source_revision": "9e316d4a999275d873543d28aa7ee640175ff0db / run 39938297231",
             "scope": "Hosted workflow metadata observed at 2026-10-23T14:36:43.758187+00:00: completed / failure. This is not independent installed, scientific or physical acceptance."
+          },
+          {
+            "id": "scpn-quantum-control-published-source-20261028",
+            "title": "Published source checked 28 October 2026",
+            "url": "https://github.com/anulum/scpn-quantum-control/commit/e9c06c1ed7e39e257812558db313a79fe0ce8f92",
+            "source_revision": "e9c06c1ed7e39e257812558db313a79fe0ce8f92",
+            "scope": "Published branch and selected source files observed at 2026-10-28T21:02:44.463650+00:00. Package versions were checked separately; hosted CI and installed/physical qualification were not reassessed by this documentary refresh."
           }
         ],
         "source_records": [
@@ -15898,6 +16436,18 @@
           {
             "document": "SCPN-QUANTUM-CONTROL / ROADMAP.md (published 9e316d4a999275d873543d28aa7ee640175ff0db; checked 2026-10-23T14:44:06.614632+00:00)",
             "sha256": "b4da5331cd52da432bde5c04981ef0d52798b284df8d9550c0a098736a86b82d"
+          },
+          {
+            "document": "SCPN-QUANTUM-CONTROL / README.md (published e9c06c1ed7e39e257812558db313a79fe0ce8f92; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "fd5f93ae81d6e3594d84b64bb09111f5ac7529c2183c00a9a53870c5ec87e5db"
+          },
+          {
+            "document": "SCPN-QUANTUM-CONTROL / VALIDATION.md (published e9c06c1ed7e39e257812558db313a79fe0ce8f92; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "3f5d766f306c9406fd1a36ccbe1b7ba22d14ddabc02ff0cd32d0ea82a3133452"
+          },
+          {
+            "document": "SCPN-QUANTUM-CONTROL / pyproject.toml (published e9c06c1ed7e39e257812558db313a79fe0ce8f92; checked 2026-10-28T21:02:44.463650+00:00)",
+            "sha256": "9061e4e82a589157587a725aa57007092307ab833c5500f0efead6763ebf5754"
           }
         ]
       }
