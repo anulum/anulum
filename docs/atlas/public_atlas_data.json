@@ -1189,7 +1189,7 @@
       }
     }
   },
-  "version": "0.13+funding-state.1+portfolio-refresh.1+owner-source.1+discovery-resources.1+passport-coherence.1+registry-reconciliation.1+hushline-source.1+control-spo-owner.1+funding-programme-sources.1+published-source-delta.1+published-source-refresh.2",
+  "version": "0.13+funding-state.1+portfolio-refresh.1+owner-source.1+discovery-resources.1+passport-coherence.1+registry-reconciliation.1+hushline-source.1+control-spo-owner.1+funding-programme-sources.1+published-source-delta.1+published-source-refresh.2+published-source-refresh.3",
   "content_state": "Projects and programme construction in progress; funding-route application states are separately dated and qualified.",
   "groups": [
     {
@@ -1328,7 +1328,7 @@
       "sources": [
         "https://github.com/anulum/atlas-reactorum/blob/main/docs/ecosystem.md"
       ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026. Published source checkpoint on 28 October 2026: a0338892e9bf1a7518d185f508318cff837f85d8. Selected source fingerprints and available reading documents were reconciled to this public revision; older technical captures retain their dates. No new runtime, scientific or physical acceptance is inferred.",
+      "source_note": "Dated group source and research programme synopsis, 13 October 2026. Published source checkpoint on 1 November 2026: 1764aa2f340046cee6650556cb7394c1d21852c5. Selected source fingerprints and available reading documents were reconciled to this public revision; older technical captures retain their dates. No new runtime, scientific or physical acceptance is inferred.",
       "dossier": {
         "review_state": "Source-author editorial review incorporated; publication and scientific/runtime qualification remain separate.",
         "purpose": "Source and rights library with historical reactor taxonomy and interactive citation views.",
@@ -1384,6 +1384,10 @@
           {
             "document": "ATLAS-REACTORUM / ROADMAP.md (published a0338892e9bf1a7518d185f508318cff837f85d8; checked 2026-10-28T21:02:44.463650+00:00)",
             "sha256": "de782c04fd9a4cd56e86b561f861ac227a0caad8959833b22ae0b250d3769ea5"
+          },
+          {
+            "document": "ATLAS-REACTORUM / pyproject.toml (published 1764aa2f340046cee6650556cb7394c1d21852c5; checked 2026-11-01T10:35:57.086356+00:00)",
+            "sha256": "beb3e229fe560aeb215301af26c7e9fdf3b31a87c44cd1c15f702f2069ebe340"
           }
         ],
         "acceptance_basis": "Next gates stated in the project roadmap; these are not completed checks.",
@@ -1403,6 +1407,13 @@
             "url": "https://github.com/anulum/atlas-reactorum/commit/a0338892e9bf1a7518d185f508318cff837f85d8",
             "source_revision": "a0338892e9bf1a7518d185f508318cff837f85d8",
             "scope": "Published branch and selected source files observed at 2026-10-28T21:02:44.463650+00:00. Package versions were checked separately; hosted CI and installed/physical qualification were not reassessed by this documentary refresh."
+          },
+          {
+            "id": "atlas-reactorum-published-source-20261101",
+            "title": "Published source checked 1 November 2026",
+            "url": "https://github.com/anulum/atlas-reactorum/commit/1764aa2f340046cee6650556cb7394c1d21852c5",
+            "source_revision": "1764aa2f340046cee6650556cb7394c1d21852c5",
+            "scope": "Public branch and selected files observed at 2026-11-01T10:35:57.086356+00:00. Package publishers were checked separately. Hosted CI, installed runtime and scientific/physical qualification were not reassessed by this documentary refresh."
           }
         ]
       }
@@ -2424,7 +2435,7 @@
         "value": "beta",
         "source": "pyproject.toml classifier"
       },
-      "boundary": "",
+      "boundary": "The public README checked on 1 November 2026 corrects the FreeGS same-case strict-parity claim: the v1 public-example report is legacy, non-admitting evidence, so strict parity remains blocked. The full-fidelity campaign remains not_full_fidelity and the external parity rollup remains blocked. Existing bounded reference results do not establish complete reactor or physical acceptance.",
       "repository_record": {
         "stage": "Local repository initialized",
         "as_of": "2026-10-13T16:13:52.413927+00:00",
@@ -2519,7 +2530,7 @@
       "sources": [
         "https://github.com/anulum/atlas-reactorum/blob/main/docs/ecosystem.md"
       ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026. Published source checkpoint on 28 October 2026: 5edd51799a535617d0f3a860b900773ac94c1d4b. Selected source fingerprints and available reading documents were reconciled to this public revision; older technical captures retain their dates. No new runtime, scientific or physical acceptance is inferred.",
+      "source_note": "Dated group source and research programme synopsis, 13 October 2026. Published source checkpoint on 1 November 2026: 9a5eb14a8810f834513ccc484b181c558b49cd47. Selected source fingerprints and available reading documents were reconciled to this public revision; older technical captures retain their dates. No new runtime, scientific or physical acceptance is inferred.",
       "dossier": {
         "review_state": "Source-author editorial review incorporated; publication and scientific/runtime qualification remain separate.",
         "purpose": "Canonical plasma solver mathematics, transport/equilibrium and existing research pipeline.",
@@ -2624,6 +2635,10 @@
           {
             "document": "SCPN-FUSION-CORE / pyproject.toml (published 5edd51799a535617d0f3a860b900773ac94c1d4b; checked 2026-10-28T21:02:44.463650+00:00)",
             "sha256": "33aa1a82961bb994b08aea632602fe87dbb2990b2af961a889490a42133f60de"
+          },
+          {
+            "document": "SCPN-FUSION-CORE / README.md (published 9a5eb14a8810f834513ccc484b181c558b49cd47; checked 2026-11-01T10:35:57.086356+00:00)",
+            "sha256": "5dbf51597efa1cfa46695ab1890a172b032dc1d7a538492a411a72d6650be850"
           }
         ],
         "acceptance_basis": "Retained architect qualification requirements and the existing cited technical-guide boundaries. Historical checked implementation milestones are shown separately as dated source provenance; this update passes no numerical, runtime or physical acceptance gate.",
@@ -2650,7 +2665,17 @@
             "url": "https://github.com/anulum/scpn-fusion-core/commit/5edd51799a535617d0f3a860b900773ac94c1d4b",
             "source_revision": "5edd51799a535617d0f3a860b900773ac94c1d4b",
             "scope": "Published branch and selected source files observed at 2026-10-28T21:02:44.463650+00:00. Package versions were checked separately; hosted CI and installed/physical qualification were not reassessed by this documentary refresh."
+          },
+          {
+            "id": "scpn-fusion-core-published-source-20261101",
+            "title": "Published source checked 1 November 2026",
+            "url": "https://github.com/anulum/scpn-fusion-core/commit/9a5eb14a8810f834513ccc484b181c558b49cd47",
+            "source_revision": "9a5eb14a8810f834513ccc484b181c558b49cd47",
+            "scope": "Public branch and selected files observed at 2026-11-01T10:35:57.086356+00:00. Package publishers were checked separately. Hosted CI, installed runtime and scientific/physical qualification were not reassessed by this documentary refresh."
           }
+        ],
+        "limitations": [
+          "The 1 November published-source check retains the corrected FreeGS boundary: strict parity is blocked on legacy, non-admitting evidence. The public external-parity rollup reports reproducibility 0.9 and parity 0.1; these are source-reported scores, not measurements rerun by this atlas."
         ]
       }
     },
@@ -4735,7 +4760,7 @@
       "sources": [
         "https://github.com/anulum/atlas-reactorum/blob/main/docs/ecosystem.md"
       ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026. Published source checkpoint on 28 October 2026: b44f33e2a082ca6b34f22cd587c5c4f0e8cb2c89. Selected source fingerprints and available reading documents were reconciled to this public revision; older technical captures retain their dates. No new runtime, scientific or physical acceptance is inferred.",
+      "source_note": "Dated group source and research programme synopsis, 13 October 2026. Published source checkpoint on 1 November 2026: 0ea2b540dbb7d29ea8af3f91be4d7eee30b396d1. Selected source fingerprints and available reading documents were reconciled to this public revision; older technical captures retain their dates. No new runtime, scientific or physical acceptance is inferred.",
       "dossier": {
         "review_state": "Source-author editorial review incorporated; publication and scientific/runtime qualification remain separate.",
         "purpose": "Existing magneto-inertial dynamics/runtime with maintained multi-language/RTL chain.",
@@ -4836,6 +4861,13 @@
             "url": "https://github.com/anulum/scpn-mif-core/commit/b44f33e2a082ca6b34f22cd587c5c4f0e8cb2c89",
             "source_revision": "b44f33e2a082ca6b34f22cd587c5c4f0e8cb2c89",
             "scope": "Published branch and selected source files observed at 2026-10-28T21:02:44.463650+00:00. Package versions were checked separately; hosted CI and installed/physical qualification were not reassessed by this documentary refresh."
+          },
+          {
+            "id": "scpn-mif-core-published-source-20261101",
+            "title": "Published source checked 1 November 2026",
+            "url": "https://github.com/anulum/scpn-mif-core/commit/0ea2b540dbb7d29ea8af3f91be4d7eee30b396d1",
+            "source_revision": "0ea2b540dbb7d29ea8af3f91be4d7eee30b396d1",
+            "scope": "Public branch and selected files observed at 2026-11-01T10:35:57.086356+00:00. Package publishers were checked separately. Hosted CI, installed runtime and scientific/physical qualification were not reassessed by this documentary refresh."
           }
         ],
         "acceptance_basis": "Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-18T13:03:55.198854+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance."
@@ -8101,7 +8133,7 @@
         }
       ],
       "sources": [],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "source_note": "Dated group source and research programme synopsis, 13 October 2026. Published source checkpoint on 1 November 2026: 347b37e7475a567dcffcb214fd68d43f918a93ff. Selected source fingerprints and available reading documents were reconciled to this public revision; older technical captures retain their dates. No new runtime, scientific or physical acceptance is inferred.",
       "dossier": {
         "review_state": "Dated public-source response from the project source owner incorporated; interface qualification, quantified resources, partner agreements and physical acceptance remain open.",
         "purpose": "Synchronisation analysis and evaluation of early-warning detectors on coupled phase-oscillator dynamics, with a Rust kernel.",
@@ -8226,10 +8258,27 @@
           {
             "document": "SCPN-PHASE-ORCHESTRATOR / docs/guide/hardware_deployment.md (published revision e58f64439936f54ad87140842011550c47e523b7; checked 2026-10-23; last path change deeea22e552bf9550812536e8423d290a282f031 2026-09-30T10:44:11+02:00)",
             "sha256": "69b6e15ced913a313b1b0e8f20e9e56d4907ae55c64a06fc0d26427f4e74c9e5"
+          },
+          {
+            "document": "SCPN-PHASE-ORCHESTRATOR / README.md (published 347b37e7475a567dcffcb214fd68d43f918a93ff; checked 2026-11-01T10:35:57.086356+00:00)",
+            "sha256": "8ba0693931c6de6fc254d15ed7bbd97215bac8c29b3fa3ddcd5f707ff41c40e9"
+          },
+          {
+            "document": "SCPN-PHASE-ORCHESTRATOR / pyproject.toml (published 347b37e7475a567dcffcb214fd68d43f918a93ff; checked 2026-11-01T10:35:57.086356+00:00)",
+            "sha256": "54fa68fbe350867c974799a459d85ada78242f72e130a3aa941eee20ef75338b"
           }
         ],
         "inputs_basis": "Source-owner documentary response dated 23 October 2026, independently checked against pinned published revision e58f64439936f54ad87140842011550c47e523b7. Original programme deliverables and earlier source records are retained. No runtime job, new review approval or physical acceptance is supplied.",
-        "outputs_basis": "Source-owner documentary response dated 23 October 2026, independently checked against pinned published revision e58f64439936f54ad87140842011550c47e523b7. Original programme deliverables and earlier source records are retained. No runtime job, new review approval or physical acceptance is supplied."
+        "outputs_basis": "Source-owner documentary response dated 23 October 2026, independently checked against pinned published revision e58f64439936f54ad87140842011550c47e523b7. Original programme deliverables and earlier source records are retained. No runtime job, new review approval or physical acceptance is supplied.",
+        "references": [
+          {
+            "id": "scpn-phase-orchestrator-published-source-20261101",
+            "title": "Published source checked 1 November 2026",
+            "url": "https://github.com/anulum/scpn-phase-orchestrator/commit/347b37e7475a567dcffcb214fd68d43f918a93ff",
+            "source_revision": "347b37e7475a567dcffcb214fd68d43f918a93ff",
+            "scope": "Public branch and selected files observed at 2026-11-01T10:35:57.086356+00:00. Package publishers were checked separately. Hosted CI, installed runtime and scientific/physical qualification were not reassessed by this documentary refresh."
+          }
+        ]
       }
     },
     {
@@ -8470,7 +8519,7 @@
         }
       ],
       "sources": [],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "source_note": "Dated group source and research programme synopsis, 13 October 2026. Published source checkpoint on 1 November 2026: 170477f42e52aea4b56713acf067876b97f1edf4. Selected source fingerprints and available reading documents were reconciled to this public revision; older technical captures retain their dates. No new runtime, scientific or physical acceptance is inferred.",
       "dossier": {
         "review_state": "Dated public-source response from the project source owner incorporated; interface qualification, quantified resources, partner agreements and physical acceptance remain open.",
         "purpose": "Compiler from stochastic Petri nets to controllers with runtime contracts, and plasma-control research paths.",
@@ -8600,10 +8649,31 @@
           {
             "document": "SCPN-CONTROL / docs/_generated/capability_manifest.json (published revision 288243a09ec557147f0b917590238a7f62fbefbb; checked 2026-10-23; last path change 2026-10-12T00:05:25+02:00)",
             "sha256": "cdb3bec34dd330e6dc8167035fa80e0cff82e198004e8b7866d67025c348d510"
+          },
+          {
+            "document": "SCPN-CONTROL / README.md (published 170477f42e52aea4b56713acf067876b97f1edf4; checked 2026-11-01T10:35:57.086356+00:00)",
+            "sha256": "f1c3172ac546d1a0d6f614bcbbde4729a2b4b212cbe03ba61126475f6822f4ae"
+          },
+          {
+            "document": "SCPN-CONTROL / pyproject.toml (published 170477f42e52aea4b56713acf067876b97f1edf4; checked 2026-11-01T10:35:57.086356+00:00)",
+            "sha256": "3a913f49388e6f7e4ca325de039550dc6f5295c990a2a8f6c22c9b831ade1180"
+          },
+          {
+            "document": "SCPN-CONTROL / src/scpn_control/cli.py (published 170477f42e52aea4b56713acf067876b97f1edf4; checked 2026-11-01T10:35:57.086356+00:00)",
+            "sha256": "9404c43e47d6273df328d07aa670a1b44d761ba6f0c3dde20c463303b4ca319c"
           }
         ],
         "inputs_basis": "Source-owner documentary response dated 23 October 2026, independently checked against pinned published revision 288243a09ec557147f0b917590238a7f62fbefbb. Original programme deliverables and earlier source records are retained. No runtime job, new review approval or physical acceptance is supplied.",
-        "outputs_basis": "Source-owner documentary response dated 23 October 2026, independently checked against pinned published revision 288243a09ec557147f0b917590238a7f62fbefbb. Original programme deliverables and earlier source records are retained. No runtime job, new review approval or physical acceptance is supplied."
+        "outputs_basis": "Source-owner documentary response dated 23 October 2026, independently checked against pinned published revision 288243a09ec557147f0b917590238a7f62fbefbb. Original programme deliverables and earlier source records are retained. No runtime job, new review approval or physical acceptance is supplied.",
+        "references": [
+          {
+            "id": "scpn-control-published-source-20261101",
+            "title": "Published source checked 1 November 2026",
+            "url": "https://github.com/anulum/scpn-control/commit/170477f42e52aea4b56713acf067876b97f1edf4",
+            "source_revision": "170477f42e52aea4b56713acf067876b97f1edf4",
+            "scope": "Public branch and selected files observed at 2026-11-01T10:35:57.086356+00:00. Package publishers were checked separately. Hosted CI, installed runtime and scientific/physical qualification were not reassessed by this documentary refresh."
+          }
+        ]
       }
     },
     {
@@ -8675,9 +8745,9 @@
       "kind": "package",
       "phase": "Released software · ongoing development",
       "work_status": "In progress",
-      "release": "0.99.38",
+      "release": "0.99.41",
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-11",
+      "as_of": "2026-11-01",
       "url": "https://github.com/anulum/synapse-channel",
       "packages": [
         {
@@ -8693,7 +8763,7 @@
         "value": "beta",
         "source": "packaging classifier"
       },
-      "boundary": "Beta maturity, before 1.0.",
+      "boundary": "Published package 0.99.41 remains beta, before 1.0, and requires Python 3.11 or later. Source-described recovery and protected-execution APIs retain their independently supervised custody and isolation requirements; their presence does not activate a writer or recovery service.",
       "resource_needs": [
         {
           "id": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS:9",
@@ -8762,7 +8832,7 @@
       "sources": [
         "https://github.com/anulum/synapse-channel/blob/main/docs/ecosystem.md"
       ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026. Published source checkpoint on 28 October 2026: 99ece6efe4f157aed092df4a47a780029160331f. Selected source fingerprints and available reading documents were reconciled to this public revision; older technical captures retain their dates. No new runtime, scientific or physical acceptance is inferred.",
+      "source_note": "Dated group source and research programme synopsis, 13 October 2026. Published source checkpoint on 1 November 2026: 68bce0511dd13ce4d9f7576d0aa5723e80c209e8. Selected source fingerprints and available reading documents were reconciled to this public revision; older technical captures retain their dates. No new runtime, scientific or physical acceptance is inferred. PyPI synapse-channel 0.99.41 was observed on 1 November 2026 with non-yanked published files. This package observation does not qualify component extraction, hosted CI, installed consumers or hardware.",
       "dossier": {
         "review_state": "Bounded public-product purpose, inputs and scoped outcome semantics confirmed by the source owner. Current installed runtime, release and external effects require their own evidence.",
         "purpose": "Local-first coordination bus for AI agents: presence, file-scope work claims, messages, task status, receipts and an audit journal on one hub.",
@@ -8790,7 +8860,7 @@
         "acceptance": [
           "Use the documented host, transport and version profile. A connected host is not proof of current hub readiness.",
           "A delivery receipt does not prove that the recipient model read the message or that an external action completed.",
-          "Scoped execution outcomes are documented in source since 19 October 2026 for the next release; they are not in released 0.99.38. An outcome observation is separate from an execution grant, lease or independent attestation."
+          "The 19 October source inspection of scoped execution outcomes preceded the package 0.99.41 observation on 1 November 2026; this atlas does not independently exercise those APIs. An outcome observation is separate from an execution grant, lease or independent attestation."
         ],
         "partner_needs": [
           "Startup funding, strategic collaborators and aligned co-owners are sought in the source. No named partner, accepted delivery or commercial commitment is established by this record."
@@ -8812,6 +8882,26 @@
           {
             "document": "SYNAPSE-CHANNEL / src/synapse_channel/cli.py (published 99ece6efe4f157aed092df4a47a780029160331f; checked 2026-10-28T21:02:44.463650+00:00)",
             "sha256": "e527836a6e041d921b4de1954a6084d5337bb7612ae555b47d7282201f96cf11"
+          },
+          {
+            "document": "SYNAPSE-CHANNEL / README.md (published 68bce0511dd13ce4d9f7576d0aa5723e80c209e8; checked 2026-11-01T10:35:57.086356+00:00)",
+            "sha256": "55d4192b806e2e16c8373044aa519c2aeb0e75d479e925f3685bff595af098a1"
+          },
+          {
+            "document": "SYNAPSE-CHANNEL / ARCHITECTURE.md (published 68bce0511dd13ce4d9f7576d0aa5723e80c209e8; checked 2026-11-01T10:35:57.086356+00:00)",
+            "sha256": "564ce48c5cb63006cd5a44516d42f4f063972de26bca727b5d71dc7234d08a36"
+          },
+          {
+            "document": "SYNAPSE-CHANNEL / pyproject.toml (published 68bce0511dd13ce4d9f7576d0aa5723e80c209e8; checked 2026-11-01T10:35:57.086356+00:00)",
+            "sha256": "543525639f2d7ae5cc27a7072cd7ed5911d29b5cb4d3f21cae9742ace27a7491"
+          },
+          {
+            "document": "SYNAPSE-CHANNEL / src/synapse_channel/__init__.py (published 68bce0511dd13ce4d9f7576d0aa5723e80c209e8; checked 2026-11-01T10:35:57.086356+00:00)",
+            "sha256": "c1cf9f3356e191a184b8a3b3d32f28e1bbea0b11511a7bafafe983d49ffa002b"
+          },
+          {
+            "document": "SYNAPSE-CHANNEL / src/synapse_channel/cli.py (published 68bce0511dd13ce4d9f7576d0aa5723e80c209e8; checked 2026-11-01T10:35:57.086356+00:00)",
+            "sha256": "6f2fce69060e0750992b6c8d5bb8385b134ab84f1965e23351627dc9855d231e"
           }
         ],
         "references": [
@@ -8828,6 +8918,20 @@
             "url": "https://github.com/anulum/synapse-channel/commit/99ece6efe4f157aed092df4a47a780029160331f",
             "source_revision": "99ece6efe4f157aed092df4a47a780029160331f",
             "scope": "Published branch and selected source files observed at 2026-10-28T21:02:44.463650+00:00. Package versions were checked separately; hosted CI and installed/physical qualification were not reassessed by this documentary refresh."
+          },
+          {
+            "id": "synapse-channel-published-source-20261101",
+            "title": "Published source checked 1 November 2026",
+            "url": "https://github.com/anulum/synapse-channel/commit/68bce0511dd13ce4d9f7576d0aa5723e80c209e8",
+            "source_revision": "68bce0511dd13ce4d9f7576d0aa5723e80c209e8",
+            "scope": "Public branch and selected files observed at 2026-11-01T10:35:57.086356+00:00. Package publishers were checked separately. Hosted CI, installed runtime and scientific/physical qualification were not reassessed by this documentary refresh."
+          },
+          {
+            "id": "synapse-channel-package-20261101",
+            "title": "Published synapse-channel 0.99.41",
+            "url": "https://pypi.org/project/synapse-channel/0.99.41/",
+            "scope": "Official publisher metadata and SHA-256 file records observed on 1 November 2026; no package installation or execution by this atlas refresh.",
+            "source_revision": "synapse-channel==0.99.41 (PyPI publisher metadata observed 1 November 2026)"
           }
         ]
       }
@@ -8912,7 +9016,7 @@
       "phase": "Released software · ongoing development",
       "work_status": "In progress",
       "release": "3.21.0",
-      "licence": "Apache-2.0 AND BUSL-1.1",
+      "licence": "Apache-2.0 AND LicenseRef-BUSL-1.1-ANULUM-TDM",
       "as_of": "2026-10-11",
       "url": "https://github.com/anulum/director-ai",
       "packages": [
@@ -8933,7 +9037,7 @@
         "value": "beta",
         "source": "packaging classifier"
       },
-      "boundary": "Apache-2.0 open core; paid tiers under BUSL-1.1 from a private index.",
+      "boundary": "The current public source labels the open core Apache-2.0 and the advanced/labs tiers LicenseRef-BUSL-1.1-ANULUM-TDM, supplied through a private index. Consult each component licence and the published terms for the applicable permissions; this source observation does not qualify private Cloud or Class products.",
       "resource_needs": [
         {
           "id": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS:12",
@@ -9087,7 +9191,7 @@
       "sources": [
         "https://github.com/anulum/synapse-channel/blob/main/docs/ecosystem.md"
       ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026. Published source checkpoint on 28 October 2026: 1378e512f6dfeddad0826cea50738019445451c7. Selected source fingerprints and available reading documents were reconciled to this public revision; older technical captures retain their dates. No new runtime, scientific or physical acceptance is inferred.",
+      "source_note": "Dated group source and research programme synopsis, 13 October 2026. Published source checkpoint on 1 November 2026: 02e73bdba22a6f3b2f22e6a1b869a09d05a412f8. Selected source fingerprints and available reading documents were reconciled to this public revision; older technical captures retain their dates. No new runtime, scientific or physical acceptance is inferred.",
       "dossier": {
         "review_state": "Bounded Core source wording approved by the owning source seat; release, live deployment, security qualification and whole-workflow acceptance are separate.",
         "purpose": "Response-level factual-coherence checks against governed facts, with NLI/RAG scoring and optional model backends. A guardrail component is not proof that an answer is true or an execution-authority service.",
@@ -9126,6 +9230,22 @@
           {
             "document": "DIRECTOR-AI / src/director_ai/cli.py (published 1378e512f6dfeddad0826cea50738019445451c7; checked 2026-10-28T21:02:44.463650+00:00)",
             "sha256": "1004cfef175246db40bbaa7bf7c31aaa1600dfff5e86b7d693f806baac5ddd40"
+          },
+          {
+            "document": "DIRECTOR-AI / README.md (published 02e73bdba22a6f3b2f22e6a1b869a09d05a412f8; checked 2026-11-01T10:35:57.086356+00:00)",
+            "sha256": "70ead3be87bf4181af764b6bdbd7cb3917530eba8de4d482b0bca56984a164d4"
+          },
+          {
+            "document": "DIRECTOR-AI / ROADMAP.md (published 02e73bdba22a6f3b2f22e6a1b869a09d05a412f8; checked 2026-11-01T10:35:57.086356+00:00)",
+            "sha256": "4807d35fd909e04749ab26afb637b49d9ff271648006e48a17de99510fd2db97"
+          },
+          {
+            "document": "DIRECTOR-AI / pyproject.toml (published 02e73bdba22a6f3b2f22e6a1b869a09d05a412f8; checked 2026-11-01T10:35:57.086356+00:00)",
+            "sha256": "2ee82a07f870efb68b92eb27bff78f157a528965c747fdae0464844fd5e56556"
+          },
+          {
+            "document": "DIRECTOR-AI / src/director_ai/cli.py (published 02e73bdba22a6f3b2f22e6a1b869a09d05a412f8; checked 2026-11-01T10:35:57.086356+00:00)",
+            "sha256": "744df7870621ede99a8bde196e58114abd667c87ad6fd0c5e77d7bd35bd8b1de"
           }
         ],
         "references": [
@@ -9135,6 +9255,13 @@
             "url": "https://github.com/anulum/director-ai/commit/1378e512f6dfeddad0826cea50738019445451c7",
             "source_revision": "1378e512f6dfeddad0826cea50738019445451c7",
             "scope": "Published branch and selected source files observed at 2026-10-28T21:02:44.463650+00:00. Package versions were checked separately; hosted CI and installed/physical qualification were not reassessed by this documentary refresh."
+          },
+          {
+            "id": "director-ai-published-source-20261101",
+            "title": "Published source checked 1 November 2026",
+            "url": "https://github.com/anulum/director-ai/commit/02e73bdba22a6f3b2f22e6a1b869a09d05a412f8",
+            "source_revision": "02e73bdba22a6f3b2f22e6a1b869a09d05a412f8",
+            "scope": "Public branch and selected files observed at 2026-11-01T10:35:57.086356+00:00. Package publishers were checked separately. Hosted CI, installed runtime and scientific/physical qualification were not reassessed by this documentary refresh."
           }
         ]
       }
@@ -9351,7 +9478,7 @@
       "sources": [
         "https://github.com/anulum/synapse-channel/blob/main/docs/ecosystem.md"
       ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "source_note": "Dated group source and research programme synopsis, 13 October 2026. Published source checkpoint on 1 November 2026: 95033b06e6808c4f6bff3893dbd54080a0b5302d. Selected source fingerprints and available reading documents were reconciled to this public revision; older technical captures retain their dates. No new runtime, scientific or physical acceptance is inferred.",
       "dossier": {
         "review_state": "Descriptive public source wording approved by the product author. Source version, detection-rule maturity, independent product acceptance and published-release evidence remain separate.",
         "purpose": "Evidence-bound repository auditing: inventories Git-tracked content, emits reproducible audit candidates, binds review decisions to exact evidence and prepares remediation inputs.",
@@ -9385,6 +9512,22 @@
           {
             "document": "README.md",
             "sha256": "eab40efdd677b6a37ff6bed96d58e3fe8eb36e7edab324e5ce6756b86da6b037"
+          },
+          {
+            "document": "RIGOR-FOUNDRY / README.md (published 95033b06e6808c4f6bff3893dbd54080a0b5302d; checked 2026-11-01T10:35:57.086356+00:00)",
+            "sha256": "4f3fab963ebb4a8eef610c1be80f8b8092e16084f34342a14c80880b40a86af4"
+          },
+          {
+            "document": "RIGOR-FOUNDRY / ARCHITECTURE.md (published 95033b06e6808c4f6bff3893dbd54080a0b5302d; checked 2026-11-01T10:35:57.086356+00:00)",
+            "sha256": "2afad45fa4f9d7e82ea9a2fe16237a71252dfc950636d5f994cefd467ccc3566"
+          },
+          {
+            "document": "RIGOR-FOUNDRY / VALIDATION.md (published 95033b06e6808c4f6bff3893dbd54080a0b5302d; checked 2026-11-01T10:35:57.086356+00:00)",
+            "sha256": "27f692dff8a1f0ea3b7bd51e26b5812670595226c08775fd0dfd9daa019e4fb5"
+          },
+          {
+            "document": "RIGOR-FOUNDRY / pyproject.toml (published 95033b06e6808c4f6bff3893dbd54080a0b5302d; checked 2026-11-01T10:35:57.086356+00:00)",
+            "sha256": "631b64f4f9a54b652a008971a4557b3ffeccde9f46abb4428c5239ba3ce550db"
           }
         ],
         "references": [
@@ -9401,6 +9544,13 @@
             "url": "https://github.com/anulum/rigor-foundry/releases/tag/v1.0.0",
             "source_revision": "v1.0.0; published 2026-07-21T06:18:23Z",
             "scope": "GitHub release metadata verified on 2026-10-23. Later local source changes, registry installation and whole-product qualification have separate evidence."
+          },
+          {
+            "id": "rigor-foundry-published-source-20261101",
+            "title": "Published source checked 1 November 2026",
+            "url": "https://github.com/anulum/rigor-foundry/commit/95033b06e6808c4f6bff3893dbd54080a0b5302d",
+            "source_revision": "95033b06e6808c4f6bff3893dbd54080a0b5302d",
+            "scope": "Public branch and selected files observed at 2026-11-01T10:35:57.086356+00:00. Package publishers were checked separately. Hosted CI, installed runtime and scientific/physical qualification were not reassessed by this documentary refresh."
           }
         ]
       }
@@ -9850,9 +10000,9 @@
       "kind": "workbench",
       "phase": "Released software · ongoing development",
       "work_status": "In progress",
-      "release": "3.16.0",
+      "release": "4.0.0",
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-23",
+      "as_of": "2026-11-01",
       "url": "https://github.com/anulum/sc-neurocore",
       "packages": [
         {
@@ -9868,7 +10018,7 @@
         "value": "beta",
         "source": "pyproject.toml classifier 'Development Status :: 4 - Beta'"
       },
-      "boundary": "Capability-specific maturity; no certification or field approval claim. Published source checked on 28 October 2026 is efacfde75a56cd3dbbd8e2746e43f45d3981fe4c. Its documented compile_to_ir frontend lowers supported EquationNeuron models into native IR, and recompile_ir checks source replay. Matching engine instructions are required; published source, package release 3.16.0, hosted CI, desktop installation and physical FPGA qualification remain separate.",
+      "boundary": "SC-NeuroCore 4.0.0 is published from the permanent parent repository; extraction into focused repositories remains planned. SNN Studio ships as an experimental development preview, with Studio 1.0 acceptance still separate. Python 3.11 or later is required and the lava extra was removed. Matching engine, installed integration, hosted CI, model fidelity, RTL agreement and physical hardware qualification retain their own evidence; a release is not certification or field approval.",
       "repository_record": {
         "stage": "Local repository initialized",
         "as_of": "2026-10-13T16:13:52.413927+00:00",
@@ -13367,7 +13517,7 @@
       "sources": [
         "https://github.com/anulum/sc-neurocore/blob/main/docs/ecosystem.md"
       ],
-      "source_note": "Published README, validation notes and package declaration refreshed on 28 October 2026; source now requires Python 3.11 or later. The equation-native-IR API documents supported integration/word/state/source contracts and replay refusal, rather than arbitrary unsupported equation inference. No exact-head CI query or domain execution was performed in this documentary refresh; the 23 October CI observation remains a dated historical reference. Earlier technical-guide captures retain their dates.",
+      "source_note": "Published README, validation notes and package declaration refreshed on 28 October 2026; source now requires Python 3.11 or later. The equation-native-IR API documents supported integration/word/state/source contracts and replay refusal, rather than arbitrary unsupported equation inference. No exact-head CI query or domain execution was performed in this documentary refresh; the 23 October CI observation remains a dated historical reference. Earlier technical-guide captures retain their dates. Published source checkpoint on 1 November 2026: f10db9c175f05461ad622b606d3e8d0b83ada3cf. Selected source fingerprints and available reading documents were reconciled to this public revision; older technical captures retain their dates. No new runtime, scientific or physical acceptance is inferred. PyPI sc-neurocore 4.0.0 was observed on 1 November 2026 with non-yanked published files. This package observation does not qualify component extraction, hosted CI, installed consumers or hardware. The separate sc-neurocore-engine publisher also reports 4.0.0. The public release notes describe API migrations and Linux engine wheels tagged manylinux_2_39; older-glibc consumers require a local engine build. Benchmark figures and the 26 March MNIST run retain their original scope and date.",
       "dossier": {
         "review_state": "Architect dossier revision 2: initial complete inventory; group content confirmation pending.",
         "purpose": "Permanent public development, composition and integration workbench for stochastic and spiking neural modelling, encoding, learning, simulation, selected hardware compilation and evidence inspection.",
@@ -13468,12 +13618,33 @@
           {
             "document": "SC-NEUROCORE / pyproject.toml (published efacfde75a56cd3dbbd8e2746e43f45d3981fe4c; checked 2026-10-28T21:02:44.463650+00:00)",
             "sha256": "85c569c6064bdf3406f473d9467b817b0ff1d9ab5e9311b61dc9e1d18efae9bb"
+          },
+          {
+            "document": "SC-NEUROCORE / README.md (published f10db9c175f05461ad622b606d3e8d0b83ada3cf; checked 2026-11-01T10:35:57.086356+00:00)",
+            "sha256": "2f63628f097981d3656c27bc76ea423340cb6479c103a563ae0e52be1fc5a2a6"
+          },
+          {
+            "document": "SC-NEUROCORE / ROADMAP.md (published f10db9c175f05461ad622b606d3e8d0b83ada3cf; checked 2026-11-01T10:35:57.086356+00:00)",
+            "sha256": "8df823f0d710cd305f7c5a821543c6c029508e787ccf2e71aa1e0e880b96782a"
+          },
+          {
+            "document": "SC-NEUROCORE / VALIDATION.md (published f10db9c175f05461ad622b606d3e8d0b83ada3cf; checked 2026-11-01T10:35:57.086356+00:00)",
+            "sha256": "f664322afd090aa4e4eacbef862918ae7bba3be3cb1233a615eedbee20bb65a1"
+          },
+          {
+            "document": "SC-NEUROCORE / pyproject.toml (published f10db9c175f05461ad622b606d3e8d0b83ada3cf; checked 2026-11-01T10:35:57.086356+00:00)",
+            "sha256": "aa8c08cc43a5aa161f127eef88c4cbe419020e7af72e71dd6cea62b0240c663e"
+          },
+          {
+            "document": "SC-NEUROCORE / src/sc_neurocore/__init__.py (published f10db9c175f05461ad622b606d3e8d0b83ada3cf; checked 2026-11-01T10:35:57.086356+00:00)",
+            "sha256": "0c3fa240081a7539a0ce1d8246a6c1e9fee33c03052e59b2e230a11c975dc2d7"
           }
         ],
         "limitations": [
           "The parent remains a permanent public development, composition and integration workbench.",
           "Model-source fidelity, cross-runtime parity and physical acceptance are distinct qualifications.",
-          "The published equation-native-IR documentation checked on 28 October 2026 describes compile_to_ir for supported EquationNeuron models and recompile_ir for exact canonical graph replay. It requires a matching engine build; supported source guards, word widths, integration/pipeline modes and simulation-only trap checks retain explicit limits. Unsupported models are not arbitrary equation inference, and source checksums do not authenticate an author or qualify installed software or physical hardware."
+          "The published equation-native-IR documentation checked on 28 October 2026 describes compile_to_ir for supported EquationNeuron models and recompile_ir for exact canonical graph replay. It requires a matching engine build; supported source guards, word widths, integration/pipeline modes and simulation-only trap checks retain explicit limits. Unsupported models are not arbitrary equation inference, and source checksums do not authenticate an author or qualify installed software or physical hardware.",
+          "Version 4.0.0 requires Python 3.11 or later and removes the lava optional extra. Its Studio HTTP candidate jobs and selected public imports have migration changes. The Linux engine wheels require glibc 2.39; consult the pinned release notes before upgrading an installed consumer. The focused-repository split and Studio 1.0 are not completed by the parent package release."
         ],
         "references": [
           {
@@ -13510,6 +13681,27 @@
             "url": "https://github.com/anulum/sc-neurocore/blob/efacfde75a56cd3dbbd8e2746e43f45d3981fe4c/docs/api/equation-native-ir.md",
             "source_revision": "efacfde75a56cd3dbbd8e2746e43f45d3981fe4c",
             "scope": "Complete published API document read on 28 October 2026; source declaration, not a new native execution or physical acceptance."
+          },
+          {
+            "id": "sc-neurocore-published-source-20261101",
+            "title": "Published source checked 1 November 2026",
+            "url": "https://github.com/anulum/sc-neurocore/commit/f10db9c175f05461ad622b606d3e8d0b83ada3cf",
+            "source_revision": "f10db9c175f05461ad622b606d3e8d0b83ada3cf",
+            "scope": "Public branch and selected files observed at 2026-11-01T10:35:57.086356+00:00. Package publishers were checked separately. Hosted CI, installed runtime and scientific/physical qualification were not reassessed by this documentary refresh."
+          },
+          {
+            "id": "sc-neurocore-package-20261101",
+            "title": "Published sc-neurocore 4.0.0",
+            "url": "https://pypi.org/project/sc-neurocore/4.0.0/",
+            "scope": "Official publisher metadata and SHA-256 file records observed on 1 November 2026; no package installation or execution by this atlas refresh.",
+            "source_revision": "sc-neurocore==4.0.0 (PyPI publisher metadata observed 1 November 2026)"
+          },
+          {
+            "id": "sc-neurocore-release-20261101",
+            "title": "SC-NeuroCore 4.0.0 release and migration notes",
+            "url": "https://github.com/anulum/sc-neurocore/releases/tag/v4.0.0",
+            "scope": "Published 31 October 2026; release notes read on 1 November. Studio remains a development preview; no new runtime or physical measurements were made by this atlas.",
+            "source_revision": "GitHub release v4.0.0, published 31 October 2026"
           }
         ],
         "inputs_basis": "Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-15T20:45:20.185924+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance.",
@@ -15628,7 +15820,7 @@
       "sources": [
         "https://github.com/anulum/sc-neurocore/blob/main/docs/ecosystem.md"
       ],
-      "source_note": "Release metadata independently checked on 23 October 2026; the owning manager reconfirmed the physical qualification boundary. Earlier technical source captures retain their original dates. Published main 1eba54132622425949f68acdb3db12121a6f6f46 was independently checked on 23 October 2026; all nine previously selected documentation/source byte bindings were unchanged and exact-head CI run 39886632657 completed with success. This source/CI observation supplies no board or physical instrument acceptance. Published source checkpoint on 28 October 2026: 2ece51ab0780fae865b8b2e27ae4c9b77203bde6. Selected source fingerprints and available reading documents were reconciled to this public revision; older technical captures retain their dates. No new runtime, scientific or physical acceptance is inferred.",
+      "source_note": "Release metadata independently checked on 23 October 2026; the owning manager reconfirmed the physical qualification boundary. Earlier technical source captures retain their original dates. Published main 1eba54132622425949f68acdb3db12121a6f6f46 was independently checked on 23 October 2026; all nine previously selected documentation/source byte bindings were unchanged and exact-head CI run 39886632657 completed with success. This source/CI observation supplies no board or physical instrument acceptance. Published source checkpoint on 1 November 2026: de3499ffa0b457203779c444181816371b651947. Selected source fingerprints and available reading documents were reconciled to this public revision; older technical captures retain their dates. No new runtime, scientific or physical acceptance is inferred.",
       "dossier": {
         "review_state": "Architect dossier revision 2: initial complete inventory; group content confirmation pending.",
         "purpose": "Fabric-clock instrument for complete control-loop and selected accelerator timing, with simulation/host analysis separated from eventual board timing, fault response and rail-energy evidence.",
@@ -15706,6 +15898,34 @@
           {
             "document": "LOOP-TIMING-WITNESS / docs/MEASUREMENT_PROTOCOL.md (source 2026-10-18T14:50:15.082871+00:00) (technical source capture 2026-10-18T14:50:15.082871+00:00)",
             "sha256": "48066f760fc251371b9ab64187352909c5c2faf3f7bb88568c3edd5031835f70"
+          },
+          {
+            "document": "LOOP-TIMING-WITNESS / README.md (published de3499ffa0b457203779c444181816371b651947; checked 2026-11-01T10:35:57.086356+00:00)",
+            "sha256": "6ada87db77264b37623792ff0f7c6fb6b1a44b516792abdd00c8469426f9739d"
+          },
+          {
+            "document": "LOOP-TIMING-WITNESS / docs/ARCHITECTURE.md (published de3499ffa0b457203779c444181816371b651947; checked 2026-11-01T10:35:57.086356+00:00)",
+            "sha256": "588b6ea756f1c0eaf050bc1857c8a007509662e83911c00301b548a73bc1e978"
+          },
+          {
+            "document": "LOOP-TIMING-WITNESS / ROADMAP.md (published de3499ffa0b457203779c444181816371b651947; checked 2026-11-01T10:35:57.086356+00:00)",
+            "sha256": "f3dea01ab2767c71cccc4e70c7935aa472d75b2ede98bb4722464af7dd0ef262"
+          },
+          {
+            "document": "LOOP-TIMING-WITNESS / VALIDATION.md (published de3499ffa0b457203779c444181816371b651947; checked 2026-11-01T10:35:57.086356+00:00)",
+            "sha256": "b12167095d56d8e24f710e9c9e1573d41113fecb12e2e5ae9e7bda0d897463e1"
+          },
+          {
+            "document": "LOOP-TIMING-WITNESS / pyproject.toml (published de3499ffa0b457203779c444181816371b651947; checked 2026-11-01T10:35:57.086356+00:00)",
+            "sha256": "dffa5dea75f0405a9e2535c662b6efba0955887d12168c8193347033c2a7960d"
+          },
+          {
+            "document": "LOOP-TIMING-WITNESS / src/loop_timing_witness/__init__.py (published de3499ffa0b457203779c444181816371b651947; checked 2026-11-01T10:35:57.086356+00:00)",
+            "sha256": "cfb1fd3c41b62acbddc89849e94b599279e64ba33b365a14384d1bebecf782f1"
+          },
+          {
+            "document": "LOOP-TIMING-WITNESS / src/loop_timing_witness/analyze_run.py (published de3499ffa0b457203779c444181816371b651947; checked 2026-11-01T10:35:57.086356+00:00)",
+            "sha256": "f8bab1a532aad8fc18d8f090fc737828a5868851d1335be64adc6c1d711f9a51"
           }
         ],
         "references": [
@@ -15736,6 +15956,13 @@
             "url": "https://github.com/anulum/loop-timing-witness/commit/2ece51ab0780fae865b8b2e27ae4c9b77203bde6",
             "source_revision": "2ece51ab0780fae865b8b2e27ae4c9b77203bde6",
             "scope": "Published branch and selected source files observed at 2026-10-28T21:02:44.463650+00:00. Package versions were checked separately; hosted CI and installed/physical qualification were not reassessed by this documentary refresh."
+          },
+          {
+            "id": "loop-timing-witness-published-source-20261101",
+            "title": "Published source checked 1 November 2026",
+            "url": "https://github.com/anulum/loop-timing-witness/commit/de3499ffa0b457203779c444181816371b651947",
+            "source_revision": "de3499ffa0b457203779c444181816371b651947",
+            "scope": "Public branch and selected files observed at 2026-11-01T10:35:57.086356+00:00. Package publishers were checked separately. Hosted CI, installed runtime and scientific/physical qualification were not reassessed by this documentary refresh."
           }
         ],
         "inputs_basis": "Retained architect requirements are supplemented by the existing cited technical guide (guide capture 2026-10-18T14:50:15.082871+00:00). These are dated documentary contracts and qualification boundaries, not a new runtime, release, numerical or physical acceptance.",
@@ -15946,13 +16173,13 @@
       "kind": "workbench",
       "phase": "Released software · ongoing development",
       "work_status": "In progress",
-      "release": "1.2.0",
+      "release": "1.3.0",
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-13",
+      "as_of": "2026-11-01",
       "url": "https://github.com/anulum/scpn-quantum-control",
       "packages": [],
       "maturity": "beta",
-      "boundary": "Released software is version 1.2.0. Published source checked on 28 October 2026 is e9c06c1ed7e39e257812558db313a79fe0ce8f92. Selected README, validation and package declarations were refreshed; the earlier 23 October failed CI observation is historical, not a verdict on this head. Source publication does not approve split-repository readiness, a new campaign, quantum advantage or hardware-result qualification.",
+      "boundary": "PyPI publishes Quantum Control 1.3.0, oscillatools 0.1.1 and scpn-quantum-engine 0.3.0. The current public source was checked on 1 November 2026 at 6d84189427f9efb1a9e822e377fd388415e92e98. Earlier CI observations remain historical. Publication does not approve detailed passport fields awaiting owner review, split-repository readiness, a new campaign, quantum advantage or hardware-result qualification.",
       "repository_record": {
         "stage": "Local repository initialized",
         "as_of": "2026-10-13T16:13:52.413927+00:00",
@@ -16387,7 +16614,7 @@
       "sources": [
         "https://github.com/anulum/scpn-quantum-control/blob/main/docs/ecosystem.md"
       ],
-      "source_note": "The already-selected public README and roadmap were refreshed on 23 October 2026 from the exact observed published revision. The roadmap distinguishes historical targets from current source/evidence contracts. Detailed outward passport approval remains unavailable; earlier technical and scientific source reports retain their dates and limits. Published source checkpoint on 28 October 2026: e9c06c1ed7e39e257812558db313a79fe0ce8f92. Selected source fingerprints and available reading documents were reconciled to this public revision; older technical captures retain their dates. No new runtime, scientific or physical acceptance is inferred.",
+      "source_note": "The already-selected public README and roadmap were refreshed on 23 October 2026 from the exact observed published revision. The roadmap distinguishes historical targets from current source/evidence contracts. Detailed outward passport approval remains unavailable; earlier technical and scientific source reports retain their dates and limits. Published source checkpoint on 1 November 2026: 6d84189427f9efb1a9e822e377fd388415e92e98. Selected source fingerprints and available reading documents were reconciled to this public revision; older technical captures retain their dates. No new runtime, scientific or physical acceptance is inferred. PyPI scpn-quantum-control 1.3.0 was observed on 1 November 2026 with non-yanked published files. This package observation does not qualify component extraction, hosted CI, installed consumers or hardware.",
       "dossier": {
         "review_state": "Public README and documentation may be cited. An outward-approved detailed passport remains unavailable, as reported by the owning manager on 2026-10-23.",
         "purpose": "Integrated modelling, simulation, compilation, gradients, control, provider workflows, analysis and Quantum Studio.",
@@ -16426,6 +16653,20 @@
             "url": "https://github.com/anulum/scpn-quantum-control/commit/e9c06c1ed7e39e257812558db313a79fe0ce8f92",
             "source_revision": "e9c06c1ed7e39e257812558db313a79fe0ce8f92",
             "scope": "Published branch and selected source files observed at 2026-10-28T21:02:44.463650+00:00. Package versions were checked separately; hosted CI and installed/physical qualification were not reassessed by this documentary refresh."
+          },
+          {
+            "id": "scpn-quantum-control-published-source-20261101",
+            "title": "Published source checked 1 November 2026",
+            "url": "https://github.com/anulum/scpn-quantum-control/commit/6d84189427f9efb1a9e822e377fd388415e92e98",
+            "source_revision": "6d84189427f9efb1a9e822e377fd388415e92e98",
+            "scope": "Public branch and selected files observed at 2026-11-01T10:35:57.086356+00:00. Package publishers were checked separately. Hosted CI, installed runtime and scientific/physical qualification were not reassessed by this documentary refresh."
+          },
+          {
+            "id": "scpn-quantum-control-package-20261101",
+            "title": "Published scpn-quantum-control 1.3.0",
+            "url": "https://pypi.org/project/scpn-quantum-control/1.3.0/",
+            "scope": "Official publisher metadata and SHA-256 file records observed on 1 November 2026; no package installation or execution by this atlas refresh.",
+            "source_revision": "scpn-quantum-control==1.3.0 (PyPI publisher metadata observed 1 November 2026)"
           }
         ],
         "source_records": [
@@ -16448,6 +16689,22 @@
           {
             "document": "SCPN-QUANTUM-CONTROL / pyproject.toml (published e9c06c1ed7e39e257812558db313a79fe0ce8f92; checked 2026-10-28T21:02:44.463650+00:00)",
             "sha256": "9061e4e82a589157587a725aa57007092307ab833c5500f0efead6763ebf5754"
+          },
+          {
+            "document": "SCPN-QUANTUM-CONTROL / README.md (published 6d84189427f9efb1a9e822e377fd388415e92e98; checked 2026-11-01T10:35:57.086356+00:00)",
+            "sha256": "2f5ecbde88fd38a32f93706809ead80a3e1c8a5204c32034293840d614b73540"
+          },
+          {
+            "document": "SCPN-QUANTUM-CONTROL / VALIDATION.md (published 6d84189427f9efb1a9e822e377fd388415e92e98; checked 2026-11-01T10:35:57.086356+00:00)",
+            "sha256": "14af3d45df0d706aa69ccda605fa1d7e8658132ac68767252a7dcc9f7cd17a47"
+          },
+          {
+            "document": "SCPN-QUANTUM-CONTROL / pyproject.toml (published 6d84189427f9efb1a9e822e377fd388415e92e98; checked 2026-11-01T10:35:57.086356+00:00)",
+            "sha256": "398359eeabe5a13a9a054469d992948154984f4b84dd6a62a4ea2dd34a7bde61"
+          },
+          {
+            "document": "SCPN-QUANTUM-CONTROL / src/scpn_quantum_control/__init__.py (published 6d84189427f9efb1a9e822e377fd388415e92e98; checked 2026-11-01T10:35:57.086356+00:00)",
+            "sha256": "a36fe1b53cdd69f923b3b88d428adf70791e9878f1b9b3d5e261e3e0ad7445b4"
           }
         ]
       }
@@ -16463,9 +16720,9 @@
       "kind": "package",
       "phase": "Released software · ongoing development",
       "work_status": "In progress",
-      "release": "0.1.0",
+      "release": "0.1.1",
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-13",
+      "as_of": "2026-11-01",
       "url": "https://github.com/anulum/scpn-quantum-control/tree/5180cc8eef1747cf0d29ecba4a7ba7e84ba561e1/oscillatools",
       "packages": [],
       "maturity": "beta",
@@ -16638,7 +16895,7 @@
       "sources": [
         "https://github.com/anulum/scpn-quantum-control/blob/main/docs/ecosystem.md"
       ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026. Parent-component path independently verified against the published Quantum Control source object on 23 October 2026; this does not establish a newer package release.",
+      "source_note": "Dated group source and research programme synopsis, 13 October 2026. Parent-component path independently verified against the published Quantum Control source object on 23 October 2026; this does not establish a newer package release. Published source checkpoint on 1 November 2026: 6d84189427f9efb1a9e822e377fd388415e92e98. Selected source fingerprints and available reading documents were reconciled to this public revision; older technical captures retain their dates. No new runtime, scientific or physical acceptance is inferred. PyPI oscillatools 0.1.1 was observed on 1 November 2026 with non-yanked published files. This package observation does not qualify component extraction, hosted CI, installed consumers or hardware.",
       "dossier": {
         "review_state": "Architect-authored details requested",
         "purpose": "Classical coupled-phase-oscillator dynamics, observables, sensitivities and control-oriented numerical tools.",
@@ -16650,6 +16907,32 @@
         "partner_needs": [],
         "open_fields": [
           "Detailed output specifications and interface acceptance are being consolidated by the owning group."
+        ],
+        "references": [
+          {
+            "id": "oscillatools-published-source-20261101",
+            "title": "Published source checked 1 November 2026",
+            "url": "https://github.com/anulum/scpn-quantum-control/commit/6d84189427f9efb1a9e822e377fd388415e92e98",
+            "source_revision": "6d84189427f9efb1a9e822e377fd388415e92e98",
+            "scope": "Public branch and selected files observed at 2026-11-01T10:35:57.086356+00:00. Package publishers were checked separately. Hosted CI, installed runtime and scientific/physical qualification were not reassessed by this documentary refresh."
+          },
+          {
+            "id": "oscillatools-package-20261101",
+            "title": "Published oscillatools 0.1.1",
+            "url": "https://pypi.org/project/oscillatools/0.1.1/",
+            "scope": "Official publisher metadata and SHA-256 file records observed on 1 November 2026; no package installation or execution by this atlas refresh.",
+            "source_revision": "oscillatools==0.1.1 (PyPI publisher metadata observed 1 November 2026)"
+          }
+        ],
+        "source_records": [
+          {
+            "document": "oscillatools / pyproject.toml (published 6d84189427f9efb1a9e822e377fd388415e92e98; checked 2026-11-01T10:35:57.086356+00:00)",
+            "sha256": "748bb9aca53ef028679a285810bac028ee2e0f2077fb92159b9f9797f64e7ba1"
+          },
+          {
+            "document": "oscillatools / src/oscillatools/__init__.py (published 6d84189427f9efb1a9e822e377fd388415e92e98; checked 2026-11-01T10:35:57.086356+00:00)",
+            "sha256": "cbd52e2eff4fb0a64b6ff6c6e26934667d6265c60a57fdbd0851525882ee095f"
+          }
         ]
       }
     },
@@ -16664,9 +16947,9 @@
       "kind": "package",
       "phase": "Released software · ongoing development",
       "work_status": "In progress",
-      "release": "0.2.0",
+      "release": "0.3.0",
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-13",
+      "as_of": "2026-11-01",
       "url": "https://github.com/anulum/scpn-quantum-control/tree/5180cc8eef1747cf0d29ecba4a7ba7e84ba561e1/scpn_quantum_engine",
       "packages": [],
       "maturity": null,
@@ -16748,7 +17031,7 @@
       "sources": [
         "https://github.com/anulum/scpn-quantum-control/blob/main/docs/ecosystem.md"
       ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026. Parent-component path independently verified against the published Quantum Control source object on 23 October 2026; this does not establish a newer package release.",
+      "source_note": "Dated group source and research programme synopsis, 13 October 2026. Parent-component path independently verified against the published Quantum Control source object on 23 October 2026; this does not establish a newer package release. Published source checkpoint on 1 November 2026: 6d84189427f9efb1a9e822e377fd388415e92e98. Selected source fingerprints and available reading documents were reconciled to this public revision; older technical captures retain their dates. No new runtime, scientific or physical acceptance is inferred. PyPI scpn-quantum-engine 0.3.0 was observed on 1 November 2026 with non-yanked published files. This package observation does not qualify component extraction, hosted CI, installed consumers or hardware.",
       "dossier": {
         "review_state": "Architect-authored details requested",
         "purpose": "Optional Rust/PyO3 numerical acceleration and native computation used by supported workbench paths.",
@@ -16760,6 +17043,32 @@
         "partner_needs": [],
         "open_fields": [
           "Detailed output specifications and interface acceptance are being consolidated by the owning group."
+        ],
+        "references": [
+          {
+            "id": "scpn-quantum-engine-published-source-20261101",
+            "title": "Published source checked 1 November 2026",
+            "url": "https://github.com/anulum/scpn-quantum-control/commit/6d84189427f9efb1a9e822e377fd388415e92e98",
+            "source_revision": "6d84189427f9efb1a9e822e377fd388415e92e98",
+            "scope": "Public branch and selected files observed at 2026-11-01T10:35:57.086356+00:00. Package publishers were checked separately. Hosted CI, installed runtime and scientific/physical qualification were not reassessed by this documentary refresh."
+          },
+          {
+            "id": "scpn-quantum-engine-package-20261101",
+            "title": "Published scpn-quantum-engine 0.3.0",
+            "url": "https://pypi.org/project/scpn-quantum-engine/0.3.0/",
+            "scope": "Official publisher metadata and SHA-256 file records observed on 1 November 2026; no package installation or execution by this atlas refresh.",
+            "source_revision": "scpn-quantum-engine==0.3.0 (PyPI publisher metadata observed 1 November 2026)"
+          }
+        ],
+        "source_records": [
+          {
+            "document": "scpn-quantum-engine / pyproject.toml (published 6d84189427f9efb1a9e822e377fd388415e92e98; checked 2026-11-01T10:35:57.086356+00:00)",
+            "sha256": "fe7dcd0c690a73e47fcbaaf9bd57f5166be0bd599a06601cd7183a286c9e4d47"
+          },
+          {
+            "document": "scpn-quantum-engine / Cargo.toml (published 6d84189427f9efb1a9e822e377fd388415e92e98; checked 2026-11-01T10:35:57.086356+00:00)",
+            "sha256": "6cbf03aa82d8581e9b06fba1d1ae9c0320095caf7752bf7c9f16f3d833482a3d"
+          }
         ]
       }
     },
@@ -35602,7 +35911,7 @@
       "sources": [
         "https://anulum.li/"
       ],
-      "source_note": "Dated group source and research programme synopsis, 13 October 2026.",
+      "source_note": "Dated group source and research programme synopsis, 13 October 2026. Published source checkpoint on 1 November 2026: edfb78baec95be83517241f14c6e0ade02551934. Selected source fingerprints and available reading documents were reconciled to this public revision; older technical captures retain their dates. No new runtime, scientific or physical acceptance is inferred.",
       "dossier": {
         "review_state": "Public-source editorial passport; current owner review and project-specific partner confirmation remain open.",
         "purpose": "Public profile, research portfolio and evidence navigation.",
@@ -35634,6 +35943,15 @@
           {
             "document": "README.md",
             "sha256": "a7a2f397eefce726ba1043d5b0f44596a91816c79baf6fbe07fa42c69d823099"
+          }
+        ],
+        "references": [
+          {
+            "id": "anulum-published-source-20261101",
+            "title": "Published source checked 1 November 2026",
+            "url": "https://github.com/anulum/anulum/commit/edfb78baec95be83517241f14c6e0ade02551934",
+            "source_revision": "edfb78baec95be83517241f14c6e0ade02551934",
+            "scope": "Public branch and selected files observed at 2026-11-01T10:35:57.086356+00:00. Package publishers were checked separately. Hosted CI, installed runtime and scientific/physical qualification were not reassessed by this documentary refresh."
           }
         ]
       }

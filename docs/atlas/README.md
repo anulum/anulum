@@ -19,7 +19,7 @@ The version and exact asset fingerprints are in [atlas-manifest.json](atlas-mani
 Individual source documents retain their own capture dates and fingerprints.
 A newer atlas snapshot does not make an older source document current.
 
-The 28 October source checkpoint checks published revisions across the
+The 1 November source checkpoint checks published revisions across the
 registry's 38 public repositories and the separately verified public HushLine
 repository. Refreshed reading documents carry their own capture dates and
 fingerprints; independently cited technical documents retain their earlier
@@ -73,13 +73,16 @@ energy, materials-discovery and frontier-AI topics; the Foresight RFP retains
 its stated deadline and time zone. Programme dates and support types do not
 establish eligibility, a submission or an award.
 
-The 28 October refresh reconciles 64 reading documents and 75 source-file
-records with independently checked public revisions; all 14 checked package
-versions are unchanged. NeuroCore now documents supported equation-to-native-IR
-compilation and source replay, with a matching engine requirement and explicit
-unsupported modes. The Reactor Kernels sources state native STEP units in
-metres and a separate third-party CAD evidence boundary. Source checkpoints do
-not refresh hosted CI, older technical captures or physical qualification.
+The 1 November refresh reconciles 31 reading documents and 40 source-file
+records with immutable public revisions. Official package publishers now report
+NeuroCore 4.0.0, Synapse Channel 0.99.41, Quantum Control 1.3.0, oscillatools 0.1.1
+and scpn-quantum-engine 0.3.0; the other nine checked package versions are unchanged.
+NeuroCore's release keeps Studio at development-preview maturity and documents
+Python, API and engine-wheel migration limits. Fusion Core's corrected public
+README keeps FreeGS strict parity blocked on non-admitting evidence. Director-AI's
+source identifies its modified advanced/labs licence separately from the open
+core. Source checkpoints and package publication do not refresh hosted CI,
+older technical captures or scientific and physical qualification.
 
 Repository documents marked as withheld are excluded from the public reading
 view. Their project identities may remain in the map. The generator rejects
@@ -180,8 +183,8 @@ observations, independent of resource and budget data.
 | ---------------------------------------- | ------------------------------------------------------------------ | ---------------------: |
 | Profile images across all five languages | Four generated header/map SVGs, 91 badge SVGs and the footer image |                621,868 |
 | Dated catalogue provenance               | `assets/catalogue-source.json`, plus its ownership sidecar         | 114,267 before sidecar |
-| Interactive site snapshot                | 77 manifest-listed assets                                          |             33,628,121 |
-| Main interactive entry page              | `index.html`, including its eight embedded datasets                |             10,369,597 |
+| Interactive site snapshot                | 77 manifest-listed assets                                          |             33,802,832 |
+| Main interactive entry page              | `index.html`, including its eight embedded datasets                |             10,438,611 |
 
 The HTML, JavaScript modules, source-document JSON, illustrations and figure
 downloads belong to the separately hosted explorer. The full snapshot repeats

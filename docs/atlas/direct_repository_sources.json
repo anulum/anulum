@@ -1,8 +1,8 @@
 {
-  "version": "0.2+published-source-refresh.2",
+  "version": "0.2+published-source-refresh.2+published-source-refresh.3",
   "captured_at_utc": "2026-10-13T23:51:08.190562+00:00",
-  "state": "Mixed-date public repository source captures; selected published file fingerprints checked on 28 October 2026. Source presence and declarations are not runtime acceptance.",
-  "read_scope": "Complete selected document and entry-source bytes read and retained. Selected prose, architecture sections, structured declarations and static top-level Python declarations projected; no source execution or whole scientific/implementation validation. Repository-internal documents, excerpts and declarations are withheld from the public projection. Selected documentation rows were refreshed from verified public main commits on 2026-10-23; other declarations and excerpts retain their earlier capture. This is documentary correspondence, not runtime or scientific qualification. Four additional repository/component entries were checked against exact published main objects on 23 October 2026; component source labels preserve their parent paths. Earlier excerpts and static declarations retain their original capture scope. The HushLine README was additionally refreshed from its independently verified public main source; earlier declarations/excerpts retain their prior capture scope. Five selected documentation records were refreshed on 23 October 2026 from exact observed public SC-NeuroCore and Quantum Control revisions. Timing Witness selected source bytes were independently unchanged at its newer public revision. Other metadata, excerpts and technical captures retain their earlier source scope; source inspection executes no numerical, hardware or scientific workflow. On 28 October 2026, all 39 admitted public repository roots were observed and 284 available selected files were independently read at their immutable published revisions, including two nested Quantum packages. Seventy-five file records changed; 64 reading views were refreshed. Static declarations, changed README excerpts and changed architecture/package declarations follow those same bytes. The historical local-only Remanentia public_projection.py record is omitted from the current published-file inventory. Unchanged reading documents and separately cited technical captures retain their dates; no numerical, hardware or scientific workflow was executed.",
+  "state": "Mixed-date public repository source captures; selected published file fingerprints checked on 1 November 2026. Source presence and declarations are not runtime acceptance.",
+  "read_scope": "Complete selected document and entry-source bytes read and retained. Selected prose, architecture sections, structured declarations and static top-level Python declarations projected; no source execution or whole scientific/implementation validation. Repository-internal documents, excerpts and declarations are withheld from the public projection. Selected documentation rows were refreshed from verified public main commits on 2026-10-23; other declarations and excerpts retain their earlier capture. This is documentary correspondence, not runtime or scientific qualification. Four additional repository/component entries were checked against exact published main objects on 23 October 2026; component source labels preserve their parent paths. Earlier excerpts and static declarations retain their original capture scope. The HushLine README was additionally refreshed from its independently verified public main source; earlier declarations/excerpts retain their prior capture scope. Five selected documentation records were refreshed on 23 October 2026 from exact observed public SC-NeuroCore and Quantum Control revisions. Timing Witness selected source bytes were independently unchanged at its newer public revision. Other metadata, excerpts and technical captures retain their earlier source scope; source inspection executes no numerical, hardware or scientific workflow. On 28 October 2026, all 39 admitted public repository roots were observed and 284 available selected files were independently read at their immutable published revisions, including two nested Quantum packages. Seventy-five file records changed; 64 reading views were refreshed. Static declarations, changed README excerpts and changed architecture/package declarations follow those same bytes. The historical local-only Remanentia public_projection.py record is omitted from the current published-file inventory. Unchanged reading documents and separately cited technical captures retain their dates; no numerical, hardware or scientific workflow was executed. On 1 November 2026, all 39 admitted public repository roots and all 284 selected source files were checked at independently observed public revisions, including two nested Quantum packages. Forty source-file records changed and 31 full reading views were refreshed. Fourteen official package publishers were checked separately; five package versions changed. Unchanged readings and separately cited technical captures retain their dates; no numerical, hardware or scientific workflow was executed.",
   "project_entries": 197,
   "entries_with_documents": 40,
   "source_documents_captured": 284,
@@ -10,7 +10,7 @@
   "projects": [
     {
       "project_id": "ATLAS-REACTORUM",
-      "lookup_state": "Selected published source files checked on 28 October 2026 at a0338892e9bf1a7518d185f508318cff837f85d8; reading and technical captures retain their individual dates.",
+      "lookup_state": "Selected published source files checked on 1 November 2026 at 1764aa2f340046cee6650556cb7394c1d21852c5; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
@@ -39,7 +39,7 @@
         },
         {
           "label": "pyproject.toml",
-          "sha256": "342b3b0806c0edfaead14f01958b47f423022937f340c44d367abd73d896470d",
+          "sha256": "beb3e229fe560aeb215301af26c7e9fdf3b31a87c44cd1c15f702f2069ebe340",
           "bytes": 7305
         }
       ],
@@ -147,7 +147,7 @@
     },
     {
       "project_id": "SCPN-BEAM-TARGET-CORE",
-      "lookup_state": "Selected published source files checked on 28 October 2026 at 061d62785e38ca11c135f92ae62a15f857ba57fd; reading and technical captures retain their individual dates.",
+      "lookup_state": "Selected published source files checked on 1 November 2026 at 061d62785e38ca11c135f92ae62a15f857ba57fd; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
@@ -330,7 +330,7 @@
     },
     {
       "project_id": "SCPN-DENSE-PLASMA-FOCUS-CORE",
-      "lookup_state": "Selected published source files checked on 28 October 2026 at e083b5684e7f762dc81687767bf7b125a558bf6f; reading and technical captures retain their individual dates.",
+      "lookup_state": "Selected published source files checked on 1 November 2026 at e083b5684e7f762dc81687767bf7b125a558bf6f; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
@@ -447,7 +447,7 @@
     },
     {
       "project_id": "SCPN-FRC-CORE",
-      "lookup_state": "Selected published source files checked on 28 October 2026 at fac867651f98e3aec81a7d2a895d96f88e118224; reading and technical captures retain their individual dates.",
+      "lookup_state": "Selected published source files checked on 1 November 2026 at fac867651f98e3aec81a7d2a895d96f88e118224; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
@@ -553,12 +553,12 @@
     },
     {
       "project_id": "SCPN-FUSION-CORE",
-      "lookup_state": "Selected published source files checked on 28 October 2026 at 5edd51799a535617d0f3a860b900773ac94c1d4b; reading and technical captures retain their individual dates.",
+      "lookup_state": "Selected published source files checked on 1 November 2026 at 9a5eb14a8810f834513ccc484b181c558b49cd47; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
-          "sha256": "ad176b95a59c9dffc3ef1acd2855e6b9b5b4682276610c61d6271520803e7a23",
-          "bytes": 64250
+          "sha256": "5dbf51597efa1cfa46695ab1890a172b032dc1d7a538492a411a72d6650be850",
+          "bytes": 64357
         },
         {
           "label": "ARCHITECTURE.md",
@@ -876,7 +876,7 @@
     },
     {
       "project_id": "SCPN-FUSION-FISSION-HYBRID-CORE",
-      "lookup_state": "Selected published source files checked on 28 October 2026 at b868a66c9358ff187a3f5e5414f5a9c14bd6762d; reading and technical captures retain their individual dates.",
+      "lookup_state": "Selected published source files checked on 1 November 2026 at b868a66c9358ff187a3f5e5414f5a9c14bd6762d; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
@@ -1048,7 +1048,7 @@
     },
     {
       "project_id": "SCPN-ICF-BEAM-CORE",
-      "lookup_state": "Selected published source files checked on 28 October 2026 at 7a275869efac44f6a3e08a4618b23e9b7eebad0c; reading and technical captures retain their individual dates.",
+      "lookup_state": "Selected published source files checked on 1 November 2026 at 7a275869efac44f6a3e08a4618b23e9b7eebad0c; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
@@ -1154,7 +1154,7 @@
     },
     {
       "project_id": "SCPN-ICF-IMPACT-CORE",
-      "lookup_state": "Selected published source files checked on 28 October 2026 at 36bc492e52b9c70b01003c8877a76948d895e1cd; reading and technical captures retain their individual dates.",
+      "lookup_state": "Selected published source files checked on 1 November 2026 at 36bc492e52b9c70b01003c8877a76948d895e1cd; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
@@ -1260,7 +1260,7 @@
     },
     {
       "project_id": "SCPN-ICF-LASER-CORE",
-      "lookup_state": "Selected published source files checked on 28 October 2026 at a4a0bfa1cf3cd9e411ce65e0592fbb0621af5b83; reading and technical captures retain their individual dates.",
+      "lookup_state": "Selected published source files checked on 1 November 2026 at a4a0bfa1cf3cd9e411ce65e0592fbb0621af5b83; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
@@ -1366,7 +1366,7 @@
     },
     {
       "project_id": "SCPN-IEC-CORE",
-      "lookup_state": "Selected published source files checked on 28 October 2026 at 7afcb6d3a81a23319fc88282143ef1f7b9d1001c; reading and technical captures retain their individual dates.",
+      "lookup_state": "Selected published source files checked on 1 November 2026 at 7afcb6d3a81a23319fc88282143ef1f7b9d1001c; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
@@ -1472,7 +1472,7 @@
     },
     {
       "project_id": "SCPN-LATTICE-FUSION-CORE",
-      "lookup_state": "Selected published source files checked on 28 October 2026 at dbb25a284c9d733bad900c02d3275f03de4778c0; reading and technical captures retain their individual dates.",
+      "lookup_state": "Selected published source files checked on 1 November 2026 at dbb25a284c9d733bad900c02d3275f03de4778c0; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
@@ -1566,7 +1566,7 @@
     },
     {
       "project_id": "SCPN-LEVITATED-DIPOLE-CORE",
-      "lookup_state": "Selected published source files checked on 28 October 2026 at 77d824076d7cdd27ac96e616212b450d74203436; reading and technical captures retain their individual dates.",
+      "lookup_state": "Selected published source files checked on 1 November 2026 at 77d824076d7cdd27ac96e616212b450d74203436; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
@@ -1683,7 +1683,7 @@
     },
     {
       "project_id": "SCPN-MAGNETIC-CUSP-CORE",
-      "lookup_state": "Selected published source files checked on 28 October 2026 at fb0e0dfc61d16c091ecc5c6d8645a4be11e08a5f; reading and technical captures retain their individual dates.",
+      "lookup_state": "Selected published source files checked on 1 November 2026 at fb0e0dfc61d16c091ecc5c6d8645a4be11e08a5f; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
@@ -1816,7 +1816,7 @@
     },
     {
       "project_id": "SCPN-MIF-CORE",
-      "lookup_state": "Selected published source files checked on 28 October 2026 at b44f33e2a082ca6b34f22cd587c5c4f0e8cb2c89; reading and technical captures retain their individual dates.",
+      "lookup_state": "Selected published source files checked on 1 November 2026 at 0ea2b540dbb7d29ea8af3f91be4d7eee30b396d1; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
@@ -1880,7 +1880,7 @@
     },
     {
       "project_id": "SCPN-MIF-LINER-CORE",
-      "lookup_state": "Selected published source files checked on 28 October 2026 at 9fc5c27b8de133b719eb834a5cc8ef6ac7e4ca15; reading and technical captures retain their individual dates.",
+      "lookup_state": "Selected published source files checked on 1 November 2026 at 9fc5c27b8de133b719eb834a5cc8ef6ac7e4ca15; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
@@ -1986,7 +1986,7 @@
     },
     {
       "project_id": "SCPN-MIF-MAGLIF-CORE",
-      "lookup_state": "Selected published source files checked on 28 October 2026 at 04d9eb1c72deade4045e6c0ea097a486e24a437b; reading and technical captures retain their individual dates.",
+      "lookup_state": "Selected published source files checked on 1 November 2026 at 04d9eb1c72deade4045e6c0ea097a486e24a437b; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
@@ -2092,7 +2092,7 @@
     },
     {
       "project_id": "SCPN-MIF-PLASMA-JET-CORE",
-      "lookup_state": "Selected published source files checked on 28 October 2026 at d56bb598992260020492389a24d21e260f22ff62; reading and technical captures retain their individual dates.",
+      "lookup_state": "Selected published source files checked on 1 November 2026 at d56bb598992260020492389a24d21e260f22ff62; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
@@ -2198,7 +2198,7 @@
     },
     {
       "project_id": "SCPN-MIRROR-CORE",
-      "lookup_state": "Selected published source files checked on 28 October 2026 at 2ce0260b953c0b2a649a74fda8fa0fad55e9d062; reading and technical captures retain their individual dates.",
+      "lookup_state": "Selected published source files checked on 1 November 2026 at 2ce0260b953c0b2a649a74fda8fa0fad55e9d062; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
@@ -2315,7 +2315,7 @@
     },
     {
       "project_id": "SCPN-MUON-FUSION-CORE",
-      "lookup_state": "Selected published source files checked on 28 October 2026 at 5a09a0e8b647513308138201778b9636081b6d99; reading and technical captures retain their individual dates.",
+      "lookup_state": "Selected published source files checked on 1 November 2026 at 5a09a0e8b647513308138201778b9636081b6d99; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
@@ -2486,7 +2486,7 @@
     },
     {
       "project_id": "SCPN-REACTOR-KERNELS",
-      "lookup_state": "Selected published source files checked on 28 October 2026 at bf717c720595cf801559a9932676552505104674; reading and technical captures retain their individual dates.",
+      "lookup_state": "Selected published source files checked on 1 November 2026 at bf717c720595cf801559a9932676552505104674; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
@@ -2608,7 +2608,7 @@
     },
     {
       "project_id": "SCPN-RFP-CORE",
-      "lookup_state": "Selected published source files checked on 28 October 2026 at 84d3a25592e63d06e7a5ab52c47267c72a80d666; reading and technical captures retain their individual dates.",
+      "lookup_state": "Selected published source files checked on 1 November 2026 at 84d3a25592e63d06e7a5ab52c47267c72a80d666; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
@@ -2736,7 +2736,7 @@
     },
     {
       "project_id": "SCPN-SPHEROMAK-CORE",
-      "lookup_state": "Selected published source files checked on 28 October 2026 at ced6905499f3018356b6e28a3b1b6ca73854f72e; reading and technical captures retain their individual dates.",
+      "lookup_state": "Selected published source files checked on 1 November 2026 at ced6905499f3018356b6e28a3b1b6ca73854f72e; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
@@ -2842,7 +2842,7 @@
     },
     {
       "project_id": "SCPN-STELLARATOR-CORE",
-      "lookup_state": "Selected published source files checked on 28 October 2026 at 7c43fe0a648842fa2ddc0ad1a16c2e47a5fb484e; reading and technical captures retain their individual dates.",
+      "lookup_state": "Selected published source files checked on 1 November 2026 at 7c43fe0a648842fa2ddc0ad1a16c2e47a5fb484e; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
@@ -2948,7 +2948,7 @@
     },
     {
       "project_id": "SCPN-THETA-PINCH-CORE",
-      "lookup_state": "Selected published source files checked on 28 October 2026 at 50732f22cdfbf9cc2cba6ca577fd86a134c12b86; reading and technical captures retain their individual dates.",
+      "lookup_state": "Selected published source files checked on 1 November 2026 at 50732f22cdfbf9cc2cba6ca577fd86a134c12b86; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
@@ -3054,7 +3054,7 @@
     },
     {
       "project_id": "SCPN-TOKAMAK-CORE",
-      "lookup_state": "Selected published source files checked on 28 October 2026 at ba8d94726f3a10c867d1bbc90890cc51d5993d81; reading and technical captures retain their individual dates.",
+      "lookup_state": "Selected published source files checked on 1 November 2026 at ba8d94726f3a10c867d1bbc90890cc51d5993d81; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
@@ -3160,7 +3160,7 @@
     },
     {
       "project_id": "SCPN-Z-PINCH-CORE",
-      "lookup_state": "Selected published source files checked on 28 October 2026 at da956bc74775e2b5aea418f53668e367cba83570; reading and technical captures retain their individual dates.",
+      "lookup_state": "Selected published source files checked on 1 November 2026 at da956bc74775e2b5aea418f53668e367cba83570; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
@@ -3266,12 +3266,12 @@
     },
     {
       "project_id": "SCPN-PHASE-ORCHESTRATOR",
-      "lookup_state": "Selected published source files checked on 28 October 2026 at e58f64439936f54ad87140842011550c47e523b7; reading and technical captures retain their individual dates.",
+      "lookup_state": "Selected published source files checked on 1 November 2026 at 347b37e7475a567dcffcb214fd68d43f918a93ff; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
-          "sha256": "d8c48d9aec142fdceba2ca77817cd92152aafa78d8c0d0e99276fa5a35fdb318",
-          "bytes": 55319
+          "sha256": "8ba0693931c6de6fc254d15ed7bbd97215bac8c29b3fa3ddcd5f707ff41c40e9",
+          "bytes": 57670
         },
         {
           "label": "ARCHITECTURE.md",
@@ -3290,8 +3290,8 @@
         },
         {
           "label": "pyproject.toml",
-          "sha256": "f4e402f30b1541538b6f8c01589ba6e6ce419ef6d0975b759ef381fd872760da",
-          "bytes": 17538
+          "sha256": "54fa68fbe350867c974799a459d85ada78242f72e130a3aa941eee20ef75338b",
+          "bytes": 17889
         },
         {
           "label": "src/scpn_phase_orchestrator/__init__.py",
@@ -3437,12 +3437,12 @@
     },
     {
       "project_id": "SCPN-CONTROL",
-      "lookup_state": "Selected published source files checked on 28 October 2026 at 288243a09ec557147f0b917590238a7f62fbefbb; reading and technical captures retain their individual dates.",
+      "lookup_state": "Selected published source files checked on 1 November 2026 at 170477f42e52aea4b56713acf067876b97f1edf4; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
-          "sha256": "74a62716e688b8a54c2801fd9dc029974d9296e428be996aa42f03885db9b8b9",
-          "bytes": 39315
+          "sha256": "f1c3172ac546d1a0d6f614bcbbde4729a2b4b212cbe03ba61126475f6822f4ae",
+          "bytes": 41498
         },
         {
           "label": "ARCHITECTURE.md",
@@ -3461,8 +3461,8 @@
         },
         {
           "label": "pyproject.toml",
-          "sha256": "e69bfbec8f940487fca2d937a0df086c9602a163fc57efaa8d5ad734edf060db",
-          "bytes": 10280
+          "sha256": "3a913f49388e6f7e4ca325de039550dc6f5295c990a2a8f6c22c9b831ade1180",
+          "bytes": 10283
         },
         {
           "label": "src/scpn_control/__init__.py",
@@ -3472,48 +3472,48 @@
         },
         {
           "label": "src/scpn_control/cli.py",
-          "sha256": "26f9b807414718d533878a8dfdec9a5bc3440df744381c3cd5941df2ec2ffc45",
-          "bytes": 36321,
+          "sha256": "9404c43e47d6273df328d07aa670a1b44d761ba6f0c3dde20c463303b4ca319c",
+          "bytes": 37865,
           "static_top_level_declarations": [
             {
               "name": "main",
               "kind": "FunctionDef",
-              "line": 128
+              "line": 144
             },
             {
               "name": "demo",
               "kind": "FunctionDef",
-              "line": 136
+              "line": 152
             },
             {
               "name": "benchmark",
               "kind": "FunctionDef",
-              "line": 269
+              "line": 292
             },
             {
               "name": "run_hardware_campaign",
               "kind": "FunctionDef",
-              "line": 433
+              "line": 478
             },
             {
               "name": "acquire_mdsplus_shot_command",
               "kind": "FunctionDef",
-              "line": 580
+              "line": 625
             },
             {
               "name": "live",
               "kind": "FunctionDef",
-              "line": 706
+              "line": 752
             },
             {
               "name": "hil_test",
               "kind": "FunctionDef",
-              "line": 783
+              "line": 829
             },
             {
               "name": "info",
               "kind": "FunctionDef",
-              "line": 834
+              "line": 880
             }
           ]
         }
@@ -3590,17 +3590,17 @@
     },
     {
       "project_id": "SYNAPSE-CHANNEL",
-      "lookup_state": "Selected published source files checked on 28 October 2026 at 99ece6efe4f157aed092df4a47a780029160331f; reading and technical captures retain their individual dates.",
+      "lookup_state": "Selected published source files checked on 1 November 2026 at 68bce0511dd13ce4d9f7576d0aa5723e80c209e8; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
-          "sha256": "e6b6498bb499a568c6a785e08d5449d20fdc79bbede1398b1a9ee99e0b9a70c9",
-          "bytes": 135297
+          "sha256": "55d4192b806e2e16c8373044aa519c2aeb0e75d479e925f3685bff595af098a1",
+          "bytes": 139644
         },
         {
           "label": "ARCHITECTURE.md",
-          "sha256": "487263d2a3900ad6f6570505b1aadf43b6c3b4c957615b8b5a06f78e81e7f239",
-          "bytes": 20458
+          "sha256": "564ce48c5cb63006cd5a44516d42f4f063972de26bca727b5d71dc7234d08a36",
+          "bytes": 20474
         },
         {
           "label": "ROADMAP.md",
@@ -3614,29 +3614,29 @@
         },
         {
           "label": "pyproject.toml",
-          "sha256": "ee687e90098ce965bfc4c183ecb68f35b4e2ae490b842d642690d5523e5db3d1",
-          "bytes": 8077
+          "sha256": "543525639f2d7ae5cc27a7072cd7ed5911d29b5cb4d3f21cae9742ace27a7491",
+          "bytes": 8321
         },
         {
           "label": "src/synapse_channel/__init__.py",
-          "sha256": "c5b21f8376174a95db33edda861f4a4641cb63a289e4884390b77f4d4e942260",
+          "sha256": "c1cf9f3356e191a184b8a3b3d32f28e1bbea0b11511a7bafafe983d49ffa002b",
           "bytes": 10727,
           "static_top_level_declarations": []
         },
         {
           "label": "src/synapse_channel/cli.py",
-          "sha256": "e527836a6e041d921b4de1954a6084d5337bb7612ae555b47d7282201f96cf11",
-          "bytes": 21989,
+          "sha256": "6f2fce69060e0750992b6c8d5bb8385b134ab84f1965e23351627dc9855d231e",
+          "bytes": 22534,
           "static_top_level_declarations": [
             {
               "name": "build_parser",
               "kind": "FunctionDef",
-              "line": 287
+              "line": 294
             },
             {
               "name": "main",
               "kind": "FunctionDef",
-              "line": 389
+              "line": 396
             }
           ]
         },
@@ -3780,9 +3780,9 @@
       "declared_package_metadata": {
         "pyproject.toml": {
           "name": "synapse-channel",
-          "version": "0.99.38",
+          "version": "0.99.41",
           "description": "Local-first coordination bus for AI agents across one repository or a whole ecosystem: work claims, presence, chat, a shared plan, and resource sharing over a WebSocket hub",
-          "requires-python": ">=3.10",
+          "requires-python": ">=3.11",
           "declared_scripts": {
             "synapse": "synapse_channel.cli:main",
             "synapse-channel": "synapse_channel.cli_mcp:main",
@@ -3803,22 +3803,22 @@
       "boundary_declarations": {},
       "readme_excerpts": [
         "A local-first coordination bus for a fleet of AI agents working in parallel —\nwithin a single repository or spread across a whole ecosystem of them. One\nWebSocket hub is the shared source of truth for **presence**, **work claims**,\n**chat**, **task status**, and **resource offers**: agents address each other\nacross projects and share one plan, while file-scope claims keep the agents in any\none repository from receiving overlapping live authority. Documented provider\nhooks and the staged Git gate enforce that authority only on their covered\nmutation surfaces.",
-        "The bus is transport-light (`websockets`, plus `typing-extensions` on Python\n3.10), hub-centric by design\n(one place owns presence, leases, and history), and runs entirely on the local\nmachine. Model workers reply on-channel through any OpenAI-compatible endpoint,\nincluding a local Ollama server, with a deterministic rule-based fallback for\noffline use.",
-        "The bundled `synapse mcp` server exposes send, durable inbox, status, claim, release,\nhandoff, and task verbs as MCP tools plus the board, agents, and resources as\nread-only MCP resources. Host interoperability depends on the installed host\nversion, transport and configuration; see the exact support boundaries in the\n[integration catalogue](docs/integration-catalog.md). The A2A HTTP surface has\nits separately stated partial qualification. The base runtime uses `websockets`\nand, on Python 3.10, `typing-extensions`; adapters use their declared optional\nextras (`pip install\n'synapse-channel[mcp]'`). See the [MCP guide](docs/mcp.md) and the separately\nqualified [authenticated HTTP profile](docs/mcp-http.md)."
+        "Two scripted agents share one hub and one throwaway Git repository; no model\nor provider is called. In about 40 seconds the real hub shows that:",
+        "1. the second agent's overlapping file claim is refused;\n2. its attempt to hand itself the first agent's task is refused;\n3. the first agent writes half of its change and crashes without releasing;\n4. while that lease is live, the second agent can neither claim nor write the file;\n5. when the lease runs out, the second agent claims the file under a new epoch,\n   and the restarted first agent's release is refused;\n6. result verification reports the half-written file as not done;\n7. the second agent finishes the change, its own test passes, and the hub\n   accepts the release."
       ],
       "architecture_documents": [
         {
           "document": "ARCHITECTURE.md",
-          "sha256": "7096fec69240ba013fe0971a8074726ef4a0fd994ed42c25a4fd94b0dd6340ef",
+          "sha256": "564ce48c5cb63006cd5a44516d42f4f063972de26bca727b5d71dc7234d08a36",
           "sections": [
             {
               "heading": "Architecture",
-              "excerpt": "SYNAPSE CHANNEL is a local-first coordination bus for several agents working in\nparallel on one codebase or one ecosystem of repositories. A single WebSocket\nhub is the authoritative source of truth for presence, work claims, chat, task\nstatus, the shared plan, agent capabilities, and resource offers, so concurrent\nworkers can see conflicting or duplicate declared work. Around that core the package has\ngrown deliberate layers — durable messaging, identity and ownership, federation\nbetween hubs, interop bridges, and operator surfaces — each opt-in where it can\nbe, and each degrading with a stated warning when its optional dependency is\nabsent.",
+              "excerpt": "SYNAPSE CHANNEL is a local-first coordination bus for several agents working in\nparallel on one codebase or one ecosystem of repositories. A single WebSocket\nhub is the authoritative source of truth for presence, work claims, chat, task\nstatus, the shared plan, agent capabilities, and resource offers, so concurrent\nworkers can see conflicting or duplicate declared work. Around that core the package has\ngrown deliberate layers — durable messaging, identity and ownership, federation\nbetween hubs, interop bridges, and operator surfaces. Optional features have\ntheir own dependency and configuration requirements; an unavailable dependency\ncan refuse that feature without qualifying an unrelated path.",
               "excerpt_truncated": false
             },
             {
               "heading": "Design principles",
-              "excerpt": "- **One authoritative hub per deployment.** All *authority* — who owns a name,\n  who holds a claim, what state a task is in — lives on one single-writer\n  instance, which keeps the routing logic deterministic and unit-testable.\n  Multi-hub federation observes and merges append-only logs; it never\n  arbitrates authority (see \"Federation and multi-hub\").\n- **Core transport-light; extras arm features.** The core runtime dependency is\n  `websockets`; everything else on the core paths is the standard library.\n  Heavier features are gated behind optional extras (`encryption`, `sqlcipher`,\n  `mcp`, `otel`, `wasm`, `tpm2`), and a missing extra degrades that feature\n  with a stated warning instead of crashing an unrelated path.\n- **Local-first, proportionate security.** The default posture is one operator\n  on loopback. A bind off loopback without a connect token refuses to start\n  (`guard_exposure` raises `InsecureBindError`); accepting that risk is an\n  explicit operator flag. TLS, per-message authentication, signed events, ACL\n  enforcement, and paranoid mode are opt-in layers bound to need.\n- **A name has one owner.** Enforced by default, not opt-in: an ambient\n  environment variable is never a silent identity source, a hub-side ownership\n  lease survives reconnects, and installations with the `encryption` extra pin\n  a zero-config machine key on first use (see \"Identity and ownership\").\n- **Correctness before features.** Two layers are non-negotiable: durability (a\n  hub restart must not wipe live leases) and reconnect-safety (a reconnected\n  agent must not double-apply a claim, and a directed message is not consumed\n  by a receiver that will never surface it).\n- **Single responsibility per module.** The package is composed of a few\n  hundred small modules, each owning one ",
+              "excerpt": "- **One authoritative hub per deployment.** All *authority* — who owns a name,\n  who holds a claim, what state a task is in — lives on one single-writer\n  instance, which keeps the routing logic deterministic and unit-testable.\n  Multi-hub federation observes and merges append-only logs; it never\n  arbitrates authority (see \"Federation and multi-hub\").\n- **Core transport-light; extras arm features.** Base runtime dependencies are\n  `websockets`; supported interpreters provide the required typing APIs.\n  Heavier features are gated behind optional extras (`encryption`, `sqlcipher`,\n  `mcp`, `otel`, `wasm`, `tpm2`); each entry point documents its missing-extra\n  diagnostic or refusal.\n- **Local-first, proportionate security.** The default posture is one operator\n  on loopback. A bind off loopback without a connect token refuses to start\n  (`guard_exposure` raises `InsecureBindError`); accepting that risk is an\n  explicit operator flag. TLS, per-message authentication, signed events, ACL\n  enforcement, and paranoid mode are opt-in layers bound to need.\n- **A name has one owner.** Enforced by default, not opt-in: an ambient\n  environment variable is never a silent identity source, a hub-side ownership\n  lease survives reconnects, and installations with the `encryption` extra pin\n  a zero-config machine key on first use (see \"Identity and ownership\").\n- **Correctness before features.** A configured, healthy journal replays retained\n  supported events with the matching integrity and encryption material; leases\n  can expire during downtime. Without a journal, a new hub starts empty.\n  Reconnect safety depends on the operation's retry protocol and an authorised\n  mailbox reader retaining its cursor. A transport acknowledgement does not\n  prove that an agent model processed a mes",
               "excerpt_truncated": true
             },
             {
@@ -3848,7 +3848,7 @@
             },
             {
               "heading": "Durability",
-              "excerpt": "With `--db`, the hub is backed by an append-only SQLite event log in WAL mode.\nEvery claim, release, task update, handoff, checkpoint, resource offer, ledger\nchange, and chat message is recorded, and the hub rebuilds its state by replaying\nthe log on start-up. The guarantee is split honestly by workload: the lease/claim\npath commits at `synchronous=FULL` (durable across an OS crash); the high-volume\nchat and progress path commits at `synchronous=NORMAL` (durable across an\napplication crash). At-rest payload encryption and whole-database SQLCipher are\noptional layers on the same store.\n\n`EventStore` retains its public signatures and record types while table families\nshare one connection, lock and transaction owner:\n\n| Responsibility | Owning modules |\n| --- | --- |\n| Connection custody and shared event state | `core/persistence_connection` |\n| Append and AEF outbox | `core/persistence_events` |\n| Bounded reads and forensic scans | `core/persistence_event_reads` |\n| Row MACs and quarantine | `core/persistence_event_authentication` |\n| Retention and vacuum | `core/persistence_event_maintenance` |\n| Receipt aggregates and notification outbox | `core/persistence_receipts`, `core/persistence_receipt_codec` |\n| Keyed operations and evidence outbox | `core/persistence_operations`, `core/persistence_operation_commit` |\n\nKeyed mutation preparation happens before the writer lock. Replay and conflict\nlookup precedes renewed predecessor and capacity checks. Mutation events, exact\nresponse, compatibility replay and evidence intent share one `BEGIN IMMEDIATE`\nboundary. Post-commit observers cannot roll back a durable result. Receipt chat,\nrequest and notification transactions retain the same ownership boundary.\nPublic event and operation records remain defined in `core/persistence`.\n\n",
+              "excerpt": "With `--db`, the hub is backed by an append-only SQLite event log in WAL mode.\nEvery claim, release, task update, handoff, checkpoint, resource offer, ledger\nchange, and chat message is recorded, and the hub rebuilds its state by replaying\nretained supported events on start-up. The lease/claim path commits at\n`synchronous=FULL`; its power-failure durability relies on the host filesystem\nand storage honouring SQLite's synchronization requests. High-volume chat and\nprogress use `synchronous=NORMAL`: an application crash retains committed rows,\nbut an OS crash or power failure may lose recent commits. Replay also depends on\nretention, valid integrity/key material and lease expiry. At-rest payload\nencryption and whole-database SQLCipher are optional layers on the same store.\n\n`EventStore` retains its public signatures and record types while table families\nshare one connection, lock and transaction owner:\n\n| Responsibility | Owning modules |\n| --- | --- |\n| Connection custody and shared event state | `core/persistence_connection` |\n| Append and AEF outbox | `core/persistence_events` |\n| Bounded reads and forensic scans | `core/persistence_event_reads` |\n| Row MACs and quarantine | `core/persistence_event_authentication` |\n| Retention and vacuum | `core/persistence_event_maintenance` |\n| Receipt aggregates and notification outbox | `core/persistence_receipts`, `core/persistence_receipt_codec` |\n| Keyed operations and evidence outbox | `core/persistence_operations`, `core/persistence_operation_commit` |\n\nKeyed mutation preparation happens before the writer lock. Replay and conflict\nlookup precedes renewed predecessor and capacity checks. Mutation events, exact\nresponse, compatibility replay and evidence intent share one `BEGIN IMMEDIATE`\nboundary. Post-commit observers cannot ",
               "excerpt_truncated": true
             },
             {
@@ -3888,7 +3888,7 @@
     },
     {
       "project_id": "SYNAPSE-POLICY-CHECK-ACTION",
-      "lookup_state": "Selected published source files checked on 28 October 2026 at dccd67c1e45dc3a328b3700df7d1acfd117792af; reading and technical captures retain their individual dates.",
+      "lookup_state": "Selected published source files checked on 1 November 2026 at dccd67c1e45dc3a328b3700df7d1acfd117792af; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
@@ -3914,12 +3914,12 @@
     },
     {
       "project_id": "DIRECTOR-AI",
-      "lookup_state": "Selected published source files checked on 28 October 2026 at 1378e512f6dfeddad0826cea50738019445451c7; reading and technical captures retain their individual dates.",
+      "lookup_state": "Selected published source files checked on 1 November 2026 at 02e73bdba22a6f3b2f22e6a1b869a09d05a412f8; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
-          "sha256": "a3155d3447bade73cda9cdc8314459e98f06708e86c0a578d9239acad0c6c967",
-          "bytes": 40820
+          "sha256": "70ead3be87bf4181af764b6bdbd7cb3917530eba8de4d482b0bca56984a164d4",
+          "bytes": 42071
         },
         {
           "label": "ARCHITECTURE.md",
@@ -3928,8 +3928,8 @@
         },
         {
           "label": "ROADMAP.md",
-          "sha256": "bf120e05e9e6f5695d385c5a45c0c7576835356f868c16e14772f6ff25aac8e0",
-          "bytes": 27711
+          "sha256": "4807d35fd909e04749ab26afb637b49d9ff271648006e48a17de99510fd2db97",
+          "bytes": 29401
         },
         {
           "label": "VALIDATION.md",
@@ -3938,8 +3938,8 @@
         },
         {
           "label": "pyproject.toml",
-          "sha256": "906d97b59370793afe85ed7066459cf711ba4b4c0f62abe2a26c4d4f4806d83a",
-          "bytes": 32692
+          "sha256": "2ee82a07f870efb68b92eb27bff78f157a528965c747fdae0464844fd5e56556",
+          "bytes": 32801
         },
         {
           "label": "src/director_ai/__init__.py",
@@ -3949,8 +3949,8 @@
         },
         {
           "label": "src/director_ai/cli.py",
-          "sha256": "1004cfef175246db40bbaa7bf7c31aaa1600dfff5e86b7d693f806baac5ddd40",
-          "bytes": 23298,
+          "sha256": "744df7870621ede99a8bde196e58114abd667c87ad6fd0c5e77d7bd35bd8b1de",
+          "bytes": 23503,
           "static_top_level_declarations": [
             {
               "name": "main",
@@ -4067,17 +4067,17 @@
     },
     {
       "project_id": "RIGOR-FOUNDRY",
-      "lookup_state": "Selected published source files checked on 28 October 2026 at 19148d03430786e209f12288a397f47cdaa1b02e; reading and technical captures retain their individual dates.",
+      "lookup_state": "Selected published source files checked on 1 November 2026 at 95033b06e6808c4f6bff3893dbd54080a0b5302d; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
-          "sha256": "eab40efdd677b6a37ff6bed96d58e3fe8eb36e7edab324e5ce6756b86da6b037",
-          "bytes": 19144
+          "sha256": "4f3fab963ebb4a8eef610c1be80f8b8092e16084f34342a14c80880b40a86af4",
+          "bytes": 22588
         },
         {
           "label": "ARCHITECTURE.md",
-          "sha256": "a89815f345037e117f4596f0fb646b659ce6520b4e67877ade3feb0e0a71ad31",
-          "bytes": 24645
+          "sha256": "2afad45fa4f9d7e82ea9a2fe16237a71252dfc950636d5f994cefd467ccc3566",
+          "bytes": 29441
         },
         {
           "label": "ROADMAP.md",
@@ -4086,13 +4086,13 @@
         },
         {
           "label": "VALIDATION.md",
-          "sha256": "604d341d8087397649817b7baec47986c1e132d1c67ede5a499c1adc534cb27e",
-          "bytes": 22164
+          "sha256": "27f692dff8a1f0ea3b7bd51e26b5812670595226c08775fd0dfd9daa019e4fb5",
+          "bytes": 25730
         },
         {
           "label": "pyproject.toml",
-          "sha256": "572228b205701f0651be1f810e6f36a01cb5cd1a172460c1a0c8fd5422379362",
-          "bytes": 5330
+          "sha256": "631b64f4f9a54b652a008971a4557b3ffeccde9f46abb4428c5239ba3ce550db",
+          "bytes": 5814
         },
         {
           "label": "src/rigor_foundry/__init__.py",
@@ -4140,7 +4140,7 @@
       "architecture_documents": [
         {
           "document": "ARCHITECTURE.md",
-          "sha256": "e4526f8dd9c9f9804612e04f9a08581067b3e08c20b5a6478897f416eb8480e8",
+          "sha256": "2afad45fa4f9d7e82ea9a2fe16237a71252dfc950636d5f994cefd467ccc3566",
           "sections": [
             {
               "heading": "System boundary",
@@ -4164,7 +4164,7 @@
             },
             {
               "heading": "Evidence records",
-              "excerpt": "`rules.py` defines the versioned portable rule registry.\n`audit_primitives.py` owns protocol versions, canonical digests, strict field\nvalidators, and shared type contracts. `candidate_anchor.py` defines candidate\nand anchor records. `policy_models.py` owns repository policy, domain, and\nnative-adapter declarations; `models.py` owns report and review records while\npreserving the original public policy and primitive imports. Callers must\nverify digests during load; silent repair is not permitted. Report schema 1.3\nincludes `GitExecutableProvenance`, the Git object format, ignored-inventory\nevidence, and strict anchored candidates; changing any bound input changes the\nreport digest. Review-ledger\nschema 1.0 is independent and remains unchanged.\n`report_diff.py` owns schema 1.0 exact-report comparisons. It partitions exact\ncandidate identities and only treats a semantic identity with a changed anchor\nas relocation. Ambiguous pairings require operator-declared candidate pairs;\nrepository, branch, policy, rule-pack, and scanner changes require exact\ncompatibility declarations. Replay binds both parent report digests and does\nnot assert chronology or correctness.\n`digest_dependencies.py` publishes schema 1.7 of the machine-readable graph of\nunconditional identity bindings and its own canonical digest. The graph\nincludes ignored inventory, Git provenance, maturity policy, rule maturity,\nand toolchain identities in\naddition to the tracked inventory, policy, rule-pack, desired-state, report, report diff,\nreview, campaign, comparison, task, and closure records. Policy and review\nrecords expose one canonical identity each. Rule-pack version 1.1.0 binds its\nschema, registry version, ordered definitions, and definition fields into the\npack digest. Conditional comparison inputs and d",
+              "excerpt": "`rules.py` defines the versioned portable rule registry.\n`audit_primitives.py` owns protocol versions, canonical digests, strict field\nvalidators, and shared type contracts. `candidate_anchor.py` defines candidate\nand anchor records. `policy_models.py` owns repository policy, domain, and\nnative-adapter declarations; `models.py` owns report and review records while\npreserving the original public policy and primitive imports. Callers must\nverify digests during load; silent repair is not permitted. Report schema 1.3\nincludes `GitExecutableProvenance`, the Git object format, ignored-inventory\nevidence, and strict anchored candidates; changing any bound input changes the\nreport digest. Review-ledger\nschema 1.0 is independent and remains unchanged.\n`report_diff.py` owns schema 1.0 exact-report comparisons. It partitions exact\ncandidate identities and only treats a semantic identity with a changed anchor\nas relocation. Ambiguous pairings require operator-declared candidate pairs;\nrepository, branch, policy, rule-pack, and scanner changes require exact\ncompatibility declarations. Replay binds both parent report digests and does\nnot assert chronology or correctness.\n`digest_dependencies.py` publishes schema 1.8 of the machine-readable graph of\nunconditional identity bindings and its own canonical digest. The graph\nincludes ignored inventory, Git provenance, maturity policy, rule maturity,\nand toolchain identities in\naddition to the tracked inventory, policy, rule-pack, desired-state, report, report diff,\nreview, campaign, comparison, task, and closure records. Policy and review\nrecords expose one canonical identity each. Rule-pack version 1.1.0 binds its\nschema, registry version, ordered definitions, and definition fields into the\npack digest. Conditional comparison inputs and d",
               "excerpt_truncated": true
             },
             {
@@ -4224,7 +4224,12 @@
             },
             {
               "heading": "Packaging",
-              "excerpt": "The package uses a `src/` layout, a typed-package marker, Hatchling, an installed\n`rigor` entry point, and the `cryptography` runtime dependency for Ed25519. CI\ntests Python 3.11–3.13, builds wheel and source distributions, installs the\nwheel outside the source tree, and verifies its metadata and CLI.",
+              "excerpt": "The package uses a `src/` layout, a typed-package marker, Hatchling, an installed\n`rigor` entry point, `cryptography` for Ed25519 and PyYAML for bounded\nGitHub Actions event parsing. The workflow YAML, expression and scanner owners\nremain separate, and alias-expanded execution positions have their own budget.\nCI\ntests Python 3.11–3.13, builds wheel and source distributions, installs the\nwheel outside the source tree, and verifies its metadata and CLI.",
+              "excerpt_truncated": false
+            },
+            {
+              "heading": "Distributed validation workflows",
+              "excerpt": "The CI coordinator owns events, concurrency, same-revision reusable calls and\none aggregate gate. Its quality, tests, coverage, distribution and VS Code\nworkflows each have one repository owner and one reason to change. Coverage\npublishes the test artifact through narrowly scoped OIDC; distribution exercises\nthe actual wheel, Action and hook; VS Code exercises the real editor. Small\nexisting documentation, container, security and release workflows retain\ncohesive owners rather than introducing empty wrapper layers.\n\nThe versioned workflow inventory declares every executable job, including\nindependent scheduled and release jobs. The tools.ci_workflows reader resolves\nactual category sources for existing contracts, refusing duplicate YAML keys,\nlinks and ambiguous call surfaces. The tools.check_ci_workflows guard binds\nownership to the actual graph, narrow permissions and fixed aggregate.\nThe normal action-pin guard invokes it in audit, preflight and commit hooks.\n\nRepository limits are 200 physical lines and 32 KiB for the coordinator,\n1,000 lines and 100 KiB per other workflow, and 16 reusable workflows.\nThese limits retain provider headroom; they do not justify mixing unrelated\nowners. Distinct category concurrency groups cannot cancel their own caller.",
               "excerpt_truncated": false
             }
           ]
@@ -4233,7 +4238,7 @@
     },
     {
       "project_id": "REMANENTIA",
-      "lookup_state": "Selected published source files checked on 28 October 2026 at 98eb9bf7a4e8c822292a7b574252960171924a94; reading and technical captures retain their individual dates. The historical local public_projection.py fingerprint is omitted because that path is absent from this published revision.",
+      "lookup_state": "Selected published source files checked on 1 November 2026 at 98eb9bf7a4e8c822292a7b574252960171924a94; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
@@ -5075,7 +5080,7 @@
     },
     {
       "project_id": "HushLine",
-      "lookup_state": "Selected published source files checked on 28 October 2026 at e1f8c479e23e1c56786f09895e4246b39507d732; reading and technical captures retain their individual dates.",
+      "lookup_state": "Selected published source files checked on 1 November 2026 at e1f8c479e23e1c56786f09895e4246b39507d732; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
@@ -5096,12 +5101,12 @@
     },
     {
       "project_id": "SC-NEUROCORE",
-      "lookup_state": "Selected published source files checked on 28 October 2026 at efacfde75a56cd3dbbd8e2746e43f45d3981fe4c; reading and technical captures retain their individual dates.",
+      "lookup_state": "Selected published source files checked on 1 November 2026 at f10db9c175f05461ad622b606d3e8d0b83ada3cf; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
-          "sha256": "6edf6e287822b5a5f20f469d5be3e4fc7e64e637b7587511535814ba84b2ee15",
-          "bytes": 48014
+          "sha256": "2f63628f097981d3656c27bc76ea423340cb6479c103a563ae0e52be1fc5a2a6",
+          "bytes": 48476
         },
         {
           "label": "ARCHITECTURE.md",
@@ -5110,18 +5115,18 @@
         },
         {
           "label": "ROADMAP.md",
-          "sha256": "97257bcf60c961cd7e556018cdf7ee6e3a76da7dfcbbd2789e58aeeb4f83e969",
-          "bytes": 29453
+          "sha256": "8df823f0d710cd305f7c5a821543c6c029508e787ccf2e71aa1e0e880b96782a",
+          "bytes": 30472
         },
         {
           "label": "VALIDATION.md",
-          "sha256": "f13b7547f924a079fefa7dac068e1536670fc2fa68e7fb6f7f26433ab05cd3bd",
-          "bytes": 9399
+          "sha256": "f664322afd090aa4e4eacbef862918ae7bba3be3cb1233a615eedbee20bb65a1",
+          "bytes": 11147
         },
         {
           "label": "pyproject.toml",
-          "sha256": "85c569c6064bdf3406f473d9467b817b0ff1d9ab5e9311b61dc9e1d18efae9bb",
-          "bytes": 18088
+          "sha256": "aa8c08cc43a5aa161f127eef88c4cbe419020e7af72e71dd6cea62b0240c663e",
+          "bytes": 18133
         },
         {
           "label": "Cargo.toml",
@@ -5130,8 +5135,8 @@
         },
         {
           "label": "src/sc_neurocore/__init__.py",
-          "sha256": "a1bff2b31a396a968a07abc797f9f16b5f67190d1a73679b4bc6c0de3fe755d4",
-          "bytes": 7180,
+          "sha256": "0c3fa240081a7539a0ce1d8246a6c1e9fee33c03052e59b2e230a11c975dc2d7",
+          "bytes": 7179,
           "static_top_level_declarations": []
         },
         {
@@ -5158,7 +5163,7 @@
       "declared_package_metadata": {
         "pyproject.toml": {
           "name": "sc-neurocore",
-          "version": "3.16.0",
+          "version": "4.0.0",
           "description": "Stochastic Computing SNN framework: NumPy + Rust SIMD + FPGA RTL.",
           "requires-python": ">=3.11",
           "declared_scripts": {
@@ -5214,12 +5219,12 @@
     },
     {
       "project_id": "LOOP-TIMING-WITNESS",
-      "lookup_state": "Selected published source files checked on 28 October 2026 at 2ece51ab0780fae865b8b2e27ae4c9b77203bde6; reading and technical captures retain their individual dates.",
+      "lookup_state": "Selected published source files checked on 1 November 2026 at de3499ffa0b457203779c444181816371b651947; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
-          "sha256": "18fdc1697f59dae3534bfcf07f046ba9f81d16297c1035cfa2c42b858b1bc21e",
-          "bytes": 19710
+          "sha256": "6ada87db77264b37623792ff0f7c6fb6b1a44b516792abdd00c8469426f9739d",
+          "bytes": 20517
         },
         {
           "label": "ARCHITECTURE.md",
@@ -5228,28 +5233,28 @@
         },
         {
           "label": "docs/ARCHITECTURE.md",
-          "sha256": "45bbd562307e1465e4f5ec7bbec89e94b33c0d9bc101555cb6fecc17d6da86c6",
-          "bytes": 17945
+          "sha256": "588b6ea756f1c0eaf050bc1857c8a007509662e83911c00301b548a73bc1e978",
+          "bytes": 18400
         },
         {
           "label": "ROADMAP.md",
-          "sha256": "9fc61e2638fc5077149dc1217b48bfff4234c6942e2b90c8705061f06a18b97b",
-          "bytes": 5877
+          "sha256": "f3dea01ab2767c71cccc4e70c7935aa472d75b2ede98bb4722464af7dd0ef262",
+          "bytes": 6134
         },
         {
           "label": "VALIDATION.md",
-          "sha256": "69bba3242085f9e5012ce7f0a3444e37f452083ff0fb062fe9dd579ad980b7c0",
-          "bytes": 33562
+          "sha256": "b12167095d56d8e24f710e9c9e1573d41113fecb12e2e5ae9e7bda0d897463e1",
+          "bytes": 38088
         },
         {
           "label": "pyproject.toml",
-          "sha256": "4a83af4a93a6969a848c25731a5625e4b1f3e24a0d1a4766ecd9b0d8ef7d7e59",
-          "bytes": 7012
+          "sha256": "dffa5dea75f0405a9e2535c662b6efba0955887d12168c8193347033c2a7960d",
+          "bytes": 8367
         },
         {
           "label": "src/loop_timing_witness/__init__.py",
-          "sha256": "cc272876f713e95b578bb9df442699ea90160fc39181e11bf70d535c40590553",
-          "bytes": 1970,
+          "sha256": "cfb1fd3c41b62acbddc89849e94b599279e64ba33b365a14384d1bebecf782f1",
+          "bytes": 2536,
           "static_top_level_declarations": []
         },
         {
@@ -5286,18 +5291,18 @@
         },
         {
           "label": "src/loop_timing_witness/analyze_run.py",
-          "sha256": "df40564d475ee8c7e9274b5166cf5d94e7005ea4a3b6c9e7b0c379826f27c044",
-          "bytes": 8521,
+          "sha256": "f8bab1a532aad8fc18d8f090fc737828a5868851d1335be64adc6c1d711f9a51",
+          "bytes": 8764,
           "static_top_level_declarations": [
             {
               "name": "build_report",
               "kind": "FunctionDef",
-              "line": 32
+              "line": 33
             },
             {
               "name": "main",
               "kind": "FunctionDef",
-              "line": 194
+              "line": 195
             }
           ]
         }
@@ -5311,7 +5316,8 @@
           "description": "Timing, tracking and power analysis for Loop Timing Witness",
           "requires-python": ">=3.13",
           "declared_scripts": {
-            "loop-timing-witness-analyze": "loop_timing_witness.analyze_run:main"
+            "loop-timing-witness-analyze": "loop_timing_witness.analyze_run:main",
+            "loop-timing-witness-campaign": "loop_timing_witness.analyze_campaign:main"
           }
         }
       },
@@ -5335,7 +5341,7 @@
         },
         {
           "document": "docs/ARCHITECTURE.md",
-          "sha256": "45bbd562307e1465e4f5ec7bbec89e94b33c0d9bc101555cb6fecc17d6da86c6",
+          "sha256": "588b6ea756f1c0eaf050bc1857c8a007509662e83911c00301b548a73bc1e978",
           "sections": [
             {
               "heading": "Evidence state",
@@ -5409,7 +5415,7 @@
             },
             {
               "heading": "Host analysis",
-              "excerpt": "`tools/analyze_run.py` validates the run manifest and referenced file hashes, interprets the\nverified measurement-domain snapshot, decodes events, computes derived intervals and their\ndistributions (median, 95th, 99th and 99.9th percentile,\nmaximum), deadline-miss rate, tracking error (RMS and peak), mean rail energy per cycle over\npower-sampling windows, fault detection and time to safe state. It writes JSON, CSV and SVG\nreports tied to sample counts and observation duration. Unreleased source analysis also\nreports absolute adjacent-cycle changes of each periodic latency, separate peak-to-peak\nspread and missing-pair coverage; warm-up and gaps are never bridged. This derived host\nmetric has no capture-format or controller-kernel counterpart. Inputs and limits are specified in\n[`HOST_ANALYSIS.md`](HOST_ANALYSIS.md). Board qualification and measured results remain absent.",
+              "excerpt": "`tools/analyze_run.py` validates the run manifest and referenced file hashes, interprets the\nverified measurement-domain snapshot, decodes events, computes derived intervals and their\ndistributions (median, 95th, 99th and 99.9th percentile,\nmaximum), deadline-miss rate, tracking error (RMS and peak), mean rail energy per cycle over\npower-sampling windows, fault detection and time to safe state. It writes JSON, CSV and SVG\nreports tied to sample counts and observation duration. Unreleased source analysis also\nreports absolute adjacent-cycle changes of each periodic latency, separate peak-to-peak\nspread and missing-pair coverage; warm-up and gaps are never bridged. This derived host\nmetric has no capture-format or controller-kernel counterpart. Inputs and limits are specified in\n[`HOST_ANALYSIS.md`](HOST_ANALYSIS.md). Board qualification and measured results remain absent.\n\nA repeat campaign manifest orders the run manifests of one configuration with their repeat\nindexes and reboot declarations. The campaign analysis loads each run through the same\nvalidation, refuses runs whose configuration differs, reports every repeat with its outcome,\npools the raw samples of valid repeats and states the spread between repeats and the\nconformance with the measurement-domain run plan. It adds no capture field and no board\nevidence.",
               "excerpt_truncated": false
             },
             {
@@ -5466,12 +5472,12 @@
     },
     {
       "project_id": "SCPN-QUANTUM-CONTROL",
-      "lookup_state": "Selected published source files checked on 28 October 2026 at e9c06c1ed7e39e257812558db313a79fe0ce8f92; reading and technical captures retain their individual dates.",
+      "lookup_state": "Selected published source files checked on 1 November 2026 at 6d84189427f9efb1a9e822e377fd388415e92e98; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
-          "sha256": "fd5f93ae81d6e3594d84b64bb09111f5ac7529c2183c00a9a53870c5ec87e5db",
-          "bytes": 69198
+          "sha256": "2f5ecbde88fd38a32f93706809ead80a3e1c8a5204c32034293840d614b73540",
+          "bytes": 69311
         },
         {
           "label": "ARCHITECTURE.md",
@@ -5485,13 +5491,13 @@
         },
         {
           "label": "VALIDATION.md",
-          "sha256": "3f5d766f306c9406fd1a36ccbe1b7ba22d14ddabc02ff0cd32d0ea82a3133452",
-          "bytes": 14892
+          "sha256": "14af3d45df0d706aa69ccda605fa1d7e8658132ac68767252a7dcc9f7cd17a47",
+          "bytes": 14890
         },
         {
           "label": "pyproject.toml",
-          "sha256": "9061e4e82a589157587a725aa57007092307ab833c5500f0efead6763ebf5754",
-          "bytes": 23009
+          "sha256": "398359eeabe5a13a9a054469d992948154984f4b84dd6a62a4ea2dd34a7bde61",
+          "bytes": 23040
         },
         {
           "label": "src/scpn/__init__.py",
@@ -5501,8 +5507,8 @@
         },
         {
           "label": "src/scpn_quantum_control/__init__.py",
-          "sha256": "30f0720000e8de05ea71c51b210e0b7bdbb7704878e2164054c8731aef97ef1e",
-          "bytes": 179914,
+          "sha256": "a36fe1b53cdd69f923b3b88d428adf70791e9878f1b9b3d5e261e3e0ad7445b4",
+          "bytes": 186327,
           "static_top_level_declarations": []
         },
         {
@@ -5901,7 +5907,7 @@
       "declared_package_metadata": {
         "pyproject.toml": {
           "name": "scpn-quantum-control",
-          "version": "1.2.0",
+          "version": "1.3.0",
           "description": "Evidence-governed Kuramoto-XY quantum-control and differentiable-computation workbench",
           "requires-python": ">=3.11",
           "declared_scripts": {
@@ -6050,7 +6056,7 @@
     },
     {
       "project_id": "oscillatools",
-      "lookup_state": "Selected published source files checked on 28 October 2026 at e9c06c1ed7e39e257812558db313a79fe0ce8f92; reading and technical captures retain their individual dates.",
+      "lookup_state": "Selected published source files checked on 1 November 2026 at 6d84189427f9efb1a9e822e377fd388415e92e98; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
@@ -6059,23 +6065,23 @@
         },
         {
           "label": "pyproject.toml",
-          "sha256": "dea0f78200658528b334dc49edc7608ab0b3c1ab1f52e144c9add723078da96d",
+          "sha256": "748bb9aca53ef028679a285810bac028ee2e0f2077fb92159b9f9797f64e7ba1",
           "bytes": 7754
         },
         {
           "label": "src/oscillatools/__init__.py",
-          "sha256": "771544c82c85b5340720f0c33824a86f30a89a240ef783bac418a7b3b2193653",
-          "bytes": 46252,
+          "sha256": "cbd52e2eff4fb0a64b6ff6c6e26934667d6265c60a57fdbd0851525882ee095f",
+          "bytes": 48007,
           "static_top_level_declarations": [
             {
               "name": "capabilities",
               "kind": "FunctionDef",
-              "line": 924
+              "line": 960
             },
             {
               "name": "describe",
               "kind": "FunctionDef",
-              "line": 929
+              "line": 965
             }
           ]
         }
@@ -6085,7 +6091,7 @@
       "declared_package_metadata": {
         "pyproject.toml": {
           "name": "oscillatools",
-          "version": "0.1.0",
+          "version": "0.1.1",
           "description": "Differentiable, control-oriented toolkit for coupled-phase-oscillator (Kuramoto) dynamics",
           "requires-python": ">=3.11"
         }
@@ -6100,7 +6106,7 @@
     },
     {
       "project_id": "scpn-quantum-engine",
-      "lookup_state": "Selected published source files checked on 28 October 2026 at e9c06c1ed7e39e257812558db313a79fe0ce8f92; reading and technical captures retain their individual dates.",
+      "lookup_state": "Selected published source files checked on 1 November 2026 at 6d84189427f9efb1a9e822e377fd388415e92e98; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
@@ -6109,12 +6115,12 @@
         },
         {
           "label": "pyproject.toml",
-          "sha256": "d901d75d4524d2e4168b97287aab4f4b73e5318bab308dfb1674de999a809f1c",
+          "sha256": "fe7dcd0c690a73e47fcbaaf9bd57f5166be0bd599a06601cd7183a286c9e4d47",
           "bytes": 1582
         },
         {
           "label": "Cargo.toml",
-          "sha256": "4c62703ba3a51abc0abd6506c75c5005ef9c85165cc7ee5effc9f037a36b2dfd",
+          "sha256": "6cbf03aa82d8581e9b06fba1d1ae9c0320095caf7752bf7c9f16f3d833482a3d",
           "bytes": 2790
         },
         {
@@ -6128,13 +6134,13 @@
       "declared_package_metadata": {
         "pyproject.toml": {
           "name": "scpn-quantum-engine",
-          "version": "0.2.0",
+          "version": "0.3.0",
           "description": "Rust acceleration engine for scpn-quantum-control (PyO3 + rayon)",
           "requires-python": ">=3.11"
         },
         "Cargo.toml": {
           "name": "scpn-quantum-engine",
-          "version": "0.2.0"
+          "version": "0.3.0"
         }
       },
       "boundary_declarations": {},
@@ -6807,7 +6813,7 @@
     },
     {
       "project_id": "ANULUM",
-      "lookup_state": "Selected published source files checked on 28 October 2026 at 9aeb2ef7edca90dc5f260bf93fae536f32f501f4; reading and technical captures retain their individual dates.",
+      "lookup_state": "Selected published source files checked on 1 November 2026 at edfb78baec95be83517241f14c6e0ade02551934; reading and technical captures retain their individual dates.",
       "documents": [
         {
           "label": "README.md",
@@ -7481,5 +7487,5 @@
       "architecture_documents": []
     }
   ],
-  "public_projection_updated_at_utc": "2026-10-28T21:02:44.463650+00:00"
+  "public_projection_updated_at_utc": "2026-11-01T10:35:57.086356+00:00"
 }
