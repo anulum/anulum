@@ -44,7 +44,7 @@ Persönliche GitHub-Profilübersicht
 
 Unabhängiger Forscher und Systemingenieur mit Sitz in der Schweiz. Unter dem Namen Anulum entwickle ich wissenschaftliche Software und eine geregelte Forschungsorganisation. Fünf aktive Gruppen arbeiten an Reaktorsystemen, Integration und Regelung, Agentenkoordination und Absicherung, neuromorphem Rechnen und Quantencomputing. Eine sechste Gruppe, Scientific Discovery and Experimentation, befindet sich im Aufbau. Kommerzieller Schwerpunkt: ein workflow-unabhängiger Kern, der KI-Agenten ausführt und überprüfbar macht, für jeden Prozess, in dem Arbeit erledigt, von einem Nicht-Autor geprüft und nachgespielt werden muss. Er betreibt schon heute täglich unsere eigene Forschung und Entwicklung; unser erster Markt sind regulierte Finanzinstitute in der Schweiz und in Liechtenstein. Veröffentlichte Software, Architekturarbeit, World Models und angestrebte Hardwareergebnisse haben getrennte Evidenzgrenzen. Forschungsinstitut und Unternehmen werden zur gemeinsamen Gründung mit Partnern angeboten.
 
-**Derselbe Kern, fünf sehr verschiedene Arbeitsabläufe, ein Prüfpfad:** Softwareentwicklung (über 300 Releases), wissenschaftliches Rechnen (Plasma- und Reaktormodellierung, eine veröffentlichte Simulation auf einem supraleitenden Prozessor mit 156 Qubits), Hardwareentwurf (SystemVerilog aus SC-NeuroCore), Förderanträge und technische Dokumente sowie die Prüfung von Aussagen (Director-AI).
+**Derselbe Kern, fünf sehr verschiedene Arbeitsabläufe, ein Prüfpfad:** Softwareentwicklung (392 Releases von 20 PyPI-Distributionen), wissenschaftliches Rechnen (Plasma- und Reaktormodellierung, eine veröffentlichte Simulation auf einem supraleitenden Prozessor mit 156 Qubits), Hardwareentwurf (SystemVerilog aus SC-NeuroCore), Förderanträge und technische Dokumente sowie die Prüfung von Aussagen (Director-AI).
 
 <table>
   <tr>
@@ -144,6 +144,7 @@ sie sind Betriebssignale, keine Bewertung wissenschaftlicher Qualität.
 | 2018 | Öffentliches GitHub-Konto eingerichtet |
 | 2025 | Öffentliche SCPN-Vorschauen, Framework-Indizes und technische Berichte auf Zenodo hinterlegt |
 | 2026 | Ausbau des öffentlichen Software- und Forschungsportfolios in KI-Sicherung, Agenteninfrastruktur, neuromorphem Rechnen, Plasmaregelung und Quantensimulation |
+| Juni 2026 | Agentenorganisation im täglichen Betrieb: Koordination und Journal auf eigener Hardware |
 
 Die Einträge der Zeitleiste unterscheiden Registerfakten von selbst
 veröffentlichter Chronologie. Sie implizieren weder akademische Zugehörigkeit
@@ -486,21 +487,21 @@ Evaluations-Benchmarks und CI.
 
 | PyPI | Version |
 |---|---|
-| [synapse-channel](https://pypi.org/project/synapse-channel/) | 0.99.38 |
+| [synapse-channel](https://pypi.org/project/synapse-channel/) | 0.99.51 |
 | [scpn-phase-orchestrator](https://pypi.org/project/scpn-phase-orchestrator/) | 1.4.3 |
 | [spo-kernel](https://pypi.org/project/spo-kernel/) | 0.5.10 |
 | [director-ai](https://pypi.org/project/director-ai/) | 3.21.0 |
 | [director-ai-lite](https://pypi.org/project/director-ai-lite/) | 3.21.0 |
-| [scpn-quantum-control](https://pypi.org/project/scpn-quantum-control/) | 1.2.0 |
-| [scpn-fusion-rs](https://pypi.org/project/scpn-fusion-rs/) | 4.0.0 |
-| [scpn-fusion](https://pypi.org/project/scpn-fusion/) | 4.0.0 |
+| [scpn-quantum-control](https://pypi.org/project/scpn-quantum-control/) | 1.3.0 |
+| [scpn-fusion-rs](https://pypi.org/project/scpn-fusion-rs/) | 4.1.0 |
+| [scpn-fusion](https://pypi.org/project/scpn-fusion/) | 4.1.0 |
 | [rigor-foundry](https://pypi.org/project/rigor-foundry/) | 1.0.0 |
 | [scpn-control](https://pypi.org/project/scpn-control/) | 0.23.0 |
-| [oscillatools](https://pypi.org/project/oscillatools/) | 0.1.0 |
-| [scpn-quantum-engine](https://pypi.org/project/scpn-quantum-engine/) | 0.2.0 |
-| [scpn-studio-platform](https://pypi.org/project/scpn-studio-platform/) | 0.11.2 |
-| [sc-neurocore-engine](https://pypi.org/project/sc-neurocore-engine/) | 3.16.0 |
-| [sc-neurocore](https://pypi.org/project/sc-neurocore/) | 3.16.0 |
+| [oscillatools](https://pypi.org/project/oscillatools/) | 0.1.1 |
+| [scpn-quantum-engine](https://pypi.org/project/scpn-quantum-engine/) | 0.3.0 |
+| [scpn-studio-platform](https://pypi.org/project/scpn-studio-platform/) | 0.11.3 |
+| [sc-neurocore-engine](https://pypi.org/project/sc-neurocore-engine/) | 4.1.0 |
+| [sc-neurocore](https://pypi.org/project/sc-neurocore/) | 4.1.0 |
 | [scpn-mif-core](https://pypi.org/project/scpn-mif-core/) | 0.1.1 |
 | [remanentia](https://pypi.org/project/remanentia/) | 0.5.0 |
 | [backfire-kernel](https://pypi.org/project/backfire-kernel/) | 0.1.3 |
@@ -607,7 +608,7 @@ oder Vorteilsbehauptung umzudeuten.
 <!-- profile-catalogue:partner:start -->
 ### Gründungs- und Forschungspartner
 
-Wir suchen Pre-Seed-Kapital und Partner zur gemeinsamen Gründung eines Forschungsinstituts, eines Unternehmens und einer gemeinnützigen Forschungsgesellschaft. Das Programm gehört derzeit einer Einzelperson; Rechtsträger und Standorte sind Vorschläge, keine bereits gegründeten Institutionen. Das anfängliche geografische Bild umfasst die Schweiz oder Liechtenstein, Tschechien oder die Slowakei sowie einen noch offenen dritten Standort im Nahen Osten. Wir bringen Software, Forschungsprogramm und eine geregelte Agentenorganisation ein. Partner können Kapital, unabhängige Replikation, gemessene Domänendaten, Chipentwurf und Fertigung, Labore, Instrumente oder Hardware-in-the-Loop-Einrichtungen beitragen. Eine erste Zusammenarbeit sollte ein Problem, ein Ergebnis und die Erfolgskriterien festlegen. Weder eine Partnerzusage noch eine bewilligte Finanzierung wird behauptet.
+Wir suchen Pre-Seed-Kapital und Partner zur gemeinsamen Gründung eines Forschungsinstituts, eines Unternehmens und einer gemeinnützigen Forschungsgesellschaft. Das Programm gehört derzeit einer Einzelperson; Rechtsträger und Standorte sind Vorschläge, keine bereits gegründeten Institutionen. Das anfängliche geografische Bild umfasst die Schweiz oder Liechtenstein, Tschechien oder die Slowakei sowie einen noch offenen dritten Standort im Nahen Osten. Wir bringen Software, Forschungsprogramm und eine geregelte Agentenorganisation ein. Partner können Kapital, unabhängige Replikation, gemessene Domänendaten, Chipentwurf und Fertigung, Labore, Instrumente oder Hardware-in-the-Loop-Einrichtungen beitragen. Eine erste Zusammenarbeit sollte ein Problem, ein Ergebnis und die Erfolgskriterien festlegen. Im November 2026 haben wir den Startup-Förderprozess von Startfeld (Switzerland Innovation Park Ost) begonnen; eine GmbH im Kanton St. Gallen ist geplant. Weder eine Partnerzusage noch eine bewilligte Finanzierung wird behauptet.
 <!-- profile-catalogue:partner:end -->
 
 ### Lizenzmodelle

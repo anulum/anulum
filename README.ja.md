@@ -43,7 +43,7 @@ GitHub 個人プロフィール概要
 
 スイスを拠点とする独立研究者・システムエンジニアとして、Anulum の名で科学ソフトウェアと統制された研究組織を開発しています。五つの活動中グループが、原子炉システム、統合と制御、エージェント協調と保証、ニューロモーフィック計算、量子計算を担当します。第六の Scientific Discovery and Experimentation は組成中です。事業の重点：ワークフローを問わない中核で、AI エージェントを実行し検証可能にします。作業を行い、作成者以外が確認し、再生できる必要があるあらゆるプロセスが対象です。すでに当社の研究開発を毎日支えており、最初の市場はスイスとリヒテンシュタインの規制対象金融機関です。公開ソフトウェア、設計作業、ワールドモデル開発、将来のハードウェア成果は、それぞれの証拠境界を持ちます。研究所と会社の共同設立をパートナーに提案しています。
 
-**同じ中核、まったく異なる五つのワークフロー、一つの監査証跡：**ソフトウェア開発（300 件以上のリリース）、科学計算（プラズマ・原子炉モデリング、156 量子ビットの超伝導プロセッサ上で公開したシミュレーション）、ハードウェア設計（SC-NeuroCore が生成する SystemVerilog）、助成金申請と技術文書、そして主張の検証（Director-AI）。
+**同じ中核、まったく異なる五つのワークフロー、一つの監査証跡：**ソフトウェア開発（PyPI の 20 ディストリビューションで 392 件のリリース）、科学計算（プラズマ・原子炉モデリング、156 量子ビットの超伝導プロセッサ上で公開したシミュレーション）、ハードウェア設計（SC-NeuroCore が生成する SystemVerilog）、助成金申請と技術文書、そして主張の検証（Director-AI）。
 
 ## 言語とプラットフォーム
 
@@ -134,6 +134,7 @@ HTML/CSS、Shell、Docker、Linux。
 | 2018 | 公開 GitHub アカウント開設 |
 | 2025 | SCPN プレビューと技術報告を Zenodo に公開 |
 | 2026 | AI 保証、ニューロモーフィック、プラズマ、量子システムへ公開ソフトウェア・研究ポートフォリオを拡大 |
+| 2026 年 6 月 | エージェント組織が日常運用を開始：調整とジャーナルは自社ハードウェア上 |
 
 ## ラボマップ
 
@@ -455,21 +456,21 @@ Fusion Equilibrium Challenge はグループ一覧作成後の 2026 年 10 月 1
 
 | PyPI | バージョン |
 |---|---|
-| [synapse-channel](https://pypi.org/project/synapse-channel/) | 0.99.38 |
+| [synapse-channel](https://pypi.org/project/synapse-channel/) | 0.99.51 |
 | [scpn-phase-orchestrator](https://pypi.org/project/scpn-phase-orchestrator/) | 1.4.3 |
 | [spo-kernel](https://pypi.org/project/spo-kernel/) | 0.5.10 |
 | [director-ai](https://pypi.org/project/director-ai/) | 3.21.0 |
 | [director-ai-lite](https://pypi.org/project/director-ai-lite/) | 3.21.0 |
-| [scpn-quantum-control](https://pypi.org/project/scpn-quantum-control/) | 1.2.0 |
-| [scpn-fusion-rs](https://pypi.org/project/scpn-fusion-rs/) | 4.0.0 |
-| [scpn-fusion](https://pypi.org/project/scpn-fusion/) | 4.0.0 |
+| [scpn-quantum-control](https://pypi.org/project/scpn-quantum-control/) | 1.3.0 |
+| [scpn-fusion-rs](https://pypi.org/project/scpn-fusion-rs/) | 4.1.0 |
+| [scpn-fusion](https://pypi.org/project/scpn-fusion/) | 4.1.0 |
 | [rigor-foundry](https://pypi.org/project/rigor-foundry/) | 1.0.0 |
 | [scpn-control](https://pypi.org/project/scpn-control/) | 0.23.0 |
-| [oscillatools](https://pypi.org/project/oscillatools/) | 0.1.0 |
-| [scpn-quantum-engine](https://pypi.org/project/scpn-quantum-engine/) | 0.2.0 |
-| [scpn-studio-platform](https://pypi.org/project/scpn-studio-platform/) | 0.11.2 |
-| [sc-neurocore-engine](https://pypi.org/project/sc-neurocore-engine/) | 3.16.0 |
-| [sc-neurocore](https://pypi.org/project/sc-neurocore/) | 3.16.0 |
+| [oscillatools](https://pypi.org/project/oscillatools/) | 0.1.1 |
+| [scpn-quantum-engine](https://pypi.org/project/scpn-quantum-engine/) | 0.3.0 |
+| [scpn-studio-platform](https://pypi.org/project/scpn-studio-platform/) | 0.11.3 |
+| [sc-neurocore-engine](https://pypi.org/project/sc-neurocore-engine/) | 4.1.0 |
+| [sc-neurocore](https://pypi.org/project/sc-neurocore/) | 4.1.0 |
 | [scpn-mif-core](https://pypi.org/project/scpn-mif-core/) | 0.1.1 |
 | [remanentia](https://pypi.org/project/remanentia/) | 0.5.0 |
 | [backfire-kernel](https://pypi.org/project/backfire-kernel/) | 0.1.3 |
@@ -542,7 +543,7 @@ Fusion Equilibrium Challenge はグループ一覧作成後の 2026 年 10 月 1
 <!-- profile-catalogue:partner:start -->
 ### 共同設立・研究パートナー
 
-研究所、会社、非営利研究会社を共同設立するため、プレシード資金とパートナーを求めています。現在の計画は一人の個人に属しており、法人や拠点は提案段階で、設立済み機関ではありません。初期の地理的構想は、スイスまたはリヒテンシュタイン、チェコまたはスロバキア、そして場所未定の中東の第三拠点です。私たちはソフトウェア、研究計画、統制されたエージェント組織を提供します。パートナーには資金、独立再現、実測データ、半導体設計・製造、研究室、計測器、ハードウェア・イン・ザ・ループ設備などを期待します。最初の協力では、一つの課題、一つの成果、成功を判定する証拠を定めます。既存の参加確約や資金獲得は示唆しません。
+研究所、会社、非営利研究会社を共同設立するため、プレシード資金とパートナーを求めています。現在の計画は一人の個人に属しており、法人や拠点は提案段階で、設立済み機関ではありません。初期の地理的構想は、スイスまたはリヒテンシュタイン、チェコまたはスロバキア、そして場所未定の中東の第三拠点です。私たちはソフトウェア、研究計画、統制されたエージェント組織を提供します。パートナーには資金、独立再現、実測データ、半導体設計・製造、研究室、計測器、ハードウェア・イン・ザ・ループ設備などを期待します。最初の協力では、一つの課題、一つの成果、成功を判定する証拠を定めます。2026 年 11 月、Startfeld（Switzerland Innovation Park Ost）のスタートアップ支援プロセスを開始しました。ザンクト・ガレン州での GmbH 設立を予定しています。既存の参加確約や資金獲得は示唆しません。
 <!-- profile-catalogue:partner:end -->
 
 ### ライセンスモデル

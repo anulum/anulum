@@ -44,7 +44,7 @@ Prehľad osobného profilu GitHub
 
 Nezávislý výskumník a systémový inžinier pôsobiaci vo Švajčiarsku. Pod menom Anulum vyvíjam vedecký softvér a riadenú výskumnú organizáciu. Päť aktívnych skupín pokrýva reaktorové systémy, integráciu a riadenie, koordináciu a kontrolu agentov, neuromorfné a kvantové výpočty. Šiesta skupina Scientific Discovery and Experimentation sa formuje. Komerčné zameranie: jadro nezávislé od typu workflow, ktoré spúšťa AI agentov a robí ich prácu overiteľnou, pre každý proces, kde treba prácu vykonať, nechať ju skontrolovať niekým iným než autorom a vedieť ju prehrať. Už dnes denne poháňa náš vlastný výskum a vývoj; prvým trhom sú regulované finančné inštitúcie vo Švajčiarsku a v Lichtenštajnsku. Vydaný softvér, architektonické práce, vývoj world models a zamýšľané hardvérové výstupy majú samostatné hranice dôkazov. Výskumný inštitút a spoločnosť ponúkame na spoločné založenie s partnermi.
 
-**To isté jadro, päť veľmi odlišných druhov práce, jeden auditný záznam:** vývoj softvéru (viac ako 300 vydaní), vedecké výpočty (modelovanie plazmy a reaktorov, publikovaná simulácia na supravodivom procesore so 156 qubitmi), návrh hardvéru (SystemVerilog zo SC-NeuroCore), žiadosti o granty a technické dokumenty a kontrola tvrdení (Director-AI).
+**To isté jadro, päť veľmi odlišných druhov práce, jeden auditný záznam:** vývoj softvéru (392 vydaní 20 distribúcií na PyPI), vedecké výpočty (modelovanie plazmy a reaktorov, publikovaná simulácia na supravodivom procesore so 156 qubitmi), návrh hardvéru (SystemVerilog zo SC-NeuroCore), žiadosti o granty a technické dokumenty a kontrola tvrdení (Director-AI).
 
 <table>
   <tr>
@@ -144,6 +144,7 @@ vedeckej kvality.
 | 2018 | Založenie verejného GitHub účtu |
 | 2025 | Verejné SCPN preview dokumenty, indexy rámca a technické správy uložené na Zenodo |
 | 2026 | Rozšírenie verejného softvérového a výskumného portfólia v spoľahlivosti AI, agentovej infraštruktúre, neuromorfných výpočtoch, riadení plazmy a kvantovej simulácii |
+| jún 2026 | Organizácia agentov v dennej prevádzke: koordinácia a žurnál na vlastnom hardvéri |
 
 Položky časovej osi rozlišujú fakty z registrov od vlastnej chronológie.
 Neznamenajú akademickú afiliáciu, externú validáciu, financovanie ani ocenenia.
@@ -481,21 +482,21 @@ evaluačné benchmarky a CI.
 
 | PyPI | Verzia |
 |---|---|
-| [synapse-channel](https://pypi.org/project/synapse-channel/) | 0.99.38 |
+| [synapse-channel](https://pypi.org/project/synapse-channel/) | 0.99.51 |
 | [scpn-phase-orchestrator](https://pypi.org/project/scpn-phase-orchestrator/) | 1.4.3 |
 | [spo-kernel](https://pypi.org/project/spo-kernel/) | 0.5.10 |
 | [director-ai](https://pypi.org/project/director-ai/) | 3.21.0 |
 | [director-ai-lite](https://pypi.org/project/director-ai-lite/) | 3.21.0 |
-| [scpn-quantum-control](https://pypi.org/project/scpn-quantum-control/) | 1.2.0 |
-| [scpn-fusion-rs](https://pypi.org/project/scpn-fusion-rs/) | 4.0.0 |
-| [scpn-fusion](https://pypi.org/project/scpn-fusion/) | 4.0.0 |
+| [scpn-quantum-control](https://pypi.org/project/scpn-quantum-control/) | 1.3.0 |
+| [scpn-fusion-rs](https://pypi.org/project/scpn-fusion-rs/) | 4.1.0 |
+| [scpn-fusion](https://pypi.org/project/scpn-fusion/) | 4.1.0 |
 | [rigor-foundry](https://pypi.org/project/rigor-foundry/) | 1.0.0 |
 | [scpn-control](https://pypi.org/project/scpn-control/) | 0.23.0 |
-| [oscillatools](https://pypi.org/project/oscillatools/) | 0.1.0 |
-| [scpn-quantum-engine](https://pypi.org/project/scpn-quantum-engine/) | 0.2.0 |
-| [scpn-studio-platform](https://pypi.org/project/scpn-studio-platform/) | 0.11.2 |
-| [sc-neurocore-engine](https://pypi.org/project/sc-neurocore-engine/) | 3.16.0 |
-| [sc-neurocore](https://pypi.org/project/sc-neurocore/) | 3.16.0 |
+| [oscillatools](https://pypi.org/project/oscillatools/) | 0.1.1 |
+| [scpn-quantum-engine](https://pypi.org/project/scpn-quantum-engine/) | 0.3.0 |
+| [scpn-studio-platform](https://pypi.org/project/scpn-studio-platform/) | 0.11.3 |
+| [sc-neurocore-engine](https://pypi.org/project/sc-neurocore-engine/) | 4.1.0 |
+| [sc-neurocore](https://pypi.org/project/sc-neurocore/) | 4.1.0 |
 | [scpn-mif-core](https://pypi.org/project/scpn-mif-core/) | 0.1.1 |
 | [remanentia](https://pypi.org/project/remanentia/) | 0.5.0 |
 | [backfire-kernel](https://pypi.org/project/backfire-kernel/) | 0.1.3 |
@@ -601,7 +602,7 @@ tvrdenie o pripravenosti alebo výhode.
 <!-- profile-catalogue:partner:start -->
 ### Zakladajúci a výskumní partneri
 
-Hľadáme pre-seed financovanie a partnerov na spoločné založenie výskumného inštitútu, spoločnosti a neziskovej výskumnej spoločnosti. Program dnes patrí jednej fyzickej osobe; tieto subjekty a pracoviská sú návrhmi, nie už založenými inštitúciami. Počiatočná geografická predstava zahŕňa Švajčiarsko alebo Lichtenštajnsko, Česko alebo Slovensko a tretie pracovisko na Blízkom východe, ktorého miesto zostáva otvorené. Prinášame softvér, výskumný program a riadenú organizáciu agentov. Partneri môžu priniesť kapitál, nezávislú replikáciu, merané doménové dáta, návrh a výrobu čipov, laboratóriá, prístroje či pracoviská hardware-in-the-loop. Prvá spolupráca má určiť jeden problém, jeden výstup a dôkazy úspechu. Nedeklarujeme záväzok partnera ani udelené financovanie.
+Hľadáme pre-seed financovanie a partnerov na spoločné založenie výskumného inštitútu, spoločnosti a neziskovej výskumnej spoločnosti. Program dnes patrí jednej fyzickej osobe; tieto subjekty a pracoviská sú návrhmi, nie už založenými inštitúciami. Počiatočná geografická predstava zahŕňa Švajčiarsko alebo Lichtenštajnsko, Česko alebo Slovensko a tretie pracovisko na Blízkom východe, ktorého miesto zostáva otvorené. Prinášame softvér, výskumný program a riadenú organizáciu agentov. Partneri môžu priniesť kapitál, nezávislú replikáciu, merané doménové dáta, návrh a výrobu čipov, laboratóriá, prístroje či pracoviská hardware-in-the-loop. Prvá spolupráca má určiť jeden problém, jeden výstup a dôkazy úspechu. V novembri 2026 sme začali proces podpory startupov Startfeld (Switzerland Innovation Park Ost); plánujeme GmbH v kantóne St. Gallen. Nedeklarujeme záväzok partnera ani udelené financovanie.
 <!-- profile-catalogue:partner:end -->
 
 ### Licenčné modely

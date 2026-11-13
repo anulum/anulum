@@ -3240,143 +3240,143 @@
   "package_versions": [
     {
       "name": "synapse-channel",
-      "version": "0.99.38",
+      "version": "0.99.51",
       "source_url": "https://pypi.org/pypi/synapse-channel/json",
-      "source_sha256": "1a1fbca100b4cf35e2113b8f39d54ebc014660fabc7cb6067de4f7616db53e3c",
-      "retrieved_at_utc": "2026-10-15T11:28:53.068696+00:00"
+      "source_sha256": "780b2e23aa1b6c4e87ee282b94b01f925a4bd21de185c903daaa81c9a2bd931b",
+      "retrieved_at_utc": "2026-11-13T11:34:26.141608+00:00"
     },
     {
       "name": "scpn-phase-orchestrator",
       "version": "1.4.3",
       "source_url": "https://pypi.org/pypi/scpn-phase-orchestrator/json",
       "source_sha256": "1bf72b756f2e3966b4af0dcda006e9bbce48dde5299ebee5bd6dd5ac1f34beb8",
-      "retrieved_at_utc": "2026-10-15T11:28:53.280515+00:00"
+      "retrieved_at_utc": "2026-11-13T11:34:26.141608+00:00"
     },
     {
       "name": "spo-kernel",
       "version": "0.5.10",
       "source_url": "https://pypi.org/pypi/spo-kernel/json",
       "source_sha256": "254c900b4d64621606f44192d1e6fc9a255dcc8a2503fbe4dc72b3194b330289",
-      "retrieved_at_utc": "2026-10-15T11:28:53.467210+00:00"
+      "retrieved_at_utc": "2026-11-13T11:34:26.141608+00:00"
     },
     {
       "name": "director-ai",
       "version": "3.21.0",
       "source_url": "https://pypi.org/pypi/director-ai/json",
       "source_sha256": "e869892f78f5421f1b143849a8a01bc59b265d2aa788f8dee93cf59fe4ca278b",
-      "retrieved_at_utc": "2026-10-15T11:28:53.694994+00:00"
+      "retrieved_at_utc": "2026-11-13T11:34:26.141608+00:00"
     },
     {
       "name": "director-ai-lite",
       "version": "3.21.0",
       "source_url": "https://pypi.org/pypi/director-ai-lite/json",
       "source_sha256": "52867100081c35ab8c7295cfe8893d086bc2c6a8790b15fb2449f58188cfcae7",
-      "retrieved_at_utc": "2026-10-15T11:28:53.881694+00:00"
+      "retrieved_at_utc": "2026-11-13T11:34:26.141608+00:00"
     },
     {
       "name": "scpn-quantum-control",
-      "version": "1.2.0",
+      "version": "1.3.0",
       "source_url": "https://pypi.org/pypi/scpn-quantum-control/json",
-      "source_sha256": "c2727b3eeadddb8038d087c0cc8e66defd142d256c157687b0b0ada3084dadf5",
-      "retrieved_at_utc": "2026-10-15T11:28:54.090015+00:00"
+      "source_sha256": "021c1ead83219ceb558f8c52f5c7a27015bc3d760d9421550c36c573af141ad3",
+      "retrieved_at_utc": "2026-11-13T11:34:26.141608+00:00"
     },
     {
       "name": "scpn-fusion-rs",
-      "version": "4.0.0",
+      "version": "4.1.0",
       "source_url": "https://pypi.org/pypi/scpn-fusion-rs/json",
-      "source_sha256": "b4b7b3ab62e6f168be793dce9c106822588b4ba6cfa64e02f2bae514bb0d9b43",
-      "retrieved_at_utc": "2026-10-15T11:28:54.265878+00:00"
+      "source_sha256": "3f98b561e2da56a3f9fa3c6ba9a2045af154392ef971cde9eccdf682eec93c97",
+      "retrieved_at_utc": "2026-11-13T11:34:26.141608+00:00"
     },
     {
       "name": "scpn-fusion",
-      "version": "4.0.0",
+      "version": "4.1.0",
       "source_url": "https://pypi.org/pypi/scpn-fusion/json",
-      "source_sha256": "d2ab69faf251e187cc82ad4bbb7ca40526751010c421ca9d6eaa9ca99bfba5c0",
-      "retrieved_at_utc": "2026-10-15T11:28:54.473075+00:00"
+      "source_sha256": "7f1a89f02a66ce28fb65681dc85ef0d2a8bfe6312d80d2fed0c00a256f82b204",
+      "retrieved_at_utc": "2026-11-13T11:34:26.141608+00:00"
     },
     {
       "name": "rigor-foundry",
       "version": "1.0.0",
       "source_url": "https://pypi.org/pypi/rigor-foundry/json",
       "source_sha256": "afa1a20e4a86e1be8346bd36528a2aeec83ffaffa87c81b20d9a25fc06332982",
-      "retrieved_at_utc": "2026-10-15T11:28:54.656025+00:00"
+      "retrieved_at_utc": "2026-11-13T11:34:26.141608+00:00"
     },
     {
       "name": "scpn-control",
       "version": "0.23.0",
       "source_url": "https://pypi.org/pypi/scpn-control/json",
       "source_sha256": "d021dd646741a6cd2d10f95b52d98404ae9197e6bdb3830584a62962fe0e4617",
-      "retrieved_at_utc": "2026-10-15T11:28:54.851791+00:00"
+      "retrieved_at_utc": "2026-11-13T11:34:26.141608+00:00"
     },
     {
       "name": "oscillatools",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "source_url": "https://pypi.org/pypi/oscillatools/json",
-      "source_sha256": "931cdca1882e879c49d4185de91f001fe8a77e751af9cec3e2090720ff284d29",
-      "retrieved_at_utc": "2026-10-15T11:28:55.027440+00:00"
+      "source_sha256": "faf3e45bc869eca8767d7c6adb315436e1a5e6b42493da7dd9945de7095e8154",
+      "retrieved_at_utc": "2026-11-13T11:34:26.141608+00:00"
     },
     {
       "name": "scpn-quantum-engine",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "source_url": "https://pypi.org/pypi/scpn-quantum-engine/json",
-      "source_sha256": "7502ddca1c4d2a1b2f8e76ddffb56211ac6634b04962b301f48819074dcc422d",
-      "retrieved_at_utc": "2026-10-15T11:28:55.211744+00:00"
+      "source_sha256": "2a38a89a3f0051ecf4c149acfccffc402251e2e36b84ec016ff07a82da350216",
+      "retrieved_at_utc": "2026-11-13T11:34:26.141608+00:00"
     },
     {
       "name": "scpn-studio-platform",
-      "version": "0.11.2",
+      "version": "0.11.3",
       "source_url": "https://pypi.org/pypi/scpn-studio-platform/json",
-      "source_sha256": "e19a7b012975ad76ebb1f637f170dc381737829f2c74eb812abb5ea7d6eb3dc2",
-      "retrieved_at_utc": "2026-10-15T11:28:55.416790+00:00"
+      "source_sha256": "fb38f9f305d8bbb521d8b631500199f5cae0e229f1aa08ee7292c9d3a97a7fc3",
+      "retrieved_at_utc": "2026-11-13T11:34:26.141608+00:00"
     },
     {
       "name": "sc-neurocore-engine",
-      "version": "3.16.0",
+      "version": "4.1.0",
       "source_url": "https://pypi.org/pypi/sc-neurocore-engine/json",
-      "source_sha256": "2eb26181bef4d40a19c4bd10c31f4945f06bfb5edc260f0f7052072eb696b83d",
-      "retrieved_at_utc": "2026-10-15T11:28:55.659733+00:00"
+      "source_sha256": "2f2787f159b53a66b487ff90629259b349f9ff129e50e6ade45eca29f9941456",
+      "retrieved_at_utc": "2026-11-13T11:34:26.141608+00:00"
     },
     {
       "name": "sc-neurocore",
-      "version": "3.16.0",
+      "version": "4.1.0",
       "source_url": "https://pypi.org/pypi/sc-neurocore/json",
-      "source_sha256": "cdf065d3ff3073266b1fd4dd5c6bc512f2b186d65af0f03953980ec651303dc2",
-      "retrieved_at_utc": "2026-10-15T11:28:55.870033+00:00"
+      "source_sha256": "110224726ee0ca2f2dbb81da7c9edbca2fda6d8ac13499fee21c49353898b42d",
+      "retrieved_at_utc": "2026-11-13T11:34:26.141608+00:00"
     },
     {
       "name": "scpn-mif-core",
       "version": "0.1.1",
       "source_url": "https://pypi.org/pypi/scpn-mif-core/json",
       "source_sha256": "94499dfa585a0e90df7b543787bc4ba00282d562f5ce51c674fad91cc517b35a",
-      "retrieved_at_utc": "2026-10-15T11:28:56.070556+00:00"
+      "retrieved_at_utc": "2026-11-13T11:34:26.141608+00:00"
     },
     {
       "name": "remanentia",
       "version": "0.5.0",
       "source_url": "https://pypi.org/pypi/remanentia/json",
       "source_sha256": "5aab766ba4dccb228581e3af0d74dbaa9b59ec01d1dab9aa20cc4fd380518960",
-      "retrieved_at_utc": "2026-10-15T11:28:56.261464+00:00"
+      "retrieved_at_utc": "2026-11-13T11:34:26.141608+00:00"
     },
     {
       "name": "backfire-kernel",
       "version": "0.1.3",
       "source_url": "https://pypi.org/pypi/backfire-kernel/json",
       "source_sha256": "cf7a4868c04e2face981c9c4874ba98cea9fa02f56765f45ce231f2413c11eaa",
-      "retrieved_at_utc": "2026-10-15T11:28:56.459490+00:00"
+      "retrieved_at_utc": "2026-11-13T11:34:26.141608+00:00"
     },
     {
       "name": "hushline",
       "version": "0.1.5",
       "source_url": "https://pypi.org/pypi/hushline/json",
       "source_sha256": "03623b88a0699bb28081ba823139ba0db672d9ce75edf45b688ee8bc9ec7ce94",
-      "retrieved_at_utc": "2026-10-15T11:28:56.654049+00:00"
+      "retrieved_at_utc": "2026-11-13T11:34:26.141608+00:00"
     },
     {
       "name": "loop-timing-witness",
       "version": "0.1.0",
       "source_url": "https://pypi.org/pypi/loop-timing-witness/json",
       "source_sha256": "cd2f473589418c95c8b9ba9479b928fea0964588a74c6c51ef64085225943543",
-      "retrieved_at_utc": "2026-10-15T11:45:38.785372+00:00"
+      "retrieved_at_utc": "2026-11-13T11:34:26.141608+00:00"
     }
   ],
   "inventory_sources": [
@@ -3469,7 +3469,7 @@
         ""
       ],
       "partner_title": "Founding and research partners",
-      "partner": "We seek pre-seed backing and partners to jointly found a research institute, a company and a non-profit research company. The programme currently belongs to one individual; these vehicles and sites are proposals, not established institutions. The initial geographic picture is Switzerland or Liechtenstein, Czechia or Slovakia, and a third site in the Middle East whose location is open. We bring the software, research programme and governed agent organisation. Partners can bring capital, independent replication, measured domain data, chip design and fabrication, laboratories, instrumentation or hardware-in-the-loop facilities. A first engagement should specify one problem, one deliverable and the evidence that will decide success. No partner commitment or funding award is implied.",
+      "partner": "We seek pre-seed backing and partners to jointly found a research institute, a company and a non-profit research company. The programme currently belongs to one individual; these vehicles and sites are proposals, not established institutions. The initial geographic picture is Switzerland or Liechtenstein, Czechia or Slovakia, and a third site in the Middle East whose location is open. We bring the software, research programme and governed agent organisation. Partners can bring capital, independent replication, measured domain data, chip design and fabrication, laboratories, instrumentation or hardware-in-the-loop facilities. A first engagement should specify one problem, one deliverable and the evidence that will decide success. In November 2026 we began the start-up support process of Startfeld (Switzerland Innovation Park Ost); a GmbH in the canton of St. Gallen is planned. No partner commitment or funding award is implied.",
       "packages": "Published distributions",
       "packages_note": "{packages} named distributions checked individually against the PyPI JSON API on {date}. This is a verified list, not a claim that the entire account has been exhaustively indexed. Versions are package metadata, not scientific validation or matched historical DOI releases.",
       "version": "Version",
@@ -3509,7 +3509,7 @@
         ""
       ],
       "partner_title": "Zakladajúci a výskumní partneri",
-      "partner": "Hľadáme pre-seed financovanie a partnerov na spoločné založenie výskumného inštitútu, spoločnosti a neziskovej výskumnej spoločnosti. Program dnes patrí jednej fyzickej osobe; tieto subjekty a pracoviská sú návrhmi, nie už založenými inštitúciami. Počiatočná geografická predstava zahŕňa Švajčiarsko alebo Lichtenštajnsko, Česko alebo Slovensko a tretie pracovisko na Blízkom východe, ktorého miesto zostáva otvorené. Prinášame softvér, výskumný program a riadenú organizáciu agentov. Partneri môžu priniesť kapitál, nezávislú replikáciu, merané doménové dáta, návrh a výrobu čipov, laboratóriá, prístroje či pracoviská hardware-in-the-loop. Prvá spolupráca má určiť jeden problém, jeden výstup a dôkazy úspechu. Nedeklarujeme záväzok partnera ani udelené financovanie.",
+      "partner": "Hľadáme pre-seed financovanie a partnerov na spoločné založenie výskumného inštitútu, spoločnosti a neziskovej výskumnej spoločnosti. Program dnes patrí jednej fyzickej osobe; tieto subjekty a pracoviská sú návrhmi, nie už založenými inštitúciami. Počiatočná geografická predstava zahŕňa Švajčiarsko alebo Lichtenštajnsko, Česko alebo Slovensko a tretie pracovisko na Blízkom východe, ktorého miesto zostáva otvorené. Prinášame softvér, výskumný program a riadenú organizáciu agentov. Partneri môžu priniesť kapitál, nezávislú replikáciu, merané doménové dáta, návrh a výrobu čipov, laboratóriá, prístroje či pracoviská hardware-in-the-loop. Prvá spolupráca má určiť jeden problém, jeden výstup a dôkazy úspechu. V novembri 2026 sme začali proces podpory startupov Startfeld (Switzerland Innovation Park Ost); plánujeme GmbH v kantóne St. Gallen. Nedeklarujeme záväzok partnera ani udelené financovanie.",
       "packages": "Publikované distribúcie",
       "packages_note": "{packages} pomenovaných distribúcií bolo jednotlivo overených cez PyPI JSON API dňa {date}. Ide o overený zoznam, nie o úplný súpis celého účtu. Verzie sú metadáta balíkov, nie vedecká validácia ani zodpovedajúce historické DOI vydania.",
       "version": "Verzia",
@@ -3549,7 +3549,7 @@
         ""
       ],
       "partner_title": "Gründungs- und Forschungspartner",
-      "partner": "Wir suchen Pre-Seed-Kapital und Partner zur gemeinsamen Gründung eines Forschungsinstituts, eines Unternehmens und einer gemeinnützigen Forschungsgesellschaft. Das Programm gehört derzeit einer Einzelperson; Rechtsträger und Standorte sind Vorschläge, keine bereits gegründeten Institutionen. Das anfängliche geografische Bild umfasst die Schweiz oder Liechtenstein, Tschechien oder die Slowakei sowie einen noch offenen dritten Standort im Nahen Osten. Wir bringen Software, Forschungsprogramm und eine geregelte Agentenorganisation ein. Partner können Kapital, unabhängige Replikation, gemessene Domänendaten, Chipentwurf und Fertigung, Labore, Instrumente oder Hardware-in-the-Loop-Einrichtungen beitragen. Eine erste Zusammenarbeit sollte ein Problem, ein Ergebnis und die Erfolgskriterien festlegen. Weder eine Partnerzusage noch eine bewilligte Finanzierung wird behauptet.",
+      "partner": "Wir suchen Pre-Seed-Kapital und Partner zur gemeinsamen Gründung eines Forschungsinstituts, eines Unternehmens und einer gemeinnützigen Forschungsgesellschaft. Das Programm gehört derzeit einer Einzelperson; Rechtsträger und Standorte sind Vorschläge, keine bereits gegründeten Institutionen. Das anfängliche geografische Bild umfasst die Schweiz oder Liechtenstein, Tschechien oder die Slowakei sowie einen noch offenen dritten Standort im Nahen Osten. Wir bringen Software, Forschungsprogramm und eine geregelte Agentenorganisation ein. Partner können Kapital, unabhängige Replikation, gemessene Domänendaten, Chipentwurf und Fertigung, Labore, Instrumente oder Hardware-in-the-Loop-Einrichtungen beitragen. Eine erste Zusammenarbeit sollte ein Problem, ein Ergebnis und die Erfolgskriterien festlegen. Im November 2026 haben wir den Startup-Förderprozess von Startfeld (Switzerland Innovation Park Ost) begonnen; eine GmbH im Kanton St. Gallen ist geplant. Weder eine Partnerzusage noch eine bewilligte Finanzierung wird behauptet.",
       "packages": "Veröffentlichte Distributionen",
       "packages_note": "{packages} benannte Distributionen wurden am {date} einzeln über die PyPI-JSON-API geprüft. Dies ist eine geprüfte Liste, kein vollständiger Kontoindex. Versionen sind Paketmetadaten, keine wissenschaftliche Validierung oder Zuordnung zu historischen DOI-Versionen.",
       "version": "Version",
@@ -3589,7 +3589,7 @@
         ""
       ],
       "partner_title": "创始与研究伙伴",
-      "partner": "我们寻求种子前融资与伙伴，共同成立研究所、公司及非营利研究公司。目前研究计划属于一名自然人；这些实体与站点仍为提议，尚非已成立机构。初步地域构想包括瑞士或列支敦士登、捷克或斯洛伐克，以及地点尚未确定的中东第三站点。我们提供软件、研究计划与受治理的智能体组织。伙伴可提供资本、独立复现、实测领域数据、芯片设计与制造、实验室、仪器或硬件在环设施。首次合作应明确一个问题、一个产出及判定成功的证据。不暗示已有伙伴承诺或获得融资。",
+      "partner": "我们寻求种子前融资与伙伴，共同成立研究所、公司及非营利研究公司。目前研究计划属于一名自然人；这些实体与站点仍为提议，尚非已成立机构。初步地域构想包括瑞士或列支敦士登、捷克或斯洛伐克，以及地点尚未确定的中东第三站点。我们提供软件、研究计划与受治理的智能体组织。伙伴可提供资本、独立复现、实测领域数据、芯片设计与制造、实验室、仪器或硬件在环设施。首次合作应明确一个问题、一个产出及判定成功的证据。2026 年 11 月，我们开始参与 Startfeld（Switzerland Innovation Park Ost）的初创企业支持流程；计划在圣加仑州设立一家 GmbH。不暗示已有伙伴承诺或获得融资。",
       "packages": "已发布发行包",
       "packages_note": "于 {date} 通过 PyPI JSON API 分别检查了 {packages} 个具名发行包。这是经过核验的列表，并非整个账户的完整索引。版本属于软件包元数据，不代表科学验证，也不等于历史 DOI 发布版本。",
       "version": "版本",
@@ -3629,7 +3629,7 @@
         ""
       ],
       "partner_title": "共同設立・研究パートナー",
-      "partner": "研究所、会社、非営利研究会社を共同設立するため、プレシード資金とパートナーを求めています。現在の計画は一人の個人に属しており、法人や拠点は提案段階で、設立済み機関ではありません。初期の地理的構想は、スイスまたはリヒテンシュタイン、チェコまたはスロバキア、そして場所未定の中東の第三拠点です。私たちはソフトウェア、研究計画、統制されたエージェント組織を提供します。パートナーには資金、独立再現、実測データ、半導体設計・製造、研究室、計測器、ハードウェア・イン・ザ・ループ設備などを期待します。最初の協力では、一つの課題、一つの成果、成功を判定する証拠を定めます。既存の参加確約や資金獲得は示唆しません。",
+      "partner": "研究所、会社、非営利研究会社を共同設立するため、プレシード資金とパートナーを求めています。現在の計画は一人の個人に属しており、法人や拠点は提案段階で、設立済み機関ではありません。初期の地理的構想は、スイスまたはリヒテンシュタイン、チェコまたはスロバキア、そして場所未定の中東の第三拠点です。私たちはソフトウェア、研究計画、統制されたエージェント組織を提供します。パートナーには資金、独立再現、実測データ、半導体設計・製造、研究室、計測器、ハードウェア・イン・ザ・ループ設備などを期待します。最初の協力では、一つの課題、一つの成果、成功を判定する証拠を定めます。2026 年 11 月、Startfeld（Switzerland Innovation Park Ost）のスタートアップ支援プロセスを開始しました。ザンクト・ガレン州での GmbH 設立を予定しています。既存の参加確約や資金獲得は示唆しません。",
       "packages": "公開配布物",
       "packages_note": "{date} に PyPI JSON API で {packages} 件の名称付き配布物を個別確認しました。確認済み一覧であり、アカウント全体の網羅的な索引ではありません。バージョンはパッケージのメタデータで、科学的検証や過去の DOI 版との一致を意味しません。",
       "version": "バージョン",

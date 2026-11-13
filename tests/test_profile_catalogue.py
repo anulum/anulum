@@ -10,6 +10,7 @@
 from __future__ import annotations
 
 import json
+import re
 import shutil
 import subprocess
 import sys
@@ -19,6 +20,16 @@ from pathlib import Path
 from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
+CATALOGUE_BLOCK = re.compile(
+    r"(<!-- profile-catalogue:(\w+):start -->).*?(<!-- profile-catalogue:\2:end -->)", re.DOTALL
+)
+
+
+def _unmanaged(text: str) -> str:
+    """Return the README with every catalogue block emptied, so only hand-written text remains."""
+    stripped, count = CATALOGUE_BLOCK.subn(r"\1\3", text)
+    assert count == 3, f"expected the inventory, packages and partner blocks, found {count}"
+    return stripped
 
 
 class ProfileCatalogueTests(unittest.TestCase):
@@ -77,7 +88,7 @@ class ProfileCatalogueTests(unittest.TestCase):
                 start, end = f"<!-- profile-feeds:{block}:start -->", f"<!-- profile-feeds:{block}:end -->"
                 self.assertEqual(original.split(start)[1].split(end)[0], actual.split(start)[1].split(end)[0])
             self.assertIn("&amp; &lt;review-fixture&gt; &#124; source text", actual)
-            self.assertIn(original.split("<!-- profile-catalogue:partner:end -->")[1], actual)
+            self.assertEqual(_unmanaged(original), _unmanaged(actual))
 
     def test_private_repository_url_is_refused(self) -> None:
         private = next(row for row in self.data["catalogue"] if row["access"] == "private")

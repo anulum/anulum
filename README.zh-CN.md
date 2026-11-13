@@ -43,7 +43,7 @@ GitHub 个人资料概览
 
 我是常驻瑞士的独立研究人员与系统工程师，以 Anulum 名义开发科学软件及受治理的研究组织。五个活跃组覆盖反应堆系统、集成与控制、智能体协调与保障、神经形态计算以及量子计算。第六组 Scientific Discovery and Experimentation 正在组建。商业重点：一个与工作流程无关的核心，用于运行并验证 AI 智能体，适用于任何需要完成工作、由非作者检查并可重放的流程。它已每天支撑我们自己的研发；首个市场是瑞士和列支敦士登受监管的金融机构。已发布软件、架构工作、世界模型开发及预期硬件产出各有独立的证据边界。我们寻求与伙伴共同成立研究所和公司。
 
-**同一核心，五种截然不同的工作流程，一条审计记录：**软件开发（300 多次发布）、科学计算（等离子体与反应堆建模，以及在 156 量子比特超导处理器上已发表的模拟）、硬件设计（由 SC-NeuroCore 生成的 SystemVerilog）、资助申请与技术文档，以及声明核查（Director-AI）。
+**同一核心，五种截然不同的工作流程，一条审计记录：**软件开发（20 个 PyPI 发行包共 392 次发布）、科学计算（等离子体与反应堆建模，以及在 156 量子比特超导处理器上已发表的模拟）、硬件设计（由 SC-NeuroCore 生成的 SystemVerilog）、资助申请与技术文档，以及声明核查（Director-AI）。
 
 ## 语言与平台
 
@@ -134,6 +134,7 @@ Shell、Docker 和 Linux。
 | 2018 | 建立公开 GitHub 账户 |
 | 2025 | 在 Zenodo 发布 SCPN 预览材料与技术报告 |
 | 2026 | 公开软件与研究组合扩展至 AI 保障、神经形态、等离子体和量子系统 |
+| 2026 年 6 月 | 智能体组织投入日常运行：协调与日志位于自有硬件上 |
 
 ## 实验室地图
 
@@ -454,21 +455,21 @@ Fusion Equilibrium Challenge 是 2026 年 10 月 14 日创建的公开复现软�
 
 | PyPI | 版本 |
 |---|---|
-| [synapse-channel](https://pypi.org/project/synapse-channel/) | 0.99.38 |
+| [synapse-channel](https://pypi.org/project/synapse-channel/) | 0.99.51 |
 | [scpn-phase-orchestrator](https://pypi.org/project/scpn-phase-orchestrator/) | 1.4.3 |
 | [spo-kernel](https://pypi.org/project/spo-kernel/) | 0.5.10 |
 | [director-ai](https://pypi.org/project/director-ai/) | 3.21.0 |
 | [director-ai-lite](https://pypi.org/project/director-ai-lite/) | 3.21.0 |
-| [scpn-quantum-control](https://pypi.org/project/scpn-quantum-control/) | 1.2.0 |
-| [scpn-fusion-rs](https://pypi.org/project/scpn-fusion-rs/) | 4.0.0 |
-| [scpn-fusion](https://pypi.org/project/scpn-fusion/) | 4.0.0 |
+| [scpn-quantum-control](https://pypi.org/project/scpn-quantum-control/) | 1.3.0 |
+| [scpn-fusion-rs](https://pypi.org/project/scpn-fusion-rs/) | 4.1.0 |
+| [scpn-fusion](https://pypi.org/project/scpn-fusion/) | 4.1.0 |
 | [rigor-foundry](https://pypi.org/project/rigor-foundry/) | 1.0.0 |
 | [scpn-control](https://pypi.org/project/scpn-control/) | 0.23.0 |
-| [oscillatools](https://pypi.org/project/oscillatools/) | 0.1.0 |
-| [scpn-quantum-engine](https://pypi.org/project/scpn-quantum-engine/) | 0.2.0 |
-| [scpn-studio-platform](https://pypi.org/project/scpn-studio-platform/) | 0.11.2 |
-| [sc-neurocore-engine](https://pypi.org/project/sc-neurocore-engine/) | 3.16.0 |
-| [sc-neurocore](https://pypi.org/project/sc-neurocore/) | 3.16.0 |
+| [oscillatools](https://pypi.org/project/oscillatools/) | 0.1.1 |
+| [scpn-quantum-engine](https://pypi.org/project/scpn-quantum-engine/) | 0.3.0 |
+| [scpn-studio-platform](https://pypi.org/project/scpn-studio-platform/) | 0.11.3 |
+| [sc-neurocore-engine](https://pypi.org/project/sc-neurocore-engine/) | 4.1.0 |
+| [sc-neurocore](https://pypi.org/project/sc-neurocore/) | 4.1.0 |
 | [scpn-mif-core](https://pypi.org/project/scpn-mif-core/) | 0.1.1 |
 | [remanentia](https://pypi.org/project/remanentia/) | 0.5.0 |
 | [backfire-kernel](https://pypi.org/project/backfire-kernel/) | 0.1.3 |
@@ -540,7 +541,7 @@ Fusion Equilibrium Challenge 是 2026 年 10 月 14 日创建的公开复现软�
 <!-- profile-catalogue:partner:start -->
 ### 创始与研究伙伴
 
-我们寻求种子前融资与伙伴，共同成立研究所、公司及非营利研究公司。目前研究计划属于一名自然人；这些实体与站点仍为提议，尚非已成立机构。初步地域构想包括瑞士或列支敦士登、捷克或斯洛伐克，以及地点尚未确定的中东第三站点。我们提供软件、研究计划与受治理的智能体组织。伙伴可提供资本、独立复现、实测领域数据、芯片设计与制造、实验室、仪器或硬件在环设施。首次合作应明确一个问题、一个产出及判定成功的证据。不暗示已有伙伴承诺或获得融资。
+我们寻求种子前融资与伙伴，共同成立研究所、公司及非营利研究公司。目前研究计划属于一名自然人；这些实体与站点仍为提议，尚非已成立机构。初步地域构想包括瑞士或列支敦士登、捷克或斯洛伐克，以及地点尚未确定的中东第三站点。我们提供软件、研究计划与受治理的智能体组织。伙伴可提供资本、独立复现、实测领域数据、芯片设计与制造、实验室、仪器或硬件在环设施。首次合作应明确一个问题、一个产出及判定成功的证据。2026 年 11 月，我们开始参与 Startfeld（Switzerland Innovation Park Ost）的初创企业支持流程；计划在圣加仑州设立一家 GmbH。不暗示已有伙伴承诺或获得融资。
 <!-- profile-catalogue:partner:end -->
 
 ### 许可模型
