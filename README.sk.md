@@ -42,7 +42,9 @@ Prehľad osobného profilu GitHub
   <a href="#spolupráca">Spolupráca</a>
 </p>
 
-Nezávislý výskumník a systémový inžinier pôsobiaci vo Švajčiarsku. Pod menom Anulum vyvíjam vedecký softvér a riadenú výskumnú organizáciu. Päť aktívnych skupín pokrýva reaktorové systémy, integráciu a riadenie, koordináciu a kontrolu agentov, neuromorfné a kvantové výpočty. Šiesta skupina Scientific Discovery and Experimentation sa formuje. Komerčné zameranie: overiteľná prevádzka AI agentov pre regulované odvetvia a autonómne pracovné postupy naprieč odvetviami. Vydaný softvér, architektonické práce, vývoj world models a zamýšľané hardvérové výstupy majú samostatné hranice dôkazov. Výskumný inštitút a spoločnosť ponúkame na spoločné založenie s partnermi.
+Nezávislý výskumník a systémový inžinier pôsobiaci vo Švajčiarsku. Pod menom Anulum vyvíjam vedecký softvér a riadenú výskumnú organizáciu. Päť aktívnych skupín pokrýva reaktorové systémy, integráciu a riadenie, koordináciu a kontrolu agentov, neuromorfné a kvantové výpočty. Šiesta skupina Scientific Discovery and Experimentation sa formuje. Komerčné zameranie: jadro nezávislé od typu workflow, ktoré spúšťa AI agentov a robí ich prácu overiteľnou, pre každý proces, kde treba prácu vykonať, nechať ju skontrolovať niekým iným než autorom a vedieť ju prehrať. Už dnes denne poháňa náš vlastný výskum a vývoj; prvým trhom sú regulované finančné inštitúcie vo Švajčiarsku a v Lichtenštajnsku. Vydaný softvér, architektonické práce, vývoj world models a zamýšľané hardvérové výstupy majú samostatné hranice dôkazov. Výskumný inštitút a spoločnosť ponúkame na spoločné založenie s partnermi.
+
+**To isté jadro, päť veľmi odlišných druhov práce, jeden auditný záznam:** vývoj softvéru (viac ako 300 vydaní), vedecké výpočty (modelovanie plazmy a reaktorov, publikovaná simulácia na supravodivom procesore so 156 qubitmi), návrh hardvéru (SystemVerilog zo SC-NeuroCore), žiadosti o granty a technické dokumenty a kontrola tvrdení (Director-AI).
 
 <table>
   <tr>
