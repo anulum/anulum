@@ -862,7 +862,7 @@
     "23480093": "Fusion Equilibrium Challenge"
   },
   "publication_notes": {
-    "22113062": "Under review (self-reported by the project); acceptance not claimed",
+    "22113062": "Submitted to a journal and declined there without external review on 14 September 2026; the preprint stands as published",
     "22113116": "Submitted to a journal and declined there without review on 4 October 2026; the preprint stands as published",
     "18144662": "Zenodo record typed as a conference paper; conference acceptance not claimed",
     "17309834": "Preview edition",
@@ -3474,7 +3474,7 @@
         ""
       ],
       "partner_title": "Founding and research partners",
-      "partner": "We seek pre-seed backing and partners to jointly found a research institute, a company and a non-profit research company. The programme currently belongs to one individual; these vehicles and sites are proposals, not established institutions. The initial geographic picture is Switzerland or Liechtenstein, Czechia or Slovakia, and a third site in the Middle East whose location is open. We bring the software, research programme and governed agent organisation. Partners can bring capital, independent replication, measured domain data, chip design and fabrication, laboratories, instrumentation or hardware-in-the-loop facilities. A first engagement should specify one problem, one deliverable and the evidence that will decide success. In November 2026 we began the start-up support process of Startfeld (Switzerland Innovation Park Ost); a GmbH in the canton of St. Gallen is planned. No partner commitment or funding award is implied.",
+      "partner": "First step: the Swiss GmbH in St. Gallen (planned); further vehicles follow funding. We seek pre-seed backing and partners to jointly found a research institute, a company and a non-profit research company. The programme currently belongs to one individual; these vehicles and sites are proposals, not established institutions. The initial geographic picture is Switzerland or Liechtenstein, Czechia or Slovakia, and a third site in the Middle East whose location is open. We bring the software, research programme and governed agent organisation. Partners can bring capital, independent replication, measured domain data, chip design and fabrication, laboratories, instrumentation or hardware-in-the-loop facilities. A first engagement should specify one problem, one deliverable and the evidence that will decide success. In November 2026 we began the start-up support process of Startfeld (Switzerland Innovation Park Ost). No partner commitment or funding award is implied.",
       "packages": "Published distributions",
       "packages_note": "{packages} named distributions checked individually against the PyPI JSON API on {date}. This is a verified list, not a claim that the entire account has been exhaustively indexed. Versions are package metadata, not scientific validation or matched historical DOI releases.",
       "version": "Version",
@@ -3514,7 +3514,7 @@
         ""
       ],
       "partner_title": "Zakladajúci a výskumní partneri",
-      "partner": "Hľadáme pre-seed financovanie a partnerov na spoločné založenie výskumného inštitútu, spoločnosti a neziskovej výskumnej spoločnosti. Program dnes patrí jednej fyzickej osobe; tieto subjekty a pracoviská sú návrhmi, nie už založenými inštitúciami. Počiatočná geografická predstava zahŕňa Švajčiarsko alebo Lichtenštajnsko, Česko alebo Slovensko a tretie pracovisko na Blízkom východe, ktorého miesto zostáva otvorené. Prinášame softvér, výskumný program a riadenú organizáciu agentov. Partneri môžu priniesť kapitál, nezávislú replikáciu, merané doménové dáta, návrh a výrobu čipov, laboratóriá, prístroje či pracoviská hardware-in-the-loop. Prvá spolupráca má určiť jeden problém, jeden výstup a dôkazy úspechu. V novembri 2026 sme začali proces podpory startupov Startfeld (Switzerland Innovation Park Ost); plánujeme GmbH v kantóne St. Gallen. Nedeklarujeme záväzok partnera ani udelené financovanie.",
+      "partner": "Prvý krok: švajčiarska GmbH v St. Gallene (plánovaná); ďalšie subjekty prídu po zabezpečení financovania. Hľadáme pre-seed financovanie a partnerov na spoločné založenie výskumného inštitútu, spoločnosti a neziskovej výskumnej spoločnosti. Program dnes patrí jednej fyzickej osobe; tieto subjekty a pracoviská sú návrhmi, nie už založenými inštitúciami. Počiatočná geografická predstava zahŕňa Švajčiarsko alebo Lichtenštajnsko, Česko alebo Slovensko a tretie pracovisko na Blízkom východe, ktorého miesto zostáva otvorené. Prinášame softvér, výskumný program a riadenú organizáciu agentov. Partneri môžu priniesť kapitál, nezávislú replikáciu, merané doménové dáta, návrh a výrobu čipov, laboratóriá, prístroje či pracoviská hardware-in-the-loop. Prvá spolupráca má určiť jeden problém, jeden výstup a dôkazy úspechu. V novembri 2026 sme začali proces podpory startupov Startfeld (Switzerland Innovation Park Ost). Nedeklarujeme záväzok partnera ani udelené financovanie.",
       "packages": "Publikované distribúcie",
       "packages_note": "{packages} pomenovaných distribúcií bolo jednotlivo overených cez PyPI JSON API dňa {date}. Ide o overený zoznam, nie o úplný súpis celého účtu. Verzie sú metadáta balíkov, nie vedecká validácia ani zodpovedajúce historické DOI vydania.",
       "version": "Verzia",
@@ -3554,7 +3554,7 @@
         ""
       ],
       "partner_title": "Gründungs- und Forschungspartner",
-      "partner": "Wir suchen Pre-Seed-Kapital und Partner zur gemeinsamen Gründung eines Forschungsinstituts, eines Unternehmens und einer gemeinnützigen Forschungsgesellschaft. Das Programm gehört derzeit einer Einzelperson; Rechtsträger und Standorte sind Vorschläge, keine bereits gegründeten Institutionen. Das anfängliche geografische Bild umfasst die Schweiz oder Liechtenstein, Tschechien oder die Slowakei sowie einen noch offenen dritten Standort im Nahen Osten. Wir bringen Software, Forschungsprogramm und eine geregelte Agentenorganisation ein. Partner können Kapital, unabhängige Replikation, gemessene Domänendaten, Chipentwurf und Fertigung, Labore, Instrumente oder Hardware-in-the-Loop-Einrichtungen beitragen. Eine erste Zusammenarbeit sollte ein Problem, ein Ergebnis und die Erfolgskriterien festlegen. Im November 2026 haben wir den Startup-Förderprozess von Startfeld (Switzerland Innovation Park Ost) begonnen; eine GmbH im Kanton St. Gallen ist geplant. Weder eine Partnerzusage noch eine bewilligte Finanzierung wird behauptet.",
+      "partner": "Erster Schritt: die Schweizer GmbH in St. Gallen (geplant); weitere Rechtsträger folgen der Finanzierung. Wir suchen Pre-Seed-Kapital und Partner zur gemeinsamen Gründung eines Forschungsinstituts, eines Unternehmens und einer gemeinnützigen Forschungsgesellschaft. Das Programm gehört derzeit einer Einzelperson; Rechtsträger und Standorte sind Vorschläge, keine bereits gegründeten Institutionen. Das anfängliche geografische Bild umfasst die Schweiz oder Liechtenstein, Tschechien oder die Slowakei sowie einen noch offenen dritten Standort im Nahen Osten. Wir bringen Software, Forschungsprogramm und eine geregelte Agentenorganisation ein. Partner können Kapital, unabhängige Replikation, gemessene Domänendaten, Chipentwurf und Fertigung, Labore, Instrumente oder Hardware-in-the-Loop-Einrichtungen beitragen. Eine erste Zusammenarbeit sollte ein Problem, ein Ergebnis und die Erfolgskriterien festlegen. Im November 2026 haben wir den Startup-Förderprozess von Startfeld (Switzerland Innovation Park Ost) begonnen. Weder eine Partnerzusage noch eine bewilligte Finanzierung wird behauptet.",
       "packages": "Veröffentlichte Distributionen",
       "packages_note": "{packages} benannte Distributionen wurden am {date} einzeln über die PyPI-JSON-API geprüft. Dies ist eine geprüfte Liste, kein vollständiger Kontoindex. Versionen sind Paketmetadaten, keine wissenschaftliche Validierung oder Zuordnung zu historischen DOI-Versionen.",
       "version": "Version",
@@ -3594,7 +3594,7 @@
         ""
       ],
       "partner_title": "创始与研究伙伴",
-      "partner": "我们寻求种子前融资与伙伴，共同成立研究所、公司及非营利研究公司。目前研究计划属于一名自然人；这些实体与站点仍为提议，尚非已成立机构。初步地域构想包括瑞士或列支敦士登、捷克或斯洛伐克，以及地点尚未确定的中东第三站点。我们提供软件、研究计划与受治理的智能体组织。伙伴可提供资本、独立复现、实测领域数据、芯片设计与制造、实验室、仪器或硬件在环设施。首次合作应明确一个问题、一个产出及判定成功的证据。2026 年 11 月，我们开始参与 Startfeld（Switzerland Innovation Park Ost）的初创企业支持流程；计划在圣加仑州设立一家 GmbH。不暗示已有伙伴承诺或获得融资。",
+      "partner": "第一步：在圣加仑设立瑞士 GmbH（计划中）；其他实体将在获得资金后设立。我们寻求种子前融资与伙伴，共同成立研究所、公司及非营利研究公司。目前研究计划属于一名自然人；这些实体与站点仍为提议，尚非已成立机构。初步地域构想包括瑞士或列支敦士登、捷克或斯洛伐克，以及地点尚未确定的中东第三站点。我们提供软件、研究计划与受治理的智能体组织。伙伴可提供资本、独立复现、实测领域数据、芯片设计与制造、实验室、仪器或硬件在环设施。首次合作应明确一个问题、一个产出及判定成功的证据。2026 年 11 月，我们开始参与 Startfeld（Switzerland Innovation Park Ost）的初创企业支持流程。不暗示已有伙伴承诺或获得融资。",
       "packages": "已发布发行包",
       "packages_note": "于 {date} 通过 PyPI JSON API 分别检查了 {packages} 个具名发行包。这是经过核验的列表，并非整个账户的完整索引。版本属于软件包元数据，不代表科学验证，也不等于历史 DOI 发布版本。",
       "version": "版本",
@@ -3634,7 +3634,7 @@
         ""
       ],
       "partner_title": "共同設立・研究パートナー",
-      "partner": "研究所、会社、非営利研究会社を共同設立するため、プレシード資金とパートナーを求めています。現在の計画は一人の個人に属しており、法人や拠点は提案段階で、設立済み機関ではありません。初期の地理的構想は、スイスまたはリヒテンシュタイン、チェコまたはスロバキア、そして場所未定の中東の第三拠点です。私たちはソフトウェア、研究計画、統制されたエージェント組織を提供します。パートナーには資金、独立再現、実測データ、半導体設計・製造、研究室、計測器、ハードウェア・イン・ザ・ループ設備などを期待します。最初の協力では、一つの課題、一つの成果、成功を判定する証拠を定めます。2026 年 11 月、Startfeld（Switzerland Innovation Park Ost）のスタートアップ支援プロセスを開始しました。ザンクト・ガレン州での GmbH 設立を予定しています。既存の参加確約や資金獲得は示唆しません。",
+      "partner": "最初の一歩は、ザンクト・ガレンでのスイス GmbH 設立（予定）です。その他の法人は資金確保後に続きます。研究所、会社、非営利研究会社を共同設立するため、プレシード資金とパートナーを求めています。現在の計画は一人の個人に属しており、法人や拠点は提案段階で、設立済み機関ではありません。初期の地理的構想は、スイスまたはリヒテンシュタイン、チェコまたはスロバキア、そして場所未定の中東の第三拠点です。私たちはソフトウェア、研究計画、統制されたエージェント組織を提供します。パートナーには資金、独立再現、実測データ、半導体設計・製造、研究室、計測器、ハードウェア・イン・ザ・ループ設備などを期待します。最初の協力では、一つの課題、一つの成果、成功を判定する証拠を定めます。2026 年 11 月、Startfeld（Switzerland Innovation Park Ost）のスタートアップ支援プロセスを開始しました。既存の参加確約や資金獲得は示唆しません。",
       "packages": "公開配布物",
       "packages_note": "{date} に PyPI JSON API で {packages} 件の名称付き配布物を個別確認しました。確認済み一覧であり、アカウント全体の網羅的な索引ではありません。バージョンはパッケージのメタデータで、科学的検証や過去の DOI 版との一致を意味しません。",
       "version": "バージョン",

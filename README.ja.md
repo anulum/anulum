@@ -43,7 +43,7 @@ GitHub 個人プロフィール概要
 
 スイスを拠点とする独立研究者・システムエンジニアとして、Anulum の名で科学ソフトウェアと統制された研究組織を開発しています。五つの活動中グループが、原子炉システム、統合と制御、エージェント協調と保証、ニューロモーフィック計算、量子計算を担当します。第六の Scientific Discovery and Experimentation は組成中です。事業の重点：ワークフローを問わない中核で、AI エージェントを実行し検証可能にします。作業を行い、作成者以外が確認し、再生できる必要があるあらゆるプロセスが対象です。すでに当社の研究開発を毎日支えており、最初の市場はスイスとリヒテンシュタインの規制対象金融機関です。公開ソフトウェア、設計作業、ワールドモデル開発、将来のハードウェア成果は、それぞれの証拠境界を持ちます。研究所と会社の共同設立をパートナーに提案しています。
 
-**同じ中核、まったく異なる五つのワークフロー、一つの監査証跡：**ソフトウェア開発（PyPI の 20 ディストリビューションで 392 件のリリース）、科学計算（プラズマ・原子炉モデリング、156 量子ビットの超伝導プロセッサ上で公開したシミュレーション）、ハードウェア設計（SC-NeuroCore が生成する SystemVerilog）、助成金申請と技術文書、そして主張の検証（Director-AI）。
+**同じ中核、まったく異なる五つのワークフロー、一つの監査証跡：**ソフトウェア開発（PyPI の 20 ディストリビューションで 391 件のリリース）、科学計算（プラズマ・原子炉モデリング、156 量子ビットの超伝導プロセッサ上で公開したシミュレーション）、ハードウェア設計（SC-NeuroCore が生成する SystemVerilog）、助成金申請と技術文書、そして主張の検証（Director-AI）。
 
 ## 言語とプラットフォーム
 
@@ -106,11 +106,11 @@ HTML/CSS、Shell、Docker、Linux。
 
 | 日付 | プロジェクト | リリース | 変更 |
 |---|---|---|---|
+| 2026-11-12 | SCPN Fusion Core | [v4.1.0](https://doi.org/10.5281/zenodo.24166616) | published software archive |
+| 2026-11-12 | SCPN-Fusion-Core | [v4.1.0](https://github.com/anulum/scpn-fusion-core/tree/v4.1.0) | scpn-fusion now requires NumPy 2 (numpy>=2.4,<3, was numpy>=1.24,<2.0). |
 | 2026-11-11 | Synapse Channel | [v0.99.51](https://doi.org/10.5281/zenodo.24127012) | published software archive |
 | 2026-11-11 | SYNAPSE CHANNEL | [v0.99.51](https://github.com/anulum/synapse-channel/tree/v0.99.51) | Outbound peer tokens rotate without a restart. synapse hub gains --multihub-watch-token-file, --claim-peer-token-file and --relay-peer-token-file, and --message-peer-token-file now behaves like them. |
 | 2026-11-08 | SC-NeuroCore | [v4.1.0](https://doi.org/10.5281/zenodo.24060751) | published software archive |
-| 2026-11-08 | SYNAPSE CHANNEL | [v0.99.50](https://github.com/anulum/synapse-channel/tree/v0.99.50) | One import surface for federation consumers. synapse_channel.federation_api offers, from one package, the 109 Core names an out-of-tree federation consumer such as the fleet tier imports today. |
-| 2026-11-08 | SYNAPSE CHANNEL | [v0.99.49](https://github.com/anulum/synapse-channel/tree/v0.99.49) | Mail addressed to a role waits in the role's own mailbox. A chat to project/role used to be pending at whichever identity held the role, so a new session that took over the role started without it and the old session's count never fell. |
 
 <sub>[anulum.li/news](https://anulum.li/news/)（各プロジェクトの CHANGELOG）と [Zenodo](https://zenodo.org/search?q=creators.orcid%3A%220009-0009-3560-0851%22) から 2026-11-13 に生成。</sub>
 <!-- profile-feeds:releases:end -->
@@ -133,7 +133,7 @@ HTML/CSS、Shell、Docker、Linux。
 | 1998 | 公開 ORCID に自己申告された ANULUM CH&LI 創設者役割の開始 |
 | 2018 | 公開 GitHub アカウント開設 |
 | 2025 | SCPN プレビューと技術報告を Zenodo に公開 |
-| 2026 | AI 保証、ニューロモーフィック、プラズマ、量子システムへ公開ソフトウェア・研究ポートフォリオを拡大 |
+| 2026 年 2 月以降 | AI 保証、ニューロモーフィック、プラズマ、量子システムへ公開ソフトウェア・研究ポートフォリオを拡大 |
 | 2026 年 6 月 | エージェント組織が日常運用を開始：調整とジャーナルは自社ハードウェア上 |
 
 ## ラボマップ
@@ -543,7 +543,7 @@ Fusion Equilibrium Challenge はグループ一覧作成後の 2026 年 10 月 1
 <!-- profile-catalogue:partner:start -->
 ### 共同設立・研究パートナー
 
-研究所、会社、非営利研究会社を共同設立するため、プレシード資金とパートナーを求めています。現在の計画は一人の個人に属しており、法人や拠点は提案段階で、設立済み機関ではありません。初期の地理的構想は、スイスまたはリヒテンシュタイン、チェコまたはスロバキア、そして場所未定の中東の第三拠点です。私たちはソフトウェア、研究計画、統制されたエージェント組織を提供します。パートナーには資金、独立再現、実測データ、半導体設計・製造、研究室、計測器、ハードウェア・イン・ザ・ループ設備などを期待します。最初の協力では、一つの課題、一つの成果、成功を判定する証拠を定めます。2026 年 11 月、Startfeld（Switzerland Innovation Park Ost）のスタートアップ支援プロセスを開始しました。ザンクト・ガレン州での GmbH 設立を予定しています。既存の参加確約や資金獲得は示唆しません。
+最初の一歩は、ザンクト・ガレンでのスイス GmbH 設立（予定）です。その他の法人は資金確保後に続きます。研究所、会社、非営利研究会社を共同設立するため、プレシード資金とパートナーを求めています。現在の計画は一人の個人に属しており、法人や拠点は提案段階で、設立済み機関ではありません。初期の地理的構想は、スイスまたはリヒテンシュタイン、チェコまたはスロバキア、そして場所未定の中東の第三拠点です。私たちはソフトウェア、研究計画、統制されたエージェント組織を提供します。パートナーには資金、独立再現、実測データ、半導体設計・製造、研究室、計測器、ハードウェア・イン・ザ・ループ設備などを期待します。最初の協力では、一つの課題、一つの成果、成功を判定する証拠を定めます。2026 年 11 月、Startfeld（Switzerland Innovation Park Ost）のスタートアップ支援プロセスを開始しました。既存の参加確約や資金獲得は示唆しません。
 <!-- profile-catalogue:partner:end -->
 
 ### ライセンスモデル
@@ -566,8 +566,8 @@ Fusion Equilibrium Challenge はグループ一覧作成後の 2026 年 10 月 1
 ニューロモーフィックシステム、信頼できる AI インフラストラクチャ、
 科学技術計算、形式検証、制御に関する技術的根拠のある協力を歓迎します。
 
-協力案件は選択的に受けています。公開 GitHub プロフィールは現在 hireable
-ですが、即時対応可能であることを保証するものではありません。
+ANULUM GmbH の設立準備中のため、協力案件は選択的に受けています。
+パイロット案件やパートナーシップのお問い合わせを歓迎します。
 
 最初の連絡には、課題、制約、関連する先行研究、成功を示すエビデンスを
 含めてください。[protoscience@anulum.li](mailto:protoscience@anulum.li)

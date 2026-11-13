@@ -44,7 +44,7 @@ Persönliche GitHub-Profilübersicht
 
 Unabhängiger Forscher und Systemingenieur mit Sitz in der Schweiz. Unter dem Namen Anulum entwickle ich wissenschaftliche Software und eine geregelte Forschungsorganisation. Fünf aktive Gruppen arbeiten an Reaktorsystemen, Integration und Regelung, Agentenkoordination und Absicherung, neuromorphem Rechnen und Quantencomputing. Eine sechste Gruppe, Scientific Discovery and Experimentation, befindet sich im Aufbau. Kommerzieller Schwerpunkt: ein workflow-unabhängiger Kern, der KI-Agenten ausführt und überprüfbar macht, für jeden Prozess, in dem Arbeit erledigt, von einem Nicht-Autor geprüft und nachgespielt werden muss. Er betreibt schon heute täglich unsere eigene Forschung und Entwicklung; unser erster Markt sind regulierte Finanzinstitute in der Schweiz und in Liechtenstein. Veröffentlichte Software, Architekturarbeit, World Models und angestrebte Hardwareergebnisse haben getrennte Evidenzgrenzen. Forschungsinstitut und Unternehmen werden zur gemeinsamen Gründung mit Partnern angeboten.
 
-**Derselbe Kern, fünf sehr verschiedene Arbeitsabläufe, ein Prüfpfad:** Softwareentwicklung (392 Releases von 20 PyPI-Distributionen), wissenschaftliches Rechnen (Plasma- und Reaktormodellierung, eine veröffentlichte Simulation auf einem supraleitenden Prozessor mit 156 Qubits), Hardwareentwurf (SystemVerilog aus SC-NeuroCore), Förderanträge und technische Dokumente sowie die Prüfung von Aussagen (Director-AI).
+**Derselbe Kern, fünf sehr verschiedene Arbeitsabläufe, ein Prüfpfad:** Softwareentwicklung (391 Releases von 20 PyPI-Distributionen), wissenschaftliches Rechnen (Plasma- und Reaktormodellierung, eine veröffentlichte Simulation auf einem supraleitenden Prozessor mit 156 Qubits), Hardwareentwurf (SystemVerilog aus SC-NeuroCore), Förderanträge und technische Dokumente sowie die Prüfung von Aussagen (Director-AI).
 
 <table>
   <tr>
@@ -116,11 +116,11 @@ sie sind Betriebssignale, keine Bewertung wissenschaftlicher Qualität.
 
 | Datum | Projekt | Release | Änderung |
 |---|---|---|---|
+| 2026-11-12 | SCPN Fusion Core | [v4.1.0](https://doi.org/10.5281/zenodo.24166616) | published software archive |
+| 2026-11-12 | SCPN-Fusion-Core | [v4.1.0](https://github.com/anulum/scpn-fusion-core/tree/v4.1.0) | scpn-fusion now requires NumPy 2 (numpy>=2.4,<3, was numpy>=1.24,<2.0). |
 | 2026-11-11 | Synapse Channel | [v0.99.51](https://doi.org/10.5281/zenodo.24127012) | published software archive |
 | 2026-11-11 | SYNAPSE CHANNEL | [v0.99.51](https://github.com/anulum/synapse-channel/tree/v0.99.51) | Outbound peer tokens rotate without a restart. synapse hub gains --multihub-watch-token-file, --claim-peer-token-file and --relay-peer-token-file, and --message-peer-token-file now behaves like them. |
 | 2026-11-08 | SC-NeuroCore | [v4.1.0](https://doi.org/10.5281/zenodo.24060751) | published software archive |
-| 2026-11-08 | SYNAPSE CHANNEL | [v0.99.50](https://github.com/anulum/synapse-channel/tree/v0.99.50) | One import surface for federation consumers. synapse_channel.federation_api offers, from one package, the 109 Core names an out-of-tree federation consumer such as the fleet tier imports today. |
-| 2026-11-08 | SYNAPSE CHANNEL | [v0.99.49](https://github.com/anulum/synapse-channel/tree/v0.99.49) | Mail addressed to a role waits in the role's own mailbox. A chat to project/role used to be pending at whichever identity held the role, so a new session that took over the role started without it and the old session's count never fell. |
 
 <sub>Gerendert aus [anulum.li/news](https://anulum.li/news/) (den CHANGELOG-Dateien der Projekte) und [Zenodo](https://zenodo.org/search?q=creators.orcid%3A%220009-0009-3560-0851%22) am 2026-11-13.</sub>
 <!-- profile-feeds:releases:end -->
@@ -143,7 +143,7 @@ sie sind Betriebssignale, keine Bewertung wissenschaftlicher Qualität.
 | 1998 | Beginn der selbst eingetragenen Gründerrolle bei ANULUM CH&LI im öffentlichen ORCID-Datensatz |
 | 2018 | Öffentliches GitHub-Konto eingerichtet |
 | 2025 | Öffentliche SCPN-Vorschauen, Framework-Indizes und technische Berichte auf Zenodo hinterlegt |
-| 2026 | Ausbau des öffentlichen Software- und Forschungsportfolios in KI-Sicherung, Agenteninfrastruktur, neuromorphem Rechnen, Plasmaregelung und Quantensimulation |
+| ab Februar 2026 | Ausbau des öffentlichen Software- und Forschungsportfolios in KI-Sicherung, Agenteninfrastruktur, neuromorphem Rechnen, Plasmaregelung und Quantensimulation |
 | Juni 2026 | Agentenorganisation im täglichen Betrieb: Koordination und Journal auf eigener Hardware |
 
 Die Einträge der Zeitleiste unterscheiden Registerfakten von selbst
@@ -608,7 +608,7 @@ oder Vorteilsbehauptung umzudeuten.
 <!-- profile-catalogue:partner:start -->
 ### Gründungs- und Forschungspartner
 
-Wir suchen Pre-Seed-Kapital und Partner zur gemeinsamen Gründung eines Forschungsinstituts, eines Unternehmens und einer gemeinnützigen Forschungsgesellschaft. Das Programm gehört derzeit einer Einzelperson; Rechtsträger und Standorte sind Vorschläge, keine bereits gegründeten Institutionen. Das anfängliche geografische Bild umfasst die Schweiz oder Liechtenstein, Tschechien oder die Slowakei sowie einen noch offenen dritten Standort im Nahen Osten. Wir bringen Software, Forschungsprogramm und eine geregelte Agentenorganisation ein. Partner können Kapital, unabhängige Replikation, gemessene Domänendaten, Chipentwurf und Fertigung, Labore, Instrumente oder Hardware-in-the-Loop-Einrichtungen beitragen. Eine erste Zusammenarbeit sollte ein Problem, ein Ergebnis und die Erfolgskriterien festlegen. Im November 2026 haben wir den Startup-Förderprozess von Startfeld (Switzerland Innovation Park Ost) begonnen; eine GmbH im Kanton St. Gallen ist geplant. Weder eine Partnerzusage noch eine bewilligte Finanzierung wird behauptet.
+Erster Schritt: die Schweizer GmbH in St. Gallen (geplant); weitere Rechtsträger folgen der Finanzierung. Wir suchen Pre-Seed-Kapital und Partner zur gemeinsamen Gründung eines Forschungsinstituts, eines Unternehmens und einer gemeinnützigen Forschungsgesellschaft. Das Programm gehört derzeit einer Einzelperson; Rechtsträger und Standorte sind Vorschläge, keine bereits gegründeten Institutionen. Das anfängliche geografische Bild umfasst die Schweiz oder Liechtenstein, Tschechien oder die Slowakei sowie einen noch offenen dritten Standort im Nahen Osten. Wir bringen Software, Forschungsprogramm und eine geregelte Agentenorganisation ein. Partner können Kapital, unabhängige Replikation, gemessene Domänendaten, Chipentwurf und Fertigung, Labore, Instrumente oder Hardware-in-the-Loop-Einrichtungen beitragen. Eine erste Zusammenarbeit sollte ein Problem, ein Ergebnis und die Erfolgskriterien festlegen. Im November 2026 haben wir den Startup-Förderprozess von Startfeld (Switzerland Innovation Park Ost) begonnen. Weder eine Partnerzusage noch eine bewilligte Finanzierung wird behauptet.
 <!-- profile-catalogue:partner:end -->
 
 ### Lizenzmodelle
@@ -633,8 +633,8 @@ KI-Infrastruktur, Multi-Agenten-Systemen, neuromorphem Rechnen,
 wissenschaftlicher Software, formaler Verifikation, Quantensimulation,
 Plasmaphysik und Regelung.
 
-Aufträge werden selektiv angenommen. Das öffentliche GitHub-Profil ist derzeit
-als hireable markiert; dies garantiert keine sofortige Kapazität.
+Aufträge werden selektiv angenommen, solange die ANULUM GmbH in Vorbereitung ist;
+Anfragen zu Pilotprojekten und Partnerschaften sind willkommen.
 
 Eine hilfreiche erste Nachricht enthält Problem, Randbedingungen, relevante
 Vorarbeiten und die Evidenz, die als Erfolg gelten würde. Kontakt über

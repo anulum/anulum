@@ -44,7 +44,7 @@ Prehľad osobného profilu GitHub
 
 Nezávislý výskumník a systémový inžinier pôsobiaci vo Švajčiarsku. Pod menom Anulum vyvíjam vedecký softvér a riadenú výskumnú organizáciu. Päť aktívnych skupín pokrýva reaktorové systémy, integráciu a riadenie, koordináciu a kontrolu agentov, neuromorfné a kvantové výpočty. Šiesta skupina Scientific Discovery and Experimentation sa formuje. Komerčné zameranie: jadro nezávislé od typu workflow, ktoré spúšťa AI agentov a robí ich prácu overiteľnou, pre každý proces, kde treba prácu vykonať, nechať ju skontrolovať niekým iným než autorom a vedieť ju prehrať. Už dnes denne poháňa náš vlastný výskum a vývoj; prvým trhom sú regulované finančné inštitúcie vo Švajčiarsku a v Lichtenštajnsku. Vydaný softvér, architektonické práce, vývoj world models a zamýšľané hardvérové výstupy majú samostatné hranice dôkazov. Výskumný inštitút a spoločnosť ponúkame na spoločné založenie s partnermi.
 
-**To isté jadro, päť veľmi odlišných druhov práce, jeden auditný záznam:** vývoj softvéru (392 vydaní 20 distribúcií na PyPI), vedecké výpočty (modelovanie plazmy a reaktorov, publikovaná simulácia na supravodivom procesore so 156 qubitmi), návrh hardvéru (SystemVerilog zo SC-NeuroCore), žiadosti o granty a technické dokumenty a kontrola tvrdení (Director-AI).
+**To isté jadro, päť veľmi odlišných druhov práce, jeden auditný záznam:** vývoj softvéru (391 vydaní 20 distribúcií na PyPI), vedecké výpočty (modelovanie plazmy a reaktorov, publikovaná simulácia na supravodivom procesore so 156 qubitmi), návrh hardvéru (SystemVerilog zo SC-NeuroCore), žiadosti o granty a technické dokumenty a kontrola tvrdení (Director-AI).
 
 <table>
   <tr>
@@ -116,11 +116,11 @@ vedeckej kvality.
 
 | Dátum | Projekt | Vydanie | Zmena |
 |---|---|---|---|
+| 2026-11-12 | SCPN Fusion Core | [v4.1.0](https://doi.org/10.5281/zenodo.24166616) | published software archive |
+| 2026-11-12 | SCPN-Fusion-Core | [v4.1.0](https://github.com/anulum/scpn-fusion-core/tree/v4.1.0) | scpn-fusion now requires NumPy 2 (numpy>=2.4,<3, was numpy>=1.24,<2.0). |
 | 2026-11-11 | Synapse Channel | [v0.99.51](https://doi.org/10.5281/zenodo.24127012) | published software archive |
 | 2026-11-11 | SYNAPSE CHANNEL | [v0.99.51](https://github.com/anulum/synapse-channel/tree/v0.99.51) | Outbound peer tokens rotate without a restart. synapse hub gains --multihub-watch-token-file, --claim-peer-token-file and --relay-peer-token-file, and --message-peer-token-file now behaves like them. |
 | 2026-11-08 | SC-NeuroCore | [v4.1.0](https://doi.org/10.5281/zenodo.24060751) | published software archive |
-| 2026-11-08 | SYNAPSE CHANNEL | [v0.99.50](https://github.com/anulum/synapse-channel/tree/v0.99.50) | One import surface for federation consumers. synapse_channel.federation_api offers, from one package, the 109 Core names an out-of-tree federation consumer such as the fleet tier imports today. |
-| 2026-11-08 | SYNAPSE CHANNEL | [v0.99.49](https://github.com/anulum/synapse-channel/tree/v0.99.49) | Mail addressed to a role waits in the role's own mailbox. A chat to project/role used to be pending at whichever identity held the role, so a new session that took over the role started without it and the old session's count never fell. |
 
 <sub>Vykreslené z [anulum.li/news](https://anulum.li/news/) (súbory CHANGELOG projektov) a [Zenodo](https://zenodo.org/search?q=creators.orcid%3A%220009-0009-3560-0851%22) dňa 2026-11-13.</sub>
 <!-- profile-feeds:releases:end -->
@@ -143,7 +143,7 @@ vedeckej kvality.
 | 1998 | Začiatok vlastnoručne uvedenej zakladateľskej roly v ANULUM CH&LI vo verejnom ORCID zázname |
 | 2018 | Založenie verejného GitHub účtu |
 | 2025 | Verejné SCPN preview dokumenty, indexy rámca a technické správy uložené na Zenodo |
-| 2026 | Rozšírenie verejného softvérového a výskumného portfólia v spoľahlivosti AI, agentovej infraštruktúre, neuromorfných výpočtoch, riadení plazmy a kvantovej simulácii |
+| od februára 2026 | Rozšírenie verejného softvérového a výskumného portfólia v spoľahlivosti AI, agentovej infraštruktúre, neuromorfných výpočtoch, riadení plazmy a kvantovej simulácii |
 | jún 2026 | Organizácia agentov v dennej prevádzke: koordinácia a žurnál na vlastnom hardvéri |
 
 Položky časovej osi rozlišujú fakty z registrov od vlastnej chronológie.
@@ -602,7 +602,7 @@ tvrdenie o pripravenosti alebo výhode.
 <!-- profile-catalogue:partner:start -->
 ### Zakladajúci a výskumní partneri
 
-Hľadáme pre-seed financovanie a partnerov na spoločné založenie výskumného inštitútu, spoločnosti a neziskovej výskumnej spoločnosti. Program dnes patrí jednej fyzickej osobe; tieto subjekty a pracoviská sú návrhmi, nie už založenými inštitúciami. Počiatočná geografická predstava zahŕňa Švajčiarsko alebo Lichtenštajnsko, Česko alebo Slovensko a tretie pracovisko na Blízkom východe, ktorého miesto zostáva otvorené. Prinášame softvér, výskumný program a riadenú organizáciu agentov. Partneri môžu priniesť kapitál, nezávislú replikáciu, merané doménové dáta, návrh a výrobu čipov, laboratóriá, prístroje či pracoviská hardware-in-the-loop. Prvá spolupráca má určiť jeden problém, jeden výstup a dôkazy úspechu. V novembri 2026 sme začali proces podpory startupov Startfeld (Switzerland Innovation Park Ost); plánujeme GmbH v kantóne St. Gallen. Nedeklarujeme záväzok partnera ani udelené financovanie.
+Prvý krok: švajčiarska GmbH v St. Gallene (plánovaná); ďalšie subjekty prídu po zabezpečení financovania. Hľadáme pre-seed financovanie a partnerov na spoločné založenie výskumného inštitútu, spoločnosti a neziskovej výskumnej spoločnosti. Program dnes patrí jednej fyzickej osobe; tieto subjekty a pracoviská sú návrhmi, nie už založenými inštitúciami. Počiatočná geografická predstava zahŕňa Švajčiarsko alebo Lichtenštajnsko, Česko alebo Slovensko a tretie pracovisko na Blízkom východe, ktorého miesto zostáva otvorené. Prinášame softvér, výskumný program a riadenú organizáciu agentov. Partneri môžu priniesť kapitál, nezávislú replikáciu, merané doménové dáta, návrh a výrobu čipov, laboratóriá, prístroje či pracoviská hardware-in-the-loop. Prvá spolupráca má určiť jeden problém, jeden výstup a dôkazy úspechu. V novembri 2026 sme začali proces podpory startupov Startfeld (Switzerland Innovation Park Ost). Nedeklarujeme záväzok partnera ani udelené financovanie.
 <!-- profile-catalogue:partner:end -->
 
 ### Licenčné modely
@@ -626,8 +626,8 @@ Vítam technicky podloženú spoluprácu v spoľahlivej infraštruktúre AI,
 multiagentových systémoch, neuromorfných výpočtoch, vedeckom softvéri,
 formálnom overovaní, kvantovej simulácii, fyzike plazmy a riadení.
 
-Spolupráce prijímam selektívne. Verejný GitHub profil je aktuálne označený ako
-hireable; nejde o záruku okamžitej kapacity.
+Spolupráce prijímam selektívne, kým sa pripravuje ANULUM GmbH;
+vítam záujem o pilotné projekty a partnerstvá.
 
 Užitočná prvá správa obsahuje problém, obmedzenia, relevantné predchádzajúce
 práce a dôkazy, ktoré by predstavovali úspech. Kontaktujte ma cez

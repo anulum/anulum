@@ -2,6 +2,20 @@
   "fetched_at": "2026-11-13",
   "releases": [
     {
+      "project": "SCPN Fusion Core",
+      "version": "v4.1.0",
+      "headline": "published software archive",
+      "link": "https://doi.org/10.5281/zenodo.24166616",
+      "date": "2026-11-12"
+    },
+    {
+      "project": "SCPN-Fusion-Core",
+      "version": "v4.1.0",
+      "headline": "scpn-fusion now requires NumPy 2 (numpy>=2.4,<3, was numpy>=1.24,<2.0).",
+      "link": "https://github.com/anulum/scpn-fusion-core/tree/v4.1.0",
+      "date": "2026-11-12"
+    },
+    {
       "project": "Synapse Channel",
       "version": "v0.99.51",
       "headline": "published software archive",
@@ -20,20 +34,6 @@
       "version": "v4.1.0",
       "headline": "published software archive",
       "link": "https://doi.org/10.5281/zenodo.24060751",
-      "date": "2026-11-08"
-    },
-    {
-      "project": "SYNAPSE CHANNEL",
-      "version": "v0.99.50",
-      "headline": "One import surface for federation consumers. synapse_channel.federation_api offers, from one package, the 109 Core names an out-of-tree federation consumer such as the fleet tier imports today:",
-      "link": "https://github.com/anulum/synapse-channel/tree/v0.99.50",
-      "date": "2026-11-08"
-    },
-    {
-      "project": "SYNAPSE CHANNEL",
-      "version": "v0.99.49",
-      "headline": "Mail addressed to a role waits in the role's own mailbox. A chat to project/role used to be pending at whichever identity held the role, so a new session that took over the role started without it and the old session's count never fell.",
-      "link": "https://github.com/anulum/synapse-channel/tree/v0.99.49",
       "date": "2026-11-08"
     }
   ],

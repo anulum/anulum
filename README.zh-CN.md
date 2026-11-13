@@ -43,7 +43,7 @@ GitHub 个人资料概览
 
 我是常驻瑞士的独立研究人员与系统工程师，以 Anulum 名义开发科学软件及受治理的研究组织。五个活跃组覆盖反应堆系统、集成与控制、智能体协调与保障、神经形态计算以及量子计算。第六组 Scientific Discovery and Experimentation 正在组建。商业重点：一个与工作流程无关的核心，用于运行并验证 AI 智能体，适用于任何需要完成工作、由非作者检查并可重放的流程。它已每天支撑我们自己的研发；首个市场是瑞士和列支敦士登受监管的金融机构。已发布软件、架构工作、世界模型开发及预期硬件产出各有独立的证据边界。我们寻求与伙伴共同成立研究所和公司。
 
-**同一核心，五种截然不同的工作流程，一条审计记录：**软件开发（20 个 PyPI 发行包共 392 次发布）、科学计算（等离子体与反应堆建模，以及在 156 量子比特超导处理器上已发表的模拟）、硬件设计（由 SC-NeuroCore 生成的 SystemVerilog）、资助申请与技术文档，以及声明核查（Director-AI）。
+**同一核心，五种截然不同的工作流程，一条审计记录：**软件开发（20 个 PyPI 发行包共 391 次发布）、科学计算（等离子体与反应堆建模，以及在 156 量子比特超导处理器上已发表的模拟）、硬件设计（由 SC-NeuroCore 生成的 SystemVerilog）、资助申请与技术文档，以及声明核查（Director-AI）。
 
 ## 语言与平台
 
@@ -106,11 +106,11 @@ Shell、Docker 和 Linux。
 
 | 日期 | 项目 | 版本 | 变更 |
 |---|---|---|---|
+| 2026-11-12 | SCPN Fusion Core | [v4.1.0](https://doi.org/10.5281/zenodo.24166616) | published software archive |
+| 2026-11-12 | SCPN-Fusion-Core | [v4.1.0](https://github.com/anulum/scpn-fusion-core/tree/v4.1.0) | scpn-fusion now requires NumPy 2 (numpy>=2.4,<3, was numpy>=1.24,<2.0). |
 | 2026-11-11 | Synapse Channel | [v0.99.51](https://doi.org/10.5281/zenodo.24127012) | published software archive |
 | 2026-11-11 | SYNAPSE CHANNEL | [v0.99.51](https://github.com/anulum/synapse-channel/tree/v0.99.51) | Outbound peer tokens rotate without a restart. synapse hub gains --multihub-watch-token-file, --claim-peer-token-file and --relay-peer-token-file, and --message-peer-token-file now behaves like them. |
 | 2026-11-08 | SC-NeuroCore | [v4.1.0](https://doi.org/10.5281/zenodo.24060751) | published software archive |
-| 2026-11-08 | SYNAPSE CHANNEL | [v0.99.50](https://github.com/anulum/synapse-channel/tree/v0.99.50) | One import surface for federation consumers. synapse_channel.federation_api offers, from one package, the 109 Core names an out-of-tree federation consumer such as the fleet tier imports today. |
-| 2026-11-08 | SYNAPSE CHANNEL | [v0.99.49](https://github.com/anulum/synapse-channel/tree/v0.99.49) | Mail addressed to a role waits in the role's own mailbox. A chat to project/role used to be pending at whichever identity held the role, so a new session that took over the role started without it and the old session's count never fell. |
 
 <sub>根据 [anulum.li/news](https://anulum.li/news/)（各项目的 CHANGELOG 文件）和 [Zenodo](https://zenodo.org/search?q=creators.orcid%3A%220009-0009-3560-0851%22) 于 2026-11-13 生成。</sub>
 <!-- profile-feeds:releases:end -->
@@ -133,7 +133,7 @@ Shell、Docker 和 Linux。
 | 1998 | 公开 ORCID 记录中自行填写的 ANULUM CH&LI 创始人角色开始 |
 | 2018 | 建立公开 GitHub 账户 |
 | 2025 | 在 Zenodo 发布 SCPN 预览材料与技术报告 |
-| 2026 | 公开软件与研究组合扩展至 AI 保障、神经形态、等离子体和量子系统 |
+| 2026 年 2 月起 | 公开软件与研究组合扩展至 AI 保障、神经形态、等离子体和量子系统 |
 | 2026 年 6 月 | 智能体组织投入日常运行：协调与日志位于自有硬件上 |
 
 ## 实验室地图
@@ -541,7 +541,7 @@ Fusion Equilibrium Challenge 是 2026 年 10 月 14 日创建的公开复现软�
 <!-- profile-catalogue:partner:start -->
 ### 创始与研究伙伴
 
-我们寻求种子前融资与伙伴，共同成立研究所、公司及非营利研究公司。目前研究计划属于一名自然人；这些实体与站点仍为提议，尚非已成立机构。初步地域构想包括瑞士或列支敦士登、捷克或斯洛伐克，以及地点尚未确定的中东第三站点。我们提供软件、研究计划与受治理的智能体组织。伙伴可提供资本、独立复现、实测领域数据、芯片设计与制造、实验室、仪器或硬件在环设施。首次合作应明确一个问题、一个产出及判定成功的证据。2026 年 11 月，我们开始参与 Startfeld（Switzerland Innovation Park Ost）的初创企业支持流程；计划在圣加仑州设立一家 GmbH。不暗示已有伙伴承诺或获得融资。
+第一步：在圣加仑设立瑞士 GmbH（计划中）；其他实体将在获得资金后设立。我们寻求种子前融资与伙伴，共同成立研究所、公司及非营利研究公司。目前研究计划属于一名自然人；这些实体与站点仍为提议，尚非已成立机构。初步地域构想包括瑞士或列支敦士登、捷克或斯洛伐克，以及地点尚未确定的中东第三站点。我们提供软件、研究计划与受治理的智能体组织。伙伴可提供资本、独立复现、实测领域数据、芯片设计与制造、实验室、仪器或硬件在环设施。首次合作应明确一个问题、一个产出及判定成功的证据。2026 年 11 月，我们开始参与 Startfeld（Switzerland Innovation Park Ost）的初创企业支持流程。不暗示已有伙伴承诺或获得融资。
 <!-- profile-catalogue:partner:end -->
 
 ### 许可模型
@@ -564,8 +564,8 @@ Fusion Equilibrium Challenge 是 2026 年 10 月 14 日创建的公开复现软�
 欢迎在神经形态系统、可靠人工智能基础设施、科学计算、形式化验证和控制
 领域开展有技术依据的合作。
 
-合作会选择性接受。公开 GitHub 资料当前标记为 hireable，但这并不保证
-立即可用的工作容量。
+在 ANULUM GmbH 筹备期间，合作会选择性接受；
+欢迎试点项目与合作伙伴洽询。
 
 有效的首次联系应包括问题、约束、相关前期工作，以及何种证据可以视为
 成功。请通过 [protoscience@anulum.li](mailto:protoscience@anulum.li) 或
