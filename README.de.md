@@ -42,7 +42,7 @@ Persönliche GitHub-Profilübersicht
   <a href="#zusammenarbeit">Zusammenarbeit</a>
 </p>
 
-Unabhängiger Forscher und Systemingenieur mit Sitz in der Schweiz. Unter dem Namen Anulum entwickle ich wissenschaftliche Software und eine geregelte Forschungsorganisation. Fünf aktive Gruppen arbeiten an Reaktorsystemen, Integration und Regelung, Agentenkoordination und Absicherung, neuromorphem Rechnen und Quantencomputing. Eine sechste Gruppe, Scientific Discovery and Experimentation, befindet sich im Aufbau. Veröffentlichte Software, Architekturarbeit, World Models und angestrebte Hardwareergebnisse haben getrennte Evidenzgrenzen. Forschungsinstitut und Unternehmen werden zur gemeinsamen Gründung mit Partnern angeboten.
+Unabhängiger Forscher und Systemingenieur mit Sitz in der Schweiz. Unter dem Namen Anulum entwickle ich wissenschaftliche Software und eine geregelte Forschungsorganisation. Fünf aktive Gruppen arbeiten an Reaktorsystemen, Integration und Regelung, Agentenkoordination und Absicherung, neuromorphem Rechnen und Quantencomputing. Eine sechste Gruppe, Scientific Discovery and Experimentation, befindet sich im Aufbau. Kommerzieller Schwerpunkt: überprüfbarer Betrieb von KI-Agenten für regulierte Branchen und autonome Arbeitsabläufe in allen Branchen. Veröffentlichte Software, Architekturarbeit, World Models und angestrebte Hardwareergebnisse haben getrennte Evidenzgrenzen. Forschungsinstitut und Unternehmen werden zur gemeinsamen Gründung mit Partnern angeboten.
 
 <table>
   <tr>

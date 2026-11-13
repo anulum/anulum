@@ -47,7 +47,7 @@ Personal GitHub profile overview
   <a href="#collaboration">Collaboration</a>
 </p>
 
-Independent researcher and systems engineer based in Switzerland, developing scientific software and a governed research organisation under the Anulum name. Five active groups cover reactor systems, integration and control, agentic coordination and assurance, neuromorphic computing, and quantum computing. A sixth group, Scientific Discovery and Experimentation, is in formation. Released software, architecture work, world-model development and intended hardware outputs have separate evidence boundaries. The research institute and company are offered for joint founding with partners.
+Independent researcher and systems engineer based in Switzerland, developing scientific software and a governed research organisation under the Anulum name. Five active groups cover reactor systems, integration and control, agentic coordination and assurance, neuromorphic computing, and quantum computing. A sixth group, Scientific Discovery and Experimentation, is in formation. Commercial focus: verifiable AI agent operations for regulated industries and autonomous workflows across industries. Released software, architecture work, world-model development and intended hardware outputs have separate evidence boundaries. The research institute and company are offered for joint founding with partners.
 
 <table>
   <tr>
