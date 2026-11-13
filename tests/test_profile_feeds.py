@@ -32,6 +32,28 @@ class FeedParsingTests(unittest.TestCase):
         self.assertEqual(items[1]["headline"], "Older change.")
         self.assertEqual(items[1]["link"], "https://example.org/a/1.2.0")
 
+    def test_parse_feed_accepts_the_colon_separator_of_curated_items(self) -> None:
+        feed = (
+            b'<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>t</title>'
+            b"<item><title>SC-NeuroCore v4.1.0: published software archive</title><link>https://example.org/s</link>"
+            b"<pubDate>Sun, 08 Nov 2026 00:00:00 +0000</pubDate></item>"
+            b"<item><title>Fusion Equilibrium Challenge: preliminary final standings</title><link>https://example.org/f</link>"
+            b"<pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate></item>"
+            b"<item><title>Funding register: every application with its outcome</title><link>https://example.org/r</link>"
+            b"<pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate></item>"
+            b"</channel></rss>"
+        )
+        items = feeds.parse_feed(feed, 5)
+        self.assertEqual(
+            [(item["project"], item["version"], item["headline"]) for item in items],
+            [("SC-NeuroCore", "v4.1.0", "published software archive")],
+        )
+
+    def test_headline_that_introduces_a_list_ends_as_a_sentence(self) -> None:
+        self.assertEqual(feeds.headline_cell("Tokens rotate, and the flag behaves like them:"), "Tokens rotate, and the flag behaves like them.")
+        self.assertEqual(feeds.headline_cell("Plain change."), "Plain change.")
+        self.assertEqual(feeds.headline_cell("A \u2014 B: C"), "A - B: C")
+
     def test_parse_feed_honours_the_limit(self) -> None:
         self.assertEqual(len(feeds.parse_feed(FEED, 1)), 1)
 

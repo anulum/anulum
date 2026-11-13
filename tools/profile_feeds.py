@@ -127,7 +127,9 @@ def parse_feed(xml_bytes: bytes, limit: int) -> list[dict[str, str]]:
     items: list[dict[str, str]] = []
     for item in root.iter("item"):
         title = item.findtext("title", "")
-        match = re.fullmatch(r"(?P<project>.+?) (?P<version>v?\d[^ ]*) — (?P<headline>.+)", title, re.S)
+        # anulum.li titles separate the release from its headline with " — " (CHANGELOG items)
+        # or ": " (curated archive items since late October 2026); both are releases.
+        match = re.fullmatch(r"(?P<project>.+?) (?P<version>v?\d[^ :]*)(?: —|:) (?P<headline>.+)", title, re.S)
         if not match:
             continue
         pub = item.findtext("pubDate", "")
@@ -204,6 +206,12 @@ def plain(text: str) -> str:
     return text.replace("—", "-").replace("|", "/").strip()
 
 
+def headline_cell(text: str) -> str:
+    """Table-safe headline; a headline that introduces a list (ends with ':') ends as a sentence instead."""
+    cell = plain(text)
+    return cell[:-1].rstrip() + "." if cell.endswith(":") else cell
+
+
 def render_block(name: str, readme: str, cache: dict[str, Any], data: dict[str, Any]) -> str:
     """Render one block body (without markers) for ``readme``."""
     heading = HEADINGS[readme][name]
@@ -211,7 +219,7 @@ def render_block(name: str, readme: str, cache: dict[str, Any], data: dict[str, 
     if name == "releases":
         rows = [
             f"| {entry['date']} | {plain(entry['project'])} | [{entry['version']}]({entry['link']}) | "
-            f"{plain(entry['headline'])} |"
+            f"{headline_cell(entry['headline'])} |"
             for entry in cache["releases"]
         ]
         table = (

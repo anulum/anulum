@@ -1,6 +1,6 @@
 {
   "schema_version": "1.3.0",
-  "verified_at": "2026-10-19",
+  "verified_at": "2026-11-13",
   "profile": {
     "name": "Miroslav Šotek",
     "github": "https://github.com/anulum",
@@ -854,7 +854,12 @@
     "17309834": "The Anulum Framework",
     "17508894": "The Anulum Framework",
     "18985467": "Sieving",
-    "17609127": "Precise Coordinate System Research"
+    "17609127": "Precise Coordinate System Research",
+    "24166616": "SCPN Fusion Core",
+    "24127012": "Synapse Channel",
+    "24060751": "SC-NeuroCore",
+    "23762895": "SCPN Quantum Control",
+    "23480093": "Fusion Equilibrium Challenge"
   },
   "publication_notes": {
     "22113062": "Under review (self-reported by the project); acceptance not claimed",

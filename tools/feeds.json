@@ -1,51 +1,91 @@
 {
-  "fetched_at": "2026-10-19",
+  "fetched_at": "2026-11-13",
   "releases": [
     {
       "project": "Synapse Channel",
-      "version": "v0.99.38",
+      "version": "v0.99.51",
       "headline": "published software archive",
-      "link": "https://doi.org/10.5281/zenodo.23328518",
-      "date": "2026-10-13"
+      "link": "https://doi.org/10.5281/zenodo.24127012",
+      "date": "2026-11-11"
     },
     {
       "project": "SYNAPSE CHANNEL",
-      "version": "v0.99.38",
-      "headline": "Read-only delivery receipt projection joining the aggregate to its exact source event in one snapshot, with message/state binding, optional row MAC verification and SQLCipher key support.",
-      "link": "https://github.com/anulum/synapse-channel/releases/tag/v0.99.38",
-      "date": "2026-10-13"
+      "version": "v0.99.51",
+      "headline": "Outbound peer tokens rotate without a restart. synapse hub gains --multihub-watch-token-file, --claim-peer-token-file and --relay-peer-token-file, and --message-peer-token-file now behaves like them:",
+      "link": "https://github.com/anulum/synapse-channel/tree/v0.99.51",
+      "date": "2026-11-11"
     },
     {
-      "project": "Synapse Channel",
-      "version": "v0.99.37",
+      "project": "SC-NeuroCore",
+      "version": "v4.1.0",
       "headline": "published software archive",
-      "link": "https://doi.org/10.5281/zenodo.23095056",
-      "date": "2026-10-02"
+      "link": "https://doi.org/10.5281/zenodo.24060751",
+      "date": "2026-11-08"
     },
     {
       "project": "SYNAPSE CHANNEL",
-      "version": "v0.99.37",
-      "headline": "Bind durable delivery decisions to the receiving hub, preserving the immutable request origin. Forwarded requests can expire and resolve replaced sessions; forwarded-only journals refuse startup under another hub identity.",
-      "link": "https://github.com/anulum/synapse-channel/releases/tag/v0.99.37",
-      "date": "2026-10-02"
+      "version": "v0.99.50",
+      "headline": "One import surface for federation consumers. synapse_channel.federation_api offers, from one package, the 109 Core names an out-of-tree federation consumer such as the fleet tier imports today:",
+      "link": "https://github.com/anulum/synapse-channel/tree/v0.99.50",
+      "date": "2026-11-08"
     },
     {
-      "project": "Loop Timing Witness",
-      "version": "v0.1.0",
-      "headline": "published host software",
-      "link": "https://doi.org/10.5281/zenodo.23092361",
-      "date": "2026-10-01"
+      "project": "SYNAPSE CHANNEL",
+      "version": "v0.99.49",
+      "headline": "Mail addressed to a role waits in the role's own mailbox. A chat to project/role used to be pending at whichever identity held the role, so a new session that took over the role started without it and the old session's count never fell.",
+      "link": "https://github.com/anulum/synapse-channel/tree/v0.99.49",
+      "date": "2026-11-08"
     }
   ],
   "zenodo": [
     {
-      "id": 23328518,
-      "doi": "10.5281/zenodo.23328518",
+      "id": 24166616,
+      "doi": "10.5281/zenodo.24166616",
+      "conceptdoi": "10.5281/zenodo.18820864",
+      "title": "SCPN Fusion Core: Tokamak Plasma Physics Simulation and Neuro-Symbolic Control Suite",
+      "date": "2026-11-12",
+      "type": "software/",
+      "version": "4.1.0",
+      "license": "agpl-3.0-or-later"
+    },
+    {
+      "id": 24127012,
+      "doi": "10.5281/zenodo.24127012",
       "conceptdoi": "10.5281/zenodo.20801559",
       "title": "SYNAPSE CHANNEL: Local-first multi-agent coordination bus",
-      "date": "2026-10-13",
+      "date": "2026-11-11",
       "type": "software/",
-      "version": "0.99.38",
+      "version": "0.99.51",
+      "license": "agpl-3.0-or-later"
+    },
+    {
+      "id": 24060751,
+      "doi": "10.5281/zenodo.24060751",
+      "conceptdoi": "10.5281/zenodo.18881374",
+      "title": "SC-NeuroCore: A Deterministic Stochastic Computing Framework for Neuromorphic Hardware Design",
+      "date": "2026-11-08",
+      "type": "software/",
+      "version": "4.1.0",
+      "license": "agpl-3.0-or-later"
+    },
+    {
+      "id": 23762895,
+      "doi": "10.5281/zenodo.23762895",
+      "conceptdoi": "10.5281/zenodo.23762894",
+      "title": "scpn-quantum-control: Quantum-Native SCPN Phase Dynamics and Control",
+      "date": "2026-10-29",
+      "type": "software/",
+      "version": "1.3.0",
+      "license": "agpl-3.0-or-later"
+    },
+    {
+      "id": 23480093,
+      "doi": "10.5281/zenodo.23480093",
+      "conceptdoi": "10.5281/zenodo.23480092",
+      "title": "Fusion Equilibrium Challenge: the Anulum entry (code, weights, study and experiment record)",
+      "date": "2026-10-19",
+      "type": "software/",
+      "version": "1.0.0",
       "license": "agpl-3.0-or-later"
     },
     {
@@ -126,16 +166,6 @@
       "date": "2026-07-17",
       "type": "software/",
       "version": "0.23.0",
-      "license": "agpl-3.0-or-later"
-    },
-    {
-      "id": 21198962,
-      "doi": "10.5281/zenodo.21198962",
-      "conceptdoi": "10.5281/zenodo.18881374",
-      "title": "SC-NeuroCore: Universal Stochastic Computing Framework for Neuromorphic Hardware",
-      "date": "2026-07-05",
-      "type": "software/",
-      "version": "3.13.3",
       "license": "agpl-3.0-or-later"
     },
     {
@@ -236,16 +266,6 @@
       "date": "2026-03-12",
       "type": "publication/technicalnote",
       "version": "",
-      "license": "agpl-3.0-or-later"
-    },
-    {
-      "id": 22056375,
-      "doi": "10.5281/zenodo.22056375",
-      "conceptdoi": "10.5281/zenodo.18820864",
-      "title": "SCPN Fusion Core: Tokamak Plasma Physics Simulation and Neuro-Symbolic Control Suite",
-      "date": "2026-03-01",
-      "type": "software/",
-      "version": "3.9.3",
       "license": "agpl-3.0-or-later"
     },
     {

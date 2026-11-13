@@ -7,8 +7,8 @@
 [Publications hub on anulum.li](https://anulum.li/papers/) ·
 [Releases and publications feed](https://anulum.li/news/)
 
-Zenodo inventory read on 2026-10-19: 30 records whose creator carries the ORCID
-above, 18 of publication type and 12 software archives. "Published"
+Zenodo inventory read on 2026-11-13: 32 records whose creator carries the ORCID
+above, 18 of publication type and 14 software archives. "Published"
 on this page means publicly deposited with a resolvable record. It does not imply
 journal acceptance or peer review. Titles are the records' own.
 
@@ -42,16 +42,18 @@ GitHub releases; the version in this table is the one the cited record represent
 
 | Date | Software | Archived version | DOI |
 |---|---|---:|---|
-| 2026-10-13 | Synapse Channel | 0.99.38 | [10.5281/zenodo.23328518](https://doi.org/10.5281/zenodo.23328518) |
+| 2026-11-12 | SCPN Fusion Core | 4.1.0 | [10.5281/zenodo.24166616](https://doi.org/10.5281/zenodo.24166616) |
+| 2026-11-11 | Synapse Channel | 0.99.51 | [10.5281/zenodo.24127012](https://doi.org/10.5281/zenodo.24127012) |
+| 2026-11-08 | SC-NeuroCore | 4.1.0 | [10.5281/zenodo.24060751](https://doi.org/10.5281/zenodo.24060751) |
+| 2026-10-29 | SCPN Quantum Control | 1.3.0 | [10.5281/zenodo.23762895](https://doi.org/10.5281/zenodo.23762895) |
+| 2026-10-19 | Fusion Equilibrium Challenge | 1.0.0 | [10.5281/zenodo.23480093](https://doi.org/10.5281/zenodo.23480093) |
 | 2026-10-01 | Loop Timing Witness | 0.1.0 | [10.5281/zenodo.23092361](https://doi.org/10.5281/zenodo.23092361) |
 | 2026-09-29 | SCPN Quantum Control | 1.2.0 | [10.5281/zenodo.23041094](https://doi.org/10.5281/zenodo.23041094) |
 | 2026-09-05 | SCPN Phase Orchestrator | v1.4.3 | [10.5281/zenodo.22355102](https://doi.org/10.5281/zenodo.22355102) |
 | 2026-07-29 | Director-AI | 3.21.0 | [10.5281/zenodo.21691551](https://doi.org/10.5281/zenodo.21691551) |
 | 2026-07-17 | SCPN Control | 0.23.0 | [10.5281/zenodo.23045316](https://doi.org/10.5281/zenodo.23045316) |
-| 2026-07-05 | SC-NeuroCore | 3.13.3 | [10.5281/zenodo.21198962](https://doi.org/10.5281/zenodo.21198962) |
 | 2026-07-03 | SCPN MIF Core | 0.1.1 | [10.5281/zenodo.21146933](https://doi.org/10.5281/zenodo.21146933) |
 | 2026-06-20 | HushLine | v0.1.7 | [10.5281/zenodo.20776102](https://doi.org/10.5281/zenodo.20776102) |
-| 2026-03-01 | SCPN Fusion Core | 3.9.3 | [10.5281/zenodo.22056375](https://doi.org/10.5281/zenodo.22056375) |
 | 2026-03-01 | Director Class AI | 1.4.1 | [10.5281/zenodo.18822167](https://doi.org/10.5281/zenodo.18822167) |
 | 2026-02-22 | SCPN Fusion Core | 3.9.0 | [10.5281/zenodo.18731981](https://doi.org/10.5281/zenodo.18731981) |
 
