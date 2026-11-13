@@ -16,6 +16,11 @@ Personal GitHub profile overview
   </picture>
 </p>
 
+> **About this GitHub account.** GitHub is a public mirror and remote backup of selected ANULUM projects, not the canonical record.
+> The canonical repositories, development history and internal projects are kept on ANULUM's own infrastructure and are not public.
+> Concepts date from 1996 and code from 2020; repository creation dates here reflect when a project was first published, not when it began.
+> Several projects are not mirrored here. Commercial licensing: protoscience@anulum.li
+
 <p align="center">
   <a href="README.md"><img alt="English" src="assets/badges/lang-en.svg"></a>
   <a href="README.de.md"><img alt="Deutsch" src="assets/badges/lang-de.svg"></a>
