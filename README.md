@@ -62,7 +62,7 @@ and every step is journaled and replayable. It has run our own R&D every day sin
 
 <sub>Release counts exclude yanked releases and cover all 20 distributions listed under PyPI publication.</sub>
 
-**One audit trail:** 278,524 coordination events recorded in our own journal since 21 June 2026 (count of 13 November 2026).
+**One audit trail:** 279,912 coordination events recorded in our own journal since 21 June 2026 (count of 13 November 2026).
 
 **First market:** regulated financial institutions in Switzerland and Liechtenstein.
 
@@ -85,6 +85,14 @@ taken to 1.0 as open infrastructure. It combines [SYNAPSE CHANNEL](https://githu
 review), [Director-AI](https://github.com/anulum/director-ai) (grounding of claims) and
 [Remanentia](https://github.com/anulum/remanentia) (auditable memory). Sponsorship pays for model and GPU
 time for the agent fleet, evaluation benchmarks and CI.
+
+Since July 2026 all code in the programme has been written by AI agents. The
+founder sets the tasks, priorities and direction; a non-author agent checks the
+work before it is accepted. The engine improves through its own daily use:
+SYNAPSE CHANNEL, its coordination layer, shipped 154 releases between 21 June
+and 11 November 2026, built and checked by the agents that run on it. The pace
+keeps rising: the journal recorded 28,978 coordination events in September
+2026, 89,560 in October and 84,024 in the first thirteen days of November.
 
 ## For organisations
 

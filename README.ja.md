@@ -405,6 +405,8 @@ Fusion Equilibrium Challenge はグループ一覧作成後の 2026 年 10 月 1
 
 **03 · Agentic Coordination, Assurance and Continuity.** このページのすべてのプロジェクトを開発・検証する自律型コーディング・検証システムを、オープンなインフラとして 1.0 へ。[SYNAPSE CHANNEL](https://github.com/anulum/synapse-channel)（受領記録付きのエージェント協調）、[Rigor Foundry](https://github.com/anulum/rigor-foundry)（エビデンスに基づくレビュー）、[Director-AI](https://github.com/anulum/director-ai)（主張の根拠づけ）、[Remanentia](https://github.com/anulum/remanentia)（監査可能なメモリ）で構成されます。スポンサーシップはエージェント群のモデル・GPU 時間、評価ベンチマーク、CI に充てられます。
 
+2026 年 7 月以降、本プログラムのコードはすべて AI エージェントが書いています。創業者がタスク、優先順位、方向性を定め、作業は採用前に作成者以外のエージェントが確認します。エンジンは自らの日常的な使用によって改善されています。その調整層である SYNAPSE CHANNEL は 2026 年 6 月 21 日から 11 月 11 日までに 154 回リリースされ、その上で動くエージェント自身が構築・確認しました。ペースは上がり続けています。ジャーナルには 2026 年 9 月に 28,978 件、10 月に 89,560 件、11 月の最初の 13 日間で 84,024 件の調整イベントが記録されました。
+
 ### 四つの領域
 
 | 領域 | 目標 | スポンサーシップの用途 |

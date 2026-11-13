@@ -431,6 +431,14 @@ na dôkazy), [Director-AI](https://github.com/anulum/director-ai) (ukotvenie tvr
 (auditovateľná pamäť). Sponzorstvo platí čas modelov a GPU pre flotilu agentov,
 evaluačné benchmarky a CI.
 
+Od júla 2026 píšu všetok kód programu AI agenti. Zakladateľ určuje úlohy,
+priority a smer; prácu pred prijatím kontroluje agent, ktorý nie je jej autorom.
+Motor sa zlepšuje vlastným každodenným používaním: SYNAPSE CHANNEL, jeho
+koordinačná vrstva, vyšiel medzi 21. júnom a 11. novembrom 2026 v 154 vydaniach,
+ktoré postavili a skontrolovali agenti, ktorí na ňom bežia. Tempo ďalej rastie:
+žurnál zaznamenal v septembri 2026 28 978 koordinačných udalostí, v októbri
+89 560 a za prvých trinásť dní novembra 84 024.
+
 ### Štyri domény
 
 | Doména | Cieľ | Sponzorstvo platí |

@@ -435,6 +435,15 @@ entwickelt und prüft, als offene Infrastruktur bis zur Version 1.0. Es verbinde
 Sponsoring bezahlt Modell- und GPU-Zeit für die Agentenflotte,
 Evaluations-Benchmarks und CI.
 
+Seit Juli 2026 wird der gesamte Code des Programms von KI-Agenten geschrieben.
+Der Gründer setzt Aufgaben, Prioritäten und Richtung; ein Agent, der nicht Autor
+ist, prüft die Arbeit, bevor sie übernommen wird. Der Motor verbessert sich durch
+den eigenen täglichen Einsatz: SYNAPSE CHANNEL, seine Koordinationsschicht,
+erschien zwischen dem 21. Juni und dem 11. November 2026 in 154 Releases, gebaut
+und geprüft von den Agenten, die darauf laufen. Das Tempo steigt weiter: Das
+Journal verzeichnete im September 2026 28 978 Koordinationsereignisse, im
+Oktober 89 560 und in den ersten dreizehn Tagen des Novembers 84 024.
+
 ### Vier Domänen
 
 | Domäne | Ziel | Sponsoring bezahlt |
