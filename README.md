@@ -78,7 +78,7 @@ Independent researcher and systems engineer based in Switzerland, developing sci
 
 ## The engine
 
-**03 · Agentic Coordination, Assurance and Continuity.** The autonomous coding
+**03 · Agentic Coordination, Assurance and Continuity Systems.** The autonomous coding
 and verification system that builds and checks every project on this page,
 taken to 1.0 as open infrastructure. It combines [SYNAPSE CHANNEL](https://github.com/anulum/synapse-channel)
 (agent coordination with receipts), [Rigor Foundry](https://github.com/anulum/rigor-foundry) (evidence-bound
@@ -390,7 +390,7 @@ Four products of equal standing. Control and Phase Orchestrator are public; Stud
 </details>
 
 <details>
-<summary><strong>03 · Agentic Coordination, Assurance and Continuity</strong> · 10 repositories · 10 catalogue entries</summary>
+<summary><strong>03 · Agentic Coordination, Assurance and Continuity Systems</strong> · 10 repositories · 10 catalogue entries</summary>
 
 Ten repositories covering coordination, assurance, memory and governed action. HushLine is a group tool; SYNAPSE-POLICY-CHECK-ACTION is included. Each product keeps its own licence and capability boundary.
 

@@ -262,7 +262,7 @@ flowchart LR
 </details>
 
 <details>
-<summary><strong>03 · Agentic Coordination, Assurance and Continuity</strong> · 10 个仓库 · 10 个目录条目</summary>
+<summary><strong>03 · Agentic Coordination, Assurance and Continuity Systems</strong> · 10 个仓库 · 10 个目录条目</summary>
 
 十个仓库，涵盖协调、保障、记忆及受治理的行动。HushLine 是组内工具，清单也包括 SYNAPSE-POLICY-CHECK-ACTION。各产品保留各自的许可证及能力边界。
 
@@ -403,7 +403,7 @@ Fusion Equilibrium Challenge 是 2026 年 10 月 14 日创建的公开复现软�
 
 ### 引擎
 
-**03 · Agentic Coordination, Assurance and Continuity.** 开发并检验本页所有项目的自主编码与验证系统，作为开放基础设施推进到 1.0。它由 [SYNAPSE CHANNEL](https://github.com/anulum/synapse-channel)（带回执的智能体协调）、[Rigor Foundry](https://github.com/anulum/rigor-foundry)（基于证据的评审）、[Director-AI](https://github.com/anulum/director-ai)（声明的事实依据）和 [Remanentia](https://github.com/anulum/remanentia)（可审计的记忆）组成。赞助用于智能体集群的模型与 GPU 机时、评估基准和 CI。
+**03 · Agentic Coordination, Assurance and Continuity Systems.** 开发并检验本页所有项目的自主编码与验证系统，作为开放基础设施推进到 1.0。它由 [SYNAPSE CHANNEL](https://github.com/anulum/synapse-channel)（带回执的智能体协调）、[Rigor Foundry](https://github.com/anulum/rigor-foundry)（基于证据的评审）、[Director-AI](https://github.com/anulum/director-ai)（声明的事实依据）和 [Remanentia](https://github.com/anulum/remanentia)（可审计的记忆）组成。赞助用于智能体集群的模型与 GPU 机时、评估基准和 CI。
 
 自 2026 年 7 月起，本计划的全部代码均由 AI 智能体编写。创始人设定任务、优先级和方向；工作在被采纳前由非作者智能体检查。引擎在自身的日常使用中不断改进：其协调层 SYNAPSE CHANNEL 在 2026 年 6 月 21 日至 11 月 11 日之间发布了 154 个版本，由运行在其上的智能体构建和检查。节奏仍在加快：日志在 2026 年 9 月记录了 28,978 个协调事件，10 月 89,560 个，11 月前十三天 84,024 个。
 

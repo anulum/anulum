@@ -276,7 +276,7 @@ Vier gleichrangige Produkte. Control und Phase Orchestrator sind öffentlich; St
 </details>
 
 <details>
-<summary><strong>03 · Agentic Coordination, Assurance and Continuity</strong> · 10 Repositories · 10 Katalogeinträge</summary>
+<summary><strong>03 · Agentic Coordination, Assurance and Continuity Systems</strong> · 10 Repositories · 10 Katalogeinträge</summary>
 
 Zehn Repositories für Koordination, Absicherung, Gedächtnis und geregelte Aktionen. HushLine gehört zu den Gruppenwerkzeugen; SYNAPSE-POLICY-CHECK-ACTION ist enthalten. Jedes Produkt behält seine Lizenz und Fähigkeitsgrenzen.
 
@@ -426,7 +426,7 @@ Sachspende gegeben werden.
 
 ### Der Motor
 
-**03 · Agentic Coordination, Assurance and Continuity.** Das autonome
+**03 · Agentic Coordination, Assurance and Continuity Systems.** Das autonome
 Programmier- und Verifikationssystem, das jedes Projekt auf dieser Seite
 entwickelt und prüft, als offene Infrastruktur bis zur Version 1.0. Es verbindet
 [SYNAPSE CHANNEL](https://github.com/anulum/synapse-channel) (Agentenkoordination mit Quittungen),

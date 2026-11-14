@@ -275,7 +275,7 @@ Technické opisy nižšie citujú anglické zdrojové záznamy. Pomenovaný cie�
 </details>
 
 <details>
-<summary><strong>03 · Agentic Coordination, Assurance and Continuity</strong> · 10 repozitárov · 10 položiek katalógu</summary>
+<summary><strong>03 · Agentic Coordination, Assurance and Continuity Systems</strong> · 10 repozitárov · 10 položiek katalógu</summary>
 
 Desať repozitárov pre koordináciu, kontrolu, pamäť a riadené akcie. HushLine patrí medzi nástroje skupiny; zahrnutý je aj SYNAPSE-POLICY-CHECK-ACTION. Každý produkt má vlastnú licenciu a hranice schopností.
 
@@ -423,7 +423,7 @@ potrebuje, je rozpísaný položku po položke v [LAB_EQUIPMENT.md](LAB_EQUIPMEN
 
 ### Motor
 
-**03 · Agentic Coordination, Assurance and Continuity.** Autonómny kódovací
+**03 · Agentic Coordination, Assurance and Continuity Systems.** Autonómny kódovací
 a overovací systém, ktorý vyvíja a overuje každý projekt na tejto stránke,
 dotiahnutý do verzie 1.0 ako otvorená infraštruktúra. Tvoria ho [SYNAPSE CHANNEL](https://github.com/anulum/synapse-channel)
 (koordinácia agentov s potvrdeniami), [Rigor Foundry](https://github.com/anulum/rigor-foundry) (review viazané
