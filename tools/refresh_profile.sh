@@ -13,8 +13,10 @@
 # 3. run the online validation; when every target passes, stamp today's date as
 #    verified_at (manifest + README markers),
 # 4. run the offline validator and the profile test modules,
-# 5. commit in the local repository when something changed. Never pushes:
-#    publication of the commit stays a separate, approved step.
+# 5. commit in the local repository when something changed, under the SYNAPSE
+#    identity CEO/profile-refresh with a claim on the regenerated paths; a
+#    refused claim or commit restores those paths. Never pushes: publication
+#    of the commit stays a separate, approved step.
 #
 # Run by the anulum-profile-refresh systemd user timer (tools/systemd/) or by hand:
 #   tools/refresh_profile.sh
@@ -59,8 +61,31 @@ if git diff --quiet; then
   exit 0
 fi
 
-git add tools/feeds.json PUBLICATIONS.md profile-data.json README.md README.de.md README.sk.md README.zh-CN.md README.ja.md
-git commit -q -F - <<'MSG'
+REFRESH_PATHS=(tools/feeds.json PUBLICATIONS.md profile-data.json README.md README.de.md README.sk.md README.zh-CN.md README.ja.md)
+
+# The pre-commit hook admits only staged paths covered by a SYNAPSE claim of
+# $SYN_IDENTITY. The systemd user manager can inherit a stale terminal identity,
+# so the refresh always commits under its own identity and claims its paths
+# first (released by the commit). If the claim or the commit is refused, the
+# regenerated files are restored so that tomorrow's run starts from a clean
+# tree; they are rebuilt from the same sources on the next run.
+export SYN_PROJECT=CEO
+export SYN_IDENTITY=CEO/profile-refresh
+SYNAPSE_BIN="${SYNAPSE_BIN:-$HOME/.local/bin/synapse}"
+restore_refresh() {
+  echo "$1; restoring the regenerated files so the next run starts clean"
+  git restore --staged --worktree -- "${REFRESH_PATHS[@]}"
+  exit 3
+}
+claim_args=()
+for path in "${REFRESH_PATHS[@]}"; do claim_args+=(--paths "$path"); done
+"$SYNAPSE_BIN" git-claim --task-id "profile-refresh-$TODAY" "${claim_args[@]}" \
+  --name "$SYN_IDENTITY" --auto-release-on commit \
+  --intent "daily profile refresh (anulum-profile-refresh.timer)" \
+  || restore_refresh "claim refused"
+
+git add "${REFRESH_PATHS[@]}"
+git commit -q -F - <<'MSG' || restore_refresh "commit refused"
 docs(profile): refresh release feed, Zenodo inventory and verification date
 
 Automated local refresh of the live README blocks and PUBLICATIONS.md from
@@ -71,3 +96,6 @@ Authored by Anulum Fortis & Arcane Sapience (protoscience@anulum.li)
 Automation: anulum-profile-refresh.timer
 MSG
 echo "committed $(git rev-parse --short HEAD) (local only; push is a separate step)"
+# Commit-triggered release did not always drop the claim (observed 14 Nov 2026),
+# so release it explicitly; a claim that is already gone is not an error.
+"$SYNAPSE_BIN" release "profile-refresh-$TODAY" --name "$SYN_IDENTITY" || true
