@@ -7,7 +7,7 @@
 [Publications hub on anulum.li](https://anulum.li/papers/) ·
 [Releases and publications feed](https://anulum.li/news/)
 
-Zenodo inventory read on 2026-11-13: 32 records whose creator carries the ORCID
+Zenodo inventory read on 2026-11-14: 32 records whose creator carries the ORCID
 above, 18 of publication type and 14 software archives. "Published"
 on this page means publicly deposited with a resolvable record. It does not imply
 journal acceptance or peer review. Titles are the records' own.
