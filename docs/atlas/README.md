@@ -182,7 +182,7 @@ observations, independent of resource and budget data.
 | Surface                                  | Required local content                                             |     Uncompressed bytes |
 | ---------------------------------------- | ------------------------------------------------------------------ | ---------------------: |
 | Profile images across all five languages | Four generated header/map SVGs, 91 badge SVGs and the footer image |                621,868 |
-| Dated catalogue provenance               | `assets/catalogue-source.json`, plus its ownership sidecar         | 114,267 before sidecar |
+| Dated catalogue provenance               | `assets/catalogue-source.json`, plus its ownership sidecar         | 123,442 before sidecar |
 | Interactive site snapshot                | 77 manifest-listed assets                                          |             33,802,832 |
 | Main interactive entry page              | `index.html`, including its eight embedded datasets                |             10,438,611 |
 

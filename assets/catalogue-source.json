@@ -1,6 +1,6 @@
 {
   "schema": "anulum-profile-catalogue-source/1",
-  "as_of": "2026-10-13",
+  "as_of": "2026-11-14",
   "source_sha256": "20bb84812f5d0fa88386e4ae3f6143410849fd9b764dc87d93097c5826e83fe6",
   "scope": "Selected dated project identity, purpose, status, licence and repository observations used by the profile. Resource inventories, budget scenarios, full source documents and site figures are excluded. Source-content, scientific and release qualification remain separate.",
   "nodes": [
@@ -13,16 +13,16 @@
       ],
       "function": "Source and rights library with historical reactor taxonomy and interactive citation views.",
       "kind": "tool",
-      "phase": "Implementation and integration",
+      "phase": "Released software · ongoing development",
       "work_status": "In progress",
-      "release": null,
+      "release": "0.1.0",
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": "https://github.com/anulum/atlas-reactorum",
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -39,12 +39,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": null,
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -61,12 +61,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": "https://github.com/anulum/scpn-beam-target-core",
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -83,12 +83,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": null,
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -105,12 +105,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": null,
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -127,12 +127,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": null,
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -149,12 +149,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": null,
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -171,12 +171,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": null,
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -193,12 +193,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": null,
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -215,12 +215,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": null,
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -237,12 +237,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": "https://github.com/anulum/scpn-dense-plasma-focus-core",
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -259,12 +259,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": null,
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -281,12 +281,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": "https://github.com/anulum/scpn-frc-core",
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -301,19 +301,23 @@
       "kind": "package",
       "phase": "Released software · ongoing development",
       "work_status": "In progress",
-      "release": "4.0.0",
+      "release": "4.1.0",
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": "https://github.com/anulum/scpn-fusion-core",
       "packages": [
         {
           "index": "PyPI scpn-fusion",
           "published": true
+        },
+        {
+          "index": "PyPI scpn-fusion-rs",
+          "published": true
         }
       ],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -330,12 +334,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": "https://github.com/anulum/scpn-fusion-fission-hybrid-core",
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -352,12 +356,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": null,
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -374,12 +378,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": null,
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -396,12 +400,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": null,
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -418,12 +422,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": null,
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -440,12 +444,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": null,
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -462,12 +466,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": null,
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -484,12 +488,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": "https://github.com/anulum/scpn-icf-beam-core",
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -506,12 +510,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": "https://github.com/anulum/scpn-icf-impact-core",
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -528,12 +532,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": "https://github.com/anulum/scpn-icf-laser-core",
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -550,12 +554,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": "https://github.com/anulum/scpn-iec-core",
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -572,12 +576,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": "https://github.com/anulum/scpn-lattice-fusion-core",
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -594,12 +598,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": "https://github.com/anulum/scpn-levitated-dipole-core",
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -616,12 +620,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": null,
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -638,12 +642,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": "https://github.com/anulum/scpn-magnetic-cusp-core",
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -660,12 +664,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": null,
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -682,12 +686,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": null,
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -704,7 +708,7 @@
       "work_status": "In progress",
       "release": "0.1.1",
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": "https://github.com/anulum/scpn-mif-core",
       "packages": [
         {
@@ -714,7 +718,7 @@
       ],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -731,12 +735,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": "https://github.com/anulum/scpn-mif-liner-core",
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -753,12 +757,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": "https://github.com/anulum/scpn-mif-maglif-core",
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -775,12 +779,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": "https://github.com/anulum/scpn-mif-plasma-jet-core",
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -797,12 +801,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": "https://github.com/anulum/scpn-mirror-core",
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -819,12 +823,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": null,
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -841,12 +845,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": "https://github.com/anulum/scpn-muon-fusion-core",
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -863,12 +867,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": null,
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -885,12 +889,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": null,
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -907,12 +911,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": null,
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -929,12 +933,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": null,
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -951,12 +955,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": null,
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -973,12 +977,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": null,
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -995,12 +999,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": null,
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -1017,12 +1021,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": "https://github.com/anulum/scpn-reactor-kernels",
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -1039,12 +1043,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": null,
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -1061,12 +1065,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": "https://github.com/anulum/scpn-rfp-core",
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -1083,12 +1087,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": null,
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -1105,12 +1109,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": null,
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -1127,12 +1131,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": "https://github.com/anulum/scpn-spheromak-core",
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -1149,12 +1153,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": "https://github.com/anulum/scpn-stellarator-core",
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -1171,12 +1175,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": "https://github.com/anulum/scpn-theta-pinch-core",
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -1193,12 +1197,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": "https://github.com/anulum/scpn-tokamak-core",
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -1215,12 +1219,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-12",
+      "as_of": "2026-11-13",
       "url": "https://github.com/anulum/scpn-z-pinch-core",
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T14:07:53+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -1322,9 +1326,9 @@
       "kind": "package",
       "phase": "Released software · ongoing development",
       "work_status": "In progress",
-      "release": "0.99.38",
+      "release": "0.99.51",
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-11",
+      "as_of": "2026-11-13",
       "url": "https://github.com/anulum/synapse-channel",
       "packages": [
         {
@@ -1350,7 +1354,7 @@
       "work_status": "In progress",
       "release": null,
       "licence": "LicenseRef-SYNAPSE-Enterprise",
-      "as_of": "2026-10-11",
+      "as_of": "2026-11-13",
       "url": null,
       "packages": []
     },
@@ -1367,7 +1371,7 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-11",
+      "as_of": "2026-11-13",
       "url": "https://github.com/anulum/synapse-policy-check-action",
       "packages": []
     },
@@ -1383,8 +1387,8 @@
       "phase": "Released software · ongoing development",
       "work_status": "In progress",
       "release": "3.21.0",
-      "licence": "Apache-2.0 AND BUSL-1.1",
-      "as_of": "2026-10-11",
+      "licence": "Apache-2.0 AND LicenseRef-BUSL-1.1-ANULUM-TDM",
+      "as_of": "2026-11-13",
       "url": "https://github.com/anulum/director-ai",
       "packages": [
         {
@@ -1413,8 +1417,8 @@
       "phase": "Implementation and integration",
       "work_status": "In progress",
       "release": null,
-      "licence": "BUSL-1.1",
-      "as_of": "2026-10-11",
+      "licence": "LicenseRef-BUSL-1.1-ANULUM-TDM",
+      "as_of": "2026-11-13",
       "url": null,
       "packages": []
     },
@@ -1430,8 +1434,8 @@
       "phase": "Implementation and integration",
       "work_status": "In progress",
       "release": null,
-      "licence": "BUSL-1.1",
-      "as_of": "2026-10-11",
+      "licence": "LicenseRef-BUSL-1.1-ANULUM-TDM",
+      "as_of": "2026-11-13",
       "url": null,
       "packages": []
     },
@@ -1448,7 +1452,7 @@
       "work_status": "In progress",
       "release": "1.0.0",
       "licence": "Apache-2.0",
-      "as_of": "2026-10-11",
+      "as_of": "2026-11-13",
       "url": "https://github.com/anulum/rigor-foundry",
       "packages": [
         {
@@ -1470,7 +1474,7 @@
       "work_status": "In progress",
       "release": "0.5.0",
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-11",
+      "as_of": "2026-11-13",
       "url": "https://github.com/anulum/remanentia",
       "packages": [
         {
@@ -1492,7 +1496,7 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-11",
+      "as_of": "2026-11-13",
       "url": null,
       "packages": []
     },
@@ -1509,7 +1513,7 @@
       "work_status": "In progress",
       "release": "0.1.5",
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-11",
+      "as_of": "2026-11-13",
       "url": "https://github.com/anulum/HushLine",
       "packages": [
         {
@@ -1537,9 +1541,9 @@
       "kind": "workbench",
       "phase": "Released software · ongoing development",
       "work_status": "In progress",
-      "release": "3.16.0",
+      "release": "4.1.0",
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-13",
+      "as_of": "2026-11-13",
       "url": "https://github.com/anulum/sc-neurocore",
       "packages": [
         {
@@ -1553,7 +1557,7 @@
       ],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T11:49:36.126209+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -1568,9 +1572,9 @@
       "kind": "tool",
       "phase": "Architecture and qualification",
       "work_status": "In progress",
-      "release": null,
+      "release": "0.1.0",
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-13",
+      "as_of": "2026-11-13",
       "url": "https://github.com/anulum/loop-timing-witness",
       "packages": [
         {
@@ -1580,7 +1584,7 @@
       ],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T11:49:36.126209+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -1598,12 +1602,12 @@
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-13",
+      "as_of": "2026-11-13",
       "url": null,
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T11:49:36.126209+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -1617,16 +1621,16 @@
       ],
       "function": "Assesses number-source suitability for a declared stochastic-computing use; it does not certify randomness for every purpose.",
       "kind": "shared",
-      "phase": "Design and preparation",
+      "phase": "Design and implementation",
       "work_status": "In progress",
       "release": null,
-      "licence": "undecided",
-      "as_of": "2026-10-13",
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-11-13",
       "url": null,
       "packages": [],
       "repository_record": {
-        "stage": "Repository preparation in progress",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "stage": "Local repository initialized",
+        "as_of": "2026-11-13T11:49:36.126209+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -1640,600 +1644,16 @@
       ],
       "function": "Records experiment lineage across tools without owning their raw evidence or running their computations.",
       "kind": "shared",
-      "phase": "Design and preparation",
-      "work_status": "In progress",
-      "release": null,
-      "licence": "undecided",
-      "as_of": "2026-10-13",
-      "url": null,
-      "packages": [],
-      "repository_record": {
-        "stage": "Repository preparation in progress",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
-        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
-      }
-    },
-    {
-      "id": "SCPN-QUANTUM-CONTROL",
-      "name": "SCPN-QUANTUM-CONTROL",
-      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-      "owning_groups": [
-        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
-      ],
-      "function": "Integrated modelling, simulation, compilation, gradients, control, provider workflows, analysis and Quantum Studio.",
-      "kind": "workbench",
-      "phase": "Released software · ongoing development",
-      "work_status": "In progress",
-      "release": "1.2.0",
-      "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-13",
-      "url": null,
-      "packages": [],
-      "repository_record": {
-        "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
-        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
-      }
-    },
-    {
-      "id": "oscillatools",
-      "name": "oscillatools",
-      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-      "owning_groups": [
-        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
-      ],
-      "function": "Classical coupled-phase-oscillator dynamics, observables, sensitivities and control-oriented numerical tools.",
-      "kind": "package",
-      "phase": "Released software · ongoing development",
-      "work_status": "In progress",
-      "release": "0.1.0",
-      "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-13",
-      "url": null,
-      "packages": []
-    },
-    {
-      "id": "scpn-quantum-engine",
-      "name": "scpn-quantum-engine",
-      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-      "owning_groups": [
-        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
-      ],
-      "function": "Optional Rust/PyO3 numerical acceleration and native computation used by supported workbench paths.",
-      "kind": "package",
-      "phase": "Released software · ongoing development",
-      "work_status": "In progress",
-      "release": "0.2.0",
-      "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-13",
-      "url": null,
-      "packages": []
-    },
-    {
-      "id": "QPU-RESULT-PACK",
-      "name": "QPU-RESULT-PACK",
-      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-      "owning_groups": [
-        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
-      ],
-      "function": "Preserve raw results and their provenance, derivations and reviewable presentation.",
-      "kind": "tool",
-      "phase": "Implementation and integration",
-      "work_status": "In progress",
-      "release": null,
-      "licence": "not stated",
-      "as_of": "2026-10-13",
-      "url": null,
-      "packages": [],
-      "repository_record": {
-        "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
-        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
-      }
-    },
-    {
-      "id": "TRANSPILE-WITNESS",
-      "name": "TRANSPILE-WITNESS",
-      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-      "owning_groups": [
-        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
-      ],
-      "function": "Retain scoped observations about compilation semantics, layout, global phase and replay.",
-      "kind": "tool",
-      "phase": "Implementation and integration",
-      "work_status": "In progress",
-      "release": null,
-      "licence": "AGPL-3.0-or-later by file headers; no licence field in packaging",
-      "as_of": "2026-10-13",
-      "url": null,
-      "packages": [],
-      "repository_record": {
-        "stage": "Repository preparation in progress",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
-        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
-      }
-    },
-    {
-      "id": "MITIGATION-WITNESS",
-      "name": "MITIGATION-WITNESS",
-      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-      "owning_groups": [
-        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
-      ],
-      "function": "Evaluate mitigation on declared measurement panels with retained inputs and uncertainty.",
-      "kind": "tool",
-      "phase": "Implementation and integration",
+      "phase": "Design and implementation",
       "work_status": "In progress",
       "release": null,
       "licence": "AGPL-3.0-or-later",
-      "as_of": "2026-10-13",
+      "as_of": "2026-11-13",
       "url": null,
       "packages": [],
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
-        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
-      }
-    },
-    {
-      "id": "SCPN-QC-CONTRACTS",
-      "name": "SCPN-QC-CONTRACTS",
-      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-      "owning_groups": [
-        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
-      ],
-      "function": "Versioned parameter, result, semantic and evidence interface contracts shared by components.",
-      "kind": "component",
-      "phase": "Workbench transition",
-      "work_status": "In progress",
-      "release": null,
-      "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
-      "url": null,
-      "repository_record": {
-        "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
-        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
-      }
-    },
-    {
-      "id": "SCPN-QC-CORE",
-      "name": "SCPN-QC-CORE",
-      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-      "owning_groups": [
-        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
-      ],
-      "function": "Configuration, logging, resource budgets and generic Kuramoto-XY problem foundations, separated from paper-specific research assumptions.",
-      "kind": "component",
-      "phase": "Workbench transition",
-      "work_status": "In progress",
-      "release": null,
-      "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
-      "url": null,
-      "repository_record": {
-        "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
-        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
-      }
-    },
-    {
-      "id": "SCPN-QC-AD",
-      "name": "SCPN-QC-AD",
-      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-      "owning_groups": [
-        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
-      ],
-      "function": "Whole-program automatic differentiation, derivative transforms, batching, optimisation and explicit supported-path contracts.",
-      "kind": "component",
-      "phase": "Workbench transition",
-      "work_status": "In progress",
-      "release": null,
-      "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
-      "url": null,
-      "repository_record": {
-        "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
-        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
-      }
-    },
-    {
-      "id": "SCPN-QC-SIM",
-      "name": "SCPN-QC-SIM",
-      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-      "owning_groups": [
-        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
-      ],
-      "function": "Classical and quantum oscillator dynamics, XY/Kuramoto solvers, open-system simulation, tensor-network paths and co-simulation.",
-      "kind": "component",
-      "phase": "Workbench transition",
-      "work_status": "In progress",
-      "release": null,
-      "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
-      "url": null,
-      "repository_record": {
-        "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
-        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
-      }
-    },
-    {
-      "id": "SCPN-QC-COMPILER",
-      "name": "SCPN-QC-COMPILER",
-      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-      "owning_groups": [
-        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
-      ],
-      "function": "Model and circuit frontends, intermediate representations, interchange and code generation.",
-      "kind": "component",
-      "phase": "Workbench transition",
-      "work_status": "In progress",
-      "release": null,
-      "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
-      "url": null,
-      "repository_record": {
-        "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
-        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
-      }
-    },
-    {
-      "id": "SCPN-QC-QNODE",
-      "name": "SCPN-QC-QNODE",
-      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-      "owning_groups": [
-        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
-      ],
-      "function": "Quantum tapes, gradient execution and framework bridges for supported Qiskit, PennyLane, JAX, PyTorch and TensorFlow paths.",
-      "kind": "component",
-      "phase": "Workbench transition",
-      "work_status": "In progress",
-      "release": null,
-      "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
-      "url": null,
-      "repository_record": {
-        "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
-        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
-      }
-    },
-    {
-      "id": "SCPN-QC-HAL",
-      "name": "SCPN-QC-HAL",
-      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-      "owning_groups": [
-        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
-      ],
-      "function": "Provider-neutral workloads, capabilities, job/result contracts and optional provider adapters.",
-      "kind": "component",
-      "phase": "Workbench transition",
-      "work_status": "In progress",
-      "release": null,
-      "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
-      "url": null,
-      "repository_record": {
-        "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
-        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
-      }
-    },
-    {
-      "id": "SCPN-QC-MITIGATION",
-      "name": "SCPN-QC-MITIGATION",
-      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-      "owning_groups": [
-        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
-      ],
-      "function": "Error-mitigation implementations and their method taxonomy.",
-      "kind": "component",
-      "phase": "Workbench transition",
-      "work_status": "In progress",
-      "release": null,
-      "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
-      "url": null,
-      "repository_record": {
-        "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
-        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
-      }
-    },
-    {
-      "id": "SCPN-QC-QEC",
-      "name": "SCPN-QC-QEC",
-      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-      "owning_groups": [
-        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
-      ],
-      "function": "Quantum error-correction analysis and fault-tolerant resource-reporting surfaces.",
-      "kind": "component",
-      "phase": "Workbench transition",
-      "work_status": "In progress",
-      "release": null,
-      "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
-      "url": null,
-      "repository_record": {
-        "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
-        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
-      }
-    },
-    {
-      "id": "SCPN-QC-CONTROL",
-      "name": "SCPN-QC-CONTROL",
-      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-      "owning_groups": [
-        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
-      ],
-      "function": "Feedback and co-design, chimera and topology-aware control, and DLA-constrained control paths.",
-      "kind": "component",
-      "phase": "Workbench transition",
-      "work_status": "In progress",
-      "release": null,
-      "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
-      "url": null,
-      "repository_record": {
-        "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
-        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
-      }
-    },
-    {
-      "id": "SCPN-QC-ANALYSIS",
-      "name": "SCPN-QC-ANALYSIS",
-      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-      "owning_groups": [
-        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
-      ],
-      "function": "Observables, synchronisation witnesses, result analysis and the open-data DLA-parity pathway.",
-      "kind": "component",
-      "phase": "Workbench transition",
-      "work_status": "In progress",
-      "release": null,
-      "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
-      "url": null,
-      "repository_record": {
-        "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
-        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
-      }
-    },
-    {
-      "id": "SCPN-QC-LEARN",
-      "name": "SCPN-QC-LEARN",
-      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-      "owning_groups": [
-        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
-      ],
-      "function": "Forecasting, quantum neural models, surrogate models, kernels and variational learning paths.",
-      "kind": "component",
-      "phase": "Workbench transition",
-      "work_status": "In progress",
-      "release": null,
-      "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
-      "url": null,
-      "repository_record": {
-        "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
-        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
-      }
-    },
-    {
-      "id": "SCPN-QC-APPS",
-      "name": "SCPN-QC-APPS",
-      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-      "owning_groups": [
-        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
-      ],
-      "function": "Domain application adapters, quantum randomness, cryptography and sensing workflows, with explicit claim boundaries.",
-      "kind": "component",
-      "phase": "Workbench transition",
-      "work_status": "In progress",
-      "release": null,
-      "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
-      "url": null,
-      "repository_record": {
-        "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
-        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
-      }
-    },
-    {
-      "id": "SCPN-QC-BENCH",
-      "name": "SCPN-QC-BENCH",
-      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-      "owning_groups": [
-        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
-      ],
-      "function": "Workload-specific benchmark suites, comparison harnesses, campaign reproduction and retained run evidence.",
-      "kind": "component",
-      "phase": "Workbench transition",
-      "work_status": "In progress",
-      "release": null,
-      "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
-      "url": null,
-      "repository_record": {
-        "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
-        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
-      }
-    },
-    {
-      "id": "SCPN-QC-STUDIO",
-      "name": "SCPN-QC-STUDIO",
-      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-      "owning_groups": [
-        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
-      ],
-      "function": "Quantum Studio's visual workflows, inspectors and evidence presentation through the shared Studio platform contract.",
-      "kind": "component",
-      "phase": "Workbench transition",
-      "work_status": "In progress",
-      "release": null,
-      "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
-      "url": null,
-      "repository_record": {
-        "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
-        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
-      }
-    },
-    {
-      "id": "SCPN-QC-RESEARCH",
-      "name": "SCPN-QC-RESEARCH",
-      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-      "owning_groups": [
-        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
-      ],
-      "function": "Experimental SCPN theory, paper-specific assumptions and research adapters whose contracts are not stable.",
-      "kind": "component",
-      "phase": "Workbench transition",
-      "work_status": "In progress",
-      "release": null,
-      "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
-      "url": null,
-      "repository_record": {
-        "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
-        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
-      }
-    },
-    {
-      "id": "NOISE-MODEL-WITNESS",
-      "name": "NOISE-MODEL-WITNESS",
-      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-      "owning_groups": [
-        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
-      ],
-      "function": "Compare model predictions and replay observations for the same circuit and shot identities, with uncertainty, shot floors, calibration epochs and declared tolerances.",
-      "kind": "tool",
-      "phase": "Design and implementation",
-      "work_status": "In progress",
-      "release": null,
-      "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
-      "url": null,
-      "repository_record": {
-        "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
-        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
-      }
-    },
-    {
-      "id": "VENDOR-CLAIM-RECOMPUTER",
-      "name": "VENDOR-CLAIM-RECOMPUTER",
-      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-      "owning_groups": [
-        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
-      ],
-      "function": "Recompute released-data quantum-volume, error-per-layer-gate and logical-error claims against fixed definitions, original inputs and declared computation budgets.",
-      "kind": "tool",
-      "phase": "Design and implementation",
-      "work_status": "In progress",
-      "release": null,
-      "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
-      "url": null,
-      "repository_record": {
-        "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
-        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
-      }
-    },
-    {
-      "id": "DECODER-WITNESS",
-      "name": "DECODER-WITNESS",
-      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-      "owning_groups": [
-        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
-      ],
-      "function": "Compare real decoder engines on released shot data with lossless adapters, declared noise conditions and uncertainty-aware reports.",
-      "kind": "tool",
-      "phase": "Design and implementation",
-      "work_status": "In progress",
-      "release": null,
-      "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
-      "url": null,
-      "repository_record": {
-        "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
-        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
-      }
-    },
-    {
-      "id": "GRADIENT-WITNESS",
-      "name": "GRADIENT-WITNESS",
-      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-      "owning_groups": [
-        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
-      ],
-      "function": "Check software derivatives against declared analytic, parameter-shift and finite-difference references, including complex, finite-shot and cross-framework cases.",
-      "kind": "tool",
-      "phase": "Design and implementation",
-      "work_status": "In progress",
-      "release": null,
-      "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
-      "url": null,
-      "repository_record": {
-        "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
-        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
-      }
-    },
-    {
-      "id": "CONFORMANCE-WITNESS",
-      "name": "CONFORMANCE-WITNESS",
-      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-      "owning_groups": [
-        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
-      ],
-      "function": "Check versioned OpenQASM 3, adapter behaviour, provenance fields and repository-evidence criteria against their normative clauses and actual entry points.",
-      "kind": "tool",
-      "phase": "Design and implementation",
-      "work_status": "In progress",
-      "release": null,
-      "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
-      "url": null,
-      "repository_record": {
-        "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
-        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
-      }
-    },
-    {
-      "id": "QUANTUM_LAB",
-      "name": "QUANTUM_LAB",
-      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
-      "owning_groups": [
-        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
-      ],
-      "function": "Reserved research workspace name; implementation role is not assigned in the group map.",
-      "kind": "workspace",
-      "phase": "Workspace definition",
-      "work_status": "In progress",
-      "release": null,
-      "licence": "Not stated",
-      "as_of": "2026-10-13",
-      "url": null,
-      "repository_record": {
-        "stage": "Repository preparation in progress",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T11:49:36.126209+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -2250,11 +1670,11 @@
       "work_status": "In progress",
       "release": null,
       "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
+      "as_of": "2026-11-13",
       "url": null,
       "repository_record": {
         "stage": "Repository preparation in progress",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T11:49:36.126209+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -2271,11 +1691,11 @@
       "work_status": "In progress",
       "release": null,
       "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
+      "as_of": "2026-11-13",
       "url": null,
       "repository_record": {
         "stage": "Repository preparation in progress",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T11:49:36.126209+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -2292,11 +1712,11 @@
       "work_status": "In progress",
       "release": null,
       "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
+      "as_of": "2026-11-13",
       "url": null,
       "repository_record": {
         "stage": "Repository preparation in progress",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T11:49:36.126209+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -2313,11 +1733,11 @@
       "work_status": "In progress",
       "release": null,
       "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
+      "as_of": "2026-11-13",
       "url": null,
       "repository_record": {
         "stage": "Repository preparation in progress",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T11:49:36.126209+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -2334,11 +1754,11 @@
       "work_status": "In progress",
       "release": null,
       "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
+      "as_of": "2026-11-13",
       "url": null,
       "repository_record": {
         "stage": "Repository preparation in progress",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T11:49:36.126209+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -2355,11 +1775,11 @@
       "work_status": "In progress",
       "release": null,
       "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
+      "as_of": "2026-11-13",
       "url": null,
       "repository_record": {
         "stage": "Repository preparation in progress",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T11:49:36.126209+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -2376,11 +1796,11 @@
       "work_status": "In progress",
       "release": null,
       "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
+      "as_of": "2026-11-13",
       "url": null,
       "repository_record": {
         "stage": "Repository preparation in progress",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T11:49:36.126209+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -2397,11 +1817,11 @@
       "work_status": "In progress",
       "release": null,
       "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
+      "as_of": "2026-11-13",
       "url": null,
       "repository_record": {
         "stage": "Repository preparation in progress",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T11:49:36.126209+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -2418,11 +1838,11 @@
       "work_status": "In progress",
       "release": null,
       "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
+      "as_of": "2026-11-13",
       "url": null,
       "repository_record": {
         "stage": "Repository preparation in progress",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T11:49:36.126209+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -2439,11 +1859,11 @@
       "work_status": "In progress",
       "release": null,
       "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
+      "as_of": "2026-11-13",
       "url": null,
       "repository_record": {
         "stage": "Repository preparation in progress",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T11:49:36.126209+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -2460,11 +1880,11 @@
       "work_status": "In progress",
       "release": null,
       "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
+      "as_of": "2026-11-13",
       "url": null,
       "repository_record": {
         "stage": "Repository preparation in progress",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T11:49:36.126209+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -2481,11 +1901,11 @@
       "work_status": "In progress",
       "release": null,
       "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
+      "as_of": "2026-11-13",
       "url": null,
       "repository_record": {
         "stage": "Repository preparation in progress",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T11:49:36.126209+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -2502,11 +1922,11 @@
       "work_status": "In progress",
       "release": null,
       "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
+      "as_of": "2026-11-13",
       "url": null,
       "repository_record": {
         "stage": "Repository preparation in progress",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T11:49:36.126209+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -2522,12 +1942,12 @@
       "phase": "Design and implementation",
       "work_status": "In progress",
       "release": null,
-      "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-11-13",
       "url": null,
       "repository_record": {
-        "stage": "Repository preparation in progress",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "stage": "Local repository initialized",
+        "as_of": "2026-11-13T11:49:36.126209+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -2543,12 +1963,12 @@
       "phase": "Design and implementation",
       "work_status": "In progress",
       "release": null,
-      "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-11-13",
       "url": null,
       "repository_record": {
         "stage": "Local repository initialized",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "as_of": "2026-11-13T11:49:36.126209+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -2564,12 +1984,12 @@
       "phase": "Design and implementation",
       "work_status": "In progress",
       "release": null,
-      "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-11-13",
       "url": null,
       "repository_record": {
-        "stage": "Repository preparation in progress",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "stage": "Local repository initialized",
+        "as_of": "2026-11-13T11:49:36.126209+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -2585,12 +2005,12 @@
       "phase": "Design and implementation",
       "work_status": "In progress",
       "release": null,
-      "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-11-13",
       "url": null,
       "repository_record": {
-        "stage": "Repository preparation in progress",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "stage": "Local repository initialized",
+        "as_of": "2026-11-13T11:49:36.126209+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -2606,12 +2026,12 @@
       "phase": "Design and implementation",
       "work_status": "In progress",
       "release": null,
-      "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-11-13",
       "url": null,
       "repository_record": {
-        "stage": "Repository preparation in progress",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "stage": "Local repository initialized",
+        "as_of": "2026-11-13T11:49:36.126209+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -2627,12 +2047,12 @@
       "phase": "Design and implementation",
       "work_status": "In progress",
       "release": null,
-      "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-11-13",
       "url": null,
       "repository_record": {
-        "stage": "Repository preparation in progress",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "stage": "Local repository initialized",
+        "as_of": "2026-11-13T11:49:36.126209+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -2648,12 +2068,12 @@
       "phase": "Design and implementation",
       "work_status": "In progress",
       "release": null,
-      "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-11-13",
       "url": null,
       "repository_record": {
-        "stage": "Repository preparation in progress",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "stage": "Local repository initialized",
+        "as_of": "2026-11-13T11:49:36.126209+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -2669,12 +2089,12 @@
       "phase": "Design and implementation",
       "work_status": "In progress",
       "release": null,
-      "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-11-13",
       "url": null,
       "repository_record": {
-        "stage": "Repository preparation in progress",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "stage": "Local repository initialized",
+        "as_of": "2026-11-13T11:49:36.126209+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -2690,12 +2110,12 @@
       "phase": "Design and implementation",
       "work_status": "In progress",
       "release": null,
-      "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-11-13",
       "url": null,
       "repository_record": {
-        "stage": "Repository preparation in progress",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "stage": "Local repository initialized",
+        "as_of": "2026-11-13T11:49:36.126209+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -2711,12 +2131,12 @@
       "phase": "Design and implementation",
       "work_status": "In progress",
       "release": null,
-      "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-11-13",
       "url": null,
       "repository_record": {
-        "stage": "Repository preparation in progress",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "stage": "Local repository initialized",
+        "as_of": "2026-11-13T11:49:36.126209+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -2732,12 +2152,12 @@
       "phase": "Design and implementation",
       "work_status": "In progress",
       "release": null,
-      "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-11-13",
       "url": null,
       "repository_record": {
-        "stage": "Repository preparation in progress",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "stage": "Local repository initialized",
+        "as_of": "2026-11-13T11:49:36.126209+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -2753,12 +2173,12 @@
       "phase": "Design and implementation",
       "work_status": "In progress",
       "release": null,
-      "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-11-13",
       "url": null,
       "repository_record": {
-        "stage": "Repository preparation in progress",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "stage": "Local repository initialized",
+        "as_of": "2026-11-13T11:49:36.126209+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -2774,12 +2194,12 @@
       "phase": "Design and implementation",
       "work_status": "In progress",
       "release": null,
-      "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-11-13",
       "url": null,
       "repository_record": {
-        "stage": "Repository preparation in progress",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "stage": "Local repository initialized",
+        "as_of": "2026-11-13T11:49:36.126209+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -2795,12 +2215,12 @@
       "phase": "Design and implementation",
       "work_status": "In progress",
       "release": null,
-      "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-11-13",
       "url": null,
       "repository_record": {
-        "stage": "Repository preparation in progress",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "stage": "Local repository initialized",
+        "as_of": "2026-11-13T11:49:36.126209+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -2816,12 +2236,12 @@
       "phase": "Design and implementation",
       "work_status": "In progress",
       "release": null,
-      "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-11-13",
       "url": null,
       "repository_record": {
-        "stage": "Repository preparation in progress",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "stage": "Local repository initialized",
+        "as_of": "2026-11-13T11:49:36.126209+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -2837,12 +2257,12 @@
       "phase": "Design and implementation",
       "work_status": "In progress",
       "release": null,
-      "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-11-13",
       "url": null,
       "repository_record": {
-        "stage": "Repository preparation in progress",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "stage": "Local repository initialized",
+        "as_of": "2026-11-13T11:49:36.126209+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -2858,12 +2278,12 @@
       "phase": "Design and implementation",
       "work_status": "In progress",
       "release": null,
-      "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-11-13",
       "url": null,
       "repository_record": {
-        "stage": "Repository preparation in progress",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "stage": "Local repository initialized",
+        "as_of": "2026-11-13T11:49:36.126209+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -2879,12 +2299,12 @@
       "phase": "Design and implementation",
       "work_status": "In progress",
       "release": null,
-      "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-11-13",
       "url": null,
       "repository_record": {
-        "stage": "Repository preparation in progress",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "stage": "Local repository initialized",
+        "as_of": "2026-11-13T11:49:36.126209+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -2900,12 +2320,12 @@
       "phase": "Design and implementation",
       "work_status": "In progress",
       "release": null,
-      "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-11-13",
       "url": null,
       "repository_record": {
-        "stage": "Repository preparation in progress",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "stage": "Local repository initialized",
+        "as_of": "2026-11-13T11:49:36.126209+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -2921,12 +2341,12 @@
       "phase": "Design and implementation",
       "work_status": "In progress",
       "release": null,
-      "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-11-13",
       "url": null,
       "repository_record": {
-        "stage": "Repository preparation in progress",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "stage": "Local repository initialized",
+        "as_of": "2026-11-13T11:49:36.126209+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -2942,12 +2362,12 @@
       "phase": "Design and implementation",
       "work_status": "In progress",
       "release": null,
-      "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-11-13",
       "url": null,
       "repository_record": {
-        "stage": "Repository preparation in progress",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "stage": "Local repository initialized",
+        "as_of": "2026-11-13T11:49:36.126209+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -2963,12 +2383,12 @@
       "phase": "Design and implementation",
       "work_status": "In progress",
       "release": null,
-      "licence": "Undecided for independent release",
-      "as_of": "2026-10-13",
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-11-13",
       "url": null,
       "repository_record": {
-        "stage": "Repository preparation in progress",
-        "as_of": "2026-10-13T16:13:52.413927+00:00",
+        "stage": "Local repository initialized",
+        "as_of": "2026-11-13T11:49:36.126209+00:00",
         "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
       }
     },
@@ -2985,7 +2405,7 @@
       "work_status": "In progress",
       "release": null,
       "licence": "Independent distribution terms being defined",
-      "as_of": "2026-10-13",
+      "as_of": "2026-11-13",
       "url": null
     },
     {
@@ -3001,8 +2421,885 @@
       "work_status": "In progress",
       "release": null,
       "licence": "Independent distribution terms being defined",
-      "as_of": "2026-10-13",
+      "as_of": "2026-11-13",
       "url": null
+    },
+    {
+      "id": "CIRCUIT-CORE",
+      "name": "CIRCUIT-CORE",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Neutral design hierarchy, ports, units, parameters, view correspondence and operation contracts.",
+      "kind": "component",
+      "phase": "Design and preparation",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-11-13",
+      "url": null
+    },
+    {
+      "id": "CIRCUIT-TECHNOLOGY",
+      "name": "CIRCUIT-TECHNOLOGY",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Identified PDK, device, library, verification-deck and assembly profiles with tool compatibility and applicability.",
+      "kind": "component",
+      "phase": "Design and preparation",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-11-13",
+      "url": null
+    },
+    {
+      "id": "CIRCUIT-FLOW",
+      "name": "CIRCUIT-FLOW",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Reproducible circuit workflows, admitted tool dispatch, artefact propagation and recovery.",
+      "kind": "component",
+      "phase": "Design and preparation",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-11-13",
+      "url": null
+    },
+    {
+      "id": "CIRCUIT-DIGITAL",
+      "name": "CIRCUIT-DIGITAL",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Digital simulation, formal/synthesis and implementation adapters, timing and testability intent.",
+      "kind": "component",
+      "phase": "Design and preparation",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-11-13",
+      "url": null
+    },
+    {
+      "id": "CIRCUIT-ANALOG",
+      "name": "CIRCUIT-ANALOG",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Circuit/schematic and device-model integration, analogue simulation, sizing and layout constraints.",
+      "kind": "component",
+      "phase": "Design and preparation",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-11-13",
+      "url": null
+    },
+    {
+      "id": "CIRCUIT-MIXED-SIGNAL",
+      "name": "CIRCUIT-MIXED-SIGNAL",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Boundary models and co-simulation integration for continuous and discrete participants.",
+      "kind": "component",
+      "phase": "Design and preparation",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-11-13",
+      "url": null
+    },
+    {
+      "id": "CIRCUIT-PHYSICAL",
+      "name": "CIRCUIT-PHYSICAL",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Layout implementation and interchange, extraction and technology-specific physical-check integration.",
+      "kind": "component",
+      "phase": "Design and preparation",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-11-13",
+      "url": null
+    },
+    {
+      "id": "CIRCUIT-ASSEMBLY",
+      "name": "CIRCUIT-ASSEMBLY",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Die, package, interposer, board and test-fixture integration.",
+      "kind": "component",
+      "phase": "Design and preparation",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-11-13",
+      "url": null
+    },
+    {
+      "id": "CIRCUIT-ACCEPTANCE",
+      "name": "CIRCUIT-ACCEPTANCE",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Requirement-specific checks, comparison laws, coverage and scoped acceptance.",
+      "kind": "component",
+      "phase": "Design and preparation",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-11-13",
+      "url": null
+    },
+    {
+      "id": "CIRCUIT-LAB",
+      "name": "CIRCUIT-LAB",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Hardware bring-up, instrument integration and traceable characterisation.",
+      "kind": "component",
+      "phase": "Design and preparation",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-11-13",
+      "url": null
+    },
+    {
+      "id": "CIRCUIT-WORKBENCH",
+      "name": "CIRCUIT-WORKBENCH",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "General design and review workspace using the same headless operations as the library and command-line clients.",
+      "kind": "component",
+      "phase": "Design and preparation",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-11-13",
+      "url": null
+    },
+    {
+      "id": "CIRCUIT-MANUFACTURING",
+      "name": "CIRCUIT-MANUFACTURING",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Versioned routes and recipes, material genealogy, work-order and inspection integration, and controlled supplier handoff.",
+      "kind": "component",
+      "phase": "Design and preparation",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-11-13",
+      "url": null
+    },
+    {
+      "id": "CIRCUIT-AUTOMATION",
+      "name": "CIRCUIT-AUTOMATION",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Admitted equipment capabilities and local execution-provider adapters for instruments, cells and robot tasks.",
+      "kind": "component",
+      "phase": "Design and preparation",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-11-13",
+      "url": null
+    },
+    {
+      "id": "CIRCUIT-FIELDS",
+      "name": "CIRCUIT-FIELDS",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Electromagnetic and coupled-field operations, with specialised geometry, meshes and boundary conditions.",
+      "kind": "component",
+      "phase": "Design and preparation",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-11-13",
+      "url": null
+    },
+    {
+      "id": "CIRCUIT-PHOTONICS",
+      "name": "CIRCUIT-PHOTONICS",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Optical design semantics, including wavelength, mode, polarisation, loss and electrical coupling.",
+      "kind": "component",
+      "phase": "Design and preparation",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-11-13",
+      "url": null
+    },
+    {
+      "id": "CIRCUIT-DEVICES",
+      "name": "CIRCUIT-DEVICES",
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SC-NEUROMORPHIC-COMPUTING-SYSTEMS"
+      ],
+      "function": "Device/TCAD and compact-model work, with process-specific validation.",
+      "kind": "component",
+      "phase": "Design and preparation",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-11-13",
+      "url": null
+    },
+    {
+      "id": "SCPN-QUANTUM-CONTROL",
+      "name": "SCPN-QUANTUM-CONTROL",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Integrated modelling, simulation, compilation, gradients, control, provider workflows, analysis and Quantum Studio.",
+      "kind": "workbench",
+      "phase": "Released software · ongoing development",
+      "work_status": "In progress",
+      "release": "1.3.0",
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-11-14",
+      "url": "https://github.com/anulum/scpn-quantum-control",
+      "packages": [
+        {
+          "index": "PyPI scpn-quantum-control",
+          "published": true
+        }
+      ],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-11-14T13:14:58+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "oscillatools",
+      "name": "oscillatools",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Classical coupled-phase-oscillator dynamics, observables, sensitivities and control-oriented numerical tools.",
+      "kind": "package",
+      "phase": "Released software · ongoing development",
+      "work_status": "In progress",
+      "release": "0.1.1",
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-11-14",
+      "url": null,
+      "packages": [
+        {
+          "index": "PyPI oscillatools",
+          "published": true
+        }
+      ]
+    },
+    {
+      "id": "scpn-quantum-engine",
+      "name": "scpn-quantum-engine",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Optional Rust/PyO3 numerical acceleration and native computation used by supported workbench paths.",
+      "kind": "package",
+      "phase": "Released software · ongoing development",
+      "work_status": "In progress",
+      "release": "0.3.0",
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-11-14",
+      "url": null,
+      "packages": [
+        {
+          "index": "PyPI scpn-quantum-engine",
+          "published": true
+        }
+      ]
+    },
+    {
+      "id": "QPU-RESULT-PACK",
+      "name": "QPU-RESULT-PACK",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Preserve raw results and their provenance, derivations and reviewable presentation.",
+      "kind": "tool",
+      "phase": "Implementation and integration",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later by file headers; no licence field in packaging",
+      "as_of": "2026-11-14",
+      "url": null,
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-11-14T13:14:58+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "TRANSPILE-WITNESS",
+      "name": "TRANSPILE-WITNESS",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Retain scoped observations about compilation semantics, layout, global phase and replay.",
+      "kind": "tool",
+      "phase": "Implementation and integration",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later by file headers; no licence field in packaging",
+      "as_of": "2026-11-14",
+      "url": null,
+      "packages": [],
+      "repository_record": {
+        "stage": "Repository preparation in progress",
+        "as_of": "2026-11-14T13:14:58+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "MITIGATION-WITNESS",
+      "name": "MITIGATION-WITNESS",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Evaluate mitigation on declared measurement panels with retained inputs and uncertainty.",
+      "kind": "tool",
+      "phase": "Implementation and integration",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later",
+      "as_of": "2026-11-14",
+      "url": null,
+      "packages": [],
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-11-14T13:14:58+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-QC-CONTRACTS",
+      "name": "SCPN-QC-CONTRACTS",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Versioned parameter, result, semantic and evidence interface contracts shared by components.",
+      "kind": "component",
+      "phase": "Workbench transition",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "AGPL-3.0-or-later by its LICENSE file and file headers; no licence field in packaging",
+      "as_of": "2026-11-14",
+      "url": null,
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-11-14T13:14:58+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-QC-CORE",
+      "name": "SCPN-QC-CORE",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Configuration, logging, resource budgets and generic Kuramoto-XY problem foundations, separated from paper-specific research assumptions.",
+      "kind": "component",
+      "phase": "Workbench transition",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-11-14",
+      "url": null,
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-11-14T13:14:58+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-QC-AD",
+      "name": "SCPN-QC-AD",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Whole-program automatic differentiation, derivative transforms, batching, optimisation and explicit supported-path contracts.",
+      "kind": "component",
+      "phase": "Workbench transition",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-11-14",
+      "url": null,
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-11-14T13:14:58+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-QC-SIM",
+      "name": "SCPN-QC-SIM",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Classical and quantum oscillator dynamics, XY/Kuramoto solvers, open-system simulation, tensor-network paths and co-simulation.",
+      "kind": "component",
+      "phase": "Workbench transition",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-11-14",
+      "url": null,
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-11-14T13:14:58+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-QC-COMPILER",
+      "name": "SCPN-QC-COMPILER",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Model and circuit frontends, intermediate representations, interchange and code generation.",
+      "kind": "component",
+      "phase": "Workbench transition",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-11-14",
+      "url": null,
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-11-14T13:14:58+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-QC-QNODE",
+      "name": "SCPN-QC-QNODE",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Quantum tapes, gradient execution and framework bridges for supported Qiskit, PennyLane, JAX, PyTorch and TensorFlow paths.",
+      "kind": "component",
+      "phase": "Workbench transition",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-11-14",
+      "url": null,
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-11-14T13:14:58+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-QC-HAL",
+      "name": "SCPN-QC-HAL",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Provider-neutral workloads, capabilities, job/result contracts and optional provider adapters.",
+      "kind": "component",
+      "phase": "Workbench transition",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-11-14",
+      "url": null,
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-11-14T13:14:58+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-QC-MITIGATION",
+      "name": "SCPN-QC-MITIGATION",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Error-mitigation implementations and their method taxonomy.",
+      "kind": "component",
+      "phase": "Workbench transition",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-11-14",
+      "url": null,
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-11-14T13:14:58+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-QC-QEC",
+      "name": "SCPN-QC-QEC",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Quantum error-correction analysis and fault-tolerant resource-reporting surfaces.",
+      "kind": "component",
+      "phase": "Workbench transition",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-11-14",
+      "url": null,
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-11-14T13:14:58+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-QC-CONTROL",
+      "name": "SCPN-QC-CONTROL",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Feedback and co-design, chimera and topology-aware control, and DLA-constrained control paths.",
+      "kind": "component",
+      "phase": "Workbench transition",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-11-14",
+      "url": null,
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-11-14T13:14:58+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-QC-ANALYSIS",
+      "name": "SCPN-QC-ANALYSIS",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Observables, synchronisation witnesses, result analysis and the open-data DLA-parity pathway.",
+      "kind": "component",
+      "phase": "Workbench transition",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-11-14",
+      "url": null,
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-11-14T13:14:58+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-QC-LEARN",
+      "name": "SCPN-QC-LEARN",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Forecasting, quantum neural models, surrogate models, kernels and variational learning paths.",
+      "kind": "component",
+      "phase": "Workbench transition",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-11-14",
+      "url": null,
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-11-14T13:14:58+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-QC-APPS",
+      "name": "SCPN-QC-APPS",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Domain application adapters, quantum randomness, cryptography and sensing workflows, with explicit claim boundaries.",
+      "kind": "component",
+      "phase": "Workbench transition",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-11-14",
+      "url": null,
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-11-14T13:14:58+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-QC-BENCH",
+      "name": "SCPN-QC-BENCH",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Workload-specific benchmark suites, comparison harnesses, campaign reproduction and retained run evidence.",
+      "kind": "component",
+      "phase": "Workbench transition",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-11-14",
+      "url": null,
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-11-14T13:14:58+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-QC-STUDIO",
+      "name": "SCPN-QC-STUDIO",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Quantum Studio's visual workflows, inspectors and evidence presentation through the shared Studio platform contract.",
+      "kind": "component",
+      "phase": "Workbench transition",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-11-14",
+      "url": null,
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-11-14T13:14:58+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "SCPN-QC-RESEARCH",
+      "name": "SCPN-QC-RESEARCH",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Experimental SCPN theory, paper-specific assumptions and research adapters whose contracts are not stable.",
+      "kind": "component",
+      "phase": "Workbench transition",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-11-14",
+      "url": null,
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-11-14T13:14:58+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "NOISE-MODEL-WITNESS",
+      "name": "NOISE-MODEL-WITNESS",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Compare model predictions and replay observations for the same circuit and shot identities, with uncertainty, shot floors, calibration epochs and declared tolerances.",
+      "kind": "tool",
+      "phase": "Design and implementation",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-11-14",
+      "url": null,
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-11-14T13:14:58+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "VENDOR-CLAIM-RECOMPUTER",
+      "name": "VENDOR-CLAIM-RECOMPUTER",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Recompute released-data quantum-volume, error-per-layer-gate and logical-error claims against fixed definitions, original inputs and declared computation budgets.",
+      "kind": "tool",
+      "phase": "Design and implementation",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-11-14",
+      "url": null,
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-11-14T13:14:58+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "DECODER-WITNESS",
+      "name": "DECODER-WITNESS",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Compare real decoder engines on released shot data with lossless adapters, declared noise conditions and uncertainty-aware reports.",
+      "kind": "tool",
+      "phase": "Design and implementation",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-11-14",
+      "url": null,
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-11-14T13:14:58+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "GRADIENT-WITNESS",
+      "name": "GRADIENT-WITNESS",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Check software derivatives against declared analytic, parameter-shift and finite-difference references, including complex, finite-shot and cross-framework cases.",
+      "kind": "tool",
+      "phase": "Design and implementation",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-11-14",
+      "url": null,
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-11-14T13:14:58+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "CONFORMANCE-WITNESS",
+      "name": "CONFORMANCE-WITNESS",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Check versioned OpenQASM 3, adapter behaviour, provenance fields and repository-evidence criteria against their normative clauses and actual entry points.",
+      "kind": "tool",
+      "phase": "Design and implementation",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Undecided for independent release",
+      "as_of": "2026-11-14",
+      "url": null,
+      "repository_record": {
+        "stage": "Local repository initialized",
+        "as_of": "2026-11-14T13:14:58+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    },
+    {
+      "id": "QUANTUM_LAB",
+      "name": "QUANTUM_LAB",
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "owning_groups": [
+        "SCPN-QUANTUM-COMPUTING-SYSTEMS"
+      ],
+      "function": "Reserved research workspace name; implementation role is not assigned in the group map.",
+      "kind": "workspace",
+      "phase": "Workspace definition",
+      "work_status": "In progress",
+      "release": null,
+      "licence": "Not stated",
+      "as_of": "2026-11-14",
+      "url": null,
+      "repository_record": {
+        "stage": "Repository preparation in progress",
+        "as_of": "2026-11-14T13:14:58+00:00",
+        "basis": "Read-only local repository observation. Implementation, release and capability evidence remain separate."
+      }
+    }
+  ],
+  "group_declarations": [
+    {
+      "group": "AGENTIC-COORDINATION-ASSURANCE-AND-CONTINUITY-SYSTEMS",
+      "as_of": "2026-11-13",
+      "sha256": "ffcfa1619acbb874d2814a56fd424c5d9eda1f71b3c8ae097bcba87bc1e0cdfc"
+    },
+    {
+      "group": "SC-NEUROMORPHIC-COMPUTING-SYSTEMS",
+      "as_of": "2026-11-13",
+      "sha256": "15908c15525af58594447f03719e8e1dce99917711a396c9bcc9585ebdf5a1da"
+    },
+    {
+      "group": "SCPN-QUANTUM-COMPUTING-SYSTEMS",
+      "as_of": "2026-11-14",
+      "sha256": "7e9ba2ddac3baa1ecade9fed0170d7bbacb60e56f1371e4dd7c2685798a7ba65"
+    },
+    {
+      "group": "SCPN-REACTOR-SYSTEMS",
+      "as_of": "2026-11-13",
+      "sha256": "c532d33f6f6fcd1a0a7677b1b02ae3726321c4ae0c611085caf5ea941d07e367"
     }
   ]
 }
