@@ -1,6 +1,6 @@
 {
   "schema_version": "1.3.0",
-  "verified_at": "2026-11-14",
+  "verified_at": "2026-11-17",
   "profile": {
     "name": "Miroslav Šotek",
     "github": "https://github.com/anulum",
@@ -847,6 +847,9 @@
     "23041094": "SCPN Quantum Control",
     "23045316": "SCPN Control",
     "23092361": "Loop Timing Witness",
+    "24222960": "Loop Timing Witness",
+    "24263979": "Loop Timing Witness",
+    "24293657": "Synapse Channel",
     "20776102": "HushLine",
     "18507639": "The Anulum Framework",
     "17419678": "The Anulum Framework",

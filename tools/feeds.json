@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-14",
+  "fetched_at": "2026-11-17",
   "releases": [
     {
       "project": "SCPN Fusion Core",
@@ -39,6 +39,26 @@
   ],
   "zenodo": [
     {
+      "id": 24293657,
+      "doi": "10.5281/zenodo.24293657",
+      "conceptdoi": "10.5281/zenodo.20801559",
+      "title": "SYNAPSE CHANNEL: Local-first multi-agent coordination bus",
+      "date": "2026-11-16",
+      "type": "software/",
+      "version": "0.99.53",
+      "license": "agpl-3.0-or-later"
+    },
+    {
+      "id": 24263979,
+      "doi": "10.5281/zenodo.24263979",
+      "conceptdoi": "10.5281/zenodo.23092360",
+      "title": "Loop Timing Witness",
+      "date": "2026-11-16",
+      "type": "software/",
+      "version": "0.3.0",
+      "license": "agpl-3.0-or-later"
+    },
+    {
       "id": 24166616,
       "doi": "10.5281/zenodo.24166616",
       "conceptdoi": "10.5281/zenodo.18820864",
@@ -46,16 +66,6 @@
       "date": "2026-11-12",
       "type": "software/",
       "version": "4.1.0",
-      "license": "agpl-3.0-or-later"
-    },
-    {
-      "id": 24127012,
-      "doi": "10.5281/zenodo.24127012",
-      "conceptdoi": "10.5281/zenodo.20801559",
-      "title": "SYNAPSE CHANNEL: Local-first multi-agent coordination bus",
-      "date": "2026-11-11",
-      "type": "software/",
-      "version": "0.99.51",
       "license": "agpl-3.0-or-later"
     },
     {
@@ -97,16 +107,6 @@
       "type": "publication/preprint",
       "version": "",
       "license": "cc-by-4.0"
-    },
-    {
-      "id": 23092361,
-      "doi": "10.5281/zenodo.23092361",
-      "conceptdoi": "10.5281/zenodo.23092360",
-      "title": "Loop Timing Witness",
-      "date": "2026-10-01",
-      "type": "software/",
-      "version": "0.1.0",
-      "license": "agpl-3.0-or-later"
     },
     {
       "id": 23041094,

@@ -50,7 +50,10 @@ class FeedParsingTests(unittest.TestCase):
         )
 
     def test_headline_that_introduces_a_list_ends_as_a_sentence(self) -> None:
-        self.assertEqual(feeds.headline_cell("Tokens rotate, and the flag behaves like them:"), "Tokens rotate, and the flag behaves like them.")
+        self.assertEqual(
+            feeds.headline_cell("Tokens rotate, and the flag behaves like them:"),
+            "Tokens rotate, and the flag behaves like them.",
+        )
         self.assertEqual(feeds.headline_cell("Plain change."), "Plain change.")
         self.assertEqual(feeds.headline_cell("A \u2014 B: C"), "A - B: C")
 
@@ -141,9 +144,32 @@ class CheckedInStateTests(unittest.TestCase):
 
     def test_publications_render_rejects_records_without_a_project(self) -> None:
         mutated = json.loads(json.dumps(self.data))
-        mutated["record_projects"].pop(str(self.cache["zenodo"][0]["id"]))
+        concept = self.cache["zenodo"][0]["conceptdoi"]
+        for record in self.cache["zenodo"]:
+            if record.get("conceptdoi") == concept:
+                mutated["record_projects"].pop(str(record["id"]), None)
         with self.assertRaises(ValueError):
             publications.render(mutated, self.cache)
+
+    def test_new_version_takes_the_project_of_its_concept(self) -> None:
+        listed = next(r for r in self.cache["zenodo"] if str(r["id"]) in self.data["record_projects"])
+        project = self.data["record_projects"][str(listed["id"])]
+        new = dict(listed, id=999999999, doi="10.5281/zenodo.999999999", version="9.9.9")
+        cache = dict(self.cache, zenodo=[*self.cache["zenodo"], new])
+        resolved = publications.resolve_projects(self.data["record_projects"], cache["zenodo"])
+        self.assertEqual(resolved["999999999"], project)
+        self.assertIn(f"| {project} | 9.9.9 |", publications.render(self.data, cache))
+
+    def test_concept_with_conflicting_projects_is_refused(self) -> None:
+        first, second = self.cache["zenodo"][0], self.cache["zenodo"][1]
+        mapped = {str(first["id"]): "A", str(second["id"]): "B"}
+        records = [
+            dict(first, conceptdoi="10.5281/zenodo.1"),
+            dict(second, conceptdoi="10.5281/zenodo.1"),
+            dict(first, id=999999998, conceptdoi="10.5281/zenodo.1"),
+        ]
+        with self.assertRaises(ValueError):
+            publications.resolve_projects(mapped, records)
 
 
 if __name__ == "__main__":

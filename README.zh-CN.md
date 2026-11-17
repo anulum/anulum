@@ -95,7 +95,7 @@ Shell、Docker 和 Linux。
 <a id="current-focus"></a>
 ## 当前重点
 
-<sub>项目组合状态于 <!-- verified-at -->2026-11-14<!-- /verified-at --> 验证。</sub>
+<sub>项目组合状态于 <!-- verified-at -->2026-11-17<!-- /verified-at --> 验证。</sub>
 
 - 在 26 个公开 Reactor 仓库中整合共享内核和受治理的设备事实。
 - 在清晰所有权边界下连接协调、记忆、响应保障、动作审查和仓库证据。
@@ -112,7 +112,7 @@ Shell、Docker 和 Linux。
 | 2026-11-11 | SYNAPSE CHANNEL | [v0.99.51](https://github.com/anulum/synapse-channel/tree/v0.99.51) | Outbound peer tokens rotate without a restart. synapse hub gains --multihub-watch-token-file, --claim-peer-token-file and --relay-peer-token-file, and --message-peer-token-file now behaves like them. |
 | 2026-11-08 | SC-NeuroCore | [v4.1.0](https://doi.org/10.5281/zenodo.24060751) | published software archive |
 
-<sub>根据 [anulum.li/news](https://anulum.li/news/)（各项目的 CHANGELOG 文件）和 [Zenodo](https://zenodo.org/search?q=creators.orcid%3A%220009-0009-3560-0851%22) 于 2026-11-14 生成。</sub>
+<sub>根据 [anulum.li/news](https://anulum.li/news/)（各项目的 CHANGELOG 文件）和 [Zenodo](https://zenodo.org/search?q=creators.orcid%3A%220009-0009-3560-0851%22) 于 2026-11-17 生成。</sub>
 <!-- profile-feeds:releases:end -->
 
 <!-- profile-feeds:publication:start -->
@@ -122,7 +122,7 @@ Shell、Docker 和 Linux。
 |---|---|---|---|
 | 2026-10-11 | Preprint | The calibration epoch as the unit of evidence: preregistered parity-leakage and layout-transfer experiments on IQM Garnet | [10.5281/zenodo.23298119](https://doi.org/10.5281/zenodo.23298119) |
 
-<sub>根据 [anulum.li/news](https://anulum.li/news/)（各项目的 CHANGELOG 文件）和 [Zenodo](https://zenodo.org/search?q=creators.orcid%3A%220009-0009-3560-0851%22) 于 2026-11-14 生成。</sub>
+<sub>根据 [anulum.li/news](https://anulum.li/news/)（各项目的 CHANGELOG 文件）和 [Zenodo](https://zenodo.org/search?q=creators.orcid%3A%220009-0009-3560-0851%22) 于 2026-11-17 生成。</sub>
 <!-- profile-feeds:publication:end -->
 
 ## 时间线

@@ -75,16 +75,43 @@ def doi_link(doi: str) -> str:
     return f"[{doi}](https://doi.org/{doi})"
 
 
-def render(data: dict[str, Any], cache: dict[str, Any]) -> str:
-    """Return the complete Markdown page."""
-    projects = data["record_projects"]
-    notes = data["publication_notes"]
-    records = cache["zenodo"]
-    publications = [record for record in records if record["type"].startswith("publication/")]
-    software = [record for record in records if record["type"].startswith("software/")]
-    unknown = [record["id"] for record in records if str(record["id"]) not in projects]
+def resolve_projects(mapped: dict[str, str], records: list[dict[str, Any]]) -> dict[str, str]:
+    """Return the project of every record, deriving new versions from their concept.
+
+    A record listed in ``record_projects`` keeps that project. A record that is not
+    listed belongs to the project of another listed record with the same Zenodo
+    concept DOI, because Zenodo links every version of one deposit through it; a new
+    release of a known project therefore no longer stops the daily refresh. A record
+    whose concept has no listed version, or whose listed versions disagree, is refused.
+    """
+    by_concept: dict[str, set[str]] = {}
+    for record in records:
+        project = mapped.get(str(record["id"]))
+        if project is not None and record.get("conceptdoi"):
+            by_concept.setdefault(record["conceptdoi"], set()).add(project)
+    resolved = dict(mapped)
+    unknown = []
+    for record in records:
+        key = str(record["id"])
+        if key in resolved:
+            continue
+        candidates = by_concept.get(record.get("conceptdoi") or "", set())
+        if len(candidates) == 1:
+            resolved[key] = next(iter(candidates))
+        else:
+            unknown.append(record["id"])
     if unknown:
         raise ValueError(f"records without a project in the manifest: {unknown}")
+    return resolved
+
+
+def render(data: dict[str, Any], cache: dict[str, Any]) -> str:
+    """Return the complete Markdown page."""
+    records = cache["zenodo"]
+    projects = resolve_projects(data["record_projects"], records)
+    notes = data["publication_notes"]
+    publications = [record for record in records if record["type"].startswith("publication/")]
+    software = [record for record in records if record["type"].startswith("software/")]
 
     lines = [
         INTRO.format(
